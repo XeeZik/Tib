@@ -1,4 +1,4 @@
-﻿/**
+/**
  * The Forgotten Server - a free and open-source MMORPG server emulator
  * Copyright (C) 2017  Mark Samman <mark.samman@gmail.com>
  *
@@ -536,17 +536,17 @@ ReturnValue Tile::queryAdd(int32_t, const Thing& thing, uint32_t, uint32_t flags
 			}
 
 			MagicField* field = getFieldItem();
-			if (field && !field->isBlocking()) {
+			if (field && !field->isBlocking() && field->getDamage() != 0) {
 				CombatType_t combatType = field->getCombatType();
 
 				//There is 3 options for a monster to enter a magic field
 				//1) Monster is immune
 				if (!monster->isImmune(combatType)) {
-					//1) Monster is "strong" enough to handle the damage
-					//2) Monster is already afflicated by this type of condition
-					if (hasBitSet(FLAG_IGNOREFIELDDAMAGE, flags)) {
-						if (!monster->hasCondition(Combat::DamageToConditionType(combatType)) && (!monster->canPushItems() || !monster->hasRecentBattle())) {
-							return RETURNVALUE_NOTPOSSIBLE;
+						//1) Monster is able to walk over field type
+						//2) Being attacked while random stepping will make it ignore field damages
+						if (hasBitSet(FLAG_IGNOREFIELDDAMAGE, flags)) {
+							if (!(monster->canWalkOnFieldType(combatType) || monster->getIgnoreFieldDamage())) {
+								return RETURNVALUE_NOTPOSSIBLE;
 						}
 					} else {
 						return RETURNVALUE_NOTPOSSIBLE;

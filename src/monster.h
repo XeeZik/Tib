@@ -1,4 +1,4 @@
-﻿/**
+/**
  * The Forgotten Server - a free and open-source MMORPG server emulator
  * Copyright (C) 2017  Mark Samman <mark.samman@gmail.com>
  *
@@ -127,6 +127,7 @@ class Monster final : public Creature
 			this->spawn = spawn;
 		}
 
+		bool canWalkOnFieldType(CombatType_t combatType) const;
 		void onAttackedCreatureDisappear(bool isLogout) final;
 
 		void onCreatureAppear(Creature* creature, bool isLogin) final;
@@ -136,7 +137,6 @@ class Monster final : public Creature
 
 		void drainHealth(Creature* attacker, int32_t damage) final;
 		void changeHealth(int32_t healthChange, bool sendHealthChange = true) final;
-		bool hasRecentBattle() const { return lastDamage && (int64_t)OTSYS_TIME() < (lastDamage + 30000); }
 		void onWalk() final;
 		bool getNextStep(Direction& direction, uint32_t& flags) final;
 		void onFollowCreatureComplete(const Creature* creature) final;
@@ -173,6 +173,18 @@ class Monster final : public Creature
 		bool isTargetNearby() const {
 			return stepDuration >= 1;
 		}
+		bool isRandomSteping() const {
+			return randomSteping;
+			
+		}
+		void setIgnoreFieldDamage(bool ignore) {
+			ignoreFieldDamage = ignore;
+			
+		}
+		bool getIgnoreFieldDamage() const {
+			return ignoreFieldDamage;
+			
+		}
 
 		BlockType_t blockHit(Creature* attacker, CombatType_t combatType, int32_t& damage,
 		                     bool checkDefense = false, bool checkArmor = false, bool field = false);
@@ -189,7 +201,6 @@ class Monster final : public Creature
 		Spawn* spawn = nullptr;
 
 		int64_t lastMeleeAttack = 0;
-		int64_t lastDamage = 0;
 
 		uint32_t attackTicks = 0;
 		uint32_t targetTicks = 0;
@@ -206,6 +217,8 @@ class Monster final : public Creature
 		bool isIdle = true;
 		bool extraMeleeAttack = false;
 		bool isMasterInRange = false;
+		bool randomSteping = false;
+		bool ignoreFieldDamage = false;
 
 		void onCreatureEnter(Creature* creature);
 		void onCreatureLeave(Creature* creature);
@@ -271,7 +284,7 @@ class Monster final : public Creature
 		}
 		void getPathSearchParams(const Creature* creature, FindPathParams& fpp) const final;
 		bool useCacheMap() const final {
-			return true;
+			return !randomSteping;
 		}
 
 		friend class LuaScriptInterface;
