@@ -121,7 +121,7 @@ function parseTransferCoins(player, msg)
         return addPlayerEvent(sendStoreError, 350, player, GameStore.StoreErrors.STORE_ERROR_TRANSFER, "You don't have enough funds to transfer these coins.")
     end
     player:removeCoinsBalance(amount)
-    db.asyncQuery("UPDATE `accounts` SET `premium_points` = `premium_points` + " .. amount .. " WHERE `id` = " .. accountId)
+    db.asyncQuery("UPDATE `accounts` SET `coins` = `coins` + " .. amount .. " WHERE `id` = " .. accountId)
     addPlayerEvent(sendStorePurchaseSuccessful, 550, player, "You have transfered " .. amount .. " coins to " .. reciver .. " successfully")
     -- Adding history for both reciver/sender
     GameStore.insertHistory(accountId, GameStore.HistoryTypes.HISTORY_TYPE_NONE, player:getName() .. " transfered you this amount.", amount)
@@ -609,12 +609,12 @@ GameStore.addPromotionToPlayer = function(player, promotion)
 end
 --==Player==--
 function Player.getCoinsBalance(self)
-    resultId = db.storeQuery("SELECT `premium_points` FROM `accounts` WHERE `id` = " .. self:getAccountId())
+    resultId = db.storeQuery("SELECT `coins` FROM `accounts` WHERE `id` = " .. self:getAccountId())
     if not resultId then return 0 end
-    return result.getDataInt(resultId, "premium_points")
+    return result.getDataInt(resultId, "coins")
 end
 function Player.setCoinsBalance(self, coins)
-    db.asyncQuery("UPDATE `accounts` SET `premium_points` = " .. coins .. " WHERE `id` = " .. self:getAccountId())
+    db.asyncQuery("UPDATE `accounts` SET `coins` = " .. coins .. " WHERE `id` = " .. self:getAccountId())
     return true
 end
 function Player.canRemoveCoins(self, coins)
