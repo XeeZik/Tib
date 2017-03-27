@@ -160,7 +160,7 @@ elseif Game.getStorageValue(GlobalStorage.FuryGates, (9711)) == 2 then -- for ab
       end
      
    
-        player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'OTXServer Global by Malucooo http://www.github.com/malucooo/otxserver-testing/')
+        player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'OTXServer Global by Malucooo http://www.github.com/malucooo/otxserver-new/')
         player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, '[BONUS EXP] Command for check !exp.')
         player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, '[GUILD LEADER COMMAND] Will change all outfits from members !outfit.')
    
