@@ -13,7 +13,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			toPosition:sendMagicEffect(3)
 		else
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'You ransack the pile but fail to find any useful parts.')
-			item:transform(item.itemid + 2)
+			item:transform(11253)
 			addEvent(revertBone, 120000, toPosition, 11253, 22513)
 			toPosition:sendMagicEffect(3)
 			doSummonCreature("Guzzlemaw", toPosition)
