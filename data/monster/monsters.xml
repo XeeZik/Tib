@@ -898,6 +898,7 @@
 	<monster name="Renegade Quara Hydromancer" file="quaras/renegade quara hydromancer.xml" />
 	<monster name="Quara Hydromancer" file="quaras/quara hydromancer.xml" />
 	<monster name="Quara Hydromancer Scout" file="quaras/quara hydromancer scout.xml" />
+	<monster name="Renegade Quara Mantassin" file="quaras/renegade quara mantassin.xml" />
 	<monster name="Quara Mantassin" file="quaras/quara mantassin.xml" />
 	<monster name="Quara Mantassin Scout" file="quaras/quara mantassin scout.xml" />
 	<monster name="Renegade Quara Pincher" file="quaras/renegade quara pincher.xml" />
