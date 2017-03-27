@@ -1,5 +1,6 @@
 local foods = {
 	[2328] = {6, 'Gulp.'}, -- egg
+	[5678] = {6, 'Gulp.'}, -- egg
 	[2362] = {5, 'Crunch.'}, -- carrot
 	[2666] = {15, 'Munch.'}, -- meat	
 	[23516] = {15, 'Burp.'}, -- Bottle of Glooth Wine

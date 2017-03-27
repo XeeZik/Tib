@@ -769,6 +769,7 @@
 	<action itemid="23515" script="other/food.lua" />
 	<action itemid="23514" script="other/food.lua" />
 	<action itemid="24841" script="other/food.lua" />
+	<action itemid="5678" script="other/food.lua" />
 	<action itemid="9999" script="other/blessedsteak.lua" />
 
 	<!-- Spellbooks -->

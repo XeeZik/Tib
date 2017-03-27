@@ -482,7 +482,7 @@ function onUseMachete(player, item, fromPosition, target, toPosition, isHotkey)
 		return true
 	end
 
-	return DestroyItem(player, item, fromPosition, target, toPosition, isHotkey)
+	return destroyItem(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 function onUseCrowbar(player, item, fromPosition, target, toPosition, isHotkey)
@@ -637,7 +637,7 @@ function onUseScythe(player, item, fromPosition, target, toPosition, isHotkey)
 		return true
 	end
 
-	return DestroyItem(player, item, fromPosition, target, toPosition, isHotkey)
+	return destroyItem(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 function onUseKitchenKnife(player, item, fromPosition, target, toPosition, isHotkey)
