@@ -75,12 +75,11 @@ local config = {
 		[7444] = {value = 25000, newItem = 7445},
 		[7445] = {value = 25000, newItem = 7446},
 	},
-		-- Demon
-		[2916] = {value = 25000, newItem = 5906},
 
 		[5942] = {
-
-	-- Vampires
+		-- Demon
+		[2916] = {value = 25000, newItem = 5906},
+		-- Vampires
 		[2956] = {value = 25000, newItem = 5905},
 		[6006] = {value = 25000, newItem = 5905, after = 2957},
 		[8938] = {value = 25000, newItem = 5905},
