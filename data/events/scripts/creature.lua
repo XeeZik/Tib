@@ -102,8 +102,7 @@ end
 			end
 		end
 	end
-
-	return true
+ 
  if self:isPlayer() then
         if target and target:getName() == staminaBonus.target then
             local name = self:getName()
@@ -112,4 +111,6 @@ end
             end
         end
       end
+
+	return true
 end
