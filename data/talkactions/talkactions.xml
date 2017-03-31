@@ -77,7 +77,6 @@
 		
 	<talkaction words="!outfit" script="guild_outfit.lua"/> 
 	
-	<talkaction words="!frags" script="kills.lua" /> 
 	<talkaction words="!online" script="online.lua" />
 	<talkaction words="!guildpoints" separator=" " script="guildpoints.lua" />
 	<talkaction words="!serverinfo" script="serverinfo.lua" />
