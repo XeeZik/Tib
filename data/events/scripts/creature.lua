@@ -37,30 +37,6 @@ function Creature:onTargetCombat(target)
 	if not self then
 		return true
 	end
-
-	-- HERE TRAINER ONLINE
-local staminaBonus = {
-    target ='Training Monk',
-    period = 120000, -- Period in milliseconds
-    bonus = 1, -- gain stamina
-    events = {}
-}
- 
-local function addStamina(name)
-    local player = Player(name)
-    if not player then
-        staminaBonus.events[name] = nil
-    else
-        local target = player:getTarget()
-        if not target or target:getName() ~= staminaBonus.target then
-            staminaBonus.events[name] = nil
-        else
-            player:setStamina(player:getStamina() + staminaBonus.bonus)
-            staminaBonus.events[name] = addEvent(addStamina, staminaBonus.period, name)
-        end
-    end
-end
-
 	if target:isPlayer() then
 		if self:isMonster() then
 			local protectionStorage = target:getStorageValue(Storage.combatProtectionStorage)
@@ -102,15 +78,5 @@ end
 			end
 		end
 	end
- 
- if self:isPlayer() then
-        if target and target:getName() == staminaBonus.target then
-            local name = self:getName()
-            if not staminaBonus.events[name] then
-                staminaBonus.events[name] = addEvent(addStamina, staminaBonus.period, name)
-            end
-        end
-      end
-
-	return true
+ 	return true
 end
