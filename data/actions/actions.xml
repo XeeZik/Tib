@@ -220,9 +220,9 @@
 	<action itemid="13247" script="other/taming.lua" />
 	<action itemid="13291" script="other/taming.lua" />
 	<action itemid="13292" script="other/tinlizzard.lua" />
-	<action fromid="13293" script="other/taming.lua" />
-	<action fromid="13294" script="other/taming.lua" />
-	<action fromid="13295" script="other/taming.lua" />
+	<action itemid="13293" script="other/taming.lua" />
+	<action itemid="13294" script="other/taming.lua" />
+	<action itemid="13295" script="other/taming.lua" />
 	<action itemid="13298" script="other/taming.lua" />
 	<action itemid="13305" script="other/taming.lua" />
 	<action itemid="13307" script="other/taming.lua" />

@@ -11,7 +11,7 @@
 	
 	<raid name="Orc SamBPs" file="Special/OrcSamBPs.xml" interval2="300" margin="50" />
 	<raid name="Orc SamBP" file="Special/OrcSamBP.xml" interval2="300" margin="110" />	
-        <raid name="Draptor" file="Special/Draptor.xml" interval2="270" margin="10"/>
+    <raid name="Draptor" file="Special/Draptor.xml" interval2="270" margin="10"/>
 	<raid name="Midnight Panther" file="Special/Midnight Panther.xml" interval2="280" margin="20"/>
 	<raid name="Undead Cavebear" file="Special/Undead Cavebear.xml" interval2="230" margin="20"/>
 	<raid name="Titanica" file="Special/Titanica.xml" interval2="240" margin="20"/>		
@@ -61,7 +61,6 @@
 	<raid name="Dragons" file="normal/dragons.xml" interval2="500" margin="80" />
 	<raid name="Insetos" file="normal/Insetos.xml" interval2="500" margin="85" />
 	
-	<raid name="PiratesThais" file="normal/PiratesThais.xml" interval2="500" margin="60" />
 	<raid name="Quaras" file="normal/quaras.xml" interval2="500" margin="50" />
 	<raid name="Undead Army" file="normal/undead army.xml" interval2="500" margin="100" />
 	<raid name="Undead Darashia" file="normal/undead darashia.xml" interval2="500" margin="70" />
@@ -91,7 +90,7 @@
 	<raid name="BarbaSvar" file="new/barba_svar.xml" interval2="500" margin="80" />
 	<raid name="Beetles" file="new/beetles.xml" interval2="500" margin="70" />
 	<raid name="Cyclops" file="new/cyc.xml" interval2="500" margin="30" />
-	<!--<raid name="Gnarlhounds" file="new/gnarlhounds.xml" interval2="500" margin="20" />-->
+	<raid name="Gnarlhounds" file="new/gnarlhounds.xml" interval2="500" margin="20" />
 	<raid name="GoEdron" file="new/goblins_edron.xml" interval2="500" margin="90" />
 	<raid name="GoFemor" file="new/goblins_femor.xml" interval2="500" margin="70" />
 	<raid name="Hunters" file="new/hunters.xml" interval2="500" margin="65" />
