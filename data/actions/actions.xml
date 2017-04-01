@@ -129,10 +129,6 @@
 	<action uniqueid="9527" script="Novos/alavanca7.lua"/> <!-- Shulgrax -->
 	<action uniqueid="9528" script="Novos/alavanca8.lua"/> <!-- 	The Shatterer -->
 	<action uniqueid="9511" script="quests/oramond/darkTrail.lua"/>
-	<action itemid="23468" script="quests/oramond/juiceroots.lua"/>
-	<action itemid="23469" script="quests/oramond/juiceroots.lua"/>
-	<action itemid="23470" script="quests/oramond/juiceroots.lua"/>
-	<action itemid="23471" script="quests/oramond/juiceroots.lua"/>
 
 	<action itemid="23400" script="quests/oramond/gerador.lua"/>
 	<action itemid="23401" script="quests/oramond/gerador.lua"/>
