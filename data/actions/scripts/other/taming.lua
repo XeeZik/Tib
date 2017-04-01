@@ -36,17 +36,6 @@ local config = {
 		},
 		success = {sound = 'Grrrrrrr', text = 'You tamed the undead cavebear.'}
 	},
-	[13292]	= {
-		name = 'inoperative tin lizzard',
-		mountName = 'tin lizzard',
-		id = 8,
-		type = TYPE_ITEM,
-		chance = 40,
-		fail = {
-			{destroyObject = true, sound = 'Krr... kch.', text = 'The tin lizzard broke apart.'}
-		},
-		success = {sound = 'Krkrkrkrk', text = 'You wind up the tin lizzard.'}
-	},
 	[13293]	= {
 		name = 'midnight panther',
 		id = 5,
@@ -198,17 +187,6 @@ local config = {
 			{sound = '*wheeze*', text = 'The white deer sniffs and wheezes trying to withstand the taming.'}
 		},
 		success = {sound = '*bell*', text = 'You tamed the white deer.'}
-	},
-	[13938]	= {
-		name = 'inoperative uniwheel',
-		mountName = 'uniwheel',
-		id = 15,
-		type = TYPE_ITEM,
-		chance = 40,
-		fail = {
-			{broke = true, sound = 'Splosh!', text = 'It looks like most of the special oil this can was holding was spilt without any effect.'}
-		},
-		success = {sound = 'Vroooomratatatatatatat.', text = 'The strange wheel seems to vibrate and slowly starts turning continuously.'}
 	},
 	[13939]	= {
 		name = 'wild horse',
