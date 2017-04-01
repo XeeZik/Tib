@@ -79,14 +79,15 @@ mysqlUser = "root"
 mysqlPass = ""
 mysqlDatabase = "global"
 mysqlPort = 3306
+passwordType = "sha1"
 mysqlSock = ""
 
 -- Misc.
 allowChangeOutfit = true
-freePremium = false
+freePremium = true
 kickIdlePlayerAfterMinutes = 15
 maxMessageBuffer = 4
-emoteSpells = true
+emoteSpells = false
 classicEquipmentSlots = false
 allowWalkthrough = true
 coinPacketSize = 1500
@@ -95,9 +96,9 @@ coinImagesURL = "http://some.url/images/store/"
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml
 rateExp = 5
-rateSkill = 3
+rateSkill = 75
 rateLoot = 2
-rateMagic = 3
+rateMagic = 40
 rateSpawn = 1
 
 -- Monsters
