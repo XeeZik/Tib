@@ -31547,6 +31547,7 @@
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25959" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -31560,6 +31561,7 @@
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25959" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -31574,7 +31576,8 @@
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25959" />
 		<attribute key="duration" value="54000" />
-		<attribute key="showduration" value="1" />		
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	
@@ -31596,6 +31599,7 @@
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25879" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -31609,6 +31613,7 @@
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25879" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -31623,6 +31628,7 @@
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25879" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -31645,20 +31651,22 @@
 		<attribute key="skilllifeamount" value="5" />	
 		<attribute key="decayTo" value="25919" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
-	</item>	
+	</item>
 	<item id="25921" article="a" name="Blade of Remedy (heavily charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />
-	<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifechance" value="30" />
 		<attribute key="skilllifeamount" value="7" />	
 		<attribute key="decayTo" value="25919" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
-	</item>	
+	</item>
 	<item id="25922" article="a" name="Blade of Remedy (overcharged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="35" />
@@ -31670,6 +31678,7 @@
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25919" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -31693,6 +31702,7 @@
 		<attribute key="skillmanaamount" value="5" />	
 		<attribute key="decayTo" value="25963" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25965" article="a" name="Slayer of Carving (heavily charged)">
@@ -31706,6 +31716,7 @@
 		<attribute key="skillmanaamount" value="7" />	
 		<attribute key="decayTo" value="25963" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25966" article="a" name="Slayer of Carving (overcharged)">
@@ -31720,6 +31731,7 @@
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25963" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -31744,6 +31756,7 @@
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25880" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25900" article="a" name="Slayer of Mayhem (heavily charged)">
@@ -31757,6 +31770,7 @@
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25880" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25910" article="a" name="Slayer of Mayhem (overcharged)">
@@ -31771,7 +31785,8 @@
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25880" />
 		<attribute key="duration" value="54000" />
-		<attribute key="showduration" value="1" />		
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	
@@ -31794,6 +31809,7 @@
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25923" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25925" article="a" name="Slayer of Remedy (heavily charged)">
@@ -31807,6 +31823,7 @@
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25923" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25926" article="a" name="Slayer of Remedy (overcharged)">
@@ -31821,6 +31838,7 @@
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25923" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -31841,6 +31859,7 @@
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25967" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25969" article="a" name="Axe of Carving (heavily charged)">
@@ -31853,6 +31872,7 @@
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25967" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25970" article="a" name="Axe of Carving (overcharged)">
@@ -31866,6 +31886,7 @@
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25967" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -31888,6 +31909,7 @@
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25881" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25901" article="a" name="Axe of Mayhem (heavily charged)">
@@ -31900,6 +31922,7 @@
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25881" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25911" article="a" name="Axe of Mayhem (overcharged)">
@@ -31913,6 +31936,7 @@
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25881" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -31934,6 +31958,7 @@
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25927" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25929" article="a" name="Axe of Remedy (heavily charged)">
@@ -31946,6 +31971,7 @@
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25927" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25930" article="a" name="Axe of Remedy (overcharged)">
@@ -31959,6 +31985,7 @@
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25927" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -31983,6 +32010,7 @@
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25971" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25973" article="a" name="Chopper of Carving (heavily charged)">
@@ -31996,6 +32024,7 @@
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25971" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25974" article="a" name="Chopper of Carving (overcharged)">
@@ -32010,6 +32039,7 @@
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25971" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32034,6 +32064,7 @@
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25882" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25902" article="a" name="Chopper of Mayhem (heavily charged)">
@@ -32047,6 +32078,7 @@
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25882" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25912" article="a" name="Chopper of Mayhem (overcharged)">
@@ -32061,6 +32093,7 @@
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25882" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32084,6 +32117,7 @@
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25931" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25933" article="a" name="Chopper of Remedy (heavily charged)">
@@ -32097,6 +32131,7 @@
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25931" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25934" article="a" name="Chopper of Remedy (overcharged)">
@@ -32111,6 +32146,7 @@
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25931" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32135,7 +32171,8 @@
 		<attribute key="skillmanaamount" value="5" />	
 		<attribute key="decayTo" value="25979" />
 		<attribute key="duration" value="72000" />
-		<attribute key="showduration" value="1" />		
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25981" article="a" name="Hammer of Carving (heavily charged)">
 		<attribute key="weight" value="7000" />
@@ -32148,6 +32185,7 @@
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25979" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25982" article="a" name="Hammer of Carving (overcharged)">
@@ -32162,7 +32200,8 @@
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25979" />
 		<attribute key="duration" value="54000" />
-		<attribute key="showduration" value="1" />		
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	
@@ -32185,6 +32224,7 @@
 		<attribute key="skillmanaamount" value="20" />
 		<attribute key="decayTo" value="25884" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25904" article="a" name="Hammer of Mayhem (heavily charged)">
@@ -32198,6 +32238,7 @@
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25884" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25914" article="a" name="Hammer of Mayhem (overcharged)">
@@ -32212,6 +32253,7 @@
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25884" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32236,7 +32278,8 @@
 		<attribute key="skillmanaamount" value="5" />	
 		<attribute key="decayTo" value="25939" />
 		<attribute key="duration" value="72000" />
-		<attribute key="showduration" value="1" />		
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25941" article="a" name="Hammer of Remedy (heavily charged)">
 		<attribute key="weight" value="7000" />
@@ -32249,6 +32292,7 @@
 		<attribute key="skilllifeamount" value="7" />	
 		<attribute key="decayTo" value="25939" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25942" article="a" name="Hammer of Remedy (overcharged)">
@@ -32263,6 +32307,7 @@
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25939" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32284,6 +32329,7 @@
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25975" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25977" article="a" name="Mace of Carving (heavily charged)">
@@ -32296,6 +32342,7 @@
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25975" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25978" article="a" name="Mace of Carving (overcharged)">
@@ -32309,7 +32356,8 @@
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25975" />
 		<attribute key="duration" value="54000" />
-		<attribute key="showduration" value="1" />		
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	
@@ -32330,6 +32378,7 @@
 		<attribute key="skillcriticaldamage" value="20" />	
 		<attribute key="decayTo" value="25883" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25903" article="a" name="Mace of Mayhem (heavily charged)">
@@ -32342,6 +32391,7 @@
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25883" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25913" article="a" name="Mace of Mayhem (overcharged)">
@@ -32355,7 +32405,8 @@
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25883" />
 		<attribute key="duration" value="54000" />
-		<attribute key="showduration" value="1" />		
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	
@@ -32376,6 +32427,7 @@
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25935" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25937" article="a" name="Mace of Remedy (heavily charged)">
@@ -32388,7 +32440,8 @@
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25935" />
 		<attribute key="duration" value="36000" />
-		<attribute key="showduration" value="1" />		
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25938" article="a" name="Mace of Remedy (overcharged)">
 		<attribute key="weight" value="5000" />
@@ -32401,8 +32454,9 @@
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25935" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
-	</item>	
+	</item>
 	
 	
 	<item id="25995" article="a" name="Rod of Carving">
@@ -32422,6 +32476,7 @@
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25995" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25997" article="a" name="Rod of Carving (heavily charged)">
@@ -32434,6 +32489,7 @@
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25995" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25998" article="a" name="Rod of Carving (overcharged)">
@@ -32447,6 +32503,7 @@
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25995" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32467,6 +32524,7 @@
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25888" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25908" article="a" name="Rod of Mayhem (heavily charged)">
@@ -32479,6 +32537,7 @@
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25888" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25918" article="a" name="Rod of Mayhem (overcharged)">
@@ -32492,6 +32551,7 @@
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25888" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32513,6 +32573,7 @@
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25955" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25957" article="a" name="Rod of Remedy (heavily charged)">
@@ -32525,6 +32586,7 @@
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25955" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25958" article="a" name="Rod of Remedy (overcharged)">
@@ -32538,6 +32600,7 @@
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25955" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32559,6 +32622,7 @@
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25991" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25993" article="a" name="Wand of Carving (heavily charged)">
@@ -32571,6 +32635,7 @@
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25991" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25994" article="a" name="Wand of Carving (overcharged)">
@@ -32584,6 +32649,7 @@
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25991" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32605,6 +32671,7 @@
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25887" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25907" article="a" name="Wand of Mayhem (heavily charged)">
@@ -32617,6 +32684,7 @@
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25887" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25917" article="a" name="Wand of Mayhem (overcharged)">
@@ -32630,6 +32698,7 @@
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25887" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32651,6 +32720,7 @@
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25951" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25953" article="a" name="Wand of Remedy (heavily charged)">
@@ -32663,6 +32733,7 @@
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25951" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25954" article="a" name="Wand of Remedy (overcharged)">
@@ -32676,7 +32747,8 @@
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="XXX" />
 		<attribute key="duration" value="25951" />
-		<attribute key="showduration" value="1" />		
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	
@@ -32704,6 +32776,7 @@
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25983" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25985" article="a" name="Bow of Carving (heavily charged)">
@@ -32719,6 +32792,7 @@
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25983" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25986" article="a" name="Bow of Carving (overcharged)">
@@ -32735,6 +32809,7 @@
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25983" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32762,6 +32837,7 @@
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25885" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25906" article="a" name="Bow of Mayhem (heavily charged)">
@@ -32777,6 +32853,7 @@
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25885" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25915" article="a" name="Bow of Mayhem (overcharged)">
@@ -32793,6 +32870,7 @@
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25885" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32819,6 +32897,7 @@
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25943" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25945" article="a" name="Bow of Remedy (heavily charged)">
@@ -32834,6 +32913,7 @@
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25943" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25946" article="a" name="Bow of Remedy (overcharged)">
@@ -32850,6 +32930,7 @@
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25943" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32877,6 +32958,7 @@
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25987" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25989" article="a" name="Crossbow of Carving (heavily charged)">
@@ -32892,6 +32974,7 @@
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25987" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25990" article="a" name="Crossbow of Carving (overcharged)">
@@ -32908,6 +32991,7 @@
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25987" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32935,6 +33019,7 @@
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25886" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25905" article="a" name="Crossbow of Mayhem (heavily charged)">
@@ -32950,6 +33035,7 @@
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25886" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25916" article="a" name="Crossbow of Mayhem (overcharged)">
@@ -32966,6 +33052,7 @@
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25886" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
@@ -32993,6 +33080,7 @@
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25947" />
 		<attribute key="duration" value="72000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25949" article="a" name="Crossbow of Remedy (heavily charged)">
@@ -33008,6 +33096,7 @@
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25947" />
 		<attribute key="duration" value="36000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<item id="25950" article="a" name="Crossbow of Remedy (overcharged)">
@@ -33024,6 +33113,7 @@
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25947" />
 		<attribute key="duration" value="54000" />
+		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<!-- 10.94 FIM -->
