@@ -1554,11 +1554,545 @@
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
 	</movevent>
-	<!-- 10.94 -->
+	<!-- 10.94 goldtokenitens -->
 	<movevent event="DeEquip" itemid="25962" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="25962" slot="hand" level="250" function="onEquipItem" >
 	<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- wand of mayhem -->
+	<movevent event="DeEquip" itemid="25887" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25887" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" showInDescription="0" />
+	</movevent>	
+	<!-- wand of mayhem (charged)-->	
+	<movevent event="DeEquip" itemid="26318" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26318" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" showInDescription="0" />
+	</movevent>
+	<!-- wand of mayhem (heavily charged)-->	
+	<movevent event="DeEquip" itemid="26319" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26319" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" showInDescription="0" />
+	</movevent>
+	<!-- rod of mayhem -->	
+	<movevent event="DeEquip" itemid="25888" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25888" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Druid" />
+		<vocation name="Elder Druid" showInDescription="0" />
+	</movevent>
+	<!-- rod of mayhem (charged)-->	
+	<movevent event="DeEquip" itemid="26321" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26321" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Druid" />
+		<vocation name="Elder Druid" showInDescription="0" />
+	</movevent>
+	<!-- rod of mayhem (heavily charged)-->	
+	<movevent event="DeEquip" itemid="26322" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26322" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Druid" />
+		<vocation name="Elder Druid" showInDescription="0" />
+	</movevent>	
+	<!-- blade of mayhem -->		
+	<movevent event="DeEquip" itemid="25879" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25879" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>		
+	<!-- blade of mayhem (charged) -->	
+	<movevent event="DeEquip" itemid="26233" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26233" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- blade of mayhem (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26234" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26234" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- slayer of mayhem -->	
+	<movevent event="DeEquip" itemid="25880" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25880" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- slayer of mayhem (charged) -->	
+	<movevent event="DeEquip" itemid="26236" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26236" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- slayer of mayhem (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26237" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26237" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- axe of mayhem -->	
+	<movevent event="DeEquip" itemid="25881" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25881" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- axe of mayhem (charged) -->	
+	<movevent event="DeEquip" itemid="26239" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26239" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- axe of mayhem (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26240" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26240" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- chopper of mayhem -->	
+	<movevent event="DeEquip" itemid="25882" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25882" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- chopper of mayhem (charged) -->	
+	<movevent event="DeEquip" itemid="26242" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26242" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- chopper of mayhem (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26243" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26243" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- club of mayhem -->	
+	<movevent event="DeEquip" itemid="25883" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25883" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- club of mayhem (charged) -->	
+	<movevent event="DeEquip" itemid="26245" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26245" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- club of mayhem (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26246" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26246" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- hammer of mayhem -->	
+	<movevent event="DeEquip" itemid="25884" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25884" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- hammer of mayhem (charged) -->	
+	<movevent event="DeEquip" itemid="26248" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26248" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- hammer of mayhem (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26249" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26249" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- bow of mayhem -->	
+	<movevent event="DeEquip" itemid="25885" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25885" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- bow of mayhem (charged) -->	
+	<movevent event="DeEquip" itemid="26251" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26251" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- bow of mayhem (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26253" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26253" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- crossbow of mayhem -->	
+	<movevent event="DeEquip" itemid="25886" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25886" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- crossbow of mayhem (charged) -->	
+	<movevent event="DeEquip" itemid="26264" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26264" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- crossbow of mayhem (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26266" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26266" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- wand of carving -->	
+	<movevent event="DeEquip" itemid="25991" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25991" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" showInDescription="0" />
+	</movevent>
+	<!-- wand of carving (charged) -->	
+	<movevent event="DeEquip" itemid="26312" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26312" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" showInDescription="0" />
+	</movevent>
+	<!-- wand of carving (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26313" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26313" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" showInDescription="0" />
+	</movevent>
+	<!-- rod of carving -->	
+	<movevent event="DeEquip" itemid="25995" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25995" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Druid" />
+		<vocation name="Elder Druid" showInDescription="0" />
+	</movevent>
+	<!-- rod of carving (charged) -->	
+	<movevent event="DeEquip" itemid="26315" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26315" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Druid" />
+		<vocation name="Elder Druid" showInDescription="0" />
+	</movevent>
+	<!-- rod of carving (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26316" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26316" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Druid" />
+		<vocation name="Elder Driuid" showInDescription="0" />
+	</movevent>
+	<!-- sword of carving -->	
+	<movevent event="DeEquip" itemid="25959" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25959" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>	
+		<!-- sword of carving (charged) -->	
+	<movevent event="DeEquip" itemid="26261" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26261" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>	
+		<!-- sword of carving (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26265" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26265" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- slayer of carving -->	
+	<movevent event="DeEquip" itemid="25963" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25963" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>		
+		<!-- slayer of carving (charged) -->	
+	<movevent event="DeEquip" itemid="26272" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26272" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>	
+		<!-- slayer of carving (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26274" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26274" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- axe of carving -->	
+	<movevent event="DeEquip" itemid="25967" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25967" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- axe of carving *charged -->	
+	<movevent event="DeEquip" itemid="26280" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26280" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- axe of carving (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26282" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26282" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- chopper of carving -->	
+	<movevent event="DeEquip" itemid="25971" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25971" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- chopper of carving (charged) -->	
+	<movevent event="DeEquip" itemid="26287" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26287" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- chopper of carving (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26290" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26290" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- club of carving -->	
+	<movevent event="DeEquip" itemid="25975" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25975" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>	
+	<!-- club of carving (charged) -->	
+	<movevent event="DeEquip" itemid="26296" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26296" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>	
+	<!-- club of carving (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26298" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26298" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- hammer of carving -->	
+	<movevent event="DeEquip" itemid="25979" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25979" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- hammer of carving (charged) -->	
+	<movevent event="DeEquip" itemid="26303" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26303" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- hammer of carving (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26304" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26304" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- bow of carving -->	
+	<movevent event="DeEquip" itemid="25983" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25983" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- bow of carving (charged) -->	
+	<movevent event="DeEquip" itemid="26306" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26306" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- bow of carving (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26307" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26307" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- crossbow of carving -->	
+	<movevent event="DeEquip" itemid="25987" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25987" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- crossbow of carving (charged) -->	
+	<movevent event="DeEquip" itemid="26309" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26309" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- crossbow of carving (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26310" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26310" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- wand of remedy -->	
+	<movevent event="DeEquip" itemid="25951" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25951" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" showInDescription="0" />
+	</movevent>
+	<!-- wand of remedy (charged) -->	
+	<movevent event="DeEquip" itemid="26294" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26294" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" showInDescription="0" />
+	</movevent>
+	<!-- wand of remedy (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26295" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26295" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" showInDescription="0" />
+	</movevent>
+	<!-- rod of remedy -->	
+	<movevent event="DeEquip" itemid="25955" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25955" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Druid" />
+		<vocation name="Elder Druid" showInDescription="0" />
+	</movevent>
+	<!-- rod of remedy (charged) -->	
+	<movevent event="DeEquip" itemid="26299" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26299" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Druid" />
+		<vocation name="Elder Druid" showInDescription="0" />
+	</movevent>
+	<!-- rod of remedy (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26301" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26301" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Druid" />
+		<vocation name="Elder Druid" showInDescription="0" />
+	</movevent>
+	<!-- sword of remedy -->	
+	<movevent event="DeEquip" itemid="25919" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25919" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- sword of remedy (charged) -->	
+	<movevent event="DeEquip" itemid="26252" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26252" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- sword of remedy (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26255" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26255" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- slayer of remedy -->	
+	<movevent event="DeEquip" itemid="25923" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25923" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- slayer of remedy (charged) -->	
+	<movevent event="DeEquip" itemid="26257" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26257" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>	
+	<!-- slayer of remedy (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26258" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26258" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- axe of remedy -->	
+	<movevent event="DeEquip" itemid="25927" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25927" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- axe of remedy (charged) -->	
+	<movevent event="DeEquip" itemid="26262" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26262" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- axe of remedy (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26263" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26263" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- chopper of remedy -->	
+	<movevent event="DeEquip" itemid="25931" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25931" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- chopper of remedy (charged) -->	
+	<movevent event="DeEquip" itemid="26269" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26269" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- club of remedy -->	
+	<movevent event="DeEquip" itemid="25935" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25935" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- club of remedy (charged) -->	
+	<movevent event="DeEquip" itemid="26275" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26275" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- club of remedy (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26276" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26276" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- hammer of remedy -->	
+	<movevent event="DeEquip" itemid="25939" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25939" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- hammer of remedy (charged) -->	
+	<movevent event="DeEquip" itemid="26279" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26279" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- hammer of remedy (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26281" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26281" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
+	<!-- bow of remedy  -->	
+	<movevent event="DeEquip" itemid="25943" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25943" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- bow of remedy (charged) -->	
+	<movevent event="DeEquip" itemid="26285" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26285" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- bow of remedy (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26286" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26286" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- crossbow of remedy -->	
+	<movevent event="DeEquip" itemid="25947" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="25947" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- crossbow of remedy (charged) -->	
+	<movevent event="DeEquip" itemid="26289" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26289" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+	</movevent>
+	<!-- crossbow of remedy (heavily charged) -->	
+	<movevent event="DeEquip" itemid="26291" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26291" slot="hand" level="250" function="onEquipItem" >
+	<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
 	</movevent>
 	
 	<movevent event="DeEquip" itemid="25909" slot="hand" function="onDeEquipItem" />
@@ -1720,11 +2254,6 @@
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
 	
-	<movevent event="DeEquip" itemid="25960" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="25960" slot="hand" level="150" function="onEquipItem" >
-	<vocation name="Knight" />
-		<vocation name="Elite Knight" showInDescription="0" />
-	</movevent>
 	
 	<movevent event="DeEquip" itemid="25961" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="25961" slot="hand" level="200" function="onEquipItem" >
@@ -2035,101 +2564,119 @@
 	<!-- 10.94 FIM -->
 	
 	<!-- VENDA 10.94 NO SITE -->
+	<!-- crossbow of mayhem (overcharged) -->
 	<movevent event="DeEquip" itemid="26268" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26268" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</movevent>	
 
+	<!-- crossbow of carving (overcharged) -->
 	<movevent event="DeEquip" itemid="26311" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26311" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
-	</movevent>	
+	</movevent>
+	<!-- bow of carving(overcharged) -->	
 	<movevent event="DeEquip" itemid="26308" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26308" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
-	</movevent>	
+	</movevent>
+	<!-- bow of remedy (overcharged) -->	
 	<movevent event="DeEquip" itemid="26288" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26288" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
-	</movevent>	
+	</movevent>
+	<!-- crossbow of remedy (overcharged) -->	
 	<movevent event="DeEquip" itemid="26292" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26292" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</movevent>	
-	
+
+	<!-- bow of mayhem (overcharged) -->	
 	<movevent event="DeEquip" itemid="26254" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26254" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
-	</movevent>	
+	</movevent>
+    <!-- wand of mayhem (overcharged)-->	
 	<movevent event="DeEquip" itemid="26320" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26320" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
-	</movevent>	
+	</movevent>
+    <!-- wand of carving (overcharged)-->	
 	<movevent event="DeEquip" itemid="26314" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26314" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
-	</movevent>	
+	</movevent>
+    <!-- rod of carving (overcharged)-->	
 	<movevent event="DeEquip" itemid="26317" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26317" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
 	</movevent>	
-	
+
+	<!-- rod of remedy (overcharged) -->	
 	<movevent event="DeEquip" itemid="26302" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26302" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
-	</movevent>	
+	</movevent>
+	<!-- wand of remedy (overcharged) -->	
 	<movevent event="DeEquip" itemid="26297" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26297" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
 	</movevent>		
-	
+	<!-- rod of mayhem (overcharged)-->	
 	<movevent event="DeEquip" itemid="26323" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26323" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
-	</movevent>	
+	</movevent>
+	<!-- club of mayhem (overcharged) -->	
 	<movevent event="DeEquip" itemid="26247" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26247" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>	
-	
+
+	<!-- club of carving (overcharged) -->	
 	<movevent event="DeEquip" itemid="26300" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26300" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
+	<!-- hammer of carving (overcharged) -->
 	<movevent event="DeEquip" itemid="26305" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26305" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
+	<!-- chopper of carvin (overcharged) -->	
 	<movevent event="DeEquip" itemid="26293" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26293" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
+	<!-- axe of carvin (overcharged) -->
 	<movevent event="DeEquip" itemid="26284" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26284" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
+	<!-- slayer of carvin (overcharged) -->
 	<movevent event="DeEquip" itemid="26277" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26277" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
+	<!-- sword of carvin (overcharged) -->
 	<movevent event="DeEquip" itemid="26270" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26270" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
@@ -2137,32 +2684,38 @@
 	</movevent>
 		
 	
-	
+
+	<!-- chopper of remedy (overcharged) -->	
 	<movevent event="DeEquip" itemid="26273" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26273" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
+	<!-- sword of remedy (overcharged) -->	
 	<movevent event="DeEquip" itemid="26256" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26256" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
+	<!-- slayer of remedy (overcharged) -->
 	<movevent event="DeEquip" itemid="26260" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26260" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
+	<!-- mace of remedy (overcharged) -->	
 	<movevent event="DeEquip" itemid="26278" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26278" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
+	<!-- hammer of remedy (overcharged) -->
 	<movevent event="DeEquip" itemid="26283" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26283" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
+	<!-- axe of remedy (overcharged) -->
 	<movevent event="DeEquip" itemid="26267" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26267" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
@@ -2171,27 +2724,31 @@
 		
 	
 	
-	
+	<!-- hammer of mayhem (overcharged) -->
 	<movevent event="DeEquip" itemid="26250" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26250" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</movevent>	
+	</movevent>
+	<!-- chopper of mayhem (overcharged) -->
 	<movevent event="DeEquip" itemid="26244" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26244" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</movevent>	
+	</movevent>
+	<!-- axe of mayhem (overcharged) -->	
 	<movevent event="DeEquip" itemid="26241" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26241" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</movevent>	
+	</movevent>
+	<!-- blade of mayhem (overcharged) -->	
 	<movevent event="DeEquip" itemid="26235" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26235" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</movevent>	
+	</movevent>
+	<!-- slayer of mayhem (overcharged) -->	
 	<movevent event="DeEquip" itemid="26238" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26238" slot="hand" level="200" function="onEquipItem" >
 		<vocation name="Knight" />
