@@ -48,8 +48,8 @@
 		<voice sentence="SNUFFLE" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="242" chance="97000" />	<!-- gold coin -->		
-		<item id="2152" countmax="5" chance="18200" />				<!-- platinum -->		
+		<item id="2148" countmax="100" chance="97000" />	<!-- gold coin -->		
+		<item id="2152" countmax="4" chance="18200" />				<!-- platinum -->		
 		<item id="2789" chance="2000" />				<!-- Brown Mushroom -->		
 		<item id="8473" chance="2210" />					<!-- Ultimate Health Potion -->			
 		<item id="7588" chance="1200" />					<!--  Strong Health Potion -->		

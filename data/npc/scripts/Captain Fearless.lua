@@ -18,17 +18,17 @@ local function addTravelKeyword(keyword, cost, destination)
 		travelKeyword:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, text = 'We would like to serve you some time.', reset = true})
 end
 
-addTravelKeyword('thais', 0, Position(32310, 32210, 6))
-addTravelKeyword('krailos', 0, Position(33493, 31712, 6)) -- {x = 33493, y = 31712, z = 6}
-addTravelKeyword('carlin', 0, Position(32387, 31820, 6))
-addTravelKeyword('gray island', 0, Position(33196, 31984, 7))
-addTravelKeyword('ab\'dendriel', 0, Position(32734, 31668, 6))
-addTravelKeyword('edron', 0, Position(33173, 31764, 6))
-addTravelKeyword('port hope', 0, Position(32527, 32784, 6))
-addTravelKeyword('svargrond', 0, Position(32341, 31108, 6))
-addTravelKeyword('liberty bay', 0, Position(32285, 32892, 6))
-addTravelKeyword('yalahar', 0, Position(32816, 31272, 6))
-addTravelKeyword('ankrahmun', 0, Position(33092, 32883, 6))
+addTravelKeyword('thais', 170, Position(32310, 32210, 6))
+addTravelKeyword('krailos', 185, Position(33493, 31712, 6)) -- {x = 33493, y = 31712, z = 6}
+addTravelKeyword('carlin', 130, Position(32387, 31820, 6))
+addTravelKeyword('gray island', 150, Position(33196, 31984, 7))
+addTravelKeyword('ab\'dendriel', 90, Position(32734, 31668, 6))
+addTravelKeyword('edron', 40, Position(33173, 31764, 6))
+addTravelKeyword('port hope', 160, Position(32527, 32784, 6))
+addTravelKeyword('svargrond', 150, Position(32341, 31108, 6))
+addTravelKeyword('liberty bay', 180, Position(32285, 32892, 6))
+addTravelKeyword('yalahar', 185, Position(32816, 31272, 6))
+addTravelKeyword('ankrahmun', 150, Position(33092, 32883, 6))
 
 -- Darashia
 local travelNode = keywordHandler:addKeyword({'darashia'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you seek a passage to Darashia for |TRAVELCOST|?', cost = 60, discount = 'postman'})

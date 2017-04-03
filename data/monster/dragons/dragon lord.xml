@@ -54,9 +54,9 @@
 		<item id="2148" countmax="45" chance="33750" /><!-- gold coin -->
 		<item id="1976" chance="9000" /><!-- gemmed book -->
 		<item id="2672" countmax="5" chance="80000" /><!-- dragon ham -->
-		<item id="7399" chance="280" /><!-- dragon lord trophy -->
+		<item id="7399" chance="100" /><!-- dragon lord trophy -->
 		<item id="2167" chance="5250" /><!-- energy ring -->
-		<item id="2392" chance="990" /><!-- fire sword -->
+		<item id="2392" chance="690" /><!-- fire sword -->
 		<item id="2033" chance="3190" /><!-- golden mug -->
 		<item id="2796" chance="12000" /><!-- green mushroom -->
 		<item id="2177" chance="980" /><!-- life crystal -->
@@ -68,8 +68,8 @@
 		<item id="2146" chance="5300" /><!-- small sapphire -->
 		<item id="2479" chance="960" /><!-- strange helmet -->
 		<item id="7588" chance="970" /><!-- strong health potion -->
-		<item id="2528" chance="950" /><!-- tower shield -->
-		<item id="7402" chance="500" /><!-- dragon slayer -->
-		<item id="2492" chance="490" /><!-- dragon scale mail -->
+		<item id="2528" chance="550" /><!-- tower shield -->
+		<item id="7402" chance="100" /><!-- dragon slayer -->
+		<item id="2492" chance="390" /><!-- dragon scale mail -->
 	</loot>
 </monster>

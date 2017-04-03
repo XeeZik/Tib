@@ -43,5 +43,6 @@
 		<item id="20126" chance="537" /><!-- leather harness -->
 		<item id="20098" chance="518" /><!-- cheesy figurine -->
 		<item id="20090" chance="492" /><!-- spike shield -->
+		<item id="20105" chance="12" /><!-- rat god doll -->
 	</loot>
 </monster>

@@ -44,7 +44,6 @@
 		<item id="2787" countmax="2" chance="55000" /><!-- white mushroom -->
 		<item id="2483" chance="9200" /><!-- scale armor -->
 		<item id="2387" chance="600" /><!-- double axe -->
-		<item id="2459" chance="250" /><!-- iron helmet -->
 		<item id="2208" chance="190" /><!-- axe ring -->
 		<item id="13757" chance="280" /><!-- coal -->
 	</loot>

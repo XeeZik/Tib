@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
+<event type="think" name="Gaz'haragoth heal" script="bosses/gaz'haragoth heal.lua"/>
 <!-- Roshamuul-->
 <event type="kill" name="lowerRoshamuul" script="lowerRoshamuul.lua"/>
 
@@ -143,4 +144,5 @@
 	<event type="advance" name="AdvanceSave" script="others/advance_save.lua" />
 	<event type="death" name="WhiteDeerDeath" script="others/whitedeer.lua" />
 	<event type="death" name="WhiteDeerScoutsDeath" script="others/whitedeer_scouts.lua" />
+		
 </creaturescripts>

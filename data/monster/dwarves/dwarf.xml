@@ -38,7 +38,7 @@
 		<item id="2597" chance="8000" /><!-- letter -->
 		<item id="2553" chance="10000" /><!-- pick -->
 		<item id="2484" chance="8000" /><!-- studded armor -->
-		<item id="5880" chance="700" /><!-- iron ore -->
-		<item id="2213" chance="100" /><!-- dwarven ring -->
+		<item id="5880" chance="100" /><!-- iron ore -->
+		<item id="2213" chance="300" /><!-- dwarven ring -->
 	</loot>
 </monster>

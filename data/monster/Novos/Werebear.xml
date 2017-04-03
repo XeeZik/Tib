@@ -49,7 +49,7 @@
 		<voice sentence="GRRR" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="242" chance="97000" />	<!-- gold coin -->		
+		<item id="2148" countmax="124" chance="97000" />	<!-- gold coin -->		
 		<item id="2152" countmax="5" chance="18200" />				<!-- platinum -->	
         <item id="7591" countmax="2" chance="1200" />					<!--  great Health Potion -->
         <item id="8473" chance="2210" />					<!-- Ultimate Health Potion -->	

@@ -63,7 +63,7 @@
 		<voice sentence="Come to me my children!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="139" chance="100000" />	<!-- gold coin -->
+		<item id="2148" countmax="137" chance="100000" />	<!-- gold coin -->
 		<item id="2152" chance="19720" />					<!-- platinum coin -->
 		<item id="2175" chance="10000" />					<!-- spellbook -->
 		<item id="7589" chance="7500" />						<!-- strong mana potion -->
@@ -80,7 +80,7 @@
 		<item id="2535" chance="350" />						<!-- castle shield -->
 		<item id="2178" chance="350" />						<!-- mind stone -->
 		<item id="7893" chance="200" />						<!-- lightning boots -->
-		<item id="2656" chance="150" />						<!-- blue robe -->
-		<item id="13291" chance="100" />						<!-- maximila maximus -->
+		<item id="2656" chance="75" />						<!-- blue robe -->
+		<item id="13291" chance="50" />						<!-- maximila maximus -->
 	</loot>
 </monster>

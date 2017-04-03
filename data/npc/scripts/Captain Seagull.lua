@@ -14,12 +14,12 @@ local function addTravelKeyword(keyword, cost, destination)
 		travelKeyword:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, text = 'We would like to serve you some time.', reset = true})
 end
 
-addTravelKeyword('thais', 0, Position(32310, 32210, 6))
-addTravelKeyword('carlin', 0, Position(32387, 31820, 6))
-addTravelKeyword('gray island', 0, Position(33196, 31984, 7))
-addTravelKeyword('edron', 0, Position(33175, 31764, 6))
-addTravelKeyword('venore', 0, Position(32954, 32022, 6))
-addTravelKeyword('yalahar', 0, Position(32816, 31272, 6))
+addTravelKeyword('thais', 130, Position(32310, 32210, 6))
+addTravelKeyword('carlin', 80, Position(32387, 31820, 6))
+addTravelKeyword('gray island', 150, Position(33196, 31984, 7))
+addTravelKeyword('edron', 70, Position(33175, 31764, 6))
+addTravelKeyword('venore', 90, Position(32954, 32022, 6))
+addTravelKeyword('yalahar', 160, Position(32816, 31272, 6))
 
 -- Kick
 keywordHandler:addKeyword({'kick'}, StdModule.kick, {npcHandler = npcHandler, destination = {Position(32724, 31669, 6), Position(32726, 31665, 6)}})

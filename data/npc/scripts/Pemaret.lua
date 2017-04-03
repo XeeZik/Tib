@@ -40,7 +40,7 @@ local function addTravelKeyword(keyword, text, cost, destination)
 		travelKeyword:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, text = 'Maybe later.', reset = true})
 end
 
-addTravelKeyword('edron', 'Do you want to get to Edron for |TRAVELCOST|?', 0, Position(33176, 31764, 6))
+addTravelKeyword('edron', 'Do you want to get to Edron for |TRAVELCOST|?', 20, Position(33176, 31764, 6))
 addTravelKeyword('eremo', 'Oh, you know the good old sage Eremo. I can bring you to his little island. Do you want me to do that?', 0, Position(33314, 31883, 7))
 
 -- Kick

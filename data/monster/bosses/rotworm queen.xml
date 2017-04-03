@@ -20,7 +20,7 @@
 	</attacks>
 	<defenses armor="10" defense="15" />
 	<loot>
-		<item id="2148" countmax="47" chance="100000" /><!-- gold coin -->
+		<item id="2148" countmax="86" chance="100000" /><!-- gold coin -->
 		<item id="8971" chance="3333" /><!-- gland -->
 		<item id="3976" countmax="45" chance="20000" /><!-- worm -->
 	</loot>

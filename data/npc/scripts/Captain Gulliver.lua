@@ -17,8 +17,8 @@ local function addTravelKeyword(keyword, cost, destination, action)
 		travelKeyword:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, text = 'We would like to serve you some time.', reset = true})
 end
 
-addTravelKeyword('thais', 0, Position(32311, 32210, 6))
-addTravelKeyword('krailos', 0, Position(33493, 31712, 6))
+addTravelKeyword('thais', 150, Position(32311, 32210, 6))
+addTravelKeyword('krailos', 180, Position(33493, 31712, 6))
 
 -- Kick
 keywordHandler:addKeyword({'kick'}, StdModule.kick, {npcHandler = npcHandler, destination = {Position(33487, 31986, 7), Position(33486, 31984, 7)}})

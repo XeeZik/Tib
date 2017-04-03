@@ -53,8 +53,8 @@
 		<voice sentence="SNUFFLE" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="242" chance="97000" />	<!-- gold coin -->		
-		<item id="2152" countmax="5" chance="18200" />				<!-- fish -->		
+		<item id="2148" countmax="75" chance="97000" />	<!-- gold coin -->		
+		<item id="2152" countmax="3" chance="18200" />				<!-- platinum coin -->		
 		<item id="8845" chance="2000" />				<!-- Beetroot -->		
 		<item id="2789" chance="2000" />				<!-- Brown Mushroom -->		
 		<item id="7620" chance="2210" />					<!-- Mana Potion -->			
