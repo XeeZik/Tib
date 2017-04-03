@@ -31536,6 +31536,18 @@
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weaponType" value="sword" />	
 	</item>
+		<item id="26261" article="a" name="blade of carving (charged) (sword fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="32" />
+		<attribute key="attack" value="49" />
+		<attribute key="description" value="This weapon can be charged." />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
+		<attribute key="transformEquipTo" value="25960" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>
 	
 	<item id="25960" article="a" name="blade of carving (charged)">
 		<attribute key="weight" value="5000" />
@@ -31546,7 +31558,20 @@
 		<attribute key="skillmanachance" value="20" />
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25959" />
+		<attribute key="transformDeEquipTo" value="26261" />
 		<attribute key="duration" value="72000" />
+		<attribute key="showduration" value="1" />
+	</item>
+
+	<item id="26265" article="a" name="blade of carving (heavily charged) (sword fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="33" />
+		<attribute key="attack" value="50" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="sword" />	
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
+		<attribute key="transformEquipTo" value="25961" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
@@ -31560,11 +31585,11 @@
 		<attribute key="skillmanachance" value="25" />
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25959" />
+		<attribute key="transformDeEquipTo" value="26265" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	
+		
 	<item id="25962" article="a" name="blade of carving (overcharged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="35" />
@@ -31574,14 +31599,13 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="skillmanachance" value="30" />
 		<attribute key="skillmanaamount" value="9" />
-		<attribute key="decayTo" value="25959" />
+		<attribute key="transformDeEquipTo" value="26270" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
-		<attribute key="showduration" value="1" />
+		<attribute key="showduration" value="1" />		
 	</item>
 	
 	
-	<item id="25879" article="a" name="Blade of Mayhem">
+	<item id="25879" article="a" name="blade of mayhem">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="48" />
@@ -31589,7 +31613,20 @@
 		<attribute key="weaponType" value="sword" />	
 	</item>
 	
-	<item id="25889" article="a" name="Blade of Mayhem (charged)">
+	<item id="26233" article="a" name="blade of mayhem (charged) (sword fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="32" />
+		<attribute key="attack" value="49" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="transformEquipTo" value="25889" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>
+	
+	<item id="25889" article="a" name="blade of mayhem (charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="49" />
@@ -31598,12 +31635,25 @@
 		<attribute key="skillcriticalchance" value="10" />
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25879" />
+		<attribute key="transformDeEquipTo" value="26233" />
 		<attribute key="duration" value="72000" />
+		<attribute key="showduration" value="1" />
+	</item>
+	
+	<item id="26234" article="a" name="blade of mayhem (heavily charged) (sword fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="32" />
+		<attribute key="attack" value="50" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="sword" />	
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="transformEquipTo" value="25899" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
-	<item id="25899" article="a" name="Blade of Mayhem (heavily charged)">
+	<item id="25899" article="a" name="blade of mayhem (heavily charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="50" />
@@ -31612,12 +31662,12 @@
 		<attribute key="skillcriticalchance" value="15" />
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25879" />
+		<attribute key="transformDeEquipTo" value="26234" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
-	<item id="25909" article="a" name="Blade of Mayhem (overcharged)">
+	<item id="25909" article="a" name="blade of mayhem (overcharged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="34" />
 		<attribute key="attack" value="52" />
@@ -31627,21 +31677,35 @@
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25879" />
+		<attribute key="transformDeEquipTo" value="26235" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
 	
-	<item id="25919" article="a" name="Blade of Remedy">
+	<item id="25919" article="a" name="blade of remedy">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="48" />
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weaponType" value="sword" />	
 	</item>	
-	<item id="25920" article="a" name="Blade of Remedy (charged)">
+	
+	<item id="26252" article="a" name="blade of remedy (charged) (sword fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="32" />
+		<attribute key="attack" value="49" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />	
+		<attribute key="transformEquipTo" value="25920" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>
+	
+	<item id="25920" article="a" name="blade of remedy (charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="49" />
@@ -31650,11 +31714,25 @@
 		<attribute key="skilllifechance" value="25" />
 		<attribute key="skilllifeamount" value="5" />	
 		<attribute key="decayTo" value="25919" />
+		<attribute key="transformDeEquipTo" value="26252" />
 		<attribute key="duration" value="72000" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="26255" article="a" name="blade of remedy (heavily charged) (sword fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="32" />
+		<attribute key="attack" value="50" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />	
+		<attribute key="transformEquipTo" value="25921" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
-	</item>
-	<item id="25921" article="a" name="Blade of Remedy (heavily charged)">
+	</item>		
+	
+	<item id="25921" article="a" name="blade of remedy (heavily charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="50" />
@@ -31663,11 +31741,11 @@
 		<attribute key="skilllifechance" value="30" />
 		<attribute key="skilllifeamount" value="7" />	
 		<attribute key="decayTo" value="25919" />
+		<attribute key="transformDeEquipTo" value="26255" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
-	</item>
-	<item id="25922" article="a" name="Blade of Remedy (overcharged)">
+	</item>	
+	<item id="25922" article="a" name="blade of remedy (overcharged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="51" />
@@ -31677,13 +31755,13 @@
 		<attribute key="skilllifechance" value="35" />
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25919" />
+		<attribute key="transformDeEquipTo" value="26256" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25963" article="a" name="Slayer of Carving">
+	<item id="25963" article="a" name="slayer of carving">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="50" />
@@ -31691,7 +31769,22 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />		
 	</item>
-	<item id="25964" article="a" name="Slayer of Carving (charged)">
+
+	<item id="26272" article="a" name="slayer of carving (charged) (sword fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="31" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />	
+		<attribute key="transformEquipTo" value="25964" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25964" article="a" name="slayer of carving (charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="31" />
 		<attribute key="attack" value="51" />
@@ -31701,11 +31794,26 @@
 		<attribute key="skillmanachance" value="20" />
 		<attribute key="skillmanaamount" value="5" />	
 		<attribute key="decayTo" value="25963" />
+		<attribute key="transformDeEquipTo" value="26272" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25965" article="a" name="Slayer of Carving (heavily charged)">
+	
+	<item id="26274" article="a" name="slayer of carving (heavily charged) (sword fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="32" />
+		<attribute key="attack" value="52" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />	
+		<attribute key="transformEquipTo" value="25965" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25965" article="a" name="slayer of carving (heavily charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="52" />
@@ -31715,11 +31823,11 @@
 		<attribute key="skillmanachance" value="25" />
 		<attribute key="skillmanaamount" value="7" />	
 		<attribute key="decayTo" value="25963" />
+		<attribute key="transformDeEquipTo" value="26274" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25966" article="a" name="Slayer of Carving (overcharged)">
+	<item id="25966" article="a" name="slayer of carving (overcharged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
@@ -31730,14 +31838,14 @@
 		<attribute key="skillmanachance" value="30" />
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25963" />
+		<attribute key="transformDeEquipTo" value="26277" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
 	
-	<item id="25880" article="a" name="Slayer of Mayhem">
+	<item id="25880" article="a" name="slayer of mayhem">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="49" />
@@ -31745,7 +31853,22 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />		
 	</item>
-	<item id="25890" article="a" name="Slayer of Mayhem (charged)">
+	
+	<item id="26236" article="a" name="slayer of mayhem (charged) (sword fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="31" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="slotType" value="two-handed" />		
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="transformEquipTo" value="25890" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25890" article="a" name="slayer of mayhem (charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="31" />
 		<attribute key="attack" value="51" />
@@ -31755,11 +31878,26 @@
 		<attribute key="skillcriticalchance" value="10" />
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25880" />
+		<attribute key="transformDeEquipTo" value="26236" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25900" article="a" name="Slayer of Mayhem (heavily charged)">
+	
+	<item id="26237" article="a" name="slayer of mayhem (heavily charged) (sword fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="32" />
+		<attribute key="attack" value="52" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
+		<attribute key="transformEquipTo" value="25900" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25900" article="a" name="slayer of mayhem (heavily charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="52" />
@@ -31769,11 +31907,11 @@
 		<attribute key="skillcriticalchance" value="15" />
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25880" />
+		<attribute key="transformDeEquipTo" value="26237" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25910" article="a" name="Slayer of Mayhem (overcharged)">
+	<item id="25910" article="a" name="slayer of mayhem (overcharged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
@@ -31784,13 +31922,13 @@
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25880" />
+		<attribute key="transformDeEquipTo" value="26238" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
-		<attribute key="showduration" value="1" />
+		<attribute key="showduration" value="1" />		
 	</item>
 	
 	
-	<item id="25923" article="a" name="Slayer of Remedy">
+	<item id="25923" article="a" name="slayer of remedy">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="49" />
@@ -31798,7 +31936,22 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />		
 	</item>
-	<item id="25924" article="a" name="Slayer of Remedy (charged)">
+	
+	<item id="26257" article="a" name="slayer of remedy (charged) (sword fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="31" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
+		<attribute key="transformEquipTo" value="25924" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25924" article="a" name="slayer of remedy (charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="31" />
 		<attribute key="attack" value="51" />
@@ -31808,11 +31961,26 @@
 		<attribute key="skilllifechance" value="25" />
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25923" />
+		<attribute key="transformDeEquipTo" value="26257" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25925" article="a" name="Slayer of Remedy (heavily charged)">
+	
+	<item id="26258" article="a" name="slayer of remedy (heavily charged) (sword fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="32" />
+		<attribute key="attack" value="52" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="sword" />
+		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
+		<attribute key="transformEquipTo" value="25925" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25925" article="a" name="slayer of remedy (heavily charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="52" />
@@ -31822,11 +31990,11 @@
 		<attribute key="skilllifechance" value="30" />
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25923" />
+		<attribute key="transformDeEquipTo" value="26258" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25926" article="a" name="Slayer of Remedy (overcharged)">
+	<item id="25926" article="a" name="slayer of remedy (overcharged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
@@ -31837,19 +32005,33 @@
 		<attribute key="skilllifechance" value="35" />
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25923" />
+		<attribute key="transformDeEquipTo" value="26260" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
-	<item id="25967" article="a" name="Axe of Carving">
+	<item id="25967" article="a" name="axe of carving">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="26" />
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weaponType" value="axe" />
 	</item>
-	<item id="25968" article="a" name="Axe of Carving (charged)">
+	
+	<item id="26280" article="a" name="axe of carving (charged) (axe fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="30" />
+		<attribute key="attack" value="50" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
+		<attribute key="transformEquipTo" value="25968" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25968" article="a" name="axe of carving (charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="50" />
@@ -31858,11 +32040,25 @@
 		<attribute key="skillmanachance" value="20" />
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25967" />
+		<attribute key="transformDeEquipTo" value="26280" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25969" article="a" name="Axe of Carving (heavily charged)">
+	
+	<item id="26282" article="a" name="axe of carving (heavily charged) (axe fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="31" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
+		<attribute key="transformEquipTo" value="25969" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25969" article="a" name="axe of carving (heavily charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="31" />
 		<attribute key="attack" value="51" />
@@ -31871,11 +32067,11 @@
 		<attribute key="skillmanachance" value="25" />
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25967" />
+		<attribute key="transformDeEquipTo" value="26282" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25970" article="a" name="Axe of Carving (overcharged)">
+	<item id="25970" article="a" name="axe of carving (overcharged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="52" />
@@ -31885,21 +32081,35 @@
 		<attribute key="skillmanachance" value="30" />
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25967" />
+		<attribute key="transformDeEquipTo" value="26284" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
 	
-	<item id="25881" article="a" name="Axe of Mayhem">
+	<item id="25881" article="a" name="axe of mayhem">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="26" />
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weaponType" value="axe" />
 	</item>
-	<item id="25891" article="a" name="Axe of Mayhem (charged)">
+	
+	<item id="26239" article="a" name="axe of mayhem (charged) (axe fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="30" />
+		<attribute key="attack" value="50" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="transformEquipTo" value="25891" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25891" article="a" name="axe of mayhem (charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="50" />
@@ -31908,11 +32118,25 @@
 		<attribute key="skillcriticalchance" value="10" />
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25881" />
+		<attribute key="transformDeEquipTo" value="26239" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25901" article="a" name="Axe of Mayhem (heavily charged)">
+	
+	<item id="26240" article="a" name="axe of mayhem (heavily charged) (axe fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="31" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
+		<attribute key="transformEquipTo" value="25901" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25901" article="a" name="axe of mayhem (heavily charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="31" />
 		<attribute key="attack" value="51" />
@@ -31921,11 +32145,11 @@
 		<attribute key="skillcriticalchance" value="15" />
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25881" />
+		<attribute key="transformDeEquipTo" value="26240" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25911" article="a" name="Axe of Mayhem (overcharged)">
+	<item id="25911" article="a" name="axe of mayhem (overcharged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="52" />
@@ -31935,20 +32159,34 @@
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25881" />
+		<attribute key="transformDeEquipTo" value="26241" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25927" article="a" name="Axe of Remedy">
+	<item id="25927" article="a" name="axe of remedy">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="48" />
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weaponType" value="axe" />
 	</item>
-	<item id="25928" article="a" name="Axe of Remedy (charged)">
+	
+	<item id="26262" article="a" name="axe of remedy (charged) (axe fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="30" />
+		<attribute key="attack" value="50" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
+		<attribute key="transformEquipTo" value="25928" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25928" article="a" name="axe of remedy (charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="50" />
@@ -31957,11 +32195,25 @@
 		<attribute key="skilllifechance" value="25" />
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25927" />
+		<attribute key="transformDeEquipTo" value="26262" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25929" article="a" name="Axe of Remedy (heavily charged)">
+	
+	<item id="26263" article="a" name="axe of remedy (heavily charged) (axe fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="31" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
+		<attribute key="transformEquipTo" value="25929" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25929" article="a" name="axe of remedy (heavily charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="31" />
 		<attribute key="attack" value="51" />
@@ -31970,11 +32222,11 @@
 		<attribute key="skilllifechance" value="30" />
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25927" />
+		<attribute key="transformDeEquipTo" value="26263" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25930" article="a" name="Axe of Remedy (overcharged)">
+	<item id="25930" article="a" name="axe of remedy (overcharged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="52" />
@@ -31984,14 +32236,14 @@
 		<attribute key="skilllifechance" value="35" />
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25927" />
+		<attribute key="transformDeEquipTo" value="26267" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
 	
-	<item id="25971" article="a" name="Chopper of Carving">
+	<item id="25971" article="a" name="chopper of carving">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="29" />
 		<attribute key="attack" value="50" />
@@ -31999,7 +32251,22 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />		
 	</item>
-	<item id="25972" article="a" name="Chopper of Carving (charged)">
+	
+	<item id="26287" article="a" name="chopper of carving (charged) (axe fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="31" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
+		<attribute key="transformEquipTo" value="25972" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25972" article="a" name="chopper of carving (charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="31" />
 		<attribute key="attack" value="51" />
@@ -32009,11 +32276,26 @@
 		<attribute key="skillmanachance" value="20" />
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25971" />
+		<attribute key="transformDeEquipTo" value="26287" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25973" article="a" name="Chopper of Carving (heavily charged)">
+	
+	<item id="26290" article="a" name="chopper of carving (heavily charged) (axe fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="32" />
+		<attribute key="attack" value="52" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
+		<attribute key="transformEquipTo" value="25973" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25973" article="a" name="chopper of carving (heavily charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="52" />
@@ -32023,11 +32305,11 @@
 		<attribute key="skillmanachance" value="25" />
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25971" />
+		<attribute key="transformDeEquipTo" value="26290" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25974" article="a" name="Chopper of Carving (overcharged)">
+	<item id="25974" article="a" name="chopper of carving (overcharged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
@@ -32038,14 +32320,14 @@
 		<attribute key="skillmanachance" value="30" />
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25971" />
+		<attribute key="transformDeEquipTo" value="26293" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
 	
-	<item id="25882" article="a" name="Chopper of Mayhem">
+	<item id="25882" article="a" name="chopper of mayhem">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="49" />
@@ -32053,7 +32335,22 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />		
 	</item>
-	<item id="25892" article="a" name="Chopper of Mayhem (charged)">
+	
+	<item id="26242" article="a" name="chopper of mayhem (charged) (axe fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="37" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="transformEquipTo" value="25892" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25892" article="a" name="chopper of mayhem (charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="37" />
 		<attribute key="attack" value="51" />
@@ -32063,11 +32360,26 @@
 		<attribute key="skillcriticalchance" value="10" />
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25882" />
+		<attribute key="transformDeEquipTo" value="26242" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25902" article="a" name="Chopper of Mayhem (heavily charged)">
+	
+	<item id="26243" article="a" name="chopper of mayhem (heavily charged) (axe fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="32" />
+		<attribute key="attack" value="52" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
+		<attribute key="transformEquipTo" value="25902" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25902" article="a" name="chopper of mayhem (heavily charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="52" />
@@ -32077,11 +32389,11 @@
 		<attribute key="skillcriticalchance" value="15" />
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25882" />
+		<attribute key="transformDeEquipTo" value="26243" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25912" article="a" name="Chopper of Mayhem (overcharged)">
+	<item id="25912" article="a" name="chopper of mayhem (overcharged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
@@ -32092,13 +32404,13 @@
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25882" />
+		<attribute key="transformDeEquipTo" value="26244" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25931" article="a" name="Chopper of Remedy">
+	<item id="25931" article="a" name="chopper of remedy">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="49" />
@@ -32106,7 +32418,22 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />		
 	</item>
-	<item id="25932" article="a" name="Chopper of Remedy (charged)">
+	
+	<item id="26269" article="a" name="chopper of remedy (charged) (axe fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="31" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
+		<attribute key="transformEquipTo" value="25932" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25932" article="a" name="chopper of remedy (charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="31" />
 		<attribute key="attack" value="51" />
@@ -32116,11 +32443,26 @@
 		<attribute key="skilllifechance" value="25" />
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25931" />
+		<attribute key="transformDeEquipTo" value="26269" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25933" article="a" name="Chopper of Remedy (heavily charged)">
+	
+	<item id="26271" article="a" name="chopper of remedy (heavily charged) (axe fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="32" />
+		<attribute key="attack" value="52" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="axe" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
+		<attribute key="transformEquipTo" value="25933" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25933" article="a" name="chopper of remedy (heavily charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="52" />
@@ -32130,11 +32472,11 @@
 		<attribute key="skilllifechance" value="30" />
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25931" />
+		<attribute key="transformDeEquipTo" value="26271" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25934" article="a" name="Chopper of Remedy (overcharged)">
+	<item id="25934" article="a" name="chopper of remedy (overcharged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
@@ -32145,14 +32487,14 @@
 		<attribute key="skilllifechance" value="35" />
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25931" />
+		<attribute key="transformDeEquipTo" value="26273" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
 	
-	<item id="25979" article="a" name="Hammer of Carving">
+	<item id="25979" article="a" name="hammer of carving">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="50" />
@@ -32160,7 +32502,22 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />		
 	</item>
-	<item id="25980" article="a" name="Hammer of Carving (charged)">
+	
+	<item id="26303" article="a" name="hammer of carving (charged) (club fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="28" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="club" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />	
+		<attribute key="transformEquipTo" value="25980" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />		
+	</item>	
+	
+	<item id="25980" article="a" name="hammer of carving (charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="51" />
@@ -32170,11 +32527,26 @@
 		<attribute key="skillmanachance" value="20" />
 		<attribute key="skillmanaamount" value="5" />	
 		<attribute key="decayTo" value="25979" />
+		<attribute key="transformDeEquipTo" value="26303" />
 		<attribute key="duration" value="72000" />
+		<attribute key="showduration" value="1" />		
+	</item>
+	
+	<item id="26304" article="a" name="hammer of carving (heavily charged) (club fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="30" />
+		<attribute key="attack" value="53" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="club" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
+		<attribute key="transformEquipTo" value="25981" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
-	</item>
-	<item id="25981" article="a" name="Hammer of Carving (heavily charged)">
+	</item>	
+	
+	<item id="25981" article="a" name="hammer of carving (heavily charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="53" />
@@ -32184,11 +32556,11 @@
 		<attribute key="skillmanachance" value="25" />
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25979" />
+		<attribute key="transformDeEquipTo" value="26304" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25982" article="a" name="Hammer of Carving (overcharged)">
+	<item id="25982" article="a" name="hammer of carving (overcharged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="54" />
@@ -32199,13 +32571,13 @@
 		<attribute key="skillmanachance" value="30" />
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25979" />
+		<attribute key="transformDeEquipTo" value="26305" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
-		<attribute key="showduration" value="1" />
+		<attribute key="showduration" value="1" />		
 	</item>
 	
 	
-	<item id="25884" article="a" name="Hammer of Mayhem">
+	<item id="25884" article="a" name="hammer of mayhem">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="49" />
@@ -32213,7 +32585,22 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />		
 	</item>
-	<item id="25894" article="a" name="Hammer of Mayhem (charged)">
+	
+	<item id="26248" article="a" name="hammer of mayhem (charged) (club fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="28" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="club" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="skillmanachance" value="10" />
+		<attribute key="skillmanaamount" value="20" />
+		<attribute key="transformEquipTo" value="25894" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25894" article="a" name="hammer of mayhem (charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="51" />
@@ -32223,11 +32610,26 @@
 		<attribute key="skillmanachance" value="10" />
 		<attribute key="skillmanaamount" value="20" />
 		<attribute key="decayTo" value="25884" />
+		<attribute key="transformDeEquipTo" value="26248" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25904" article="a" name="Hammer of Mayhem (heavily charged)">
+	
+	<item id="26249" article="a" name="hammer of mayhem (heavily charged) (club fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="30" />
+		<attribute key="attack" value="53" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="club" />
+		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
+		<attribute key="transformEquipTo" value="25904" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25904" article="a" name="hammer of mayhem (heavily charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="53" />
@@ -32237,11 +32639,11 @@
 		<attribute key="skillcriticalchance" value="15" />
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25884" />
+		<attribute key="transformDeEquipTo" value="26249" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25914" article="a" name="Hammer of Mayhem (overcharged)">
+	<item id="25914" article="a" name="hammer of mayhem (overcharged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="54" />
@@ -32252,14 +32654,14 @@
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25884" />
+		<attribute key="transformDeEquipTo" value="26250" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
 	
-	<item id="25939" article="a" name="Hammer of Remedy">
+	<item id="25939" article="a" name="hammer of remedy">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="49" />
@@ -32267,7 +32669,22 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />		
 	</item>
-	<item id="25940" article="a" name="Hammer of Remedy (charged)">
+	
+	<item id="26279" article="a" name="hammer of remedy (charged) (club fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="28" />
+		<attribute key="attack" value="51" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="club" />
+		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="5" />	
+		<attribute key="transformEquipTo" value="25940" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />	
+	</item>	
+	
+	<item id="25940" article="a" name="hammer of remedy (charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="51" />
@@ -32277,11 +32694,26 @@
 		<attribute key="skillmanachance" value="25" />
 		<attribute key="skillmanaamount" value="5" />	
 		<attribute key="decayTo" value="25939" />
+		<attribute key="transformDeEquipTo" value="26279" />
 		<attribute key="duration" value="72000" />
+		<attribute key="showduration" value="1" />		
+	</item>
+	
+	<item id="26281" article="a" name="hammer of remedy (heavily charged) (club fighting +1)">
+		<attribute key="weight" value="7000" />
+		<attribute key="defense" value="30" />
+		<attribute key="attack" value="53" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="club" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />	
+		<attribute key="transformEquipTo" value="25941" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
-	</item>
-	<item id="25941" article="a" name="Hammer of Remedy (heavily charged)">
+	</item>	
+	
+	<item id="25941" article="a" name="hammer of remedy (heavily charged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="53" />
@@ -32291,11 +32723,11 @@
 		<attribute key="skilllifechance" value="30" />
 		<attribute key="skilllifeamount" value="7" />	
 		<attribute key="decayTo" value="25939" />
+		<attribute key="transformDeEquipTo" value="26281" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25942" article="a" name="Hammer of Remedy (overcharged)">
+	<item id="25942" article="a" name="hammer of remedy (overcharged)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="54" />
@@ -32306,20 +32738,34 @@
 		<attribute key="skilllifechance" value="35" />
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25939" />
+		<attribute key="transformDeEquipTo" value="26283" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25975" article="a" name="Mace of Carving">
+	<item id="25975" article="a" name="mace of carving">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="24" />
 		<attribute key="attack" value="48" />
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weaponType" value="club" />	
 	</item>
-	<item id="25976" article="a" name="Mace of Carving (charged)">
+	
+	<item id="26296" article="a" name="mace of carving (charged) (club fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="28" />
+		<attribute key="attack" value="49" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="club" />	
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
+		<attribute key="transformEquipTo" value="25976" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25976" article="a" name="mace of carving (charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="49" />
@@ -32328,11 +32774,25 @@
 		<attribute key="skillmanachance" value="20" />
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25975" />
+		<attribute key="transformDeEquipTo" value="26296" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25977" article="a" name="Mace of Carving (heavily charged)">
+	
+	<item id="26298" article="a" name="mace of carving (heavily charged) (club fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="30" />
+		<attribute key="attack" value="50" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="club" />	
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
+		<attribute key="transformEquipTo" value="25977" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25977" article="a" name="mace of carving (heavily charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="50" />
@@ -32341,11 +32801,11 @@
 		<attribute key="skillmanachance" value="25" />
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25975" />
+		<attribute key="transformDeEquipTo" value="26298" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25978" article="a" name="Mace of Carving (overcharged)">
+	<item id="25978" article="a" name="mace of carving (overcharged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="51" />
@@ -32355,20 +32815,34 @@
 		<attribute key="skillmanachance" value="30" />
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25975" />
+		<attribute key="transformDeEquipTo" value="26300" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
-		<attribute key="showduration" value="1" />
+		<attribute key="showduration" value="1" />		
 	</item>
 	
 	
-	<item id="25883" article="a" name="Mace of Mayhem">
+	<item id="25883" article="a" name="mace of mayhem">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="48" />
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weaponType" value="club" />	
 	</item>
-	<item id="25893" article="a" name="Mace of Mayhem (charged)">
+	
+	<item id="26245" article="a" name="mace of mayhem (charged) (club fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="28" />
+		<attribute key="attack" value="49" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="club" />
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />	
+		<attribute key="transformEquipTo" value="25893" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25893" article="a" name="mace of mayhem (charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="49" />
@@ -32377,11 +32851,25 @@
 		<attribute key="skillcriticalchance" value="10" />
 		<attribute key="skillcriticaldamage" value="20" />	
 		<attribute key="decayTo" value="25883" />
+		<attribute key="transformDeEquipTo" value="26245" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25903" article="a" name="Mace of Mayhem (heavily charged)">
+	
+	<item id="26246" article="a" name="mace of mayhem (heavily charged) (club fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="30" />
+		<attribute key="attack" value="50" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="club" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
+		<attribute key="transformEquipTo" value="25903" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25903" article="a" name="mace of mayhem (heavily charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="50" />
@@ -32390,11 +32878,11 @@
 		<attribute key="skillcriticalchance" value="15" />
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25883" />
+		<attribute key="transformDeEquipTo" value="26246" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25913" article="a" name="Mace of Mayhem (overcharged)">
+	<item id="25913" article="a" name="mace of mayhem (overcharged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="51" />
@@ -32404,20 +32892,34 @@
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25883" />
+		<attribute key="transformDeEquipTo" value="26247" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
-		<attribute key="showduration" value="1" />
+		<attribute key="showduration" value="1" />		
 	</item>
 	
 	
-	<item id="25935" article="a" name="Mace of Remedy">
+	<item id="25935" article="a" name="mace of remedy">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="48" />
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weaponType" value="club" />	
 	</item>
-	<item id="25936" article="a" name="Mace of Remedy (charged)">
+	
+	<item id="26275" article="a" name="mace of remedy (charged)(club fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="28" />
+		<attribute key="attack" value="49" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weaponType" value="club" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
+		<attribute key="transformEquipTo" value="25936" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25936" article="a" name="mace of remedy (charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="49" />
@@ -32426,11 +32928,25 @@
 		<attribute key="skilllifechance" value="25" />
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25935" />
+		<attribute key="transformDeEquipTo" value="26275" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25937" article="a" name="Mace of Remedy (heavily charged)">
+	
+	<item id="26276" article="a" name="mace of remedy (heavily charged) (club fighting +1)">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="30" />
+		<attribute key="attack" value="50" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weaponType" value="club" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
+		<attribute key="transformEquipTo" value="25937" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />	
+	</item>	
+	
+	<item id="25937" article="a" name="mace of remedy (heavily charged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="50" />
@@ -32439,11 +32955,11 @@
 		<attribute key="skilllifechance" value="30" />
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25935" />
+		<attribute key="transformDeEquipTo" value="26276" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
-		<attribute key="showduration" value="1" />
+		<attribute key="showduration" value="1" />		
 	</item>
-	<item id="25938" article="a" name="Mace of Remedy (overcharged)">
+	<item id="25938" article="a" name="mace of remedy (overcharged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="51" />
@@ -32453,20 +32969,30 @@
 		<attribute key="skilllifechance" value="35" />
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25935" />
+		<attribute key="transformDeEquipTo" value="26278" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
-	</item>
+	</item>	
 	
 	
-	<item id="25995" article="a" name="Rod of Carving">
+	<item id="25995" article="a" name="rod of carving">
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
 		<attribute key="range" value="3" />		
 	</item>
-	<item id="25996" article="a" name="Rod of Carving (charged)">
+		<item id="26315" article="a" name="rod of carving (charged) (magic level +1)">
+		<attribute key="description" value="This weapon can be charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
+		<attribute key="transformEquipTo" value="25996" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />		
+	</item>
+	<item id="25996" article="a" name="rod of carving (charged)">
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32475,11 +33001,25 @@
 		<attribute key="skillmanachance" value="20" />
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25995" />
+		<attribute key="transformDeEquipTo" value="26315" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25997" article="a" name="Rod of Carving (heavily charged)">
+	
+	<item id="26316" article="a" name="rod of carving (heavily charged) (magic level +1)">
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="3" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
+		<attribute key="transformEquipTo" value="28997" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25997" article="a" name="rod of carving (heavily charged)">
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32488,11 +33028,11 @@
 		<attribute key="skillmanachance" value="25" />
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25995" />
+		<attribute key="transformDeEquipTo" value="26316" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25998" article="a" name="Rod of Carving (overcharged)">
+	<item id="25998" article="a" name="rod of carving (overcharged)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32502,19 +33042,33 @@
 		<attribute key="skillmanachance" value="30" />
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25995" />
+		<attribute key="transformDeEquipTo" value="26317" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
-	<item id="25888" article="a" name="Rod of Mayhem">
+	<item id="25888" article="a" name="rod of mayhem">
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
 		<attribute key="range" value="3" />		
 	</item>
-	<item id="25898" article="a" name="Rod of Mayhem (charged)">
+	
+	<item id="26321" article="a" name="rod of mayhem (charged) (magic level +1)">
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="3" />
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="transformEquipTo" value="25898" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25898" article="a" name="rod of mayhem (charged)">
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32523,11 +33077,25 @@
 		<attribute key="skillcriticalchance" value="10" />
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25888" />
+		<attribute key="transformDeEquipTo" value="26321" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25908" article="a" name="Rod of Mayhem (heavily charged)">
+	
+	<item id="26322" article="a" name="rod of mayhem (heavily charged) (magic level +1)">
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="3" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
+		<attribute key="transformEquipTo" value="25908" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25908" article="a" name="rod of mayhem (heavily charged)">
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32536,11 +33104,11 @@
 		<attribute key="skillcriticalchance" value="15" />
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25888" />
+		<attribute key="transformDeEquipTo" value="26322" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25918" article="a" name="Rod of Mayhem (overcharged)">
+	<item id="25918" article="a" name="rod of mayhem (overcharged)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32550,20 +33118,34 @@
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25888" />
+		<attribute key="transformDeEquipTo" value="26323" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25955" article="a" name="Rod of Remedy">
+	<item id="25955" article="a" name="rod of remedy">
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
 		<attribute key="range" value="3" />		
 	</item>
-	<item id="25956" article="a" name="Rod of Remedy (charged)">
+	
+	<item id="26299" article="a" name="rod of remedy (charged) (magic level +1)">
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="3" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
+		<attribute key="transformEquipTo" value="25956" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25956" article="a" name="rod of remedy (charged)">
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32572,11 +33154,25 @@
 		<attribute key="skilllifechance" value="25" />
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25955" />
+		<attribute key="transformDeEquipTo" value="26299" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25957" article="a" name="Rod of Remedy (heavily charged)">
+	
+	<item id="26301" article="a" name="rod of remedy (heavily charged) (magic level +1)">
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="3" />	
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
+		<attribute key="transformEquipTo" value="25957" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25957" article="a" name="rod of remedy (heavily charged)">
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32585,11 +33181,11 @@
 		<attribute key="skilllifechance" value="30" />
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25955" />
+		<attribute key="transformDeEquipTo" value="26301" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25958" article="a" name="Rod of Remedy (overcharged)">
+	<item id="25958" article="a" name="rod of remedy (overcharged)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32599,20 +33195,34 @@
 		<attribute key="skilllifechance" value="35" />
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25955" />
+		<attribute key="transformDeEquipTo" value="26302" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25991" article="a" name="Wand of Carving">
+	<item id="25991" article="a" name="wand of carving">
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />		
 	</item>
-	<item id="25992" article="a" name="Wand of Carving (charged)">
+	
+	<item id="26312" article="a" name="wand of carving (charged) (magic level +1)">
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
+		<attribute key="transformEquipTo" value="25992" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25992" article="a" name="wand of carving (charged)">
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32621,11 +33231,25 @@
 		<attribute key="skillmanachance" value="20" />
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25991" />
+		<attribute key="transformDeEquipTo" value="26312" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25993" article="a" name="Wand of Carving (heavily charged)">
+	
+	<item id="26313" article="a" name="wand of carving (heavily charged) (magic level +1)">
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
+		<attribute key="transformEquipTo" value="25993" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25993" article="a" name="wand of carving (heavily charged)">
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32634,11 +33258,11 @@
 		<attribute key="skillmanachance" value="25" />
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25991" />
+		<attribute key="transformDeEquipTo" value="26313" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25994" article="a" name="Wand of Carving (overcharged)">
+	<item id="25994" article="a" name="wand of carving (overcharged)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32648,20 +33272,34 @@
 		<attribute key="skillmanachance" value="30" />
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25991" />
+		<attribute key="transformDeEquipTo" value="26314" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25887" article="a" name="Wand of Mayhem">
+	<item id="25887" article="a" name="wand of mayhem">
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />		
 	</item>
-	<item id="25897" article="a" name="Wand of Mayhem (charged)">
+	
+	<item id="26318" article="a" name="wand of mayhem (charged) (magic level +1)">
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="transformEquipTo" value="25897" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25897" article="a" name="wand of mayhem (charged)">
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32670,11 +33308,25 @@
 		<attribute key="skillcriticalchance" value="10" />
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25887" />
+		<attribute key="transformDeEquipTo" value="26318" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25907" article="a" name="Wand of Mayhem (heavily charged)">
+	
+	<item id="26319" article="a" name="wand of mayhem (heavily charged) (magic level +1)">
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
+		<attribute key="transformEquipTo" value="25907" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25907" article="a" name="wand of mayhem (heavily charged)">
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32683,11 +33335,11 @@
 		<attribute key="skillcriticalchance" value="15" />
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25887" />
+		<attribute key="transformDeEquipTo" value="26319" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25917" article="a" name="Wand of Mayhem (overcharged)">
+	<item id="25917" article="a" name="wand of mayhem (overcharged)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32697,20 +33349,34 @@
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25887" />
+		<attribute key="transformDeEquipTo" value="26320" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25951" article="a" name="Wand of Remedy">
+	<item id="25951" article="a" name="wand of remedy">
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />		
 	</item>
-	<item id="25952" article="a" name="Wand of Remedy (charged)">
+	
+	<item id="26294" article="a" name="wand of remedy (charged) (magic level +1)">
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
+		<attribute key="transformEquipTo" value="25952" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25952" article="a" name="wand of remedy (charged)">
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32719,11 +33385,25 @@
 		<attribute key="skilllifechance" value="25" />
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25951" />
+		<attribute key="transformDeEquipTo" value="26294" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25953" article="a" name="Wand of Remedy (heavily charged)">
+	
+	<item id="26295" article="a" name="wand of remedy (heavily charged) (magic level +1)">
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="weight" value="3500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
+		<attribute key="transformEquipTo" value="25953" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25953" article="a" name="wand of remedy (heavily charged)">
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32732,11 +33412,11 @@
 		<attribute key="skilllifechance" value="30" />
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25951" />
+		<attribute key="transformDeEquipTo" value="26295" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25954" article="a" name="Wand of Remedy (overcharged)">
+	<item id="25954" article="a" name="wand of remedy (overcharged)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
@@ -32745,16 +33425,16 @@
 		<attribute key="range" value="3" />	
 		<attribute key="skilllifechance" value="35" />
 		<attribute key="skilllifeamount" value="9" />
-		<attribute key="decayTo" value="XXX" />
-		<attribute key="duration" value="25951" />
-		<attribute key="stopduration" value="1" />
-		<attribute key="showduration" value="1" />
+		<attribute key="decayTo" value="25951" />
+		<attribute key="transformDeEquipTo" value="26297" />
+		<attribute key="duration" value="54000" />
+		<attribute key="showduration" value="1" />		
 	</item>
 	
 	
 	
 	
-	<item id="25983" article="a" name="Bow of Carving">
+	<item id="25983" article="a" name="bow of carving">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32763,7 +33443,24 @@
 		<attribute key="attack" value="3" />
 		<attribute key="hitChance" value="3" />
 	</item>
-	<item id="25984" article="a" name="Bow of Carving (charged)">
+	
+	<item id="26306" article="a" name="bow of carving (charged) (distance fighting +1)">
+		<attribute key="weight" value="5500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
+		<attribute key="transformEquipTo" value="25984" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25984" article="a" name="bow of carving (charged)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32775,11 +33472,28 @@
 		<attribute key="skillmanachance" value="20" />
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25983" />
+		<attribute key="transformDeEquipTo" value="26306" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25985" article="a" name="Bow of Carving (heavily charged)">
+	
+	<item id="26307" article="a" name="bow of carving (heavily charged) (distance fighting +1)">
+		<attribute key="weight" value="5500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
+		<attribute key="transformEquipTo" value="25985" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25985" article="a" name="bow of carving (heavily charged)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32791,11 +33505,11 @@
 		<attribute key="skillmanachance" value="25" />
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25983" />
+		<attribute key="transformDeEquipTo" value="26307" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25986" article="a" name="Bow of Carving (overcharged)">
+	<item id="25986" article="a" name="bow of carving (overcharged)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32808,13 +33522,13 @@
 		<attribute key="skillmanachance" value="30" />
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25983" />
+		<attribute key="transformDeEquipTo" value="26308" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25885" article="a" name="Bow of Mayhem">
+	<item id="25885" article="a" name="bow of mayhem">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32824,7 +33538,24 @@
 		<attribute key="attack" value="3" />
 		<attribute key="hitChance" value="3" />
 	</item>
-	<item id="25895" article="a" name="Bow of Mayhem (charged)">
+	
+	<item id="26251" article="a" name="bow of mayhem (charged) (distance fighting +1)">
+		<attribute key="weight" value="5500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="transformEquipTo" value="25895" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25895" article="a" name="bow of mayhem (charged)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32836,11 +33567,28 @@
 		<attribute key="skillcriticalchance" value="15" />
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25885" />
+		<attribute key="transformDeEquipTo" value="26251" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25906" article="a" name="Bow of Mayhem (heavily charged)">
+	
+	<item id="26253" article="a" name="bow of mayhem (heavily charged) (distance fighting +1)">
+		<attribute key="weight" value="5500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="25" />
+		<attribute key="transformEquipTo" value="25906" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25906" article="a" name="bow of mayhem (heavily charged)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32852,11 +33600,11 @@
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25885" />
+		<attribute key="transformDeEquipTo" value="26253" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25915" article="a" name="Bow of Mayhem (overcharged)">
+	<item id="25915" article="a" name="bow of mayhem (overcharged)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32869,12 +33617,12 @@
 		<attribute key="skillcriticalchance" value="25" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25885" />
+		<attribute key="transformDeEquipTo" value="26254" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
-	<item id="25943" article="a" name="Bow of Remedy">
+	<item id="25943" article="a" name="bow of remedy">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32884,7 +33632,24 @@
 		<attribute key="attack" value="3" />
 		<attribute key="hitChance" value="3" />
 	</item>
-	<item id="25944" article="a" name="Bow of Remedy (charged)">
+	
+	<item id="26285" article="a" name="bow of remedy (charged) (distance fighting +1)">
+		<attribute key="weight" value="5500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
+		<attribute key="transformEquipTo" value="25944" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25944" article="a" name="bow of remedy (charged)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32896,11 +33661,12 @@
 		<attribute key="skilllifechance" value="25" />
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25943" />
+		<attribute key="transformDeEquipTo" value="26285" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25945" article="a" name="Bow of Remedy (heavily charged)">
+	
+	<item id="26286" article="a" name="bow of remedy (heavily charged) (distance fighting +1)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32912,11 +33678,28 @@
 		<attribute key="skilllifechance" value="30" />
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25943" />
+		<attribute key="transformDeEquipTo" value="25945" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25945" article="a" name="bow of remedy (heavily charged)">
+		<attribute key="weight" value="5500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
+		<attribute key="decayTo" value="25943" />
+		<attribute key="transformDeEquipTo" value="26286" />
+		<attribute key="duration" value="36000" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25946" article="a" name="Bow of Remedy (overcharged)">
+	<item id="25946" article="a" name="bow of remedy (overcharged)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32929,13 +33712,13 @@
 		<attribute key="skilllifechance" value="35" />
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25943" />
+		<attribute key="transformDeEquipTo" value="26288" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25987" article="a" name="Crossbow of Carving">
+	<item id="25987" article="a" name="crossbow of carving">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32945,7 +33728,24 @@
 		<attribute key="attack" value="3" />
 		<attribute key="hitChance" value="3" />
 	</item>
-	<item id="25988" article="a" name="Crossbow of Carving (charged)">
+
+	<item id="26309" article="a" name="crossbow of carving (charged) (distance fighting +1)">
+		<attribute key="weight" value="6500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
+		<attribute key="transformEquipTo" value="25988" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>
+
+	<item id="25988" article="a" name="crossbow of carving (charged)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32957,11 +33757,28 @@
 		<attribute key="skillmanachance" value="20" />
 		<attribute key="skillmanaamount" value="5" />
 		<attribute key="decayTo" value="25987" />
+		<attribute key="transformDeEquipTo" value="26309" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25989" article="a" name="Crossbow of Carving (heavily charged)">
+	
+	<item id="26310" article="a" name="crossbow of carving (heavily charged) (distance fighting +1)">
+		<attribute key="weight" value="6500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
+		<attribute key="transformEquipTo" value="25989" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25989" article="a" name="crossbow of carving (heavily charged)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32973,11 +33790,11 @@
 		<attribute key="skillmanachance" value="25" />
 		<attribute key="skillmanaamount" value="7" />
 		<attribute key="decayTo" value="25987" />
+		<attribute key="transformDeEquipTo" value="26310" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25990" article="a" name="Crossbow of Carving (overcharged)">
+	<item id="25990" article="a" name="crossbow of carving (overcharged)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -32990,13 +33807,13 @@
 		<attribute key="skillmanachance" value="30" />
 		<attribute key="skillmanaamount" value="9" />
 		<attribute key="decayTo" value="25987" />
+		<attribute key="transformDeEquipTo" value="26311" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25886" article="a" name="Crossbow of Mayhem">
+	<item id="25886" article="a" name="crossbow of mayhem">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -33006,7 +33823,24 @@
 		<attribute key="attack" value="3" />
 		<attribute key="hitChance" value="3" />
 	</item>
-	<item id="25896" article="a" name="Crossbow of Mayhem (charged)">
+	
+	<item id="26264" article="a" name="crossbow of mayhem (charged) (distance fighting +1)">
+		<attribute key="weight" value="6500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="transformEquipTo" value="25896" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25896" article="a" name="crossbow of mayhem (charged)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -33018,11 +33852,28 @@
 		<attribute key="skillcriticalchance" value="15" />
 		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="decayTo" value="25886" />
+		<attribute key="transformDeEquipTo" value="26264" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25905" article="a" name="Crossbow of Mayhem (heavily charged)">
+	
+	<item id="26266" article="a" name="crossbow of mayhem (heavily charged) (distance fighting +1)">
+		<attribute key="weight" value="6500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="25" />
+		<attribute key="transformEquipTo" value="25905" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25905" article="a" name="crossbow of mayhem (heavily charged)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -33034,11 +33885,11 @@
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="decayTo" value="25886" />
+		<attribute key="transformDeEquipTo" value="26266" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25916" article="a" name="Crossbow of Mayhem (overcharged)">
+	<item id="25916" article="a" name="crossbow of mayhem (overcharged)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -33051,13 +33902,13 @@
 		<attribute key="skillcriticalchance" value="25" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="decayTo" value="25886" />
+		<attribute key="transformDeEquipTo" value="26268" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="25947" article="a" name="Crossbow of Remedy">
+	<item id="25947" article="a" name="crossbow of remedy">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -33067,7 +33918,24 @@
 		<attribute key="attack" value="3" />
 		<attribute key="hitChance" value="3" />
 	</item>
-	<item id="25948" article="a" name="Crossbow of Remedy (charged)">
+	
+	<item id="26289" article="a" name="crossbow of remedy (charged) (distance fighting +1)">
+		<attribute key="weight" value="6500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
+		<attribute key="transformEquipTo" value="25948" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25948" article="a" name="crossbow of remedy (charged)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -33079,11 +33947,28 @@
 		<attribute key="skilllifechance" value="25" />
 		<attribute key="skilllifeamount" value="5" />
 		<attribute key="decayTo" value="25947" />
+		<attribute key="transformDeEquipTo" value="26289" />
 		<attribute key="duration" value="72000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25949" article="a" name="Crossbow of Remedy (heavily charged)">
+	
+	<item id="26291" article="a" name="crossbow of remedy (heavily charged) (distance fighting +1)">
+		<attribute key="weight" value="6500" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
+		<attribute key="transformEquipTo" value="25949" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
+	</item>	
+	
+	<item id="25949" article="a" name="crossbow of remedy (heavily charged)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -33095,11 +33980,11 @@
 		<attribute key="skilllifechance" value="30" />
 		<attribute key="skilllifeamount" value="7" />
 		<attribute key="decayTo" value="25947" />
+		<attribute key="transformDeEquipTo" value="26291" />
 		<attribute key="duration" value="36000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25950" article="a" name="Crossbow of Remedy (overcharged)">
+	<item id="25950" article="a" name="crossbow of remedy (overcharged)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
@@ -33112,158 +33997,181 @@
 		<attribute key="skilllifechance" value="35" />
 		<attribute key="skilllifeamount" value="9" />
 		<attribute key="decayTo" value="25947" />
+		<attribute key="transformDeEquipTo" value="26292" />
 		<attribute key="duration" value="54000" />
-		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
 	<!-- 10.94 FIM -->
 	<!-- VENDA 10.94 NO SITE -->	
-	<item id="26268" article="a" name="Crossbow of Mayhem (infinite)">
+	<item id="26268" article="a" name="crossbow of mayhem (overcharged) (distance fighting +1)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
-		<attribute key="description" value="(critical hit chance +30, critical hit damage +45)" />
 		<attribute key="range" value="5" />
-		<attribute key="skillDist" value="1" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
-		<attribute key="skillcriticalchance" value="30" />
-		<attribute key="skillcriticaldamage" value="45" />
+		<attribute key="skillcriticalchance" value="25" />
+		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="description" value="This weapon is over charged." />
+		<attribute key="transformEquipTo" value="25916" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26254" article="a" name="Bow of Mayhem (infinite)">
+	<item id="26254" article="a" name="bow of mayhem (overcharged) (distance fighting +1)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
-		<attribute key="description" value="(critical hit chance +30, critical hit damage +45)" />
 		<attribute key="range" value="6" />
-		<attribute key="skillDist" value="1" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
-		<attribute key="skillcriticalchance" value="30" />
-		<attribute key="skillcriticaldamage" value="45" />
+		<attribute key="skillcriticalchance" value="25" />
+		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="description" value="This weapon is over charged." />
+		<attribute key="transformEquipTo" value="25915" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26320" article="a" name="Wand of Mayhem (infinite)">
+	<item id="26320" article="a" name="wand of mayhem (overcharged) (magic level +1)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
-		<attribute key="shootType" value="energy" />
-		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="range" value="3" />	
-		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="45" />
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="transformEquipTo" value="25917" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26323" article="a" name="Rod of Mayhem (infinite)">
+	<item id="26323" article="a" name="rod of mayhem (overcharged) (magic level +1)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
-		<attribute key="shootType" value="smallice" />
-		<attribute key="magiclevelpoints" value="1" />
-		<attribute key="range" value="3" />
-		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="45" />
+		<attribute key="range" value="3" />	
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="transformEquipTo" value="25918" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26247" article="a" name="Mace of Mayhem (infinite)">
+	<item id="26247" article="a" name="mace of mayhem (overcharged) (club fighting +1)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="skillClub" value="1" />
 		<attribute key="weaponType" value="club" />
-		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="45" />		
+		<attribute key="weaponType" value="club" />
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="transformEquipTo" value="25913" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />		
 	</item>	
-	<item id="26250" article="a" name="Hammer of Mayhem (infinite)">
+	<item id="26250" article="a" name="hammer of mayhem (overcharged) (club fighting +1)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="54" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
-		<attribute key="skillClub" value="1" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="45" />
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="transformEquipTo" value="25914" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26244" article="a" name="Chopper of Mayhem (infinite)">
+	<item id="26244" article="a" name="chopper of mayhem (overcharged) (axe fighting +1)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillAxe" value="1" />
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="45" />
+		<attribute key="transformEquipTo" value="25912" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26241" article="a" name="Axe of Mayhem (infinite)">
+	<item id="26241" article="a" name="axe of mayhem (overcharged) (axe fighting +1)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
-		<attribute key="skillAxe" value="1" />
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="45" />
+		<attribute key="transformEquipTo" value="25911" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26235" article="a" name="Blade of Mayhem (infinite)">
+	<item id="26235" article="a" name="blade of mayhem (overcharged) (sword fighting +1)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="34" />
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
-		<attribute key="skillSword" value="1" />
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="weaponType" value="sword" />	
-		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="45" />
+		<attribute key="transformEquipTo" value="25909" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26238" article="a" name="Slayer of Mayhem (infinite)">
+	<item id="26238" article="a" name="slayer of mayhem (overcharged) (sword fighting +1)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="skillSword" value="1" />
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="45" />		
+		<attribute key="transformEquipTo" value="25910" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
 	
 	
 	<!-- COMECEI AQUI -->
 	
 	
-	<item id="26270" article="a" name="Blade of Carving (infinite)">
+	<item id="26270" article="a" name="blade of carving (overcharged) (sword fighting +1)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="skillSword" value="1" />
-		<attribute key="skillmanachance" value="40" />
-		<attribute key="skillmanaamount" value="18" />	
+		<attribute key="transformEquipTo" value="25962" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />	
 	</item>
-	<item id="26256" article="a" name="Blade of Remedy (infinite)">
+	<item id="26256" article="a" name="blade of remedy (overcharged) (sword fighting +1)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="skillSword" value="1" />
-		<attribute key="skilllifechance" value="40" />
-		<attribute key="skilllifeamount" value="18" />	
+		<attribute key="transformEquipTo" value="25922" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>		
-	<item id="26277" article="a" name="Slayer of Carving (infinite)">
+	<item id="26277" article="a" name="slayer of carving (overcharged) (sword fighting +1)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="skillSword" value="1" />
-		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillmanachance" value="40" />
-		<attribute key="skillmanaamount" value="18" />	
+		<attribute key="transformEquipTo" value="25966" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
-	<item id="26260" article="a" name="Slayer of Remedy (infinite)">
+	<item id="26260" article="a" name="slayer of remedy (overcharged) (sword fighting +1)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
@@ -33271,31 +34179,34 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="skillSword" value="1" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skilllifechance" value="40" />
-		<attribute key="skilllifeamount" value="18" />	
+		<attribute key="transformEquipTo" value="25926" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />	
 	</item>	
-	<item id="26284" article="a" name="Axe of Carving (infinite)">
+	<item id="26284" article="a" name="axe of carving (overcharged) (axe fighting +1)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="skillAxe" value="1" />
-		<attribute key="skillmanachance" value="40" />
-		<attribute key="skillmanaamount" value="18" />	
+		<attribute key="transformEquipTo" value="25970" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26267" article="a" name="Axe of Remedy (infinite)">
+	<item id="26267" article="a" name="axe of remedy (overcharged) (axe fighting +1)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="skillAxe" value="1" />
-		<attribute key="skilllifechance" value="40" />
-		<attribute key="skilllifeamount" value="18" />	
+		<attribute key="transformEquipTo" value="25930" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
 	
-	<item id="26293" article="a" name="Chopper of Carving (infinite)">
+	<item id="26293" article="a" name="chopper of carving (overcharged) (axe fighting +1)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
@@ -33303,11 +34214,12 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="skillAxe" value="1" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillmanachance" value="40" />
-		<attribute key="skillmanaamount" value="18" />	
+		<attribute key="transformEquipTo" value="25974" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
 	
-	<item id="26273" article="a" name="Chopper of Remedy (infinite)">
+	<item id="26273" article="a" name="chopper of remedy (overcharged) (axe fighting +1)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="53" />
@@ -33315,11 +34227,12 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="skillAxe" value="1" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skilllifechance" value="40" />
-		<attribute key="skilllifeamount" value="18" />	
+		<attribute key="transformEquipTo" value="25931" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />	
 	</item>	
 	
-	<item id="26305" article="a" name="Hammer of Carving (infinite)">
+	<item id="26305" article="a" name="hammer of carving (overcharged) (club fighting +1)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="54" />
@@ -33327,10 +34240,11 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="skillClub" value="1" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillmanachance" value="40" />
-		<attribute key="skillmanaamount" value="18" />	
+		<attribute key="transformEquipTo" value="25982" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />	
 	</item>	
-	<item id="26283" article="a" name="Hammer of Remedy (infinite)">
+	<item id="26283" article="a" name="hammer of remedy (overcharged) (club fighting +1)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="54" />
@@ -33338,123 +34252,126 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="skillClub" value="1" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skilllifechance" value="40" />
-		<attribute key="skilllifeamount" value="18" />
+		<attribute key="transformEquipTo" value="25942" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	
-	<item id="26300" article="a" name="Mace of Carving (infinite)">
+	<item id="26300" article="a" name="mace of carving (overcharged) (club fighting +1)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="skillClub" value="1" />
-		<attribute key="skillmanachance" value="40" />
-		<attribute key="skillmanaamount" value="18" />	
+		<attribute key="transformEquipTo" value="25978" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />	
 	</item>	
-	<item id="26278" article="a" name="Mace of Remedy (infinite)">
+	<item id="26278" article="a" name="mace of remedy (overcharged) (club fighting +1)">
 		<attribute key="weight" value="7000" />
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="skillClub" value="1" />
-		<attribute key="skilllifechance" value="40" />
-		<attribute key="skilllifeamount" value="18" />
+		<attribute key="transformEquipTo" value="25938" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
 	
-	<item id="26317" article="a" name="Rod of Carving (infinite)">
+	<item id="26317" article="a" name="rod of carving (overcharged) (magic level +1)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
-		<attribute key="shootType" value="smallice" />
 		<attribute key="magiclevelpoints" value="1" />
-		<attribute key="range" value="3" />
-		<attribute key="skillmanachance" value="40" />
-		<attribute key="skillmanaamount" value="18" />
+		<attribute key="transformEquipTo" value="25998" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
-	<item id="26302" article="a" name="Rod of Remedy (infinite)">
+	<item id="26302" article="a" name="rod of remedy (overcharged) (magic level +1)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
-		<attribute key="shootType" value="smallice" />
 		<attribute key="magiclevelpoints" value="1" />
-		<attribute key="range" value="3" />
-		<attribute key="skilllifechance" value="40" />
-		<attribute key="skilllifeamount" value="18" />
+		<attribute key="transformEquipTo" value="25958" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>		
-	<item id="26314" article="a" name="Wand of Carving (infinite)">
+	<item id="26314" article="a" name="wand of carving (overcharged) (magic level +1)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
-		<attribute key="shootType" value="energy" />
 		<attribute key="magiclevelpoints" value="1" />
-		<attribute key="range" value="3" />	
-		<attribute key="skillmanachance" value="40" />
-		<attribute key="skillmanaamount" value="18" />
+		<attribute key="transformEquipTo" value="25994" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26297" article="a" name="Wand of Remedy (infinite)">
+	<item id="26297" article="a" name="wand of remedy (overcharged) (magic level +1)">
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
-		<attribute key="shootType" value="energy" />
 		<attribute key="magiclevelpoints" value="1" />
-		<attribute key="range" value="3" />	
-		<attribute key="skilllifechance" value="40" />
-		<attribute key="skilllifeamount" value="18" />
+		<attribute key="transformEquipTo" value="25954" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26308" article="a" name="Bow of Carving (infinite)">
+	<item id="26308" article="a" name="bow of carving (overcharged) (distance fighting +1)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
-		<attribute key="description" value="(mana leech chance +40, mana leech amount +18)" />
+		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="range" value="6" />
 		<attribute key="skillDist" value="1" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
-		<attribute key="skillmanachance" value="40" />
-		<attribute key="skillmanaamount" value="18" />
+		<attribute key="transformEquipTo" value="25986" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26311" article="a" name="Crossbow of Carving (infinite)">
+	<item id="26311" article="a" name="crossbow of carving (overcharged) (distance fighting +1)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
-		<attribute key="description" value="(mana leech chance +40, mana leech amount +18)" />
+		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="range" value="5" />
 		<attribute key="skillDist" value="1" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
-		<attribute key="skillmanachance" value="40" />
-		<attribute key="skillmanaamount" value="18" />
+		<attribute key="transformEquipTo" value="25990" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26292" article="a" name="Crossbow of Remedy (infinite)">
+	<item id="26292" article="a" name="crossbow of remedy (overcharged) (distance fighting +1)">
 		<attribute key="weight" value="6500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
-		<attribute key="description" value="(life leech chance +40, life leech amount +18)" />
+		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="range" value="5" />
 		<attribute key="skillDist" value="1" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
-		<attribute key="skilllifechance" value="40" />
-		<attribute key="skilllifeamount" value="18" />
+		<attribute key="transformEquipTo" value="25950" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
-	<item id="26288" article="a" name="Bow of Remedy (infinite)">
+	<item id="26288" article="a" name="bow of remedy (overcharged) (distance fighting +1)">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
-		<attribute key="description" value="(life leech chance +40, life leech amount +18)" />
+		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="range" value="6" />
 		<attribute key="skillDist" value="1" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
-		<attribute key="skilllifechance" value="40" />
-		<attribute key="skilllifeamount" value="18" />
+		<attribute key="transformEquipTo" value="25946" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
 	<!-- VENDA 10.94 NO SITE FIM -->
 	
