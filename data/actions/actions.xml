@@ -218,6 +218,7 @@
  	<!-- Taming Items -->
 	<action itemid="5907" script="other/taming.lua" />
 	<action itemid="13247" script="other/taming.lua" />
+	<action itemid="23810" script="other/taming.lua" />
 	<action itemid="13291" script="other/taming.lua" />
 	<action itemid="13292" script="other/tinlizzard.lua" />
 	<action itemid="13293" script="other/taming.lua" />
