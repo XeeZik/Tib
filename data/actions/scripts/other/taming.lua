@@ -11,7 +11,18 @@ local config = {
 			{sound = '*pling*', text = 'The walker seems incompatible with this control unit.'}
 		},
 		success = {sound = '*brzzz*', text = 'You tamed the walker.'}
-	}
+	},
+	[23810]	= {
+		name = 'noble lion',
+		id = 40,
+		type = TYPE_MONSTER,
+		chance = 30,
+		fail = {
+			{run = true, text = 'The noble lion fled.'},
+			{sound = 'GRRRRRRRRR', text = 'The noble lion majestically rejects your amulet.'}
+		},
+		success = {sound = 'Grrr', text = 'The noble lion will now accompany you as friend and ally.'}
+	},	
 	[5907] = {
 		name = 'bear',
 		id = 3,
