@@ -90,8 +90,8 @@ maxMessageBuffer = 4
 emoteSpells = false
 classicEquipmentSlots = false
 allowWalkthrough = true
-coinPacketSize = 1500
-coinImagesURL = "http://some.url/images/store/"
+coinPacketSize = 25
+coinImagesURL = "http://localhost/store/"
 
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml
