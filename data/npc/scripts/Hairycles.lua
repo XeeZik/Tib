@@ -190,7 +190,12 @@ local function creatureSayCallback(cid, type, msg)
 		else
 			npcHandler:say('You not have finished journey for wisdom yet, young human.', cid)
 		end
-
+	elseif msgcontains(msg, 'cookie') then
+		if player:getStorageValue(Storage.WhatAFoolishQuest.Questline) == 31
+			and player:getStorageValue(Storage.WhatAFoolishQuest.CookieDelivery.Hairycles) ~= 1 then
+			npcHandler:say('Oh you bring cookie for old Hairycles?', cid)
+			npcHandler.topic[cid] = 19
+		end
 	elseif msgcontains(msg, 'heal') then
 		if questProgress > 11 then
 			if player:getHealth() < 50 then
