@@ -437,7 +437,7 @@ local config = {
 	},
 	[31] = {
 		text = {
-			[1] = 'Are you done with your little [1]y mission?',
+			[1] = 'Are you done with your little delivery mission?',
 			[3] = 'Indeed, you\'re done. By the way, you look a little bit tired and dirty. However, if you still have some power left, ask me about the next mission.'
 		},
 		yes = true,
