@@ -96,10 +96,10 @@ end
 
 function Player.getCookiesDelivered(self)
 	local storage, amount = {
-		STORAGE.WHATAFOOLISHQUEST.COOKIEDELIVERY.SIMONTHEBEGGAR, STORAGE.WHATAFOOLISHQUEST.COOKIEDELIVERY.MARKWIN, STORAGE.WHATAFOOLISHQUEST.COOKIEDELIVERY.ARIELLA,
-		STORAGE.WHATAFOOLISHQUEST.COOKIEDELIVERY.HAIRYCLES, STORAGE.WHATAFOOLISHQUEST.COOKIEDELIVERY.DJINN, STORAGE.WHATAFOOLISHQUEST.COOKIEDELIVERY.AVARTAR,
-		STORAGE.WHATAFOOLISHQUEST.COOKIEDELIVERY.ORCKING, STORAGE.WHATAFOOLISHQUEST.COOKIEDELIVERY.LORBAS, STORAGE.WHATAFOOLISHQUEST.COOKIEDELIVERY.WYDA,
-		STORAGE.WHATAFOOLISHQUEST.COOKIEDELIVERY.HJAERN
+		Storage.WhatAFoolishQuest.CookieDelivery.SimonTheBeggar, Storage.WhatAFoolishQuest.CookieDelivery.Markwin, Storage.WhatAFoolishQuest.CookieDelivery.Ariella,
+		Storage.WhatAFoolishQuest.CookieDelivery.Hairycles, Storage.WhatAFoolishQuest.CookieDelivery.Djinn, Storage.WhatAFoolishQuest.CookieDelivery.AvarTar,
+		Storage.WhatAFoolishQuest.CookieDelivery.OrcKing, Storage.WhatAFoolishQuest.CookieDelivery.Lorbas, Storage.WhatAFoolishQuest.CookieDelivery.Wyda,
+		Storage.WhatAFoolishQuest.CookieDelivery.Hjaern
 	}, 0
 	for i = 1, #storage do
 		if self:getStorageValue(storage[i]) == 1 then
