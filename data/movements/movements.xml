@@ -23,7 +23,7 @@
  <movevent event="StepIn" fromaid="41346" toaid="41349" script="lionrock.lua" />
  
  <movevent event="StepIn" actionid="25019" script="treinon.lua" /> 
- 
+ <movevent event="StepOut" actionid="25019" script="treinon.lua" /> 
  <movevent event="StepIn" pos="32076;32252;6" script="rookhouse.lua" /> 
  <movevent event="StepIn" pos="32075;32252;6" script="rookhouse.lua" />  
  <movevent event="StepIn" pos="32074;32252;6" script="rookhouse.lua" /> 
