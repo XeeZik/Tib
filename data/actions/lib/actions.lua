@@ -579,9 +579,8 @@ end
 
 function onUseSpoon(player, item, fromPosition, target, toPosition, isHotkey)
 	local targetId = target.itemid
-
-	--The Ice Islands Quest
-	if targetId == 388 then
+	--The Ice Islands Quest and What a foolish Quest - Mission 8 (Sulphur)
+	if targetId == 388 or target.actionid == 14031 then
 		if player:getStorageValue(Storage.TheIceIslands.Questline) >= 21 then
 			if player:getStorageValue(Storage.TheIceIslands.SulphurLava) < 1 then
 				player:addItem(8301, 1)
@@ -589,8 +588,14 @@ function onUseSpoon(player, item, fromPosition, target, toPosition, isHotkey)
 				toPosition:sendMagicEffect(CONST_ME_MAGIC_RED)
 				player:say('You retrive a fine sulphur from a lava hole.', TALKTYPE_MONSTER_SAY)
 			end
+		elseif player:getStorageValue(Storage.WhatAFoolishQuest.Questline) ~= 21
+				or player:getStorageValue(Storage.WhatAFoolishQuest.InflammableSulphur) == 1 then
+			return false
 		end
-
+		player:setStorageValue(Storage.WhatAFoolishQuest.InflammableSulphur, 1)
+		player:addItem(8204, 1)
+		toPosition:sendMagicEffect(CONST_ME_YELLOW_RINGS)
+		
 	elseif targetId == 4184 then
 		if player:getStorageValue(Storage.TheIceIslands.Questline) >= 21 then
 			if player:getStorageValue(Storage.TheIceIslands.SporesMushroom) < 1 then
@@ -600,21 +605,9 @@ function onUseSpoon(player, item, fromPosition, target, toPosition, isHotkey)
 				player:say('You retrive spores from a mushroom.', TALKTYPE_MONSTER_SAY)
 			end
 		end
-
-	-- What a foolish Quest - Mission 8 (Sulphur)
-	elseif targetId == 8573 then
-		if player:getStorageValue(Storage.WhatAFoolishQuest.Questline) ~= 21
-				or player:getStorageValue(Storage.WhatAFoolishQuest.InflammableSulphur) == 1 then
-			return false
-		end
-
-		player:setStorageValue(Storage.WhatAFoolishQuest.InflammableSulphur, 1)
-		player:addItem(8204, 1)
-		toPosition:sendMagicEffect(CONST_ME_YELLOW_RINGS)
 	else
 		return false
 	end
-
 	return true
 end
 
