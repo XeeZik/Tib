@@ -447,6 +447,11 @@ function Player:onGainExperience(source, exp, rawExp)
 		end
 	end
 
+	-- Apply Extra Experience
+	if self:getStorageValue(config.storage) >= os.time() then
+		exp = exp * config.rate
+	end
+	
 	return exp
 end
 
