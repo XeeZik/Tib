@@ -97,8 +97,8 @@
 	<mount id="95" clientid="886" name="Swamp Snapper" speed="20" premium="yes" />
 	<mount id="96" clientid="887" name="Mould Shell" speed="20" premium="yes" />
 	<mount id="97" clientid="888" name="Reed Lurker" speed="20" premium="yes" />
-	<mount id="98" clientid="889" name="Neon Sparkid" speed="10" premium="yes" />
-	<mount id="99" clientid="890" name="Vortexion" speed="10" premium="yes" />
+	<mount id="98" clientid="889" name="Neon Sparkid" speed="20" premium="yes" />
+	<mount id="99" clientid="890" name="Vortexion" speed="20" premium="yes" />
 	<mount id="100" clientid="901" name="Ivory Fang" speed="20" premium="yes" />
 	<mount id="101" clientid="902" name="Shadow Claw" speed="20" premium="yes" />
 	<mount id="102" clientid="903" name="Snow Pelt" speed="20" premium="yes" />
