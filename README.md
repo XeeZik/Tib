@@ -1,6 +1,9 @@
-# Malucooo TFS1.2/Otxserver 3.7 [![Build Status](https://travis-ci.org/malucooo/Otxserver-New.svg?branch=master)](https://travis-ci.org/malucooo/Otxserver-New)  
+# Malucooo TFS1.2/Otxserver 3.7 [![Build Status](https://travis-ci.org/malucooo/Otxserver-New.svg?branch=master)](https://travis-ci.org/malucooo/Otxserver-New) [![Build status](https://ci.appveyor.com/api/projects/status/8vp4es6y9df5d8tp?svg=true)](https://ci.appveyor.com/project/mattyx14/otxserver-new)
 
 Servidor de Tibia mantido por Malucooo. O servidor usa como base Otxserver 3.7 e também TFS 1.2.
+
+# Downloads
+Alternatively download [AppVeyor builds for Windows](https://ci.appveyor.com/project/mattyx14/otxserver-new)
 
 # Clonando o Projeto
 Caso você tenha interesse em apenas Clonar o projeto, por favor, tenha certeza de possuir o git-lfs. Para tanto, verifique nosso [Guia de Git e GitLfs](https://github.com/malucooo/Otxserver-Global/wiki/Git-e-Git-Lfs).
