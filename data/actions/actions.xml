@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
-
+	<!-- Items actions -->
+	<action itemid="24324" script="sweetheart.lua" />
+	
 	<!-- Lower Roshamuul Quest -->
 	<action itemid="22387" script="roshamuul/mixture.lua" />
 	<action itemid="22388" script="roshamuul/mixture.lua" />
@@ -8,11 +10,11 @@
 	<action itemid="22467" script="roshamuul/gravel.lua" />
 	<action itemid="22503" script="roshamuul/mortar.lua" />
 	<action itemid="22504" script="roshamuul/trough.lua" />
-
 	<action fromaid="15150" toaid="15151" script="ctf.lua" />
+	
 	<!-- Arena Pvp -->
 
-    <action actionid="61225" script="Novos/citywar.lua"/>
+   	<action actionid="61225" script="Novos/citywar.lua"/>
 	
 	<action itemid="23760" script="lionrock.lua" />
 	<action itemid="23835" script="lionrock.lua" />
