@@ -1,4 +1,4 @@
-# Malucooo TFS1.2/Otxserver 3.7
+# Malucooo TFS1.2/Otxserver 3.7 [![Build Status](https://travis-ci.org/malucooo/Otxserver-New.svg?branch=master)](https://travis-ci.org/malucooo/Otxserver-New)  
 
 Servidor de Tibia mantido por Malucooo. O servidor usa como base Otxserver 3.7 e também TFS 1.2.
 
