@@ -102,4 +102,11 @@
 	<mount id="100" clientid="901" name="Ivory Fang" speed="20" premium="yes" />
 	<mount id="101" clientid="902" name="Shadow Claw" speed="20" premium="yes" />
 	<mount id="102" clientid="903" name="Snow Pelt" speed="20" premium="yes" />
+	<mount id="103" clientid="905" name="Jackalope" speed="20" premium="yes" />
+	<mount id="104" clientid="906" name="Dreadhare" speed="20" premium="yes" />
+	<mount id="105" clientid="907" name="Wolpertinger" speed="20" premium="yes" />
+	<mount id="106" clientid="937" name="Stone Rhino" speed="20" premium="yes" />
+	<mount id="107" clientid="950" name="Gold Sphinx" speed="20" premium="yes" />
+	<mount id="108" clientid="951" name="Emerald Sphinx" speed="20" premium="yes" />
+	<mount id="109" clientid="952" name="Shadow Sphinx" speed="20" premium="yes" />
 </mounts>

@@ -1593,9 +1593,16 @@
 		<attribute key="slotType" value="backpack" />
 	</item>
 	
+	<item id="26377" article="a" name="gold pouch">
+		<attribute key="weight" value="1800" />
+		<attribute key="containerSize" value="8" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+
+	
 	<item id="23816" article="a" name="war backpack">
 		<attribute key="weight" value="1800" />
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="8" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	
@@ -3224,14 +3231,9 @@
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="86400" />
 	</item>
-	<item id="2352" article="a" name="donate arrow">
+	<item id="2352" article="a" name="crystal arrow">
 		<attribute key="description" value="This arrow is powerfull." />
-		<attribute key="attack" value="75" />
-		<attribute key="defense" value="10" />
 		<attribute key="weight" value="100" />
-		<attribute key="shootType" value="arrow" />
-		<attribute key="weaponType" value="distance" />
-		<attribute key="range" value="7" />
 	</item>
 	<item id="2353" article="a" name="burning heart">
 		<attribute key="description" value="It is still beating with unholy life. It seems to be rotting rapidly." />
@@ -17496,10 +17498,11 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="2" />
 	</item>
-	<item id="8925" article="a" name="donate axe">
+	<item id="8925" article="a" name="solar axe">
 		<attribute key="weight" value="11000" />
-		<attribute key="defense" value="40" />
-		<attribute key="attack" value="60" />
+		<attribute key="defense" value="29" />
+		<attribute key="extradef" value="3" />
+		<attribute key="attack" value="52" />
 		<attribute key="weaponType" value="axe" />
 	</item>
 	<item id="8926" article="a" name="demonwing axe">
@@ -17516,10 +17519,11 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="extradef" value="-1" />
 	</item>
-	<item id="8928" article="an" name="donate club">
+	<item id="8928" article="an" name="obsidian truncheon">
 		<attribute key="weight" value="6500" />
-		<attribute key="defense" value="40" />
-		<attribute key="attack" value="60" />
+		<attribute key="defense" value="30" />
+		<attribute key="attack" value="50" />
+		<attribute key="extradef" value="2" />
 		<attribute key="weaponType" value="club" />
 	</item>
 	<item id="8929" name="the stomper">
@@ -17536,10 +17540,11 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="3" />
 	</item>
-	<item id="8931" name="donate sword">
+	<item id="8931" name="the epiphany">
 		<attribute key="weight" value="4500" />
-		<attribute key="defense" value="40" />
-		<attribute key="attack" value="60" />
+		<attribute key="defense" value="35" />
+		<attribute key="attack" value="50" />
+		<attribute key="extradef" value="3" />
 		<attribute key="weaponType" value="sword" />
 	</item>
 	<item id="8932" name="the calamity">
@@ -36209,6 +36214,7 @@
 	</item>
 	<item id="23754" article="a" name="stone of insight">
 		<attribute key="weight" value="999" />
+		<attribute key="slotType" value="ammo" />
 		<attribute key="description" value="This rare artefact can be traded with Milos or Trimegis for a fraction of their knowledge." />
 	</item>
 	

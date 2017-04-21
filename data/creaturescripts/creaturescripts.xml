@@ -3,6 +3,7 @@
 <event type="think" name="Gaz'haragoth heal" script="bosses/gaz'haragoth heal.lua"/>
 <!-- Roshamuul-->
 <event type="kill" name="lowerRoshamuul" script="lowerRoshamuul.lua"/>
+<event type="healthchange" name="HealGaz" script="gaz'haragoth heal.lua"/>	
 
     <event type="preparedeath" name="BFPrepareDeath" script="battlefield.lua" />
 	<event type="healthchange" name="BFHealthChange" script="battlefield.lua" />
