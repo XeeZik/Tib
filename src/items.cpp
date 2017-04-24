@@ -420,6 +420,8 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 			it.rotateTo = pugi::cast<int32_t>(valueAttribute.value());
 		} else if (tmpStrValue == "moveable" || tmpStrValue == "movable") {
 			it.moveable = valueAttribute.as_bool();
+		} else if (tmpStrValue == "wrapto") {
+			it.wrapTo = pugi::cast<int32_t>(valueAttribute.value());
 		} else if (tmpStrValue == "blockprojectile") {
 			it.blockProjectile = valueAttribute.as_bool();
 		} else if (tmpStrValue == "allowpickupable" || tmpStrValue == "pickupable") {
