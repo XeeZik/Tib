@@ -102,6 +102,8 @@ bool Events::load()
 				info.playerOnMoveCreature = event;
 			} else if (methodName == "onReport") {
 				info.playerOnReport = event;
+			} else if (methodName == "onWrapItem") {
+				info.playerOnWrapItem = event;
 			} else if (methodName == "onTurn") {
 				info.playerOnTurn = event;
 			} else if (methodName == "onGainExperience") {
