@@ -58,7 +58,7 @@
 	<outfit type="0" looktype="900" name="Lupine Warden" premium="yes" unlocked="yes" enabled="yes" />
 	<outfit type="0" looktype="909" name="Grove Keeper" premium="yes" unlocked="yes" enabled="yes" />
 	<outfit type="0" looktype="929" name="Festive Outfit" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="956" name="Pharaoh" premium="yes" unlocked="yes" enabled="no" />
+	<outfit type="0" looktype="956" name="Pharaoh" premium="yes" unlocked="yes" enabled="yes" />
 
 	<!-- Male outfits -->
 	<outfit type="1" looktype="128" name="Citizen" premium="no" unlocked="yes" enabled="yes" />
@@ -118,5 +118,5 @@
 	<outfit type="1" looktype="899" name="Lupine Warden" premium="yes" unlocked="yes" enabled="yes" />
 	<outfit type="1" looktype="908" name="Grove Keeper" premium="yes" unlocked="yes" enabled="yes" />
 	<outfit type="1" looktype="931" name="Festive Outfit" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="955" name="Pharaoh" premium="yes" unlocked="yes" enabled="no" />
+	<outfit type="1" looktype="955" name="Pharaoh" premium="yes" unlocked="yes" enabled="yes" />
 </outfits>
