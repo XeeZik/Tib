@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
-
+          
+	<!--store-->
+	<action itemid="26347" script="decoracao/fishtank.lua"/>
+	<action fromid="26094" toid="26097" script="decoracao/transform.lua"/>
+	<action fromid="26090" toid="26093" script="decoracao/transform.lua"/>
+	<action fromid="26098" toid="26099" script="decoracao/transform.lua"/>
+	<action fromid="26100" toid="26101" script="decoracao/transform.lua"/>
+	<action fromid="26107" toid="26108" script="decoracao/transform.lua"/>
+	<action fromid="26141" toid="26142" script="decoracao/transform.lua"/>
+	<action fromid="26364" toid="26365" script="decoracao/transform.lua"/><!--dog house-->
+    <action itemid="26365" script="decoracao/transform.lua"/><!--dog house-->
+    <action itemid="26353" script="decoracao/transform.lua"/><!--dog house-->
+	<action fromid="27088" toid="27089" script="decoracao/transform.lua"/>
+	<action fromid="27090" toid="27091" script="decoracao/transform.lua"/>
+	<action fromid="25392" toid="25393" script="decoracao/carpets.lua"/>
+	<action fromid="26192" toid="26193" script="decoracao/carpets.lua"/>
+	<action itemid="26087" script="decoracao/carpets.lua"/><!--yalaha carpet-->
+	<action itemid="26109" script="decoracao/carpets.lua"/><!--yalaha carpet-->	
+	
+	<action itemid="26088" script="decoracao/carpets.lua"/><!--white fur -->
+	<action itemid="26110" script="decoracao/carpets.lua"/><!--white fur -->
+	
+	<action itemid="26089" script="decoracao/carpets.lua"/><!--bamboo mat -->
+	<action itemid="26111" script="decoracao/carpets.lua"/><!--bamboo mat -->
+	
+	<action itemid="26366" script="decoracao/carpets.lua"/><!--azure carpet-->
+	<action itemid="26372" script="decoracao/carpets.lua"/><!--azure carpet-->
+	
+	<action itemid="26363" script="decoracao/carpets.lua"/><!--crimson carpet-->
+	<action itemid="26371" script="decoracao/carpets.lua"/><!--crimson carpet-->
+	
+	<action itemid="26367" script="decoracao/carpets.lua"/><!--emerald carpet-->
+	<action itemid="26373" script="decoracao/carpets.lua"/><!--emerald carpet-->
+	
+	<action itemid="26368" script="decoracao/carpets.lua"/><!--light parquet -->
+	<action itemid="26374" script="decoracao/carpets.lua"/><!--light parquet -->
+	
+	<action itemid="26369" script="decoracao/carpets.lua"/><!--dark parquet -->
+	<action itemid="26375" script="decoracao/carpets.lua"/><!--dark parquet -->
+	
+	<action itemid="26370" script="decoracao/carpets.lua"/><!--marble floor-->
+	<action itemid="26376" script="decoracao/carpets.lua"/><!--marble floor-->
+	
+	<action itemid="27072" script="decoracao/carpets.lua"/><!--flowery carpet-->
+	<action itemid="27080" script="decoracao/carpets.lua"/><!--flowery carpet-->
+	
+	<action itemid="27073" script="decoracao/carpets.lua"/><!--Colourful Carpet-->
+	<action itemid="27081" script="decoracao/carpets.lua"/><!--Colourful Carpet-->
+	
+	<action itemid="27074" script="decoracao/carpets.lua"/><!--striped carpet-->
+	<action itemid="27082" script="decoracao/carpets.lua"/><!--striped carpet-->
+	
+	<action itemid="27075" script="decoracao/carpets.lua"/><!--fur carpet-->
+	<action itemid="27083" script="decoracao/carpets.lua"/><!--fur carpet-->
+	
+	<action itemid="27076" script="decoracao/carpets.lua"/><!--diamond carpet-->
+	<action itemid="27084" script="decoracao/carpets.lua"/><!--diamond carpet-->
+	
+	<action itemid="27077" script="decoracao/carpets.lua"/><!--patterned carpet-->
+	<action itemid="27085" script="decoracao/carpets.lua"/><!--patterned carpet-->
+	
+	<action itemid="27078" script="decoracao/carpets.lua"/><!--night sky carpet-->
+	<action itemid="27086" script="decoracao/carpets.lua"/><!--night sky carpet-->
+	
+	<action itemid="27079" script="decoracao/carpets.lua"/><!--star carpet-->
+	<action itemid="27087" script="decoracao/carpets.lua"/><!--star carpet-->
+	
+	
+	
+	
+	
 	<!-- Lower Roshamuul Quest -->
 	<action itemid="22387" script="roshamuul/mixture.lua" />
 	<action itemid="22388" script="roshamuul/mixture.lua" />
