@@ -175,7 +175,7 @@ local config = {
 	},
 	[13537]	= {
 		mountName = 'donkey',
-		lookType = 399,
+		lookType = 387,
 		id = 13,
 		type = TYPE_MONSTER,
 		chance = 40,

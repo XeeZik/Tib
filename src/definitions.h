@@ -25,12 +25,12 @@ static constexpr auto STATUS_SERVER_VERSION = "3";
 static constexpr auto MINOR_VERSION = "9";
 static constexpr auto REVISION_VERSION = "DEV";
 static constexpr auto SOFTWARE_CODENAME = "VANXI";
-static constexpr auto STATUS_SERVER_DEVELOPERS = "Mattyx14, Brewsterl, Malucooo and The Forgotten Server Developers";
+static constexpr auto STATUS_SERVER_DEVELOPERS = "Mattyx14, Brewsterl, Malucooo, Darkjav and The Forgotten Server Developers";
 static constexpr auto GIT_REPO = "https://github.com/mattyx14/otxserver/tree/otxserv3/";
 
-static constexpr auto CLIENT_VERSION_MIN = 1098;
-static constexpr auto CLIENT_VERSION_MAX = 1099;
-static constexpr auto CLIENT_VERSION_STR = "10.99";
+static constexpr auto CLIENT_VERSION_MIN = 1097;
+static constexpr auto CLIENT_VERSION_MAX = 1200;
+static constexpr auto CLIENT_VERSION_STR = "10.97 - 10.00";
 
 static constexpr auto AUTHENTICATOR_DIGITS = 6U;
 static constexpr auto AUTHENTICATOR_PERIOD = 30U;

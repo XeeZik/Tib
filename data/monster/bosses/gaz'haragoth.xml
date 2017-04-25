@@ -19,7 +19,7 @@
 		<flag runonhealth="0"/>
 	</flags>
   	<script>
-		<event name="Gaz'haragoth heal"/>
+	<event name="HealGaz" />
 	</script>
 
 	<attacks>

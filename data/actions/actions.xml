@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
-          
 	<!--store-->
 	<action itemid="26347" script="fishtank.lua"/>
 	<action fromid="26094" toid="26097" script="transform.lua"/>
@@ -10,8 +9,8 @@
 	<action fromid="26107" toid="26108" script="transform.lua"/>
 	<action fromid="26141" toid="26142" script="transform.lua"/>
 	<action fromid="26364" toid="26365" script="transform.lua"/><!--dog house-->
-    <action itemid="26365" script="transform.lua"/><!--dog house-->
-    <action itemid="26353" script="transform.lua"/><!--dog house-->
+  <action itemid="26365" script="transform.lua"/><!--dog house-->
+  <action itemid="26353" script="transform.lua"/><!--dog house-->
 	<action fromid="27088" toid="27089" script="transform.lua"/>
 	<action fromid="27090" toid="27091" script="transform.lua"/>
 	<action fromid="25392" toid="25393" script="carpets.lua"/>
@@ -66,10 +65,11 @@
 	
 	<action itemid="27079" script="carpets.lua"/><!--star carpet-->
 	<action itemid="27087" script="carpets.lua"/><!--star carpet-->
+  
+	<!-- Items actions -->
 	
-	
-	
-	
+	<action itemid="24324" script="sweetheart.lua" />
+
 	
 	<!-- Lower Roshamuul Quest -->
 	<action itemid="22387" script="roshamuul/mixture.lua" />
@@ -78,11 +78,11 @@
 	<action itemid="22467" script="roshamuul/gravel.lua" />
 	<action itemid="22503" script="roshamuul/mortar.lua" />
 	<action itemid="22504" script="roshamuul/trough.lua" />
-
 	<action fromaid="15150" toaid="15151" script="ctf.lua" />
+	
 	<!-- Arena Pvp -->
 
-    <action actionid="61225" script="Novos/citywar.lua"/>
+   	<action actionid="61225" script="Novos/citywar.lua"/>
 	
 	<action itemid="23760" script="lionrock.lua" />
 	<action itemid="23835" script="lionrock.lua" />
