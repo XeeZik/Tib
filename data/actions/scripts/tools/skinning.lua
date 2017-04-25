@@ -80,7 +80,7 @@ local config = {
 		-- Demon
 		[2916] = {value = 25000, newItem = 5906},
 		-- Vampires
-		[2956] = {value = 25000, newItem = 5905},
+		[2956] = {value = 25000, newItem = 5905, after = 2957},
 		[6006] = {value = 25000, newItem = 5905, after = 2957},
 		[8938] = {value = 25000, newItem = 5905},
 		[9654] = {value = 25000, newItem = 5905, after = 9658},

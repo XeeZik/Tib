@@ -349,10 +349,8 @@ class MagicField final : public Item
 			const ItemType& it = items[getID()];
 			if (it.conditionDamage) {
 				return it.conditionDamage->getTotalDamage();
-				
 			}
 			return 0;
-			
 		}
 		void onStepInField(Creature* creature);
 

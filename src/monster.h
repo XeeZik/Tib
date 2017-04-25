@@ -175,15 +175,12 @@ class Monster final : public Creature
 		}
 		bool isRandomSteping() const {
 			return randomSteping;
-			
 		}
 		void setIgnoreFieldDamage(bool ignore) {
 			ignoreFieldDamage = ignore;
-			
 		}
 		bool getIgnoreFieldDamage() const {
 			return ignoreFieldDamage;
-			
 		}
 
 		BlockType_t blockHit(Creature* attacker, CombatType_t combatType, int32_t& damage,

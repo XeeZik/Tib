@@ -897,12 +897,12 @@ void ProtocolGame::parseRotateItem(NetworkMessage& msg)
 }
 
 void ProtocolGame::parseWrapItem(NetworkMessage& msg)
- {
+{
 	Position pos = msg.getPosition();
 	uint16_t spriteId = msg.get<uint16_t>();
 	uint8_t stackpos = msg.getByte();
 	addGameTaskTimed(DISPATCHER_TASK_EXPIRATION, &Game::playerWrapItem, player->getID(), pos, stackpos, spriteId);
-	}
+}
 
 void ProtocolGame::parseBugReport(NetworkMessage& msg)
 {

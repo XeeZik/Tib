@@ -648,7 +648,6 @@ class Item : virtual public Thing
 		}
 		bool isWrappable() const {
 			return items[id].wrapTo != 0;
-			
 		}
 		bool hasWalkStack() const {
 			return items[id].walkStack;

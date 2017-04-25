@@ -730,7 +730,7 @@ void ProtocolGameBase::sendBasicData()
 	}
 	msg.addByte(player->getVocation()->getClientId());
 	if (version > 1099) {
-	msg.addByte(1); // has reached Main (allow player to open Prey window)
+		msg.addByte(1); // has reached Main (allow player to open Prey window)
 	}
 	msg.add<uint16_t>(0xFF); // number of known spells
 	for (uint8_t spellId = 0x00; spellId < 0xFF; spellId++) {

@@ -9,8 +9,7 @@
 	<action fromid="26107" toid="26108" script="transform.lua"/>
 	<action fromid="26141" toid="26142" script="transform.lua"/>
 	<action fromid="26364" toid="26365" script="transform.lua"/><!--dog house-->
-  <action itemid="26365" script="transform.lua"/><!--dog house-->
-  <action itemid="26353" script="transform.lua"/><!--dog house-->
+	<action itemid="26353" script="transform.lua"/><!--dog house-->
 	<action fromid="27088" toid="27089" script="transform.lua"/>
 	<action fromid="27090" toid="27091" script="transform.lua"/>
 	<action fromid="25392" toid="25393" script="carpets.lua"/>
