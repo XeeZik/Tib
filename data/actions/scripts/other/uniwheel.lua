@@ -11,6 +11,9 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 				player:say('The strange wheel seems to vibrate and slowly starts turning continuously', TALKTYPE_MONSTER_SAY)
 				doSendMagicEffect(fromPosition, CONST_ME_MAGIC_BLUE)
 				player:setStorageValue(Storage.Uniwheel, 1)
+				if player:getStorageValue(Storage.Uniwheel) == 1 then
+					player:addAchievement(332, showMsg)
+				end
 			else
 				doRemoveItem(item.uid)
 				player:say('Splosh!', TALKTYPE_MONSTER_SAY)
