@@ -364,7 +364,9 @@ achievements =
 	[327] = {name = "Glooth Engineer", grade = 2, points = 0, description = "Though you might have averted a dire threat for Rathleton, this relative peace may only hold for a while. At least you've scavenged an outfit from some of the poor fellows that have fallen prey to death priest Shagron."}, --update points
 	[328] = {name = "Rathleton Citizen", grade = 1, points = 0, description = "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Citizen."}, --update points
 	[329] = {name = "Rathleton Commoner", grade = 1, points = 1, description = "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Commoner."},
-	[330] = {name = "Rathleton Inhabitant", grade = 1, points = 1, description = "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Inhabitant."}
+	[330] = {name = "Rathleton Inhabitant", grade = 1, points = 1, description = "By having rendered numerous services to the city of Rathleton you have been promoted to the rank of Inhabitant."},
+	[331] = {name = "Knock on Wood", grade = 1, points = 3, description = "It's a wound-up wooden lizard! Well, stranger things have happened, or so you're told. Just hop on and let this wood-and-tin contraption take you anywhere you want to wind down a bit. And hope you don't get hit by lightning underway."},
+	[332] = {name = "Stuntman", grade = 1, points = 3, description = "A drop of oil and you're good to go. This unique mount will roll merrily in and out of any strange place you want to visit. If you see no exit, you probably ended up in a circus ring. Ah well, the show must go on!"}
 
 }
 
