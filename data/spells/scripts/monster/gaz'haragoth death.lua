@@ -45,14 +45,14 @@ function onTargetTile(creature, pos)
                 local player = Player(creatureTable[r])
                
                 if isPlayer(creatureTable[r]) == true and isInArray(voc, player:getVocation():getId()) then
-                    doTargetCombatHealth(creature, creatureTable[r], COMBAT_DEATHDAMAGE, -min, -max, CONST_ME_NONE)
+                    doTargetCombatHealth(creature, creatureTable[r], COMBAT_ENERGYDAMAGE, -min, -max, CONST_ME_NONE)
                 elseif isMonster(creatureTable[r]) == true then
-                    doTargetCombatHealth(creature, creatureTable[r], COMBAT_DEATHDAMAGE, -min, -max, CONST_ME_NONE)
+                    doTargetCombatHealth(creature, creatureTable[r], COMBAT_ENERGYDAMAGE, -min, -max, CONST_ME_NONE)
                 end
             end
         end
     end
-    pos:sendMagicEffect(CONST_ME_MORTAREA)
+    pos:sendMagicEffect(CONST_ME_PURPLEENERGY)
     return true
 end
  
