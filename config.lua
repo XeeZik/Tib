@@ -36,7 +36,7 @@ maxPacketsPerSecond = 25
 -- Version Manual
 clientVersionMin = 1100
 clientVersionMax = 1200
-clientVersionStr = "Only clients with protocol 10.98/99 - 10.00 or allowed!"
+clientVersionStr = "Only clients with protocol 10.00 is allowed!"
 
 -- Depot Limit
 freeDepotLimit = 2000
@@ -80,7 +80,7 @@ mysqlPass = ""
 mysqlDatabase = "global"
 mysqlPort = 3306
 mysqlSock = ""
-
+passwordType = "sha1"
 -- Misc.
 allowChangeOutfit = true
 freePremium = true

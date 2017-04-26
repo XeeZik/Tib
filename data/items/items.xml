@@ -2388,6 +2388,13 @@
 		<attribute key="shootType" value="smallearth" />
 		<attribute key="range" value="3" />
 	</item>
+	<item id="23721" article="a" name="the chiller">
+		<attribute key="description" value="It is a little, well, chilly to the touch." />
+		<attribute key="weight" value="1500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="3" />
+	</item>
 	<item id="2182" article="a" name="snakebite rod">
 		<attribute key="description" value="It seems to twitch and quiver as if trying to escape your grip." />
 		<attribute key="weight" value="1900" />
@@ -2438,6 +2445,13 @@
 		<attribute key="weight" value="2500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+	</item>
+	<item id="23719" article="a" name="the scorcher">
+		<attribute key="description" value="It´s warm to the touch." />
+		<attribute key="weight" value="1500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="fire" />
 		<attribute key="range" value="3" />
 	</item>
 	<item id="2190" article="a" name="wand of vortex">
@@ -37409,7 +37423,15 @@
 	</item>
 	
 	
-	
+	<item id="23798" article="a" name="bow" />
+	<item id="23799" article="a" name="simple arrow" />
+	<item id="23800" article="a" name="wooden shield" />
+	<item id="23801" article="a" name="dagger" />
+	<item id="23802" article="a" name="the scorcher" />
+	<item id="23803" article="a" name="lightest magic missile rune" />
+	<item id="23804" article="a" name="the chiller" />
+	<item id="23805" article="a" name="lightest stone shower rune" />
+
 	
 	
 	
