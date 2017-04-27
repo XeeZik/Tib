@@ -1,4 +1,4 @@
-local price_aol = 10000
+local price_aol = 50000
 
 function onSay(player, words, param)
 	

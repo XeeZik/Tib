@@ -42,8 +42,8 @@
 		<item id="2666" chance="5000" />					<!-- meat -->
 		<item id="12428" countmax="2" chance="2000" />	<!-- minotaur horn -->
 		<item id="5878" chance="1900" />					<!-- minotaur leather -->
-		<item id="2455" chance="830" />					<!-- crossbow -->
-		<item id="2465" chance="530" />					<!-- brass armor -->
-		<item id="2483" chance="530" />					<!-- scale armor -->
+		<item id="2455" chance="850" />					<!-- crossbow -->
+		<item id="2465" chance="520" />					<!-- brass armor -->
+		<item id="2483" chance="550" />					<!-- scale armor -->
 	</loot>
 </monster>

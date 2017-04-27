@@ -25,12 +25,12 @@
 	<loot>
 		<item id="2386" chance="12860"/><!-- axe -->
 		<item id="2148" countmax="4" chance="100000"/><!-- gold coin -->
-		<item id="2388" chance="25710"/><!-- hatchet -->
-		<item id="2649" chance="8570"/><!-- leather legs -->
-		<item id="2597" chance="4290"/><!-- letter -->
-		<item id="2553" chance="8570"/><!-- pick -->
-		<item id="2510" chance="17140"/><!-- plate shield -->
-		<item id="2484" chance="8570"/><!-- studded armor -->
-		<item id="2787" countmax="1" chance="47140"/><!-- white mushroom -->
+		<item id="2388" chance="24310"/><!-- hatchet -->
+		<item id="2649" chance="10270"/><!-- leather legs -->
+		<item id="2597" chance="6490"/><!-- letter -->
+		<item id="2553" chance="7670"/><!-- pick -->
+		<item id="2510" chance="16640"/><!-- plate shield -->
+		<item id="2484" chance="10270"/><!-- studded armor -->
+		<item id="2787" countmax="1" chance="48140"/><!-- white mushroom -->
 	</loot>
 </monster>

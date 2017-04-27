@@ -68,10 +68,6 @@ local function greetCallback(cid)
 		npcHandler:say(player:getName() ..", I CAN'T LET YOU LEAVE - YOU ARE TOO STRONG ALREADY! YOU CAN ONLY LEAVE WITH LEVEL 9 OR LOWER.", cid)
 		npcHandler:resetNpc(cid)
 		return false
-	elseif player:getVocation():getId() > 0 then
-		npcHandler:say("YOU ALREADY HAVE A VOCATION!", cid)
-		npcHandler:resetNpc(cid)
-		return false
 	else
 		npcHandler:setMessage(MESSAGE_GREET, player:getName() ..", ARE YOU PREPARED TO FACE YOUR DESTINY?")
 	end

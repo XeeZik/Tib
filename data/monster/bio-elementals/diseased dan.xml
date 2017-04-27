@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Diseased Dan" nameDescription="a diseased dan" race="venom" experience="800" speed="150" manacost="0">
-	<health now="1300" max="1300" />
+<monster name="Diseased Dan" nameDescription="a diseased dan" race="venom" experience="300" speed="150" manacost="0">
+	<health now="800" max="800" />
 	<look type="299" corpse="8951" />
 	<targetchange interval="60000" chance="0" />
 	<flags>
@@ -55,15 +55,7 @@
 		<voice sentence="Slurp!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="65" chance="28000" /><!-- gold coin -->
-		<item id="2148" countmax="64" chance="28000" /><!-- gold coin -->
-		<item id="7591" chance="5500" /><!-- great health potion -->
-		<item id="2647" chance="2000" /><!-- plate legs -->
-		<item id="8473" chance="3500" /><!-- ultimate health potion -->
-		<item id="8472" chance="3500" /><!-- great spirit potion -->
-		<item id="8872" chance="1000" /><!-- belted cape -->
-		<item id="8912" chance="800" /><!-- springsprout rod -->
-		<item id="8873" chance="300" /><!-- hibiscus dress -->
-		<item id="8891" chance="200" /><!-- paladin armor -->
+		<item id="2148" countmax="25" chance="38000" /><!-- gold coin -->
+		
 	</loot>
 </monster>

@@ -34,7 +34,7 @@ local function changeVocation(player, fromVocation, toVocation)
     local vocationsItems = {
         -- sorcerer
         [1] = {
-            [CONST_SLOT_LEFT] = {2190, 1, true}, -- wand of vortex
+            [CONST_SLOT_LEFT] = {23719, 1, true}, -- the scorcher
             [CONST_SLOT_RIGHT] = {2175, 1, true}, -- spellbook
 			[11] = {8704, 2, false, limitStorage = 10030, limit = 1}, -- potion
 			[12] = {7620, 10, false, limitStorage = 10031, limit = 1}, -- potion
@@ -43,7 +43,7 @@ local function changeVocation(player, fromVocation, toVocation)
         },
         -- druid
         [2] = {
-            [CONST_SLOT_LEFT] = {2182, 1, true}, -- snakebite rod
+            [CONST_SLOT_LEFT] = {23721, 1, true}, -- the chiller
             [CONST_SLOT_RIGHT] = {2175, 1, true}, -- spellbook
 			[11] = {8704, 2, false, limitStorage = 10034, limit = 1}, -- potion
 			[12] = {7620, 10, false, limitStorage = 10035, limit = 1}, -- potion
@@ -53,7 +53,7 @@ local function changeVocation(player, fromVocation, toVocation)
         -- paladin
         [3] = {
             [CONST_SLOT_LEFT] = {2456, 1, true}, -- bow
-            [CONST_SLOT_AMMO] = {2544, 100, true}, -- 100 arrows
+            [CONST_SLOT_AMMO] = {23839, 100, true}, -- 100 arrows
             [11] = {8704, 7, false, limitStorage = 10038, limit = 1}, -- potion
 			[12] = {7620, 5, false, limitStorage = 10039, limit = 1}, -- potion
 			--[13] = {id, qtd, false, limitStorage = 10040, limit = 1}, -- 1 lightest missile rune
@@ -186,7 +186,6 @@ function onStepIn(creature, item, position, fromPosition)
         if fromVocation ~= toVocation and (centerPosition:getDistance(fromPosition) < centerPosition:getDistance(position)) then
             getFirstItems(player)
 			changeVocation(player, fromVocation, toVocation)
-			player:setVocation(toVocation)
             player:getPosition():sendMagicEffect(CONST_ME_BLOCKHIT)
         end
     end

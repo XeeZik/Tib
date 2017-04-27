@@ -57,30 +57,30 @@
 		<item id="22396" chance="100000"/><!-- cluster of solace -->
 		<item id="22598" chance="100000"/><!-- dream -->
 		<item id="5954" chance="100000"/><!-- demon horn -->
-		<item id="22610" chance="4430"/><!-- dream warden mask -->
+		<item id="22610" chance="10430"/><!-- dream warden mask -->
 		<item id="2148" countmax="185" chance="100000"/><!-- gold coin -->
 		<item id="2152" countmax="50" chance="100000"/><!-- platinum coin -->
-		<item id="7421" chance="9520"/><!-- onyx flail -->
-		<item id="7428" chance="11900"/><!-- bonebreaker -->		
-		<item id="2427" chance="19050"/><!-- guardian halberd -->
-		<item id="7387" chance="2380"/><!-- diamond sceptre -->
-		<item id="2452" chance="9520"/><!-- heavy mace -->
-		<item id="8877" chance="4110"/><!-- lavos armor -->
+		<item id="7421" chance="4020"/><!-- onyx flail -->
+		<item id="7428" chance="15000"/><!-- bonebreaker -->		
+		<item id="2427" chance="15950"/><!-- guardian halberd -->
+		<item id="7387" chance="8380"/><!-- diamond sceptre -->
+		<item id="2452" chance="12920"/><!-- heavy mace -->
+		<item id="8877" chance="350"/><!-- lavos armor -->
 		<item id="22397" chance="5110"/><!-- dream matter -->
-		<item id="8473" countmax="10" chance="33330"/><!-- ultimate health potion -->
-		<item id="8472" countmax="10" chance="47620"/><!-- great spirit potion -->
-		<item id="7590" countmax="10" chance="19050"/><!-- great mana potion -->
-		<item id="18413" countmax="8" chance="33330"/><!-- blue crystal shard -->
+		<item id="8473" countmax="10" chance="32330"/><!-- ultimate health potion -->
+		<item id="8472" countmax="10" chance="33620"/><!-- great spirit potion -->
+		<item id="7590" countmax="10" chance="34050"/><!-- great mana potion -->
+		<item id="18413" countmax="8" chance="31330"/><!-- blue crystal shard -->
 		<item id="18414" countmax="8" chance="38100"/><!-- violet crystal shard -->
-		<item id="18415" countmax="8" chance="28570"/><!-- green crystal shard -->
-		<item id="7632" chance="52380"/><!-- giant shimmering pearl blue -->
-		<item id="7633" chance="52380"/><!-- giant shimmering pearl brown -->
-		<item id="2158" chance="19050"/><!-- blue gem -->
-		<item id="2155" chance="19050"/><!-- green gem -->
-		<item id="9971" chance="4760"/><!-- gold ingot -->
-		<item id="2519" chance="2380"/><!-- crown shield -->
-		<item id="8891" chance="4760"/><!-- paladin armor -->
-		<item id="2515" chance="21430"/><!-- guardian shield -->
-		<item id="2520" chance="7140"/><!-- demon shield -->
+		<item id="18415" countmax="8" chance="30570"/><!-- green crystal shard -->
+		<item id="7632" chance="42380"/><!-- giant shimmering pearl blue -->
+		<item id="7633" chance="42380"/><!-- giant shimmering pearl brown -->
+		<item id="2158" chance="15550"/><!-- blue gem -->
+		<item id="2155" chance="20050"/><!-- green gem -->
+		<item id="9971" chance="15360"/><!-- gold ingot -->
+		<item id="2519" chance="11580"/><!-- crown shield -->
+		<item id="8891" chance="9660"/><!-- paladin armor -->
+		<item id="2515" chance="15930"/><!-- guardian shield -->
+		<item id="2520" chance="6240"/><!-- demon shield -->
 	</loot>
 </monster>

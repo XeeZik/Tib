@@ -50,18 +50,18 @@
 		<item id="2148" countmax="90" chance="100000" /> <!-- gold coin -->
 		<item id="2148" countmax="90" chance="100000" /> <!-- gold coin -->
 		<item id="2152" countmax="2" chance="70000" /> <!-- platinum coin -->
-		<item id="15424" chance="16666" /> <!-- deepling breaktime snack -->
-		<item id="7591" countmax="3" chance="14285" /> <!-- great health potion -->
-		<item id="7590" countmax="3" chance="14285" /><!-- great mana potion -->
-		<item id="15423" chance="12500" /> <!-- deepling guard belt buckle -->
-		<item id="13870" chance="10000" /><!-- eye of a deepling -->
-		<item id="15455" chance="9090" /><!-- deepling claw -->
-		<item id="2146" countmax="3" chance="890" /><!-- small sapphire -->
-		<item id="13838" chance="694" /> <!-- heavy trident -->
-		<item id="15454" chance="925" /> <!-- guardian axe -->
-		<item id="15647" chance="351" /> <!-- deepling squelcher -->
-		<item id="15644" chance="162" /> <!-- ornate crossbow -->
-		<item id="15645" chance="233" /> <!-- deepling backpack -->
-		<item id="15545" chance="60" /> <!-- foxtail -->
+		<item id="15424" chance="14966" /> <!-- deepling breaktime snack -->
+		<item id="7591" countmax="3" chance="15085" /> <!-- great health potion -->
+		<item id="7590" countmax="3" chance="15085" /><!-- great mana potion -->
+		<item id="15423" chance="12000" /> <!-- deepling guard belt buckle -->
+		<item id="13870" chance="9900" /><!-- eye of a deepling -->
+		<item id="15455" chance="8800" /><!-- deepling claw -->
+		<item id="2146" countmax="3" chance="2890" /><!-- small sapphire -->
+		<item id="13838" chance="1594" /> <!-- heavy trident -->
+		<item id="15454" chance="890" /> <!-- guardian axe -->
+		<item id="15647" chance="700" /> <!-- deepling squelcher -->
+		<item id="15644" chance="410" /> <!-- ornate crossbow -->
+		<item id="15645" chance="313" /> <!-- deepling backpack -->
+		<item id="15545" chance="20" /> <!-- foxtail -->
 	</loot>
 </monster>

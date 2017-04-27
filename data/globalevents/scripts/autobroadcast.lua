@@ -2,7 +2,7 @@
 
 function onThink(interval, lastExecution)
     local MESSAGE = {
-        "[COMMANDS] !kills - !bless - !aol - !buyhouse - !sellhouse - !serverinfo - !online - !uptime - !exp - !outfit .",
+        "[COMMANDS] !kills - !bless - !buypremmy - !aol - !buyhouse - !sellhouse - !serverinfo - !online - !uptime - !exp - !outfit .",
         "[TIBIA CLIENTS COMPATIVEIS]  10.98, 10.99 E 11.",
         "[BUGS?] REPORTEM EM: http://www.github.com/malucooo/otxserver-new/.",
         "[FEATURES] NEW DEPOT, NEW SPAWN, NEW CAST SYSTEM, NEW NPC SYSTEM VIA BANK BALANCE, NEW CRITICAL BOOST SYSTEM, NEW POTIONS, REWARD SYSTEM, FULL GLOBAL MAP WITH OTHERWORLD, WAR ANTIENTROSA, BATTLEFIELD, CAPTURE THE FLAG, LAST STANDING MAN AND ZOOMBIE EVENT.",

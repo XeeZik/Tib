@@ -72,22 +72,22 @@
 		<voice sentence="Feel the heat of battle!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="151" chance="96000" />	<!-- gold coin -->
-		<item id="7590" chance="19000" />				<!-- great mana potion -->
-		<item id="7591" chance="19000" />				<!-- great health potion -->
+		<item id="2148" countmax="147" chance="97100" />	<!-- gold coin -->
+		<item id="7590" chance="19100" />				<!-- great mana potion -->
+		<item id="7591" chance="19100" />				<!-- great health potion -->
 		<item id="8840" countmax="5" chance="8500" />	<!-- raspberry -->
-		<item id="2436" chance="6500" />					<!-- skull staff -->
-		<item id="7760" chance="4250" />					<!-- small enchanted ruby -->
-		<item id="2167" chance="1800" />					<!-- energy ring -->
-		<item id="5911" chance="1660" />					<!-- red piece of cloth -->
-		<item id="9969" chance="800" />					<!-- black skull -->
-		<item id="5904" chance="600" />					<!-- magic sulphur -->
-		<item id="9958" chance="460" />					<!-- royal tapestry -->
-		<item id="8902" chance="400" />					<!-- spellbook of mind control -->
-		<item id="1986" chance="330" />					<!-- red tome -->
-		<item id="7891" chance="260" />					<!-- magma boots -->
-		<item id="9980" chance="200" />					<!-- crystal of power -->
-		<item id="2114" chance="200" />					<!-- piggy bank -->
-		<item id="9971" chance="70" />					<!-- gold ingot -->
+		<item id="2436" chance="6200" />					<!-- skull staff -->
+		<item id="7760" chance="4550" />					<!-- small enchanted ruby -->
+		<item id="2167" chance="1900" />					<!-- energy ring -->
+		<item id="5911" chance="1260" />					<!-- red piece of cloth -->
+		<item id="9969" chance="690" />					<!-- black skull -->
+		<item id="5904" chance="550" />					<!-- magic sulphur -->
+		<item id="9958" chance="550" />					<!-- royal tapestry -->
+		<item id="8902" chance="460" />					<!-- spellbook of mind control -->
+		<item id="1986" chance="230" />					<!-- red tome -->
+		<item id="7891" chance="230" />					<!-- magma boots -->
+		<item id="9980" chance="140" />					<!-- crystal of power -->
+		<item id="2114" chance="140" />					<!-- piggy bank -->
+		<item id="9971" chance="90" />					<!-- gold ingot -->
 	</loot>
 </monster>
