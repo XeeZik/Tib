@@ -57,19 +57,19 @@
 		<item id="2148" countmax="100" chance="100000" /><!-- gold coin -->
 		<item id="2148" countmax="100" chance="100000" /><!-- gold coin -->
 		<item id="2148" countmax="72" chance="100000" /><!-- gold coin -->
-		<item id="2152" countmax="6" chance="9500" /><!-- platinum coin -->
-		<item id="5944" chance="7000" /><!-- soul orb -->
-		<item id="6500" chance="9320" /><!-- demonic essence -->
-		<item id="9967" chance="5210" /><!-- glob of acid slime -->
-		<item id="9968" chance="3000" /><!-- glob of tar -->
-		<item id="2151" chance="2710" /><!-- talon -->
-		<item id="2158" chance="300" /><!-- blue gem -->
-		<item id="2149" countmax="3" chance="1366" /><!-- small emeralds-->
-		<item id="2147" countmax="2" chance="1000" /><!-- small rubies -->
-		<item id="6300" chance="1030" /><!-- death ring-->
-		<item id="2145" countmax="2" chance="1439" /><!-- small diamond -->
-		<item id="2156" chance="938" /><!-- red gem -->
-		<item id="2154" chance="1219" /><!-- yellow gem -->
-		<item id="2155" chance="313" /><!-- green gem -->
+		<item id="2152" countmax="6" chance="96000" /><!-- platinum coin -->
+		<item id="5944" chance="19000" /><!-- soul orb -->
+		<item id="6500" chance="19620" /><!-- demonic essence -->
+		<item id="9967" chance="11510" /><!-- glob of acid slime -->
+		<item id="9968" chance="11900" /><!-- glob of tar -->
+		<item id="2151" chance="4510" /><!-- talon -->
+		<item id="2158" chance="770" /><!-- blue gem -->
+		<item id="2149" countmax="3" chance="5766" /><!-- small emeralds-->
+		<item id="2147" countmax="2" chance="3600" /><!-- small rubies -->
+		<item id="6300" chance="2730" /><!-- death ring-->
+		<item id="2145" countmax="2" chance="2539" /><!-- small diamond -->
+		<item id="2156" chance="1308" /><!-- red gem -->
+		<item id="2154" chance="1719" /><!-- yellow gem -->
+		<item id="2155" chance="813" /><!-- green gem -->
 	</loot>
 </monster>
