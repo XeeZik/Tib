@@ -51,7 +51,7 @@
 		<item id="7438" chance="100" /><!-- elvish bow -->
 		<item id="7840" countmax="12" chance="30000" /><!-- flaming arrow -->
 		<item id="10552" chance="5000" /><!-- elvish talisman -->
-		<item id="13757" chance="15280" /><!-- coal -->
+		<item id="13757" chance="15250" /><!-- coal -->
 		<item id="13943" chance="340" /><!-- flintstone -->
 	</loot>
 </monster>
