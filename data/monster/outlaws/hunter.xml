@@ -37,19 +37,19 @@
 		<item id="2544" countmax="22" chance="82000" />	<!-- arrow -->
 		<item id="2675" countmax="2" chance="20000" />	<!-- orange -->
 		<item id="2690" countmax="2" chance="11000" />	<!-- roll -->
-		<item id="12425" chance="10000" />				<!-- hunter's quiver -->
-		<item id="2456" chance="5800" />					<!-- bow -->
-		<item id="2546" countmax="3" chance="5330" />	<!-- burst arrow -->
+		<item id="12425" chance="10100" />				<!-- hunter's quiver -->
+		<item id="2456" chance="5900" />					<!-- bow -->
+		<item id="2546" countmax="3" chance="5230" />	<!-- burst arrow -->
 		<item id="2465" chance="5200" />					<!-- brass armor -->
 		<item id="2460" chance="5000" />					<!-- brass helmet -->
 		<item id="2545" countmax="4" chance="4500" />	<!-- poison arrow -->
 		<item id="2050" chance="3200" />					<!-- torch -->
 		<item id="2201" chance="3100" />					<!-- dragon necklace -->
-		<item id="5875" chance="550" />					<!-- sniper gloves -->
-		<item id="7397" chance="500" />					<!-- deer trophy -->
-		<item id="7394" chance="170" />					<!-- wolf trophy -->
-		<item id="2147" chance="150" />					<!-- small ruby -->
-		<item id="5907" chance="140" />					<!-- slingshot -->
+		<item id="5875" chance="560" />					<!-- sniper gloves -->
+		<item id="7397" chance="470" />					<!-- deer trophy -->
+		<item id="7394" chance="140" />					<!-- wolf trophy -->
+		<item id="2147" chance="170" />					<!-- small ruby -->
+		<item id="5907" chance="130" />					<!-- slingshot -->
 		<item id="7400" chance="110" />					<!-- lion trophy -->
 	</loot>
 </monster>

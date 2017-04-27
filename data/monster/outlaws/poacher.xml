@@ -31,11 +31,11 @@
 	<loot>
 		<item id="2544" countmax="17" chance="48500" />	<!-- arrow -->
 		<item id="2461" chance="30000" />				<!-- leather helmet -->
-		<item id="2649" chance="26000" />				<!-- leather legs -->
-		<item id="2456" chance="14000" />				<!-- bow -->
-		<item id="2690" countmax="2" chance="11110" />	<!-- roll -->
-		<item id="2050" chance="4300" />					<!-- torch -->
-		<item id="2545" countmax="3" chance="3000" />	<!-- poison arrow -->
-		<item id="2578" chance="750" />					<!-- closed trap -->
+		<item id="2649" chance="27200" />				<!-- leather legs -->
+		<item id="2456" chance="14700" />				<!-- bow -->
+		<item id="2690" countmax="2" chance="11610" />	<!-- roll -->
+		<item id="2050" chance="4500" />					<!-- torch -->
+		<item id="2545" countmax="3" chance="2600" />	<!-- poison arrow -->
+		<item id="2578" chance="760" />					<!-- closed trap -->
 	</loot>
 </monster>
