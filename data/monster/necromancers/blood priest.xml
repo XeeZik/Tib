@@ -55,22 +55,22 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="171" chance="99900" />	<!-- gold coin -->
-		<item id="21242" chance="14600" />				<!-- lancet -->
+		<item id="21242" chance="14500" />				<!-- lancet -->
 		<item id="21246" chance="14500" />				<!-- incantation notes -->
 		<item id="11237" chance="14300" />				<!-- book of necromantic rituals -->
 		<item id="21245" chance="13700" />				<!-- blood tincture in a vial -->
-		<item id="21243" chance="9300" />				<!-- horoscope -->
-		<item id="21247" chance="7800" />				<!-- pieces of magic chalk -->
+		<item id="21243" chance="9700" />				<!-- horoscope -->
+		<item id="21247" chance="8100" />				<!-- pieces of magic chalk -->
 		<item id="7589" chance="6000" />					<!-- strong mana potion -->
-		<item id="2147" countmax="2" chance="3510" />	<!-- small ruby -->
-		<item id="2663" chance="1000" />					<!-- mystic turban -->
-		<item id="5909" chance="2800" />					<!-- white piece of cloth -->
+		<item id="2147" countmax="2" chance="3210" />	<!-- small ruby -->
+		<item id="2663" chance="3000" />					<!-- mystic turban -->
+		<item id="5909" chance="3100" />					<!-- white piece of cloth -->
 		<item id="2156" chance="1000" />					<!-- red gem -->
-		<item id="5911" chance="370" />					<!-- red piece of cloth -->
+		<item id="5911" chance="890" />					<!-- red piece of cloth -->
 		<item id="8910" chance="390" />					<!-- underworld rod -->
-		<item id="8902" chance="310" />					<!-- spellbook of mind control -->
-		<item id="8901" chance="230" />					<!-- spellbook of warding -->
-		<item id="2195" chance="160" />					<!-- boots of haste -->
-		<item id="2436" chance="160" />					<!-- skull staff -->
+		<item id="8902" chance="330" />					<!-- spellbook of mind control -->
+		<item id="8901" chance="270" />					<!-- spellbook of warding -->
+		<item id="2195" chance="150" />					<!-- boots of haste -->
+		<item id="2436" chance="210" />					<!-- skull staff -->
 	</loot>
 </monster>

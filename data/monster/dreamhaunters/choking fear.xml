@@ -62,25 +62,25 @@
 	<loot>
 		<item id="2148" countmax="100" chance="100000" /><!-- gold coin -->
 		<item id="2152" countmax="8" chance="100000" /><!-- platinum coin -->
-		<item id="2167" chance="1000" /><!-- energy ring -->
-		<item id="2168" chance="1200" /><!-- life ring -->
-		<item id="2214" chance="1000" /><!-- ring of healing -->
-		<item id="5913" chance="900" /><!-- brown piece of cloth -->
-		<item id="5914" chance="1500" /><!-- yellow piece of cloth -->
-		<item id="7590" countmax="3" chance="2000" /><!-- great mana potion -->
-		<item id="7886" chance="520" /><!-- terra boots -->
-		<item id="8910" chance="520" /><!-- underworld rod -->
+		<item id="2167" chance="3500" /><!-- energy ring -->
+		<item id="2168" chance="5400" /><!-- life ring -->
+		<item id="2214" chance="3800" /><!-- ring of healing -->
+		<item id="5913" chance="5000" /><!-- brown piece of cloth -->
+		<item id="5914" chance="3100" /><!-- yellow piece of cloth -->
+		<item id="7590" countmax="3" chance="20700" /><!-- great mana potion -->
+		<item id="7886" chance="590" /><!-- terra boots -->
+		<item id="8910" chance="890" /><!-- underworld rod -->
 		<item id="8472" countmax="3" chance="20000" /><!-- great spirit potion -->
 		<item id="8473" countmax="3" chance="19000" /><!-- ultimate health potion -->
-		<item id="8902" chance="720" /><!-- spellbook of mind control -->
+		<item id="8902" chance="820" /><!-- spellbook of mind control -->
 		<item id="18415" chance="1540" /><!-- green crystal shard -->
-		<item id="18417" countmax="2" chance="52500" /><!-- brown crystal splinter -->
+		<item id="18417" countmax="2" chance="49500" /><!-- brown crystal splinter -->
 		<item id="18418" countmax="3" chance="10000" /><!-- blue crystal splinter -->
 		<item id="22396" chance="620" /><!-- cluster of solace -->
-		<item id="22536" chance="4180" /><!-- dead weight -->
-		<item id="22540" chance="4180" /><!-- hemp rope -->
-		<item id="3962" chance="990" /><!-- beastslayer axe -->
-		<item id="2515" chance="940" /><!-- guardian shield -->
-		<item id="8912" chance="310" /><!-- springsprout rod -->
+		<item id="22536" chance="14580" /><!-- dead weight -->
+		<item id="22540" chance="15380" /><!-- hemp rope -->
+		<item id="3962" chance="3400" /><!-- beastslayer axe -->
+		<item id="2515" chance="1440" /><!-- guardian shield -->
+		<item id="8912" chance="630" /><!-- springsprout rod -->
 	</loot>
 </monster>

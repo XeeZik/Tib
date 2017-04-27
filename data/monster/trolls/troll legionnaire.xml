@@ -17,7 +17,7 @@
 		<flag runonhealth="30" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-35" />
+		<attack name="melee" interval="2000" min="0" max="-40" />
 		<attack name="physical" interval="2000" chance="18" range="6" min="0" max="-130">
 			<attribute key="shootEffect" value="throwingstar" />
 		</attack>
@@ -38,9 +38,9 @@
 		<voice sentence="Graaaaar!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="155" chance="92000" />	<!-- gold coin -->
+		<item id="2148" countmax="156" chance="92000" />	<!-- gold coin -->
 		<item id="2399" countmax="10" chance="28000" />	<!-- throwing star -->
-		<item id="10565" chance="5120" />				<!-- frosty ear of a troll -->
-		<item id="2165" chance="560" />					<!-- stealth ring -->
+		<item id="10565" chance="5070" />				<!-- frosty ear of a troll -->
+		<item id="2165" chance="550" />					<!-- stealth ring -->
 	</loot>
 </monster>

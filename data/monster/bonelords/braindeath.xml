@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Braindeath" nameDescription="a braindeath" race="undead" experience="895" speed="230" manacost="0">
+<monster name="Braindeath" nameDescription="a braindeath" race="undead" experience="985" speed="230" manacost="0">
 	<health now="1225" max="1225" />
 	<look type="256" corpse="7256" />
 	<targetchange interval="4000" chance="10" />
@@ -67,17 +67,17 @@
 		<voice sentence="You will be punished!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="89" chance="55000" /><!-- gold coin -->
-		<item id="7364" countmax="4" chance="9000" /><!-- sniper arrows -->
-		<item id="2175" chance="690" /><!-- spellbook -->
-		<item id="2450" chance="1000" /><!-- bone sword -->
-		<item id="2423" chance="1000" /><!-- clerical mace -->
-		<item id="2509" chance="2000" /><!-- steel shield -->
-		<item id="5898" chance="580" /><!-- beholder eye -->
-		<item id="7407" chance="500" /><!-- haunted blade -->
-		<item id="2518" chance="350" /><!-- beholder shield -->
-		<item id="7452" chance="250" /><!-- spiked squelcher-->
-		<item id="3972" chance="90" /><!-- beholder helmet -->
-		<item id="10580" chance="1725" /><!-- piece of dead brain -->
+		<item id="2148" countmax="89" chance="99000" /><!-- gold coin -->
+		<item id="7364" countmax="4" chance="9600" /><!-- sniper arrows -->
+		<item id="2175" chance="940" /><!-- spellbook -->
+		<item id="2450" chance="15200" /><!-- bone sword -->
+		<item id="2423" chance="1900" /><!-- clerical mace -->
+		<item id="2509" chance="5900" /><!-- steel shield -->
+		<item id="5898" chance="3000" /><!-- bonelord eye -->
+		<item id="7407" chance="1400" /><!-- haunted blade -->
+		<item id="2518" chance="90" /><!-- bonelord shield -->
+		<item id="7452" chance="180" /><!-- spiked squelcher-->
+		<item id="3972" chance="100" /><!-- bonelord helmet -->
+		<item id="10580" chance="5025" /><!-- piece of dead brain -->
 	</loot>
 </monster>

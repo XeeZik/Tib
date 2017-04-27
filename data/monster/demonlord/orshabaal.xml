@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Orshabaal" nameDescription="orshabaal" race="fire" experience="10000" speed="380" manacost="0">
-	<health now="70500" max="70500" />
+	<health now="22500" max="22500" />
 	<look type="201" corpse="2916" />
 	<targetchange interval="2000" chance="10" />
 	<flags>
@@ -71,12 +71,12 @@
 		<voice sentence="SOULS FOR ORSHABAAL!" />
 	</voices>
 	<loot>
-		<item id="6500" chance="100000" /><!-- demonic essence -->
-		<item id="2152" countmax="69" chance="100000" /><!-- platinum coin -->
-		<item id="6300" chance="50000" /><!-- death ring -->
-		<item id="5954" chance="50000" /><!-- demon horn -->
-		<item id="2143" countmax="15" chance="33333" /><!-- white pearl -->
-		<item id="2462" chance="33333" /><!-- devil helmet -->
+		<item id="6500" countmax="5" chance="100000" /><!-- demonic essence -->
+		<item id="2152" countmax="71" chance="100000" /><!-- platinum coin -->
+		<item id="6300" chance="58000" /><!-- death ring -->
+		<item id="5954" countmax="2" chance="52000" /><!-- demon horn -->
+		<item id="2143" countmax="15" chance="35333" /><!-- white pearl -->
+		<item id="2462" chance="29333" /><!-- devil helmet -->
 		<item id="7590" chance="33333" /><!-- great mana potion -->
 		<item id="2214" chance="33333" /><!-- ring of healing -->
 		<item id="2146" countmax="8" chance="33333" /><!-- small sapphire -->
