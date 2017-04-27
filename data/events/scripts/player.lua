@@ -435,46 +435,10 @@ local function useStamina(player)
 	player:setStamina(staminaMinutes)
 end
 
---function Player:onGainExperience(source, exp, rawExp)
---	if not source or source:isPlayer() then
---		return exp
---	end
-
-	-- Soul regeneration
---	local vocation = self:getVocation()
---	if self:getSoul() < vocation:getMaxSoul() and exp >= self:getLevel() then
---		soulCondition:setParameter(CONDITION_PARAM_SOULTICKS, vocation:getSoulGainTicks() * 1000)
---		self:addCondition(soulCondition)
---	end
-
-	-- Apply experience stage multiplier
---	exp = exp * Game.getExperienceStage(self:getLevel())
-
-	-- Stamina modifier
---	if configManager.getBoolean(configKeys.STAMINA_SYSTEM) then
---		useStamina(self)
-
---		local staminaMinutes = self:getStamina()
---		if staminaMinutes > 2400 and self:isPremium() then
---			exp = exp * 1.5
---		elseif staminaMinutes <= 840 then
---			exp = exp * 0.5
---		end
---	end
-
-	-- Apply Extra Experience
---	if self:getStorageValue(config.storage) >= os.time() then
---		exp = exp * config.rate
---	end
-	
---	return exp
---end
-
 function Player:onGainExperience(source, exp, rawExp)
 	if not source or source:isPlayer() then
 		return exp
 	end
-
 	-- Soul regeneration
 	local vocation = self:getVocation()
 	if self:getSoul() < vocation:getMaxSoul() and exp >= self:getLevel() then
@@ -484,8 +448,7 @@ function Player:onGainExperience(source, exp, rawExp)
 
 	-- Apply experience stage multiplier
 	exp = exp * Game.getExperienceStage(self:getLevel())
-
-	-- Stamina modifier
+	 Stamina modifier
 	if configManager.getBoolean(configKeys.STAMINA_SYSTEM) then
 		useStamina(self)
 
@@ -497,9 +460,13 @@ function Player:onGainExperience(source, exp, rawExp)
 		end
 	end
 
+	-- Apply Extra Experience
+	if self:getStorageValue(61398) >= os.time() then
+		exp = exp * config.rate
+	end
+	
 	return exp
 end
-
 
 function Player:onLoseExperience(exp)
 	return exp
