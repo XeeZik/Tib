@@ -27,7 +27,7 @@
 		<item id="2666" chance="20000" /><!-- meat -->
 		<item id="2671" chance="20120" /><!-- ham -->
 		<item id="2376" chance="3000" /><!-- sword -->
-		<item id="2398" chance="4500" /><!-- mace -->
+		<item id="2398" chance="4440" /><!-- mace -->
 		<item id="10609" chance="10000" /><!-- lump of dirt -->
 	</loot>
 </monster>

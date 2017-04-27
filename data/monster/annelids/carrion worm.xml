@@ -28,10 +28,10 @@
 		<element icePercent="-5" />
 	</elements>
 	<loot>
-		<item id="2148" countmax="45" chance="50000" /><!-- gold coin -->
-		<item id="2666" countmax="2" chance="9460" /><!-- meat -->
-		<item id="3976" countmax="2" chance="2100" /><!-- worm -->
+		<item id="2148" countmax="45" chance="57000" /><!-- gold coin -->
+		<item id="2666" countmax="2" chance="9660" /><!-- meat -->
+		<item id="3976" countmax="2" chance="2000" /><!-- worm -->
 		<item id="11192" chance="10000" /><!-- Carrion Worm Fang -->
-		<item id="13757" chance="210" /><!-- Coal -->
+		<item id="13757" chance="220" /><!-- Coal -->
 	</loot>
 </monster>
