@@ -1,4 +1,4 @@
-# OTXServer Full Global All New Areas, Features and Quests.  [![Build Status](https://travis-ci.org/malucooo/Otxserver-New.svg?branch=master)](https://travis-ci.org/malucooo/Otxserver-New) [![Build status](https://ci.appveyor.com/api/projects/status/8vp4es6y9df5d8tp?svg=true)](https://ci.appveyor.com/project/malucooo/otxserver-new)
+# OTXServer Full Global Daily Updated!  [![Build Status](https://travis-ci.org/malucooo/Otxserver-New.svg?branch=master)](https://travis-ci.org/malucooo/Otxserver-New) [![Build status](https://ci.appveyor.com/api/projects/status/8vp4es6y9df5d8tp?svg=true)](https://ci.appveyor.com/project/malucooo/otxserver-new)
 
 Servidor de Tibia mantido por Malucooo. O servidor usa como base Otxserver 3.9 e também TFS 1.3.
 
