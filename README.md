@@ -3,7 +3,7 @@
 Servidor de Tibia mantido por Malucooo. O servidor usa como base Otxserver 3.9 e também TFS 1.3.
 
 # Downloads
-Alternatively download [AppVeyor builds for Windows](https://ci.appveyor.com/project/malucooo/otxserver-new)
+Executaveis compilados [AppVeyor builds for Windows](https://ci.appveyor.com/project/malucooo/otxserver-new)
 
 # Issues / Problemas
 Nós utilizamos o [Issue Tracker do Github](https://github.com/malucooo/Otxserver-new/issues).
