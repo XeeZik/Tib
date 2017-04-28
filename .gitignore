@@ -177,3 +177,4 @@ theforgottenserver.exe
 vc14/theforgottenserver.VC.db
 data/world/global.otbm
 libmysql.dll
+*.dll
