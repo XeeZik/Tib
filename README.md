@@ -4,7 +4,7 @@ Servidor de Tibia mantido por Malucooo. O servidor usa como base Otxserver 3.9 e
 
 # Downloads
 Executaveis compilados [AppVeyor builds for Windows](https://ci.appveyor.com/project/malucooo/otxserver-new)
-Client Compativel [Tibia 10.00] (http://www.mediafire.com/file/571cbbt9cy2y30t/tibia1000.rar)
+Client Compativel (http://www.mediafire.com/file/571cbbt9cy2y30t/tibia1000.rar)
 
 # Issues / Problemas
 Nós utilizamos o [Issue Tracker do Github](https://github.com/malucooo/Otxserver-new/issues).
