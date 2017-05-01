@@ -109,4 +109,7 @@
 	<mount id="107" clientid="950" name="Gold Sphinx" speed="20" premium="yes" />
 	<mount id="108" clientid="951" name="Emerald Sphinx" speed="20" premium="yes" />
 	<mount id="109" clientid="952" name="Shadow Sphinx" speed="20" premium="yes" />
+	<mount id="110" clientid="959" name="Jungle Saurian" speed="20" premium="yes" />
+	<mount id="111" clientid="960" name="Ember Saurian" speed="20" premium="yes" />
+	<mount id="112" clientid="961" name="Lagoon Saurian" speed="20" premium="yes" />
 </mounts>

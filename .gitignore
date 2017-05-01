@@ -176,3 +176,6 @@ config.lua
 theforgottenserver.exe
 vc14/theforgottenserver.VC.db
 data/world/global.otbm
+
+*.rar
+*.exe
