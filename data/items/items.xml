@@ -3373,7 +3373,7 @@
 	</item>
 	<item id="26181" article="a" name="energetic backpack">
 		<attribute key="weight" value="1800" />
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="24" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="2366" article="a" name="roc feather">
