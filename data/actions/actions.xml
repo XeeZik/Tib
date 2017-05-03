@@ -415,18 +415,18 @@
 	<action fromaid="50242" toaid="50244" script="quests/theancienttombs/activeTeleportSwitches.lua" />
 
 	<!-- VAGAO HOUSE -->
-	<action actionid="50245" script="vagao/vagaohouse1.lua" />
-	<action actionid="50246" script="vagao/vagaohouse2.lua" />
-	
-	<action actionid="50247" script="vagao/vagaohouse3.lua" />
-	<action actionid="50249" script="vagao/vagaohouse4.lua" />
-	<action actionid="50250" script="vagao/vagaohouse5.lua" />
-	<action actionid="50251" script="vagao/vagaohouse6.lua" />
-	<action actionid="50252" script="vagao/vagaohouse7.lua" />
-	<action actionid="50253" script="vagao/vagaohouse8.lua" />
-	<action actionid="50254" script="vagao/vagaohouse9.lua" />
-	<action actionid="50248" script="vagao/vagaohouse10.lua" />
-	<action actionid="50258" script="quests/bkquest.lua" />
+	<action actionid="42150" script="vagao/vagao1.lua" />
+	<action actionid="50109" script="vagao/vagao.lua" />
+	<action actionid="50245" script="vagao/vagao.lua" />
+	<action actionid="50246" script="vagao/vagao.lua" />
+	<action actionid="50247" script="vagao/vagao.lua" />
+	<action actionid="50249" script="vagao/vagao.lua" />
+	<action actionid="50250" script="vagao/vagao.lua" />
+	<action actionid="50251" script="vagao/vagao.lua" />
+	<action actionid="50252" script="vagao/vagao.lua" />
+	<action actionid="50253" script="vagao/vagao.lua" />
+	<action actionid="50254" script="vagao/vagao.lua" />
+	<action actionid="50248" script="vagao/vagao.lua" />
 	
 	
 	<!-- Gravedigger -->
