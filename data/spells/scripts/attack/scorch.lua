@@ -1,11 +1,13 @@
 local combat = Combat()
 combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_FIREDAMAGE)
-combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_FIREATTACK)
-combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_FIRE)
+combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HITBYFIRE)
+
+local area = createCombatArea(AREA_WAVE4, AREADIAGONAL_WAVE4)
+combat:setArea(area)
 
 function onGetFormulaValues(player, level, maglevel)
-	local min = (level / 5) + (maglevel * 0.4) + 3
-	local max = (level / 5) + (maglevel * 0.7) + 5
+	local min = (level / 5) + (maglevel * 0.3) + 2
+	local max = (level / 5) + (maglevel * 0.6) + 4
 	return -min, -max
 end
 
