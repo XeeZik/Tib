@@ -1,7 +1,7 @@
 local config = {
 	time = 2,
-	storage = 61398
-}
+	storage = 61398,
+	}
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:getStorageValue(config.storage) >= os.time() then

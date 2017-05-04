@@ -50,17 +50,17 @@
 	</elements>
 	<loot>
 		<item id="2152" chance="80000" /> <!-- platinum coin -->
-		<item id="2148" countmax="60" chance="70000" /> <!-- gold coin -->
-		<item id="15421" chance="4285" /><!-- spellsinger's seal -->
-		<item id="15488" chance="2285" /><!-- deepling filet -->
-		<item id="15422" chance="1200" /><!-- key to the drowned library -->
-		<item id="2667" chance="3448" /> <!-- fish -->
-		<item id="2146" chance="1254" /><!-- small sapphire -->
-		<item id="13870" chance="1200" /><!-- eye of a deepling -->
-		<item id="2168" chance="1019" /> <!-- life ring -->
-		<item id="15400" chance="300" /> <!-- deepling staff -->
-		<item id="15403" subtype="50" chance="813" /> <!-- necklace of the deep -->
-		<item id="5895" chance="398" /><!-- fish fin -->
-		<item id="15644" chance="120" /> <!-- ornate crossbow -->
+		<item id="2148" countmax="60" chance="75000" /> <!-- gold coin -->
+		<item id="15421" chance="15285" /><!-- spellsinger's seal -->
+		<item id="15488" chance="1985" /><!-- deepling filet -->
+		<item id="15422" chance="10700" /><!-- key to the drowned library -->
+		<item id="2667" chance="3548" /> <!-- fish -->
+		<item id="2146" chance="2954" /><!-- small sapphire -->
+		<item id="13870" chance="2500" /><!-- eye of a deepling -->
+		<item id="2168" chance="2419" /> <!-- life ring -->
+		<item id="15400" chance="2000" /> <!-- deepling staff -->
+		<item id="15403" subtype="50" chance="790" /> <!-- necklace of the deep -->
+		<item id="5895" chance="510" /><!-- fish fin -->
+		<item id="15644" chance="220" /> <!-- ornate crossbow -->
 	</loot>
 </monster>

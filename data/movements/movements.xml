@@ -3,46 +3,36 @@
 	<!-- Dawnport -->
 	<movevent event="StepIn" fromaid="2001" toaid="2004" script="vocationtrial.lua" />
 
-<!-- Lower Roshamuul Quest -->
-<movevent event="StepIn" itemid="22456" script="lowerRoshamuul.lua" />
-<movevent event="StepIn" actionid="1500" script="lowerRoshamuul.lua" />
-
-<movevent event="StepIn" fromaid="15153" toaid="15155" script="ctf.lua" />
+	<!-- Lower Roshamuul Quest -->
+	<movevent event="StepIn" itemid="22456" script="lowerRoshamuul.lua" />
+	<movevent event="StepIn" actionid="1500" script="lowerRoshamuul.lua" />
+	<movevent event="StepIn" fromaid="15153" toaid="15155" script="ctf.lua" />
 	<movevent event="StepIn" actionid="19049" script="krailos.lua" />
-	 <movevent event="StepIn" fromuid="24541" touid="24544" script="Novos/soil.lua" />
-	 <movevent event="StepIn" actionid="24545" script="Novos/ek.lua" />
+	<movevent event="StepIn" fromuid="24541" touid="24544" script="Novos/soil.lua" />
+	<movevent event="StepIn" actionid="24545" script="Novos/ek.lua" />
 	 
-	 <movevent event="StepIn" actionid="25009" script="ferumbras.lua"/>
-	 
-	 <movevent event="StepIn" actionid="25001" script="lmsjoin.lua"/>
-     <movevent event="StepIn" actionid="25002" script="lmsleave.lua"/>
+	<movevent event="StepIn" actionid="25009" script="ferumbras.lua"/> 
+	<movevent event="StepIn" actionid="25001" script="lmsjoin.lua"/>
+    <movevent event="StepIn" actionid="25002" script="lmsleave.lua"/>
+ 	<!--<movevent event="StepIn" pos="32353;32231;4" script="exitBF.lua" />-->
+ 	<movevent event="StepIn" actionid="41344" script="lionrock.lua" />
+ 	<movevent event="StepIn" fromaid="41346" toaid="41349" script="lionrock.lua" />
 
- <!--<movevent event="StepIn" pos="32353;32231;4" script="exitBF.lua" />-->
- 
- <movevent event="StepIn" actionid="41344" script="lionrock.lua" />
- <movevent event="StepIn" fromaid="41346" toaid="41349" script="lionrock.lua" />
- 
- <movevent event="StepIn" actionid="25019" script="treinon.lua" /> 
- <movevent event="StepOut" actionid="25019" script="treinon.lua" /> 
- <movevent event="StepIn" pos="32076;32252;6" script="rookhouse.lua" /> 
- <movevent event="StepIn" pos="32075;32252;6" script="rookhouse.lua" />  
- <movevent event="StepIn" pos="32074;32252;6" script="rookhouse.lua" /> 
- <movevent event="StepIn" pos="32073;32252;6" script="rookhouse.lua" /> 
- 
- 
- <movevent event="StepIn" pos="33380;32308;14" script="novo3.lua" /> 
- <movevent event="StepIn" pos="33229;31500;13" script="novo2.lua" />     
- <movevent event="StepIn" pos="33388;32457;14" script="novo1.lua" /> 
-  <movevent event="StepIn" pos="33593;32644;14" script="novo.lua" />
-  <movevent event="StepIn" pos="33417;32102;10" script="novo4.lua" /> 
+ 	<movevent event="StepIn" actionid="25019" script="treinon.lua" /> 
+ 	<movevent event="StepOut" actionid="25019" script="treinon.lua" /> 
+ 	<movevent event="StepIn" pos="32076;32252;6" script="rookhouse.lua" /> 
+ 	<movevent event="StepIn" pos="32075;32252;6" script="rookhouse.lua" />  
+ 	<movevent event="StepIn" pos="32074;32252;6" script="rookhouse.lua" /> 
+ 	<movevent event="StepIn" pos="32073;32252;6" script="rookhouse.lua" />
   
-      <movevent event="StepIn" pos="32518;32465;7" script="tiledice1.lua" />
-      <movevent event="StepIn" pos="32526;32465;7" script="tiledice1.lua" />	 	
-	  <movevent event="AddItem" pos="32516;32465;7" script="trash_prevent3.lua"/>
-	 <movevent event="AddItem" pos="32524;32465;7" script="trash_prevent3.lua"/>	 
-     <movevent event="AddItem" pos="32524;32464;7" script="trash_prevent3.lua"/>	 
-	  <movevent event="AddItem" pos="32516;32464;7" script="trash_prevent3.lua"/> 
-	 <!-- Dark Trails Quest -->
+    <movevent event="StepIn" pos="32518;32465;7" script="tiledice1.lua" />
+    <movevent event="StepIn" pos="32526;32465;7" script="tiledice1.lua" />	 	
+	<movevent event="AddItem" pos="32516;32465;7" script="trash_prevent3.lua"/>
+	<movevent event="AddItem" pos="32524;32465;7" script="trash_prevent3.lua"/>	 
+    <movevent event="AddItem" pos="32524;32464;7" script="trash_prevent3.lua"/>	 
+	<movevent event="AddItem" pos="32516;32464;7" script="trash_prevent3.lua"/> 
+	
+	<!-- Dark Trails Quest -->
 	<movevent event="StepIn" actionid="9745" script="oramond/darkTrail.lua" />
 	 <!-- Chayenne Realm Quest -->
 	<movevent event="StepIn" actionid="55022" script="quests/chayenne realm quest/enterRealm.lua" />

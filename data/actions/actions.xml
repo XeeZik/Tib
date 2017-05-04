@@ -80,7 +80,7 @@
 	<action fromaid="15150" toaid="15151" script="other/ctf.lua" />
 	
 	<!-- Arena Pvp -->
-   	<action actionid="61225" script="Novos/citywar.lua"/>
+   	<action actionid="61225" script="news/citywar.lua"/>
 	<action itemid="24181" pos="32240;32179;8" script="arena/arena.lua"/>  
 	<action itemid="24173" pos="32271;32180;8" script="arena/arena1.lua"/> 
 
@@ -141,7 +141,7 @@
 	<action itemid="22642" script="other/frazzlemaw.lua" />
 	<action itemid="24321" script="other/maxxen.lua" />
 	<action itemid="22643" script="other/leafgolem.lua" />
-	<action itemid="22513" script="Novos/batebone.lua"/>
+	<action itemid="22513" script="news/batebone.lua"/>
 	<action itemid="13030" script="other/change_sex.lua"/>
     <action itemid="12544" script="other/stamina_refuel.lua"/>
 	<action itemid="11144" script="other/frag_remover.lua"/>    
@@ -178,21 +178,21 @@
 	
 	<action uniqueid="9519" script="quests/oramond/ora.lua"/>
 	
-	<action uniqueid="9529" script="Novos/novo1.lua"/>
-	<action uniqueid="9530" script="Novos/novo2.lua"/>
-	<action uniqueid="9531" script="Novos/novo3.lua"/>
-	<action uniqueid="9532" script="Novos/novo4.lua"/>
-	<action uniqueid="9533" script="Novos/novo5.lua"/>
+	<action uniqueid="9529" script="news/novo1.lua"/>
+	<action uniqueid="9530" script="news/novo2.lua"/>
+	<action uniqueid="9531" script="news/novo3.lua"/>
+	<action uniqueid="9532" script="news/novo4.lua"/>
+	<action uniqueid="9533" script="news/novo5.lua"/>
 	
-	<action uniqueid="9520" script="Novos/alavanca.lua"/> <!-- Mazoran -->
-	<action uniqueid="9521" script="Novos/alavanca1.lua"/> <!-- Razzagorn -->
-	<action uniqueid="9522" script="Novos/alavanca2.lua"/> <!-- Plagirath -->
-	<action uniqueid="9523" script="Novos/alavanca3.lua"/> <!-- Ferumbras Novo -->
-	<action uniqueid="9524" script="Novos/alavanca4.lua"/> <!-- Ragiaz -->
-	<action uniqueid="9525" script="Novos/alavanca5.lua"/> <!-- Zamulosh -->
-	<action uniqueid="9526" script="Novos/alavanca6.lua"/> <!-- Tarbaz -->
-	<action uniqueid="9527" script="Novos/alavanca7.lua"/> <!-- Shulgrax -->
-	<action uniqueid="9528" script="Novos/alavanca8.lua"/> <!-- 	The Shatterer -->
+	<action uniqueid="9520" script="news/BB_Quest.lua"/> <!-- Mazoran -->
+	<action uniqueid="9521" script="news/BB_Quest.lua"/> <!-- Razzagorn -->
+	<action uniqueid="9522" script="news/BB_Quest.lua"/> <!-- Plagirath -->
+	<action uniqueid="9523" script="news/BB_Quest.lua"/> <!-- Ferumbras Novo -->
+	<action uniqueid="9524" script="news/BB_Quest.lua"/> <!-- Ragiaz -->
+	<action uniqueid="9525" script="news/BB_Quest.lua"/> <!-- Zamulosh -->
+	<action uniqueid="9526" script="news/BB_Quest.lua"/> <!-- Tarbaz -->
+	<action uniqueid="9527" script="news/BB_Quest.lua"/> <!-- Shulgrax -->
+	<action uniqueid="9528" script="news/BB_Quest.lua"/> <!-- 	The Shatterer -->
 	<action uniqueid="9511" script="quests/oramond/darkTrail.lua"/>
 
 	<action itemid="23400" script="quests/oramond/gerador.lua"/>
@@ -415,18 +415,18 @@
 	<action fromaid="50242" toaid="50244" script="quests/theancienttombs/activeTeleportSwitches.lua" />
 
 	<!-- VAGAO HOUSE -->
-	<action actionid="50245" script="vagao/vagaohouse1.lua" />
-	<action actionid="50246" script="vagao/vagaohouse2.lua" />
-	
-	<action actionid="50247" script="vagao/vagaohouse3.lua" />
-	<action actionid="50249" script="vagao/vagaohouse4.lua" />
-	<action actionid="50250" script="vagao/vagaohouse5.lua" />
-	<action actionid="50251" script="vagao/vagaohouse6.lua" />
-	<action actionid="50252" script="vagao/vagaohouse7.lua" />
-	<action actionid="50253" script="vagao/vagaohouse8.lua" />
-	<action actionid="50254" script="vagao/vagaohouse9.lua" />
-	<action actionid="50248" script="vagao/vagaohouse10.lua" />
-	<action actionid="50258" script="quests/bkquest.lua" />
+	<action actionid="42150" script="vagao/vagao1.lua" />
+	<action actionid="50109" script="vagao/vagao.lua" />
+	<action actionid="50245" script="vagao/vagao.lua" />
+	<action actionid="50246" script="vagao/vagao.lua" />
+	<action actionid="50247" script="vagao/vagao.lua" />
+	<action actionid="50249" script="vagao/vagao.lua" />
+	<action actionid="50250" script="vagao/vagao.lua" />
+	<action actionid="50251" script="vagao/vagao.lua" />
+	<action actionid="50252" script="vagao/vagao.lua" />
+	<action actionid="50253" script="vagao/vagao.lua" />
+	<action actionid="50254" script="vagao/vagao.lua" />
+	<action actionid="50248" script="vagao/vagao.lua" />
 	
 	
 	<!-- Gravedigger -->

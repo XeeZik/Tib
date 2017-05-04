@@ -87,10 +87,10 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local topParent = item:getTopParent()
 	if topParent.isItem and (not topParent:isItem() or topParent.itemid ~= 460) then
         	local parent = item:getParent()
-	       --	if not parent:isTile() and (parent:addItem(potion.emptyId, 1) or topParent:addItem(potion.emptyId, 1)) then
+	       	if not parent:isTile() and (parent:addItem(potion.emptyId, 1) or topParent:addItem(potion.emptyId, 1)) then
  			item:remove(1)
 			return true
-		--end
+		end
 	end
 
 	Game.createItem(potion.emptyId, 1, item:getPosition())

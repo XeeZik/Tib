@@ -50,13 +50,13 @@
 		<voice sentence="Quatu nguraka!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="26" chance="50000" /><!-- gold coin -->
-		<item id="2667" countmax="3" chance="29000" /><!-- fish -->
-		<item id="2541" chance="950" /><!-- bone shield -->
-		<item id="7159" chance="60" /><!-- green perch -->
-		<item id="7158" chance="60" /><!-- rainbow trout -->
-		<item id="2669" chance="60" /><!-- northern pike -->
-		<item id="2460" chance="3250" /><!-- brass helmet -->
-		<item id="22727" chance="500" /><!-- fireprof -->
+		<item id="2148" countmax="26" chance="71000" /><!-- gold coin -->
+		<item id="2667" countmax="3" chance="30000" /><!-- fish -->
+		<item id="2541" chance="980" /><!-- bone shield -->
+		<item id="7159" chance="120" /><!-- green perch -->
+		<item id="7158" chance="40" /><!-- rainbow trout -->
+		<item id="2669" chance="40" /><!-- northern pike -->
+		<item id="2460" chance="4350" /><!-- brass helmet -->
+		<item id="22727" chance="430" /><!-- fireprof -->
 	</loot>
 </monster>
