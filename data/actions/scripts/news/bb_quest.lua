@@ -97,7 +97,10 @@ function onUse(cid, item, fromPosition, itemEx)
 	end
 
 	if uid_act then
-		if getPlayersInLever(uid_act) == 5 then
+		local xx = uid_act.players.positions.to.x - uid_act.players.positions.from.x
+		local yy = uid_act.players.positions.to.y - uid_act.players.positions.from.y
+		local pneed = ((xx > 0) and xx+1 or yy+1)
+		if getPlayersInLever(uid_act) == pneed then
 			local c = 0
 			for x = uid_act.players.positions.from.x, uid_act.players.positions.to.x do
 				for y = uid_act.players.positions.from.y, uid_act.players.positions.to.y do
@@ -118,7 +121,7 @@ function onUse(cid, item, fromPosition, itemEx)
 		else
 			local xx = uid_act.players.positions.to.x - uid_act.players.positions.from.x
 			local yy = uid_act.players.positions.to.y - uid_act.players.positions.from.y
-			player:sendCancelMessage("You need "..((xx > 0) and xx+1 or yy+1).." players to do this quest.")		
+			player:sendCancelMessage("You need "..pneed.." players to do this quest.")		
 			return true
 		end
 		Game.createMonster(uid_act.boss.name, uid_act.boss.pos)
