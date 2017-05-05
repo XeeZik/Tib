@@ -53,20 +53,20 @@
 		<voice sentence="ONLY WE ARE TRUE DEMONS!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="50000" /><!-- gold coin -->
-		<item id="2148" countmax="78" chance="50000" /><!-- gold coin -->
-		<item id="2152" countmax="4" chance="33333" /><!-- platinum coin -->
-		<item id="7589" chance="14285" /><!-- Strong Mana Potion -->
-		<item id="7588" chance="14285" /><!-- Strong Health Potion -->
-		<item id="2147" countmax="5" chance="2500" /><!-- Small Rubies -->
-		<item id="2165" chance="1000" /><!-- Stealth Ring -->
-		<item id="2789" chance="3545" /><!-- Brown Mushroom -->
-		<item id="2187" chance="292" /><!-- Wand of Inferno -->
-		<item id="7443" chance="714" /><!-- Bullseye Potion -->
-		<item id="7899" chance="214" /><!-- Magma Coat -->
-		<item id="5904" chance="134" /><!-- magic sulphur -->
-		<item id="7412" chance="257" /><!-- Butcher's Axe -->
-		<item id="13530" chance="178" /><!-- Demonic Finger -->
-		<item id="2645" chance="89" /><!-- Steel Boots -->
+		<item id="2148" countmax="100" chance="95000" /><!-- gold coin -->
+		<item id="2148" countmax="73" chance="95000" /><!-- gold coin -->
+		<item id="2152" countmax="4" chance="34333" /><!-- platinum coin -->
+		<item id="7589" chance="15785" /><!-- Strong Mana Potion -->
+		<item id="7588" chance="14685" /><!-- Strong Health Potion -->
+		<item id="2147" countmax="5" chance="12200" /><!-- Small Rubies -->
+		<item id="2165" chance="4800" /><!-- Stealth Ring -->
+		<item id="2789" chance="4745" /><!-- Brown Mushroom -->
+		<item id="2187" chance="822" /><!-- Wand of Inferno -->
+		<item id="7443" chance="674" /><!-- Bullseye Potion -->
+		<item id="7899" chance="674" /><!-- Magma Coat -->
+		<item id="5904" chance="454" /><!-- magic sulphur -->
+		<item id="7412" chance="307" /><!-- Butcher's Axe -->
+		<item id="13530" chance="158" /><!-- Demonic Finger -->
+		<item id="2645" chance="70" /><!-- Steel Boots -->
 	</loot>
 </monster>

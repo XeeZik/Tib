@@ -47,29 +47,29 @@
 		<voice sentence="It's a good day to destroy!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="60000" /><!-- gold coin -->
-		<item id="2148" countmax="100" chance="40000" /><!-- gold coin -->
-		<item id="2148" countmax="100" chance="40000" /><!-- gold coin -->
-		<item id="2148" countmax="41" chance="60000" /><!-- gold coin -->
-		<item id="2666" countmax="6" chance="50000" /><!-- meat -->
-		<item id="6500" chance="900" /><!-- demonic essence -->
-		<item id="2416" chance="4285" /><!-- crowbar -->
-		<item id="2546" countmax="12" chance="12500" /><!-- burst arrow -->
-		<item id="2489" chance="8000" /><!-- dark armor -->
-		<item id="2150" countmax="2" chance="1692" /><!-- small amethyst -->
-		<item id="11215" chance="1142" /><!-- metal spike -->
-		<item id="5944" chance="1666" /><!-- soul orb-->
-		<item id="2553" chance="1250" /><!-- pick -->
-		<item id="2463" chance="1347" /><!-- plate armor -->
-		<item id="2152" countmax="3" chance="1166" /><!-- platinum coin -->
-		<item id="2393" chance="694" /><!-- giant sword -->
-		<item id="7591" chance="1136" /><!-- greath health potion -->
-		<item id="2645" chance="392" /><!-- steel boots -->
-		<item id="7427" chance="269" /><!-- chaos mace -->
-		<item id="7419" chance="233" /><!-- dreaded cleaver -->
-		<item id="2125" chance="378" /><!-- crystal necklace -->
-		<item id="2178" chance="264" /><!-- mind stone -->
-		<item id="6300" chance="144" /><!-- death ring -->
-		<item id="5741" chance="108" /><!-- skull helmet -->
+		<item id="2148" countmax="100" chance="99500" /><!-- gold coin -->
+		<item id="2148" countmax="100" chance="99500" /><!-- gold coin -->
+		<item id="2148" countmax="100" chance="99500" /><!-- gold coin -->
+		<item id="2148" countmax="41" chance="99500" /><!-- gold coin -->
+		<item id="2666" countmax="6" chance="54000" /><!-- meat -->
+		<item id="6500" chance="18900" /><!-- demonic essence -->
+		<item id="2416" chance="14985" /><!-- crowbar -->
+		<item id="2546" countmax="12" chance="11000" /><!-- burst arrow -->
+		<item id="2489" chance="10100" /><!-- dark armor -->
+		<item id="2150" countmax="2" chance="7592" /><!-- small amethyst -->
+		<item id="11215" chance="6942" /><!-- metal spike -->
+		<item id="5944" chance="6966" /><!-- soul orb-->
+		<item id="2553" chance="6050" /><!-- pick -->
+		<item id="2463" chance="4947" /><!-- plate armor -->
+		<item id="2152" countmax="3" chance="3866" /><!-- platinum coin -->
+		<item id="2393" chance="1594" /><!-- giant sword -->
+		<item id="7591" chance="1006" /><!-- greath health potion -->
+		<item id="2645" chance="852" /><!-- steel boots -->
+		<item id="7427" chance="859" /><!-- chaos mace -->
+		<item id="7419" chance="803" /><!-- dreaded cleaver -->
+		<item id="2125" chance="558" /><!-- crystal necklace -->
+		<item id="2178" chance="594" /><!-- mind stone -->
+		<item id="6300" chance="134" /><!-- death ring -->
+		<item id="5741" chance="138" /><!-- skull helmet -->
 	</loot>
 </monster>

@@ -44,18 +44,18 @@
 	<loot>
 		<item id="2148" countmax="40" chance="64000" />	<!-- gold coin -->
 		<item id="2687" countmax="8" chance="30000" />	<!-- cookie -->
-		<item id="10569" chance="10000" />				<!-- witch broom -->
+		<item id="10569" chance="10300" />				<!-- witch broom -->
 		<item id="2129" chance="10000" />				<!-- wolf tooth chain -->
-		<item id="2800" chance="9000" />					<!-- star herb -->
+		<item id="2800" chance="9200" />					<!-- star herb -->
 		<item id="2643" chance="5000" />					<!-- leather boots -->
 		<item id="2654" chance="4890" />					<!-- cape -->
 		<item id="2405" chance="3910" />					<!-- sickle -->
-		<item id="2199" chance="2590" />					<!-- garlic necklace -->
+		<item id="2199" chance="2600" />					<!-- garlic necklace -->
 		<item id="2651" chance="2010" />					<!-- coat -->
-		<item id="2185" chance="1120" />					<!-- necrotic rod -->
-		<item id="13537" chance="930" />					<!-- bag of apple slices -->
+		<item id="2185" chance="1150" />					<!-- necrotic rod -->
+		<item id="13537" chance="910" />					<!-- bag of apple slices -->
 		<item id="2402" chance="530" />					<!-- silver dagger -->
-		<item id="10570" chance="70" />					<!-- witch hat -->
+		<item id="10570" chance="90" />					<!-- witch hat -->
 		<item id="11211" chance="10" />					<!-- stuffed toad -->
 	</loot>
 </monster>

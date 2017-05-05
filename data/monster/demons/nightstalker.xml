@@ -59,10 +59,10 @@
 		<voice sentence="Only the sweetest and cruelest dreams for you, my love." />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="50000" /><!-- gold coin -->
-		<item id="2148" countmax="10" chance="50000" /><!-- gold coin -->
-		<item id="2804" chance="4761" /><!-- shadow herb -->
-		<item id="7589" chance="1612" /><!-- strong mana potion -->
+		<item id="2148" countmax="100" chance="89000" /><!-- gold coin -->
+		<item id="2148" countmax="10" chance="89000" /><!-- gold coin -->
+		<item id="2804" chance="4801" /><!-- shadow herb -->
+		<item id="7589" chance="1512" /><!-- strong mana potion -->
 		<item id="2124" chance="1030" /><!-- crystal ring -->
 		<item id="2200" chance="847" /><!-- protection amulet -->
 		<item id="7407" chance="318" /><!-- haunted blade -->

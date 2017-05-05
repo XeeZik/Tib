@@ -24,7 +24,7 @@ function getCost(level)
 	if level <= 30 then
 		return 2000*5
 	elseif level >= 120 then
-		return 10000*5
+		return 20000*5
 	else
 		return ((level - 20) * 200 * 5) 
 	end

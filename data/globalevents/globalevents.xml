@@ -69,7 +69,6 @@
 	<globalevent type="startup" name="ServerStartup" script="startup.lua" />
 	<globalevent type="record" name="PlayerRecord" script="record.lua" />
 	<globalevent name="ServerSave" time="04:55:00" script="serversave.lua" />	
-	<globalevent name="Shop" interval="30000" script="others/shop.lua"/>
 	<globalevent name="text" interval="4550" script="text.lua"/> 
 	<globalevent name="shopguild" interval="30000" script="others/shopguild.lua"/>
 	<globalevent type="startup" name="doCheckHouses" script="others/doCheckHouses.lua" />

@@ -20,11 +20,13 @@
 #include "otpch.h"
 
 #include "monster.h"
+#include "configmanager.h"
 #include "game.h"
 #include "spells.h"
 
 extern Game g_game;
 extern Monsters g_monsters;
+extern ConfigManager g_config;
 
 int32_t Monster::despawnRange;
 int32_t Monster::despawnRadius;
@@ -48,8 +50,9 @@ Monster::Monster(MonsterType* mType) :
 	defaultOutfit = mType->info.outfit;
 	currentOutfit = mType->info.outfit;
 	skull = mType->info.skull;
-	health = mType->info.health;
-	healthMax = mType->info.healthMax;
+	float multiplier = g_config.getFloat(ConfigManager::RATE_MONSTER_HEALTH);
+	health = mType->info.health*multiplier;
+	healthMax = mType->info.healthMax*multiplier;
 	baseSpeed = mType->info.baseSpeed;
 	internalLight = mType->info.light;
 	hiddenHealth = mType->info.hiddenHealth;
@@ -84,17 +87,16 @@ bool Monster::canSee(const Position& pos) const
 }
 
 bool Monster::canWalkOnFieldType(CombatType_t combatType) const
- {
+{
 	switch (combatType) {
 		case COMBAT_ENERGYDAMAGE:
 			return mType->info.canWalkOnEnergy;
-			case COMBAT_FIREDAMAGE:
-				return mType->info.canWalkOnFire;
-				case COMBAT_EARTHDAMAGE:
-					return mType->info.canWalkOnPoison;
-					default:
-						return true;
-						
+		case COMBAT_FIREDAMAGE:
+			return mType->info.canWalkOnFire;
+		case COMBAT_EARTHDAMAGE:
+				return mType->info.canWalkOnPoison;
+			default:
+		return true;
 	}
 }
 
@@ -785,8 +787,14 @@ void Monster::doAttacking(uint32_t interval)
 					updateLook = false;
 				}
 
-				minCombatValue = spellBlock.minCombatValue;
-				maxCombatValue = spellBlock.maxCombatValue;
+				float multiplier;
+				if(maxCombatValue > 0) //defense
+					multiplier = g_config.getFloat(ConfigManager::RATE_MONSTER_DEFENSE);
+				else //attack
+					multiplier = g_config.getFloat(ConfigManager::RATE_MONSTER_ATTACK);
+
+				minCombatValue = spellBlock.minCombatValue * multiplier;
+				maxCombatValue = spellBlock.maxCombatValue * multiplier;
 				spellBlock.spell->castSpell(this, attackedCreature);
 
 				if (spellBlock.isMelee) {
@@ -1125,7 +1133,6 @@ bool Monster::getNextStep(Direction& direction, uint32_t& flags)
 			if (ignoreFieldDamage) {
 				ignoreFieldDamage = false;
 				updateMapCache();
-				
 			}
 			//target dancing
 			if (attackedCreature && attackedCreature == followCreature) {
@@ -1834,8 +1841,14 @@ bool Monster::getCombatValues(int32_t& min, int32_t& max)
 		return false;
 	}
 
-	min = minCombatValue;
-	max = maxCombatValue;
+	float multiplier;
+	if(maxCombatValue > 0) //defense
+		multiplier = g_config.getFloat(ConfigManager::RATE_MONSTER_DEFENSE);
+	else //attack
+		multiplier = g_config.getFloat(ConfigManager::RATE_MONSTER_ATTACK);
+
+	min = minCombatValue * multiplier;
+	max = maxCombatValue * multiplier;
 	return true;
 }
 

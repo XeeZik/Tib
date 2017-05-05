@@ -370,6 +370,21 @@ function Player:onReport(message, position, category)
 	return true
 end
 
+function Player:onWrapItem(item)
+	local pos = item:getPosition()
+	local house = Tile(pos):getHouse()
+	
+	if not house then
+		self:sendTextMessage(MESSAGE_STATUS_SMALL, "You can only wrap and unwrap this item inside a house.")
+		return
+	end
+	
+	local wrapId = item:getType():getWrapId()
+	if wrapId ~= 0 then
+		item:transform(wrapId)
+	end
+end
+
 function Player:onTurn(direction)
 	if self:getGroup():getAccess() and self:getDirection() == direction then
 		local nextPosition = self:getPosition()
@@ -420,36 +435,62 @@ local function useStamina(player)
 	player:setStamina(staminaMinutes)
 end
 
+-- exp card
+    local BONUS_EXP_STORAGE = 61398
+    local BONUS_EXP_MULT = 1.3
+    -- exp card
+ 
+    local configexp =  {
+  ["Monday"] = 1.0,
+   ["Tuesday"] = 1.0,
+   ["Wednesday"] = 1.0,
+   ["Thursday"] = 1.0,
+   ["Friday"] = 1.0,
+   ["Saturday"] = 2.0,
+   ["Sunday"] = 2.0
+}
+ 
+ 
 function Player:onGainExperience(source, exp, rawExp)
-	if not source or source:isPlayer() then
-		return exp
-	end
-
-	-- Soul regeneration
-	local vocation = self:getVocation()
-	if self:getSoul() < vocation:getMaxSoul() and exp >= self:getLevel() then
-		soulCondition:setParameter(CONDITION_PARAM_SOULTICKS, vocation:getSoulGainTicks() * 1000)
-		self:addCondition(soulCondition)
-	end
-
-	-- Apply experience stage multiplier
-	exp = exp * Game.getExperienceStage(self:getLevel())
-
-	-- Stamina modifier
-	if configManager.getBoolean(configKeys.STAMINA_SYSTEM) then
-		useStamina(self)
-
-		local staminaMinutes = self:getStamina()
-		if staminaMinutes > 2400 and self:isPremium() then
-			exp = exp * 1.5
-		elseif staminaMinutes <= 840 then
-			exp = exp * 0.5
-		end
-	end
-
-	return exp
+ 
+     if not source or source:isPlayer() then
+         return exp
+     end
+   
+     exp = exp * configexp[os.date("%A")]    
+   
+    -- Soul regeneration
+    local vocation = self:getVocation()
+    if self:getSoul() < vocation:getMaxSoul() and exp >= self:getLevel() then
+        soulCondition:setParameter(CONDITION_PARAM_SOULTICKS, vocation:getSoulGainTicks() * 1000)
+        self:addCondition(soulCondition)
+    end
+ 
+    -- Apply experience stage multiplier
+    exp = exp * Game.getExperienceStage(self:getLevel())
+ 
+    -- Stamina modifier
+    if configManager.getBoolean(configKeys.STAMINA_SYSTEM) then
+        useStamina(self)
+ 
+        local staminaMinutes = self:getStamina()
+        if staminaMinutes > 2400 and self:isPremium() then
+            exp = exp * 1.5
+        elseif staminaMinutes <= 840 then
+            exp = exp * 0.5
+        end
+    end
+ 
+   
+   -- exp card
+ if self:getStorageValue(BONUS_EXP_STORAGE) - os.time() > 0 then
+  exp = exp * BONUS_EXP_MULT
+ end
+    -- exp card
+ 
+    return exp
 end
-
+ 
 function Player:onLoseExperience(exp)
 	return exp
 end

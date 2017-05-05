@@ -43,6 +43,16 @@
 		<immunity earth="1" />
 	</immunities>
 	<loot>
-		<item id="2148" countmax="100" chance="50000" />	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="100000" />	<!-- gold coin -->
+		<item id="2148" countmax="52" chance="100000" />	<!-- gold coin -->
+		<item id="7588" countmax="3" chance="8600" />	    <!--  Strong Health Potion -->		
+		<item id="7589" countmax="4" chance="10300" />	    <!-- Strong Mana Potion -->
+		<item id="10602" chance="8600" />				    <!-- Vampire Teeth -->
+        <item id="2147" countmax="3" chance="5110" />	    <!-- Small Ruby, -->
+        <item id="5894" chance="5100" />				    <!-- Bat Wing -->	
+		<item id="12405" chance="5170" />				    <!-- Blood Preservation, -->	
+        <item id="2127" chance="3410" />					    <!-- Emerald Bangle -->	
+		<item id="21241" chance="3400" />				    <!-- Tooth File -->		
+		<item id="2156" chance="1700" />					    <!-- Red Gem -->		
 	</loot>
 </monster>

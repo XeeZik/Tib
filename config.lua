@@ -2,7 +2,7 @@
 -- NOTE: valid values for worldType are: "pvp", "no-pvp" and "pvp-enforced"
 worldType = "pvp"
 hotkeyAimbotEnabled = true
-protectionLevel = 1
+protectionLevel = 7
 pzLocked = 60 * 1000
 removeChargesFromRunes = true
 timeToDecreaseFrags = 24 * 60 * 60 * 1000
@@ -25,18 +25,18 @@ loginProtocolPort = 7171
 gameProtocolPort = 7172
 statusProtocolPort = 7171
 maxPlayers = 0
-motd = "Welcome to The OTX Global Server!"
+motd = "Welcome to The OTXServer Global!"
 onePlayerOnlinePerAccount = true
 allowClones = false
-serverName = "OTX-Global"
+serverName = "OTXServer-Global"
 statusTimeout = 5 * 1000
 replaceKickOnLogin = true
-maxPacketsPerSecond = 1500
+maxPacketsPerSecond = 25
 
 -- Version Manual
-clientVersionMin = 1098
-clientVersionMax = 1099
-clientVersionStr = "Only clients with protocol 10.98/99 or allowed!"
+clientVersionMin = 1100
+clientVersionMax = 1200
+clientVersionStr = "Only clients with protocol 10.00 is allowed!"
 
 -- Depot Limit
 freeDepotLimit = 2000
@@ -65,7 +65,7 @@ timeBetweenExActions = 1000
 -- Map
 -- NOTE: set mapName WITHOUT .otbm at the end
 mapName = "global"
-mapAuthor = "cipsoft"
+mapAuthor = "Cipsoft"
 
 -- Market
 marketOfferDuration = 30 * 24 * 60 * 60
@@ -79,9 +79,8 @@ mysqlUser = "root"
 mysqlPass = ""
 mysqlDatabase = "global"
 mysqlPort = 3306
-passwordType = "sha1"
 mysqlSock = ""
-
+passwordType = "sha1"
 -- Misc.
 allowChangeOutfit = true
 freePremium = true
@@ -91,15 +90,21 @@ emoteSpells = false
 classicEquipmentSlots = false
 allowWalkthrough = true
 coinPacketSize = 25
-coinImagesURL = "http://localhost/store/"
+coinImagesURL = "http://some.url/images/store/"
+classicAttackSpeed = false
 
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml
 rateExp = 5
-rateSkill = 75
+rateSkill = 3
 rateLoot = 2
-rateMagic = 40
+rateMagic = 3
 rateSpawn = 1
+
+-- Monster rates
+rateMonsterHealth = 1.0
+rateMonsterAttack = 1.0
+rateMonsterDefense = 1.0
 
 -- Monsters
 deSpawnRange = 2
@@ -121,5 +126,5 @@ startupDatabaseOptimization = true
 -- Status server information
 ownerName = "Malucooo"
 ownerEmail = "e_nunes@live.com"
-url = "http://www.github.com/malucooo/otxserver-global/"
+url = "http://www.facebook.com/erick.nunes.75"
 location = "Brazil"

@@ -1387,7 +1387,10 @@
 		<attribute key="weight" value="1000" />
 	</item>
 	
-	<item id="25393" article="a" name="folded rift carpet">
+	<item id="25392" article="a" name="folded rift carpet">
+		<attribute key="weight" value="1000" />
+	</item>
+		<item id="25393" article="a" name="rift carpet">
 		<attribute key="weight" value="1000" />
 	</item>
 	
@@ -1593,9 +1596,16 @@
 		<attribute key="slotType" value="backpack" />
 	</item>
 	
+	<item id="26377" article="a" name="gold pouch">
+		<attribute key="weight" value="1800" />
+		<attribute key="containerSize" value="8" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+
+	
 	<item id="23816" article="a" name="war backpack">
 		<attribute key="weight" value="1800" />
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="8" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	
@@ -2378,6 +2388,13 @@
 		<attribute key="shootType" value="smallearth" />
 		<attribute key="range" value="3" />
 	</item>
+	<item id="23721" article="a" name="the chiller">
+		<attribute key="description" value="It is a little, well, chilly to the touch." />
+		<attribute key="weight" value="1500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="3" />
+	</item>
 	<item id="2182" article="a" name="snakebite rod">
 		<attribute key="description" value="It seems to twitch and quiver as if trying to escape your grip." />
 		<attribute key="weight" value="1900" />
@@ -2428,6 +2445,13 @@
 		<attribute key="weight" value="2500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+	</item>
+	<item id="23719" article="a" name="the scorcher">
+		<attribute key="description" value="Itï¿½s warm to the touch." />
+		<attribute key="weight" value="1500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="fire" />
 		<attribute key="range" value="3" />
 	</item>
 	<item id="2190" article="a" name="wand of vortex">
@@ -3224,14 +3248,9 @@
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="86400" />
 	</item>
-	<item id="2352" article="a" name="donate arrow">
+	<item id="2352" article="a" name="crystal arrow">
 		<attribute key="description" value="This arrow is powerfull." />
-		<attribute key="attack" value="75" />
-		<attribute key="defense" value="10" />
 		<attribute key="weight" value="100" />
-		<attribute key="shootType" value="arrow" />
-		<attribute key="weaponType" value="distance" />
-		<attribute key="range" value="7" />
 	</item>
 	<item id="2353" article="a" name="burning heart">
 		<attribute key="description" value="It is still beating with unholy life. It seems to be rotting rapidly." />
@@ -3354,7 +3373,7 @@
 	</item>
 	<item id="26181" article="a" name="energetic backpack">
 		<attribute key="weight" value="1800" />
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="24" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="2366" article="a" name="roc feather">
@@ -4822,57 +4841,28 @@
 	
 	<item id="23407" article="a" name="machine unknown" />
 	<item id="23402" article="a" name="small mudpit" />
-	<item id="23405" article="a" name="ground unknown" />
+	<item id="23405" article="a" name="sewer cover" />
 	<item id="23400" article="a" name="ground unknown" />
 	<item id="23406" article="a" name="ground unknown" />
 	<item id="23401" article="a" name="ground unknown" />
-	<item id="25344" article="a" name="ground" />
+	<item id="25344" article="a" name="rock tile" />
 	
-	<item id="25004" article="a" name="ground" />
-	<item id="25005" article="a" name="ground" />
-	<item id="25006" article="a" name="ground" />
-	<item id="25007" article="a" name="ground" />
-	<item id="25038" article="a" name="ground" />
-	<item id="25031" article="a" name="ground" />
-	<item id="25040" article="a" name="ground" />
-	<item id="25024" article="a" name="ground" />
-	<item id="25011" article="a" name="ground" />
-	<item id="25023" article="a" name="ground" />
-	<item id="25018" article="a" name="ground" />
-	<item id="25012" article="a" name="ground" />
-	<item id="25013" article="a" name="ground" />
-	<item id="25302" article="a" name="ground" />
-	<item id="25010" article="a" name="ground" />
-	<item id="25019" article="a" name="ground" />
-	<item id="25028" article="a" name="ground" />
-	<item id="25027" article="a" name="ground" />
-	<item id="25021" article="a" name="ground" />
-	<item id="25076" article="a" name="ground" />
-	<item id="25074" article="a" name="ground" />
-	<item id="25090" article="a" name="ground" />
-	<item id="25100" article="a" name="ground" />
-	<item id="25096" article="a" name="ground" />
-	<item id="25092" article="a" name="ground" />
-	<item id="25063" article="a" name="ground" />
-	
-	<item id="25045" article="a" name="ground" />
-	<item id="25047" article="a" name="ground" />
-	<item id="25049" article="a" name="ground" />
-	<item id="25053" article="a" name="ground" />
-	<item id="25050" article="a" name="ground" />
-	<item id="25043" article="a" name="ground" />
-	
+	<item fromid="25011" toid="25016" article="a" name="dry floor" />
+	<item fromid="25042" toid="25065" article="a" name="dry floor" />
 	<item id="25304" article="a" name="flower" />
 	<item id="25299" article="a" name="flower" />
+	<item fromid="23944" toid="23949" article="a" name="ocean floor" />
+	<item fromid="23955" toid="23966" article="a" name="ocean floor" />
+	<item fromid="23933" toid="23940" article="a" name="ramp (coral)" />
+	<item fromid="23877" toid="23922" article="a" name="coral stone" />
+	<item fromid="23928" toid="23932" article="a" name="coral stone" />
 	
-	<item id="23947" article="a" name="sea ground" />
-	<item id="23946" article="a" name="sea ground" />
-	<item id="23949" article="a" name="sea ground" />
-	<item id="23944" article="a" name="sea ground" />
-	<item id="23956" article="a" name="sea ground" />
-	<item id="23948" article="a" name="sea ground" />
+	
+	<item fromid="23950" toid="23954" article="a" name="rock tile (black)" />
+	
+	
+
 	<item id="24084" article="a" name="sea ground" />
-	<item id="23955" article="a" name="sea ground" />
 	<item id="24072" article="a" name="sea ground" />
 	<item id="24069" article="a" name="sea ground" />
 	<item id="24065" article="a" name="sea ground" />
@@ -4882,8 +4872,6 @@
 	<item id="24069" article="a" name="sea ground" />
 	<item id="24072" article="a" name="sea ground" />
 	<item id="24074" article="a" name="sea ground" />
-	<item id="23937" article="a" name="sea ground" />
-	<item id="23958" article="a" name="sea ground" />
 	<item id="24038" article="a" name="sea ground" />
 	
 	<item id="24160" article="a" name="sea statue" />
@@ -4892,27 +4880,6 @@
 	<item id="22313" article="a" name="sea structure" />
 	<item id="22310" article="a" name="sea structure" />
 	<item id="22315" article="a" name="sea structure" />
-	<item id="23961" article="a" name="sea wall" />
-	<item id="23888" article="a" name="sea wall" />
-	<item id="23883" article="a" name="sea wall" />
-	<item id="23895" article="a" name="sea wall" />
-	<item id="23886" article="a" name="sea wall" />
-	<item id="23959" article="a" name="sea wall" />
-	<item id="23885" article="a" name="sea wall" />
-	<item id="23932" article="a" name="sea wall" />
-	<item id="23930" article="a" name="sea wall" />
-	<item id="23878" article="a" name="sea wall" />
-	<item id="23877" article="a" name="sea wall" />
-	<item id="23894" article="a" name="sea wall" />
-	<item id="23991" article="a" name="sea wall" />
-	<item id="23918" article="a" name="sea wall" />
-	<item id="23929" article="a" name="sea wall" />
-	<item id="23887" article="a" name="sea wall" />
-	<item id="23931" article="a" name="sea wall" />
-	<item id="23882" article="a" name="sea wall" />
-	<item id="23879" article="a" name="sea wall" />
-	<item id="23884" article="a" name="sea wall" />
-	<item id="23880" article="a" name="sea wall" />
 	
 	<item id="2624" article="a" name="black token">
 		<attribute key="weight" value="500" />
@@ -13818,6 +13785,8 @@
 	<item id="25156" article="a" name="painted tusks" />
 	<item id="25155" article="a" name="painted tusks" />
 	<item id="25154" article="a" name="painted tusks" />
+	<item id="24996" article="a" name="painted tusks" />
+	<item id="24999" article="a" name="painted tusks" />
 	
 	<item id="24994" article="a" name="chimney" />
 	<item id="24927" article="a" name="grained stone" />
@@ -13848,10 +13817,8 @@
 	<item id="24950" article="a" name="small juniper tree" />
 	
 	<item id="24992" article="a" name="clay hut entrance" />
-	<item id="25025" article="a" name="dry grass" />
-	<item id="25021" article="a" name="dry grass" />
-	<item id="25026" article="a" name="dry grass" />
-	<item id="25020" article="a" name="dry grass" />
+	<item fromid="25004" toid="25010" article="a" name="dry grass" />
+	<item fromid="25018" toid="25041" article="a" name="dry grass" />
 	<item id="24990" article="a" name="clay hut" />
 	
 	<item id="7418" article="a" name="nightmare blade">
@@ -17039,7 +17006,7 @@
 	<item id="8843" article="an" name="onion">
 		<attribute key="weight" value="140" />
 	</item>
-	<item id="8844" article="a" name="jalapeño pepper">
+	<item id="8844" article="a" name="jalapeï¿½o pepper">
 		<attribute key="weight" value="30" />
 	</item>
 	<item id="8845" article="a" name="beetroot">
@@ -17496,10 +17463,11 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="2" />
 	</item>
-	<item id="8925" article="a" name="donate axe">
+	<item id="8925" article="a" name="solar axe">
 		<attribute key="weight" value="11000" />
-		<attribute key="defense" value="40" />
-		<attribute key="attack" value="60" />
+		<attribute key="defense" value="29" />
+		<attribute key="extradef" value="3" />
+		<attribute key="attack" value="52" />
 		<attribute key="weaponType" value="axe" />
 	</item>
 	<item id="8926" article="a" name="demonwing axe">
@@ -17516,10 +17484,11 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="extradef" value="-1" />
 	</item>
-	<item id="8928" article="an" name="donate club">
+	<item id="8928" article="an" name="obsidian truncheon">
 		<attribute key="weight" value="6500" />
-		<attribute key="defense" value="40" />
-		<attribute key="attack" value="60" />
+		<attribute key="defense" value="30" />
+		<attribute key="attack" value="50" />
+		<attribute key="extradef" value="2" />
 		<attribute key="weaponType" value="club" />
 	</item>
 	<item id="8929" name="the stomper">
@@ -17536,10 +17505,11 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="3" />
 	</item>
-	<item id="8931" name="donate sword">
+	<item id="8931" name="the epiphany">
 		<attribute key="weight" value="4500" />
-		<attribute key="defense" value="40" />
-		<attribute key="attack" value="60" />
+		<attribute key="defense" value="35" />
+		<attribute key="attack" value="50" />
+		<attribute key="extradef" value="3" />
 		<attribute key="weaponType" value="sword" />
 	</item>
 	<item id="8932" name="the calamity">
@@ -19226,7 +19196,7 @@
 		<attribute key="description" value="This one would be quite healthy if it wasn't for all the melted cheese on top." />
 		<attribute key="weight" value="1100" />
 	</item>
-	<item id="9998" article="a" name="filled jalapeño peppers">
+	<item id="9998" article="a" name="filled jalapeï¿½o peppers">
 		<attribute key="description" value="The creamy cheese makes a great combination with the spicy peppers." />
 		<attribute key="weight" value="650" />
 	</item>
@@ -22098,6 +22068,32 @@
 	<item fromid="12228" toid="12233" article="a" name="corrupted wall" />
 	<item fromid="12234" toid="12237" name="rutted stone" />
 	<item fromid="12266" toid="12271" article="a" name="sign" />
+	
+    <item id="16008" article="a" name="Tapestry of Honour">
+		<attribute key="description" value="It was awarded during the festivities of Tibia's anniversary." />
+		<attribute key="weight" value="800" />
+	</item>
+	  <item id="16009" article="a" name="Tapestry of Honour">
+		<attribute key="description" value="It was awarded during the festivities of Tibia's anniversary." />
+		<attribute key="weight" value="800" />
+	</item>
+	  <item id="16010" article="a" name="Tapestry of Honour">
+		<attribute key="description" value="It was awarded during the festivities of Tibia's anniversary." />
+		<attribute key="weight" value="800" />
+	</item>
+	  <item id="16011" article="a" name="Tapestry of Honour">
+		<attribute key="description" value="It was awarded during the festivities of Tibia's anniversary." />
+		<attribute key="weight" value="800" />
+	</item>
+	  <item id="16012" article="a" name="Tapestry of Honour">
+		<attribute key="description" value="It was awarded during the festivities of Tibia's anniversary." />
+		<attribute key="weight" value="800" />
+	</item>
+	  <item id="16013" article="a" name="Tapestry of Honour">
+		<attribute key="description" value="It was awarded during the festivities of Tibia's anniversary." />
+		<attribute key="weight" value="800" />
+	</item>
+	
 	<item id="12272" name="dirt floor" />
 	<item id="12274" article="a" name="sign" />
 	<item id="12284" article="a" name="marked crate">
@@ -31363,21 +31359,23 @@
 	<item fromid="21811" toid="21826" name="flowing water" />
 	<item fromid="21892" toid="21923" name="wasteland" />
 	
-	<item id="22654" article="a" name="unknown" />
-	<item id="22655" article="a" name="unknown" />
+    <item fromid="22654" toid="22656" name="dream junk"/>
+	
+	<item id="22105" article="a" name="crimson fin" />	
+	<item id="22440" article="a" name="crimson fin" />
+	<item id="22447" article="a" name="crimson fin" />
 	<item id="22099" article="a" name="unknown" />
-	<item id="22438" article="a" name="unknown" />
-	<item id="22656" article="a" name="unknown" />
+	<item id="22438" article="a" name="rooted evil" />
 	<item id="22311" article="a" name="unknown" />
 	<item id="21592" article="a" name="wasteland" />
 	
 	<item fromid="22133" toid="22134" name="instable vortex">
 		<attribute key="description" value="This vortex seems suck you right in.." />
 	</item>
-	<item id="22137" article="a" name="large vortex" />
-	<item id="22138" article="a" name="strange vortex" />
-	<item id="22139" article="a" name="tiny vortex" />
+	<item fromid="22097" toid="22098" name="night grasp"/>
+	<item fromid="22135" toid="22139" name="large vortex"/>
 	<item fromid="22159" toid="22166" name="stone pebble floor" />
+	<item fromid="22183" toid="22194" name="stone pebble floor" />
 	<item fromid="22167" toid="22174" name="stone pavement" />
 	<item id="21924" article="a" name="ruined stair">
 		<attribute key="floorchange" value="north" />
@@ -31386,6 +31384,9 @@
 		<attribute key="floorchange" value="west" />
 	</item>
 	<item id="22009" article="a" name="dark cypress" />
+	<item id="22093" article="a" name="poison spine" />
+	<item id="22435" article="a" name="tall dusky cypress" />
+	<item id="22253" article="a" name="sleepless twine" />
 	<item fromid="22010" toid="22011" article="a" name="tall dark cypress" />
 	<item id="22005" article="a" name="dark cypress" />
 	<item fromid="22023" toid="22024" article="a" name="dusky cypress" />
@@ -31471,6 +31472,14 @@
 	<item id="22397" article="a" name="dream matter">
 		<attribute key="weight" value="390" />
 	</item>
+	<!--10.90-->
+   
+    <item fromid="24939" toid="24945" article="a" name="ruddy rock" />
+    <item fromid="24966" toid="24973" article="a" name="rhino hide floor" /> 
+	
+    <item id="25017" article="a" name="Golden Quartzes" /> 
+
+    <item fromid="25066" toid="25113" article="a" name="salt incrusted floor" />
 	
 	<!-- 10.94 -->
 	<item fromid="25810" toid="25818" article="a" name="glowing vortex" />
@@ -31497,10 +31506,31 @@
 	<item id="26126" name="vortex" />
 	<item id="26127" name="vortex" />
 	<item id="26139" name="vortex" />
+	<item id="26140" name="vortex" />
 	
 	<item id="25825" name="rift pinnacle" />
 	<item id="25829" name="rift archway" />
-	<item id="25710" name="holes in the floor" />
+	<item fromid="25704" toid="25708" name="rift floor" />
+	<item fromid="25709" toid="25712" name="holes in the floor" />
+	<item id="25713" name="rift floor" />
+	<item id="25716" name="rift floor" />
+	<item id="25719" name="rift floor" />
+	<item id="25722" name="rift floor" />
+	<item id="25725" name="rift floor" />
+	<item id="25728" name="rift floor" />
+	<item id="25731" name="rift floor" />
+	<item id="25734" name="rift floor" />
+	<item id="25737" name="rift floor" />
+	<item id="25740" name="rift floor" />
+	<item id="25743" name="rift floor" />
+	<item id="25746" name="rift floor" />
+	
+	
+	
+	
+	
+	
+	
 	<item id="25753" name="overgrown rift floor" />
 	
 	<item id="26141" article="a" name="explosive barrel">
@@ -31542,6 +31572,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weaponType" value="sword" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
 		<attribute key="transformEquipTo" value="25960" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31567,6 +31599,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />	
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
 		<attribute key="transformEquipTo" value="25961" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31615,6 +31649,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="sword" />
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="transformEquipTo" value="25889" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31640,6 +31676,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />	
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="transformEquipTo" value="25899" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31666,8 +31704,8 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="skillSword" value="1" />
 		<attribute key="weaponType" value="sword" />	
-		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticalchance" value="30" />
+		<attribute key="skillcriticaldamage" value="50" />
 		<attribute key="decayTo" value="25879" />
 		<attribute key="transformDeEquipTo" value="26235" />
 		<attribute key="duration" value="54000" />
@@ -31690,6 +31728,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="sword" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />	
 		<attribute key="transformEquipTo" value="25920" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31715,6 +31755,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />	
 		<attribute key="transformEquipTo" value="25921" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31765,6 +31807,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />	
 		<attribute key="transformEquipTo" value="25964" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31792,6 +31836,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />	
 		<attribute key="transformEquipTo" value="25965" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31845,6 +31891,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />		
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="transformEquipTo" value="25890" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31872,6 +31920,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="transformEquipTo" value="25900" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31899,8 +31949,8 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="skillSword" value="1" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticalchance" value="30" />
+		<attribute key="skillcriticaldamage" value="50" />
 		<attribute key="decayTo" value="25880" />
 		<attribute key="transformDeEquipTo" value="26238" />
 		<attribute key="duration" value="54000" />
@@ -31924,6 +31974,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
 		<attribute key="transformEquipTo" value="25924" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31951,6 +32003,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
 		<attribute key="transformEquipTo" value="25925" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32000,6 +32054,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
 		<attribute key="transformEquipTo" value="25968" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32025,6 +32081,8 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
 		<attribute key="transformEquipTo" value="25969" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32074,6 +32132,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="transformEquipTo" value="25891" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32099,6 +32159,8 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="transformEquipTo" value="25901" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32119,17 +32181,17 @@
 	</item>
 	<item id="25911" article="a" name="axe of mayhem (overcharged)">
 		<attribute key="weight" value="5000" />
-		<attribute key="defense" value="33" />
-		<attribute key="attack" value="52" />
+		<attribute key="defense" value="70" />
+		<attribute key="attack" value="95" />
 		<attribute key="description" value="This weapon is over charged." />
-		<attribute key="skillAxe" value="1" />
+		<attribute key="skillAxe" value="450" />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticalchance" value="30" />
+		<attribute key="skillcriticaldamage" value="50" />
 		<attribute key="decayTo" value="25881" />
 		<attribute key="transformDeEquipTo" value="26241" />
 		<attribute key="duration" value="54000" />
-		<attribute key="showduration" value="1" />
+		<attribute key="showduration" value="1" />-->
 	</item>
 	
 	
@@ -32147,6 +32209,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
 		<attribute key="transformEquipTo" value="25928" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32172,6 +32236,8 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
 		<attribute key="transformEquipTo" value="25929" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32223,6 +32289,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
 		<attribute key="transformEquipTo" value="25972" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32250,6 +32318,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
 		<attribute key="transformEquipTo" value="25973" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32303,6 +32373,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="transformEquipTo" value="25892" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32330,6 +32402,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="transformEquipTo" value="25902" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32357,8 +32431,8 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="skillAxe" value="1" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticalchance" value="30" />
+		<attribute key="skillcriticaldamage" value="50" />
 		<attribute key="decayTo" value="25882" />
 		<attribute key="transformDeEquipTo" value="26244" />
 		<attribute key="duration" value="54000" />
@@ -32382,6 +32456,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
 		<attribute key="transformEquipTo" value="25932" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32409,6 +32485,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
 		<attribute key="transformEquipTo" value="25933" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32462,6 +32540,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />	
 		<attribute key="transformEquipTo" value="25980" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />		
@@ -32489,6 +32569,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
 		<attribute key="transformEquipTo" value="25981" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32541,6 +32623,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="skillmanachance" value="10" />
+		<attribute key="skillmanaamount" value="20" />
 		<attribute key="transformEquipTo" value="25894" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32553,8 +32637,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillcriticalchance" value="10" />
-		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="skillmanachance" value="10" />
+		<attribute key="skillmanaamount" value="20" />
 		<attribute key="decayTo" value="25884" />
 		<attribute key="transformDeEquipTo" value="26248" />
 		<attribute key="duration" value="72000" />
@@ -32568,6 +32652,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="transformEquipTo" value="25904" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32595,8 +32681,8 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="skillClub" value="1" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticalchance" value="30" />
+		<attribute key="skillcriticaldamage" value="50" />
 		<attribute key="decayTo" value="25884" />
 		<attribute key="transformDeEquipTo" value="26250" />
 		<attribute key="duration" value="54000" />
@@ -32621,6 +32707,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />	
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="5" />	
 		<attribute key="transformEquipTo" value="25940" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />	
@@ -32647,7 +32735,9 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />
-		<attribute key="slotType" value="two-handed" />	
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />	
 		<attribute key="transformEquipTo" value="25941" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32698,6 +32788,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />	
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
 		<attribute key="transformEquipTo" value="25976" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32723,6 +32815,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />	
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
 		<attribute key="transformEquipTo" value="25977" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32771,6 +32865,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />	
 		<attribute key="transformEquipTo" value="25893" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32796,6 +32892,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="transformEquipTo" value="25903" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32821,8 +32919,8 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="skillClub" value="1" />
 		<attribute key="weaponType" value="club" />
-		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticalchance" value="30" />
+		<attribute key="skillcriticaldamage" value="50" />
 		<attribute key="decayTo" value="25883" />
 		<attribute key="transformDeEquipTo" value="26247" />
 		<attribute key="duration" value="54000" />
@@ -32844,6 +32942,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
 		<attribute key="transformEquipTo" value="25936" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32869,6 +32969,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
 		<attribute key="transformEquipTo" value="25937" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />	
@@ -32914,6 +33016,8 @@
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
 		<attribute key="transformEquipTo" value="25996" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />		
@@ -32937,7 +33041,10 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
-		<attribute key="transformEquipTo" value="25997" />
+		<attribute key="range" value="3" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
+		<attribute key="transformEquipTo" value="28997" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>	
@@ -32983,6 +33090,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="3" />
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="transformEquipTo" value="25898" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33007,6 +33117,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="3" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="transformEquipTo" value="25908" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33032,8 +33145,8 @@
 		<attribute key="shootType" value="smallice" />
 		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="range" value="3" />
-		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticalchance" value="30" />
+		<attribute key="skillcriticaldamage" value="50" />
 		<attribute key="decayTo" value="25888" />
 		<attribute key="transformDeEquipTo" value="26323" />
 		<attribute key="duration" value="54000" />
@@ -33054,6 +33167,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="3" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
 		<attribute key="transformEquipTo" value="25956" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33078,6 +33194,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="3" />	
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
 		<attribute key="transformEquipTo" value="25957" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33125,6 +33244,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
 		<attribute key="transformEquipTo" value="25992" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33149,6 +33271,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
 		<attribute key="transformEquipTo" value="25993" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33196,6 +33321,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="transformEquipTo" value="25897" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33220,6 +33348,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="transformEquipTo" value="25907" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33245,8 +33376,8 @@
 		<attribute key="shootType" value="energy" />
 		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="range" value="3" />	
-		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticalchance" value="30" />
+		<attribute key="skillcriticaldamage" value="50" />
 		<attribute key="decayTo" value="25887" />
 		<attribute key="transformDeEquipTo" value="26320" />
 		<attribute key="duration" value="54000" />
@@ -33267,6 +33398,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
 		<attribute key="transformEquipTo" value="25952" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33291,6 +33425,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="3" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
 		<attribute key="transformEquipTo" value="25953" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33343,6 +33480,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
 		<attribute key="transformEquipTo" value="25984" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33371,6 +33513,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
 		<attribute key="transformEquipTo" value="25985" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33428,6 +33575,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="transformEquipTo" value="25895" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33456,6 +33608,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="transformEquipTo" value="25906" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33487,8 +33644,8 @@
 		<attribute key="skillDist" value="1" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
-		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticalchance" value="30" />
+		<attribute key="skillcriticaldamage" value="50" />
 		<attribute key="decayTo" value="25885" />
 		<attribute key="transformDeEquipTo" value="26254" />
 		<attribute key="duration" value="54000" />
@@ -33512,6 +33669,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
 		<attribute key="transformEquipTo" value="25944" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33540,7 +33702,13 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is heavily charged." />
-		<attribute key="transformEquipTo" value="25945" />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
+		<attribute key="decayTo" value="25943" />
+		<attribute key="transformDeEquipTo" value="25945" />
 		<attribute key="duration" value="36000" />
 		<attribute key="showduration" value="1" />
 	</item>	
@@ -33597,6 +33765,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />
 		<attribute key="transformEquipTo" value="25988" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33625,6 +33798,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />
 		<attribute key="transformEquipTo" value="25989" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33682,6 +33860,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="20" />
 		<attribute key="transformEquipTo" value="25896" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33710,6 +33893,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skillcriticalchance" value="20" />
+		<attribute key="skillcriticaldamage" value="25" />
 		<attribute key="transformEquipTo" value="25905" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33741,8 +33929,8 @@
 		<attribute key="skillDist" value="1" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
-		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticalchance" value="30" />
+		<attribute key="skillcriticaldamage" value="50" />
 		<attribute key="decayTo" value="25886" />
 		<attribute key="transformDeEquipTo" value="26268" />
 		<attribute key="duration" value="54000" />
@@ -33767,6 +33955,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="4" />
+		<attribute key="hitChance" value="4" />
+		<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />
 		<attribute key="transformEquipTo" value="25948" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33795,6 +33988,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is heavily charged." />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="5" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />
 		<attribute key="transformEquipTo" value="25949" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33840,6 +34038,9 @@
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
+		<attribute key="range" value="5" />
+		<attribute key="attack" value="6" />
+		<attribute key="hitChance" value="6" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="transformEquipTo" value="25916" />
 		<attribute key="stopduration" value="1" />
@@ -33850,6 +34051,9 @@
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
+		<attribute key="range" value="6" />
+		<attribute key="attack" value="6" />
+		<attribute key="hitChance" value="6" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="transformEquipTo" value="25915" />
 		<attribute key="stopduration" value="1" />
@@ -33859,6 +34063,7 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
+		<attribute key="range" value="3" />	
 		<attribute key="transformEquipTo" value="25917" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33867,6 +34072,7 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
+		<attribute key="range" value="3" />	
 		<attribute key="transformEquipTo" value="25918" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33876,6 +34082,8 @@
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
+		<attribute key="skillClub" value="1" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="transformEquipTo" value="25913" />
 		<attribute key="stopduration" value="1" />
@@ -33887,6 +34095,7 @@
 		<attribute key="attack" value="54" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
+		<attribute key="slotType" value="two-handed" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="transformEquipTo" value="25914" />
 		<attribute key="stopduration" value="1" />
@@ -33945,6 +34154,7 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
+		<attribute key="skillSword" value="1" />
 		<attribute key="transformEquipTo" value="25962" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />	
@@ -33955,6 +34165,7 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
+		<attribute key="skillSword" value="1" />
 		<attribute key="transformEquipTo" value="25922" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33965,7 +34176,7 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="slotType" value="two-handed" />
+		<attribute key="skillSword" value="1" />
 		<attribute key="transformEquipTo" value="25966" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33976,6 +34187,7 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
+		<attribute key="skillSword" value="1" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="transformEquipTo" value="25926" />
 		<attribute key="stopduration" value="1" />
@@ -33987,6 +34199,7 @@
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="skillAxe" value="1" />
 		<attribute key="transformEquipTo" value="25970" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33997,6 +34210,7 @@
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="skillAxe" value="1" />
 		<attribute key="transformEquipTo" value="25930" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34008,6 +34222,7 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="skillAxe" value="1" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="transformEquipTo" value="25974" />
 		<attribute key="stopduration" value="1" />
@@ -34020,6 +34235,7 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="skillAxe" value="1" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="transformEquipTo" value="25931" />
 		<attribute key="stopduration" value="1" />
@@ -34032,6 +34248,7 @@
 		<attribute key="attack" value="54" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
+		<attribute key="skillClub" value="1" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="transformEquipTo" value="25982" />
 		<attribute key="stopduration" value="1" />
@@ -34043,6 +34260,7 @@
 		<attribute key="attack" value="54" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
+		<attribute key="skillClub" value="1" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="transformEquipTo" value="25942" />
 		<attribute key="stopduration" value="1" />
@@ -34056,6 +34274,7 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
+		<attribute key="skillClub" value="1" />
 		<attribute key="transformEquipTo" value="25978" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />	
@@ -34066,6 +34285,7 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
+		<attribute key="skillClub" value="1" />
 		<attribute key="transformEquipTo" value="25938" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34075,6 +34295,7 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
+		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="transformEquipTo" value="25998" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34083,6 +34304,7 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
+		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="transformEquipTo" value="25958" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34091,6 +34313,7 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
+		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="transformEquipTo" value="25994" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34099,6 +34322,7 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
+		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="transformEquipTo" value="25954" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34109,6 +34333,10 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is over charged." />
+		<attribute key="range" value="6" />
+		<attribute key="skillDist" value="1" />
+		<attribute key="attack" value="6" />
+		<attribute key="hitChance" value="6" />
 		<attribute key="transformEquipTo" value="25986" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34119,6 +34347,10 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is over charged." />
+		<attribute key="range" value="5" />
+		<attribute key="skillDist" value="1" />
+		<attribute key="attack" value="6" />
+		<attribute key="hitChance" value="6" />
 		<attribute key="transformEquipTo" value="25990" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34129,6 +34361,10 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is over charged." />
+		<attribute key="range" value="5" />
+		<attribute key="skillDist" value="1" />
+		<attribute key="attack" value="6" />
+		<attribute key="hitChance" value="6" />
 		<attribute key="transformEquipTo" value="25950" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34139,6 +34375,10 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is over charged." />
+		<attribute key="range" value="6" />
+		<attribute key="skillDist" value="1" />
+		<attribute key="attack" value="6" />
+		<attribute key="hitChance" value="6" />
 		<attribute key="transformEquipTo" value="25946" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -36209,6 +36449,7 @@
 	</item>
 	<item id="23754" article="a" name="stone of insight">
 		<attribute key="weight" value="999" />
+		<attribute key="slotType" value="ammo" />
 		<attribute key="description" value="This rare artefact can be traded with Milos or Trimegis for a fraction of their knowledge." />
 	</item>
 	
@@ -36297,4 +36538,878 @@
 	<item id="30028" name="swamp" />
 	<item id="30035" name="tea" />
 	<item id="30043" name="mead" />
+	
+	<!--Items 10.70/10.80/10.90/-->
+		<!--Walls -->
+	<item fromid="21799" toid="21804" article="a" name="strange archway" />
+	<item fromid="21828" toid="21850" article="a" name="strange wall" />
+	<item fromid="21848" toid="21850" article="a" name="small wall" />
+	<item fromid="21851" toid="21852" article="a" name="ruined window" />
+	<item fromid="21855" toid="21860" article="a" name="strange archway" />
+	<item fromid="21861" toid="21862" article="a" name="strange wall" />
+	<item fromid="21864" toid="21878" article="a" name="small wall" />
+	<item id="21863" article="a" name="small pillar" />
+	<item fromid="21879" toid="21883" article="a" name="small pillar" />
+	<item fromid="21928" toid="21929" article="a" name="thick ruined foundation" />
+	<item fromid="21879" toid="21883" article="a" name="ruined stars" />
+	<item fromid="21962" toid="22004" article="a" name="ruined roof" />
+	<item fromid="22006" toid="22008" article="a" name="ruined roof" />
+	<item fromid="22012" toid="22022" article="a" name="ruined roof" />
+	<item fromid="22027" toid="22049" article="a" name="ruined roof" />
+	<item fromid="22051" toid="22062" article="a" name="ruined roof" />
+	<item fromid="22064" toid="22070" article="a" name="ruined roof" />
+    <item fromid="22076" toid="22090" article="a" name="ruined roof" />
+	
+    <item fromid="21926" toid="21927" article="a" name="ruined stone" />
+    <item fromid="21930" toid="21937" article="a" name="ruined stone" />
+    <item fromid="22365" toid="22366" article="a" name="giant face" />
+    <item fromid="22369" toid="22370" article="a" name="giant face" />
+    <item id="21761" article="a" name="tall gloomy cypress" />
+    <item id="22373" article="a" name="giant face" />
+    <item fromid="22377" toid="22378" article="a" name="giant face" />
+    <item fromid="22131" toid="22132" article="a" name="giant hand" />
+    <item fromid="22125" toid="22130" article="a" name="giant face" />
+    <item fromid="22219" toid="22232" article="a" name="giant face" />
+    <item fromid="21942" toid="21961" article="a" name="stone floor" />
+    <item fromid="22617" toid="22628" article="a" name="the dreamcatcher device" />
+    <item fromid="22259" toid="22265" article="a" name="the dreamcatcher device" />
+	
+    <item id="22101" article="a" name="rooted evil" />
+    <item id="22102" article="a" name="cormo dementi" />
+    <item id="22103" article="a" name="ether captor" />
+    <item id="22437" article="a" name="ether captor" />
+	
+	<!--1094-->
+	
+	<item fromid="25819" toid="25826" article="a" name="rift pinnacle" />
+	<item fromid="25827" toid="25833" article="a" name="rift archway" />
+	<item fromid="25835" toid="25836" article="a" name="rift jag" />
+	<item fromid="26032" toid="26043" article="a" name="rift jag" />
+	<item id="26227" article="a" name="wrecked opticorder forge" />
+	
+	<!--storeitens 10.94-->
+	<item id="26059" article="a" name="magnificent chair" >
+	<attribute key="rotateTo" value="26060" /> </item>
+	
+	<item id="26060"  article="a" name="magnificent chair" > 
+	<attribute key="rotateTo" value="26061" /> </item>
+	
+	<item id="26061"  article="a" name="magnificent chair" > 
+	<attribute key="rotateTo" value="26062" /> </item>
+	<item id="26062"  article="a" name="magnificent chair" > 
+	<attribute key="rotateTo" value="26059" /> </item>
+	
+	
+	
+	<item fromid="26073" toid="26074" article="a" name="magnificent table" />
+	<item fromid="26075" toid="26076" article="a" name="magnificent cabinet" />
+	<item fromid="26083" toid="26086" article="a" name="magnificent trunk" />
+	
+	<item fromid="26063" toid="26066" article="a" name="ferocious chair" />
+	<item id="26067" article="a" name="ferocious table" />
+	<item id="26070" article="a" name="ferocious table" />
+	<item fromid="26079" toid="26082" article="a" name="ferocious trunk" />
+	<item fromid="26077" toid="26078" article="a" name="ferocious cabinet" />
+	
+	
+	
+	<item fromid="26349" toid="26352" article="a" name="rustic chair" />
+	<item fromid="26354" toid="26355" article="a" name="rustic table" />
+	<item fromid="26356" toid="26357" article="a" name="rustic cabinet" />
+	<item id="26358" article="a" name="rustic trunk" />
+	<item fromid="26360" toid="26362" article="a" name="rustic trunk" />
+	<item fromid="26141" toid="26142" article="a" name="explosive barrel" />
+	
+	
+	<item id="26353" article="a" name="dog house" />
+	<item id="26359" article="a" name="dog house" />
+	<item fromid="26364" toid="26365" article="a" name="dog house" />
+	<item id="26054" article="a" name="decoration kit" />
+	<item id="26087" article="a" name="yalaharian carpet" />
+	<item id="26109" article="a" name="yalaharian carpet" /><!--transform-->
+	<item id="26088" article="a" name="white fur carpet" />
+	<item id="26110" article="a" name="white fur carpet" /><!--transform-->
+	<item id="26089" article="a" name="bamboo mat" />  
+	<item id="26111" article="a" name="bamboo mat" /> <!--transform-->
+	<item id="26363" article="a" name="crimson carpet" /> 
+	<item id="26371" article="a" name="crimson carpet" />
+
+	<!--transform-->
+	<item id="26366" article="a" name="azure carpet" /> 
+	<item id="26372" article="a" name="azure carpet" /> <!--transform-->
+	<item id="26367" article="a" name="emerald carpet" /> 
+	<item id="26373" article="a" name="emerald carpet" /> <!--transform-->
+	<item id="26368" article="a" name="light parquet" /> 
+	<item id="26374" article="a" name="light parquet" /> <!--transform-->
+	<item id="26369" article="a" name="dark parquet" /> 
+	<item id="26375" article="a" name="dark parquet" /> <!--transform-->
+	<item id="26370" article="a" name="marble floor" /> 
+	<item id="26376" article="a" name="marble floor" /> <!--transform-->
+	
+	<item fromid="26090" toid="26093"  name="predador lamp" />
+	<item fromid="26094" toid="26097"  name="protectress lamp" />
+	<item fromid="26098" toid="26099" article="a" name="baby dragon" />
+	<item fromid="26100" toid="26101" article="a" name="hamster wheel" />
+	<item fromid="26107" toid="26108" article="a" name="cat in a basket" />
+	<item id="26347"  article="a" name="Fish Tank" />
+	
+	<item id="26104" article="a" name="lord tapestry" />
+	<item id="26105" article="a" name="menancing tapestry" />
+	<item id="26106" article="a" name="all-seeing tapestry" />
+	<item id="26379" article="a" name="golden dragon tapestry" />
+	<item id="26380" article="a" name="sword tapestry" />
+	<item id="26381" article="a" name="brocade tapestry" />
+	
+	<item id="26378" article="a" name="gold converter" >
+	<attribute key="weight" value="1800" />
+	</item>
+	
+	<item id="26377" article="a" name="gold pouch" >
+	<attribute key="weight" value="1800" />
+		<attribute key="containerSize" value="80" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	
+	<item fromid="26055" toid="26056" article="a" name="royal mailbox">
+		<attribute key="description" value="Royal Tibia Mail." />
+		<attribute key="type" value="mailbox" />
+	</item>
+	<item fromid="26057" toid="26058" article="a" name="ornate mailbox">
+		<attribute key="description" value="Royal Tibia Mail." />
+		<attribute key="type" value="mailbox" />
+	</item>
+	<!--Items Diversos-->
+	
+	<item id="26143" article="a" name="arena badge" >
+	<attribute key="weight" value="350" />
+	</item>
+	<item id="26144" article="a" name="surprise cube" >
+	<attribute key="weight" value="300" />
+	</item>
+	<item id="26145" article="a" name="brown pit demon" >
+	<attribute key="weight" value="3500" />
+	</item>
+	<item id="26146" article="a" name="green pit demon" >
+	<attribute key="weight" value="3500" />
+	</item>
+	<item id="26147" article="a" name="blue pit demon" >
+	<attribute key="weight" value="3500" />
+	</item>
+	<item id="26148" article="a" name="black pit demon" >
+	<attribute key="weight" value="3500" />
+	</item>
+	<item id="26149" article="a" name="red pit demon" >
+	<attribute key="weight" value="3500" />
+	</item>
+	<item id="26157" article="a" name="condensed energy" >
+	<attribute key="weight" value="350" />
+	</item>
+	<item id="26169" article="a" name="strange proto matter" >
+	<attribute key="weight" value="350" />
+	</item>
+	<item id="26173" article="a" name="solid rage" >
+	<attribute key="weight" value="350" />
+	</item>
+	<item id="26178" article="a" name="glistening bone" >
+	<attribute key="weight" value="350" />
+	</item>
+	<item id="26180" article="a" name="small energy ball" >
+	<attribute key="weight" value="350" />
+	</item>
+	
+	<item fromid="26195" toid="26196" article="a" name="unknown pedestal" />
+	
+
+	
+	<item id="26228" name="opticording sphere">
+		<attribute key="weight" value="200" />
+		<attribute key="description" value="This strange box holds a dark sphere. There is some kind of button at one side and a lens up front." />
+	</item>
+	<item id="26229" name="broken opticording sphere">
+		<attribute key="weight" value="200" />
+		<attribute key="description" value="This strange box holds a dark sphere. It is broken and crumbles into dust any second now - but the vital key mechanism seems to be in a pristine condition." />
+	</item>
+	
+	<item id="26332" name="hand puppets (rï¿½plica)">
+	<attribute key="weight" value="200" />
+	</item>
+	<item id="26333" name="music box (rï¿½plica)">
+	<attribute key="weight" value="200" />
+	</item>
+	<item id="26334" name="encyclopedia (rï¿½plica)">
+	<attribute key="weight" value="200" />
+	</item>
+	<item id="26335" name="doll of during the almighty (rï¿½plica)">
+	<attribute key="weight" value="200" />
+	</item>
+	
+	<item id="26336" name="medusa skull (rï¿½plica)">
+	<attribute key="weight" value="200" />
+	</item>
+	<item id="26337" name="golden newspaper (rï¿½plica)">
+	<attribute key="weight" value="200" />
+	</item>
+	<item id="26338" name="bag of oriental spices (rï¿½plica)">
+	<attribute key="weight" value="200" />
+	</item>
+	<item id="26339" name="imortus (rï¿½plica)">
+	<attribute key="weight" value="200" />
+	</item>
+	
+	
+	
+	
+	<item id="26229" name="old desk">
+		<attribute key="description" value="It is cluttered with old parchments and writing utensils and partly covered in spider webs. A strange moan seems to emerge from this desk and one of the drawers is partly open." />
+	</item>
+	
+	<item id="26387" name="old note">
+	<attribute key="weight" value="200" />
+	<attribute key="description" value="They'll come and kill us all. I have to protect the key to the secret door at all costs. If I just could find my only daughter's portrait ... I lost it somewhere down here. I won't leave without it." />
+	</item>
+	
+	
+	<item id="26388" name="painting of a girl">
+	<attribute key="weight" value="200" />
+		<attribute key="description" value="She has a long dark hair and might be about seven years old." />
+	</item>
+	<item id="26389" name="old silver key">
+	<attribute key="weight" value="250" />
+		<attribute key="description" value="It is beautifully ornate but heavily tarnished." />
+	</item>
+	<item id="26390" name="ghostsilver lantern">
+	<attribute key="weight" value="600" />
+		<attribute key="description" value="It is made of a filigree silver braces and delicate indigo glass. But it is dark at the moment." />
+	</item>
+	<item id="26394" name="ghostsilver lantern">
+	<attribute key="weight" value="600" />
+		<attribute key="description" value="It is made of filigree silver braces and delicate indigo glass. It glows with an otherworldly light." />
+	</item>
+	<item id="26393" name="unknown item"/>
+    <item fromid="26396" toid="26397" article="a" name="brass-shod chest" />
+	
+	<item id="26466" name="phial of fresh water">
+	<attribute key="weight" value="300" />
+		<attribute key="description" value="The phial contains fresh, clean water. It also looks like it sparkles. The flask is so thin and finely crated that the water seems to pour out little by little." />
+	</item>
+	
+	<item id="26467" name="reinvigorating seeds">
+	<attribute key="weight" value="300" />
+		<attribute key="description" value="A small bag full of healthy seeds" />
+	</item>
+	<item id="26468" name="empty birdcage">
+	<attribute key="weight" value="1000" />
+		<attribute key="description" value="This birdcage is empty. It seems uniquely prepared to host a specific species of birds." />
+	</item>
+	<item id="26469" name="occupied birdcage">
+	<attribute key="weight" value="1500" />
+		<attribute key="description" value="This birdcage is currently the home of a confused parrot." />
+	</item>
+	<item id="26470" name="fertile soil">
+	<attribute key="weight" value="1500" />
+		<attribute key="description" value="This soil looks moist and fertile." />
+	</item>
+	<item id="26471" name="blooming birch"/>
+	<item id="26472" name="growing birch"/>
+	
+	<item fromid="26473" toid="26508" name="monument"/>
+	<item fromid="26509" toid="26512" name="window">
+	<attribute key="description" value="monument" />
+	</item>
+	<item fromid="26513" toid="26514" name="stairs(monument)">
+	<attribute key="floorchange" value="north" /></item>
+	<item fromid="26515" toid="26516" name="stairs(monument)">
+	<attribute key="floorchange" value="west" /></item>
+	<item fromid="26517" toid="26518" name="stairs(monument)">
+	<attribute key="floorchange" value="east" /></item>
+	<item fromid="26519" toid="26520" name="stairs(monument)">
+	<attribute key="floorchange" value="south" />
+	</item>
+	<item fromid="26521" toid="26528" name="monument broken wall"/>
+	<item fromid="26529" toid="26532" article="an" name="closed door">
+	<attribute key="description" value="monument" />
+		<attribute key="type" value="door" />
+	</item>
+	<item fromid="26533" toid="26534" article="an" name="open door">
+	<attribute key="description" value="monument" />
+		<attribute key="type" value="door" />
+	</item>
+	<item id="26535" name="monument"/>
+	<item fromid="26536" toid="26539" name="Slant"/>
+	<item fromid="26553" toid="26584" name="stone floor(bege)"/>
+	<item fromid="26605" toid="26636" name="stone floor(bege)"/>
+	<item fromid="26637" toid="26640" name="monument wall"/>
+	
+	<item id="26641" name="old tome"/>
+	<item id="26642" name="heavy old tome"/>
+	<item fromid="26643" toid="26646" name="monument broken pillar"/>
+	<item fromid="26647" toid="26648" name="monument pillar"/>
+	<item fromid="26649" toid="26652" name="monument column"/>
+	<item fromid="26653" toid="26656" name="monument broken column"/>
+	<item fromid="26657" toid="26660" name="monument column"/>
+	<item fromid="26661" toid="26664" name="monument broken column"/>
+	<item fromid="26665" toid="26668" name="plants"/>
+	<item fromid="26669" toid="26670" name="monument"/>
+	<item fromid="26671" toid="26672" name="overgrown monument"/>
+	<item fromid="26669" toid="26670" name="monument"/>
+	<item fromid="26673" toid="26682" name="small trimmed tree"/>
+	<item fromid="26683" toid="26692" name="untended trimmed tree"/>
+	<item id="26693"  name="red bladed agave"/>
+	<item fromid="26694" toid="26695" name="obelisk(pointed)"/>
+	<item id="26696"  name="unknown item"/>
+	<item id="26697"  name="autumn sparkle blossom"/>
+	<item id="26698"  name="the golden path"/>
+	<item id="26744"  name="ruined sculpture"/>
+	<item fromid="26699" toid="26707" name="plants"/>
+	<item fromid="26708" toid="26715" name="empty plant tub"/>
+	<item fromid="26716" toid="26723" name="plant tub"/>
+	<item fromid="26724" toid="26730" name="empty ruined plant tub"/>
+	<item fromid="26732" toid="26739" name="ruined plant tub"/>
+	<item fromid="26740" toid="26743" name="larg wooden cone"/>
+	<item fromid="26745" toid="26763" name="cut grass"/>
+	<item id="26973"  name="cut grass"/>
+	<item fromid="26764" toid="26775" name="milk azure crystal"/>
+	<item fromid="26776" toid="26787" name="broken azure crystal"/>
+	<item fromid="26778" toid="26791" name="waterway"/>
+	<item fromid="26792" toid="26793" name="waterway cataract"/>
+	<item fromid="26794" toid="26799" name="empty waterway"/>
+	<item fromid="26800" toid="26805" name="waterway"/>
+	<item fromid="26806" toid="26817" name="moss"/>
+	<item id="26818" name="waterway"/>
+	<item id="26848" name="monument wall"/>
+	<item fromid="26819" toid="26847" name="moss"/>
+	<item fromid="26890" toid="26891" name="broken crystal plant"/>
+	<item fromid="26849" toid="26850" name="symbol of fardos">
+	<attribute key="description" value="It represents Fardos the Creator, one of the Tibian gods." />
+	</item>
+	<item fromid="26851" toid="26852" name="unknown item"/>
+	<item fromid="26853" toid="26854" name="unknown item"/>
+	
+	<item fromid="26855" toid="26856" name="sign of Uman and Zathroth">
+	<attribute key="description" value="It represents the unity of Uman the Wise and Zathroth the Destroyer, two of the Tibian gods." />
+	</item>
+	<item fromid="26857" toid="26858" name="symbol of Tibia">
+	<attribute key="description" value="It represents Tibia the Earth, one of the Tibian elemental gods." />
+	</item>
+	<item fromid="26859" toid="26860" name="symbol of Sula">
+	<attribute key="description" value="Sula the Water, one of the Tibian elemental gods." />
+	</item>
+	<item fromid="26861" toid="26862" name="symbol of fire">
+	<attribute key="description" value="It represents the Fire, one of the Tibian elemental gods." />
+	</item>
+	<item fromid="26863" toid="26864" name="symbol of air">
+	<attribute key="description" value="It represents the Air, one of the Tibian elemental gods." />
+	</item>
+     <item fromid="26865" toid="26868" name="unknown item"/>
+	<item fromid="26869" toid="26870" name="symbol of Suon and Fafnar">
+	<attribute key="description" value="It represents Suon the Benevolent Sun and Fafnar the Destroying Sun, the Tibian sun gods." />
+	</item>
+	<item fromid="26871" toid="26872" name="symbol of Crunor">
+	<attribute key="description" value="It represents Crunor the First Tree, one the Tibian gods." />
+	</item>
+    <item fromid="26873" toid="26874" name="symbol of Nornur">
+	<attribute key="description" value="It represents Nornur, the Tibian god of Fate." />
+	</item>
+	<item fromid="26875" toid="26876" name="symbol of Bastesh">
+	<attribute key="description" value="It represents Bastesh, Mistress of the Sea, one of the Tibian gods." />
+	</item>
+	<item fromid="26877" toid="26878" name="symbol of Urgith">
+	<attribute key="description" value="It represents Urgith, Lord of Undeath, one of the Tibian gods." />
+	</item>
+	<item fromid="26879" toid="26880" name="symbol of Toth">
+	<attribute key="description" value="It represents Toth, Guardian of the Dead, one of the Tibian gods." />
+	</item>
+	
+	<item fromid="26892" toid="26899" name="waterway"/>
+	<item fromid="26971" toid="26972" name="waterway"/>
+	<item id="26913"  name="waterway"/>
+	<item id="26901" name="empty waterway"/>
+	<item id="26902" name="plant tube"/>
+	<item id="26903" name="brokem waterway"/>
+	<item id="26904" name="plant tube"/>
+	<item fromid="26942" toid="26965" name="stone floor"/>
+	<item id="27014" name="unknown item"/>
+	<item id="27014" name="unknown item	"/>
+	
+	<item id="27036" name="bone toothpick	"/>
+	<item id="27037" name="beetle carapace"/>
+	<item id="27038" name="bug meat"/>
+	<item id="27039" name="cave turnip	"/>
+	<item id="27040" name="ancient belt buckle"/>
+	<item id="27041" name="cracked alabaster vase"/>
+	<item id="27042" name="rhino horn carving"/>
+	<item id="27043" name="tarnished rhino figurine"/>
+	<item id="27044" name="rhino hide"/>
+	<item id="27045" name="rhino horn"/>
+	<item id="27046" name="ancient coin"/>
+	<item id="27047" name="coral brooch"/>
+	<item id="27048" name="gemmed figurine"/>
+	
+	<item id="27049" article="a" name="pillow backpack" >
+	<attribute key="weight" value="1800" />
+		<attribute key="containerSize" value="18" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="27050" name="orclops santa"/>
+	
+	<item id="27051" article="a" name="Birthday Backpack" >
+	<attribute key="weight" value="1500" />
+	<attribute key="description" value="It was awarded during the festivities of Tibia's 20th anniversary." />
+		<attribute key="containerSize" value="18" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="27052" name="birthday cake"/>
+	<item id="27053" name="ferumbras hat candy"/>
+	<item fromid="27054" toid="27057" name="plate layered archway"/>
+	<item id="27058" name="chocolatey dragon scale legs"/>
+	<item id="27059" name="plate layered wall"/>
+	<item id="27060" name="tatty dragon scale legs"/>
+	<item id="27061" name="rusty winged helmet"/>
+	<item id="27062" name="plate layered wall"/>
+	<item id="27063" name="plate layered corner"/>
+	<item id="27064" name="plate layered corner"/>
+	<item id="27065" name="rusty bunny shoes"/>
+	<item fromid="27066" toid="27069" name="plate layered wall"/>
+	<item id="27070" name="sewing table"/>
+	<item id="27498" name="sewing table"/>
+	<item id="27071" name="old rag"/>
+	<item id="27072" name="flowery carpet"/>
+	<item id="27080" name="flowery carpet"/>
+	
+	<item id="27073" name="colourful carpet"/>
+	<item id="27081" name="colourful carpet"/>
+	
+	<item id="27074" name="striped carpet"/>
+	<item id="27082" name="striped carpet"/>
+	
+	<item id="27075" name="fur carpet"/>
+	<item id="27083" name="fur carpet"/>
+	
+	<item id="27076" name="diamond carpet"/>
+	<item id="27084" name="diamond carpet"/>
+	
+	<item id="27077" name="patterned carpet"/>
+	<item id="27085" name="patterned carpet"/>
+	
+	<item id="27078" name="night sky carpet"/>
+	<item id="27086" name="night sky carpet"/>
+	
+	<item id="27079" name="star carpet"/>
+	<item id="27087" name="star carpet"/>
+	
+	<item fromid="27088" toid="27089" name="parrot"/>
+	<item fromid="27090" toid="27092" name="lit skull lamp"/>
+	<item id="27093" name="sand"/>
+	
+	<item fromid="27098" toid="27101" name="colourful bunting(flags)"/>
+	<item id="27102"  name="colourful bunting(emblems blue)"/>
+	<item id="27104"  name="colourful bunting(emblems blue)"/>
+	<item id="27106"  name="emblem tibia( blue)"/>
+	<item id="27108"  name="emblem tibia( blue)"/>
+	<item id="27110"  name="emblem (pole tibia blue)"/>
+	<item id="27112"  name="emblem (pole tibia blue)"/>
+	
+	<item id="27103"  name="colourful bunting(emblems red)"/>
+	<item id="27105"  name="colourful bunting(emblems red)"/>
+	<item id="27107"  name="emblem tibia( red)"/>
+	<item id="27109"  name="emblem tibia( red)"/>
+	<item id="27111"  name="emblem (pole tibia red)"/>
+	<item id="27113"  name="emblem (pole tibia red)"/>
+	
+	<item fromid="27114" toid="27131" name="market stand"/>
+	<item fromid="27132" toid="27141" name="cains anniversary"/>
+	<item id="27145"  name="candied fruit"/>
+	<item id="27146"  name="apples"/>
+	<item id="27147"  name="bunting"/>
+	<item fromid="27148" toid="27151" name="caind fruit"/>
+	<item id="27152"  name="paper streamers"/>
+	<!--Nostalgia-->
+	<item fromid="27153" toid="27159" name="linen red(nostalgia)"/>
+	<item id="27162"  name="baking tray(nostalgia)"/>
+	<item id="27163"  name="small fir tree(nostalgia)"/>
+	<item id="27164"  name="guee-the-name shield(nostalgia)"/>
+	<item fromid="27165" toid="27166" name="blackboard(nostalgia)"/>
+	<item id="27167"  name="blood herb(nostalgia)"/>
+	<item id="27168"  name="box(nostalgia)"/>
+	<item id="27169"  name="tree(nostalgia)"/>
+	<item id="27170"  name="brass legs(nostalgia)"/>
+	<item id="27171"  name="brass shield(nostalgia)"/>
+	<item fromid="27172" toid="27175" name="brick wall(nostalgia)"/>
+	<item fromid="27176" toid="27177" name="window(nostalgia)"/>
+	<item id="27178"  name="bush(nostalgia)"/>
+	<item id="27179"  name="bush(nostalgia)"/>
+	<item id="27180"  name="cactus(nostalgia)"/>
+	<item fromid="27181" toid="27184" name="chair(nostalgia)"/>
+	<item id="27185"  name="coat(nostalgia)"/>
+	<item id="27186"  name="copper shield(nostalgia)"/>
+	<item id="27187"  name="crown armor(nostalgia)"/>
+	<item id="27188"  name="crown helmet(nostalgia)"/>
+	<item id="27189"  name="crown legs(nostalgia)"/>
+	<item id="27190"  name="crown shield(nostalgia)"/>
+	<item id="27191"  name="dark helmet(nostalgia)"/>
+	<item id="27192"  name="dark shield(nostalgia)"/>
+	<item fromid="27193" toid="27195" name="dead tree(nostalgia)"/>
+	
+	<item id="27196"  name="swamp(nostalgia)"/>
+	<item fromid="27197" toid="27200" name="doors(nostalgia)"/>
+	<item id="27202"  name="wooden floor(nostalgia)"/>
+	<item id="27203"  name="tree(nostalgia)"/>
+	<item fromid="27204" toid="27233" name="earth(nostalgia)"/>
+	<item id="27234"  name="dwarven shield(nostalgia)"/>
+	<item id="27235"  name="eggs(nostalgia)"/>
+	<item fromid="27236" toid="27245" name="fence(nostalgia)"/>
+	<item id="27235"  name="tree(nostalgia)"/>
+	<item fromid="27248" toid="27253" name="flat roof(nostalgia)"/>
+	<item fromid="27254" toid="27259" name="framework (nostalgia)"/>
+	<item id="27260"  name="plant(nostalgia)"/>
+	<item id="27274"  name="plant(nostalgia)"/>
+	<item fromid="27275" toid="27277" name="grave stone(nostalgia)"/>
+	<item fromid="27278" toid="27290" name="sand(nostalgia)"/>
+	<item id="27291"  name="flower(nostalgia)"/>
+	<item id="27292"  name="leather armor(nostalgia)"/>
+	<item id="27293"  name="leather helmet(nostalgia)"/>
+	<item id="27294"  name="leather legs(nostalgia)"/>
+	<item id="27295"  name="chest board (nostalgia)"/>
+	<item id="27296"  name="chest board (nostalgia)"/>
+	<item id="27297"  name="pillar (nostalgia)"/>
+	<item id="27298"  name="mastermind shield (nostalgia)"/>
+	<item id="27299"  name="melon(nostalgia)"/>
+	<item id="27300"  name="unknown(nostalgia)"/>
+	<item id="27301"  name="stone(nostalgia)"/>
+	<item id="27302"  name="noble armor(nostalgia)"/>
+	<item id="27303"  name="tree(nostalgia)"/>
+	<item id="27304"  name="ornamented shield(nostalgia)"/>
+	<item id="27305"  name="pan(nostalgia)"/>
+	<item id="27306"  name="paper(nostalgia)"/>
+	<item id="27307"  name="tree(nostalgia)"/>
+	<item id="27308"  name="tree(nostalgia)"/>
+	<item id="27309"  name="flask of life fluid(nostalgia)"/>
+	<item id="27310"  name="flask of beer(nostalgia)"/>
+	<item id="27311"  name="flask of mana fluid(nostalgia)"/>
+	<item id="27312"  name="unknown(nostalgia)"/>
+	<item fromid="27321" toid="27324" name="sacrificial stone(nostalgia)"/>
+	<item fromid="27325" toid="27337" name="gravel(nostalgia)"/>
+	<item fromid="27338" toid="27350" name="sand(nostalgia)"/>
+	<item id="27351"  name="scale armor(nostalgia)"/>
+	<item fromid="27353" toid="27362" name="linen green(nostalgia)"/>
+	<item fromid="27363" toid="27378" name="linen blue(nostalgia)"/>
+	<item fromid="27379" toid="27394" name="linen red(nostalgia)"/>
+	<item fromid="27395" toid="27404" name="linen white flags(nostalgia)"/>
+	<item id="27405"  name="water(nostalgia)"/>
+	<item id="27406"  name="stick(nostalgia)"/>
+	<item id="27407"  name="tree(nostalgia)"/>
+	<item id="27408"  name="studded armor(nostalgia)"/>
+	<item fromid="27409" toid="27419" name="plants(nostalgia)"/>
+	<item fromid="27420" toid="27437" name="roofs (nostalgia)"/>
+	<item id="27438"  name="tower shield(nostalgia)"/>
+	<item id="27439"  name="plant(nostalgia)"/>
+	<item fromid="27442" toid="27443" name="water wheat(nostalgia)"/>
+	<item fromid="27444" toid="27447" name="millstone(nostalgia)"/>
+	<item id="27448"  name="waterskin(nostalgia)"/>
+	<item id="27449"  name="grass(nostalgia)"/>
+	<item id="27450"  name="jungle grass(nostalgia)"/>
+	<item id="27451"  name="wheat(nostalgia)"/>
+	<item id="27452"  name="tree(nostalgia)"/>
+	<item fromid="27453" toid="27458" name="wooden railing(nostalgia)"/>
+	<item fromid="27459" toid="27469" name="mountain(nostalgia)"/>
+	<item fromid="27470" toid="27477" name="mountain wall(nostalgia)"/>
+	<item fromid="27478" toid="27494" name="stone tile(nostalgia)"/>
+	<item id="27495"  name="grass(nostalgia)"/>
+	<item id="27496"  name="flower(nostalgia)"/>
+	<item id="27497"  name="flower(nostalgia)"/>
+	<item id="27526"  name="studded shield(nostalgia)"/>
+	<item id="27527"  name="studded legs(nostalgia)"/>
+	<item id="27528"  name="empty flask(nostalgia)"/>
+	<item id="27529"  name="unknown item(nostalgia)"/>
+	<!--FIM NOSTALGIA-->
+    
+	<item fromid="27499" toid="27500" name="ancient inscription"/>
+    <item fromid="27501" toid="27516" name="flower petals"/>
+    <item fromid="27517" toid="27520" name="treasure chest"/>
+	
+   <item id="27531"  name="dragon chest"/>
+   <item id="27533"  name="dragon chest"/>
+   <item fromid="27535" toid="27542" name="dragon chest"/>
+   
+   <item fromid="27544" toid="27558" name="unknown"/><!--Acredito que faï¿½a parte dos monument-->
+	<item id="27539"  name="closed door(monument)"/>
+	<item fromid="27560" toid="27567" name="unknown"/><!--Acredito que faï¿½a parte dos monument-->
+	
+	<item fromid="27569" toid="27579" name="unknown"/><!--Acredito que faï¿½a parte dos monument-->
+	<item fromid="27580" toid="27581" name="unknown"/><!--Acredito que faï¿½a parte dos imbuing-->
+	<item id="27582" name="monument wall"/>
+	
+	<item id="27583" article="a dead" name="Lloyd">
+		<attribute key="containerSize" value="15" />
+		<attribute key="weight" value="10000" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="500" />
+		<attribute key="corpseType" value="blood" />
+		</item>
+		<item id="27584" name="unknown"/>
+		<item id="27585" name="lightsphere"/>
+		<item id="27585" name="lit lightsphere"/>
+		<item id="27588" name="maystic flame"/>
+		
+		<item id="27589" name="large glowing emerald"/>
+		<item id="27590" name="large glowing ruby"/>
+		<item id="27591" name="large glowing blue"/>
+		<item id="27592" name="large glowing amethyst"/>
+		<item id="27593" name="dragon blood"/>
+		<item id="27594" name="dragon tongue"/>
+		<item id="27595" name="Scale of Gelidrazah"/>
+		<item id="27596" name="Tooth of Tazhadur"/>
+		<item id="27597" name="Horn of Kalyassa"/>
+		<item id="27598" name="Bones of Zorvorax"/>
+		
+		<item fromid="27599" toid="27603" name="unknown"/>
+		<item id="27604"  name="Bottle of Tibian Wine"/>
+		<item id="27605"  name="Costume Bag (Retro)"/>
+		<item id="27606"  name="Framed Birthday Card"/>
+		<item id="27607"  name="Gilded Birthday Cup"/>
+		<item id="27608"  name="unknown item"/><!--CHAO DE ALGUMA COISA-->
+	    <item fromid="27610" toid="27615" name="part of a rune"/>
+	    <item id="27616"  name="astral shaper rune"/>
+	    <item id="27617"  name="tiger eye"/>
+	    <item id="27618"  name="prismatic quartz"/>
+	    <item id="27620"  name="Imbuing Crystal"/>
+		
+	    <item id="27621"  name="thorn seed"/>
+	    <item id="27622"  name="forbidden fruit"/>
+	    <item id="27623"  name="dragon crown"/>
+	    <item id="27624"  name="golden talon"/>
+	    <item id="27625"  name="ancient watch"/>
+	    <item id="27626"  name="frozen time"/>
+	    <item id="27627"  name="forbidden tome"/>
+	    <item id="27628"  name="key to knowledge"/>
+	    <item id="27629"  name="shadow mask"/>
+	    <item id="27630"  name="shadow paint"/>
+	    <item id="27631"  name="astral source"/>
+	    <item id="27632"  name="astral glyph"/>
+	    <item id="27633"  name="glowing carrot"/>
+	    <item id="27634"  name="coal eyes"/>
+	
+	
+	   <item fromid="27637" toid="27666" name="unknown wall"/><!--Sprites novas-->
+	   <item fromid="27671" toid="27678" name="unknown wall"/><!--Sprites novas-->
+	   <item id="27693"  name="unknown wall"/><!--Sprites novas-->
+	<item fromid="27698" toid="27699" name="unknown wall"/><!--Sprites novas-->
+	<item id="27702"  name="unknown"/><!--Sprites novas-->
+	
+	<item fromid="27703" toid="27704" name="death portal"/>
+	<item fromid="27705" toid="27706" name="earth portal"/>
+	<item fromid="27707" toid="27708" name="energy portal"/>
+	<item fromid="27709" toid="27710" name="fire portal"/>
+	<item fromid="27712" toid="27712" name="holy portal"/>
+	<item fromid="27713" toid="27714" name="ice portal"/>
+	<item id="27715"  name="inert astral shaper rune"/>
+	<item fromid="27716" toid="27717" name="imbuing shrine"/>
+	
+	<item id="27744"  name="Porcelain Mask"/>
+	<item id="27745" name="unknown item"/>
+	
+	<item fromid="27746" toid="27756" name="the time machine"/>
+	<item fromid="27757" toid="27760" name="abandoned imbuing shrine"/>
+	<item fromid="27761" toid="27785" name="unknown item"/>  <!--CONSTRUï¿½ï¿½O NOVAS-->
+	<item fromid="27791" toid="27794" name="unknown item"/>
+	<item fromid="27802" toid="27829" name="unknown item"/>  <!--CONSTRUï¿½ï¿½O NOVAS-->
+	
+	<item fromid="27830" toid="27831" name="imbuing shrine"/>
+	<item fromid="27838" toid="27839" name="gilded imbuing shrine"/>
+	<item fromid="27832" toid="27836" name="unknown item"/><!--CONSTRUï¿½ï¿½O NOVAS-->
+	
+	
+	
+	<item id="27719" article="a" name="dead piï¿½ata dragon">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27720" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27720" article="a" name="dead piï¿½ata dragon">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="300" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	
+	
+	<item id="27721" article="a" name="dead Dragonking Zyrtarch">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27722" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27722" article="a" name="dead Dragonking Zyrtarch">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27723" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27723" article="a" name="dead Dragonking Zyrtarch">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27724" article="a" name="dead Orclops Ravager">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27725" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27725" article="a" name="dead Orclops Ravager">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27726" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27726" article="a" name="dead Orclops Ravager">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	
+	<item id="27727" article="a" name="dead Shaper Matriarch">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27728" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27728" article="a" name="dead Shaper Matriarch">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27729" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27729" article="a" name="dead Shaper Matriarch">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	
+	<item id="27730" article="a" name="dead Orclops Doomhauler">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27731" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27731" article="a" name="dead Orclops Doomhauler">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27732" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27732" article="a" name="dead Orclops Doomhauler">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27738" article="a" name="dead Stone Rhino">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27739" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27739" article="a" name="dead Stone Rhino">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27740" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27740" article="a" name="dead Stone Rhino">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27741" article="a" name="deadThe Time Guardian">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27742" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27742" article="a" name="dead The Time Guardian">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	
+	<item id="27787" article="a" name="dead The First Dragon">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27788" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27788" article="a" name="dead The First Dragon">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27789" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27789" article="a" name="dead The First Dragon">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	
+	<item id="27841" article="a" name="dead Gelidrazah the Frozenn">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27845" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27845" article="a" name="dead Gelidrazah the Frozenn">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="27848" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27848" article="a" name="dead Gelidrazah the Frozenn">
+		<attribute key="containerSize" value="15" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="900" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	
+	
+	<item id="23798" article="a" name="bow" />
+	<item id="23799" article="a" name="simple arrow" />
+	<item id="23800" article="a" name="wooden shield" />
+	<item id="23801" article="a" name="dagger" />
+	<item id="23802" article="a" name="the scorcher" />
+	<item id="23803" article="a" name="lightest magic missile rune" />
+	<item id="23804" article="a" name="the chiller" />
+	<item id="23805" article="a" name="lightest stone shower rune" />
+
 </items>

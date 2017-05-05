@@ -542,11 +542,11 @@ ReturnValue Tile::queryAdd(int32_t, const Thing& thing, uint32_t, uint32_t flags
 				//There is 3 options for a monster to enter a magic field
 				//1) Monster is immune
 				if (!monster->isImmune(combatType)) {
-						//1) Monster is able to walk over field type
-						//2) Being attacked while random stepping will make it ignore field damages
-						if (hasBitSet(FLAG_IGNOREFIELDDAMAGE, flags)) {
-							if (!(monster->canWalkOnFieldType(combatType) || monster->getIgnoreFieldDamage())) {
-								return RETURNVALUE_NOTPOSSIBLE;
+					//1) Monster is able to walk over field type
+					//2) Being attacked while random stepping will make it ignore field damages
+					if (hasBitSet(FLAG_IGNOREFIELDDAMAGE, flags)) {
+						if (!(monster->canWalkOnFieldType(combatType) || monster->getIgnoreFieldDamage())) {
+							return RETURNVALUE_NOTPOSSIBLE;
 						}
 					} else {
 						return RETURNVALUE_NOTPOSSIBLE;

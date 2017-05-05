@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Herald Of Gloom" nameDescription="a herald of gloom" experience="450" speed="260" race="undead">
-	<health now="450" max="450" />
+	<health now="350" max="350" />
 	<targetchange speed="0" chance="8" />
 	<look type="320" corpse="9915" />
 	<flags>
@@ -66,6 +66,6 @@
 		<voice sentence="The shadows will engulf the world." yell="1" />
 	</voices>
 	<loot>
-		<item id="10531" chance="1886" /><!-- midnight shard -->
+		<item id="10531" chance="5286" /><!-- midnight shard -->
 	</loot>
 </monster>

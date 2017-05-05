@@ -27,7 +27,7 @@
 		<item id="2148" countmax="8" chance="100000"/><!-- gold coin -->
 		<item id="2380" chance="3590"/><!-- hand axe -->
 		<item id="2467" chance="4060"/><!-- leather armor -->
-		<item id="2666" chance="27980"/><!-- meat -->
+		<item id="2666" chance="28080"/><!-- meat -->
 		<item id="2384" chance="3470"/><!-- rapier -->
 		<item id="2120" chance="7870"/><!-- rope -->
 		<item id="2389" chance="6800"/><!-- spear -->
