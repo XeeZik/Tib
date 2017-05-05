@@ -26,7 +26,6 @@
 #include "tasks.h"
 #include "protocolgamebase.h"
 #include "protocolspectator.h"
-#include "gamestore.h"
 
 class NetworkMessage;
 class Player;
@@ -262,12 +261,6 @@ class ProtocolGame final : public ProtocolGameBase
 		void parseOpenPrivateChannel(NetworkMessage& msg);
 		void parseCloseChannel(NetworkMessage& msg);
 
-     //Store methods
-     void parseStoreOpen(NetworkMessage &message);
-     void parseStoreRequestOffers(NetworkMessage &message);
-     void parseStoreBuyOffer(NetworkMessage &message);
-     void parseCoinTransfer(NetworkMessage &msg);
-
 		//Send functions
 		void sendChannelEvent(uint16_t channelId, const std::string& playerName, ChannelEvent_t channelEvent);
 		void sendClosePrivate(uint16_t channelId);
@@ -333,14 +326,6 @@ class ProtocolGame final : public ProtocolGameBase
 		void sendCoinBalanceUpdating(bool updating);
 		void sendUpdatedCoinBalance();
 
-		void sendOpenStore(uint8_t serviceType);
-		void sendStoreCategoryOffers(StoreCategory* category);
-		void sendStoreError(GameStoreError_t error, const std::string& message);
-		void sendStorePurchaseSuccessful(const std::string& message, const uint32_t coinBalance);
-	    void sendStoreRequestAdditionalInfo(uint32_t offerId, ClientOffer_t clientOfferType);
-		void sendStoreTrasactionHistory(HistoryStoreOfferList& list, uint32_t page, uint8_t entriesPerPage);
-	    void parseStoreOpenTransactionHistory(NetworkMessage &msg);
-	    void parseStoreRequestTransactionHistory(NetworkMessage &msg);
 		//tiles
 
 		void sendAddTileItem(const Position& pos, uint32_t stackpos, const Item* item);
@@ -397,7 +382,6 @@ class ProtocolGame final : public ProtocolGameBase
 		/// Password used to access the live cast
 		std::string liveCastPassword;
 		void sendInventory();
-
 };
 
 #endif

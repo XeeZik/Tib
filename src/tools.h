@@ -21,8 +21,7 @@
 #define FS_TOOLS_H_5F9A9742DA194628830AA1C64909AE43
 
 #include <random>
-#include <regex>
-#include <boost/algorithm/string.hpp>
+
 #include "position.h"
 #include "const.h"
 #include "enums.h"
@@ -91,9 +90,6 @@ uint8_t clientFluidToServer(uint8_t clientFluid);
 itemAttrTypes stringToItemAttribute(const std::string& str);
 
 const char* getReturnMessage(ReturnValue value);
-
-NameEval_t validateName(const std::string &name);
-void capitalizeWords(std::string &source);
 
 int64_t OTSYS_TIME();
 
