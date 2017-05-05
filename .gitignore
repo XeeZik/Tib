@@ -167,6 +167,7 @@ pip-log.txt
 .mr.developer.cfg
 
 # Vim files
+*~
 .*.swp
 .*.swo
 
@@ -178,7 +179,3 @@ data/world/global.otbm
 
 *.rar
 *.exe
-
-#Jetbrains' IDEs config files
-.idea/
-cmake-build-*/
