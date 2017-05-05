@@ -832,6 +832,6 @@
 	
 	<instant name="canopic jar heal" words="###390" aggressive="0" blockwalls="1" needtarget="0" needlearn="1" script="monster/canopic jar heal.lua"/>
 	
-	<instant name="twisted shaper ice" words="teste" direction="1" aggressive="1" blockwalls="1" needtarget="0" range="3" needlearn="1" script="monster/twisted shaper ice.lua"/>
+	<instant name="twisted shaper ice" words="###391" direction="1" aggressive="1" blockwalls="1" needtarget="0" range="3" needlearn="1" script="monster/twisted shaper ice.lua"/>
 
 </spells>
