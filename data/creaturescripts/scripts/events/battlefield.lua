@@ -15,9 +15,9 @@ function onPrepareDeath(player, killer)
 end
 
 function onHealthChange(player, attacker, primaryDamage, primaryType, secondaryDamage, secondaryType, origin)
-if not attacker then
-  return primaryDamage, primaryType, secondaryDamage, secondaryType
- end
+	if not attacker then
+  		return primaryDamage, primaryType, secondaryDamage, secondaryType
+ 	end
 	local thisInfo = Battlefield:findPlayer(player)
 	local otherInfo = Battlefield:findPlayer(attacker)
 	if thisInfo and otherInfo and thisInfo.team == otherInfo.team then
@@ -29,9 +29,9 @@ if not attacker then
 end
 
 function onManaChange(player, attacker, manaChange, origin)
-if not attacker then
-  return manaChange
- end
+	if not attacker then
+  		return manaChange
+ 	end
 	local thisInfo = Battlefield:findPlayer(player)
 	local otherInfo = Battlefield:findPlayer(attacker)
 	if thisInfo and otherInfo and thisInfo.team == otherInfo.team then

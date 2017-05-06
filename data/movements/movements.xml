@@ -6,14 +6,11 @@
 	<!-- Lower Roshamuul Quest -->
 	<movevent event="StepIn" itemid="22456" script="lowerRoshamuul.lua" />
 	<movevent event="StepIn" actionid="1500" script="lowerRoshamuul.lua" />
-	<movevent event="StepIn" fromaid="15153" toaid="15155" script="ctf.lua" />
 	<movevent event="StepIn" actionid="19049" script="krailos.lua" />
-	<movevent event="StepIn" fromuid="24541" touid="24544" script="Novos/soil.lua" />
-	<movevent event="StepIn" actionid="24545" script="Novos/ek.lua" />
+	<movevent event="StepIn" fromuid="24541" touid="24544" script="news/soil.lua" />
+	<movevent event="StepIn" actionid="24545" script="news/ek.lua" />
 	 
 	<movevent event="StepIn" actionid="25009" script="ferumbras.lua"/> 
-	<movevent event="StepIn" actionid="25001" script="lmsjoin.lua"/>
-    <movevent event="StepIn" actionid="25002" script="lmsleave.lua"/>
  	<!--<movevent event="StepIn" pos="32353;32231;4" script="exitBF.lua" />-->
  	<movevent event="StepIn" actionid="41344" script="lionrock.lua" />
  	<movevent event="StepIn" fromaid="41346" toaid="41349" script="lionrock.lua" />
@@ -31,6 +28,12 @@
 	<movevent event="AddItem" pos="32524;32465;7" script="trash_prevent3.lua"/>	 
     <movevent event="AddItem" pos="32524;32464;7" script="trash_prevent3.lua"/>	 
 	<movevent event="AddItem" pos="32516;32464;7" script="trash_prevent3.lua"/> 
+
+	<movevent event="StepIn" actionid="25001" script="events/lmsjoin.lua"/>
+    <movevent event="StepIn" actionid="25002" script="events/lmsleave.lua"/>
+    <movevent event="StepIn" actionid="45000" script="events/bf_tp.lua" />	  
+    <movevent event="StepIn" actionid="45110" script="events/ZE_movements.lua" />
+    <movevent event="StepIn" fromaid="15153" toaid="15155" script="events/ctf.lua" />
 	
 	<!-- Dark Trails Quest -->
 	<movevent event="StepIn" actionid="9745" script="oramond/darkTrail.lua" />
@@ -48,9 +51,7 @@
 	
 	<!-- BOSS WARZONE -->
 	<movevent event="StepIn" fromaid="45700" toaid="45702" script="warzone157.lua" />
-	<!-- BattleField Event -->
-      <movevent event="StepIn" actionid="45000" script="bf_tp.lua" />	  
-      <movevent event="StepIn" actionid="45110" script="ZE_movements.lua" />
+	
 	<!-- Item Teleport Destinations -->
 	<movevent event="AddItem" tileitem="1" itemid="1387" script="others/itemteleports.lua" />
 	<movevent event="AddItem" tileitem="1" itemid="8058" script="others/itemteleports.lua" />

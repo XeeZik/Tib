@@ -1,66 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
-<!-- Roshamuul-->
-<event type="kill" name="lowerRoshamuul" script="lowerRoshamuul.lua"/>
-<event type="healthchange" name="HealGaz" script="gaz'haragoth heal.lua"/>	
+	<!-- Roshamuul-->
+	<event type="kill" name="lowerRoshamuul" script="lowerRoshamuul.lua"/>
+	<event type="healthchange" name="HealGaz" script="gaz'haragoth heal.lua"/>	
 
-    <event type="preparedeath" name="BFPrepareDeath" script="battlefield.lua" />
-	<event type="healthchange" name="BFHealthChange" script="battlefield.lua" />
-	<event type="manachange" name="BFManaChange" script="battlefield.lua" />
-	<event type="logout" name="BFLogout" script="battlefield.lua" />
+	<!-- Events -->
+    	<event type="preparedeath" name="BFPrepareDeath" script="battlefield.lua" />
+		<event type="healthchange" name="BFHealthChange" script="battlefield.lua" />
+		<event type="manachange" name="BFManaChange" script="battlefield.lua" />
+		<event type="logout" name="BFLogout" script="battlefield.lua" />
+		<event type="preparedeath" name="CTFDeath" script="ctf.lua" />
+		<event type="healthchange" name="CTFHealthChange" script="ctf.lua" />
+		<event type="logout" name="CityWarLogout" script="citywar.lua" />
+    	<event type="preparedeath" name="CityWarDeath" script="citywar.lua" />
+    	<event type="textedit" name="CityWarInvite" script="citywar.lua" />
+    	<event type="preparedeath" name="ZumbiDeath" script="ZE_creaturescript.lua"/> 
+    <!-- END Events -->
 
-<event type="preparedeath" name="CTFDeath" script="ctf.lua" />
-<event type="healthchange" name="CTFHealthChange" script="ctf.lua" />
-
- <event type="death" name="DeathCounter" script="kdcounter.lua" />
-<event type="kill" name="KillCounter" script="kdcounter.lua" />
+ 	<event type="death" name="DeathCounter" script="kdcounter.lua" />
+	<event type="kill" name="KillCounter" script="kdcounter.lua" />
 
     <!-- WARZONE BOSS -->
-  <event type="death" name="WarzoneBossDeath" script="warzone157.lua" />
+  	<event type="death" name="WarzoneBossDeath" script="warzone157.lua" />
   
   <!-- Reward Chest 19/01 -->	
-    <event type="modalwindow" name="ModalWindowHelper" script="modalwindowhelper.lua" />  
-	
-	<event type="logout" name="CityWarLogout" script="citywar.lua" />
-    <event type="preparedeath" name="CityWarDeath" script="citywar.lua" />
-    <event type="textedit" name="CityWarInvite" script="citywar.lua" />
-  
+    <event type="modalwindow" name="ModalWindowHelper" script="modalwindowhelper.lua" />    
  	<event type="death" name="BossDeath" script="rewardChest/boss.lua" />
  	<event type="healthchange" name="BossParticipation" script="rewardChest/boss.lua" />
  	<event type="think" name="BossThink" script="rewardChest/boss.lua" />
 
     <!-- Bigfoot Burden Quest -->
-	<event type="kill" name="Razzagorn" script="Novos/Razzagorn.lua"/>	
-	<event type="kill" name="Shatterer" script="Novos/The Shatterer.lua"/>	
-	<event type="kill" name="Zamulosh" script="Novos/Zamulosh.lua"/>	
-	<event type="kill" name="Tarbaz" script="Novos/Tarbaz.lua"/>
-	<event type="kill" name="Shulgrax" script="Novos/Shulgrax.lua"/>
+	<event type="kill" name="Razzagorn" script="news/Razzagorn.lua"/>	
+	<event type="kill" name="Shatterer" script="news/The Shatterer.lua"/>	
+	<event type="kill" name="Zamulosh" script="news/Zamulosh.lua"/>	
+	<event type="kill" name="Tarbaz" script="news/Tarbaz.lua"/>
+	<event type="kill" name="Shulgrax" script="news/Shulgrax.lua"/>
 	
-	<event type="kill" name="Ragiaz" script="Novos/Ragiaz.lua"/>
-	<event type="kill" name="Plagirath" script="Novos/Plagirath.lua"/>
-	<event type="kill" name="Mazoran" script="Novos/Mazoran.lua"/>
+	<event type="kill" name="Ragiaz" script="news/Ragiaz.lua"/>
+	<event type="kill" name="Plagirath" script="news/Plagirath.lua"/>
+	<event type="kill" name="Mazoran" script="news/Mazoran.lua"/>
 	
-	<event type="kill" name="Destabilized" script="Novos/Destabilized Ferumbras.lua"/>
+	<event type="kill" name="Destabilized" script="news/Destabilized Ferumbras.lua"/>
 	
 	<!-- 10.94 -->
-	<event type="kill" name="The Hunger" script="Novos/The Hunger.lua"/>
-	<event type="kill" name="The Rage" script="Novos/The Rage.lua"/>	
-	<event type="kill" name="Rupture" script="Novos/Rupture.lua"/>
-	<event type="kill" name="World Devourer" script="Novos/World Devourer.lua"/>
+	<event type="kill" name="The Hunger" script="news/The Hunger.lua"/>
+	<event type="kill" name="The Rage" script="news/The Rage.lua"/>	
+	<event type="kill" name="Rupture" script="news/Rupture.lua"/>
+	<event type="kill" name="World Devourer" script="news/World Devourer.lua"/>
 	
-	<event type="kill" name="Eradicator" script="Novos/Eradicator.lua"/>
-	<event type="kill" name="Eradicator1" script="Novos/Eradicator1.lua"/> 
+	<event type="kill" name="Eradicator" script="news/Eradicator.lua"/>
+	<event type="kill" name="Eradicator1" script="news/Eradicator1.lua"/> 
 	
 	<event type="kill" name="BigfootBurdenVersperoth" script="quests/bigfoot burden/VersperothKill.lua" />
 	<event type="kill" name="WarzoneThree" script="gnomebase/warzone3.lua"/>
 	<event type="kill" name="BigfootBurdenWiggler" script="quests/bigfoot burden/WigglerKill.lua" />
 	<event type="kill" name="bossesWarzone" script="gnomebase/bossesWarzone.lua"/>
 
-
-  <event type="preparedeath" name="ZumbiDeath" script="ZE_creaturescript.lua"/> 
- <!--<event type="preparedeath" name="ZumbiDeath1" script="ZE_creaturescript1.lua"/>-->
-	 <!-- REWARD CHEST -->
-
+	<!-- REWARD CHEST -->
 	<event type="advance" name="Recompense" script="others/recompense.lua"/>
 	<!--<event type="modalwindow" name="modalAD" script="custom/modalAD.lua"/>
     <event type="modalwindow" name="modalMD" script="custom/modalMD.lua"/>-->
@@ -74,15 +70,7 @@
 
 	
 	<event type="login" name="bless1" script="freeblesslowlevel.lua"/>
-	<!-- BattleField Event -->
-	<event type="login" name="battleflogin" script="others/battlefield.lua"/>
-	<event type="preparedeath" name="battledeath" script="others/battlefield.lua"/>
 	
-	<event type="login" name="battleflogin1" script="others/battlefield1.lua"/>
-	<event type="preparedeath" name="battledeath1" script="others/battlefield1.lua"/>
-	
-	
-
 	<!-- Rookgaard Cockroach -->
 	<event type="advance" name="AdvanceRookgaard" script="rookgaard/advance.lua" />
 

@@ -3,10 +3,14 @@ if not Battlefield then
 		open = false,
 
 		wall = {
-			id = 6406,
+			id = 1353,
 
-			top = Position(31419, 32508, 7), 
-			bottom = Position(31419, 32511, 7)  
+			pos = {
+				Position(31419, 32508, 7),
+				Position(31419, 32509, 7),
+				Position(31419, 32510, 7),
+				Position(31419, 32511, 7)
+			}
 		},
 
 		rewards = {
@@ -14,9 +18,17 @@ if not Battlefield then
 			{21399, 1},
 		},
 
-		minLevel = 150,
+		minLevel = 100,
+		minPlayers = 2, --min players to start event
+		maxPlayers = 20, --max players in the event
+		players = {},
 
-		exit = Position(32369, 32237, 7),
+		exit = Position(32369, 32241, 7), --temple
+
+		teleport = {
+			pos = Position(32365, 32236, 7),
+			aid = 45000
+		},
 
 		teams = {
 			[1] = {
@@ -31,7 +43,7 @@ if not Battlefield then
 					lookFeet = 109,
 				},
 
-				position = Position(31402, 32504, 7),  -- {x = 31402, y = 32504, z = 7}
+				position = Position(31402, 32504, 7),
 
 				players = {}, 
 				kills = 0,
@@ -50,35 +62,77 @@ if not Battlefield then
 					lookFeet = 82,
 				},
 
-				position = Position(31436, 32504, 7),  -- {x = 31436, y = 32504, z = 7}
+				position = Position(31436, 32504, 7),
 
 				players = {}, 
 				kills = 0,
 				size = 0,
 			},				
-		}
+		},
+
+		addPlayer = function (self, cid)
+            local player = Player(cid)
+            if player then
+                self.players[player:getId()] = 1
+            end
+        end,
+
+        removePlayer = function (self, cid)
+            local player = Player(cid)
+            if self.players[player:getId()] then
+                self.players[player:getId()] = nil
+            end
+        end,
+
+        getPlayers = function (self)
+            return self.players
+        end,
+
+        getPlayer = function (self, cid)
+            local player = Player(cid)
+            if self.players[player:getId()] then
+                return true
+            else
+                return false
+            end
+        end,
+
+        getPlayersCount = function (self)
+            local c = 0
+            for _ in pairs(self.players) do c = c + 1 end
+            return c
+        end
 	}
 
 	function Battlefield:Open()
 		if self.open then return false end
-		for y = self.wall.top.y, self.wall.bottom.y do
-			local tile = Tile({x = self.wall.top.x, y = y, z = self.wall.top.z})
-			if tile then
-				local wall = tile:getItemById(self.wall.id)
-				if wall then
-					wall:remove()
-				end
-			end
-		end 
 		self.open = true
+		if Battlefield:getPlayersCount() < Battlefield.minPlayers then
+			Battlefield:Close()
+			return true
+		end
+
+		for i = 1, #Battlefield.wall.pos do
+			local tile = Tile(Battlefield.wall.pos[i])
+			if tile then
+				local item = tile:getItemById(Battlefield.wall.id)
+				if item then item:remove() end
+			end
+		end
 		return true
 	end
 
 	function Battlefield:Close(winner)
 		if not self.open then return false end
 		self.open = false
-		for y = self.wall.top.y, self.wall.bottom.y do
-			Game.createItem(self.wall.id, 1, Position(self.wall.top.x, y, self.wall.top.z))
+		for i = 1, #Battlefield.wall.pos do
+			local tile = Tile(Battlefield.wall.pos[i])
+			if tile then
+				local item = tile:getItemById(Battlefield.wall.id)
+				if not item then 
+					Game.createItem(Battlefield.wall.id, 1)
+				end
+			end
 		end
 
 		if not winner then
@@ -122,12 +176,7 @@ if not Battlefield then
 		return self.teams[1].players[name] or self.teams[2].players[name]
 	end
 
-	function Battlefield:onJoin(player)
-		if player:getLevel() < self.minLevel then
-			return false
-		end
-
-		local team
+	function Battlefield:onJoin(player)local team
 		if self.teams[1].size == self.teams[2].size then
 			team = math.random(1, 2)
 		elseif self.teams[1].size > self.teams[2].size then
@@ -142,6 +191,7 @@ if not Battlefield then
 		local info = {name = player:getName(), team = team}
 		self.teams[team].size = self.teams[team].size + 1
 		self.teams[team].players[player:getName()] = info
+		Battlefield:addPlayer(player)
 
 		Game.broadcastMessage(string.format("%s entered the BattleField Event!", info.name))
 
@@ -170,6 +220,7 @@ if not Battlefield then
 		player:addHealth(player:getMaxHealth())
 		player:addMana(player:getMaxMana())
 		player:removeCondition(CONDITION_INFIGHT)
+		Battlefield:removePlayer(player)
 
 		if self.teams[info.team].size == 0 then
 			self:Close(info.team == 1 and 2 or 1)			
@@ -189,5 +240,27 @@ if not Battlefield then
 		end
 		self:onLeave(player)
 		return true
+	end
+
+	function createPortal(pos, effect, aid)
+		local tile = Tile(pos)
+		if tile then
+			local tp = tile:getItemById(1387)
+			if tp == nil then
+				local t = Game.createItem(1387, 1)
+				t:setAttribute(ITEM_ATTRIBUTE_ACTIONID, aid)
+				pos:sendMagicEffect(effect)
+			end
+		end
+	end
+
+	function removePortal(pos, effect)
+		local tile = Tile(pos)
+		if tile then
+			local tp = tile:getItemById(1387)
+			if tp then
+				tp:remove()
+			end
+		end
 	end
 end

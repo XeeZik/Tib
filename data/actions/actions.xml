@@ -92,8 +92,8 @@
     <action actionid="41345" script="quests/lionrock.lua" />
 	
 	
-	<action itemid="22614" script="other/beacon1.lua"/>
-	<action itemid="22615" script="other/beacon2.lua"/>
+	<action itemid="22614" script="other/beacon.lua"/>
+	<action itemid="22615" script="other/beacon.lua"/>
 	
 	<action itemid="25420" script="other/feru.lua"/>
 	
@@ -123,7 +123,7 @@
 	<action actionid="19075" script="other/pared.lua"/>
 
 	<action itemid="25395" script="other/ovo.lua"/>
-	<action itemid="21382" script="other/ovo1.lua"/>
+	<action itemid="21382" script="other/ovo.lua"/>
 
 	<!-- Oramond -->
 	<action itemid="23422" script="other/oramond_elevador.lua" />

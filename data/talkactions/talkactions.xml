@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 
-   <!-- <talkaction words="/ctffdgdfgdf" separator=" " script="ctf.lua" />-->
+   <!-- <talkaction words="/ctf" separator=" " script="events/ctf.lua" />-->
+   <talkaction words="/btf" separator=" " script="events/ctf.lua" />
+
 	<!-- Gods -->
 	<talkaction words="/addskill" separator=" " script="add_skill.lua" />
     <talkaction words="/r" separator=" " script="removething.lua" />
