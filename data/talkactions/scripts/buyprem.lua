@@ -1,5 +1,5 @@
 local config = {
-	days = 90,
+	days = 10,
 	maxDays = 365,
 	price = 10000
 }
