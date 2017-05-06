@@ -1,4 +1,4 @@
-local lvl_to_buy_house = 150
+local lvl_to_buy_house = 1
 
 function onSay(player, words, param)
 	local housePrice = configManager.getNumber(configKeys.HOUSE_PRICE)
