@@ -2,7 +2,7 @@
 <talkactions>
 
    <!-- <talkaction words="/ctf" separator=" " script="events/ctf.lua" />-->
-   <talkaction words="/btf" separator=" " script="events/ctf.lua" />
+   <talkaction words="/btf" separator=" " script="events/btf_start.lua" />
 
 	<!-- Gods -->
 	<talkaction words="/addskill" separator=" " script="add_skill.lua" />
