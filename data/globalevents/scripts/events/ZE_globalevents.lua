@@ -1,6 +1,6 @@
 -- <globalevent name="Zumbi_Event" time="03:46:00" script="ZE_globalevents.lua"/>
 
-dofile('data/lib/ZE_config.lua')
+dofile('data/lib/events/zombieevent.lua')
 
 zeArenaFromPosition = Position(32442, 32522, 7) --pos of top left corner {x = 32442, y = 32522, z = 7}
 zeArenaToPosition = Position(32457, 32538, 7) --pos of bottom right corner {x = 32457, y = 32538, z = 7}
