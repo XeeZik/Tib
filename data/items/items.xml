@@ -31731,6 +31731,7 @@
 		<attribute key="defense" value="34" />
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
+		<attribute key="skillSword" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="weaponType" value="sword" />	
@@ -32015,6 +32016,7 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
+		<attribute key="skillSword" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="slotType" value="two-handed" />
@@ -32292,6 +32294,7 @@
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
+		<attribute key="skillAxe" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="weaponType" value="axe" />
@@ -32304,7 +32307,7 @@
 		<attribute key="defense" value="70" />
 		<attribute key="attack" value="95" />
 		<attribute key="description" value="This weapon is over charged." />
-		<attribute key="skillAxe" value="450" />
+		<attribute key="skillAxe" value="1" />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
@@ -32576,6 +32579,7 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="skillAxe" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="slotType" value="two-handed" />
@@ -32868,6 +32872,7 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="skillClub" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="slotType" value="two-handed" />
@@ -33983,6 +33988,7 @@
 		<attribute key="range" value="6" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
+		<attribute key="skillDist" value="1" />
 		<attribute key="skillcriticalchance" value="25" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="description" value="This weapon is over charged." />
@@ -34315,6 +34321,7 @@
 		<attribute key="range" value="5" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
+		<attribute key="skillDist" value="1" />
 		<attribute key="skillcriticalchance" value="25" />
 		<attribute key="skillcriticaldamage" value="30" />
 		<attribute key="description" value="This weapon is over charged." />

@@ -1,6 +1,6 @@
 -- <event type="preparedeath" name="ZumbiDeath" script="ZE_creaturescript.lua"/>
 
-dofile('data/lib/ZE_config.lua')
+dofile('data/lib/events/zombieevent.lua')
 
 function onPrepareDeath(cid, killer)
 	local player = Player(cid)

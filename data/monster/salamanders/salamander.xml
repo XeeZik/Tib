@@ -30,13 +30,13 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="15" chance="72000" />	<!-- gold coin -->
-		<item id="19737" countmax="5" chance="33000" />	<!-- insectoid eggs -->
-		<item id="2544" countmax="3" chance="7890" />	<!-- arrow -->
-		<item id="2120" chance="4700" />					<!-- rope -->
-		<item id="2398" chance="3780" />					<!-- mace -->
-		<item id="2460" chance="2180" />					<!-- brass helmet -->
-		<item id="2456" chance="1100" />					<!-- bow -->
-		<item id="7618" chance="860" />					<!-- health potion -->
-		<item id="2419" chance="390" />					<!-- scimitar -->
+		<item id="19737" countmax="5" chance="35000" />	<!-- insectoid eggs -->
+		<item id="2544" countmax="3" chance="8000" />	<!-- arrow -->
+		<item id="2120" chance="5000" />					<!-- rope -->
+		<item id="2398" chance="4080" />					<!-- mace -->
+		<item id="2460" chance="2080" />					<!-- brass helmet -->
+		<item id="2456" chance="1500" />					<!-- bow -->
+		<item id="7618" chance="740" />					<!-- health potion -->
+		<item id="2419" chance="490" />					<!-- scimitar -->
 	</loot>
 </monster>
