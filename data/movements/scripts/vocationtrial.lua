@@ -75,7 +75,7 @@ local function changeVocation(player, fromVocation, toVocation)
         [1] = {
             lookBody = 109,
             lookAddons = 0,
-            lookType = {130, 138}, -- {male, female}
+            lookTypeName = {Mage}, -- {male, female}
             lookTypeEx = 0,
             lookHead = 95,
             lookMount = 0,
@@ -86,7 +86,7 @@ local function changeVocation(player, fromVocation, toVocation)
         [2] = {
             lookBody = 123,
             lookAddons = 0,
-            lookType = {130, 138}, -- {male, female}
+            lookTypeName = {Mage}, -- {male, female}
             lookTypeEx = 0,
             lookHead = 95,
             lookMount = 0,
@@ -97,7 +97,7 @@ local function changeVocation(player, fromVocation, toVocation)
         [3] = {
             lookBody = 117,
             lookAddons = 0,
-            lookType = {129, 137}, -- {male, female}
+            lookTypeName = {Hunter}, -- {male, female}
             lookTypeEx = 0,
             lookHead = 95,
             lookMount = 0,
@@ -108,7 +108,7 @@ local function changeVocation(player, fromVocation, toVocation)
         [4] = {
             lookBody = 38,
             lookAddons = 0,
-            lookType = {131, 139}, -- {male, female}
+            lookTypeName = {Knight}, -- {male, female}
             lookTypeEx = 0,
             lookHead = 95,
             lookMount = 0,
@@ -160,20 +160,19 @@ local function changeVocation(player, fromVocation, toVocation)
         end
     end
  
-    local outfit = vocationsOutfits[toVocation]
+--[[    local outfit = vocationsOutfits[toVocation]
     player:setOutfit(
         {
             lookBody = outfit.lookBody,
             lookAddons = outfit.lookAddons,
-            lookType = outfit.lookType[player:getSex()],
+            lookTypeName = outfit.lookTypeName,
             lookTypeEx = outfit.lookTypeEx,
             lookHead = outfit.lookHead,
             lookMount = outfit.lookMount,
             lookLegs = outfit.lookLegs,
             lookFeet = outfit.lookFeet,
         }
-    )
- 
+		)]]--
 end
 
 local centerPosition = Position(32065, 31891, 5)
