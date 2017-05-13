@@ -31589,8 +31589,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="skillmanachance" value="20" />
-		<attribute key="skillmanaamount" value="5" />
+		<!--<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25960" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31616,8 +31616,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />	
-		<attribute key="skillmanachance" value="25" />
-		<attribute key="skillmanaamount" value="7" />
+		<!--<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25961" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31642,9 +31642,9 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="skillSword" value="1" />
+		<!--<attribute key="skillSword" value="1" />
 		<attribute key="skillmanachance" value="30" />
-		<attribute key="skillmanaamount" value="9" />
+		<attribute key="skillmanaamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25962" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />	
@@ -31679,8 +31679,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="skillcriticalchance" value="10" />
-		<attribute key="skillcriticaldamage" value="20" />
+		<!--<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />-->
 		<attribute key="transformEquipTo" value="25889" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31706,8 +31706,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />	
-		<attribute key="skillcriticalchance" value="15" />
-		<attribute key="skillcriticaldamage" value="20" />
+		<!--<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="20" />-->
 		<attribute key="transformEquipTo" value="25899" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31731,9 +31731,9 @@
 		<attribute key="defense" value="34" />
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
-		<attribute key="skillSword" value="1" />
+		<!--<attribute key="skillSword" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticaldamage" value="30" />-->
 		<attribute key="weaponType" value="sword" />	
 		<attribute key="transformEquipTo" value="25909" />
 		<attribute key="stopduration" value="1" />
@@ -31770,8 +31770,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="skilllifechance" value="25" />
-		<attribute key="skilllifeamount" value="5" />	
+		<!--<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25920" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31797,8 +31797,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="skilllifechance" value="30" />
-		<attribute key="skilllifeamount" value="7" />	
+		<!--<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25921" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31823,9 +31823,9 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="skillSword" value="1" />
+		<!--<attribute key="skillSword" value="1" />
 		<attribute key="skilllifechance" value="35" />
-		<attribute key="skilllifeamount" value="9" />
+		<attribute key="skilllifeamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25922" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31862,8 +31862,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />	
-		<attribute key="skillmanachance" value="20" />
-		<attribute key="skillmanaamount" value="5" />	
+		<!--<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25964" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31891,8 +31891,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />	
-		<attribute key="skillmanachance" value="25" />
-		<attribute key="skillmanaamount" value="7" />	
+		<!--<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />-->	
 		<attribute key="transformEquipTo" value="25965" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31918,10 +31918,10 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="skillSword" value="1" />
 		<attribute key="slotType" value="two-handed" />	
+		<!--<attribute key="skillSword" value="1" />
 		<attribute key="skillmanachance" value="30" />
-		<attribute key="skillmanaamount" value="9" />
+		<attribute key="skillmanaamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25966" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31960,8 +31960,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />		
-		<attribute key="skillcriticalchance" value="10" />
-		<attribute key="skillcriticaldamage" value="20" />
+		<!--<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />-->
 		<attribute key="transformEquipTo" value="25890" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -31989,8 +31989,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />	
-		<attribute key="skillcriticalchance" value="15" />
-		<attribute key="skillcriticaldamage" value="25" />
+		<!--<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />-->
 		<attribute key="transformEquipTo" value="25900" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32016,9 +32016,9 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="skillSword" value="1" />
+		<!--<attribute key="skillSword" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticaldamage" value="30" />-->
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="transformEquipTo" value="25910" />
 		<attribute key="stopduration" value="1" />
@@ -32057,8 +32057,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />	
-		<attribute key="skilllifechance" value="25" />
-		<attribute key="skilllifeamount" value="5" />
+		<!--<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25924" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32086,8 +32086,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />	
-		<attribute key="skilllifechance" value="30" />
-		<attribute key="skilllifeamount" value="7" />
+		<!--<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25925" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32113,10 +32113,10 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="sword" />
-		<attribute key="skillSword" value="1" />
 		<attribute key="slotType" value="two-handed" />
+		<!--<attribute key="skillSword" value="1" />
 		<attribute key="skilllifechance" value="35" />
-		<attribute key="skilllifeamount" value="9" />
+		<attribute key="skilllifeamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25926" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />	
@@ -32151,8 +32151,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillmanachance" value="20" />
-		<attribute key="skillmanaamount" value="5" />
+		<!--<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25968" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32178,8 +32178,8 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillmanachance" value="25" />
-		<attribute key="skillmanaamount" value="7" />
+		<!--<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25969" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32204,9 +32204,9 @@
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillAxe" value="1" />
+		<!--<attribute key="skillAxe" value="1" />
 		<attribute key="skillmanachance" value="30" />
-		<attribute key="skillmanaamount" value="9" />
+		<attribute key="skillmanaamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25970" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32242,8 +32242,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillcriticalchance" value="10" />
-		<attribute key="skillcriticaldamage" value="20" />
+		<!--<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />-->
 		<attribute key="transformEquipTo" value="25891" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32269,8 +32269,8 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillcriticalchance" value="15" />
-		<attribute key="skillcriticaldamage" value="25" />
+		<!--<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />-->
 		<attribute key="transformEquipTo" value="25901" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32294,9 +32294,9 @@
 		<attribute key="defense" value="33" />
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
-		<attribute key="skillAxe" value="1" />
+		<!--<attribute key="skillAxe" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticaldamage" value="30" />-->
 		<attribute key="weaponType" value="axe" />
 		<attribute key="transformEquipTo" value="25911" />
 		<attribute key="stopduration" value="1" />
@@ -32332,8 +32332,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skilllifechance" value="25" />
-		<attribute key="skilllifeamount" value="5" />
+		<!--<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25928" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32359,8 +32359,8 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skilllifechance" value="30" />
-		<attribute key="skilllifeamount" value="7" />
+		<!--<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25929" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32385,9 +32385,9 @@
 		<attribute key="attack" value="52" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillAxe" value="1" />
+		<!--<attribute key="skillAxe" value="1" />
 		<attribute key="skilllifechance" value="35" />
-		<attribute key="skilllifeamount" value="9" />
+		<attribute key="skilllifeamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25930" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32425,8 +32425,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />	
-		<attribute key="skillmanachance" value="20" />
-		<attribute key="skillmanaamount" value="5" />
+		<!--<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25972" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32454,8 +32454,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />	
-		<attribute key="skillmanachance" value="25" />
-		<attribute key="skillmanaamount" value="7" />
+		<!--<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25973" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32481,10 +32481,10 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillAxe" value="1" />
 		<attribute key="slotType" value="two-handed" />
+		<!--<attribute key="skillAxe" value="1" />
 		<attribute key="skillmanachance" value="30" />
-		<attribute key="skillmanaamount" value="9" />
+		<attribute key="skillmanaamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25974" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32523,8 +32523,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />	
-		<attribute key="skillcriticalchance" value="10" />
-		<attribute key="skillcriticaldamage" value="20" />
+		<!--<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />-->
 		<attribute key="transformEquipTo" value="25892" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32552,8 +32552,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />	
-		<attribute key="skillcriticalchance" value="15" />
-		<attribute key="skillcriticaldamage" value="25" />
+		<!--<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />-->
 		<attribute key="transformEquipTo" value="25902" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32579,9 +32579,9 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillAxe" value="1" />
+		<!--<attribute key="skillAxe" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticaldamage" value="30" />-->
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="transformEquipTo" value="25912" />
 		<attribute key="stopduration" value="1" />
@@ -32620,8 +32620,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skilllifechance" value="25" />
-		<attribute key="skilllifeamount" value="5" />
+		<!--<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25932" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32649,8 +32649,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skilllifechance" value="30" />
-		<attribute key="skilllifeamount" value="7" />
+		<!--<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25933" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32676,10 +32676,10 @@
 		<attribute key="attack" value="53" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="axe" />
-		<attribute key="skillAxe" value="1" />
 		<attribute key="slotType" value="two-handed" />
+		<!--<attribute key="skillAxe" value="1" />
 		<attribute key="skilllifechance" value="35" />
-		<attribute key="skilllifeamount" value="9" />
+		<attribute key="skilllifeamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25931" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />	
@@ -32718,8 +32718,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillmanachance" value="20" />
-		<attribute key="skillmanaamount" value="5" />	
+		<!--<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25980" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />		
@@ -32747,8 +32747,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillmanachance" value="25" />
-		<attribute key="skillmanaamount" value="7" />
+		<!--<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25981" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32774,10 +32774,10 @@
 		<attribute key="attack" value="54" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
-		<attribute key="skillClub" value="1" />
 		<attribute key="slotType" value="two-handed" />
+		<!--<attribute key="skillClub" value="1" />
 		<attribute key="skillmanachance" value="30" />
-		<attribute key="skillmanaamount" value="9" />
+		<attribute key="skillmanaamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25982" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />	
@@ -32815,8 +32815,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillmanachance" value="10" />
-		<attribute key="skillmanaamount" value="20" />
+		<!--<attribute key="skillmanachance" value="10" />
+		<attribute key="skillmanaamount" value="20" />-->
 		<attribute key="transformEquipTo" value="25894" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32829,8 +32829,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillmanachance" value="10" />
-		<attribute key="skillmanaamount" value="20" />
+		<!--<attribute key="skillmanachance" value="10" />
+		<attribute key="skillmanaamount" value="20" />-->
 		<attribute key="decayTo" value="25884" />
 		<attribute key="transformDeEquipTo" value="26248" />
 		<attribute key="duration" value="72000" />
@@ -32844,8 +32844,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />	
-		<attribute key="skillcriticalchance" value="15" />
-		<attribute key="skillcriticaldamage" value="25" />
+		<!--<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />-->
 		<attribute key="transformEquipTo" value="25904" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32872,9 +32872,9 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skillClub" value="1" />
+		<!--<attribute key="skillClub" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticaldamage" value="30" />-->
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="transformEquipTo" value="25914" />
 		<attribute key="stopduration" value="1" />
@@ -32914,8 +32914,8 @@
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />	
-		<attribute key="skillmanachance" value="25" />
-		<attribute key="skillmanaamount" value="5" />	
+		<!--<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25940" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />	
@@ -32943,8 +32943,8 @@
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="skilllifechance" value="30" />
-		<attribute key="skilllifeamount" value="7" />	
+		<!--<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />-->	
 		<attribute key="transformEquipTo" value="25941" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -32970,10 +32970,10 @@
 		<attribute key="attack" value="54" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
-		<attribute key="skillClub" value="1" />
 		<attribute key="slotType" value="two-handed" />
+		<!--<attribute key="skillClub" value="1" />
 		<attribute key="skilllifechance" value="35" />
-		<attribute key="skilllifeamount" value="9" />
+		<attribute key="skilllifeamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25942" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33009,8 +33009,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />	
-		<attribute key="skillmanachance" value="20" />
-		<attribute key="skillmanaamount" value="5" />
+		<!--<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25976" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33036,8 +33036,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />	
-		<attribute key="skillmanachance" value="25" />
-		<attribute key="skillmanaamount" value="7" />
+		<!--<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25977" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33062,9 +33062,9 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
-		<attribute key="skillClub" value="1" />
+		<!--<attribute key="skillClub" value="1" />
 		<attribute key="skillmanachance" value="30" />
-		<attribute key="skillmanaamount" value="9" />
+		<attribute key="skillmanaamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25978" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />	
@@ -33099,8 +33099,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
-		<attribute key="skillcriticalchance" value="10" />
-		<attribute key="skillcriticaldamage" value="20" />	
+		<!--<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />-->
 		<attribute key="transformEquipTo" value="25893" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33126,8 +33126,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />
-		<attribute key="skillcriticalchance" value="15" />
-		<attribute key="skillcriticaldamage" value="25" />
+		<!--<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />-->
 		<attribute key="transformEquipTo" value="25903" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33151,11 +33151,10 @@
 		<attribute key="defense" value="32" />
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
-		<attribute key="skillClub" value="1" />
 		<attribute key="weaponType" value="club" />
-		<attribute key="weaponType" value="club" />
+		<!--<attribute key="skillClub" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticaldamage" value="30" />-->
 		<attribute key="transformEquipTo" value="25913" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />		
@@ -33190,8 +33189,8 @@
 		<attribute key="attack" value="49" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="weaponType" value="club" />
-		<attribute key="skilllifechance" value="25" />
-		<attribute key="skilllifeamount" value="5" />
+		<!--<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25936" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33217,8 +33216,8 @@
 		<attribute key="attack" value="50" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="weaponType" value="club" />
-		<attribute key="skilllifechance" value="30" />
-		<attribute key="skilllifeamount" value="7" />
+		<!--<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25937" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />	
@@ -33243,9 +33242,9 @@
 		<attribute key="attack" value="51" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weaponType" value="club" />
-		<attribute key="skillClub" value="1" />
+		<!--<attribute key="skillClub" value="1" />
 		<attribute key="skilllifechance" value="35" />
-		<attribute key="skilllifeamount" value="9" />
+		<attribute key="skilllifeamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25938" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33277,8 +33276,8 @@
 		<attribute key="description" value="This weapon can be charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
-		<attribute key="skillmanachance" value="20" />
-		<attribute key="skillmanaamount" value="5" />
+		<!--<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25996" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />		
@@ -33303,8 +33302,8 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
 		<attribute key="range" value="3" />
-		<attribute key="skillmanachance" value="25" />
-		<attribute key="skillmanaamount" value="7" />
+		<!--<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />-->
 		<attribute key="transformEquipTo" value="28997" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33327,13 +33326,13 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
-		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="transformEquipTo" value="25998" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 		<attribute key="range" value="3" />
+		<!--<attribute key="magiclevelpoints" value="1" />
 		<attribute key="skillmanachance" value="30" />
-		<attribute key="skillmanaamount" value="9" />
+		<attribute key="skillmanaamount" value="9" />-->
 	</item>
 	<item id="25998" article="a" name="rod of carving (overcharged)">
 		<attribute key="description" value="This weapon is over charged." />
@@ -33364,8 +33363,8 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
 		<attribute key="range" value="3" />
-		<attribute key="skillcriticalchance" value="10" />
-		<attribute key="skillcriticaldamage" value="20" />
+		<!--<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />-->
 		<attribute key="transformEquipTo" value="25898" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33391,8 +33390,8 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
 		<attribute key="range" value="3" />
-		<attribute key="skillcriticalchance" value="15" />
-		<attribute key="skillcriticaldamage" value="25" />
+		<!--<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />-->
 		<attribute key="transformEquipTo" value="25908" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33416,9 +33415,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="range" value="3" />	
-		<attribute key="magiclevelpoints" value="1" />
+		<!--<attribute key="magiclevelpoints" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticaldamage" value="30" />-->
 		<attribute key="transformEquipTo" value="25918" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33453,8 +33452,8 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
 		<attribute key="range" value="3" />
-		<attribute key="skilllifechance" value="25" />
-		<attribute key="skilllifeamount" value="5" />
+		<!--<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25956" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33480,8 +33479,8 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="smallice" />
 		<attribute key="range" value="3" />	
-		<attribute key="skilllifechance" value="30" />
-		<attribute key="skilllifeamount" value="7" />
+		<!--<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25957" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33504,12 +33503,12 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
-		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="transformEquipTo" value="25958" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
+		<!--<attribute key="magiclevelpoints" value="1" />
 		<attribute key="skilllifechance" value="35" />
-		<attribute key="skilllifeamount" value="9" />
+		<attribute key="skilllifeamount" value="9" />-->
 	</item>	
 	<item id="25958" article="a" name="rod of remedy (overcharged)">
 		<attribute key="description" value="This weapon is over charged." />
@@ -33541,8 +33540,8 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />
-		<attribute key="skillmanachance" value="20" />
-		<attribute key="skillmanaamount" value="5" />
+		<!--<attribute key="skillmanachance" value="20" />
+		<attribute key="skillmanaamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25992" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33568,8 +33567,8 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />
-		<attribute key="skillmanachance" value="25" />
-		<attribute key="skillmanaamount" value="7" />
+		<!--<attribute key="skillmanachance" value="25" />
+		<attribute key="skillmanaamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25993" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33592,12 +33591,12 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
-		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="transformEquipTo" value="25994" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
+		<!--<attribute key="magiclevelpoints" value="1" />
 		<attribute key="skillmanachance" value="30" />
-		<attribute key="skillmanaamount" value="9" />
+		<attribute key="skillmanaamount" value="9" />-->
 	</item>	
 	<item id="25994" article="a" name="wand of carving (overcharged)">
 		<attribute key="description" value="This weapon is over charged." />
@@ -33629,8 +33628,8 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />
-		<attribute key="skillcriticalchance" value="10" />
-		<attribute key="skillcriticaldamage" value="20" />
+		<!--<attribute key="skillcriticalchance" value="10" />
+		<attribute key="skillcriticaldamage" value="20" />-->
 		<attribute key="transformEquipTo" value="25897" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33656,8 +33655,8 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />
-		<attribute key="skillcriticalchance" value="15" />
-		<attribute key="skillcriticaldamage" value="25" />
+		<!--<attribute key="skillcriticalchance" value="15" />
+		<attribute key="skillcriticaldamage" value="25" />-->
 		<attribute key="transformEquipTo" value="25907" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33681,9 +33680,9 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="range" value="3" />	
-		<attribute key="magiclevelpoints" value="1" />
+		<!--<attribute key="magiclevelpoints" value="1" />
 		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticaldamage" value="30" />-->
 		<attribute key="transformEquipTo" value="25917" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33718,8 +33717,8 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />
-		<attribute key="skilllifechance" value="25" />
-		<attribute key="skilllifeamount" value="5" />
+		<!--<attribute key="skilllifechance" value="25" />
+		<attribute key="skilllifeamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25952" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33745,8 +33744,8 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />
-		<attribute key="skilllifechance" value="30" />
-		<attribute key="skilllifeamount" value="7" />
+		<!--<attribute key="skilllifechance" value="30" />
+		<attribute key="skilllifeamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25953" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33769,12 +33768,12 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="weight" value="3500" />
 		<attribute key="weaponType" value="wand" />
-		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="transformEquipTo" value="25954" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
+		<!--<attribute key="magiclevelpoints" value="1" />
 		<attribute key="skilllifechance" value="35" />
-		<attribute key="skilllifeamount" value="9" />
+		<attribute key="skilllifeamount" value="9" />-->
 	</item>	
 	<item id="25954" article="a" name="wand of remedy (overcharged)">
 		<attribute key="description" value="This weapon is over charged." />
@@ -33811,10 +33810,10 @@
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="range" value="6" />
-		<attribute key="attack" value="4" />
+		<!--<attribute key="attack" value="4" />
 		<attribute key="hitChance" value="4" />
 		<attribute key="skillmanachance" value="20" />
-		<attribute key="skillmanaamount" value="5" />
+		<attribute key="skillmanaamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25984" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33844,10 +33843,10 @@
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="range" value="6" />
-		<attribute key="attack" value="5" />
+		<!--<attribute key="attack" value="5" />
 		<attribute key="hitChance" value="5" />
 		<attribute key="skillmanachance" value="25" />
-		<attribute key="skillmanaamount" value="7" />
+		<attribute key="skillmanaamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25985" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33876,11 +33875,11 @@
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="range" value="6" />
-		<attribute key="skillDist" value="1" />
+		<!--<attribute key="skillDist" value="1" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
 		<attribute key="skillmanachance" value="30" />
-		<attribute key="skillmanaamount" value="9" />
+		<attribute key="skillmanaamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25986" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33922,10 +33921,10 @@
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="range" value="6" />
-		<attribute key="attack" value="4" />
+		<!--<attribute key="attack" value="4" />
 		<attribute key="hitChance" value="4" />
 		<attribute key="skillcriticalchance" value="15" />
-		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="skillcriticaldamage" value="20" />-->
 		<attribute key="transformEquipTo" value="25895" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33955,10 +33954,10 @@
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="range" value="6" />
-		<attribute key="attack" value="5" />
+		<!--<attribute key="attack" value="5" />
 		<attribute key="hitChance" value="5" />
 		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="25" />
+		<attribute key="skillcriticaldamage" value="25" />-->
 		<attribute key="transformEquipTo" value="25906" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -33986,11 +33985,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="range" value="6" />
-		<attribute key="attack" value="6" />
+		<!--<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
 		<attribute key="skillDist" value="1" />
 		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticaldamage" value="30" />-->
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="transformEquipTo" value="25915" />
 		<attribute key="stopduration" value="1" />
@@ -34032,10 +34031,10 @@
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="range" value="6" />
-		<attribute key="attack" value="4" />
+		<!--<attribute key="attack" value="4" />
 		<attribute key="hitChance" value="4" />
 		<attribute key="skilllifechance" value="25" />
-		<attribute key="skilllifeamount" value="5" />
+		<attribute key="skilllifeamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25944" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34065,12 +34064,12 @@
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="range" value="6" />
-		<attribute key="attack" value="5" />
+		<!--<attribute key="attack" value="5" />
 		<attribute key="hitChance" value="5" />
 		<attribute key="skilllifechance" value="30" />
-		<attribute key="skilllifeamount" value="7" />
+		<attribute key="skilllifeamount" value="7" />-->
 		<attribute key="decayTo" value="25943" />
-		<attribute key="transformDeEquipTo" value="25945" />
+		<attribute key="transformEquipTo" value="25945" />
 		<attribute key="duration" value="36000" />
 		<attribute key="showduration" value="1" />
 	</item>	
@@ -34099,10 +34098,10 @@
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="range" value="6" />
 		<attribute key="skillDist" value="1" />
-		<attribute key="attack" value="6" />
+		<!--<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
 		<attribute key="skilllifechance" value="35" />
-		<attribute key="skilllifeamount" value="9" />
+		<attribute key="skilllifeamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25946" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34144,10 +34143,10 @@
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="range" value="5" />
-		<attribute key="attack" value="4" />
+		<!--<attribute key="attack" value="4" />
 		<attribute key="hitChance" value="4" />
 		<attribute key="skillmanachance" value="20" />
-		<attribute key="skillmanaamount" value="5" />
+		<attribute key="skillmanaamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25988" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34177,10 +34176,10 @@
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="range" value="5" />
-		<attribute key="attack" value="5" />
+		<!--<attribute key="attack" value="5" />
 		<attribute key="hitChance" value="5" />
 		<attribute key="skillmanachance" value="25" />
-		<attribute key="skillmanaamount" value="7" />
+		<attribute key="skillmanaamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25989" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34209,11 +34208,11 @@
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="range" value="5" />
-		<attribute key="skillDist" value="1" />
+		<!--<attribute key="skillDist" value="1" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
 		<attribute key="skillmanachance" value="30" />
-		<attribute key="skillmanaamount" value="9" />
+		<attribute key="skillmanaamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25990" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34255,10 +34254,10 @@
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="range" value="5" />
-		<attribute key="attack" value="4" />
+		<!--<attribute key="attack" value="4" />
 		<attribute key="hitChance" value="4" />
 		<attribute key="skillcriticalchance" value="15" />
-		<attribute key="skillcriticaldamage" value="20" />
+		<attribute key="skillcriticaldamage" value="20" />-->
 		<attribute key="transformEquipTo" value="25896" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34288,10 +34287,10 @@
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="range" value="5" />
-		<attribute key="attack" value="5" />
+		<!--<attribute key="attack" value="5" />
 		<attribute key="hitChance" value="5" />
 		<attribute key="skillcriticalchance" value="20" />
-		<attribute key="skillcriticaldamage" value="25" />
+		<attribute key="skillcriticaldamage" value="25" />-->
 		<attribute key="transformEquipTo" value="25905" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34319,11 +34318,11 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="range" value="5" />
-		<attribute key="attack" value="6" />
+		<!--<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
 		<attribute key="skillDist" value="1" />
 		<attribute key="skillcriticalchance" value="25" />
-		<attribute key="skillcriticaldamage" value="30" />
+		<attribute key="skillcriticaldamage" value="30" />-->
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="transformEquipTo" value="25916" />
 		<attribute key="stopduration" value="1" />
@@ -34366,10 +34365,10 @@
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is charged." />
 		<attribute key="range" value="5" />
-		<attribute key="attack" value="4" />
+		<!--<attribute key="attack" value="4" />
 		<attribute key="hitChance" value="4" />
 		<attribute key="skilllifechance" value="25" />
-		<attribute key="skilllifeamount" value="5" />
+		<attribute key="skilllifeamount" value="5" />-->
 		<attribute key="transformEquipTo" value="25948" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34399,10 +34398,10 @@
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is heavily charged." />
 		<attribute key="range" value="5" />
-		<attribute key="attack" value="5" />
+		<!--<attribute key="attack" value="5" />
 		<attribute key="hitChance" value="5" />
 		<attribute key="skilllifechance" value="30" />
-		<attribute key="skilllifeamount" value="7" />
+		<attribute key="skilllifeamount" value="7" />-->
 		<attribute key="transformEquipTo" value="25949" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -34431,11 +34430,11 @@
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="description" value="This weapon is over charged." />
 		<attribute key="range" value="5" />
-		<attribute key="skillDist" value="1" />
+		<!--<attribute key="skillDist" value="1" />
 		<attribute key="attack" value="6" />
 		<attribute key="hitChance" value="6" />
 		<attribute key="skilllifechance" value="35" />
-		<attribute key="skilllifeamount" value="9" />
+		<attribute key="skilllifeamount" value="9" />-->
 		<attribute key="transformEquipTo" value="25950" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
