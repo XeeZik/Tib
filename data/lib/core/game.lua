@@ -9,7 +9,11 @@ function Game.broadcastMessage(message, messageType)
 
 	local players = Game.getPlayers()
 	for i = 1, #players do
-		players[i]:sendTextMessage(messageType, message)
+		if messageType == MESSAGE_STATUS_WARNING then
+			players[i]:sendPrivateMessage(nil, message, TALKTYPE_BROADCAST)
+		else
+			players[i]:sendTextMessage(messageType, message)
+		end
 	end
 end
 

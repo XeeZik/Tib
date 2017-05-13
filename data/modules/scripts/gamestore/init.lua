@@ -190,10 +190,10 @@ function parseBuyStoreOffer(player, msg)
         elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_STACKABLE then
             local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
             if inbox and inbox:getEmptySlots() > 0 then
-                if player:getFreeCapacity() > (ItemType(offer.thingId):getWeight(offer.count or 1) + ItemType(2596):getWeight(1)) then -- if player has cap for a parcel + offer weight
+                if player:getFreeCapacity() > (ItemType(offer.thingId):getWeight(offer.count or 1) + ItemType(2596):getWeight()) then -- if player has cap for a parcel + offer weight
                     local parcel = inbox:addItem(2596, 1)
                     local packagename = ''.. offer.count..'x '.. offer.name ..' package.'
-                    local pendingCount = offer.count;
+                    local pendingCount = offer.count or 1;
                     if parcel then
                         parcel:setAttribute(ITEM_ATTRIBUTE_NAME, packagename)
                         while pendingCount > 0  do

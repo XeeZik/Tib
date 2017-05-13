@@ -1,6 +1,6 @@
 -- <movevent event="StepIn" actionid="45000" script="ZE_movements.lua" />
 
-dofile('data/lib/ZE_config.lua')
+dofile('data/lib/events/zombieevent.lua')
 
 function onStepIn(cid, item, position, fromPosition)
 	local player = Player(cid)

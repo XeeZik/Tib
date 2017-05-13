@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Quara Constrictor" nameDescription="a quara constrictor" race="blood" experience="250" speed="230" manacost="670">
-	<health now="450" max="450" />
+<monster name="Quara Constrictor" nameDescription="a quara constrictor" race="blood" experience="1200" speed="230" manacost="670">
+	<health now="1500" max="1500" />
 	<look type="46" corpse="6065" />
 	<targetchange interval="4000" chance="10" />
 	<flags>
@@ -46,12 +46,16 @@
 		<voice sentence="Boohaa!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="87500" />	<!-- gold coin -->
-		<item id="12443" chance="14520" />				<!-- quara tentacle -->
-		<item id="2397" chance="7300" />					<!-- longsword -->
-		<item id="2670" countmax="5" chance="5000" />	<!-- shrimp -->
-		<item id="2465" chance="5000" />					<!-- brass armor -->
-		<item id="2150" chance="2860" />					<!-- small amethyst -->
-		<item id="5895" chance="440" />					<!-- fish fin -->
+		<item id="2152" countmax="1" chance="80200" />	<!-- platinum coin -->
+		<item id="12443" chance="16020" />				<!-- quara tentacle -->
+		<item id="2178" chance="6800" />					<!-- mind stone -->
+		<item id="2670" countmax="5" chance="5500" />	<!-- shrimp -->
+		<item id="2214" chance="5200" />					<!-- ring of healing -->
+		<item id="7590" chance="5300" />					<!-- great mana potion -->
+		<item id="2150" chance="4360" />					<!-- small amethyst -->
+		<item id="2147" countmax="2" chance="5000" />		<!-- small ruby -->
+		<item id="7368" countmax="7" chance="4380" />					<!-- assassin star -->
+		<item id="15649" countmax="1" chance="3330" />					<!-- vortex bolt -->
+		<item id="5895" chance="200" />					<!-- fish fin -->
 	</loot>
 </monster>

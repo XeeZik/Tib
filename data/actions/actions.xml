@@ -92,8 +92,8 @@
     <action actionid="41345" script="quests/lionrock.lua" />
 	
 	
-	<action itemid="22614" script="other/beacon1.lua"/>
-	<action itemid="22615" script="other/beacon2.lua"/>
+	<action itemid="22614" script="other/beacon.lua"/>
+	<action itemid="22615" script="other/beacon.lua"/>
 	
 	<action itemid="25420" script="other/feru.lua"/>
 	
@@ -123,7 +123,7 @@
 	<action actionid="19075" script="other/pared.lua"/>
 
 	<action itemid="25395" script="other/ovo.lua"/>
-	<action itemid="21382" script="other/ovo1.lua"/>
+	<action itemid="21382" script="other/ovo.lua"/>
 
 	<!-- Oramond -->
 	<action itemid="23422" script="other/oramond_elevador.lua" />
@@ -184,15 +184,15 @@
 	<action uniqueid="9532" script="news/novo4.lua"/>
 	<action uniqueid="9533" script="news/novo5.lua"/>
 	
-	<action uniqueid="9520" script="news/BB_Quest.lua"/> <!-- Mazoran -->
-	<action uniqueid="9521" script="news/BB_Quest.lua"/> <!-- Razzagorn -->
-	<action uniqueid="9522" script="news/BB_Quest.lua"/> <!-- Plagirath -->
-	<action uniqueid="9523" script="news/BB_Quest.lua"/> <!-- Ferumbras Novo -->
-	<action uniqueid="9524" script="news/BB_Quest.lua"/> <!-- Ragiaz -->
-	<action uniqueid="9525" script="news/BB_Quest.lua"/> <!-- Zamulosh -->
-	<action uniqueid="9526" script="news/BB_Quest.lua"/> <!-- Tarbaz -->
-	<action uniqueid="9527" script="news/BB_Quest.lua"/> <!-- Shulgrax -->
-	<action uniqueid="9528" script="news/BB_Quest.lua"/> <!-- 	The Shatterer -->
+	<action uniqueid="9520" script="news/bb_quest.lua"/> <!-- Mazoran -->
+	<action uniqueid="9521" script="news/bb_quest.lua"/> <!-- Razzagorn -->
+	<action uniqueid="9522" script="news/bb_quest.lua"/> <!-- Plagirath -->
+	<action uniqueid="9523" script="news/bb_quest.lua"/> <!-- Ferumbras Novo -->
+	<action uniqueid="9524" script="news/bb_quest.lua"/> <!-- Ragiaz -->
+	<action uniqueid="9525" script="news/bb_quest.lua"/> <!-- Zamulosh -->
+	<action uniqueid="9526" script="news/bb_quest.lua"/> <!-- Tarbaz -->
+	<action uniqueid="9527" script="news/bb_quest.lua"/> <!-- Shulgrax -->
+	<action uniqueid="9528" script="news/bb_quest.lua"/> <!-- 	The Shatterer -->
 	<action uniqueid="9511" script="quests/oramond/darkTrail.lua"/>
 
 	<action itemid="23400" script="quests/oramond/gerador.lua"/>
@@ -606,9 +606,7 @@
 	<action fromaid="50122" toaid="50125" script="quests/the hidden city of beregar/coalExitWagons.lua" />
 	<action fromuid="50113" touid="50123" script="quests/the hidden city of beregar/wagonMazeLevers.lua" />
 	<action uniqueid="50124" script="quests/the hidden city of beregar/wagonMazeExit.lua" />
-
-	<action actionid="50109" script="vagao/vagao.lua" />
-	<action actionid="42150" script="vagao/vagao1.lua" />
+	
 	<action actionid="42139" script="other/escada.lua" />
 	<!-- Thieves Guild Quest -->
 	<action itemid="8693" script="quests/the thieves guild/dwarfDisguiseKit.lua" />

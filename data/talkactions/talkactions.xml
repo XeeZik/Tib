@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 
-   <!-- <talkaction words="/ctffdgdfgdf" separator=" " script="ctf.lua" />-->
+   <!-- <talkaction words="/ctf" separator=" " script="events/ctf.lua" />-->
+   <talkaction words="/btf" separator=" " script="events/btf_start.lua" />
+
 	<!-- Gods -->
 	<talkaction words="/addskill" separator=" " script="add_skill.lua" />
     <talkaction words="/r" separator=" " script="removething.lua" />
@@ -15,7 +17,7 @@
 	<talkaction words="/mccheck" script="mccheck.lua" />
 	<talkaction words="/openserver" script="openserver.lua" />
 	<talkaction words="/reload" separator=" " script="reload.lua" />
-+	<talkaction words="/raid" separator=" " script="force_raid.lua" />
+	<talkaction words="/raid" separator=" " script="force_raid.lua" />
 	<talkaction words="/owner" separator=" " script="owner.lua" />
 	<talkaction words="/m" separator=" " script="place_monster.lua" />
 	<talkaction words="/s" separator=" " script="place_npc.lua" />
