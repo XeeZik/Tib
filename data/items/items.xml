@@ -37490,5 +37490,8 @@
 	<item id="23803" article="a" name="lightest magic missile rune" />
 	<item id="23804" article="a" name="the chiller" />
 	<item id="23805" article="a" name="lightest stone shower rune" />
+	<item id="24663" article="a" name="gloom wolf fur">
+		<attribute key="weight" value="120" />
+	</item>
 
 </items>
