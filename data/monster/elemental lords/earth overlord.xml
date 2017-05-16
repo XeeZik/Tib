@@ -42,10 +42,11 @@
 		<item id="2148" countmax="100" chance="100000" /><!-- gold coin -->
 		<item id="2148" countmax="68" chance="100000" /><!-- gold coin -->
 		<item id="8305" chance="100000" /><!-- mother soil -->
-		<item id="11222" chance="33333" /><!-- lump of earth -->
-		<item id="2152" countmax="3" chance="33333" /><!-- platinum coin -->
-		<item id="11227" chance="8333" /><!-- shiny stone -->
+		<item id="11222" chance="47700" /><!-- lump of earth -->
+		<item id="2152" countmax="3" chance="40800" /><!-- platinum coin -->
+		<item id="11227" chance="9000" /><!-- shiny stone -->
 		<item id="7884" chance="1923" /><!-- terra mantle -->
-		<item id="13757" chance="552" /><!-- coal -->
+		<item id="13757" chance="590" /><!-- coal -->
+		<item id="8880" chance="200" /><!-- swamplair armor -->
 	</loot>
 </monster>
