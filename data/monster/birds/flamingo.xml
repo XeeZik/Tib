@@ -17,6 +17,6 @@
 	</flags>
 	<defenses armor="5" defense="5" />
 	<loot>
-		<item id="12640" chance="700" /><!-- downy feather -->
+		<item id="12640" chance="750" /><!-- downy feather -->
 	</loot>
 </monster>
