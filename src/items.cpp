@@ -265,6 +265,7 @@ FILELOADER_ERRORS Items::loadFromOtb(const std::string& file)
 		iType.useable = hasBitSet(FLAG_USEABLE, flags);
 		iType.pickupable = hasBitSet(FLAG_PICKUPABLE, flags);
 		iType.moveable = hasBitSet(FLAG_MOVEABLE, flags);
+		iType.wrapContainer = hasBitSet(FLAG_WRAPCONTAINER, flags);
 		iType.stackable = hasBitSet(FLAG_STACKABLE, flags);
 
 		iType.alwaysOnTop = hasBitSet(FLAG_ALWAYSONTOP, flags);
@@ -416,12 +417,12 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 			it.extraDefense = pugi::cast<int32_t>(valueAttribute.value());
 		} else if (tmpStrValue == "attack") {
 			it.attack = pugi::cast<int32_t>(valueAttribute.value());
+		} else if (tmpStrValue == "wrapableto" || tmpStrValue == "unwrapableto") {
+			it.wrapableTo = pugi::cast<int32_t>(valueAttribute.value());
 		} else if (tmpStrValue == "rotateto") {
 			it.rotateTo = pugi::cast<int32_t>(valueAttribute.value());
 		} else if (tmpStrValue == "moveable" || tmpStrValue == "movable") {
 			it.moveable = valueAttribute.as_bool();
-		} else if (tmpStrValue == "wrapto") {
-			it.wrapTo = pugi::cast<int32_t>(valueAttribute.value());
 		} else if (tmpStrValue == "blockprojectile") {
 			it.blockProjectile = valueAttribute.as_bool();
 		} else if (tmpStrValue == "allowpickupable" || tmpStrValue == "pickupable") {
