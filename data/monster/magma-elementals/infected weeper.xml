@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Infected Weeper" nameDescription="an infected weeper" race="fire" experience="4800" speed="250" manacost="0">
-	<health now="6800" max="6800" />
+<monster name="Infected Weeper" nameDescription="an infected weeper" race="fire" experience="1200" speed="250" manacost="0">
+	<health now="3000" max="3000" />
 	<look type="489" corpse="17251" />
 	<targetchange interval="4000" chance="10" />
 	<flags>
@@ -17,7 +17,7 @@
 		<flag runonhealth="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-200" />
+		<attack name="melee" interval="2000" min="0" max="-500" />
 		<attack name="soulfire" interval="2000" chance="100" radius="3" target="0">
 			<attribute key="areaEffect" value="redshimmer" />
 		</attack>
