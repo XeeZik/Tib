@@ -256,6 +256,8 @@ bool IOLoginData::loadPlayer(Player* player, DBResult_ptr result)
 		player->premiumDays = acc.premiumDays;
 	}
 
+	player->tibiaCoins = IOAccount::getCoinBalance(player->getAccount());
+
 	Group* group = g_game.groups.getGroup(result->getNumber<uint16_t>("group_id"));
 	if (!group) {
 		std::cout << "[Error - IOLoginData::loadPlayer] " << player->name << " has Group ID " << result->getNumber<uint16_t>("group_id") << " which doesn't exist" << std::endl;

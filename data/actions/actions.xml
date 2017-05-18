@@ -137,7 +137,8 @@
 	
     <!-- Custom Actions -->
 	<action itemid="19192" script="other/skeleton.lua"/>
-	<action itemid="16101" script="other/premiumscroll.lua" />
+	<action itemid="16101" script="other/tibiacoins.lua"/>
+	<action itemid="24774" script="other/tibiacoins.lua" />
 	<action itemid="22642" script="other/frazzlemaw.lua" />
 	<action itemid="24321" script="other/maxxen.lua" />
 	<action itemid="22643" script="other/leafgolem.lua" />
