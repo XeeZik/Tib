@@ -57,17 +57,17 @@
 		<voice sentence="Fcccccchhhhhh" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="130" chance="78000" />	<!-- gold coin -->
+		<item id="2148" countmax="130" chance="78600" />	<!-- gold coin -->
 		<item id="2229" chance="20180" />				<!-- skull -->
 		<item id="2799" chance="4920" />					<!-- stone herb -->
 		<item id="10585" chance="3750" />				<!-- mutated rat tail -->
 		<item id="2510" chance="3750" />					<!-- plate shield -->
 		<item id="2381" chance="3000" />					<!-- halberd -->
 		<item id="2796" chance="1390" />					<!-- green mushroom -->
-		<item id="2235" chance="950" />					<!-- mouldy cheese -->
+		<item id="2235" chance="940" />					<!-- mouldy cheese -->
 		<item id="7618" chance="550" />					<!-- health potion -->
-		<item id="2165" chance="550" />					<!-- stealth ring -->
-		<item id="8900" chance="300" />					<!-- spellbook of enlightenment -->
-		<item id="2528" chance="60" />					<!-- tower shield -->
+		<item id="2165" chance="520" />					<!-- stealth ring -->
+		<item id="8900" chance="290" />					<!-- spellbook of enlightenment -->
+		<item id="2528" chance="50" />					<!-- tower shield -->
 	</loot>
 </monster>

@@ -59,13 +59,13 @@
 		<item id="11225" chance="19940" />				<!-- mutated flesh -->
 		<item id="2226" chance="10050" />				<!-- fishbone -->
 		<item id="2696" chance="8000" />					<!-- cheese -->
-		<item id="2483" chance="8000" />					<!-- scale armor -->
-		<item id="3976" countmax="2" chance="7000" />	<!-- worm -->
+		<item id="2483" chance="7800" />					<!-- scale armor -->
+		<item id="3976" countmax="2" chance="7100" />	<!-- worm -->
 		<item id="2376" chance="5030" />					<!-- sword -->
 		<item id="2161" chance="4890" />					<!-- strange talisman -->
 		<item id="9808" chance="2000" />					<!-- rusty armor (common) -->
 		<item id="7910" chance="580" />					<!-- peanut -->
 		<item id="2801" chance="420" />					<!-- fern -->
-		<item id="2170" chance="80" />					<!-- silver amulet -->
+		<item id="2170" chance="100" />					<!-- silver amulet -->
 	</loot>
 </monster>
