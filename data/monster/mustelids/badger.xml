@@ -22,8 +22,8 @@
 	</attacks>
 	<defenses armor="5" defense="5" />
 	<loot>
-		<item id="8845" chance="40710" />	<!-- beetroot -->
+		<item id="8845" chance="40510" />	<!-- beetroot -->
 		<item id="7965" chance="10230" />	<!-- badger fur -->
-		<item id="11213" chance="5130" />	<!-- acorn -->
+		<item id="11213" chance="5000" />	<!-- acorn -->
 	</loot>
 </monster>
