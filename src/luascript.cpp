@@ -9299,7 +9299,7 @@ int LuaScriptInterface::luaPlayerAddTibiaCoins(lua_State* L)
 		return 1;
 	}
 
-	if (player->tibiaCoins != std::numeric_limits<uint16_t>::max()) {
+	if (player->tibiaCoins != std::numeric_limits<uint64_t>::max()) {
 		uint64_t coins = getNumber<uint64_t>(L, 2);
 		uint64_t addCoins = std::min<uint64_t>(0xFFFFFFFFFFFFFFFE - player->tibiaCoins, coins);
 		if (addCoins > 0) {
@@ -9320,7 +9320,7 @@ int LuaScriptInterface::luaPlayerRemoveTibiaCoins(lua_State* L)
 		return 1;
 	}
 
-	if (player->tibiaCoins != std::numeric_limits<uint16_t>::max()) {
+	if (player->tibiaCoins != std::numeric_limits<uint64_t>::max()) {
 		uint64_t coins = getNumber<uint64_t>(L, 2);
 		uint64_t removeCoins = std::min<uint64_t>(player->tibiaCoins, coins);
 		if (removeCoins > 0) {
