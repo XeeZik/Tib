@@ -2322,6 +2322,10 @@ void LuaScriptInterface::registerFunctions()
 	registerMethod("Player", "addPremiumDays", LuaScriptInterface::luaPlayerAddPremiumDays);
 	registerMethod("Player", "removePremiumDays", LuaScriptInterface::luaPlayerRemovePremiumDays);
 
+	registerMethod("Player", "getTibiaCoins", LuaScriptInterface::luaPlayerGetTibiaCoins);
+	registerMethod("Player", "addTibiaCoins", LuaScriptInterface::luaPlayerAddTibiaCoins);
+	registerMethod("Player", "removeTibiaCoins", LuaScriptInterface::luaPlayerRemoveTibiaCoins);
+
 	registerMethod("Player", "hasBlessing", LuaScriptInterface::luaPlayerHasBlessing);
 	registerMethod("Player", "addBlessing", LuaScriptInterface::luaPlayerAddBlessing);
 	registerMethod("Player", "removeBlessing", LuaScriptInterface::luaPlayerRemoveBlessing);
@@ -9267,6 +9271,61 @@ int LuaScriptInterface::luaPlayerRemovePremiumDays(lua_State* L)
 		if (removeDays > 0) {
 			player->setPremiumDays(player->premiumDays - removeDays);
 			IOLoginData::removePremiumDays(player->getAccount(), removeDays);
+		}
+	}
+	pushBoolean(L, true);
+	return 1;
+}
+
+int LuaScriptInterface::luaPlayerGetTibiaCoins(lua_State* L)
+{
+	// player:getTibiaCoins()
+	Player* player = getUserdata<Player>(L, 1);
+	if (player) {
+		lua_pushnumber(L, player->tibiaCoins);
+	}
+	else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int LuaScriptInterface::luaPlayerAddTibiaCoins(lua_State* L)
+{
+	// player:addTibiaCoins(coins)
+	Player* player = getUserdata<Player>(L, 1);
+	if (!player) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	if (player->tibiaCoins != std::numeric_limits<uint64_t>::max()) {
+		uint64_t coins = getNumber<uint64_t>(L, 2);
+		uint64_t addCoins = std::min<uint64_t>(0xFFFFFFFFFFFFFFFE - player->tibiaCoins, coins);
+		if (addCoins > 0) {
+			player->setTibiaCoins(player->tibiaCoins + addCoins);
+			IOAccount::addCoins(player->getAccount(), addCoins);
+		}
+	}
+	pushBoolean(L, true);
+	return 1;
+}
+
+int LuaScriptInterface::luaPlayerRemoveTibiaCoins(lua_State* L)
+{
+	// player:removeTibiaCoins(coins)
+	Player* player = getUserdata<Player>(L, 1);
+	if (!player) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	if (player->tibiaCoins != std::numeric_limits<uint64_t>::max()) {
+		uint64_t coins = getNumber<uint64_t>(L, 2);
+		uint64_t removeCoins = std::min<uint64_t>(player->tibiaCoins, coins);
+		if (removeCoins > 0) {
+			player->setTibiaCoins(player->tibiaCoins - removeCoins);
+			IOAccount::removeCoins(player->getAccount(), removeCoins);
 		}
 	}
 	pushBoolean(L, true);
