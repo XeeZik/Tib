@@ -43,20 +43,20 @@
 	<loot>
 		<item id="2148" countmax="246" chance="100000" />	<!-- gold coin -->
 		<item id="2239" chance="50000" />					<!-- burnt scroll -->
-		<item id="2260" countmax="2" chance="30000" />		<!-- blank rune -->
-		<item id="6500" chance="5000" />					<!-- demonic essence -->
-		<item id="5944" chance="2000" />					<!-- soul orb -->
-		<item id="10553" chance="9500" />					<!-- fiery heart -->
-		<item id="2187" chance="900" />						<!-- wand of inferno -->
+		<item id="2260" countmax="2" chance="30200" />		<!-- blank rune -->
+		<item id="6500" chance="15000" />					<!-- demonic essence -->
+		<item id="5944" chance="11900" />					<!-- soul orb -->
+		<item id="10553" chance="10000" />					<!-- fiery heart -->
+		<item id="2187" chance="9300" />						<!-- wand of inferno -->
 		<item id="10581" chance="5000" />					<!-- piece of hellfire armor -->
-		<item id="2392" chance="900" />						<!-- fire sword -->
-		<item id="2127" chance="2200" />						<!-- emerald bangle -->
-		<item id="2145" chance="1400" />						<!-- small diamond -->
+		<item id="2392" chance="4000" />						<!-- fire sword -->
+		<item id="2127" chance="2000" />						<!-- emerald bangle -->
+		<item id="2145" chance="1340" />						<!-- small diamond -->
 		<item id="2152" chance="1000" />						<!-- platinum coin -->
-		<item id="7894" chance="280" />						<!-- magma legs -->
-		<item id="13757" chance="630" />						<!-- coal -->
-		<item id="2432" chance="360" />						<!-- fire axe -->
-		<item id="7899" chance="260" />						<!-- magma coat -->
-		<item id="2136" chance="230" />						<!-- demonbone amulet -->
+		<item id="7894" chance="830" />						<!-- magma legs -->
+		<item id="13757" chance="550" />						<!-- coal -->
+		<item id="2432" chance="410" />						<!-- fire axe -->
+		<item id="7899" chance="490" />						<!-- magma coat -->
+		<item id="2136" chance="240" />						<!-- demonbone amulet -->
 	</loot>
 </monster>
