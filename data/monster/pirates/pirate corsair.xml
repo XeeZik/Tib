@@ -40,21 +40,21 @@
 		<voice sentence="Plundeeeeer!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="83" chance="55000" />	<!-- gold coin -->
-		<item id="11219" chance="11020" />				<!-- compass -->
-		<item id="2385" chance="10000" />				<!-- sabre -->
-		<item id="2399" countmax="12" chance="8500" />	<!-- throwing star -->
-		<item id="2489" chance="1550" />					<!-- dark armor -->
+		<item id="2148" countmax="88" chance="55200" />	<!-- gold coin -->
+		<item id="11219" chance="10420" />				<!-- compass -->
+		<item id="2385" chance="9400" />				<!-- sabre -->
+		<item id="2399" countmax="12" chance="8300" />	<!-- throwing star -->
+		<item id="2489" chance="1700" />					<!-- dark armor -->
 		<item id="6096" chance="1080" />					<!-- pirate hat -->
 		<item id="2521" chance="1050" />					<!-- dark shield -->
-		<item id="5926" chance="950" />					<!-- pirate backpack -->
-		<item id="7588" chance="820" />					<!-- strong health potion -->
-		<item id="6126" chance="590" />					<!-- peg leg -->
-		<item id="6097" chance="570" />					<!-- hook -->
-		<item id="6098" chance="500" />					<!-- eye patch -->
-		<item id="5462" chance="430" />					<!-- pirate boots -->
-		<item id="5553" chance="170" />					<!-- rum flask -->
-		<item id="2114" chance="150" />					<!-- piggy bank -->
-		<item id="5813" chance="130" />					<!-- skull candle -->
+		<item id="5926" chance="900" />					<!-- pirate backpack -->
+		<item id="7588" chance="800" />					<!-- strong health potion -->
+		<item id="6126" chance="560" />					<!-- peg leg -->
+		<item id="6097" chance="540" />					<!-- hook -->
+		<item id="6098" chance="520" />					<!-- eye patch -->
+		<item id="5462" chance="240" />					<!-- pirate boots -->
+		<item id="5553" chance="160" />					<!-- rum flask -->
+		<item id="2114" chance="120" />					<!-- piggy bank -->
+		<item id="5813" chance="100" />					<!-- skull candle -->
 	</loot>
 </monster>

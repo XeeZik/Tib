@@ -211,7 +211,7 @@ class ItemType
 		int32_t rotateTo = 0;
 		int32_t runeMagLevel = 0;
 		int32_t runeLevel = 0;
-		int32_t wrapTo = 0;
+		int32_t wrapableTo = 0;
 
 		CombatType_t combatType = COMBAT_NONE;
 
@@ -256,6 +256,8 @@ class ItemType
 		bool replaceable = true;
 		bool pickupable = false;
 		bool rotatable = false;
+		bool wrapable = false;
+		bool wrapContainer = false;
 		bool useable = false;
 		bool moveable = false;
 		bool alwaysOnTop = false;

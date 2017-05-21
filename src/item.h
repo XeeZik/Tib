@@ -630,6 +630,9 @@ class Item : virtual public Thing
 		bool isMagicField() const {
 			return items[id].isMagicField();
 		}
+		bool isWrapContainer() const {
+			return items[id].wrapContainer;
+		}
 		bool isMoveable() const {
 			return items[id].moveable;
 		}
@@ -646,8 +649,9 @@ class Item : virtual public Thing
 			const ItemType& it = items[id];
 			return it.rotatable && it.rotateTo;
 		}
-		bool isWrappable() const {
-			return items[id].wrapTo != 0;
+		bool isWrapable() const {
+			const ItemType& it = items[id];
+			return it.wrapable && it.wrapableTo;
 		}
 		bool hasWalkStack() const {
 			return items[id].walkStack;

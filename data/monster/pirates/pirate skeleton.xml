@@ -28,13 +28,13 @@
 		<immunity death="1" />
 	</immunities>
 	<loot>
-		<item id="2148" countmax="25" chance="48000" />	<!-- gold coin -->
-		<item id="2231" chance="5220" />					<!-- big bone -->
-		<item id="10559" chance="4500" />				<!-- spooky blue eye -->
+		<item id="2148" countmax="25" chance="48400" />	<!-- gold coin -->
+		<item id="2231" chance="5420" />					<!-- big bone -->
+		<item id="10559" chance="5000" />				<!-- spooky blue eye -->
 		<item id="2229" chance="4460" />					<!-- skull -->
-		<item id="2230" chance="4380" />					<!-- bone -->
+		<item id="2230" chance="4480" />					<!-- bone -->
 		<item id="2449" chance="1030" />					<!-- bone club -->
 		<item id="2406" chance="1030" />					<!-- short sword -->
-		<item id="2376" chance="580" />					<!-- sword -->
+		<item id="2376" chance="570" />					<!-- sword -->
 	</loot>
 </monster>

@@ -49,11 +49,11 @@
 		<voice sentence="You will not get my treasure!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="67" chance="47000" />	<!-- gold coin -->
-		<item id="10601" chance="3700" />				<!-- tattered piece of robe -->
+		<item id="2148" countmax="67" chance="46100" />	<!-- gold coin -->
+		<item id="10601" chance="3900" />				<!-- tattered piece of robe -->
 		<item id="1951" chance="1070" />					<!-- parchment -->
-		<item id="2165" chance="640" />					<!-- stealth ring -->
-		<item id="2655" chance="110" />					<!-- red robe -->
-		<item id="2383" chance="110" />					<!-- spike sword -->
+		<item id="2165" chance="580" />					<!-- stealth ring -->
+		<item id="2655" chance="100" />					<!-- red robe -->
+		<item id="2383" chance="100" />					<!-- spike sword -->
 	</loot>
 </monster>

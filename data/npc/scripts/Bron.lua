@@ -129,8 +129,8 @@ local function creatureSayCallback(cid, type, msg)
 		elseif player:getStorageValue(Storage.OutfitQuest.BarbarianAddon) == 10 then
 			npcHandler:say("I have kept this traditional barbarian wig safe for many years now. It is now yours! I hope you will wear it proudly, friend.", cid)
 			player:setStorageValue(Storage.OutfitQuest.BarbarianAddon, 11)
-			player:addOutfitAddon(147, 1)
-			player:addOutfitAddon(143, 1)
+			player:addOutfitAddon(147, 2)
+			player:addOutfitAddon(143, 2)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			npcHandler.topic[cid] = 0
 		end

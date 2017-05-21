@@ -19,13 +19,13 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="40" attack="70" />
-		<attack name="earth" interval="2000" chance="20" range="7" target="1" min="0" max="-130">
+		<attack name="earth" interval="2000" chance="20" range="7" target="1" min="0" max="-175">
 			<attribute key="shootEffect" value="earth" />
 		</attack>
-		<attack name="ice" interval="1000" chance="10" range="6" target="1" min="0" max="-220">
+		<attack name="ice" interval="1000" chance="10" range="6" target="1" min="180" max="-235">
 			<attribute key="shootEffect" value="snowball" />
 		</attack>
-		<attack name="ice" interval="2000" chance="18" range="4" target="1" min="0" max="-103">
+		<attack name="ice" interval="2000" chance="18" range="4" target="1" min="80" max="-120">
 			<attribute key="shootEffect" value="smallice" />
 		</attack>
 	</attacks>
@@ -46,9 +46,9 @@
 		<voice sentence="Splipsh Splash" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="70" chance="22500" /><!-- gold coin -->
-		<item id="2148" countmax="60" chance="22500" /><!-- gold coin -->
-		<item id="7839" chance="2575" countmax="3" /><!-- shiver arrow -->
-		<item id="8302" chance="6000" /><!-- iced soil -->
+		<item id="2148" countmax="70" chance="78000" /><!-- gold coin -->
+		<item id="2148" countmax="60" chance="78000" /><!-- gold coin -->
+		<item id="7839" chance="4775" countmax="3" /><!-- shiver arrow -->
+		<item id="8302" chance="4900" /><!-- iced soil -->
 	</loot>
 </monster>

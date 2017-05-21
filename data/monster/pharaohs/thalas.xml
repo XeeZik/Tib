@@ -56,14 +56,15 @@
 	</voices>
 	<loot>
 		<item id="2351" chance="100000" />				<!-- cobrafang dagger -->
-		<item id="2148" countmax="238" chance="91000" />	<!-- gold coin -->
+		<item id="2148" countmax="236" chance="91030" />	<!-- gold coin -->
 		<item id="2411" chance="20000" />				<!-- poison dagger -->
-		<item id="2149" countmax="3" chance="9000" />	<!-- small emerald -->
-		<item id="7591" chance="8000" />					<!-- great health potion -->
-		<item id="2169" chance="4320" />					<!-- time ring -->
-		<item id="2409" chance="3600" />					<!-- serpent sword -->
-		<item id="2451" chance="1200" />					<!-- djinn blade -->
-		<item id="2155" chance="240" />					<!-- green gem -->
-		<item id="11207" chance="100" />					<!-- mini mummy -->
+		<item id="2149" countmax="3" chance="8700" />	<!-- small emerald -->
+		<item id="7591" chance="8300" />					<!-- great health potion -->
+		<item id="2169" chance="5420" />					<!-- time ring -->
+		<item id="2165" chance="4420" />					<!-- stealh ring ring -->
+		<item id="2409" chance="2700" />					<!-- serpent sword -->
+		<item id="2451" chance="920" />					<!-- djinn blade -->
+		<item id="2155" chance="920" />					<!-- green gem -->
+		<item id="11207" chance="110" />					<!-- mini mummy -->
 	</loot>
 </monster>
