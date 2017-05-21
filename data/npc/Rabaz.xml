@@ -64,6 +64,11 @@ Hailstorm Rod,2183,15000;
 Magic Wall Rune,2293,116;
 Paralyze Rune,2278,700;
 Wand of Inferno,2187,15000" />
-		<parameter key="shop_sellable" value="			Spellwand,7735,299;			Vial,2006,5		" />
+		<parameter key="shop_sellable" value="			
+Spellwand,7735,299;	
+empty potion flask,7634,5;
+empty potion flask,7635,5;
+empty potion flask,7636,5;
+Vial,2006,5		" />
 	</parameters>
 </npc>
