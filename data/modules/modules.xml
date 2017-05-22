@@ -11,4 +11,11 @@
 
 	<!-- EquipObject By Hotkey -->
 	<module type="recvbyte" byte="119" delay="1000" script="equipobject/equipobject.lua"/>
-</modules>
+
+    <!-- Prey System -->
+    <module type="recvbyte" byte="235" script="prey system/preysystem.lua" />
+    <module type="recvbyte" byte="237" script="prey system/preysystem.lua" />
+
+    <!-- Imbuiment -->
+    <module type="recvbyte" byte="213" script="imbuement/imbuement.lua" />
+	</modules>

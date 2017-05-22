@@ -81,6 +81,7 @@ function doCreatureSayWithRadius(cid, text, type, radiusx, radiusy, position)
 	end
 end
 
+
 function getBlessingsCost(level)
 	if level <= 30 then
 		return 2000
@@ -157,7 +158,19 @@ end
 
 -- Stamina
 if nextUseStaminaTime == nil then
-	nextUseStaminaTime = {}
+    nextUseStaminaTime = {}
+end
+
+if nextUseStaminaPrey == nil then
+    nextUseStaminaPrey = {}
+end
+
+if nextUseXpStamina == nil then
+    nextUseXpStamina = {}
+end
+
+if lastItemImbuing == nil then
+    lastItemImbuing = {}
 end
 
 --Boss entry

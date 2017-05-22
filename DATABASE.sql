@@ -1463,6 +1463,13 @@ CREATE TABLE `players` (
   `skill_lifeleech_amount` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
   `skill_manaleech_chance` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
   `skill_manaleech_amount` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
+  `prey_stamina_1` int(11) DEFAULT NULL,
+  `prey_stamina_2` int(11) DEFAULT NULL,
+  `prey_stamina_3` int(11) DEFAULT NULL,
+  `prey_column` smallint(6) NOT NULL DEFAULT '1',
+  `bonus_reroll` int(11) DEFAULT NULL,
+  `xpboost_stamina` smallint(5) DEFAULT NULL,
+  `xpboost_value` tinyint(4) DEFAULT NULL,
   `marriage_status` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
   `former` varchar(255) NOT NULL DEFAULT '-'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -1655,6 +1662,38 @@ CREATE TABLE `player_spells` (
   `player_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `player_prey`
+-- 
+
+CREATE TABLE `player_prey` (
+  `player_id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `mindex` smallint(6) NOT NULL,
+  `mcolumn` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `player_preytimes`
+-- 
+
+CREATE TABLE `player_preytimes` (
+  `player_id` int(11) NOT NULL,
+  `bonus_type1` int(11) NOT NULL,
+  `bonus_value1` int(11) NOT NULL,
+  `bonus_name1` varchar(50) NOT NULL,
+  `bonus_type2` int(11) NOT NULL,
+  `bonus_value2` int(11) NOT NULL,
+  `bonus_name2` varchar(50) NOT NULL,
+  `bonus_type3` int(11) NOT NULL,
+  `bonus_value3` int(11) NOT NULL,
+  `bonus_name3` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1; 
 
 -- --------------------------------------------------------
 

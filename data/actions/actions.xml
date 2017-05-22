@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
+
+	<action fromid="27728" toid="27729" script="other/imbuement.lua" /> 
+
 	<!--store-->
 	<action itemid="26347" script="other/fishtank.lua"/>
 	<action fromid="26094" toid="26097" script="other/transform.lua"/>
