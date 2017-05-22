@@ -380,7 +380,7 @@
 	<house name="Shady Rocks 3" houseid="752" entryx="32277" entryy="31121" entryz="7" rent="4115" townid="12" size="77" />
 	<house name="Shady Rocks 2" houseid="753" entryx="32259" entryy="31119" entryz="7" rent="2010" townid="12" size="27" />
 	<house name="Shady Rocks 1" houseid="754" entryx="32259" entryy="31110" entryz="7" rent="3630" townid="12" size="63" />
-	<house name="Crystal Glance" houseid="755" entryx="32246" entryy="31118" entryz="7" rent="19625" townid="12" size="234" />
+	<house name="Crystal Glance" houseid="755" entryx="32246" entryy="31118" entryz="7" rent="19625" townid="12" size="160" />
 	<house name="Arena Walk 3" houseid="756" entryx="32235" entryy="31118" entryz="7" rent="3550" townid="12" size="59" />
 	<house name="Arena Walk 2" houseid="757" entryx="32239" entryy="31126" entryz="7" rent="1400" townid="12" size="20" />
 	<house name="Arena Walk 1" houseid="758" entryx="32238" entryy="31134" entryz="7" rent="3250" townid="12" size="51" />
@@ -938,7 +938,7 @@
 	<house name="Cormaya 11" houseid="2370" entryx="33305" entryy="32005" entryz="7" rent="2035" townid="11" size="38" />
 	<house name="Demon Tower" houseid="2371" entryx="32601" entryy="32116" entryz="7" rent="3340" townid="2" size="50" />
 	<house name="Nautic Observer" houseid="2372" entryx="32483" entryy="31825" entryz="7" rent="6540" townid="4" size="144" />
-	<house name="Riverspring" houseid="2373" entryx="32761" entryy="32128" entryz="7" rent="19450" townid="3" size="280" />
+	<house name="Riverspring" houseid="2373" entryx="32761" entryy="32128" entryz="7" rent="19450" townid="3" size="257" />
 	<house name="House of Recreation" houseid="2374" entryx="32280" entryy="31823" entryz="7" rent="22540" townid="4" size="339" />
 	<house name="Valorous Venore" houseid="2375" entryx="32979" entryy="32096" entryz="6" rent="14435" townid="1" size="254" />
 	<house name="Ab'Dendriel Clanhall" houseid="2376" entryx="32714" entryy="31643" entryz="7" rent="14850" townid="5" size="262" />
