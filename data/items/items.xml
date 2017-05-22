@@ -31576,6 +31576,9 @@
 		</attribute>
 	</item>	
 	
+
+	<!-- Armas Yana -->
+
 	<item id="25959" article="a" name="blade of carving">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="28" />
@@ -34456,13 +34459,7 @@
 		<attribute key="duration" value="54000" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<!-- 10.94 FIM -->
-	<!-- VENDA 10.94 NO SITE -->	
-
-	
-	
-
-	<!-- VENDA 10.94 NO SITE FIM -->
+	<!-- Armas Yana FIM -->
 	
 	<item id="22398" article="a" name="crude umbral blade">
 		<attribute key="weight" value="6300" />
