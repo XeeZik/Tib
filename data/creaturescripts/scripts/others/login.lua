@@ -90,6 +90,23 @@ function onLogin(player)
  
     -- Stamina
     nextUseStaminaTime[playerId] = 1
+
+    --Prey Stamina
+    nextUseStaminaPrey[playerId+1] = {Time = 1}
+    nextUseStaminaPrey[playerId+2] = {Time = 1}
+    nextUseStaminaPrey[playerId+3] = {Time = 1}
+
+    -- Prey Data
+    if (player:getVocation():getId() ~= 0) then
+        local columnUnlocked = getUnlockedColumn(player)
+        if (not columnUnlocked) then
+            columnUnlocked = 0
+        end
+
+        for i = 0, columnUnlocked do
+            sendPreyData(player, i)
+        end
+    end
  
     -- STAMINA DEVIDO A QUEDAS START
    
