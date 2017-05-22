@@ -678,7 +678,7 @@ MonsterType* Monsters::loadMonster(const std::string& file, const std::string& m
 
 	if (reloading) {
 		auto it = monsters.find(asLowerCaseString(monsterName));
-		if (it == monsters.end()) {
+		if (it != monsters.end()) {
 			mType = &it->second;
 			mType->info = {};
 		}
@@ -1268,6 +1268,21 @@ void Monsters::loadLootContainer(const pugi::xml_node& node, LootBlock& lBlock)
 			lBlock.childLoot.emplace_back(std::move(lootBlock));
 		}
 	}
+}
+
+// Prey Monsters
+std::vector<std::string> Monsters::getPreyMonsters()
+{
+	std::vector<std::string> monsterList;
+	for (const auto& m : monsters) {
+		if (m.second.info.experience > 0 &&
+			m.second.info.isRewardBoss == false &&
+			m.second.info.staticAttackChance > 0) {
+			monsterList.push_back(m.first);
+		}
+	}
+
+	return monsterList;
 }
 
 MonsterType* Monsters::getMonsterType(const std::string& name)

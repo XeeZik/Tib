@@ -138,6 +138,9 @@ void ProtocolGame::login(const std::string& name, uint32_t accountId, OperatingS
 			return;
 		}
 
+		// Prey System
+		IOLoginData::loadPlayerPreyById(player, player->getGUID());
+
 		player->setOperatingSystem(operatingSystem);
 
 		if (!g_game.placeCreature(player, player->getLoginPosition())) {

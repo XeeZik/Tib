@@ -430,6 +430,7 @@ class LuaScriptInterface
 		static int luaGetWorldTime(lua_State* L);
 		static int luaGetWorldLight(lua_State* L);
 		static int luaGetWorldUpTime(lua_State* L);
+		static int luaGetPreyMonsters(lua_State* L);
 
 		//type validation
 		static int luaIsDepot(lua_State* L);
@@ -902,6 +903,16 @@ class LuaScriptInterface
 
 		static int luaPlayerGetStamina(lua_State* L);
 		static int luaPlayerSetStamina(lua_State* L);
+
+		static int luaPlayerGetPreyStamina(lua_State* L);
+		static int luaPlayerGetPreyType(lua_State* L);
+		static int luaPlayerGetPreyValue(lua_State* L);
+		static int luaPlayerGetPreyName(lua_State* L);
+		
+		static int luaPlayerSetPreyStamina(lua_State* L);
+		static int luaPlayerSetPreyType(lua_State* L);
+		static int luaPlayerSetPreyValue(lua_State* L);
+		static int luaPlayerSetPreyName(lua_State* L);
 
 		static int luaPlayerGetSoul(lua_State* L);
 		static int luaPlayerAddSoul(lua_State* L);

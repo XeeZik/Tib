@@ -420,6 +420,37 @@ local function useStamina(player)
 	player:setStamina(staminaMinutes)
 end
 
+-- useStaminaPrey
+local function useStaminaPrey(player, name)
+	for i = 1, 3 do
+		if (player:isActiveByName(i-1, name)) then
+			local staminaMinutes = player:getPreyStamina(i-1)/60
+			if (staminaMinutes > 0) then
+				local playerId = player:getId()+i
+				local currentTime = os.time()
+				local timePassed = currentTime - nextUseStaminaPrey[playerId].Time
+				if timePassed > 0 then
+					if timePassed > 60 then
+						if staminaMinutes > 2 then
+							staminaMinutes = staminaMinutes - 2
+						else
+							staminaMinutes = 0
+						end
+
+						nextUseStaminaPrey[playerId].Time = currentTime + 120
+					else
+						staminaMinutes = staminaMinutes - 1
+						nextUseStaminaPrey[playerId].Time = currentTime + 60
+					end
+				end
+
+				player:setPreyStamina(i-1, staminaMinutes*60)
+				player:sendPreyTimeLeft(i-1, staminaMinutes*60)
+			end
+		end
+	end
+end
+
 -- exp card
     local BONUS_EXP_STORAGE = 61398
     local BONUS_EXP_MULT = 1.3
@@ -453,6 +484,17 @@ function Player:onGainExperience(source, exp, rawExp)
  
     -- Apply experience stage multiplier
     exp = exp * Game.getExperienceStage(self:getLevel())
+
+    -- Prey System -> BOOST_EXP
+    for i = 1, 3 do
+		if (self:isActive(i-1)) then
+			local bonusInfo = self:getBonusInfo(i-1)
+			if (bonusInfo.Type == 2 and source:getName() == bonusInfo.Name) then
+				exp = exp + math.floor(exp * (bonusInfo.Value/100))
+				break
+			end
+		end
+	end
  
     -- Stamina modifier
     if configManager.getBoolean(configKeys.STAMINA_SYSTEM) then
@@ -465,13 +507,14 @@ function Player:onGainExperience(source, exp, rawExp)
             exp = exp * 0.5
         end
     end
+
+    -- Prey Stamina Modifier
+	useStaminaPrey(self, source:getName())
  
-   
-   -- exp card
- if self:getStorageValue(BONUS_EXP_STORAGE) - os.time() > 0 then
-  exp = exp * BONUS_EXP_MULT
- end
-    -- exp card
+   	-- Exp Card
+ 	if self:getStorageValue(BONUS_EXP_STORAGE) - os.time() > 0 then
+  		exp = exp * BONUS_EXP_MULT
+ 	end
  
     return exp
 end
