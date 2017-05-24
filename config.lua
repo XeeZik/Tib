@@ -83,7 +83,7 @@ mysqlSock = ""
 passwordType = "sha1"
 -- Misc.
 allowChangeOutfit = true
-freePremium = true
+freePremium = false
 kickIdlePlayerAfterMinutes = 15
 maxMessageBuffer = 4
 emoteSpells = false
@@ -95,10 +95,10 @@ classicAttackSpeed = false
 
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml
-rateExp = 5
-rateSkill = 3
-rateLoot = 2
-rateMagic = 3
+rateExp = 1
+rateSkill = 1
+rateLoot = 1
+rateMagic = 1
 rateSpawn = 1
 
 -- Monster rates
