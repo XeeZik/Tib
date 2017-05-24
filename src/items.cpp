@@ -376,7 +376,7 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 
 		// Put here because have many conditions (C1601 - compiler limit: blocks nested too deeply)
 		if (tmpStrValue == "imbuingslots") {
-			it.imbuingSlots = pugi::cast<uint8_t>(valueAttribute.value());
+			it.imbuingSlots = pugi::cast<int32_t>(valueAttribute.value());
 		}
 
 		if (tmpStrValue == "type") {

@@ -603,7 +603,7 @@ class Item : virtual public Thing
 			}
 			return items[id].extraDefense;
 		}
-		uint8_t getImbuingSlots() const {
+		int32_t getImbuingSlots() const {
 			if (hasAttribute(ITEM_ATTRIBUTE_IMBUINGSLOTS)) {
 				return getIntAttr(ITEM_ATTRIBUTE_IMBUINGSLOTS);
 			}
