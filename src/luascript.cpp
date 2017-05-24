@@ -6563,9 +6563,13 @@ int LuaScriptInterface::luaContainerAddItem(lua_State* L)
 		}
 	}
 
-	uint32_t subType = getNumber<uint32_t>(L, 3, 1);
-
-	Item* item = Item::CreateItem(itemId, std::min<uint32_t>(subType, 100));
+	uint32_t count = getNumber<uint32_t>(L, 3, 1);
+	const ItemType& it = Item::items[itemId];
+	if (it.stackable) {
+		count = std::min<uint16_t>(count, 100);
+	}
+	
+	Item* item = Item::CreateItem(itemId, count);
 	if (!item) {
 		lua_pushnil(L);
 		return 1;
@@ -9437,9 +9441,9 @@ int LuaScriptInterface::luaPlayerAddTibiaCoins(lua_State* L)
 		return 1;
 	}
 
-	if (player->tibiaCoins != std::numeric_limits<uint64_t>::max()) {
-		uint64_t coins = getNumber<uint64_t>(L, 2);
-		uint64_t addCoins = std::min<uint64_t>(0xFFFFFFFFFFFFFFFE - player->tibiaCoins, coins);
+	if (player->tibiaCoins != std::numeric_limits<int32_t>::max()) {
+		int32_t coins = getNumber<int32_t>(L, 2);
+		int32_t addCoins = std::min<int32_t>(std::numeric_limits<int32_t>::max() - player->tibiaCoins, coins);
 		if (addCoins > 0) {
 			player->setTibiaCoins(player->tibiaCoins + addCoins);
 			IOAccount::addCoins(player->getAccount(), addCoins);
@@ -9458,9 +9462,9 @@ int LuaScriptInterface::luaPlayerRemoveTibiaCoins(lua_State* L)
 		return 1;
 	}
 
-	if (player->tibiaCoins != std::numeric_limits<uint64_t>::max()) {
-		uint64_t coins = getNumber<uint64_t>(L, 2);
-		uint64_t removeCoins = std::min<uint64_t>(player->tibiaCoins, coins);
+	if (player->tibiaCoins != std::numeric_limits<int32_t>::max()) {
+		int32_t coins = getNumber<int32_t>(L, 2);
+		int32_t removeCoins = std::min<int32_t>(player->tibiaCoins, coins);
 		if (removeCoins > 0) {
 			player->setTibiaCoins(player->tibiaCoins - removeCoins);
 			IOAccount::removeCoins(player->getAccount(), removeCoins);

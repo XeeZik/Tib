@@ -435,7 +435,7 @@ class Player final : public Creature, public Cylinder
 		bool isPremium() const;
 		void setPremiumDays(int32_t v);
 
-		void setTibiaCoins(uint64_t v);
+		void setTibiaCoins(int32_t v);
 
 		uint16_t getHelpers() const;
 
@@ -1432,7 +1432,7 @@ class Player final : public Creature, public Cylinder
 		int32_t saleCallback = -1;
 		int32_t MessageBufferCount = 0;
 		int32_t premiumDays = 0;
-		uint64_t tibiaCoins = 0;
+		int32_t tibiaCoins = 0;
 		int32_t bloodHitCount = 0;
 		int32_t shieldBlockCount = 0;
 		int32_t offlineTrainingSkill = -1;
