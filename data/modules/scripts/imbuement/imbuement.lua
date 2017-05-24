@@ -1,8 +1,13 @@
- --[[
+--[[
     1~3 => Element Type
     4~6 => Total Time (segundos - 20 h)
     7~9 => Time Passed (seconds)
 ]]--
+ImbuingSystem = {
+    Developer = "Charles (Cjaker)",
+    Version = "1.0",
+    LastUpdate = "24/05/2017 - 03:50 (AM)"
+}
 
 local Imbuements = {
     {
@@ -90,15 +95,16 @@ local ImbuementElements = {
 function onRecvbyte(player, msg, byte)
     if (byte == 0xD5) then
         -- Apply Imbuement
-        --player:sendCancelMessage("Sorry, not possible.")
-        --return false
         player:applyImbuement(msg)
+    elseif (byte == 0xD6) then
+        -- Clear Imbuement
+        player:clearImbuement(msg)
     end
 end
 
 local function tableContains(table, value)
     for i = 1, #table do
-        if (table == value) then
+        if (table[i] == value) then
             return true
         end
     end
@@ -138,8 +144,8 @@ end
 local function getImbuementEquip(equip)
     local tableReturn = {}
     for i = 1, #Imbuements do
-        if (tableContains(Imbuements.Weapons, equip)) then
-            tableReturn[#tableReturn+1] = Imbuements
+        if (tableContains(Imbuements[i].Weapons, equip)) then
+            tableReturn[#tableReturn+1] = Imbuements[i]
         end
     end
 
@@ -149,10 +155,10 @@ end
 local function getActiveImbuement(item, slot)
     for i = 1, #Imbuements do
         for j = 1, 3 do
-            local level = Imbuements.Levels[j]
+            local level = Imbuements[i].Levels[j]
             local enchant = item:getSpecialAttribute(slot)
-            if (enchant:find(level) and enchant:find(Imbuements.Name)) then
-                return Imbuements, j
+            if (enchant:find(level) and enchant:find(Imbuements[i].Name)) then
+                return Imbuements[i], j
             end
         end
     end
@@ -168,7 +174,7 @@ local function getImbuementByIndex(index, id)
         for k = 1, 3 do
             tmpIndex = tmpIndex + 1
             if (index == tmpIndex) then
-                return myImbuements, k
+                return myImbuements[i], k
             end
         end
     end
@@ -197,30 +203,85 @@ end
 
 function Player.applyImbuement(self, msg)
     if (not haveImbuingShrine(self)) then
-        self:sendCancelMessage("Sorry, not possible.")
+        sendImbuementError(self, "An error ocurred, please reopen imbuement window.")
         return false
     end
 
     local item = lastItemImbuing[self:getGuid()]
     if (item == nil) then
-        self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Cannot find item, please send this message to a Administrator.")
+        sendImbuementError(self, "Cannot find item, please contact an Administrator.")
         return false
     end
 
     local slot, choiceId, useProtection = msg:getByte(), msg:getU32(), msg:getByte()
     local myImbuement, imbuingLevel = getImbuementByIndex(choiceId, item:getId())
     if (not myImbuement) then
-        self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Cannot find imbuement data, please send this message to a Administrator.")
+        sendImbuementError(self, "Cannot find imbuement data, please contact an Administrator.")
+        return false
+    end
+
+    local imbuingPrice = ImbuingInfo[imbuingLevel].Price
+    if (useProtection == 1) then
+        imbuingPrice = imbuingPrice + ImbuingInfo[imbuingLevel].Protection
+    end
+
+    if (not self:removeMoneyNpc(imbuingPrice)) then
+        sendImbuementError(self, "You don't have enough money " ..imbuingPrice.. " gps.")
         return false
     end
 
     slot = slot + 1
+
+    for j = 1, imbuingLevel do
+        local itemID, itemName, itemCount = myImbuement.Items[j][1], ItemType(myImbuement.Items[j][1]):getName(), myImbuement.Items[j][2]
+        if (self:getItemCount(itemID) < itemCount) then
+            sendImbuementError(self, "You don't have all necessary items.")
+            return false
+        end
+
+        self:removeItem(itemID, itemCount)
+    end
+
     if (item:isActiveImbuement(slot+3)) then
-        self:sendCancelMessage("Sorry, not possible.")
+        sendImbuementError(self, "An error ocurred, please reopen imbuement window.")
         return false
     end
     
-    item:setSpecialAttribute(slot, myImbuement.Levels[imbuingLevel].. " " ..myImbuement.Name, slot+3, 72000, slot+6, 0)
+    item:setSpecialAttribute(slot, myImbuement.Levels[imbuingLevel]..myImbuement.Name, slot+3, 72000, slot+6, 0)
+    self:openImbuementWindow(item)
+end
+
+function Player.clearImbuement(self, msg)
+    if (not haveImbuingShrine(self)) then
+        sendImbuementError(self, "Sorry, not possible.")
+        return false
+    end
+
+    local item = lastItemImbuing[self:getGuid()]
+    if (item == nil) then
+        sendImbuementError(self, "Cannot find item, please send this message to a Administrator.")
+        return false
+    end
+
+    local weaponSlot = msg:getByte()
+    if (not weaponSlot) then
+        sendImbuementError(self, "Sorry, not possible.")
+        return false
+    end
+
+    weaponSlot = weaponSlot + 1
+
+    if (not item:isActiveImbuement(weaponSlot + 3)) then
+        sendImbuementError(self, "Sorry, not possible.")
+        return false
+    end
+
+    if (not self:removeMoneyNpc(15000)) then
+        sendImbuementError(self, "You don't have enough money 15000 gps.")
+        return false
+    end
+    
+    item:setSpecialAttribute(weaponSlot, 0, weaponSlot+3, 0, weaponSlot+6, 0)
     self:openImbuementWindow(item)
 end
 
@@ -288,8 +349,8 @@ function Player.openImbuementWindow(self, item)
         for i = 1, 3 do
             index = index + 1
             msg:addU32(index) -- Start Read Imbuement Data
-            msg:addString(myImbuements[k].Levels.. " " ..myImbuements[k].Name) -- Name Element
-            local newDescription = myImbuements[k].Description:gsub(" %%", " " ..myImbuements[k].LevelsPercent.."%%")
+            msg:addString(myImbuements[k].Levels[i].. " " ..myImbuements[k].Name) -- Name Element
+            local newDescription = myImbuements[k].Description:gsub(" %%", " " ..myImbuements[k].LevelsPercent[i].."%%")
             msg:addString(newDescription.. "\nLasts for 20h 0min while fighting.") -- Description
             msg:addString(myImbuements[k].Category) -- Type Imbuement
             msg:addU16(1) -- Icon ID (wtf?)
@@ -306,9 +367,9 @@ function Player.openImbuementWindow(self, item)
                 msg:addString(itemName or "") -- Astral Name
                 msg:addU16(myImbuements[k].Items[j][2]) -- Astral Necessary count
             end
-            msg:addU32(ImbuingInfo.Price)
-            msg:addByte(ImbuingInfo.Percent)
-            msg:addU32(ImbuingInfo.Protection) -- End Read Imbuement Data
+            msg:addU32(ImbuingInfo[i].Price)
+            msg:addByte(ImbuingInfo[i].Percent)
+            msg:addU32(ImbuingInfo[i].Protection) -- End Read Imbuement Data
         end
     end
 
@@ -381,4 +442,4 @@ function Item:getImbuementPercent(name)
     end
 
     return nil
-end 
+end

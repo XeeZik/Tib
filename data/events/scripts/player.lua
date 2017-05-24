@@ -19,19 +19,46 @@ function Player:onLook(thing, position, distance)
 			if actionId ~= 0 then
 				description = string.format("%s, Action ID: %d", description, actionId)
 			end
+
+			local itemType = thing:getType()
+			if (itemType and itemType:getImbuingSlots() > 0) then
+				local imbuingSlots = "Imbuements: ("
+				for i = 1, itemType:getImbuingSlots() do
+					local specialAttr = thing:getSpecialAttribute(i)
+					local time = 0
+					if (thing:getSpecialAttribute(i+3)) then
+						time = getTime(thing:getSpecialAttribute(i+3))
+					end
+					
+					if (specialAttr and specialAttr ~= 0) then
+						if (i ~= itemType:getImbuingSlots()) then
+							imbuingSlots = imbuingSlots.. "" ..specialAttr.." " ..time..", "
+						else
+							imbuingSlots = imbuingSlots.. "" ..specialAttr.." " ..time..")."
+						end
+					else
+						if (i ~= itemType:getImbuingSlots()) then
+							imbuingSlots = imbuingSlots.. "Empty Slot, "
+						else
+							imbuingSlots = imbuingSlots.. "Empty Slot)."
+						end
+					end
+				end
+				description = string.gsub(description, "It weighs", imbuingSlots.. "\nIt weighs")
+			end
 	
-	-- KD look 
-	 if thing:isCreature() and thing:isPlayer() then
-        description = string.format("%s\n [PVP Kills: %d] \n [PVP Deaths: %d] \n",
-            description, math.max(0, thing:getStorageValue(167912)), math.max(0, thing:getStorageValue(167913)))
-    end
+			-- KD System => onLook
+			if thing:isCreature() and thing:isPlayer() then
+			    description = string.format("%s\n [PVP Kills: %d] \n [PVP Deaths: %d] \n",
+			    	description, math.max(0, thing:getStorageValue(167912)), math.max(0, thing:getStorageValue(167913)))
+			end
 	
-	-- MARRY 
-	if LOOK_MARRIAGE_DESCR and thing:isCreature() then
-	if thing:isPlayer() then
-	description = description .. self:getMarriageDescription(thing)
-	end
-end
+			-- Marry System => onLook
+			if LOOK_MARRIAGE_DESCR and thing:isCreature() then
+				if thing:isPlayer() then
+				description = description .. self:getMarriageDescription(thing)
+				end
+			end
 
 			local uniqueId = thing:getAttribute(ITEM_ATTRIBUTE_UNIQUEID)
 			if uniqueId > 0 and uniqueId < 65536 then

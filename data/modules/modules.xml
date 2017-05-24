@@ -16,6 +16,7 @@
     <module type="recvbyte" byte="235" script="prey system/preysystem.lua" />
     <module type="recvbyte" byte="237" script="prey system/preysystem.lua" />
 
-    <!-- Imbuiment -->
+    <!-- Imbuing System -->
     <module type="recvbyte" byte="213" script="imbuement/imbuement.lua" />
-	</modules>
+	<module type="recvbyte" byte="214" script="imbuement/imbuement.lua" />
+</modules>
