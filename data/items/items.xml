@@ -3532,7 +3532,7 @@
 		<attribute key="attack" value="46" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />
-		<attribute key="imbuingslots" value="3" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="2394" article="a" name="morning star">
 		<attribute key="weight" value="5400" />
@@ -36702,7 +36702,7 @@
 	<item id="26359" article="a" name="dog house" />
 	<item fromid="26364" toid="26365" article="a" name="dog house" />
 <item id="26054" article="a" name="decoration kit">
- <attribute key="wrapcontainer" value="1" />
+ <attribute key="wrapContainer" value="1" />
  <attribute key="description" value="You bought this item in the Store." />
  <attribute key="description" value="This item cannot be traded." />
 </item>	<item id="26087" article="a" name="yalaharian carpet" />
