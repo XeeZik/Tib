@@ -2284,7 +2284,6 @@ void LuaScriptInterface::registerFunctions()
 	registerMethod("Player", "getPreyType", LuaScriptInterface::luaPlayerGetPreyType);
 	registerMethod("Player", "getPreyValue", LuaScriptInterface::luaPlayerGetPreyValue);
 	registerMethod("Player", "getPreyName", LuaScriptInterface::luaPlayerGetPreyName);
-	
 	registerMethod("Player", "setPreyStamina", LuaScriptInterface::luaPlayerSetPreyStamina);
 	registerMethod("Player", "setPreyType", LuaScriptInterface::luaPlayerSetPreyType);
 	registerMethod("Player", "setPreyValue", LuaScriptInterface::luaPlayerSetPreyValue);
@@ -6568,7 +6567,7 @@ int LuaScriptInterface::luaContainerAddItem(lua_State* L)
 	if (it.stackable) {
 		count = std::min<uint16_t>(count, 100);
 	}
-	
+
 	Item* item = Item::CreateItem(itemId, count);
 	if (!item) {
 		lua_pushnil(L);
@@ -9425,8 +9424,7 @@ int LuaScriptInterface::luaPlayerGetTibiaCoins(lua_State* L)
 	Player* player = getUserdata<Player>(L, 1);
 	if (player) {
 		lua_pushnumber(L, player->tibiaCoins);
-	}
-	else {
+	} else {
 		lua_pushnil(L);
 	}
 	return 1;

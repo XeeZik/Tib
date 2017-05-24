@@ -2,8 +2,8 @@
 dofile('data/modules/scripts/gamestore/init.lua')
 -- Config
 GameStore.Categories = {
-
-		{	name = "New Products",
+	{
+		name = "New Products",
 		state = GameStore.States.STATE_NEW,
 		icons = {"New_Products.png"},
 		offers = {
@@ -11,7 +11,7 @@ GameStore.Categories = {
 			{name = "Grove Keeper", thingId = {male=908,female=909}, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 60, icons = {"f909.png", "f908.png"}},
 			{name = "Festive Outfit", thingId = {male=931,female=929}, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 40, icons = {"f931.png", "f929.png"}},
 			{name = "Pharaoh", thingId = {male=955,female=956}, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 60, icons = {"f955.png", "f956.png"}},
-			
+
 			-- Mount Example : thingId = mountId
 			{name = "Jackalope", thingId = 103, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"o905.png"}, description = "Here you can purchase the Mount  for your character. Riding on a mount is not only cool, but also gives your character a speed boost."},
 			{name = "Dreadhare", thingId = 104, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"o906.png"}, description = "Here you can purchase the Mount  for your character. Riding on a mount is not only cool, but also gives your character a speed boost."},
@@ -20,14 +20,12 @@ GameStore.Categories = {
 			{name = "Gold Sphinx", thingId = 107, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"o950.png"}, description = "Here you can purchase the Mount for your character. Riding on a mount is not only cool, but also gives your character a speed boost."},
 			{name = "Emerald Sphinx", thingId = 108, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"o951.png"}, description = "Here you can purchase the Mount  for your character. Riding on a mount is not only cool, but also gives your character a speed boost."},
 			{name = "Shadow Sphinx", thingId = 109, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"o952.png"}, description = "Here you can purchase the Mount  for your character. Riding on a mount is not only cool, but also gives your character a speed boost."},
-			
 			--{name = "Elephant", thingId = 107, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 1, icons = {"o937.png"}, description = "Here you can purchase the Mount  for your character. Riding on a mount is not only cool, but also gives your character a speed boost."},
-		
 		}
-	},		
-	
-	
-	{	name = "Overcharged items",
+	},
+
+	{
+		name = "Overcharged items",
 		state = GameStore.States.STATE_NEW,
 		icons = {"New_Products.png"},
 		offers = {
@@ -65,10 +63,10 @@ GameStore.Categories = {
 			
 		
 		}
-	},		
-			
-			
-		{	name = "Mounts",
+	},
+
+	{
+		name = "Mounts",
 		state = GameStore.States.STATE_NONE,
 		icons = {"Category_Mounts.png"},
 		offers = {
@@ -278,7 +276,9 @@ GameStore.Categories = {
 			{name = "Snow Pelt", thingId = 102, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"o903.png"}, description = "Here you can purchase the Mount  for your character. Riding on a mount is not only cool, but also gives your character a speed boost."},
 		}
 	},
-{	name = "Outfits",
+
+	{
+		name = "Outfits",
 		state = GameStore.States.STATE_NONE,
 		icons = {"Category_Outfits.png"},
 		offers = {
@@ -389,59 +389,61 @@ GameStore.Categories = {
 			{name = "Arena Champion Addon", thingId = {male=884,female=885}, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 60, icons = {"f884.png", "f885.png"}},
 		}
 	},
-{	name = "Items",
+
+	{
+		name = "Items",
 		state = GameStore.States.STATE_NONE,
 		icons = {"Category_Items.png"},
 		offers = {
 			{name = "crystalline token", thingId = 18423, count = 5, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"18423.png"}, description = "Become rich!"},
-		
 			-- Item Example : thingId = itemId
-		{name = "Yalahari Mask", thingId = 9778, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Yalahari_Mask.png"}, description = "Become rich!"},
-		{name = "Golden Helmet", thingId = 2471, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 100, icons = {"Golden_Helmet.png"}, description = "Become rich!"},
-		{name = "Prismatic Helmet", thingId = 18403, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Prismatic_Helmet.png"}, description = "Become rich!"},
-		{name = "Gill Gugel", thingId = 18398, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Gill_Gugel.png"}, description = "Become rich!"},
-		{name = "Elite Draken Helmet", thingId = 12645, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Elite_Draken_Helmet.png"}, description = "Become rich!"},
-		{name = "Werewolf Helmet", thingId = 24718, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Werewolf_Helmet.png"}, description = "Become rich!"},
-		{name = "Depth Galea", thingId = 15408, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Depth_Galea.png"}, description = "Become rich!"},
+			{name = "Yalahari Mask", thingId = 9778, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Yalahari_Mask.png"}, description = "Become rich!"},
+			{name = "Golden Helmet", thingId = 2471, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 100, icons = {"Golden_Helmet.png"}, description = "Become rich!"},
+			{name = "Prismatic Helmet", thingId = 18403, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Prismatic_Helmet.png"}, description = "Become rich!"},
+			{name = "Gill Gugel", thingId = 18398, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Gill_Gugel.png"}, description = "Become rich!"},
+			{name = "Elite Draken Helmet", thingId = 12645, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Elite_Draken_Helmet.png"}, description = "Become rich!"},
+			{name = "Werewolf Helmet", thingId = 24718, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Werewolf_Helmet.png"}, description = "Become rich!"},
+			{name = "Depth Galea", thingId = 15408, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Depth_Galea.png"}, description = "Become rich!"},
 			--Armorid--
-		{name = "Demon Armor", thingId = 2494, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Demon_Armor.png"}, description = "Become rich!"},
-		{name = "Fire Born Giant Armor", thingId = 8881, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Fireborn_Giant_Armor.png"}, description = "Become rich!"},
-		{name = "Royal Draken Mail", thingId = 12642, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Royal_Draken_Mail.png"}, description = "Become rich!"},
-		{name = "Gill Coat", thingId = 18399, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Gill_Coat.png"}, description = "Become rich!"},
-		{name = "Depth Lorica", thingId = 15407, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 30, icons = {"Depth_Lorica.png"}, description = "Become rich!"},
-		{name = "Furios Frock", thingId = 21725, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Furious_Frock.png"}, description = "Become rich!"},
-		{name = "Ornate Chestplate", thingId = 15406, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Ornate_Chestplate.png"}, description = "Become rich!"},
-		{name = "Earthborn Titan Armor", thingId = 8882, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Earthborn_Titan_Armor.png"}, description = "Become rich!"},
-		{name = "Wind Born Colossus Armor", thingId = 8883, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Windborn_Colossus_Armor.png"}, description = "Become rich!"},
-		{name = "Master Acher's Armor", thingId = 8888, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Master_Archer's_Armor.png"}, description = "Become rich!"},
+			{name = "Demon Armor", thingId = 2494, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Demon_Armor.png"}, description = "Become rich!"},
+			{name = "Fire Born Giant Armor", thingId = 8881, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Fireborn_Giant_Armor.png"}, description = "Become rich!"},
+			{name = "Royal Draken Mail", thingId = 12642, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Royal_Draken_Mail.png"}, description = "Become rich!"},
+			{name = "Gill Coat", thingId = 18399, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Gill_Coat.png"}, description = "Become rich!"},
+			{name = "Depth Lorica", thingId = 15407, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 30, icons = {"Depth_Lorica.png"}, description = "Become rich!"},
+			{name = "Furios Frock", thingId = 21725, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Furious_Frock.png"}, description = "Become rich!"},
+			{name = "Ornate Chestplate", thingId = 15406, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Ornate_Chestplate.png"}, description = "Become rich!"},
+			{name = "Earthborn Titan Armor", thingId = 8882, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Earthborn_Titan_Armor.png"}, description = "Become rich!"},
+			{name = "Wind Born Colossus Armor", thingId = 8883, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Windborn_Colossus_Armor.png"}, description = "Become rich!"},
+			{name = "Master Acher's Armor", thingId = 8888, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Master_Archer's_Armor.png"}, description = "Become rich!"},
 			--Legsid--
-		{name = "Demon Legs", thingId = 2495, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 30, icons = {"Demon_Legs.png"}, description = "Become rich!"},
-		{name = "Grasshopper Legs", thingId = 15490, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Grasshopper_Legs.png"}, description = "Become rich!"},
-		{name = "Depth Ocrea", thingId = 15409, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Depth_Ocrea.png"}, description = "Become rich!"},
-		{name = "Primatic Legs", thingId = 18405, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Prismatic_Legs.png"}, description = "Become rich!"},
-		{name = "Gill Legs", thingId = 18400, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Gill_Legs.png"}, description = "Become rich!"},
-		{name = "Ornate Legs", thingId = 15412, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Ornate_Legs.png"}, description = "Become rich!"},
-		{name = "Dwarven Legs", thingId = 2504, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Dwarven_Legs.png"}, description = "Become rich!"},
-		{name = "Icy Culotte", thingId = 21700, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Icy_Culottes.png"}, description = "Become rich!"},
+			{name = "Demon Legs", thingId = 2495, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 30, icons = {"Demon_Legs.png"}, description = "Become rich!"},
+			{name = "Grasshopper Legs", thingId = 15490, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Grasshopper_Legs.png"}, description = "Become rich!"},
+			{name = "Depth Ocrea", thingId = 15409, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Depth_Ocrea.png"}, description = "Become rich!"},
+			{name = "Primatic Legs", thingId = 18405, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Prismatic_Legs.png"}, description = "Become rich!"},
+			{name = "Gill Legs", thingId = 18400, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Gill_Legs.png"}, description = "Become rich!"},
+			{name = "Ornate Legs", thingId = 15412, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Ornate_Legs.png"}, description = "Become rich!"},
+			{name = "Dwarven Legs", thingId = 2504, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Dwarven_Legs.png"}, description = "Become rich!"},
+			{name = "Icy Culotte", thingId = 21700, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Icy_Culottes.png"}, description = "Become rich!"},
 			--Bootsid--
-		{name = "Boots of Haste", thingId = 2195, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 3, icons = {"Boots_of_Haste.png"}, description = "Become rich!"},
-		{name = "Golden Boots", thingId = 2646, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Golden_Boots.png"}, description = "Become rich!"},
-		{name = "Pair Soft Boots", thingId = 2640, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Pair_of_Soft_Boots.png"}, description = "Become rich!"},
+			{name = "Boots of Haste", thingId = 2195, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 3, icons = {"Boots_of_Haste.png"}, description = "Become rich!"},
+			{name = "Golden Boots", thingId = 2646, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 50, icons = {"Golden_Boots.png"}, description = "Become rich!"},
+			{name = "Pair Soft Boots", thingId = 2640, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Pair_of_Soft_Boots.png"}, description = "Become rich!"},
 			--Shieldid--
-		{name = "Depth Scutum", thingId = 15411, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 3, icons = {"Depth_Scutum.png"}, description = "Become rich!"},
-		{name = "Shield of Corruption", thingId = 12644, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 30, icons = {"Shield_of_Corruption.png"}, description = "Become rich!"},
-		{name = "Prismatic Shield", thingId = 18410, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Prismatic_Shield.png"}, description = "Become rich!"},
-		{name = "Ornate Shield", thingId = 15413, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Ornate_Shield.png"}, description = "Become rich!"},
-		{name = "Spelbook of Vigilance", thingId = 18401, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Spellbook_of_Vigilance.png"}, description = "Become rich!"},
-		{name = "Spellbook of Ancient Arcana", thingId = 16112, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 30, icons = {"Spellbook_of_Ancient_Arcana.png"}, description = "Become rich!"},
-		{name = "Umbral spellbook", thingId = 22423, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Umbral_Spellbook.png"}, description = "Become rich!"},
-		{name = "Umbral Master Spellbook", thingId = 22424, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 60, icons = {"Umbral_Master_Spellbook.png"}, description = "Become rich!"},
-		{name = "Great Shield", thingId = 2522, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 80, icons = {"Great_Shield.png"}, description = "Become rich!"},
-		{name = "Blessed Shield", thingId = 2523, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 100, icons = {"Blessed_Shield.png"}, description = "Become rich!"},
-			
+			{name = "Depth Scutum", thingId = 15411, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 3, icons = {"Depth_Scutum.png"}, description = "Become rich!"},
+			{name = "Shield of Corruption", thingId = 12644, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 30, icons = {"Shield_of_Corruption.png"}, description = "Become rich!"},
+			{name = "Prismatic Shield", thingId = 18410, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Prismatic_Shield.png"}, description = "Become rich!"},
+			{name = "Ornate Shield", thingId = 15413, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Ornate_Shield.png"}, description = "Become rich!"},
+			{name = "Spelbook of Vigilance", thingId = 18401, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Spellbook_of_Vigilance.png"}, description = "Become rich!"},
+			{name = "Spellbook of Ancient Arcana", thingId = 16112, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 30, icons = {"Spellbook_of_Ancient_Arcana.png"}, description = "Become rich!"},
+			{name = "Umbral spellbook", thingId = 22423, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Umbral_Spellbook.png"}, description = "Become rich!"},
+			{name = "Umbral Master Spellbook", thingId = 22424, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 60, icons = {"Umbral_Master_Spellbook.png"}, description = "Become rich!"},
+			{name = "Great Shield", thingId = 2522, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 80, icons = {"Great_Shield.png"}, description = "Become rich!"},
+			{name = "Blessed Shield", thingId = 2523, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 100, icons = {"Blessed_Shield.png"}, description = "Become rich!"},
 		}
 	},
-{	name = "Items for Sorcerers",
+
+	{
+		name = "Items for Sorcerers",
 		state = GameStore.States.STATE_NONE,
 		icons = {"Category_Sorc.png"},
 		offers = {
@@ -453,11 +455,11 @@ GameStore.Categories = {
 			{name = "Wand of Defiance", thingId = 18390, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"18390.png"}, description = "Become rich!"},
 			{name = "Spelbook of Dark Mysteries", thingId = 8918, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"8918.png"}, description = "Become rich!"},
 			{name = "Wand of Everblazing", thingId = 18409, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"18409.png"}, description = "Become rich!"},
-		
-		
 		}
 	},
-{	name = "Items for Knights",
+
+	{
+		name = "Items for Knights",
 		state = GameStore.States.STATE_NONE,
 		icons = {"Category_Knight.png"},
 		offers = {
@@ -491,7 +493,9 @@ GameStore.Categories = {
 		
 		}
 	},
-{	name = "Items for Paladins",
+
+	{
+		name = "Items for Paladins",
 		state = GameStore.States.STATE_NONE,
 		icons = {"Category_Pally.png"},
 		offers = {
@@ -506,10 +510,11 @@ GameStore.Categories = {
 			{name = "Umbral Master bow", thingId = 22418, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 60, icons = {"22418.png"}, description = "Become rich!"},
 			{name = "Umbral Crossbow", thingId = 22420, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 25, icons = {"22420.png"}, description = "Become rich!"},
 			{name = "Umbral Master Crossbow", thingId = 22421, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 60, icons = {"22421.png"}, description = "Become rich!"},
-		
 		}
 	},
-{	name = "Items for Druids",
+
+	{
+		name = "Items for Druids",
 		state = GameStore.States.STATE_NONE,
 		icons = {"Category_Druid.png"},
 		offers = {
@@ -521,29 +526,26 @@ GameStore.Categories = {
 			{name = "Glacial Rod", thingId = 18412, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"18412.png"}, description = "Become rich!"},
 			{name = "Muck Rod", thingId = 18411, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"18411.png"}, description = "Become rich!"},
 			{name = "Spelbook of Dark Mysteries", thingId = 8918, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"8918.png"}, description = "Become rich!"},
-		
 		}
 	},
-{	name = "House Equipment",
+
+	{
+		name = "House Equipment",
 		state = GameStore.States.STATE_NEW,
 		icons = {"Category_House_Equipment.png"},
 		offers = {
 			-- Item Example : thingId = itemId
 			{name = "Parrot", thingId = 26890, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, price = 180, icons = {"26890.png"}, description = "Become rich!"},
-		
 			{name = "Fish Tank", thingId = 26344, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, price = 180, icons = {"26344.png"}, description = "Become rich!"},
-			
 			{name = "Dog House", thingId = 26349, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, price = 150, icons = {"26349.png"}, description = "Become rich!"},
-			
 			{name = "Baby Dragon", thingId = 26098, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, price = 250, icons = {"26098.png"}, description = "Become rich!"},
-			
 			{name = "Cat in a Basket", thingId = 26107, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, price = 150, icons = {"26107.png"}, description = "Become rich!"},
-			
 			{name = "Hamster in a Wheel", thingId = 26100, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, price = 180, icons = {"26100.png"}, description = "Become rich!"},
-			
-			}
+		}
 	},
- {	name = "Extra Services",
+
+	{
+		name = "Extra Services",
 		state = GameStore.States.STATE_NONE,
 		icons = {"Category_ExtraServices.png"},
 		offers = {
@@ -552,7 +554,7 @@ GameStore.Categories = {
 			-- Sexchange example
 			{name = "Character Sex Change", type = GameStore.OfferTypes.OFFER_TYPE_SEXCHANGE, price = 20, icons = {"Product_CharacterSexChange.png"}},
 			-- Promotion example
---			{name = "First Promotion", thingId = 1--[[ed/ms/rp/ek]], type = GameStore.OfferTypes.OFFER_TYPE_PROMOTION, price = 100, icons = {"Product_FirstPromotion.png"}}
+			--{name = "First Promotion", thingId = 1--[[ed/ms/rp/ek]], type = GameStore.OfferTypes.OFFER_TYPE_PROMOTION, price = 100, icons = {"Product_FirstPromotion.png"}}
 		}
 	},
 }

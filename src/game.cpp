@@ -2281,8 +2281,7 @@ void Game::playerWrapableItem(uint32_t playerId, const Position& pos, uint8_t st
 			SchedulerTask* task = createSchedulerTask(400, std::bind(&Game::playerWrapableItem, this,
 				playerId, pos, stackPos, spriteId));
 			player->setNextWalkActionTask(task);
-		}
-		else {
+		} else {
 			player->sendCancelMessage(RETURNVALUE_THEREISNOWAY);
 		}
 		return;
@@ -2292,7 +2291,7 @@ void Game::playerWrapableItem(uint32_t playerId, const Position& pos, uint8_t st
 	uint16_t newWrapId = Item::items[item->getID()].wrapableTo;
 	std::string itemName = item->getName();
 
-	//PARA ITEMS QUE NAO PERDEM ACTIONID SE TRANSFORMAR
+	// FOR ITEMS THAT DO NOT LOSE ACTIONID TO TRANSFORM
 	if (!iiType.wrapContainer) {
 		if (newWrapId != 0 && item->getID() != 26054) {
 			transformItem(item, newWrapId)->setActionId(item->getID());
@@ -2307,13 +2306,12 @@ void Game::playerWrapableItem(uint32_t playerId, const Position& pos, uint8_t st
 			addMagicEffect(item->getPosition(), CONST_ME_POFF);
 			startDecay(item);
 		}
-	}
-	else {
-		//PARA ITEMS QUE PERDEM ACTIONID SE TRANSFORMAR
+	} else {
+		// FOR ITEMS LOSING ACTIONID TO TRANSFORM
 		if (iiType.wrapContainer) {
 			Item* wrapContainer = transformItem(item, newWrapId);
 			if (newWrapId != 0 && item->getID() != 26054) {
-				wrapContainer->setActionId(item->getID()); //transforma na box 26054 só, então tem q fazer um adc na box se ter aid
+				wrapContainer->setActionId(item->getID()); // transform box 26054 only, then you have to make a box adc if you have aid
 				wrapContainer->setSpecialDescription("Unwrap it in your own house to create a <" + itemName + ">.");
 				addMagicEffect(wrapContainer->getPosition(), CONST_ME_POFF);
 				startDecay(item);

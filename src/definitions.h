@@ -20,7 +20,7 @@
 #ifndef FS_DEFINITIONS_H_877452FEC245450C9F96B8FD268D8963
 #define FS_DEFINITIONS_H_877452FEC245450C9F96B8FD268D8963
 
-static constexpr auto STATUS_SERVER_NAME = "OTX Server Global";
+static constexpr auto STATUS_SERVER_NAME = "OTX Server";
 static constexpr auto STATUS_SERVER_VERSION = "3";
 static constexpr auto MINOR_VERSION = "9";
 static constexpr auto REVISION_VERSION = "DEV";
