@@ -1,5 +1,6 @@
 -- Only works with 11.10 Tibia Version
 -- Incomplete System.
+-- Image: http://prntscr.com/fbpayn
 
 InspectionSystem = {
 	Developer = "Charles (Cjaker)",
@@ -34,12 +35,12 @@ function parseInspectItem(player, msg)
 		local index = msg:getByte()
 		local myItem = player:getSlotItem(contId)
 		if (myItem) then
-			player:say("TESTE: " ..myItem:getName(), TALKTYPE_SAY)
+			player:say("Item: " ..myItem:getName(), TALKTYPE_SAY)
 		end
 	else
 		local posY = msg:getU16()
 		local posZ = msg:getByte()
-		-- Inspect item from ground. :v
+
 	end
 end
 
@@ -64,11 +65,32 @@ local function getTotalItems(creature)
 	for i = 1, 10 do
 		local itemSlot = creature:getSlotItem(i)
 		if (itemSlot) then
-			retItems[#retItems+1] = {Id = itemSlot:getId(), Name = itemSlot:getName(), isStackable = itemSlot:getType():isStackable(), Count = itemSlot:getCount(), Slot = i}
+			retItems[#retItems+1] = {Item = itemSlot, Slot = i}
 		end
 	end
 
 	return retItems
+end
+
+function getItemDescription(itemType)
+	local itemInfo = {
+  		{Title = "Armor", Value = itemType:getArmor()},
+  		{Title = "Attack", Value = itemType:getAttack()},
+  		{Title = "Defense", Value = itemType:getDefense()},
+  		{Title = "Weight", Value = itemType:getWeight()}
+  	}
+  	local retTable, count = {}, 0
+  	for i, v in pairs(itemInfo) do
+  		if (v.Value > 0) then
+  			if (v.Title == "Weight") then
+  				v.Value = string.format("%.2f", v.Value/100)
+  			end
+  			retTable[#retTable+1] = {Title = v.Title, Description = v.Value}
+  			count = count + 1
+  		end
+  	end
+
+  	return retTable, count
 end
 
 function sendInspectionList(uid)
@@ -84,22 +106,33 @@ function sendInspectionList(uid)
 	end
  	
  	local totalItems = getTotalItems(object)
-	msg:addByte(0x01) -- Length Loop (1 = dont need loop)
-	--for i,v in pairs(totalItems) do
-	    msg:addString("crystal coin")
-	    msg:addItemId(2160)
+	msg:addByte(#totalItems)
+	for i,v in pairs(totalItems) do
+	    msg:addString(v.Item:getName())
+
+	    if (Player(uid)) then
+	    	msg:addByte(v.Slot)
+	    end
+
+	    msg:addItemId(v.Item:getId())
 	    msg:addByte(0xFF)
-	    msg:addByte(10)
-	--end
+	    if (v.Item:getType():isStackable()) then
+	    	msg:addByte(v.Item:getCount())
+	    end
 	 
-	msg:addByte(0x01)
-	for i = 1, 1 do
-	    msg:addItemId(2160)
+		msg:addByte(v.Item:getType():getImbuingSlots() or 0x00)
+		for j = 1, v.Item:getType():getImbuingSlots() do
+		    msg:addU16(0)
+		end
+	  	
+	  	local itemType = v.Item:getType()
+	  	local detailsInfo, detailsCount = getItemDescription(itemType)
+		msg:addByte(detailsCount)
+		for i, v in pairs(detailsInfo) do
+			msg:addString(v.Title)
+			msg:addString(v.Description)
+		end
 	end
-	  
-	msg:addByte(0x01)
-	msg:addString("Testone")
-	msg:addString("Testtwo")
 	 
 	if (object:isPlayer()) then
 	    msg:addString(object:getName())
@@ -111,11 +144,18 @@ function sendInspectionList(uid)
 		msg:addByte(outfit.lookLegs or 0x00) -- outfit
 		msg:addByte(outfit.lookFeet or 0x00) -- outfit
 		msg:addByte(outfit.lookAddons or 0x00) -- outfit
-	 
-	    msg:addByte(0x04)
-	    for i = 1, 4 do
-	    	msg:addString("level"..i) 
-	    	msg:addString("name"..i)
+	 	
+	 	local playerInfo = {
+	 		{Title = "Level", Value = object:getLevel()},
+	 		{Title = "Vocation", Value = object:getVocation():getName()},
+	 		{Title = "Loyalty Rank", Value = "Sentinel of Tibia"},
+	 		{Title = "Outfit", Value = object:getOutfit().lookType}
+	 	}
+	 	
+	    msg:addByte(#playerInfo)
+	    for z, p in pairs(playerInfo) do
+	    	msg:addString(p.Title) 
+	    	msg:addString(p.Value)
 	    end
 	end
 
