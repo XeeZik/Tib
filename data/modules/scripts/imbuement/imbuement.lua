@@ -233,7 +233,7 @@ function Player.applyImbuement(self, msg)
     slot = slot + 1
 
     for j = 1, imbuingLevel do
-        local itemID, itemName, itemCount = myImbuement.Items[j][1], ItemType(myImbuement.Items[j][1]):getName(), myImbuement.Items[j][2]
+        local itemID, itemCount = myImbuement.Items[j][1], myImbuement.Items[j][2]
         if (self:getItemCount(itemID) < itemCount) then
             sendImbuementError(self, "You don't have all necessary items.")
             return false
