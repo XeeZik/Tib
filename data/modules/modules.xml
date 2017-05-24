@@ -19,4 +19,8 @@
     <!-- Imbuing System -->
     <module type="recvbyte" byte="213" script="imbuement/imbuement.lua" />
 	<module type="recvbyte" byte="214" script="imbuement/imbuement.lua" />
+
+	<!-- Inspection System (11.10) -->
+	<module type="recvbyte" byte="205" script="inspection/inspection.lua"/>
+	<module type="recvbyte" byte="206" script="inspection/inspection.lua"/>
 </modules>
