@@ -97,6 +97,8 @@ enum AttrTypes_t {
 	ATTR_ARMOR = 31,
 	ATTR_HITCHANCE = 32,
 	ATTR_SHOOTRANGE = 33,
+	ATTR_SPECIAL = 34,
+	ATTR_IMBUINGSLOTS = 35,
 };
 
 enum Attr_ReadValue {
@@ -600,6 +602,12 @@ class Item : virtual public Thing
 				return getIntAttr(ITEM_ATTRIBUTE_EXTRADEFENSE);
 			}
 			return items[id].extraDefense;
+		}
+		uint8_t getImbuingSlots() const {
+			if (hasAttribute(ITEM_ATTRIBUTE_IMBUINGSLOTS)) {
+				return getIntAttr(ITEM_ATTRIBUTE_IMBUINGSLOTS);
+			}
+			return items[id].imbuingSlots;
 		}
 		int32_t getSlotPosition() const {
 			return items[id].slotPosition;

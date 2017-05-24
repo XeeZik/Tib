@@ -604,6 +604,8 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 			it.showAttributes = valueAttribute.as_bool();
 		} else if (tmpStrValue == "hitchance") {
 			it.hitChance = std::min<int8_t>(100, std::max<int8_t>(-100, pugi::cast<int16_t>(valueAttribute.value())));
+		} else if (tmpStrValue == "imbuingslots") {
+			it.imbuingSlots = pugi::cast<uint8_t>(valueAttribute.value());
 		} else if (tmpStrValue == "maxhitchance") {
 			it.maxHitChance = std::min<uint32_t>(100, pugi::cast<uint32_t>(valueAttribute.value()));
 		} else if (tmpStrValue == "invisible") {
