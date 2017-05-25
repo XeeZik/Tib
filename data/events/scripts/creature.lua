@@ -37,6 +37,7 @@ function Creature:onTargetCombat(target)
 	if not self then
 		return true
 	end
+
 	if target:isPlayer() then
 		if self:isMonster() then
 			local protectionStorage = target:getStorageValue(Storage.combatProtectionStorage)
@@ -78,5 +79,6 @@ function Creature:onTargetCombat(target)
 			end
 		end
 	end
- 	return true
+
+	return true
 end
