@@ -9,5 +9,5 @@ dofile('data/lib/miscellaneous/killingInTheNameOfQuest.lua')
 dofile('data/lib/miscellaneous/svargrondArenaQuest.lua')
 dofile('data/lib/miscellaneous/achievements_lib.lua')
 
--- Special Lib (imbuement)
+-- Special Lib => Imbuement System
 dofile('data/lib/miscellaneous/specialLib.lua')
