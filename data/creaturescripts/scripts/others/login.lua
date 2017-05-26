@@ -138,13 +138,13 @@ function onLogin(player)
    
      -- ABRIR CHANNELS
     if(not table.contains({1,2,3,5,6,7,8}, player:getVocation():getId()) or player:getLevel() < 6) then
-   -- player:openChannel(7)   -- help channel
-    player:openChannel(3)   -- world chat 
-    player:openChannel(6)   -- advertsing rook main
+        --player:openChannel(7)   -- help channel
+        player:openChannel(3)   -- world chat 
+        player:openChannel(6)   -- advertsing rook main
     else
-  --  player:openChannel(7)   -- help channel
-    player:openChannel(3)   -- world chat
-    player:openChannel(5)   -- advertsing main 
+        --player:openChannel(7)   -- help channel
+        player:openChannel(3)   -- world chat
+        player:openChannel(5)   -- advertsing main 
     end
    
     --

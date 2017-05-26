@@ -908,7 +908,6 @@ class LuaScriptInterface
 		static int luaPlayerGetPreyType(lua_State* L);
 		static int luaPlayerGetPreyValue(lua_State* L);
 		static int luaPlayerGetPreyName(lua_State* L);
-		
 		static int luaPlayerSetPreyStamina(lua_State* L);
 		static int luaPlayerSetPreyType(lua_State* L);
 		static int luaPlayerSetPreyValue(lua_State* L);

@@ -85,18 +85,31 @@ local ImbuingInfo = {
 }
 
 local imbuingShrineIds = {
-    27728, 27729, 27850, 27851
+    27716, 27717, 27728, 27729, 27850, 27851
 }
 
 local ImbuementElements = {
     "firedamage", "earthdamage", "energydamage", "deathdamage", "icedamage"
 }
 
+local ErrorMessages = {
+    MESSAGEDIALOG_IMBUEMENT_ERROR = 1,
+    MESSAGEDIALOG_IMBUEMENT_ROLL_FAILED = 2,
+    MESSAGEDIALOG_IMBUING_STATION_NOT_FOUND = 3,
+    MESSAGEDIALOG_CLEARING_CHARM_SUCCESS = 10,
+    MESSAGEDIALOG_CLEARING_CHARM_ERROR = 11
+}
+
+local ClientPackets = {
+    ApplyImbuement = 0xD5,
+    ClearImbuement = 0xD6
+}
+
 function onRecvbyte(player, msg, byte)
-    if (byte == 0xD5) then
+    if (byte == ClientPackets.ApplyImbuement) then
         -- Apply Imbuement
         player:applyImbuement(msg)
-    elseif (byte == 0xD6) then
+    elseif (byte == ClientPackets.ClearImbuement) then
         -- Clear Imbuement
         player:clearImbuement(msg)
     end
@@ -182,10 +195,10 @@ local function getImbuementByIndex(index, id)
     return nil
 end
 
-local function sendImbuementError(self, message)
+local function sendImbuementError(self, message, errorType)
     local msg = NetworkMessage()
     msg:addByte(0xED)
-    msg:addByte(0x01)
+    msg:addByte(errorType or 0x01)
     msg:addString(message)
     msg:sendToPlayer(self)
 end
@@ -201,22 +214,49 @@ local function mergeImbuementList(table1, table2)
     return newTable
 end
 
+local function getNewList(item)
+    local equip = getEquipById(item:getId())
+    local myImbuements = getImbuementEquip(equip)
+    local imbuingSlots = item:getType():getImbuingSlots()
+
+    for i = 1, imbuingSlots do
+        if (item:isActiveImbuement(i+3)) then
+            local existsImbuement, enchantLevel = getActiveImbuement(item, i)
+            myImbuements = mergeImbuementList(myImbuements, existsImbuement)
+        end
+    end
+
+    return myImbuements
+end
+
 function Player.applyImbuement(self, msg)
     if (not haveImbuingShrine(self)) then
-        sendImbuementError(self, "An error ocurred, please reopen imbuement window.")
+        sendImbuementError(self, "An error ocurred, please reopen imbuement window.", ErrorMessages.MESSAGEDIALOG_IMBUEMENT_ERROR)
         return false
     end
 
     local item = lastItemImbuing[self:getGuid()]
     if (item == nil) then
-        sendImbuementError(self, "Cannot find item, please contact an Administrator.")
+        sendImbuementError(self, "Cannot find item, please contact an Administrator.", ErrorMessages.MESSAGEDIALOG_IMBUEMENT_ERROR)
         return false
     end
 
     local slot, choiceId, useProtection = msg:getByte(), msg:getU32(), msg:getByte()
     local myImbuement, imbuingLevel = getImbuementByIndex(choiceId, item:getId())
+    local imbuementsNow = getNewList(item)
+    local index = 0
+    for i = 1, #imbuementsNow do
+        for j = 1, item:getType():getImbuingSlots() do
+            index = index + 1
+            if (choiceId == index) then
+                myImbuement, imbuingLevel = imbuementsNow[i], j
+                break
+            end
+        end
+    end
+
     if (not myImbuement) then
-        sendImbuementError(self, "Cannot find imbuement data, please contact an Administrator.")
+        sendImbuementError(self, "Cannot find imbuement data, please contact an Administrator.", ErrorMessages.MESSAGEDIALOG_IMBUEMENT_ERROR)
         return false
     end
 
@@ -226,7 +266,7 @@ function Player.applyImbuement(self, msg)
     end
 
     if (not self:removeMoneyNpc(imbuingPrice)) then
-        sendImbuementError(self, "You don't have enough money " ..imbuingPrice.. " gps.")
+        sendImbuementError(self, "You don't have enough money " ..imbuingPrice.. " gps.", ErrorMessages.MESSAGEDIALOG_IMBUEMENT_ROLL_FAILED)
         return false
     end
 
@@ -235,7 +275,7 @@ function Player.applyImbuement(self, msg)
     for j = 1, imbuingLevel do
         local itemID, itemCount = myImbuement.Items[j][1], myImbuement.Items[j][2]
         if (self:getItemCount(itemID) < itemCount) then
-            sendImbuementError(self, "You don't have all necessary items.")
+            sendImbuementError(self, "You don't have all necessary items.", ErrorMessages.MESSAGEDIALOG_IMBUEMENT_ROLL_FAILED)
             return false
         end
 
@@ -243,46 +283,53 @@ function Player.applyImbuement(self, msg)
     end
 
     if (item:isActiveImbuement(slot+3)) then
-        sendImbuementError(self, "An error ocurred, please reopen imbuement window.")
+        sendImbuementError(self, "An error ocurred, please reopen imbuement window.", ErrorMessages.MESSAGEDIALOG_IMBUEMENT_ERROR)
         return false
     end
     
+    local applyChance = math.random(100)
+    if (ImbuingInfo[imbuingLevel].Percent < applyChance) then
+        sendImbuementError(self, "Item failed to apply imbuement.", ErrorMessages.MESSAGEDIALOG_IMBUEMENT_ROLL_FAILED)
+        return false
+    end
+
     item:setSpecialAttribute(slot, myImbuement.Levels[imbuingLevel]..myImbuement.Name, slot+3, 72000, slot+6, 0)
     self:openImbuementWindow(item)
 end
 
 function Player.clearImbuement(self, msg)
     if (not haveImbuingShrine(self)) then
-        sendImbuementError(self, "Sorry, not possible.")
+        sendImbuementError(self, "Sorry, not possible.", ErrorMessages.MESSAGEDIALOG_CLEARING_CHARM_ERROR)
         return false
     end
 
     local item = lastItemImbuing[self:getGuid()]
     if (item == nil) then
-        sendImbuementError(self, "Cannot find item, please send this message to a Administrator.")
+        sendImbuementError(self, "Cannot find item, please send this message to a Administrator.", ErrorMessages.MESSAGEDIALOG_CLEARING_CHARM_ERROR)
         return false
     end
 
     local weaponSlot = msg:getByte()
     if (not weaponSlot) then
-        sendImbuementError(self, "Sorry, not possible.")
+        sendImbuementError(self, "Sorry, not possible.", ErrorMessages.MESSAGEDIALOG_CLEARING_CHARM_ERROR)
         return false
     end
 
     weaponSlot = weaponSlot + 1
 
     if (not item:isActiveImbuement(weaponSlot + 3)) then
-        sendImbuementError(self, "Sorry, not possible.")
+        sendImbuementError(self, "Sorry, not possible.", ErrorMessages.MESSAGEDIALOG_CLEARING_CHARM_ERROR)
         return false
     end
 
     if (not self:removeMoneyNpc(15000)) then
-        sendImbuementError(self, "You don't have enough money 15000 gps.")
+        sendImbuementError(self, "You don't have enough money 15000 gps.", ErrorMessages.MESSAGEDIALOG_CLEARING_CHARM_ERROR)
         return false
     end
     
     item:setSpecialAttribute(weaponSlot, 0, weaponSlot+3, 0, weaponSlot+6, 0)
     self:openImbuementWindow(item)
+    sendImbuementError(self, "Item clean success!", ErrorMessages.MESSAGEDIALOG_CLEARING_CHARM_SUCCESS)
 end
 
 function Player.closeImbuementWindow(self)

@@ -202,19 +202,15 @@ class Player final : public Creature, public Cylinder
 		uint16_t getPreyStamina(uint16_t index) const {
 			return preyStaminaMinutes[index];
 		}
-
 		uint16_t getPreyType(uint16_t index) const {
 			return preyBonusType[index];
 		}
-
 		uint16_t getPreyValue(uint16_t index) const {
 			return preyBonusValue[index];
 		}
-
 		std::string getPreyName(uint16_t index) const {
 			return preyBonusName[index];
 		}
-
 
 		bool addOfflineTrainingTries(skills_t skill, uint64_t tries);
 
