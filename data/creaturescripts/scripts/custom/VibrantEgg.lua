@@ -11,8 +11,8 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
 		end
 		
 		if not player:removeItem(26194, 1) then 
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must have a Vibrant Egg in your backpack!")
-				return false
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must have a Vibrant Egg in your backpack!")
+			return false
 		end
 
 		player:addMount(mounts[choiceId].ID)
