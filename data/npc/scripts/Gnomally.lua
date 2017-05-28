@@ -70,8 +70,11 @@ local function onBuy(cid, item, subType, amount, ignoreCap, inBackpacks)
 	if count == 0 then
 		return true
 	end
-
-	player:removeMoney(items[item].buyPrice * count)
+	
+	if not player:removeMoney(items[item].buyPrice * count) then
+		return true
+	end
+	
 	player:sendTextMessage(MESSAGE_INFO_DESCR, string.format('Bought %dx %s for %d gold.', count, items[item].realName, items[item].buyPrice * count))
 	return true
 end
