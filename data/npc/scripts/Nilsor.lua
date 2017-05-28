@@ -100,8 +100,7 @@ local function creatureSayCallback(cid, type, msg)
 			player:setStorageValue(Storage.TheIceIslands.Mission06, 1) -- Questlog The Ice Islands Quest, Nibelor 5: Cure the Dogs
 			npcHandler.topic[cid] = 0
 		elseif npcHandler.topic[cid] == 2 then
-			if player:getMoney() >= 25 then
-				player:removeMoney(25)
+			if player:removeMoney(25) then
 				npcHandler:say("Here you are. A waterskin!", cid)
 				player:addItem(7286, 1)
 			else

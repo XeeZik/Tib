@@ -1,8 +1,5 @@
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	if player:getItemCount(12324) >= 1 and player:getItemCount(12325) >= 1 and player:getItemCount(12326) >= 1 and player:getStorageValue(Storage.WrathoftheEmperor.Questline) == 10 then
-		player:removeItem(12324, 1)
-		player:removeItem(12325, 1)
-		player:removeItem(12326, 1)
+	if player:removeItem(12324, 1) and player:removeItem(12325, 1) and player:removeItem(12326, 1) and player:getStorageValue(Storage.WrathoftheEmperor.Questline) == 10 then
 		player:addItem(12327, 1)
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 		player:setStorageValue(Storage.WrathoftheEmperor.Questline, 11)
