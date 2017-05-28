@@ -12,8 +12,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		return false
 	end
 
-	if player:getStorageValue(Storage.thievesGuild.Mission08) == 1 then
-		player:removeItem(8701, 1)
+	if player:getStorageValue(Storage.thievesGuild.Mission08) == 1 and player:removeItem(8701, 1) then
 		Game.createItem(8700, 1, notePos)
 		player:setStorageValue(Storage.thievesGuild.Mission08, 2)
 		addEvent(removeNote, 5 * 60 * 1000, notePos)
