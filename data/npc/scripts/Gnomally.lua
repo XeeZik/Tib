@@ -1,4 +1,4 @@
-local keywordHandler = KeywordHandler:new()
+ local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 NpcSystem.parseParameters(npcHandler)
 
@@ -70,11 +70,8 @@ local function onBuy(cid, item, subType, amount, ignoreCap, inBackpacks)
 	if count == 0 then
 		return true
 	end
-	
-	if not player:removeMoney(items[item].buyPrice * count) then
-		return true
-	end
-	
+
+	player:removeMoney(items[item].buyPrice * count)
 	player:sendTextMessage(MESSAGE_INFO_DESCR, string.format('Bought %dx %s for %d gold.', count, items[item].realName, items[item].buyPrice * count))
 	return true
 end

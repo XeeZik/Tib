@@ -1,6 +1,7 @@
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if target.actionid == 100 and target.itemid == 471 then
-		if player:getStorageValue(Storage.InServiceofYalahar.Questline) == 36 and player:removeItem(9737, 1) then
+		if player:getStorageValue(Storage.InServiceofYalahar.Questline) == 36 then
+			player:removeItem(9737, 1)
 			Game.createItem(9738, 1, toPosition)
 			toPosition:sendMagicEffect(CONST_ME_CARNIPHILA)
 			local monster
