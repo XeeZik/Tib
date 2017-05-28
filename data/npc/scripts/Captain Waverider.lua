@@ -1,4 +1,4 @@
-local keywordHandler = KeywordHandler:new()
+ local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 NpcSystem.parseParameters(npcHandler)
  
@@ -32,7 +32,8 @@ function creatureSayCallback(cid, type, msg)
 		end
 	elseif(msgcontains(msg, "yes")) then
 		if(npcHandler.topic[cid] == 1) then
-			if player:removeMoney(50) then
+				if player:getMoney() >= 50 then
+				player:removeMoney(50)
 				npcHandler:say("And there we go!", cid)
 				doTeleportThing(cid, {x = 32346, y = 32625, z = 7})
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
@@ -42,7 +43,8 @@ function creatureSayCallback(cid, type, msg)
 				npcHandler.topic[cid] = 0
 			end
 		elseif(npcHandler.topic[cid] == 2) then
-			if player:removeMoney(200) then
+			if player:getMoney() >= 200 then
+				player:removeMoney(200)
 				npcHandler:say("And there we go!", cid)
 				doTeleportThing(cid, {x = 32131, y = 32913, z = 7})
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

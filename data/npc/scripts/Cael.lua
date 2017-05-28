@@ -314,7 +314,7 @@ local function creatureSayCallback(cid, type, msg)
 				if (ignoreCap == false and (player:getFreeCapacity() < ItemType(items[item].itemId):getWeight(amount) or inBackpacks and player:getFreeCapacity() < (ItemType(items[item].itemId):getWeight(amount) + ItemType(1988):getWeight()))) then
 					return player:sendTextMessage(MESSAGE_STATUS_SMALL, 'You don\'t have enough cap.')
 				end
-				if player:removeMoney(amount * items[item].buyPrice) then
+				if items[item].buyPrice <= player:getMoney() then
 					if inBackpacks then
 						local container = Game.createItem(1988, 1)
 						local bp = player:addItemEx(container)
@@ -325,9 +325,13 @@ local function creatureSayCallback(cid, type, msg)
 							container:addItem(items[item].itemId, items[item])
 						end
 					else
-						player:addItem(items[item].itemId, amount, false, items[item])
+						return
+						player:addItem(items[item].itemId, amount, false, items[item]) and
+						player:removeMoney(amount * items[item].buyPrice) and
+						player:sendTextMessage(MESSAGE_INFO_DESCR, 'You bought '..amount..'x '..items[item].realName..' for '..items[item].buyPrice * amount..' gold coins.')
 					end
 					player:sendTextMessage(MESSAGE_INFO_DESCR, 'You bought '..amount..'x '..items[item].realName..' for '..items[item].buyPrice * amount..' gold coins.')
+					player:removeMoney(amount * items[item].buyPrice)
 				else
 					player:sendTextMessage(MESSAGE_STATUS_SMALL, 'You do not have enough money.')
 				end

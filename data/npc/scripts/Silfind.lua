@@ -83,7 +83,8 @@ local function creatureSayCallback(cid, type, msg)
 			player:addItem(7243, 1)
 			npcHandler.topic[cid] = 0
 		elseif npcHandler.topic[cid] == 2 then
-			if player:removeMoney(1000) then
+			if player:getMoney() >= 1000 then
+				player:removeMoney(1000)
 				npcHandler:say("Here you are.", cid)
 				npcHandler.topic[cid] = 0
 				player:addItem(7243, 1)
