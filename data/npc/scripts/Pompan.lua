@@ -126,9 +126,7 @@ local function creatureSayCallback(cid, type, msg)
 						container:addItem(items[item].itemId, items[item])
 					end
 				else
-					return
-					player:addItem(items[item].itemId, amount, false, items[item]) and
-					player:sendTextMessage(MESSAGE_INFO_DESCR, 'You bought '..amount..'x '..items[item].realName..' for '..items[item].buyPrice * amount..' gold coins.')
+					player:addItem(items[item].itemId, amount, false, items[item])
 				end
 				player:sendTextMessage(MESSAGE_INFO_DESCR, 'You bought '..amount..'x '..items[item].realName..' for '..items[item].buyPrice * amount..' gold coins.')
 			else
@@ -142,7 +140,6 @@ local function creatureSayCallback(cid, type, msg)
 				return
 				player:removeItem(items[item].itemId, amount, -1, ignoreEquipped) and
 				player:addMoney(items[item].sellPrice * amount) and
-
 				player:sendTextMessage(MESSAGE_INFO_DESCR, 'You sold '..amount..'x '..items[item].realName..' for '..items[item].sellPrice * amount..' gold coins.')
 			end
 			return true
@@ -156,6 +153,5 @@ end
 
 npcHandler:setMessage(MESSAGE_GREET, 'Hello.')
 npcHandler:setMessage(MESSAGE_FAREWELL, 'It was a pleasure to help you, |PLAYERNAME|.')
-
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new())
