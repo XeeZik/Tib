@@ -99,12 +99,12 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
 			return false
 		end        
 		
-		if not player:removeItem(9019, 1) then
+		if player:removeItem(9019, 1) then
+			player:addMount(mounts[choiceId].ID)
+            		player:getPosition():sendMagicEffect(CONST_ME_FIREWORK_YELLOW)
+		else	
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must have a Mount Doll in your backpack!")
 			return false
-		else
-            		player:addMount(mounts[choiceId].ID)
-            		player:getPosition():sendMagicEffect(CONST_ME_FIREWORK_YELLOW)
         	end
     	end
 end
