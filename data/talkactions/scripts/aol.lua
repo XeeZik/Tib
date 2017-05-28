@@ -2,8 +2,7 @@ local price_aol = 50000
 
 function onSay(player, words, param)
 	
-	if player:getMoney() >= price_aol then
-		player:removeMoney(price_aol)
+	if player:removeMoney(price_aol)
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 		player:addItem(2173, 1)	
 	else
