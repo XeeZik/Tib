@@ -12,20 +12,20 @@ local config = {
 	-- mana potion
 	[7620] = {mana = {min = 75, max = 125}, emptyId = 7636},
 	-- great spirit potion
-	[8472] = {health = {min = 250, max = 350}, mana = {min = 100, max = 200}, vocations = {3}, text = 'paladins', level = 80, emptyId = 7635},
+	[8472] = {health = {min = 300, max = 350}, mana = {min = 150, max = 150}, vocations = {3}, text = 'paladins', level = 80, emptyId = 7635},
 	-- ultimate health potion
-	[8473] = {health = {min = 450, max = 600}, vocations = {4}, text = 'knights', level = 130, emptyId = 7635},
+	[8473] = {health = {min = 650, max = 850}, vocations = {4}, text = 'knights', level = 130, emptyId = 7635},
 	
 	-- POT NOVOS
 	
 	-- ultimate mana potion 26029
-	[26029] = {mana = {min = 310, max = 320}, vocations = {1, 2}, text = 'sorcerers and druids', level = 130, emptyId = 7635},
+	[26029] = {mana = {min = 425, max = 575}, vocations = {1, 2}, text = 'sorcerers and druids', level = 130, emptyId = 7635},
 	
 	-- Supreme Health Potion 26031
-	[26031] = {health = {min = 650, max = 780}, vocations = {4}, text = 'knights', level = 200, emptyId = 7635},
+	[26031] = {health = {min = 875, max = 1125}, vocations = {4}, text = 'knights', level = 200, emptyId = 7635},
 	
 	-- Ultimate Spirit Potion 26030
-	[26030] = {health = {min = 400, max = 430}, mana = {min = 140, max = 250}, vocations = {3}, text = 'paladins', level = 130, emptyId = 7635},
+	[26030] = {health = {min = 420, max = 580}, mana = {min = 140, max = 250}, vocations = {3}, text = 'paladins', level = 130, emptyId = 7635},
 	
 	
 	-- antidote potion
@@ -98,3 +98,4 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	
 	return true
 end
+
