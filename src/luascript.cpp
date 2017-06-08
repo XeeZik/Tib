@@ -10081,8 +10081,7 @@ int LuaScriptInterface::luaPlayerGetStoreXpBoost(lua_State *L)
 	Player* player = getUserdata<Player>(L, 1);
 	if (player) {
 		lua_pushnumber(L, player->getStoreXpBoost());
-	}
-	else {
+	} else {
 		lua_pushnil(L);
 	}
 	return 1;
@@ -10096,8 +10095,7 @@ int LuaScriptInterface::luaPlayerSetStoreXpBoost(lua_State *L)
 		uint16_t experience = getNumber<uint16_t>(L, 2);
 		player->setStoreXpBoost(experience);
 		pushBoolean(L, true);
-	}
-	else {
+	} else {
 		lua_pushnil(L);
 	}
 	return 1;
@@ -10137,8 +10135,7 @@ int LuaScriptInterface::luaPlayerSetExpBoostStamina(lua_State* L)
 		uint16_t stamina = getNumber<uint16_t>(L, 2);
 		player->setExpBoostStamina(stamina);
 		pushBoolean(L, true);
-	}
-	else {
+	} else {
 		lua_pushnil(L);
 	}
 	return 1;
@@ -10150,8 +10147,7 @@ int LuaScriptInterface::luaPlayerGetExpBoostStamina(lua_State* L)
 	Player* player = getUserdata<Player>(L, 1);
 	if (player) {
 		lua_pushnumber(L, player->getExpBoostStamina());
-	}
-	else {
+	} else {
 		lua_pushnil(L);
 	}
 	return 1;

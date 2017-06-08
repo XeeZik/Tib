@@ -65,19 +65,18 @@ void MonsterType::createLoot(Container* corpse)
 	}
 
 	Player* owner = g_game.getPlayerByID(corpse->getCorpseOwner());
-
 	if (!owner || owner->getStaminaMinutes() > 840) {
-		/*bool canRerollLoot = false;
-
+		/* bool canRerollLoot = false;
 		for (int i = 0; i < 3; i++) {
-		if (owner->getPreyType(i) == 3 && name == owner->getPreyName(i)) {
-		uint32_t rand = uniform_random(0, 100);
-		if (rand <= owner->getPreyValue(i)) {
-		canRerollLoot = true;
-		break;
-		}
-		}
-		}*/
+			if (owner->getPreyType(i) == 3 && name == owner->getPreyName(i)) {
+				uint32_t rand = uniform_random(0, 100);
+				if (rand <= owner->getPreyValue(i)) {
+					canRerollLoot = true;
+					break;
+				}
+			}
+		} */
+
 		bool canRerollLoot = false;
 		for (auto it = info.lootItems.rbegin(), end = info.lootItems.rend(); it != end; ++it) {
 			auto itemList = createLootItem(*it, canRerollLoot);
@@ -104,28 +103,23 @@ void MonsterType::createLoot(Container* corpse)
 			std::ostringstream ss;
 			if (canRerollLoot) {
 				ss << "Loot of " << nameDescription << " [PREY]: " << corpse->getContentDescription();
-			}
-			else {
-
+			} else {
 				ss << "Loot of " << nameDescription << ": " << corpse->getContentDescription();
 			}
 
 			if (owner->getParty()) {
 				owner->getParty()->broadcastPartyLoot(ss.str());
-			}
-			else {
+			} else {
 				owner->sendTextMessage(MESSAGE_LOOT, ss.str());
 			}
 		}
-	}
-	else {
+	} else {
 		std::ostringstream ss;
 		ss << "Loot of " << nameDescription << ": nothing (due to low stamina)";
 
 		if (owner->getParty()) {
 			owner->getParty()->broadcastPartyLoot(ss.str());
-		}
-		else {
+		} else {
 			owner->sendTextMessage(MESSAGE_LOOT, ss.str());
 		}
 	}
@@ -141,14 +135,14 @@ std::vector<Item*> MonsterType::createLootItem(const LootBlock& lootBlock, bool 
 	if (randvalue < lootBlock.chance) {
 		if (Item::items[lootBlock.id].stackable) {
 			itemCount = randvalue % lootBlock.countmax + 1;
-		}
-		else {
+		} else {
 			itemCount = 1;
 		}
-		/*} else {
-		if (canRerollLoot) {
-		createLootItem(lootBlock, false);
-		}*/
+		/* } else {
+			if (canRerollLoot) {
+				createLootItem(lootBlock, false);
+			}
+		} */
 	}
 
 	std::vector<Item*> itemList;
@@ -171,6 +165,38 @@ std::vector<Item*> MonsterType::createLootItem(const LootBlock& lootBlock, bool 
 
 		if (!lootBlock.text.empty()) {
 			tmpItem->setText(lootBlock.text);
+		}
+
+		if (!lootBlock.name.empty()) {
+			tmpItem->setStrAttr(ITEM_ATTRIBUTE_NAME, lootBlock.name);
+		}
+
+		if (!lootBlock.article.empty()) {
+			tmpItem->setStrAttr(ITEM_ATTRIBUTE_ARTICLE, lootBlock.article);
+		}
+
+		if (lootBlock.attack != -1) {
+			tmpItem->setIntAttr(ITEM_ATTRIBUTE_ATTACK, lootBlock.attack);
+		}
+
+		if (lootBlock.defense != -1) {
+			tmpItem->setIntAttr(ITEM_ATTRIBUTE_DEFENSE, lootBlock.defense);
+		}
+
+		if (lootBlock.extraDefense != -1) {
+			tmpItem->setIntAttr(ITEM_ATTRIBUTE_EXTRADEFENSE, lootBlock.extraDefense);
+		}
+
+		if (lootBlock.armor != -1) {
+			tmpItem->setIntAttr(ITEM_ATTRIBUTE_ARMOR, lootBlock.armor);
+		}
+
+		if (lootBlock.shootRange != -1) {
+			tmpItem->setIntAttr(ITEM_ATTRIBUTE_SHOOTRANGE, lootBlock.shootRange);
+		}
+
+		if (lootBlock.hitChance != -1) {
+			tmpItem->setIntAttr(ITEM_ATTRIBUTE_HITCHANCE, lootBlock.hitChance);
 		}
 
 		itemList.push_back(tmpItem);

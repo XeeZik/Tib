@@ -1,21 +1,21 @@
 /**
-* The Forgotten Server - a free and open-source MMORPG server emulator
-* Copyright (C) 2017  Mark Samman <mark.samman@gmail.com>
-*
-* This program is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; either version 2 of the License, or
-* (at your option) any later version.
-*
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-* GNU General Public License for more details.
-*
-* You should have received a copy of the GNU General Public License along
-* with this program; if not, write to the Free Software Foundation, Inc.,
-* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*/
+ * The Forgotten Server - a free and open-source MMORPG server emulator
+ * Copyright (C) 2017  Mark Samman <mark.samman@gmail.com>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
 
 #include "otpch.h"
 
@@ -54,8 +54,7 @@ void ConnectionManager::closeAll()
 			boost::system::error_code error;
 			connection->socket.shutdown(boost::asio::ip::tcp::socket::shutdown_both, error);
 			connection->socket.close(error);
-		}
-		catch (boost::system::system_error&) {
+		} catch (boost::system::system_error&) {
 		}
 	}
 	connections.clear();
@@ -69,7 +68,6 @@ void Connection::close(bool force)
 	ConnectionManager::getInstance().releaseConnection(shared_from_this());
 
 	std::lock_guard<std::recursive_mutex> lockClass(connectionLock);
-
 	connectionState = CONNECTION_STATE_DISCONNECTED;
 
 	if (protocol) {
@@ -79,8 +77,7 @@ void Connection::close(bool force)
 
 	if (messageQueue.empty() || force) {
 		closeSocket();
-	}
-	else {
+	} else {
 		//will be closed by the destructor or onWriteOperation
 	}
 }
@@ -94,8 +91,7 @@ void Connection::closeSocket()
 			boost::system::error_code error;
 			socket.shutdown(boost::asio::ip::tcp::socket::shutdown_both, error);
 			socket.close(error);
-		}
-		catch (boost::system::system_error& e) {
+		} catch (boost::system::system_error& e) {
 			std::cout << "[Network error - Connection::closeSocket] " << e.what() << std::endl;
 		}
 	}
@@ -130,15 +126,13 @@ void Connection::accept()
 			boost::asio::async_read(socket,
 				boost::asio::buffer(msg.getBuffer(), 1),
 				std::bind(&Connection::parseHeader, shared_from_this(), std::placeholders::_1));
-		}
-		else {
+		} else {
 			// Read size of the first packet
 			boost::asio::async_read(socket,
 				boost::asio::buffer(msg.getBuffer(), NetworkMessage::HEADER_LENGTH),
 				std::bind(&Connection::parseHeader, shared_from_this(), std::placeholders::_1));
 		}
-	}
-	catch (boost::system::system_error& e) {
+	} catch (boost::system::system_error& e) {
 		std::cout << "[Network error - Connection::accept] " << e.what() << std::endl;
 		close(FORCE_CLOSE);
 	}
@@ -152,8 +146,7 @@ void Connection::parseHeader(const boost::system::error_code& error)
 	if (error) {
 		close(FORCE_CLOSE);
 		return;
-	}
-	else if (connectionState == CONNECTION_STATE_DISCONNECTED) {
+	} else if (connectionState == CONNECTION_STATE_DISCONNECTED) {
 		return;
 	}
 
@@ -169,8 +162,7 @@ void Connection::parseHeader(const boost::system::error_code& error)
 
 		if (!receivedName && msgBuffer[1] == 0x00) {
 			receivedLastChar = true;
-		}
-		else {
+		} else {
 			std::string serverName = g_config.getString(ConfigManager::SERVER_NAME) + "\n";
 
 			if (!receivedName) {
@@ -180,8 +172,7 @@ void Connection::parseHeader(const boost::system::error_code& error)
 
 					accept();
 					return;
-				}
-				else {
+				} else {
 					std::cout << "[Network error - Connection::parseHeader] Invalid Client Login" << std::endl;
 					close(FORCE_CLOSE);
 					return;
@@ -196,8 +187,7 @@ void Connection::parseHeader(const boost::system::error_code& error)
 
 				accept();
 				return;
-			}
-			else {
+			} else {
 				std::cout << "[Network error - Connection::parseHeader] Invalid Client Login" << std::endl;
 				close(FORCE_CLOSE);
 				return;
@@ -229,8 +219,7 @@ void Connection::parseHeader(const boost::system::error_code& error)
 		msg.setLength(size + NetworkMessage::HEADER_LENGTH);
 		boost::asio::async_read(socket, boost::asio::buffer(msg.getBodyBuffer(), size),
 			std::bind(&Connection::parsePacket, shared_from_this(), std::placeholders::_1));
-	}
-	catch (boost::system::system_error& e) {
+	} catch (boost::system::system_error& e) {
 		std::cout << "[Network error - Connection::parseHeader] " << e.what() << std::endl;
 		close(FORCE_CLOSE);
 	}
@@ -244,8 +233,7 @@ void Connection::parsePacket(const boost::system::error_code& error)
 	if (error) {
 		close(FORCE_CLOSE);
 		return;
-	}
-	else if (connectionState == CONNECTION_STATE_DISCONNECTED) {
+	} else if (connectionState == CONNECTION_STATE_DISCONNECTED) {
 		return;
 	}
 
@@ -254,8 +242,7 @@ void Connection::parsePacket(const boost::system::error_code& error)
 	int32_t len = msg.getLength() - msg.getBufferPosition() - NetworkMessage::CHECKSUM_LENGTH;
 	if (len > 0) {
 		checksum = adlerChecksum(msg.getBuffer() + msg.getBufferPosition() + NetworkMessage::CHECKSUM_LENGTH, len);
-	}
-	else {
+	} else {
 		checksum = 0;
 	}
 
@@ -276,14 +263,12 @@ void Connection::parsePacket(const boost::system::error_code& error)
 				close(FORCE_CLOSE);
 				return;
 			}
-		}
-		else {
+		} else {
 			msg.skipBytes(1);    // Skip protocol ID
 		}
 
 		protocol->onRecvFirstMessage(msg);
-	}
-	else {
+	} else {
 		protocol->onRecvMessage(msg);    // Send the packet to the current protocol
 	}
 
@@ -296,8 +281,7 @@ void Connection::parsePacket(const boost::system::error_code& error)
 		boost::asio::async_read(socket,
 			boost::asio::buffer(msg.getBuffer(), NetworkMessage::HEADER_LENGTH),
 			std::bind(&Connection::parseHeader, shared_from_this(), std::placeholders::_1));
-	}
-	catch (boost::system::system_error& e) {
+	} catch (boost::system::system_error& e) {
 		std::cout << "[Network error - Connection::parsePacket] " << e.what() << std::endl;
 		close(FORCE_CLOSE);
 	}
@@ -328,8 +312,7 @@ void Connection::internalSend(const OutputMessage_ptr& msg)
 		boost::asio::async_write(socket,
 			boost::asio::buffer(msg->getOutputBuffer(), msg->getLength()),
 			std::bind(&Connection::onWriteOperation, shared_from_this(), std::placeholders::_1));
-	}
-	catch (boost::system::system_error& e) {
+	} catch (boost::system::system_error& e) {
 		std::cout << "[Network error - Connection::internalSend] " << e.what() << std::endl;
 		close(FORCE_CLOSE);
 	}
@@ -363,8 +346,7 @@ void Connection::onWriteOperation(const boost::system::error_code& error)
 
 	if (!messageQueue.empty()) {
 		internalSend(messageQueue.front());
-	}
-	else if (connectionState == CONNECTION_STATE_DISCONNECTED) {
+	} else if (connectionState == CONNECTION_STATE_DISCONNECTED) {
 		closeSocket();
 	}
 }

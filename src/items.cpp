@@ -419,13 +419,10 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 			it.extraDefense = pugi::cast<int32_t>(valueAttribute.value());
 		} else if (tmpStrValue == "attack") {
 			it.attack = pugi::cast<int32_t>(valueAttribute.value());
-		}
-		else if (tmpStrValue == "wrapcontainer") {
+		} else if (tmpStrValue == "wrapcontainer") {
 			it.wrapContainer = valueAttribute.as_bool();
-		}
-		else if (tmpStrValue == "imbuingslots") {
+		} else if (tmpStrValue == "imbuingslots") {
 			it.imbuingSlots = pugi::cast<int32_t>(valueAttribute.value());
-
 		} else if (tmpStrValue == "wrapableto" || tmpStrValue == "unwrapableto") {
 			it.wrapableTo = pugi::cast<int32_t>(valueAttribute.value());
 		} else if (tmpStrValue == "rotateto") {

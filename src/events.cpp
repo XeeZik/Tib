@@ -110,11 +110,9 @@ bool Events::load()
 				info.playerOnLoseExperience = event;
 			} else if (methodName == "onGainSkillTries") {
 				info.playerOnGainSkillTries = event;
-			}
-			else if (methodName == "onUseWeapon") {
+			} else if (methodName == "onUseWeapon") {
 				info.playerOnUseWeapon = event;
-			}
-			else if (methodName == "onCombatSpell") {
+			} else if (methodName == "onCombatSpell") {
 				info.playerOnCombatSpell = event;
 			} else {
 				std::cout << "[Warning - Events::load] Unknown player method: " << methodName << std::endl;
@@ -793,8 +791,7 @@ void Events::eventPlayerOnUseWeapon(Player* player, int32_t& normalDamage, Comba
 
 	if (scriptInterface.protectedCall(L, 4, 3) != 0) {
 		LuaScriptInterface::reportError(nullptr, LuaScriptInterface::popString(L));
-	}
-	else {
+	} else {
 		normalDamage = LuaScriptInterface::getNumber<int32_t>(L, -3);
 		elementType = LuaScriptInterface::getNumber<CombatType_t>(L, -2);
 		elementDamage = LuaScriptInterface::getNumber<int32_t>(L, -1);
@@ -831,8 +828,7 @@ void Events::eventPlayerOnCombatSpell(Player* player, int32_t& normalDamage, int
 
 	if (scriptInterface.protectedCall(L, 4, 3) != 0) {
 		LuaScriptInterface::reportError(nullptr, LuaScriptInterface::popString(L));
-	}
-	else {
+	} else {
 		normalDamage = LuaScriptInterface::getNumber<int32_t>(L, -3);
 		elementType = LuaScriptInterface::getNumber<CombatType_t>(L, -2);
 		elementDamage = LuaScriptInterface::getNumber<int32_t>(L, -1);
