@@ -263,13 +263,6 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 		end
 	end
 
-			-- Gold Pounch
-		if (containerTo:getId() == 26377) then
-			if (not (item:getId() == 2160 or item:getId() == 2152 or item:getId() == 2148)) then
-				self:sendCancelMessage("You can move only money to this container.")
-				return false
-			end
-		end
 		
 	-- Store Inbox
 	local containerIdFrom = fromPosition.y - 64
@@ -286,6 +279,13 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 		if (containerTo:getId() == ITEM_STORE_INBOX) then
 			self:sendCancelMessage(RETURNVALUE_CONTAINERNOTENOUGHROOM)
 			return false
+		end
+			-- Gold Pounch
+		if (containerTo:getId() == 26377) then
+			if (not (item:getId() == 2160 or item:getId() == 2152 or item:getId() == 2148)) then
+				self:sendCancelMessage("You can move only money to this container.")
+				return false
+			end
 		end
 	end
 
