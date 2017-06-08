@@ -33,134 +33,97 @@ end
 
 
 function Player:onLook(thing, position, distance)
-	local description = "You see " .. thing:getDescription(distance)
+	local description = 'You see '
+
+	if thing:isItem() then
+		if thing.actionid == 5640 then
+			description = description .. 'a honeyflower patch.'
+		elseif thing.actionid == 5641 then
+			description = description .. 'a banana palm.'
+		else
+			description = description .. thing:getDescription(distance)
+		end
+
+		local itemType = thing:getType()
+		if (itemType and itemType:getImbuingSlots() > 0) then
+			local imbuingSlots = "Imbuements: ("
+			for i = 1, itemType:getImbuingSlots() do
+				local specialAttr = thing:getSpecialAttribute(i)
+				local time = 0
+				if (thing:getSpecialAttribute(i+3)) then
+					time = getTime(thing:getSpecialAttribute(i+3))
+				end
+				
+				if (specialAttr) then
+					if (i ~= itemType:getImbuingSlots()) then
+						imbuingSlots = imbuingSlots.. "" ..specialAttr.." " ..time..", "
+					else
+						imbuingSlots = imbuingSlots.. "" ..specialAttr.." " ..time..")."
+					end
+				else
+					if (i ~= itemType:getImbuingSlots()) then
+						imbuingSlots = imbuingSlots.. "Empty Slot, "
+					else
+						imbuingSlots = imbuingSlots.. "Empty Slot)."
+					end
+				end
+			end
+			description = string.gsub(description, "It weighs", imbuingSlots.. "\nIt weighs")
+		end
+	else
+		description = description .. thing:getDescription(distance)
+	end
+
 	if self:getGroup():getAccess() then
 		if thing:isItem() then
-			description = string.format("%s\nItem ID: %d", description, thing:getId())
+			description = string.format('%s\nItem ID: %d', description, thing.itemid)
 
-			local actionId = thing:getActionId()
+			local actionId = thing.actionid
 			if actionId ~= 0 then
-				description = string.format("%s, Action ID: %d", description, actionId)
-			end
-
-			-- Imbuement System
-			local itemType = thing:getType()
-			if (itemType and itemType:getImbuingSlots() > 0) then
-				local imbuingSlots = "Imbuements: ("
-				for i = 1, itemType:getImbuingSlots() do
-					local specialAttr = thing:getSpecialAttribute(i)
-					local time = 0
-					if (thing:getSpecialAttribute(i+3)) then
-						time = getTime(thing:getSpecialAttribute(i+3))
-					end
-
-					if (specialAttr and specialAttr ~= 0) then
-						if (i ~= itemType:getImbuingSlots()) then
-							imbuingSlots = imbuingSlots.. "" ..specialAttr.." " ..time..", "
-						else
-							imbuingSlots = imbuingSlots.. "" ..specialAttr.." " ..time..")."
-						end
-					else
-						if (i ~= itemType:getImbuingSlots()) then
-							imbuingSlots = imbuingSlots.. "Empty Slot, "
-						else
-							imbuingSlots = imbuingSlots.. "Empty Slot)."
-						end
-					end
-				end
-				description = string.gsub(description, "It weighs", imbuingSlots.. "\nIt weighs")
-			end
-
-			-- KD System => onLook
-			if thing:isCreature() and thing:isPlayer() then
-				description = string.format("%s\n [PVP Kills: %d] \n [PVP Deaths: %d] \n",
-				description, math.max(0, thing:getStorageValue(167912)), math.max(0, thing:getStorageValue(167913)))
-			end
-
-			-- Marry System => onLook
-			if LOOK_MARRIAGE_DESCR and thing:isCreature() then
-				if thing:isPlayer() then
-				description = description .. self:getMarriageDescription(thing)
-				end
+				description = string.format('%s, Action ID: %d', description, actionId)
 			end
 
 			local uniqueId = thing:getAttribute(ITEM_ATTRIBUTE_UNIQUEID)
 			if uniqueId > 0 and uniqueId < 65536 then
-				description = string.format("%s, Unique ID: %d", description, uniqueId)
+				description = string.format('%s, Unique ID: %d', description, uniqueId)
 			end
 
+			description = description .. '.'
 			local itemType = thing:getType()
 
 			local transformEquipId = itemType:getTransformEquipId()
 			local transformDeEquipId = itemType:getTransformDeEquipId()
 			if transformEquipId ~= 0 then
-				description = string.format("%s\nTransforms to: %d (onEquip)", description, transformEquipId)
+				description = string.format('%s\nTransforms to: %d (onEquip)', description, transformEquipId)
 			elseif transformDeEquipId ~= 0 then
-				description = string.format("%s\nTransforms to: %d (onDeEquip)", description, transformDeEquipId)
+				description = string.format('%s\nTransforms to: %d (onDeEquip)', description, transformDeEquipId)
 			end
 
 			local decayId = itemType:getDecayId()
 			if decayId ~= -1 then
-				description = string.format("%s\nDecays to: %d", description, decayId)
+				description = string.format('%s\nDecays to: %d', description, decayId)
 			end
 		elseif thing:isCreature() then
-			local str = "%s\nHealth: %d / %d"
+			local str = '%s\nHealth: %d / %d'
 			if thing:getMaxMana() > 0 then
-				str = string.format("%s, Mana: %d / %d", str, thing:getMana(), thing:getMaxMana())
+				str = string.format('%s, Mana: %d / %d', str, thing:getMana(), thing:getMaxMana())
 			end
-			description = string.format(str, description, thing:getHealth(), thing:getMaxHealth()) .. "."
+			description = string.format(str, description, thing:getHealth(), thing:getMaxHealth()) .. '.'
 		end
 
 		local position = thing:getPosition()
 		description = string.format(
-			"%s\nPosition: %d, %d, %d",
+			'%s\nPosition: %d, %d, %d',
 			description, position.x, position.y, position.z
 		)
 
-		if thing:isCreature() then
-			if thing:isPlayer() then
-				description = string.format("%s\nIP: %s.", description, Game.convertIpToString(thing:getIp()))
-			end
+		if thing:isCreature() and thing:isPlayer() then
+			description = string.format('%s\nIP: %s.', description, Game.convertIpToString(thing:getIp()))
 		end
 	end
 	self:sendTextMessage(MESSAGE_INFO_DESCR, description)
 end
 
-function Player:onLookInBattleList(creature, distance)
-	local description = "You see " .. creature:getDescription(distance)
-	if self:getGroup():getAccess() then
-		local str = "%s\nHealth: %d / %d"
-		if creature:getMaxMana() > 0 then
-			str = string.format("%s, Mana: %d / %d", str, creature:getMana(), creature:getMaxMana())
-		end
-		description = string.format(str, description, creature:getHealth(), creature:getMaxHealth()) .. "."
-
-		local position = creature:getPosition()
-		description = string.format(
-			"%s\nPosition: %d, %d, %d",
-			description, position.x, position.y, position.z
-		)
-
-		if creature:isPlayer() then
-			description = string.format("%s\nIP: %s", description, Game.convertIpToString(creature:getIp()))
-		end
-	end
-
-	-- KD look
-	if creature:isPlayer() and creature:isCreature() then
-		description = string.format("%s\n [PVP Kills: %d] \n [PVP Deaths: %d] \n",
-		description, math.max(0, creature:getStorageValue(167912)), math.max(0, creature:getStorageValue(167913)))
-	end
-
-	-- MARRY
-	if LOOK_MARRIAGE_DESCR and creature:isCreature() then
-		if creature:isPlayer() then
-			description = description .. self:getMarriageDescription(creature)
-		end
-	end
-
-	self:sendTextMessage(MESSAGE_INFO_DESCR, description)
-end
 
 function Player:onLookInTrade(partner, item, distance)
 	self:sendTextMessage(MESSAGE_INFO_DESCR, "You see " .. item:getDescription(distance))
