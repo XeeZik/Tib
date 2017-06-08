@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Quara Pincher" nameDescription="a quara pincher" race="blood" experience="2200" speed="210" manacost="0">
-	<health now="2800" max="2800" />
+<monster name="Quara Pincher" nameDescription="a quara pincher" race="blood" experience="1200" speed="210" manacost="0">
+	<health now="1800" max="1800" />
 	<look type="77" corpse="6063" />
 	<targetchange interval="4000" chance="10" />
 	<flags>
@@ -41,21 +41,17 @@
 		<voice sentence="Crrrk! Crrrk!" />
 	</voices>
 	<loot>
-		<item id="2152" countmax="5" chance="80000" />					<!-- platinum coin -->
-		<item id="12446" chance="18300" />					<!-- quara pincers -->
-		<item id="7591" countmax="2" chance="10400" />					<!-- great health potion -->
-		<item id="7590" countmax="2" chance="10800" />					<!-- great mana potion -->
-		<item id="2147" countmax="2" chance="9100" />		<!-- small ruby -->
-		<item id="2145" countmax="2" chance="6500" />	<!-- small diamond -->
-		<item id="2178" chance="5700" />					<!-- mind stone -->
-		<item id="2156" chance="6100" />						<!-- red gem -->
-		<item id="15649" countmax="4" chance="3200" />					<!-- vortex bolt -->
-		<item id="7632" chance="2000" />					<!-- giant shimmering pearl -->
-		<item id="2670" countmax="5" chance="6700" />		<!-- shrimp -->
-		<item id="5895" chance="820" />						<!-- fish fin -->
-		<item id="2475" chance="1600" />						<!-- warrior helmet -->
-		<item id="2169" chance="610" />					<!-- time ring -->
-		<item id="7897" chance="410" />						<!-- glacier robe -->
-		<item id="13305" chance="20" />						<!-- giant shrimp -->
+		<item id="2148" countmax="149" chance="100000" />	<!-- gold coin -->
+		<item id="2152" chance="40000" />					<!-- platinum coin -->
+		<item id="12446" chance="14000" />					<!-- quara pincers -->
+		<item id="7591" chance="10000" />					<!-- great health potion -->
+		<item id="2147" countmax="2" chance="7500" />		<!-- small ruby -->
+		<item id="2381" chance="7000" />						<!-- halberd -->
+		<item id="2670" countmax="5" chance="5000" />		<!-- shrimp -->
+		<item id="5895" chance="1600" />						<!-- fish fin -->
+		<item id="2475" chance="1400" />						<!-- warrior helmet -->
+		<item id="2487" chance="340" />						<!-- crown armor -->
+		<item id="7897" chance="140" />						<!-- glacier robe -->
+		<item id="13305" chance="70" />						<!-- giant shrimp -->
 	</loot>
 </monster>

@@ -56,28 +56,29 @@
 		<voice sentence="Frizzle!" />		
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="100000" /><!-- gold coin -->
-		<item id="2152" countmax="3" chance="90000" /><!-- platinum coin -->		
-		<item id="26158" chance="15400" /> <!-- Sparkion Claw -->		
-		<item id="26160" chance="11100" /><!-- sparkion legs -->
-		<item id="7591" countmax="2" chance="9500" /> <!-- great health potion -->
-		<item id="18419" chance="6000" /><!-- cyan crystal fragment -->
-		<item id="2158" chance="1000" /><!-- blue gem -->
-		<item id="26199" chance="240" /><!-- Collar of Green Plasma -->
-		<item id="26187" chance="370" /><!-- Ring of Green Plasma -->
-		<item id="26201" chance="15000" /><!-- Energy Drink -->
-		<item id="7590" chance="10100" /> <!-- great mana potion -->		
-		<item id="18418" chance="8500" /><!-- Blue Crystal Splinter -->
-		<item id="2146" countmax="2" chance="4900" /><!-- Small Sapphire -->
-		<item id="2189" chance="920" /><!-- Wand of Cosmic Energy -->
-		<item id="26200" chance="200" /><!-- Collar of Red Plasma -->
-		<item id="26191" chance="14600" /><!-- energy bar --> 
-		<item id="26161" chance="14100" /><!-- sparkion stings -->		
-		<item id="26159" chance="9100" /><!-- sparkion tail -->		
-		<item id="8472" countmax="2" chance="9700" /> <!-- great spirit potion -->
-		<item id="18413" chance="4200" /><!-- Blue Crystal Shard -->
-		<item id="26189" chance="370" /><!-- Ring of Red Plasma -->
-		<item id="26185" chance="240" /><!-- Ring of Blue Plasma -->
-		<item id="7869" chance="170" /><!-- Energy spike sword -->
+		<item id="2148" countmax="100" chance="50000" /><!-- gold coin -->
+		<item id="2152" countmax="2" chance="50000" /><!-- platinum coin -->		
+		<item id="26158" chance="4000" /> <!-- Sparkion Claw -->		
+		<item id="26160" chance="5000" /><!-- sparkion legs -->
+		<item id="7591" chance="3000" /> <!-- great health potion -->
+		<item id="18419" chance="1500" /><!-- cyan crystal fragment -->
+		<item id="2158" chance="500" /><!-- blue gem -->
+		<item id="26199" chance="200" /><!-- Collar of Green Plasma -->
+		<item id="26187" chance="300" /><!-- Ring of Green Plasma -->
+		<item id="26201" chance="500" /><!-- Energy Drink -->
+		<item id="7590" chance="3000" /> <!-- great mana potion -->		
+		<item id="18418" chance="1000" /><!-- Blue Crystal Splinter -->
+		<item id="2146" countmax="2" chance="3000" /><!-- Small Sapphire -->
+		<item id="2189" chance="800" /><!-- Wand of Cosmic Energy -->
+		<item id="26200" chance="130" /><!-- Collar of Red Plasma -->
+		<item id="26191" chance="2000" /><!-- energy bar --> 
+		<item id="26161" chance="1200" /><!-- sparkion stings -->		
+		<item id="26159" chance="900" /><!-- sparkion tail -->		
+		<item id="8472" chance="3000" /> <!-- great spirit potion -->
+		
+		<item id="18413" chance="500" /><!-- Blue Crystal Shard -->
+		<item id="26189" chance="140" /><!-- Ring of Red Plasma -->
+		<item id="26185" chance="140" /><!-- Ring of Blue Plasma -->
+		
 	</loot>
 </monster>

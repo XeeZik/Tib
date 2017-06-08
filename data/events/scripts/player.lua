@@ -10,6 +10,28 @@ function Player:onBrowseField(position)
 	return true
 end
 
+local function getHours(seconds)
+	return math.floor((seconds/60)/60)
+end
+
+local function getMinutes(seconds)
+	return math.floor(seconds/60)
+end
+
+local function getTime(seconds)
+	local hours, minutes = getHours(seconds), getMinutes(seconds)
+	if (minutes > 59) then
+		minutes = minutes-hours*60
+	end
+
+	if (minutes < 10) then
+		minutes = "0" ..minutes
+	end
+
+	return hours..":"..minutes.. "h"
+end
+
+
 function Player:onLook(thing, position, distance)
 	local description = "You see " .. thing:getDescription(distance)
 	if self:getGroup():getAccess() then

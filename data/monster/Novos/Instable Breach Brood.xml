@@ -52,18 +52,13 @@
 		<voice sentence="Hisss!" />				
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="99000" /><!-- gold coin -->
-		<item id="2152" countmax="2" chance="67000" /><!-- platinum coin -->
-		<item id="26162" chance="10100" /><!-- plasma pearls -->
-		<item id="26177" chance="10200" /><!-- crystal bone -->
-		<item id="26201" chance="4900" /><!-- energy drink -->
-		<item id="26191" chance="4200" /><!-- energy bar -->
-		<item id="7591" chance="4100" /> <!-- great health potion -->
-		<item id="8472" chance="4700" /> <!-- great spirit potion -->
-		<item id="7590" chance="4300" /> <!-- great mana potion -->
-		<item id="18419" chance="3300" /> <!-- cyan crystal fragment -->
-		<item id="18418" chance="2600" /><!-- Blue Crystal Splinter -->
-		<item id="18413" chance="2100" /><!-- Blue Crystal Shard -->
-		<item id="18415" chance="3400" /><!-- green crystal shard -->
+		<item id="2148" countmax="100" chance="50000" /><!-- gold coin -->
+		<item id="2152" countmax="2" chance="50000" /><!-- platinum coin -->
+		<item id="26162" chance="2000" /><!-- plasma pearls -->
+		<item id="26177" chance="2000" /><!-- crystal bone -->
+		<item id="26201" chance="2000" /><!-- energy drink -->
+		<item id="7591" chance="3000" /> <!-- great health potion -->
+		<item id="8472" chance="3000" /> <!-- great spirit potion -->
+		<item id="18415" chance="1500" /><!-- green crystal shard -->
 	</loot>
 </monster>

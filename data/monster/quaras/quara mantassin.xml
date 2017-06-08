@@ -44,15 +44,15 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="129" chance="80000" />	<!-- gold coin -->
-		<item id="12445" chance="12300" />				<!-- mantassin tail -->
-		<item id="2670" countmax="5" chance="5300" />	<!-- shrimp -->
+		<item id="12445" chance="11600" />				<!-- mantassin tail -->
+		<item id="2670" countmax="5" chance="5000" />	<!-- shrimp -->
 		<item id="2381" chance="5000" />					<!-- halberd -->
-		<item id="2654" chance="1000" />					<!-- cape -->
+		<item id="2654" chance="1050" />					<!-- cape -->
 		<item id="2377" chance="1050" />					<!-- two handed sword -->
 		<item id="2146" chance="1000" />					<!-- small sapphire -->
 		<item id="2165" chance="1000" />					<!-- stealth ring -->
-		<item id="5895" chance="600" />					<!-- fish fin -->
-		<item id="2479" chance="90" />					<!-- strange helmet -->
-		<item id="2656" chance="40" />					<!-- blue robe -->
+		<item id="5895" chance="610" />					<!-- fish fin -->
+		<item id="2479" chance="120" />					<!-- strange helmet -->
+		<item id="2656" chance="50" />					<!-- blue robe -->
 	</loot>
 </monster>

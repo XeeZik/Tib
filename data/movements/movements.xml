@@ -43,7 +43,8 @@
 	 
 	<movevent event="StepIn" fromaid="13400" toaid="13413" script="others/movimentos.lua"/>
 	
-	<movevent event="StepIn" fromaid="13415" toaid="13442" script="others/movimentos1.lua"/>
+	<movevent event="StepIn" fromaid="13415" toaid="13428" script="others/movimentos1.lua"/>
+	<movevent event="StepIn" fromaid="13429" toaid="13442" script="others/movimentos2.lua"/>
 	
 	<movevent event="StepIn" fromaid="13510" toaid="13529" script="others/movimento1094.lua"/>
 	<!--<movevent event="StepIn" actionid="13520" script="others/movimento1094kill.lua"/> -->

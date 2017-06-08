@@ -45,22 +45,22 @@
 		<voice sentence="A challenge at last!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="100000" />	<!-- gold coin -->
-        <item id="2152" countmax="2" chance="26010" />	<!-- platinum coin -->		
-		<item id="7591" chance="7210" />	<!-- Great Health Potion -->		
-		<item id="2147" countmax="2" chance="4010" />	<!-- Small Ruby -->		
-		<item id="2666" countmax="2" chance="10010" />	<!-- Meat -->		
-		<item id="2487" chance="600" />	<!-- Crown Armor -->
-		<item id="2491" chance="540" />	<!-- Crown Helmet -->
-		<item id="2519" chance="100" />	<!-- Crown Shield -->
-		<item id="2488" chance="760" />	<!-- Crown Legs -->
-		<item id="2392" chance="410" />	<!-- Fire Sword -->
-		<item id="5911" chance="2000" />	<!-- Red piece of cloth -->
-		<item id="12466" chance="6010" />	<!-- Scroll of Heroic Deeds -->
-		<item id="12406" chance="1610" />	<!-- Small Notebook -->
-		<item id="2377" chance="5210" />	<!-- Two Handed Sword -->
-		<item id="2114" chance="130" />	<!-- Piggy Bank -->
-		<item id="2391" chance="890" />	<!-- War Hammer -->
+		<item id="2148" countmax="100" chance="75410" />	<!-- gold coin -->
+        <item id="2152" countmax="2" chance="10410" />	<!-- platinum coin -->		
+		<item id="7591" chance="1210" />	<!-- Great Health Potion -->		
+		<item id="2147" countmax="2" chance="1810" />	<!-- Small Ruby -->		
+		<item id="2666" countmax="2" chance="2010" />	<!-- Meat -->		
+		<item id="2487" chance="310" />	<!-- Crown Armor -->
+		<item id="2491" chance="330" />	<!-- Crown Helmet -->
+		<item id="2519" chance="120" />	<!-- Crown Shield -->
+		<item id="2488" chance="300" />	<!-- Crown Legs -->
+		<item id="2392" chance="130" />	<!-- Fire Sword -->
+		<item id="2744" chance="510" />	<!-- Red Rose -->
+		<item id="12466" chance="910" />	<!-- Scroll of Heroic Deeds -->
+		<item id="12406" chance="910" />	<!-- Small Notebook -->
+		<item id="2377" chance="3510" />	<!-- Two Handed Sword -->
+		<item id="2114" chance="110" />	<!-- Piggy Bank -->
+		<item id="2391" chance="420" />	<!-- War Hammer -->
 		
 	</loot>
 </monster>

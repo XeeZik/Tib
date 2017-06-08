@@ -62,36 +62,36 @@
 		<voice sentence="FLAWLESS VICTORY!" yell="1" />
 	</voices>
 	<loot>
-		<item id="6500" countmax="500" chance="100000" />	<!-- demonic essence -->
-		<item id="2152" countmax="73" chance="100000" />	<!-- platinum coin -->
+		<item id="6500" chance="100000" />				<!-- demonic essence -->
+		<item id="2152" countmax="69" chance="100000" />	<!-- platinum coin -->
 		<item id="5954" countmax="2" chance="33333" />	<!-- demon horn -->
-		<item id="2145" countmax="5" chance="30400" />	<!-- small diamond -->
-		<item id="6300" chance="28200" />				<!-- death ring -->
+		<item id="2145" countmax="5" chance="30000" />	<!-- small diamond -->
+		<item id="6300" chance="28000" />				<!-- death ring -->
 		<item id="7591" chance="26000" />				<!-- great health potion -->
 		<item id="8472" chance="26000" />				<!-- great spirit potion -->
 		<item id="8904" chance="26000" />				<!-- spellscroll of prophecies -->
 		<item id="8473" chance="26000" />				<!-- ultimate health potion -->
 		<item id="2143" countmax="15" chance="26000" />	<!-- white pearl -->
-		<item id="2178" chance="24000" />				<!-- mind stone -->
-		<item id="2214" chance="24000" />				<!-- ring of healing -->
-		<item id="2150" countmax="15" chance="23900" />	<!-- small amethyst -->
-		<item id="2149" countmax="6" chance="23900" />	<!-- small emerald -->
-		<item id="1984" chance="21700" />				<!-- blue tome -->
-		<item id="7590" chance="21700" />				<!-- great mana potion -->
-		<item id="2155" chance="21700" />				<!-- green gem -->
-		<item id="2176" chance="21700" />				<!-- orb -->
-		<item id="2146" countmax="4" chance="21700" />	<!-- small sapphire -->
-		<item id="8918" chance="21700" />				<!-- spellbook of dark mysteries -->
-		<item id="8901" chance="21700" />				<!-- spellbook of warding -->
-		<item id="2179" chance="19500" />				<!-- gold ring -->
-		<item id="7405" chance="17300" />				<!-- havoc blade -->
-		<item id="8884" chance="17300" />				<!-- oceanborn leviathan armor -->
-		<item id="8903" chance="17300" />				<!-- spellbook of lost souls -->
-		<item id="7368" countmax="47" chance="15000" />	<!-- assassin star -->
-		<item id="2158" chance="15200" />				<!-- blue gem -->
-		<item id="7433" chance="15200" />				<!-- ravenwing -->
+		<item id="2178" chance="23000" />				<!-- mind stone -->
+		<item id="2214" chance="23000" />				<!-- ring of healing -->
+		<item id="2150" countmax="17" chance="23000" />	<!-- small amethyst -->
+		<item id="2149" countmax="10" chance="23000" />	<!-- small emerald -->
+		<item id="1984" chance="21000" />				<!-- blue tome -->
+		<item id="7590" chance="21000" />				<!-- great mana potion -->
+		<item id="2155" chance="21000" />				<!-- green gem -->
+		<item id="2176" chance="21000" />				<!-- orb -->
+		<item id="2146" countmax="10" chance="21000" />	<!-- small sapphire -->
+		<item id="8918" chance="21000" />				<!-- spellbook of dark mysteries -->
+		<item id="8901" chance="21000" />				<!-- spellbook of warding -->
+		<item id="2179" chance="20000" />				<!-- gold ring -->
+		<item id="7405" chance="17000" />				<!-- havoc blade -->
+		<item id="8884" chance="17000" />				<!-- oceanborn leviathan armor -->
+		<item id="8903" chance="17000" />				<!-- spellbook of lost souls -->
+		<item id="7368" countmax="44" chance="15000" />	<!-- assassin star -->
+		<item id="2158" chance="15000" />				<!-- blue gem -->
+		<item id="7433" chance="15000" />				<!-- ravenwing -->
 		<item id="6553" chance="15000" />				<!-- ruthless axe -->
-		<item id="2112" chance="15200" />				<!-- teddy bear -->
+		<item id="2112" chance="15000" />				<!-- teddy bear -->
 		<item id="2520" chance="13000" />				<!-- demon shield -->
 		<item id="2177" chance="13000" />				<!-- life crystal -->
 		<item id="2164" chance="13000" />				<!-- might ring -->
@@ -108,7 +108,5 @@
 		<item id="2646" chance="8700" />					<!-- golden boots -->
 		<item id="2472" chance="8700" />					<!-- magic plate armor -->
 		<item id="7455" chance="6500" />					<!-- mythril axe -->
-		<item id="2123" chance="4310" />					<!-- ring of the sky -->
-		<item id="2514" chance="2170" />					<!-- mastermind shield -->
 	</loot>
 </monster>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 
-	<action fromid="27728" toid="27729" script="other/imbuement.lua" /> 
 	<action fromid="27716" toid="27717" script="other/imbuement.lua" />
 
 	<!--store-->

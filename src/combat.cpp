@@ -921,57 +921,63 @@ void ValueCallback::getMinMaxValues(Player* player, CombatDamage& damage, bool u
 
 	int parameters = 1;
 	switch (type) {
-		case COMBAT_FORMULA_LEVELMAGIC: {
-			//onGetPlayerMinMaxValues(player, level, maglevel)
-			lua_pushnumber(L, player->getLevel());
-			lua_pushnumber(L, player->getMagicLevel());
-			parameters += 2;
-			break;
-		}
+	case COMBAT_FORMULA_LEVELMAGIC: {
+		//onGetPlayerMinMaxValues(player, level, maglevel)
+		lua_pushnumber(L, player->getLevel());
+		lua_pushnumber(L, player->getMagicLevel());
+		parameters += 2;
+		break;
+	}
 
-		case COMBAT_FORMULA_SKILL: {
-			//onGetPlayerMinMaxValues(player, attackSkill, attackValue, attackFactor)
-			Item* tool = player->getWeapon();
-			const Weapon* weapon = g_weapons->getWeapon(tool);
+	case COMBAT_FORMULA_SKILL: {
+		//onGetPlayerMinMaxValues(player, attackSkill, attackValue, attackFactor)
+		Item* tool = player->getWeapon();
+		const Weapon* weapon = g_weapons->getWeapon(tool);
 
-			int32_t attackValue = 7;
-			if (weapon) {
-				attackValue = tool->getAttack();
-				if (tool->getWeaponType() == WEAPON_AMMO) {
-					Item* item = player->getWeapon(true);
-					if (item) {
-						attackValue += item->getAttack();
-					}
-				}
-
-				damage.secondary.type = weapon->getElementType();
-				damage.secondary.value = weapon->getElementDamage(player, nullptr, tool);
-				if (useCharges) {
-					uint16_t charges = tool->getCharges();
-					if (charges != 0) {
-						g_game.transformItem(tool, tool->getID(), charges - 1);
-					}
+		int32_t attackValue = 7;
+		if (weapon) {
+			attackValue = tool->getAttack();
+			if (tool->getWeaponType() == WEAPON_AMMO) {
+				Item* item = player->getWeapon(true);
+				if (item) {
+					attackValue += item->getAttack();
 				}
 			}
 
-			lua_pushnumber(L, player->getWeaponSkill(tool));
-			lua_pushnumber(L, attackValue);
-			lua_pushnumber(L, player->getAttackFactor());
-			parameters += 3;
-			break;
+			CombatType_t imbuingCombat = COMBAT_NONE;
+			int32_t imbuingDamage = 0;
+
+			g_events->eventPlayerOnCombatSpell(player, attackValue, imbuingDamage, imbuingCombat);
+
+			damage.secondary.type = (imbuingCombat != COMBAT_NONE) ? imbuingCombat : weapon->getElementType();
+			damage.secondary.value = weapon->getElementDamage(player, nullptr, tool, imbuingDamage, imbuingCombat);
+			if (useCharges) {
+				uint16_t charges = tool->getCharges();
+				if (charges != 0) {
+					g_game.transformItem(tool, tool->getID(), charges - 1);
+				}
+			}
 		}
 
-		default: {
-			std::cout << "ValueCallback::getMinMaxValues - unknown callback type" << std::endl;
-			scriptInterface->resetScriptEnv();
-			return;
-		}
+		lua_pushnumber(L, player->getWeaponSkill(tool));
+		lua_pushnumber(L, attackValue);
+		lua_pushnumber(L, player->getAttackFactor());
+		parameters += 3;
+		break;
+	}
+
+	default: {
+		std::cout << "ValueCallback::getMinMaxValues - unknown callback type" << std::endl;
+		scriptInterface->resetScriptEnv();
+		return;
+	}
 	}
 
 	int size0 = lua_gettop(L);
 	if (lua_pcall(L, parameters, 2, 0) != 0) {
 		LuaScriptInterface::reportError(nullptr, LuaScriptInterface::popString(L));
-	} else {
+	}
+	else {
 		damage.primary.value = normal_random(
 			LuaScriptInterface::getNumber<int32_t>(L, -2),
 			LuaScriptInterface::getNumber<int32_t>(L, -1)

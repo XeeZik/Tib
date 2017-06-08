@@ -53,7 +53,7 @@
 		<item id="7590" chance="7800" />						<!-- great mana potion -->
 		<item id="2789" countmax="3" chance="7500" />		<!-- brown mushroom -->
 		<item id="7591" chance="5000" />						<!-- great health potion -->
-		<item id="2169" chance="2300" />						<!-- time ring -->
+		<item id="2169" chance="2400" />						<!-- time ring -->
 		<item id="7449" chance="2000" />						<!-- crystal sword -->
 		<item id="7440" chance="300" />						<!-- mastermind potion -->
 		<item id="2171" chance="260" />						<!-- platinum amulet -->

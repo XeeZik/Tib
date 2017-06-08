@@ -45,11 +45,10 @@
 		<voice sentence="Bobble!"/>
 	</voices>
 	<loot>
-		<item id="2144" countmax="1" chance="670"/><!-- black pearl -->
-		<item id="2143" countmax="1" chance="1380"/><!-- white pearl -->
-		<item id="2667" countmax="1" chance="18770"/><!-- fish -->
-		<item id="2670" countmax="1" chance="7320"/><!-- shrimp -->
-		<item id="2147" countmax="1" chance="600"/><!-- small ruby -->
-		<item id="2146" countmax="1" chance="670"/><!-- small sapphire -->
+		<item id="2144" countmax="1" chance="1720"/><!-- black pearl -->
+		<item id="2667" countmax="1" chance="7470"/><!-- fish -->
+		<item id="2670" countmax="5" chance="6320"/><!-- shrimp -->
+		<item id="2150" countmax="2" chance="1720"/><!-- small amethyst -->
+		<item id="2146" countmax="3" chance="2270"/><!-- small sapphire -->
 	</loot>
 </monster>

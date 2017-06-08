@@ -17,7 +17,7 @@
 		<flag runonhealth="300" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-500" />
+		<attack name="melee" interval="2000" min="0" max="-350" />
 		<attack name="magma crawler soulfire" interval="2000" chance="20" />
 		<attack name="soulfire" interval="2000" chance="10" range="7" target="1" />
 		<attack name="fire" interval="2000" chance="10" length="8" spread="0" min="-300" max="-1200">
@@ -48,28 +48,28 @@
 	<loot>
 		<item id="2148" countmax="199" chance="100000" />	<!-- gold coin -->
 		<item id="2152" countmax="5" chance="100000" />		<!-- platinum coin -->
-		<item id="18425" chance="12420" />					<!-- blazing bone -->
-		<item id="18424" chance="11400" />					<!-- magma clump -->
-		<item id="2145" countmax="3" chance="8900" />		<!-- small diamond -->
-		<item id="18417" countmax="2" chance="8600" />		<!-- brown crystal splinter -->
+		<item id="18425" chance="12220" />					<!-- blazing bone -->
+		<item id="18424" chance="11600" />					<!-- magma clump -->
+		<item id="2145" countmax="3" chance="8800" />		<!-- small diamond -->
+		<item id="18417" countmax="2" chance="8500" />		<!-- brown crystal splinter -->
 		<item id="10553" chance="7810" />					<!-- fiery heart -->
 		<item id="7591" chance="7270" />						<!-- great health potion -->
 		<item id="18421" chance="7000" />					<!-- green crystal fragment -->
-		<item id="7590" chance="6300" />						<!-- great mana potion -->
-		<item id="18304" countmax="10" chance="5850" />		<!-- crystalline arrow -->
-		<item id="8921" chance="4200" />						<!-- wand of draconia -->
+		<item id="7590" chance="6500" />						<!-- great mana potion -->
+		<item id="18304" countmax="10" chance="5950" />		<!-- crystalline arrow -->
+		<item id="8921" chance="4400" />						<!-- wand of draconia -->
 		<item id="5880" chance="4380" />						<!-- iron ore -->
-		<item id="18413" chance="3730" />					<!-- blue crystal shard -->
+		<item id="18413" chance="3930" />					<!-- blue crystal shard -->
 		<item id="7890" chance="3120" />						<!-- magma amulet -->
 		<item id="5914" chance="3000" />						<!-- yellow piece of cloth -->
 		<item id="5909" chance="2310" />						<!-- white piece of cloth -->
 		<item id="7891" chance="1820" />						<!-- magma boots -->
-		<item id="13757" chance="1630" />					<!-- coal -->
-		<item id="2392" chance="1680" />						<!-- fire sword -->
-		<item id="2167" chance="1600" />						<!-- energy ring -->
-		<item id="2529" chance="1500" />						<!-- black shield -->
-		<item id="2154" chance="1060" />						<!-- yellow gem -->
-		<item id="5911" chance="1000" />						<!-- red piece of cloth -->
-		<item id="18409" chance="750" /><!-- wand of everblazing -->
+		<item id="13757" chance="1650" />					<!-- coal -->
+		<item id="2392" chance="1630" />						<!-- fire sword -->
+		<item id="2167" chance="1620" />						<!-- energy ring -->
+		<item id="2529" chance="1530" />						<!-- black shield -->
+		<item id="2154" chance="1160" />						<!-- yellow gem -->
+		<item id="5911" chance="970" />						<!-- red piece of cloth -->
+		<item id="18409" chance="670" /><!-- wand of everblazing -->
 	</loot>
 </monster>

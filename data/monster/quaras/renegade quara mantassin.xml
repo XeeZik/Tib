@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Renegade Quara Mantassin" nameDescription="a quara mantassin" race="blood" experience="900" speed="260" manacost="480">
+<monster name="Renegade Quara Mantassin" nameDescription="a quara mantassin" race="blood" experience="800" speed="260" manacost="480">
 	<health now="1200" max="1200" />
 	<look type="72" corpse="6064" />
 	<targetchange interval="4000" chance="10" />
@@ -43,16 +43,16 @@
 		<voice sentence="Shrrrr" />
 	</voices>
 	<loot>
-		<item id="12445" chance="14000" />				<!-- mantassin tail -->
-		<item id="2178" chance="11000" />					<!-- mind stone -->
-		<item id="2670" countmax="4" chance="3000" />	<!-- shrimp -->
-		<item id="18413" chance="1800" />					<!-- blue crystal shard -->
-		<item id="2396" chance="1500" />					<!-- ice rapier -->
-		<item id="2377" chance="840" />					<!-- two handed sword -->
-		<item id="2146" countmax="2" chance="2300" />					<!-- small sapphire -->
-		<item id="2165" chance="3800" />					<!-- stealth ring -->
-		<item id="5895" chance="840" />					<!-- fish fin -->
-		<item id="2479" chance="1320" />					<!-- strange helmet -->
+		<item id="2148" countmax="129" chance="80000" />	<!-- gold coin -->
+		<item id="12445" chance="11600" />				<!-- mantassin tail -->
+		<item id="2670" countmax="5" chance="5000" />	<!-- shrimp -->
+		<item id="2381" chance="5000" />					<!-- halberd -->
+		<item id="2654" chance="1050" />					<!-- cape -->
+		<item id="2377" chance="1050" />					<!-- two handed sword -->
+		<item id="2146" chance="1000" />					<!-- small sapphire -->
+		<item id="2165" chance="1000" />					<!-- stealth ring -->
+		<item id="5895" chance="610" />					<!-- fish fin -->
+		<item id="2479" chance="120" />					<!-- strange helmet -->
 		<item id="2656" chance="50" />					<!-- blue robe -->
 	</loot>
 </monster>

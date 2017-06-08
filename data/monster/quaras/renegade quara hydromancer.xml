@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Quara Hydromancer" nameDescription="a quara hydromancer" race="blood" experience="1700" speed="250" manacost="0">
-	<health now="2000" max="2000" />
+<monster name="Quara Hydromancer" nameDescription="a quara hydromancer" race="blood" experience="800" speed="250" manacost="0">
+	<health now="1100" max="1100" />
 	<look type="47" corpse="6066" />
 	<targetchange interval="4000" chance="10" />
 	<flags>
@@ -60,24 +60,17 @@
 		<voice sentence="Blup." />
 	</voices>
 	<loot>
-		<item id="12444" chance="18800" />				<!-- quara eye -->
-		<item id="2178" chance="10000" />					<!-- mind stone -->
-		<item id="9970" chance="6100" />	<!-- small topaz -->
-		<item id="8870" chance="5600" />					<!-- spirit cloak -->
-		<item id="7590" chance="5600" />					<!-- great mana potion -->
-		<item id="7591" chance="4000" />					<!-- great health potion -->
-		<item id="2143" chance="1900" />					<!-- white pearl -->
-		<item id="2149" countmax="2" chance="5400" />	<!-- small emerald -->
-		<item id="18415" chance="2200" />				<!-- green crystal shard -->
-		<item id="5910" chance="3710" />				<!-- green piece of cloth -->
-		<item id="5914" chance="3710" />				<!-- yellow piece of cloth -->
-		<item id="2670" chance="6100" />	<!-- shrimp -->
-		<item id="2144" chance="1500" />					<!-- black pearl -->
-		<item id="2168" chance="2400" />					<!-- life ring -->
-		<item id="5895" chance="1010" />					<!-- fish fin -->
+		<item id="2148" countmax="110" chance="90000" />	<!-- gold coin -->
+		<item id="12444" chance="15000" />				<!-- quara eye -->
+		<item id="2143" chance="5300" />					<!-- white pearl -->
+		<item id="2149" countmax="2" chance="5000" />	<!-- small emerald -->
+		<item id="2670" countmax="5" chance="4600" />	<!-- shrimp -->
+		<item id="2144" chance="3000" />					<!-- black pearl -->
+		<item id="7590" chance="3000" />					<!-- great mana potion -->
+		<item id="5895" chance="1210" />					<!-- fish fin -->
 		<item id="2214" chance="1100" />					<!-- ring of healing -->
-		<item id="2189" chance="990" />					<!-- wand of cosmic energy -->
-		<item id="2476" chance="500" />					<!-- knight armor -->
+		<item id="2189" chance="960" />					<!-- wand of cosmic energy -->
+		<item id="2476" chance="230" />					<!-- knight armor -->
 
 	</loot>
 </monster>

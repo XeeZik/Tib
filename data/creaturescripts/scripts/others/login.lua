@@ -90,6 +90,9 @@ function onLogin(player)
 
 	-- Stamina
 	nextUseStaminaTime[playerId] = 1
+ 
+	-- EXP Stamina
+	nextUseXpStamina[playerId] = 1
 
 	--Prey Stamina
 	nextUseStaminaPrey[playerId+1] = {Time = 1}
