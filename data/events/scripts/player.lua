@@ -1,6 +1,7 @@
 -- Internal Use
 STONE_SKIN_AMULET = 2197
 ITEM_STORE_INBOX = 26052
+GOLD_POUNCH = 26377
 
 -- No move items with actionID 8000
 -- Players cannot throw items on teleports if set to true
@@ -243,9 +244,10 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 			self:sendCancelMessage(RETURNVALUE_CONTAINERNOTENOUGHROOM)
 			return false
 		end
-			-- Gold Pounch
-		if (containerTo:getId() == 26377) then
-			if (not (item:getId() == 2160 or item:getId() == 2152 or item:getId() == 2148)) then
+
+		-- Gold Pounch
+		if (containerTo:getId() == GOLD_POUNCH) then
+			if (not (item:getId() == ITEM_CRYSTAL_COIN or item:getId() == ITEM_PLATINUM_COIN or item:getId() == ITEM_GOLD_COIN)) then
 				self:sendCancelMessage("You can move only money to this container.")
 				return false
 			end
