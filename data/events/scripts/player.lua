@@ -270,7 +270,6 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 				return false
 			end
 		end
-	end
 		
 	-- Store Inbox
 	local containerIdFrom = fromPosition.y - 64
