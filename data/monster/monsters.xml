@@ -36,7 +36,11 @@
 	   <monster name="Diamond Servant Replica" file="11.2/Diamond Servant Replica.xml" />
 	   <monster name="Dragon Essence" file="11.2/Dragon Essence.xml" />
 	   <monster name="Dragon Warden" file="11.2/Dragon Warden.xml" />
-	  
+		<monster name="Orclops Doomhauler" file="11.2/Orclops Doomhauler.xml" />
+	   <monster name="Orclops Ravager" file="11.2/Orclops Ravager.xml" />
+	   <monster name="Twisted Shaper" file="11.2/Twisted Shaper.xml" />
+	   <monster name="Shaper Matriarch" file="11.2/Shaper Matriarch.xml" />  
+
 	   <!-- ALTEREI -->
 	   <monster name="Instable Breach Brood" file="Novos/Instable Breach BroodSummon.xml" />
 	   <monster name="Instable Breach Brood" file="Novos/Instable Breach Brood.xml" />
