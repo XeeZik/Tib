@@ -427,11 +427,11 @@ void ProtocolGameBase::GetTileDescription(const Tile* tile, NetworkMessage& msg)
 					++count;
 				}
 
-			if (++count == 10) {
-				return;
+				if (++count == 10) {
+					return;
+				}
 			}
 		}
-	}
 	} else {
 		const CreatureVector *creatures = tile->getCreatures();
 		if (creatures) {
