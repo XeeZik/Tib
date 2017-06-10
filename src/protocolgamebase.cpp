@@ -171,10 +171,7 @@ void ProtocolGameBase::AddCreature(NetworkMessage& msg, const Creature* creature
 	msg.addByte(creatureType); // Type (for summons)
 	msg.addByte(creature->getSpeechBubble());
 	msg.addByte(0xFF); // MARK_UNMARKED
-
-	if (version >= 1110) {
-		msg.addByte(0x00);
-	}
+	msg.addByte(0x00); // ??
 
 	if (otherPlayer) {
 		msg.add<uint16_t>(otherPlayer->getHelpers());
@@ -759,13 +756,14 @@ void ProtocolGameBase::sendBasicData()
 		msg.add<uint32_t>(0);
 	}
 	msg.addByte(player->getVocation()->getClientId());
-	if (version > 1099) {
-		if (player->getVocation()->getId() == 0) {
-			msg.addByte(0);
-		} else {
-			msg.addByte(1); // has reached Main (allow player to open Prey window)
-		}
+
+	// Prey window
+	if (player->getVocation()->getId() == 0) {
+		msg.addByte(0);
+	} else {
+		msg.addByte(1); // has reached Main (allow player to open Prey window)
 	}
+
 	msg.add<uint16_t>(0xFF); // number of known spells
 	for (uint8_t spellId = 0x00; spellId < 0xFF; spellId++) {
 		msg.addByte(spellId);
