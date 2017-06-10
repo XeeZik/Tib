@@ -172,8 +172,9 @@ void ProtocolGameBase::AddCreature(NetworkMessage& msg, const Creature* creature
 	msg.addByte(creature->getSpeechBubble());
 	msg.addByte(0xFF); // MARK_UNMARKED
 
-	if (version >= 1110)
+	if (version >= 1110) {
 		msg.addByte(0x00);
+	}
 
 	if (otherPlayer) {
 		msg.add<uint16_t>(otherPlayer->getHelpers());
@@ -759,10 +760,11 @@ void ProtocolGameBase::sendBasicData()
 	}
 	msg.addByte(player->getVocation()->getClientId());
 	if (version > 1099) {
-		if (player->getVocation()->getId() == 0)
+		if (player->getVocation()->getId() == 0) {
 			msg.addByte(0);
-		else
+		} else {
 			msg.addByte(1); // has reached Main (allow player to open Prey window)
+		}
 	}
 	msg.add<uint16_t>(0xFF); // number of known spells
 	for (uint8_t spellId = 0x00; spellId < 0xFF; spellId++) {
@@ -870,21 +872,19 @@ void ProtocolGameBase::sendVIP(uint32_t guid, const std::string& name, const std
 
 void ProtocolGameBase::sendCancelWalk()
 {
-	if (player)
-	{
-	NetworkMessage msg;
-	msg.addByte(0xB5);
-	msg.addByte(player->getDirection());
-	writeToOutputBuffer(msg);
-}
+	if (player) {
+		NetworkMessage msg;
+		msg.addByte(0xB5);
+		msg.addByte(player->getDirection());
+		writeToOutputBuffer(msg);
+	}
 }
 
 void ProtocolGameBase::sendPing()
 {
-	if (player)
-	{
-	NetworkMessage msg;
-	msg.addByte(0x1D);
+	if (player) {
+		NetworkMessage msg;
+		msg.addByte(0x1D);
 		writeToOutputBuffer(msg);
 	}
 }
