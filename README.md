@@ -11,8 +11,11 @@ Se você não sabe como nos ajudar... caso não vá lhe fazer falta e você acha
 
 # Downloads
 Executaveis compilados [AppVeyor builds for Windows](https://ci.appveyor.com/project/malucooo/otxserver-new)
+
 Client 10.00 Compativel (http://www.mediafire.com/file/571cbbt9cy2y30t/tibia1000.rar)
+
 Client 11 Compativel (http://www.mediafire.com/file/x0q6exqko4y7gvn/Tibia_11.10.rar)
+
 Login.php (http://www.mediafire.com/file/2jbauphk3eksm14/login.php)
 
 # Issues / Problemas
