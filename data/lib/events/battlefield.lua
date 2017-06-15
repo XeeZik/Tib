@@ -1,266 +1,107 @@
-if not Battlefield then
-	Battlefield = {
-		open = false,
+_Lib_Battle_Info = {
+	Reward = {
+		exp = {true, 100000}, items = {true, 25172, 5}, premium_days = {false, 1}
+	},
+	TeamOne = {name = "Black Team", storage = 140120, pos = {x = 31377, y = 32559, z = 6}},
+	TeamTwo = {name = "Red Team", storage = 140121, pos = {x = 31447, y = 32562, z = 6}},
+	storage_count = 180400,
+	tpPos = {x = 32360, y = 32239, z = 7},
+	limit_Time = 2 -- em minutos
+}
 
-		wall = {
-			id = 1353,
+_Lib_Battle_Days = {
+	["Tuesday"] = {
+		["16:00"] = {players = 10},
+		["20:30"] = {players = 6}
+	},
+	["Wednesday"] = {
+		["22:00"] = {players = 16}
+	},
+	["Saturday"] = {
+		["15:30"] = {players = 30},
+		["21:38"] = {players = 30}
+	},
+	["Sunday"] = {
+		["00:11"] = {players = 30}
+	}
+}
 
-			pos = {
-				Position(31419, 32508, 7),
-				Position(31419, 32509, 7),
-				Position(31419, 32510, 7),
-				Position(31419, 32511, 7)
-			}
-		},
+function resetBattle()
+	Game.setStorageValue(_Lib_Battle_Info.TeamOne.storage, 0) 
+	Game.setStorageValue(_Lib_Battle_Info.TeamTwo.storage, 0)
+end
 
-		rewards = {
-			-- {itemid, quantity}
-			{21399, 1},
-		},
+function doBroadCastBattle(type, msg)
+	for _, cid in pairs(Game.getPlayers()) do
+		if Player(cid):getStorageValue(_Lib_Battle_Info.TeamOne.storage) == 1 or Player(cid):getStorageValue(_Lib_Battle_Info.TeamTwo.storage) == 1 then
+			Player(cid):sendTextMessage(type, msg)
+		end
+	end
+end
 
-		minLevel = 100,
-		minPlayers = 2, --min players to start event
-		maxPlayers = 20, --max players in the event
-		players = {},
+function getWinnersBattle(storage)
+	local str, c = "[BattleField] " , 0
+	for _, cid in pairs(Game.getPlayers()) do
+		local player = Player(cid)
+		if player:getStorageValue(storage) >= 1 then
+			if _Lib_Battle_Info.Reward.exp[1] then player:addExperience(_Lib_Battle_Info.Reward.exp[2], true) end
+			if _Lib_Battle_Info.Reward.items[1] then player:addItem(_Lib_Battle_Info.Reward.items[2], _Lib_Battle_Info.Reward.items[3]) end
+			if _Lib_Battle_Info.Reward.premium_days[1] then player:addPremiumDays(_Lib_Battle_Info.Reward.premium_days[2]) end
+			player:teleportTo(player:getTown():getTemplePosition())
+			player:setStorageValue(storage, -1)
+			player:removeCondition(CONDITION_OUTFIT)
+			c = c + 1 
+		end
+	end
+	str = str .. "" .. c .. " jogadores" .. (c > 1 and "s" or "") .. " do time " .. (Game.getStorageValue(_Lib_Battle_Info.TeamOne.storage) == 0 and _Lib_Battle_Info.TeamTwo.name or _Lib_Battle_Info.TeamOne.name) .. " ganharam o evento!"
+	resetBattle()
+	OpenWallBattle()
+	return broadcastMessage(str)
+end
 
-		exit = Position(32369, 32241, 7), --temple
-
-		teleport = {
-			pos = Position(32365, 32236, 7),
-			aid = 45000
-		},
-
-		teams = {
-			[1] = {
-				name = 'Purple',
-
-				outfit = {
-					lookType = 138,
-					lookAddons = 0,
-					lookHead = 109,
-					lookLegs = 109,
-					lookBody = 109,
-					lookFeet = 109,
-				},
-
-				position = Position(31402, 32504, 7),
-
-				players = {}, 
-				kills = 0,
-				size = 0,
-			},
-
-			[2] = {
-				name = 'Green',
-
-				outfit = {
-					lookType = 138,
-					lookAddons = 0,
-					lookHead = 82,
-					lookLegs = 82,
-					lookBody = 82,
-					lookFeet = 82,
-				},
-
-				position = Position(31436, 32504, 7),
-
-				players = {}, 
-				kills = 0,
-				size = 0,
-			},				
-		},
-
-		addPlayer = function (self, cid)
-            local player = Player(cid)
-            if player then
-                self.players[player:getId()] = 1
-            end
-        end,
-
-        removePlayer = function (self, cid)
-            local player = Player(cid)
-            if self.players[player:getId()] then
-                self.players[player:getId()] = nil
-            end
-        end,
-
-        getPlayers = function (self)
-            return self.players
-        end,
-
-        getPlayer = function (self, cid)
-            local player = Player(cid)
-            if self.players[player:getId()] then
-                return true
-            else
-                return false
-            end
-        end,
-
-        getPlayersCount = function (self)
-            local c = 0
-            for _ in pairs(self.players) do c = c + 1 end
-            return c
-        end
+function OpenWallBattle()
+	local B = {
+		{9532, {x = 31398, y = 32569, z = 6, stackpos = 1}},
+		{9532, {x = 31398, y = 32570, z = 6, stackpos = 1}},
+		{9532, {x = 31398, y = 32571, z = 6, stackpos = 1}},
+		{9532, {x = 31398, y = 32572, z = 6, stackpos = 1}},
+		{9532, {x = 31419, y = 32569, z = 6, stackpos = 1}},
+		{9532, {x = 31419, y = 32570, z = 6, stackpos = 1}},
+		{9532, {x = 31419, y = 32571, z = 6, stackpos = 1}},
+		{9532, {x = 31419, y = 32572, z = 6, stackpos = 1}}
 	}
 
-	function Battlefield:Open()
-		if self.open then return false end
-		self.open = true
-		if Battlefield:getPlayersCount() < Battlefield.minPlayers then
-			Battlefield:Close()
-			return true
-		end
-
-		for i = 1, #Battlefield.wall.pos do
-			local tile = Tile(Battlefield.wall.pos[i])
-			if tile then
-				local item = tile:getItemById(Battlefield.wall.id)
-				if item then item:remove() end
-			end
-		end
-		return true
-	end
-
-	function Battlefield:Close(winner)
-		if not self.open then return false end
-		self.open = false
-		for i = 1, #Battlefield.wall.pos do
-			local tile = Tile(Battlefield.wall.pos[i])
-			if tile then
-				local item = tile:getItemById(Battlefield.wall.id)
-				if not item then 
-					Game.createItem(Battlefield.wall.id, 1)
-				end
-			end
-		end
-
-		if not winner then
-			if self.teams[1].kills > self.teams[2].kills then
-				winner = 1
-			elseif self.teams[1].kills < self.teams[2].kills then
-				winner = 2
-			end
-		end
-
-		if winner then
-			Game.broadcastMessage(string.format("Team %s win the BattleField Event!", self.teams[winner].name))
+	for i = 1, #B do
+		if getTileItemById(B[i][2], B[i][1]).uid == 0 then
+			doCreateItem(B[i][1], 1, B[i][2])
 		else
-			Game.broadcastMessage("There was a tie and nobody wins reward.")
+			doRemoveItem(getThingfromPos(B[i][2]).uid,1)
 		end
+	end
+end
 
-		for _, team in ipairs(self.teams) do
-			for name, info in pairs(team.players) do
-				local player = Player(name)
-				if player then
-					self:onLeave(player)
-					if _ == winner then
-						for k, item in ipairs(self.rewards) do
-							player:addItem(item[1], item[2])
-						end
-					end
-				end
+function removeBattleTp()
+	local t = getTileItemById(_Lib_Battle_Info.tpPos, 1387).uid
+	return t > 0 and doRemoveItem(t) and doSendMagicEffect(_Lib_Battle_Info.tpPos, CONST_ME_POFF)
+end
+
+function CheckEvent(delay)
+	if delay > 0 and Game.getStorageValue(_Lib_Battle_Info.storage_count) > 0 then
+		broadcastMessage("[BattleField] Faltam " .. Game.getStorageValue(_Lib_Battle_Info.storage_count) .. " jogadores para o evento comecar.")
+	elseif delay == 0 and Game.getStorageValue(_Lib_Battle_Info.storage_count) > 0 then
+		for _, cid in pairs(Game.getPlayers()) do
+			local player = Player(cid)
+			if player:getStorageValue(_Lib_Battle_Info.TeamOne.storage) == 1 or player:getStorageValue(_Lib_Battle_Info.TeamTwo.storage) == 1 then
+				player:teleportTo(player:getTown():getTemplePosition())
+				player:setStorageValue(_Lib_Battle_Info.TeamOne.storage, -1)
+				player:setStorageValue(_Lib_Battle_Info.TeamTwo.storage, -1)
+				player:removeCondition(CONDITION_OUTFIT)
 			end
 		end
-		self.teams[1].players = {}
-		self.teams[1].size = 0
-		self.teams[1].kills = 0
-		self.teams[2].players = {}
-		self.teams[2].size = 0
-		self.teams[2].kills = 0	
-		return true
+		broadcastMessage("[BattleField] O evento nao foi iniciado por nao atingir o numero de jogadores.")
+		Game.setStorageValue(_Lib_Battle_Info.storage_count, 0)
+		resetBattle()
+		removeBattleTp()
 	end
-
-	function Battlefield:findPlayer(player)
-		local name = player:getName()
-		return self.teams[1].players[name] or self.teams[2].players[name]
-	end
-
-	function Battlefield:onJoin(player)local team
-		if self.teams[1].size == self.teams[2].size then
-			team = math.random(1, 2)
-		elseif self.teams[1].size > self.teams[2].size then
-			team = 2
-		else
-			team = 1
-		end
-
-		player:setOutfit(self.teams[team].outfit)
-		player:teleportTo(self.teams[team].position)
-
-		local info = {name = player:getName(), team = team}
-		self.teams[team].size = self.teams[team].size + 1
-		self.teams[team].players[player:getName()] = info
-		Battlefield:addPlayer(player)
-
-		Game.broadcastMessage(string.format("%s entered the BattleField Event!", info.name))
-
-		player:registerEvent("BFPrepareDeath")
-		player:registerEvent("BFHealthChange")
-		player:registerEvent("BFManaChange")
-		player:registerEvent("BFLogout")
-
-		return true
-	end
-
-	function Battlefield:onLeave(player)
-		local info = self:findPlayer(player)
-		if not info then return false end
-		player:unregisterEvent("BFHealthChange")
-		player:unregisterEvent("BFPrepareDeath")
-		player:unregisterEvent("BFManaChange")
-		player:unregisterEvent("BFLogout")
-
-		Game.broadcastMessage(string.format("%s left the BattleField Event!", info.name))
-
-		player:teleportTo(self.exit)
-		self.teams[info.team].size = self.teams[info.team].size - 1
-		self.teams[info.team].players[info.name] = nil
-
-		player:addHealth(player:getMaxHealth())
-		player:addMana(player:getMaxMana())
-		player:removeCondition(CONDITION_INFIGHT)
-		Battlefield:removePlayer(player)
-
-		if self.teams[info.team].size == 0 then
-			self:Close(info.team == 1 and 2 or 1)			
-		end
-		return true
-	end
-
-	function Battlefield:onDeath(player, killer)
-		local info = self:findPlayer(player)
-		if not info then return false end
-		if killer and killer.getName then
-			local killerInfo = self:findPlayer(killer)
-			if killerInfo and killerInfo.team ~= info.team then
-				local killerTeam = self.teams[killerInfo.team]
-				killerTeam.kills = killerTeam.kills + 1
-			end
-		end
-		self:onLeave(player)
-		return true
-	end
-
-	function createPortal(pos, effect, aid)
-		local tile = Tile(pos)
-		if tile then
-			local tp = tile:getItemById(1387)
-			if tp == nil then
-				local t = Game.createItem(1387, 1)
-				t:setAttribute(ITEM_ATTRIBUTE_ACTIONID, aid)
-				pos:sendMagicEffect(effect)
-			end
-		end
-	end
-
-	function removePortal(pos, effect)
-		local tile = Tile(pos)
-		if tile then
-			local tp = tile:getItemById(1387)
-			if tp then
-				tp:remove()
-			end
-		end
-	end
+	addEvent(CheckEvent, 60000, delay - 1)
 end
