@@ -11,7 +11,6 @@
 	<movevent event="StepIn" actionid="24545" script="news/ek.lua" />
 	 
 	<movevent event="StepIn" actionid="25009" script="ferumbras.lua"/> 
- 	<!--<movevent event="StepIn" pos="32353;32231;4" script="exitBF.lua" />-->
  	<movevent event="StepIn" actionid="41344" script="lionrock.lua" />
  	<movevent event="StepIn" fromaid="41346" toaid="41349" script="lionrock.lua" />
 
@@ -31,7 +30,7 @@
 
 	<movevent event="StepIn" actionid="25001" script="events/lmsjoin.lua"/>
     <movevent event="StepIn" actionid="25002" script="events/lmsleave.lua"/>
-    <movevent event="StepIn" actionid="45000" script="events/bf_tp.lua" />	  
+    <movevent type="StepIn" actionid="45000" script="events/bf_tp.lua" />	  
     <movevent event="StepIn" actionid="45110" script="events/ZE_movements.lua" />
     <movevent event="StepIn" fromaid="15153" toaid="15155" script="events/ctf.lua" />
 	

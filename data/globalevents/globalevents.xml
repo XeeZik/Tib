@@ -45,8 +45,8 @@
 		<globalevent name="Capture The Flag1" time="11:30:00" script="events/capture.lua" />
 		<globalevent name="Capture The Flag4" time="02:00:00" script="events/capture.lua" />	
 		<!-- BattleField Event -->
-		<globalevent name="BF_01" time="13:00:00" script="events/bf_start.lua" />
-		<globalevent name="BF_04" time="00:30:00" script="events/bf_start.lua" />
+		<globalevent name="GlobalBattle" interval="60000" event="script" value="events/bf_globalevents.lua"/>
+		<globalevent name="GlobalStart" type="start" event="script" value="events/bf_start.lua"/>
 	<!-- END Events -->
 
 	<!-- Demon Oak Quest -->
