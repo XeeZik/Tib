@@ -7,7 +7,7 @@
 	<!-- Events -->
 		<event type="login" name="BattleLogin" event="script" value="battlefield.lua"/>
 		<event type="PrepareDeath" name="BattleDeath" event="script" value="battlefield.lua"/>
-		<event type="combat" name="BattleTeam" event="script" value="battlefield.lua"/>
+		<event type="Combat" name="BattleTeam" event="script" value="battlefield.lua"/>
 		<event type="preparedeath" name="CTFDeath" script="events/ctf.lua" />
 		<event type="healthchange" name="CTFHealthChange" script="events/ctf.lua" />
 		<event type="logout" name="CityWarLogout" script="events/citywar.lua" />
