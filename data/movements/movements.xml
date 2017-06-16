@@ -30,7 +30,7 @@
 
 	<movevent event="StepIn" actionid="25001" script="events/lmsjoin.lua"/>
     <movevent event="StepIn" actionid="25002" script="events/lmsleave.lua"/>
-    <movevent type="StepIn" actionid="45000" script="events/bf_tp.lua" />	  
+    <movevent event="StepIn" actionid="45000" script="events/bf_tp.lua" />	  
     <movevent event="StepIn" actionid="45110" script="events/ZE_movements.lua" />
     <movevent event="StepIn" fromaid="15153" toaid="15155" script="events/ctf.lua" />
 	
