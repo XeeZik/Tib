@@ -5,9 +5,10 @@
 	<event type="healthchange" name="HealGaz" script="gaz'haragoth heal.lua"/>	
 
 	<!-- Events -->
-		<event type="login" name="BattleLogin" event="script" value="battlefield.lua"/>
-		<event type="PrepareDeath" name="BattleDeath" event="script" value="battlefield.lua"/>
-		<event type="Combat" name="BattleTeam" event="script" value="battlefield.lua"/>
+    <event type="preparedeath" name="BFPrepareDeath" script="events/battlefield.lua" />
+	<event type="healthchange" name="BFHealthChange" script="events/battlefield.lua" />
+	<event type="manachange" name="BFManaChange" script="events/battlefield.lua" />
+	<event type="logout" name="BFLogout" script="events/battlefield.lua" />
 		<event type="preparedeath" name="CTFDeath" script="events/ctf.lua" />
 		<event type="healthchange" name="CTFHealthChange" script="events/ctf.lua" />
 		<event type="logout" name="CityWarLogout" script="events/citywar.lua" />
