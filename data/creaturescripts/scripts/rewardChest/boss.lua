@@ -145,7 +145,7 @@ function onDeath(creature, corpse, killer, mostDamageKiller, lastHitUnjustified,
 
 			local playerLoot
 			if --[[stamina > 840 and]] con.score ~= 0 then
-				local lootFactor = 1
+				local lootFactor = 0.007
 				lootFactor = lootFactor / participants ^ (1 / 3) -- tone down the loot a notch if there are many participants
 				lootFactor = lootFactor * (1 + lootFactor) ^ (con.score / expectedScore) -- increase the loot multiplicatively by how many times the player surpassed the expected score
 				playerLoot = monsterType:getBossReward(lootFactor, _ == 1)
