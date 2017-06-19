@@ -122,6 +122,7 @@
 		<offer name="Jungle Saurian" type="mount" mountid="110" description="Buying this mount will help our server survive!" price="750" icons="o629.png" />
 		<offer name="Ember Saurian" type="mount" mountid="111" description="Buying this mount will help our server survive!" price="750" icons="o629.png" />
 		<offer name="Lagoon Saurian" type="mount" mountid="112" description="Buying this mount will help our server survive!" price="750" icons="o629.png" />
+		</category>
     <category name="Equipments" description="Buy your character one or more of the helpful items offered here." state="new" icons="convenience.png" >
         <offer name="Spellbook of Vigilance" type="item" price="60" productid="18401" count="1"  icons="spellbook_vigilance.png" />
     </category>
@@ -189,8 +190,10 @@
 		<offer name="Mage" description="" type="outfit" addon="3" malelooktype="130" femalelooktype="138" price="20" icons="f130.png" />
 		<offer name="Hunter" description="" type="outfit" addon="3" malelooktype="129" femalelooktype="137" price="15" icons="f129.png" />
 		<offer name="Citizen" description="" type="outfit" addon="3" malelooktype="128" femalelooktype="136" price="15" icons="f128.png" />
+	</category>
     <category name="Premium Time" description="Buy Premium Time today and get new spells, and access to premium areas!" icons="premiumtime.png" >
-        <offer name="30 days of Premium Time" description="get a month (30 days) of premium time." price="250" type="premiumtime" days="30" icons="premium30.png"/>
-        <offer name="90 days of Premium Time" description="90 days of premium time." price="400" state="sale" type="premiumtime" days="90" icons="premium90sale.png"/>
+    <offer name="30 days of Premium Time" description="get a month (30 days) of premium time." price="250" type="premiumtime" days="30" icons="premium30.png"/>
+    <offer name="90 days of Premium Time" description="90 days of premium time." price="400" state="sale" type="premiumtime" days="90" icons="premium90sale.png"/>
     </category>
 </gamestore>
+
