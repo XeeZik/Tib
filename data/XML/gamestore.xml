@@ -192,8 +192,8 @@
 		<offer name="Citizen" description="" type="outfit" addon="3" malelooktype="128" femalelooktype="136" price="15" icons="f128.png" />
 	</category>
     <category name="Premium Time" description="Buy Premium Time today and get new spells, and access to premium areas!" icons="premiumtime.png" >
-    <offer name="30 days of Premium Time" description="get a month (30 days) of premium time." price="250" type="premiumtime" days="30" icons="premium30.png"/>
-    <offer name="90 days of Premium Time" description="90 days of premium time." price="400" state="sale" type="premiumtime" days="90" icons="premium90sale.png"/>
+    	<offer name="30 days of Premium Time" description="get a month (30 days) of premium time." price="250" type="premiumtime" days="30" icons="premium30.png"/>
+    	<offer name="90 days of Premium Time" description="90 days of premium time." price="400" state="sale" type="premiumtime" days="90" icons="premium90sale.png"/>
     </category>
 </gamestore>
 
