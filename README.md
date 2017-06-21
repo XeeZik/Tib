@@ -16,7 +16,9 @@ Client 10.00 Compativel (http://www.mediafire.com/file/571cbbt9cy2y30t/tibia1000
 
 Client 11 Compativel (http://www.mediafire.com/file/x0q6exqko4y7gvn/Tibia_11.10.rar)
 
-Login.php (http://www.mediafire.com/file/2jbauphk3eksm14/login.php)
+Já funciona a última versão: [Znote AAC](https://github.com/Znote/ZnoteAAC).
+
+Ou, se você estiver usando o Gesior: Login.php (http://www.mediafire.com/file/2jbauphk3eksm14/login.php)
 
 # Issues / Problemas
 Nós utilizamos o [Issue Tracker do Github](https://github.com/malucooo/Otxserver-new/issues).
