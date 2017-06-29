@@ -214,6 +214,7 @@ end
 
 
 function Player.removeMoneyNpc(self, amount)
+	amount = tonumber(amount)
     local moneyCount = self:getMoney()
     local bankCount = self:getBankBalance()
     if amount > moneyCount + bankCount then
