@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Twisted Shaper" nameDescription="a Twisted Shaper" race="blood" experience="1750" speed="450" manacost="290">
 	<health now="2500" max="2500" />
-	<look type="932" head="68" body="0" legs="0" feet="94" corpse="27480" />
+	<look type="932" head="68" body="0" legs="0" feet="94" corpse="27724" />
 	<targetchange interval="5000" chance="0" />
 	<flags>
 		<flag summonable="0" />
@@ -34,23 +34,21 @@
 		<voice sentence="Raar!!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="165" chance="50320" /><!-- gold coin -->
-		<item id="2152" countmax="2" chance="50320" /><!-- platinun coin -->
-		<item id="2789" countmax="2" chance="50320" /><!-- Brown Mushrooms -->
-		<item id="2666" countmax="2" chance="50320" /><!-- Meats -->
-		<item id="26841" countmax="2" chance="50320" /><!-- Cave Turnips -->
-		<item id="5022" countmax="2" chance="50320" /><!-- Orichalcum Pearl -->
-		<item id="2230" chance="1130" /><!-- bone -->
-		<item id="2449" chance="4900" /><!-- bone club -->
-		<item id="2379" chance="1800" /><!-- dagger -->
-		<item id="2667" chance="12750" /><!-- fish -->
-		<item id="2467" chance="2510" /><!-- leather armor -->
-		<item id="2461" chance="1940" /><!-- leather helmet -->
-		<item id="2235" chance="1000" /><!-- moldy cheese -->
-		<item id="2406" chance="8870" /><!-- short sword -->
-		<item id="2559" chance="9700" /><!-- small axe -->
-		<item id="1294" countmax="3" chance="15290" /><!-- small stone -->
-		<item id="12495" chance="910" /><!-- Goblin Ear Gingerbreadman --> 
-		<item id="6501" chance="910" /><!-- Goblin Ear Gingerbreadman --> 
+		<item id="2148" countmax="222" chance="80320" /><!-- gold coin -->
+		<item id="2152" countmax="4" chance="50320" /><!-- platinun coin -->
+		<item id="2789" countmax="2" chance="5000" /><!-- Brown Mushrooms -->
+		<item id="2666" countmax="2" chance="10000" /><!-- Meats -->
+		<item id="27039" countmax="2" chance="20000" /><!-- Cave Turnips -->
+		<item id="5022" countmax="2" chance="5000" /><!-- Orichalcum Pearl -->
+		<item id="2147" countmax="5" chance="5600" /><!-- small ruby -->
+		<item id="24849" countmax="1" chance="4900" /><!-- Onyx Chip  -->
+		<item id="27040" countmax="1" chance="20000" /><!-- Ancient Belt Buckle -->
+		<item id="27041" chance="17000" /><!-- Cracked Alabaster Vase -->
+		<item id="27043" chance="14580" /><!-- Tarnished Rhino Figurine -->
+		<item id="27046" chance="5000" /><!--  Ancient Coin -->
+		<item id="7591" chance="7300" /><!--  Great Health Potion-->
+		<item id="2167" chance="7660" /><!-- Energy Ring  -->
+		<item id="2189" chance="3810" /><!-- Wand of Cosmic Energy  -->
+		<item id="2171" chance="370" /><!-- Platinum Amulet  -->
 	</loot>
 </monster>

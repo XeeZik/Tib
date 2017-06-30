@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Broken Shaper" nameDescription="a broken shaper" race="blood" experience="1600" speed="300" manacost="290">
 	<health now="2200" max="2200" />
-	<look type="932" corpse="5527" />
+	<look type="932" head="132" body="95" legs="0" feet="121" corpse="27724" />
 	<targetchange interval="5000" chance="0" />
 	<flags>
 		<flag summonable="0" />
@@ -37,33 +37,28 @@
 		<voice sentence="Raar!!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="165" chance="50320" /><!-- gold coin -->
-		<item id="2152" countmax="2" chance="50320" /><!-- platinun coin -->
-		<item id="27039" countmax="2" chance="50320" /><!-- cave turnip -->
-		<item id="27040"  chance="50320" /><!-- Ancient Belt Buckle -->
-		<item id="27041"  chance="50320" /><!-- Cracked Alabaster Vase -->
-		<item id="27042"  chance="50320" /><!-- Rhino Horn Carving -->
-		<item id="27046"  chance="50320" /><!--  Ancient Coin -->
-		<item id="2260"  chance="50320" /><!-- Rhino Horn Carving -->
+		<item id="2148" countmax="165" chance="100320" /><!-- gold coin -->
+		<item id="2152" countmax="2" chance="70320" /><!-- platinun coin -->
+		<item id="27039" countmax="2" chance="20000" /><!-- cave turnip -->
+		<item id="27040"  chance="17000" /><!-- Ancient Belt Buckle -->
+		<item id="27041"  chance="20000" /><!-- Cracked Alabaster Vase -->
+		<item id="27042"  chance="13000" /><!-- Rhino Horn Carving -->
+		<item id="27046"  chance="4000" /><!--  Ancient Coin -->
+		<item id="2260"  chance="15000" /><!-- Blank Rune -->
 		<item id="2666" countmax="2" chance="50320" /><!-- Meats -->
-		<item id="26841" countmax="2" chance="50320" /><!-- Cave Turnips -->
-		<item id="5022" countmax="2" chance="50320" /><!-- Orichalcum Pearl -->
-		<item id="5912" countmax="2" chance="50320" /><!--  Blue Piece of Cloth -->
-		<item id="5913" countmax="2" chance="50320" /><!--   Brown Piece of Cloth -->
-		<item id="5914" countmax="2" chance="50320" /><!--   yellow Piece of Cloth -->
-		<item id="2195" chance="5000" /><!-- boh -->
-		<item id="7591" chance="5000" /><!--  Great Health Potion-->
-		<item id="2396" chance="1540" /><!-- ice rapier -->
-		<item id="2162" chance="1540" /><!-- Magic Light Wand -->
-		<item id="24849" chance="16033" /><!-- Onyx Chip -->
-		<item id="2214" chance="1970" /><!-- ring of healing -->
-        <item id="2147" countmax="5" chance="7360" /><!-- small ruby -->
-		<item id="2146" countmax="5" chance="7360" /><!-- small sapphire		-->
-		<item id="27042" chance="7360" /><!--  Rhino Horn Carving		-->
-
-
-		
-		
+		<item id="5022" countmax="2" chance="5000" /><!-- Orichalcum Pearl -->
+		<item id="5912" countmax="2" chance="1000" /><!--  Blue Piece of Cloth -->
+		<item id="5913" countmax="2" chance="5000" /><!--   Brown Piece of Cloth -->
+		<item id="5914" countmax="2" chance="2000" /><!--   yellow Piece of Cloth -->
+		<item id="2195" chance="230" /><!-- boh -->
+		<item id="7591" chance="7000" /><!--  Great Health Potion-->
+		<item id="2396" chance="1000" /><!-- ice rapier -->
+		<item id="2162" chance="1000" /><!-- Magic Light Wand -->
+		<item id="24849" chance="4200" /><!-- Onyx Chip -->
+		<item id="2214" chance="2000" /><!-- ring of healing -->
+        <item id="2147" countmax="1" chance="3000" /><!-- small ruby -->
+		<item id="2146" countmax="1" chance="5000" /><!-- small sapphire -->
+		<item id="2789" countmax="5" chance="6500" /><!-- Brown Mushroom -->
 	</loot>
 </monster>
 
