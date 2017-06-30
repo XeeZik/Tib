@@ -1,46 +1,38 @@
-function onAdvance(cid, skill, oldlevel, newlevel)
+local table =
+{
+	[8] = {type = "bank", id = 2000, msg = "You have received 2000 gold in your bank for advancing to Level 8."},
+	[40] = {type = "bank", id = 10000, msg = "You have received 10000 gold in your bank for advancing to Level 40."},
+	[50] = {type = "bank", id = 10000, msg = "You have received 10000 gold in your bank for advancing to Level 50."},
+	[75] = {type = "bank", id = 10000, msg = "You have received 10000 gold in your bank for advancing to Level 75."},
+	[100] = {type = "bank", id = 40000 msg = "You have received 40000 gold in your bank for advancing to Level 100."},
+	[150] = {type = "item", id = 5942, msg = "You have received one blessed wooden stake because you reached level 150."},
+	[200] = {type = "item", id = 2195, msg = "You have been awarded with 1 boots of haste for reaching level 200."},
+}
 
-	       	if getPlayerLevel(cid) >= 8 and getPlayerStorageValue(cid, 99963) ~= 1 then
-						    doPlayerSetBalance(cid, getPlayerBalance(cid) + 2000)
-						    setPlayerStorageValue(cid, 99963, 1)
-						    doPlayerSendTextMessage(cid, 19, "You have received 2000 gold in your bank for advancing to Level 8.")
+local storage = 99963
 
-		    elseif getPlayerLevel(cid) >= 40 and getPlayerStorageValue(cid, 99964) ~= 1 then
-						    doPlayerSetBalance(cid, getPlayerBalance(cid) + 10000)
-						    setPlayerStorageValue(cid, 99964, 1)
-						    doPlayerSendTextMessage(cid, 19, "You have received 10000 gold in your bank for advancing to Level 40.")
+function onAdvance(player, skill, oldLevel, newLevel)
 
-		   elseif getPlayerLevel(cid) >= 50 and getPlayerStorageValue(cid, 99965) ~= 1 then
-						    doPlayerSetBalance(cid, getPlayerBalance(cid) + 10000)
-						    setPlayerStorageValue(cid, 99965, 1)
-						    doPlayerSendTextMessage(cid, 19, "You have received 10000 gold in your bank for advancing to Level 50.")
+	if skill ~= SKILL_LEVEL or newLevel <= oldLevel then
+		return true
+	end
 
-		     elseif getPlayerLevel(cid) >= 75 and getPlayerStorageValue(cid, 99966) ~= 1 then
-						    doPlayerSetBalance(cid, getPlayerBalance(cid) + 10000)
-						    setPlayerStorageValue(cid, 99966, 1)
-						    doPlayerSendTextMessage(cid, 19, "You have received 10000 gold in your bank for advancing to Level 75.")
-				
-							
-			elseif getPlayerLevel(cid) >= 100 and getPlayerStorageValue(cid, 99969) ~= 1 then
-						    doPlayerSetBalance(cid, getPlayerBalance(cid) + 40000)
-						    setPlayerStorageValue(cid, 99969, 1)
-						   doPlayerSendTextMessage(cid, 19, "You have received 40000 gold in your bank for advancing to Level 100.")
-							
-							
-			
-            elseif getPlayerLevel(cid) >= 150 and getPlayerStorageValue(cid, 99970) ~= 1 then
-						    doPlayerAddItem(cid, 5942)
-						    setPlayerStorageValue(cid, 99970, 1)
-						    doPlayerSendTextMessage(cid, 19, "You have received one blessed wooden stake because you reached level 150.")
+	for level, _ in pairs(table) do
+		if newLevel >= level and player:getStorageValue(storage) < level then
+			if table[level].type == "item" then
+				player:addItem(table[level].id, 1)
+			elseif table[level].type == "bank" then
+				player:setBankBalance(player:getBankBalance() + table[level].id)
+			else
+				return false
+			end
 
-					
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, table[level].msg)
+			player:setStorageValue(storage, level)
+		end
+	end
 
- elseif getPlayerLevel(cid) >= 200 and getPlayerStorageValue(cid, 99971) ~= 1 then
-						    doPlayerAddItem(cid, 2195)
-						    setPlayerStorageValue(cid, 99971, 1)
-						    doPlayerSendTextMessage(cid, 19, "You have been awarded with 1 boots of haste for reaching level 200.")
+	player:save()
 
-												
-						    end
-		    return TRUE
+	return true
 end
