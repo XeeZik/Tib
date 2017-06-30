@@ -5,52 +5,52 @@
 	<event type="healthchange" name="HealGaz" script="gaz'haragoth heal.lua"/>	
 
 	<!-- Events -->
-    <event type="preparedeath" name="BFPrepareDeath" script="events/battlefield.lua" />
+	<event type="preparedeath" name="BFPrepareDeath" script="events/battlefield.lua" />
 	<event type="healthchange" name="BFHealthChange" script="events/battlefield.lua" />
 	<event type="manachange" name="BFManaChange" script="events/battlefield.lua" />
 	<event type="logout" name="BFLogout" script="events/battlefield.lua" />
-		<event type="preparedeath" name="CTFDeath" script="events/ctf.lua" />
-		<event type="healthchange" name="CTFHealthChange" script="events/ctf.lua" />
-		<event type="logout" name="CityWarLogout" script="events/citywar.lua" />
+	<event type="preparedeath" name="CTFDeath" script="events/ctf.lua" />
+	<event type="healthchange" name="CTFHealthChange" script="events/ctf.lua" />
+	<event type="logout" name="CityWarLogout" script="events/citywar.lua" />
     	<event type="preparedeath" name="CityWarDeath" script="events/citywar.lua" />
     	<event type="textedit" name="CityWarInvite" script="events/citywar.lua" />
     	<event type="preparedeath" name="ZumbiDeath" script="events/ZE_creaturescript.lua"/> 
-    <!-- END Events -->
+	<!-- END Events -->
 
  	<event type="death" name="DeathCounter" script="kdcounter.lua" />
 	<event type="kill" name="KillCounter" script="kdcounter.lua" />
 
-    <!-- WARZONE BOSS -->
+	<!-- WARZONE BOSS -->
   	<event type="death" name="WarzoneBossDeath" script="warzone157.lua" />
-  
-  <!-- Reward Chest 19/01 -->	
-    <event type="modalwindow" name="ModalWindowHelper" script="modalwindowhelper.lua" />    
+
+	<!-- Reward Chest 19/01 -->	
+	<event type="modalwindow" name="ModalWindowHelper" script="modalwindowhelper.lua" />    
  	<event type="death" name="BossDeath" script="rewardChest/boss.lua" />
  	<event type="healthchange" name="BossParticipation" script="rewardChest/boss.lua" />
  	<event type="think" name="BossThink" script="rewardChest/boss.lua" />
 
-    <!-- Bigfoot Burden Quest -->
+	<!-- Bigfoot Burden Quest -->
 	<event type="kill" name="Razzagorn" script="news/Razzagorn.lua"/>	
 	<event type="kill" name="Shatterer" script="news/The Shatterer.lua"/>	
 	<event type="kill" name="Zamulosh" script="news/Zamulosh.lua"/>	
 	<event type="kill" name="Tarbaz" script="news/Tarbaz.lua"/>
 	<event type="kill" name="Shulgrax" script="news/Shulgrax.lua"/>
-	
+
 	<event type="kill" name="Ragiaz" script="news/Ragiaz.lua"/>
 	<event type="kill" name="Plagirath" script="news/Plagirath.lua"/>
 	<event type="kill" name="Mazoran" script="news/Mazoran.lua"/>
-	
+
 	<event type="kill" name="Destabilized" script="news/Destabilized Ferumbras.lua"/>
-	
+
 	<!-- 10.94 -->
 	<event type="kill" name="The Hunger" script="news/The Hunger.lua"/>
 	<event type="kill" name="The Rage" script="news/The Rage.lua"/>	
 	<event type="kill" name="Rupture" script="news/Rupture.lua"/>
 	<event type="kill" name="World Devourer" script="news/World Devourer.lua"/>
-	
+
 	<event type="kill" name="Eradicator" script="news/Eradicator.lua"/>
 	<event type="kill" name="Eradicator1" script="news/Eradicator1.lua"/> 
-	
+
 	<event type="kill" name="BigfootBurdenVersperoth" script="quests/bigfoot burden/VersperothKill.lua" />
 	<event type="kill" name="WarzoneThree" script="gnomebase/warzone3.lua"/>
 	<event type="kill" name="BigfootBurdenWiggler" script="quests/bigfoot burden/WigglerKill.lua" />
@@ -59,18 +59,17 @@
 	<!-- REWARD CHEST -->
 	<event type="advance" name="Recompense" script="others/recompense.lua"/>
 	<!--<event type="modalwindow" name="modalAD" script="custom/modalAD.lua"/>
-    <event type="modalwindow" name="modalMD" script="custom/modalMD.lua"/>-->
-    <event type="modalwindow" name="modalMD1" script="custom/modalMD1.lua"/>
+	<event type="modalwindow" name="modalMD" script="custom/modalMD.lua"/>-->
+	<event type="modalwindow" name="modalMD1" script="custom/modalMD1.lua"/>
 	<event type="modalwindow" name="VibrantEgg" script="custom/VibrantEgg.lua"/>
-	
-    <!-- ragingmagetower -->
+
+	<!-- ragingmagetower -->
 	<event type="kill" name="Yielothax" script="ragingmagetower/yielothax.lua"/>
 	<event type="kill" name="Energized Raging Mage" script="ragingmagetower/energized.lua"/> 
 	<event type="kill" name="Raging Mage" script="ragingmagetower/raging.lua"/>
 
-	
 	<event type="login" name="bless1" script="freeblesslowlevel.lua"/>
-	
+
 	<!-- Rookgaard Cockroach -->
 	<event type="advance" name="AdvanceRookgaard" script="rookgaard/advance.lua" />
 
@@ -96,7 +95,7 @@
 
 	<!-- Killing In The Name Of Quest -->
 	<event type="kill" name="KillingInTheNameOfKills" script="quests/killing in the name of/kills.lua" />
-	
+
 	<event type="kill" name="KillingInTheNameOfKillss" script="necro.lua" />
 	<event type="kill" name="KillingInTheNameOfKillsss" script="minos.lua" />
 
@@ -124,7 +123,7 @@
 	<event type="login" name="FirstItems" script="others/firstitems.lua" />
 	<event type="login" name="RegenerateStamina" script="others/regeneratestamina.lua" />
 	<event type="login" name="OfflineTraining" script="others/offlinetraining.lua" />
-    <event type="login" name="AddonsMounts" script="others/addons-montarias.lua"/>
+	<event type="login" name="AddonsMounts" script="others/addons-montarias.lua"/>
 	<event type="logout" name="PlayerLogout" script="others/logout.lua" />
 
 	<event type="death" name="PlayerDeath" script="others/playerdeath.lua" />
@@ -132,5 +131,5 @@
 	<event type="advance" name="AdvanceSave" script="others/advance_save.lua" />
 	<event type="death" name="WhiteDeerDeath" script="others/whitedeer.lua" />
 	<event type="death" name="WhiteDeerScoutsDeath" script="others/whitedeer_scouts.lua" />
-		
+	
 </creaturescripts>
