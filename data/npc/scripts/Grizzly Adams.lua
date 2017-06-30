@@ -103,7 +103,7 @@ local function creatureSayCallback(cid, type, msg)
 	if not npcHandler:isFocused(cid) then return false end
 
 	local player = Player(cid)
-	if msgcontains('vikingtibiaaa', msg) then
+	if msgcontains('trade', msg) then
 		local tradeItems = {}
 		if player:getPawAndFurRank() >= 0 then
 			tradeItems = grizzlyAdamsConfig.ranks.huntsMan_rank
