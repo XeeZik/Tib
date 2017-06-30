@@ -52,6 +52,7 @@ local events = {
 	'DeathCounter',
 	'KillCounter',
 	'bless1',
+	'Recompense',
 	'lowerRoshamuul'
 }
 
