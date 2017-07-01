@@ -123,7 +123,7 @@ local function creatureSayCallback(cid, type, msg)
 	local player = Player(cid)
 	if msgcontains('trade', msg) then
 		local tradeItems = {}
-		if player:getPawAndFurRank() >= 0 then
+		if player:getPawAndFurRank() >= 2 then
 			tradeItems = grizzlyAdamsConfig.ranks.huntsMan_rank
 			if player:getPawAndFurRank() == 4 then
 				tradeItems = joinTables(tradeItems, grizzlyAdamsConfig.ranks.bigGameHunter_rank)
