@@ -36953,7 +36953,11 @@
 	<item id="26089" article="a" name="bamboo mat" />  
 	<item id="26111" article="a" name="bamboo mat" /> <!--transform-->
 	<item id="26363" article="a" name="crimson carpet" /> 
-	<item id="26371" article="a" name="crimson carpet" />
+	
+	<!--Exemple carpet-->
+	<item id="26371" article="an" name="Crimson Carpet">
+	<attribute key="type" value="carpet" />
+	</item>
 
 	<!--transform-->
 	<item id="26366" article="a" name="azure carpet" /> 
