@@ -572,7 +572,7 @@ void ProtocolGame::parsePacket(NetworkMessage& msg)
         case 0xEF: parseCoinTransfer(msg); break; /* premium coins transfer */
 		case 0xF0: addGameTaskTimed(DISPATCHER_TASK_EXPIRATION, &Game::playerShowQuestLog, player->getID()); break;
 		case 0xF1: parseQuestLine(msg); break;
-		case 0xF2: /* rule violation report */ break;
+		case 0xF2: parseRuleViolationReport(msg); break;
 		case 0xF3: /* get object info */ break;
 		case 0xF4: parseMarketLeave(); break;
 		case 0xF5: parseMarketBrowse(msg); break;
@@ -913,6 +913,23 @@ void ProtocolGame::parseWrapableItem(NetworkMessage& msg)
 	addGameTaskTimed(DISPATCHER_TASK_EXPIRATION, &Game::playerWrapableItem, player->getID(), pos, stackpos, spriteId);
 }
 
+void ProtocolGame::parseRuleViolationReport(NetworkMessage &msg)
+ {
+ 	uint8_t reportType = msg.getByte();
+ 	uint8_t reportReason = msg.getByte();
+ 	const std::string& targetName = msg.getString();
+ 	const std::string& comment = msg.getString();
+ 	std::string translation;
+ 	if (reportType == REPORT_TYPE_NAME) {
+ 		translation = msg.getString();
+ 	} else if (reportType == REPORT_TYPE_STATEMENT) {
+ 		translation = msg.getString();
+ 		msg.get<uint32_t>(); // statement id, used to get whatever player have said, we don't log that.  
+ 	}
+ 
+	addGameTask(&Game::playerReportRuleViolationReport, player->getID(), targetName, reportType, reportReason, comment, translation);
+ }
+ 
 void ProtocolGame::parseBugReport(NetworkMessage& msg)
 {
 	uint8_t category = msg.getByte();
