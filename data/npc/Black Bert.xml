@@ -2,4 +2,89 @@
 <npc name="Black Bert" script="Black Bert.lua" walkinterval="2000" floorchange="0">
 	<health now="100" max="100" />
 	<look type="151" head="0" body="38" legs="19" feet="76" addons="0" />
+		<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_sellable" value="" />
+		<parameter key="shop_buyable" value="		
+		<!-- missing code !-->
+		almanach of magic,10942,600;
+		alchemists' formulas,9733,8000;
+		animal fetish,10154,10000;
+		baby rotworm,10943,600;
+		bale of white cloth,7500,6000;
+		bill,2329,8000;
+		blood crystal,9369,50000;
+		bloodkiss flower,10159,10000;
+		bundle of rags,10109,5000;
+		carrying device,10615,1000;
+		cigar,7499,2000;
+		cookbook,2347,150;
+		damaged logbook,14338,40000;
+		dark eesence,14352,17000;
+		deep crystal,10158,13000;
+		elemental crystal,10169,8000;
+		empty beer bottle,11397,600;
+		exploding cookie,8111,100;
+		exquisite silk,12501,4000;
+		exquisite wood,12503,4000;
+		faded last will,12500,600;
+		family brooch,4845,1000;
+		family signet ring,7708,15000;
+		fan club membership card,10308,10000;
+		filled carrying device,10616,1000;
+		fishnapped goldfish,8766,7000;
+		flask of crown polisher,10926,700;
+		flask of extra greasy oil,11106,1000;
+		flask of poison,10760,1000;
+		flexible dragon scale,12506,4000;
+		formula for a memory potion,14351,5000;
+		funeral urn,4858,6000;
+		ghost charm,9737,20000;
+		ghost's tear,9662,50000;
+		giant ape's hair,4843,24000;
+		golem blueprint,10165,13500;
+		golem head,10173,25000;
+		headache pill,10454,350;
+		letter to Markwin,2333,8000;
+		letterbag,2330,8000;
+		lump of clay,12285,1000;
+		machine crate,10307,8500;
+		magic crystal,12508,4000;
+		mago mechanic core,10167,13000;
+		map to the unknown,10928,650;
+		memory crystal,7281,500;
+		memory stone,4852,3000;
+		monks diary,2325,3000;
+		Morik's helmet,9735,8000;
+		mystic root,12507,4000;
+		nautical map,10225,5250;
+		old iron,12505,4000;
+		old power core,10170,13000;
+		plans for a strange device,10613,1000;
+		present,3218,16000;
+		rare crystal,11104,1000;
+		sacred earth,12297,1000;
+		shadow orb,10155,12500;
+		sheet of tracing paper,4854,500;
+		suspicious signet ring,7697,15000;
+		snake destroyer,4846,8000;
+		soul contract,10945,666;
+		special flask,14323,5000;
+		spectral dress,4847,15000;
+		spyreport,2345,3000;
+		stabilizer,10166,12500;
+		strange powder,15389,5000;
+		striker's favourite pillow,6105,16000;
+		strong sinew,12504,4000;
+		tear of daraman,2346,16000;
+		technomancer beard,7699,5000;
+		teleportation rod,24838,100;
+		the ring of the count,8752,100;
+		toy mouse,7487,16000;
+		universal tool,10944,550;
+		unworked sacred wood,12295,1000;
+		whisper moss,4838,18000;
+		worm queen tooth,10157,18000;
+		wrinkled parchment,14336,4000;" />
+	</parameters>
 </npc>
