@@ -5034,15 +5034,14 @@ void Game::kickPlayer(uint32_t playerId, bool displayEffect)
 }
 
 void Game::playerReportRuleViolationReport(uint32_t playerId, const std::string& targetName, uint8_t reportType, uint8_t reportReason, const std::string& comment, const std::string& translation)
- {
- 	Player* player = getPlayerByID(playerId);
- 	if (!player) {
- 		return;
- 	}
- 
- 	g_events->eventPlayerOnReportRuleViolation(player, targetName, reportType, reportReason, comment, translation);
- }
+{
+	Player* player = getPlayerByID(playerId);
+	if (!player) {
+		return;
+	}
 
+	g_events->eventPlayerOnReportRuleViolation(player, targetName, reportType, reportReason, comment, translation);
+}
 
 void Game::playerReportBug(uint32_t playerId, const std::string& message, const Position& position, uint8_t category)
 {
