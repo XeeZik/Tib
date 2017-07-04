@@ -28,7 +28,7 @@ local foldedCarpet = {
 [26375] = 26369, --dark parquet carpet
 
 [26370] = 26376, --mable floor
-[26370] = 26376, --marble floor
+[26376] = 26370, --marble floor
 
 [27072] = 27080, --flowery carpet
 [27080] = 27072, --flowery carpet

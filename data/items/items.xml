@@ -2881,9 +2881,6 @@
 	<item id="1880" article="a" name="white tapestry">
 		<attribute key="weight" value="1000" />
 	</item>
-	<item id="25392" article="a" name="folded rift carpet">
-		<attribute key="weight" value="1000" />
-	</item>
 	<item id="25393" article="a" name="rift carpet">
 		<attribute key="weight" value="1000" />
 	</item>
@@ -34828,7 +34825,6 @@
 	<item id="22649" article="a" name="snowflake tapestry">
 		<attribute key="weight" value="1000" />
 	</item>
-	<item id="26193" article="a" name="void carpet" />
 	<item id="22657" article="a" name="flying carpet" />
 	<item fromid="22662" toid="22666" article="a" name="hole">
 		<attribute key="floorchange" value="down" />
@@ -36266,24 +36262,73 @@
 		<attribute key="description" value="This item cannot be traded." />
 	</item>
 	<item id="26087" article="a" name="yalaharian carpet" />
-	<item id="26109" article="a" name="yalaharian carpet" /> <!--transform-->
 	<item id="26088" article="a" name="white fur carpet" />
-	<item id="26110" article="a" name="white fur carpet" /> <!--transform-->
 	<item id="26089" article="a" name="bamboo mat" />
-	<item id="26111" article="a" name="bamboo mat" /> <!--transform-->
 	<item id="26363" article="a" name="crimson carpet" />
-	<item id="26371" article="a" name="crimson carpet" />
+	<!--Carpet-->
+ 	<item id="25392" article="an" name="Rift Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="26193" article="an" name="Void Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="26109" article="an" name="Yalahahari Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="26110" article="an" name="White fur Carpet">
+	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="26111" article="an" name="Bamboo mat Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="26371" article="an" name="Crimson Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="26372" article="an" name="Azure Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="26373" article="an" name="Emerald Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="26374" article="an" name="Light Parquet Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="26375" article="an" name="Dark Parquet Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="26376" article="an" name="Mable Floor">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="27080" article="an" name="Flowery Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="27081" article="an" name="Colourful Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="27082" article="an" name="Striped Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="27083" article="an" name="Fur Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+	<item id="27084" article="an" name="Diamond Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="27085" article="an" name="Patterned Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="27086" article="an" name="Night Sky Carpet">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
+ 	<item id="27087" article="an" name="Star Carpett">
+ 	<attribute key="type" value="carpet" />
+ 	</item>
 	<!--transform-->
 	<item id="26366" article="a" name="azure carpet" />
-	<item id="26372" article="a" name="azure carpet" /> <!--transform-->
 	<item id="26367" article="a" name="emerald carpet" />
-	<item id="26373" article="a" name="emerald carpet" /> <!--transform-->
 	<item id="26368" article="a" name="light parquet" />
-	<item id="26374" article="a" name="light parquet" /> <!--transform-->
 	<item id="26369" article="a" name="dark parquet" />
-	<item id="26375" article="a" name="dark parquet" /> <!--transform-->
 	<item id="26370" article="a" name="marble floor" />
-	<item id="26376" article="a" name="marble floor" /> <!--transform-->
 	<item fromid="26090" toid="26093" name="predador lamp" />
 	<item fromid="26094" toid="26097" name="protectress lamp" />
 	<item fromid="26098" toid="26099" article="a" name="baby dragon" />
@@ -36481,7 +36526,7 @@
 	<item fromid="26935" toid="26938" name="larg wooden cone" />
 	<item fromid="26940" toid="26958" name="cut grass" />
 	<item fromid="26959" toid="26970" name="milk azure crystal" />
-	<item fromid="26971" toid="26982" name="broken azure crystal" />
+	<item fromid="26779" toid="26785" name="broken azure crystal"/>
 	<item fromid="26983" toid="26986" name="waterway" />
 	<item fromid="26987" toid="26988" name="waterway cataract" />
 	<item fromid="26989" toid="26994" name="empty waterway" />
@@ -36524,13 +36569,13 @@
 	<item fromid="27070" toid="27071" name="symbol of Bastesh">
 		<attribute key="description" value="It represents Bastesh, Mistress of the Sea, one of the Tibian gods." />
 	</item>
-	<item fromid="27072" toid="27073" name="symbol of Urgith">
+	<item fromid="26877" toid="26878" name="symbol of Urgith">
 		<attribute key="description" value="It represents Urgith, Lord of Undeath, one of the Tibian gods." />
 	</item>
-	<item fromid="27074" toid="27075" name="symbol of Toth">
+	<item fromid="26879" toid="26880" name="symbol of Toth">
 		<attribute key="description" value="It represents Toth, Guardian of the Dead, one of the Tibian gods." />
 	</item>
-	<item fromid="27087" toid="27094" name="waterway" />
+	<item fromid="26971" toid="26972" name="waterway"/>
 	<item fromid="27137" toid="27160" name="stone floor" />
 	<item id="27208" name="unknown item" />
 	<item id="27209" name="unknown item" />
@@ -36572,22 +36617,14 @@
 	<item id="27259" name="sewing table" />
 	<item id="27647" name="sewing table" />
 	<item id="27260" name="old rag" />
-	<item id="26412" name="flowery carpet" />
-	<item id="26413" name="flowery carpet" />
-	<item id="26414" name="colourful carpet" />
-	<item id="26415" name="colourful carpet" />
-	<item id="26422" name="striped carpet" />
-	<item id="26423" name="striped carpet" />
+	<item id="27072" name="flowery carpet" />
+	<item id="27073" name="colourful carpet" />
+	<item id="27074" name="striped carpet" />
 	<item id="27075" name="fur carpet" />
-	<item id="27083" name="fur carpet" />
-	<item id="26424" name="diamond carpet" />
-	<item id="26425" name="diamond carpet" />
-	<item id="26426" name="patterned carpet" />
-	<item id="26427" name="patterned carpet" />
-	<item id="26420" name="night sky carpet" />
-	<item id="26421" name="night sky carpet" />
+	<item id="27076" name="diamond carpet" />
+	<item id="27077" name="patterned carpet" />
+	<item id="27078" name="night sky carpet" />
 	<item id="27079" name="star carpet" />
-	<item id="27087" name="star carpet" />
 	<item fromid="27261" toid="27262" name="parrot" />
 	<item fromid="27263" toid="27265" name="lit skull lamp" />
 	<item id="27266" name="sand" />
