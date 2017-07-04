@@ -8,10 +8,6 @@
         <offer name="[PACK] The Embrace of Open Tibia + The Fire of the Suns" type="bless" price="55" state="sale" blessnumber="2|3" icons="embrace_and_suns.png"/>
         <offer name="Teleport home" description="Go back to your home temple in an instant." price="20" state="new" type="teleport" icons="teleporttemple.png" />
         <offer name="Teleport to x,y,z" description="Go to a specific location" price="100" type="teleport" x="500" y="1000" z="7" icons="teleportxyz.png" />
-		<offer name="XP Boost 50%", state="new", type="expboost", price="15", icons="xpboost.png", description="50% XP Boost for 1 hour!" />
-		<offer name="Prey Bonus Reroll", state ="new", count ="1", type="preybonus", price="5", icons="Product_UsefulThings_PreyBonusReroll.png" />
-		<offer name="5x Prey Bonus Reroll", state="new", count="5", type="preybonus", price="25", icons="Product_UsefulThings_PreyBonusReroll.png" />
-		<offer name="Permanent Prey Slot", state="new", type="preyslot", price="450", icons="Product_UsefulThings_PermanentPreySlot.png" />
 
 
 		</category>
