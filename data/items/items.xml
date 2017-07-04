@@ -9879,7 +9879,7 @@
 	</item>
 	<item id="4860" name="wooden trash" />
 	<item id="4861" article="a" name="cobra statue" />
-	<item id="4862" name="destroyed cobra statue" >
+	<item id="4862" name="destroyed cobra statue">
 		<attribute key="decayTo" value="4861" />
 		<attribute key="duration" value="60" />
 	</item>
@@ -24433,8 +24433,8 @@
 		<attribute key="weight" value="475" />
 	</item>
 	<item fromid="13882" toid="13883" article="a" name="fire" />
-	<item id="13884" article="a" name="destroy field rune"/>
-	<item id="13885" article="a" name="pitch black gap"/>
+	<item id="13884" article="a" name="destroy field rune" />
+	<item id="13885" article="a" name="pitch black gap" />
 	<item fromid="13886" toid="13901" name="large spider web" />
 	<item fromid="13904" toid="13920" name="large spider web" />
 	<item fromid="13921" toid="13922" article="a" name="warning sign">
@@ -27519,7 +27519,7 @@
 	<item id="19519" article="a" name="hole">
 		<attribute key="floorchange" value="down" />
 	</item>
-	<item id="19596" name="cobbled pavement"/>
+	<item id="19596" name="cobbled pavement" />
 	<item fromid="19598" toid="19599" article="a" name="magic door" />
 	<item id="19606" article="a" name="pillar railing" />
 	<item fromid="19610" toid="19615" article="an" name="ornament" />
@@ -31167,11 +31167,11 @@
 		<attribute key="weight" value="180" />
 		<attribute key="description" value="It holds a liquid concentrate developed by the gnomes to fertilise mushrooms." />
 	</item>
-	<item id="21565" article="a" name="gardener mushroom"/>
+	<item id="21565" article="a" name="gardener mushroom" />
 	<item id="21566" article="a" name="partially charged lodestone">
 		<attribute key="weight" value="300" />
 	</item>
-	<item id="21567" article="a" name="magnetic monolith"/>
+	<item id="21567" article="a" name="magnetic monolith" />
 	<item id="21568" article="a" name="highly charged lodestone">
 		<attribute key="weight" value="300" />
 	</item>
@@ -31268,7 +31268,7 @@
 	</item>
 	<item fromid="21811" toid="21826" name="flowing water" />
 	<item fromid="21892" toid="21923" name="wasteland" />
-	<item fromid="22654" toid="22656" name="dream junk"/>
+	<item fromid="22654" toid="22656" name="dream junk" />
 	<item id="22105" article="a" name="crimson fin" />
 	<item id="22440" article="a" name="crimson fin" />
 	<item id="22447" article="a" name="crimson fin" />
@@ -31279,8 +31279,8 @@
 	<item fromid="22133" toid="22134" name="instable vortex">
 		<attribute key="description" value="This vortex seems suck you right in.." />
 	</item>
-	<item fromid="22097" toid="22098" name="night grasp"/>
-	<item fromid="22135" toid="22139" name="large vortex"/>
+	<item fromid="22097" toid="22098" name="night grasp" />
+	<item fromid="22135" toid="22139" name="large vortex" />
 	<item fromid="22159" toid="22166" name="stone pebble floor" />
 	<item fromid="22183" toid="22194" name="stone pebble floor" />
 	<item fromid="22167" toid="22174" name="stone pavement" />
@@ -36101,7 +36101,7 @@
 	<item id="23694" article="an" name="imported water pipe">
 		<attribute key="weight" value="200" />
 	</item>
-	<item fromid="23702" toid="23703" name="voting results" >
+	<item fromid="23702" toid="23703" name="voting results">
 		<attribute key="description" value="This board will notify you of all relevant voting results, courtesy of the Rathleton Magistrate." />
 	</item>
 	<item id="23754" article="a" name="stone of insight">
@@ -36114,14 +36114,14 @@
 	<item id="24733" article="a" name="arena 1vs1">
 		<attribute key="description" value="Use the ticket 1vs1 for enter in Arena, buy it from Victor." />
 	</item>
-	<item id="24181" article="a" name="ticket 10vs10" >
+	<item id="24181" article="a" name="ticket 10vs10">
 		<attribute key="weight" value="1800" />
 	</item>
 	<item id="24913" article="a" name="large cauldron (ogres)" />
 	<item id="24914" article="a" name="large cauldron (ogres)" />
 	<item id="24912" article="a" name="large cauldron (ogres)" />
 	<item id="24911" article="a" name="large cauldron (ogres)" />
-	<item id="24173" article="a" name="ticket 1vs1" >
+	<item id="24173" article="a" name="ticket 1vs1">
 		<attribute key="weight" value="1800" />
 	</item>
 	<item id="23782" article="a" name="shopping bag">
@@ -36229,16 +36229,16 @@
 	<item fromid="26032" toid="26043" article="a" name="rift jag" />
 	<item id="26227" article="a" name="wrecked opticorder forge" />
 	<!--storeitens 10.94-->
-	<item id="26059" article="a" name="magnificent chair" >
+	<item id="26059" article="a" name="magnificent chair">
 		<attribute key="rotateTo" value="26060" />
 	</item>
-	<item id="26060" article="a" name="magnificent chair" >
+	<item id="26060" article="a" name="magnificent chair">
 		<attribute key="rotateTo" value="26061" />
 	</item>
-	<item id="26061" article="a" name="magnificent chair" >
+	<item id="26061" article="a" name="magnificent chair">
 		<attribute key="rotateTo" value="26062" />
 	</item>
-	<item id="26062" article="a" name="magnificent chair" >
+	<item id="26062" article="a" name="magnificent chair">
 		<attribute key="rotateTo" value="26059" />
 		<attribute key="wrapableTo" value="26054" />
 	</item>
@@ -36266,9 +36266,9 @@
 		<attribute key="description" value="This item cannot be traded." />
 	</item>
 	<item id="26087" article="a" name="yalaharian carpet" />
-	<item id="26109" article="a" name="yalaharian carpet" /><!--transform-->
+	<item id="26109" article="a" name="yalaharian carpet" /> <!--transform-->
 	<item id="26088" article="a" name="white fur carpet" />
-	<item id="26110" article="a" name="white fur carpet" /><!--transform-->
+	<item id="26110" article="a" name="white fur carpet" /> <!--transform-->
 	<item id="26089" article="a" name="bamboo mat" />
 	<item id="26111" article="a" name="bamboo mat" /> <!--transform-->
 	<item id="26363" article="a" name="crimson carpet" />
@@ -36284,7 +36284,7 @@
 	<item id="26375" article="a" name="dark parquet" /> <!--transform-->
 	<item id="26370" article="a" name="marble floor" />
 	<item id="26376" article="a" name="marble floor" /> <!--transform-->
-	<item fromid="26090" toid="26093" name="predador lamp"/>
+	<item fromid="26090" toid="26093" name="predador lamp" />
 	<item fromid="26094" toid="26097" name="protectress lamp" />
 	<item fromid="26098" toid="26099" article="a" name="baby dragon" />
 	<item fromid="26100" toid="26101" article="a" name="hamster wheel" />
@@ -36296,10 +36296,10 @@
 	<item id="26379" article="a" name="golden dragon tapestry" />
 	<item id="26380" article="a" name="sword tapestry" />
 	<item id="26381" article="a" name="brocade tapestry" />
-	<item id="26378" article="a" name="gold converter" >
+	<item id="26378" article="a" name="gold converter">
 		<attribute key="weight" value="1800" />
 	</item>
-	<item id="26377" article="a" name="gold pouch" >
+	<item id="26377" article="a" name="gold pouch">
 		<attribute key="weight" value="1800" />
 		<attribute key="containerSize" value="80" />
 		<attribute key="slotType" value="backpack" />
@@ -36313,40 +36313,40 @@
 		<attribute key="type" value="mailbox" />
 	</item>
 	<!--Items Diversos-->
-	<item id="26143" article="a" name="arena badge" >
+	<item id="26143" article="a" name="arena badge">
 		<attribute key="weight" value="350" />
 	</item>
-	<item id="26144" article="a" name="surprise cube" >
+	<item id="26144" article="a" name="surprise cube">
 		<attribute key="weight" value="300" />
 	</item>
-	<item id="26145" article="a" name="brown pit demon" >
+	<item id="26145" article="a" name="brown pit demon">
 		<attribute key="weight" value="3500" />
 	</item>
-	<item id="26146" article="a" name="green pit demon" >
+	<item id="26146" article="a" name="green pit demon">
 		<attribute key="weight" value="3500" />
 	</item>
-	<item id="26147" article="a" name="blue pit demon" >
+	<item id="26147" article="a" name="blue pit demon">
 		<attribute key="weight" value="3500" />
 	</item>
-	<item id="26148" article="a" name="black pit demon" >
+	<item id="26148" article="a" name="black pit demon">
 		<attribute key="weight" value="3500" />
 	</item>
-	<item id="26149" article="a" name="red pit demon" >
+	<item id="26149" article="a" name="red pit demon">
 		<attribute key="weight" value="3500" />
 	</item>
-	<item id="26157" article="a" name="condensed energy" >
+	<item id="26157" article="a" name="condensed energy">
 		<attribute key="weight" value="350" />
 	</item>
-	<item id="26169" article="a" name="strange proto matter" >
+	<item id="26169" article="a" name="strange proto matter">
 		<attribute key="weight" value="350" />
 	</item>
-	<item id="26173" article="a" name="solid rage" >
+	<item id="26173" article="a" name="solid rage">
 		<attribute key="weight" value="350" />
 	</item>
-	<item id="26178" article="a" name="glistening bone" >
+	<item id="26178" article="a" name="glistening bone">
 		<attribute key="weight" value="350" />
 	</item>
-	<item id="26180" article="a" name="small energy ball" >
+	<item id="26180" article="a" name="small energy ball">
 		<attribute key="weight" value="350" />
 	</item>
 	<item fromid="26195" toid="26196" article="a" name="unknown pedestal" />
@@ -36358,28 +36358,28 @@
 		<attribute key="weight" value="200" />
 		<attribute key="description" value="This strange box holds a dark sphere. It is broken and crumbles into dust any second now - but the vital key mechanism seems to be in a pristine condition." />
 	</item>
-	<item id="26332" name="hand puppets (réplica)">
+	<item id="26332" name="hand puppets (replica)">
 		<attribute key="weight" value="200" />
 	</item>
-	<item id="26333" name="music box (réplica)">
+	<item id="26333" name="music box (replica)">
 		<attribute key="weight" value="200" />
 	</item>
-	<item id="26334" name="encyclopedia (réplica)">
+	<item id="26334" name="encyclopedia (replica)">
 		<attribute key="weight" value="200" />
 	</item>
-	<item id="26335" name="doll of during the almighty (réplica)">
+	<item id="26335" name="doll of during the almighty (replica)">
 		<attribute key="weight" value="200" />
 	</item>
-	<item id="26336" name="medusa skull (réplica)">
+	<item id="26336" name="medusa skull (replica)">
 		<attribute key="weight" value="200" />
 	</item>
-	<item id="26337" name="golden newspaper (réplica)">
+	<item id="26337" name="golden newspaper (replica)">
 		<attribute key="weight" value="200" />
 	</item>
-	<item id="26338" name="bag of oriental spices (réplica)">
+	<item id="26338" name="bag of oriental spices (replica)">
 		<attribute key="weight" value="200" />
 	</item>
-	<item id="26339" name="imortus (réplica)">
+	<item id="26339" name="imortus (replica)">
 		<attribute key="weight" value="200" />
 	</item>
 	<item id="26229" name="old desk">
@@ -36405,7 +36405,7 @@
 		<attribute key="weight" value="600" />
 		<attribute key="description" value="It is made of filigree silver braces and delicate indigo glass. It glows with an otherworldly light." />
 	</item>
-	<item id="26588" name="unknown item"/>
+	<item id="26588" name="unknown item" />
 	<item fromid="26591" toid="26592" article="a" name="brass-shod chest" />
 	<item id="26661" name="phial of fresh water">
 		<attribute key="weight" value="300" />
@@ -36427,9 +36427,9 @@
 		<attribute key="weight" value="1500" />
 		<attribute key="description" value="This soil looks moist and fertile." />
 	</item>
-	<item id="26666" name="blooming birch"/>
-	<item id="26667" name="growing birch"/>
-	<item fromid="26668" toid="26703" name="monument"/>
+	<item id="26666" name="blooming birch" />
+	<item id="26667" name="growing birch" />
+	<item fromid="26668" toid="26703" name="monument" />
 	<item fromid="26704" toid="26707" name="window">
 		<attribute key="description" value="monument" />
 	</item>
@@ -36442,7 +36442,7 @@
 	<item fromid="26714" toid="26715" name="stairs(monument)">
 		<attribute key="floorchange" value="south" />
 	</item>
-	<item fromid="26716" toid="26723" name="monument broken wall"/>
+	<item fromid="26716" toid="26723" name="monument broken wall" />
 	<item fromid="26724" toid="26727" article="an" name="closed door">
 		<attribute key="description" value="monument" />
 		<attribute key="type" value="door" />
@@ -36451,51 +36451,51 @@
 		<attribute key="description" value="monument" />
 		<attribute key="type" value="door" />
 	</item>
-	<item id="26730" name="monument"/>
-	<item fromid="26731" toid="26734" name="Slant"/>
-	<item fromid="26748" toid="26779" name="stone floor(bege)"/>
-	<item fromid="26800" toid="26831" name="stone floor(bege)"/>
-	<item fromid="26832" toid="26835" name="monument wall"/>
-	<item id="26836" name="old tome"/>
-	<item id="26837" name="heavy old tome"/>
-	<item fromid="26838" toid="26839" name="monument broken pillar"/>
-	<item fromid="26840" toid="26841" name="monument pillar"/>
-	<item fromid="26842" toid="26843" name="monument column"/>
-	<item fromid="26844" toid="26859" name="monument broken column"/>
-	<item fromid="26860" toid="26863" name="plants"/>
-	<item fromid="26864" toid="26865" name="monument"/>
-	<item fromid="26866" toid="26867" name="overgrown monument"/>
-	<item fromid="26868" toid="26877" name="small trimmed tree"/>
-	<item fromid="26878" toid="26887" name="untended trimmed tree"/>
-	<item id="26888" name="red bladed agave"/>
-	<item fromid="26889" toid="26890" name="obelisk(pointed)"/>
-	<item id="26891" name="unknown item"/>
-	<item id="26892" name="autumn sparkle blossom"/>
-	<item id="26893" name="the golden path"/>
-	<item id="26939" name="ruined sculpture"/>
-	<item fromid="26894" toid="26902" name="plants"/>
-	<item fromid="26903" toid="26910" name="empty plant tub"/>
-	<item fromid="26911" toid="26918" name="plant tub"/>
-	<item fromid="26919" toid="26926" name="empty ruined plant tub"/>
-	<item fromid="26927" toid="26934" name="ruined plant tub"/>
-	<item fromid="26935" toid="26938" name="larg wooden cone"/>
-	<item fromid="26940" toid="26958" name="cut grass"/>
-	<item fromid="26959" toid="26970" name="milk azure crystal"/>
-	<item fromid="26971" toid="26982" name="broken azure crystal"/>
-	<item fromid="26983" toid="26986" name="waterway"/>
-	<item fromid="26987" toid="26988" name="waterway cataract"/>
-	<item fromid="26989" toid="26994" name="empty waterway"/>
-	<item fromid="26995" toid="27000" name="waterway"/>
-	<item fromid="27001" toid="27012" name="moss"/>
-	<item id="27013" name="waterway"/>
-	<item fromid="27014" toid="27037" name="moss"/>
-	<item fromid="27039" toid="27042" name="moss"/>
-	<item fromid="26890" toid="26891" name="broken crystal plant"/>
+	<item id="26730" name="monument" />
+	<item fromid="26731" toid="26734" name="Slant" />
+	<item fromid="26748" toid="26779" name="stone floor(bege)" />
+	<item fromid="26800" toid="26831" name="stone floor(bege)" />
+	<item fromid="26832" toid="26835" name="monument wall" />
+	<item id="26836" name="old tome" />
+	<item id="26837" name="heavy old tome" />
+	<item fromid="26838" toid="26839" name="monument broken pillar" />
+	<item fromid="26840" toid="26841" name="monument pillar" />
+	<item fromid="26842" toid="26843" name="monument column" />
+	<item fromid="26844" toid="26859" name="monument broken column" />
+	<item fromid="26860" toid="26863" name="plants" />
+	<item fromid="26864" toid="26865" name="monument" />
+	<item fromid="26866" toid="26867" name="overgrown monument" />
+	<item fromid="26868" toid="26877" name="small trimmed tree" />
+	<item fromid="26878" toid="26887" name="untended trimmed tree" />
+	<item id="26888" name="red bladed agave" />
+	<item fromid="26889" toid="26890" name="obelisk(pointed)" />
+	<item id="26891" name="unknown item" />
+	<item id="26892" name="autumn sparkle blossom" />
+	<item id="26893" name="the golden path" />
+	<item id="26939" name="ruined sculpture" />
+	<item fromid="26894" toid="26902" name="plants" />
+	<item fromid="26903" toid="26910" name="empty plant tub" />
+	<item fromid="26911" toid="26918" name="plant tub" />
+	<item fromid="26919" toid="26926" name="empty ruined plant tub" />
+	<item fromid="26927" toid="26934" name="ruined plant tub" />
+	<item fromid="26935" toid="26938" name="larg wooden cone" />
+	<item fromid="26940" toid="26958" name="cut grass" />
+	<item fromid="26959" toid="26970" name="milk azure crystal" />
+	<item fromid="26971" toid="26982" name="broken azure crystal" />
+	<item fromid="26983" toid="26986" name="waterway" />
+	<item fromid="26987" toid="26988" name="waterway cataract" />
+	<item fromid="26989" toid="26994" name="empty waterway" />
+	<item fromid="26995" toid="27000" name="waterway" />
+	<item fromid="27001" toid="27012" name="moss" />
+	<item id="27013" name="waterway" />
+	<item fromid="27014" toid="27037" name="moss" />
+	<item fromid="27039" toid="27042" name="moss" />
+	<item fromid="26890" toid="26891" name="broken crystal plant" />
 	<item fromid="27044" toid="27045" name="symbol of fardos">
 		<attribute key="description" value="It represents Fardos the Creator, one of the Tibian gods." />
 	</item>
-	<item fromid="27046" toid="27047" name="unknown item"/>
-	<item fromid="27048" toid="27049" name="unknown item"/>
+	<item fromid="27046" toid="27047" name="unknown item" />
+	<item fromid="27048" toid="27049" name="unknown item" />
 	<item fromid="27050" toid="27051" name="sign of Uman and Zathroth">
 		<attribute key="description" value="It represents the unity of Uman the Wise and Zathroth the Destroyer, two of the Tibian gods." />
 	</item>
@@ -36511,7 +36511,7 @@
 	<item fromid="27058" toid="27059" name="symbol of air">
 		<attribute key="description" value="It represents the Air, one of the Tibian elemental gods." />
 	</item>
-	<item fromid="27060" toid="27063" name="unknown item"/>
+	<item fromid="27060" toid="27063" name="unknown item" />
 	<item fromid="27064" toid="27065" name="symbol of Suon and Fafnar">
 		<attribute key="description" value="It represents Suon the Benevolent Sun and Fafnar the Destroying Sun, the Tibian sun gods." />
 	</item>
@@ -36530,196 +36530,196 @@
 	<item fromid="27074" toid="27075" name="symbol of Toth">
 		<attribute key="description" value="It represents Toth, Guardian of the Dead, one of the Tibian gods." />
 	</item>
-	<item fromid="27087" toid="27094" name="waterway"/>
-	<item fromid="27137" toid="27160" name="stone floor"/>
-	<item id="27208" name="unknown item"/>
-	<item id="27209" name="unknown item"/>
-	<item id="27231" name="bone toothpick"/>
-	<item id="27232" name="beetle carapace"/>
-	<item id="27233" name="bug meat"/>
-	<item id="27234" name="cave turnip"/>
-	<item id="27235" name="ancient belt buckle"/>
-	<item id="27236" name="cracked alabaster vase"/>
-	<item id="27237" name="rhino horn carving"/>
-	<item id="27238" name="tarnished rhino figurine"/>
-	<item id="27239" name="rhino hide"/>
-	<item id="27240" name="rhino horn"/>
-	<item id="27241" name="ancient coin"/>
-	<item id="27242" name="coral brooch"/>
-	<item id="27243" name="gemmed figurine"/>
-	<item id="26445" article="a" name="pillow backpack" >
+	<item fromid="27087" toid="27094" name="waterway" />
+	<item fromid="27137" toid="27160" name="stone floor" />
+	<item id="27208" name="unknown item" />
+	<item id="27209" name="unknown item" />
+	<item id="27231" name="bone toothpick" />
+	<item id="27232" name="beetle carapace" />
+	<item id="27233" name="bug meat" />
+	<item id="27234" name="cave turnip" />
+	<item id="27235" name="ancient belt buckle" />
+	<item id="27236" name="cracked alabaster vase" />
+	<item id="27237" name="rhino horn carving" />
+	<item id="27238" name="tarnished rhino figurine" />
+	<item id="27239" name="rhino hide" />
+	<item id="27240" name="rhino horn" />
+	<item id="27241" name="ancient coin" />
+	<item id="27242" name="coral brooch" />
+	<item id="27243" name="gemmed figurine" />
+	<item id="26445" article="a" name="pillow backpack">
 		<attribute key="weight" value="1800" />
 		<attribute key="containerSize" value="18" />
 		<attribute key="slotType" value="backpack" />
 	</item>
-	<item id="26446" name="orclops santa"/>
-	<item id="26383" article="a" name="Birthday Backpack" >
+	<item id="26446" name="orclops santa" />
+	<item id="26383" article="a" name="Birthday Backpack">
 		<attribute key="weight" value="1500" />
 		<attribute key="description" value="It was awarded during the festivities of Tibia's 20th anniversary." />
 		<attribute key="containerSize" value="18" />
 		<attribute key="slotType" value="backpack" />
 	</item>
-	<item id="26447" name="birthday cake"/>
-	<item id="26448" name="ferumbras hat candy"/>
-	<item fromid="27243" toid="27246" name="plate layered archway"/>
-	<item fromid="27251" toid="27253" name="plate layered wall"/>
-	<item fromid="27255" toid="27258" name="plate layered wall"/>
-	<item id="27248" name="plate layered wall"/>
-	<item id="27247" name="chocolatey dragon scale legs"/>
-	<item id="27249" name="tatty dragon scale legs"/>
-	<item id="27250" name="rusty winged helmet"/>
-	<item id="27254" name="rusty bunny shoes"/>
-	<item id="27259" name="sewing table"/>
-	<item id="27647" name="sewing table"/>
-	<item id="27260" name="old rag"/>
-	<item id="26412" name="flowery carpet"/>
-	<item id="26413" name="flowery carpet"/>
-	<item id="26414" name="colourful carpet"/>
-	<item id="26415" name="colourful carpet"/>
-	<item id="26422" name="striped carpet"/>
-	<item id="26423" name="striped carpet"/>
-	<item id="27075" name="fur carpet"/>
-	<item id="27083" name="fur carpet"/>
-	<item id="26424" name="diamond carpet"/>
-	<item id="26425" name="diamond carpet"/>
-	<item id="26426" name="patterned carpet"/>
-	<item id="26427" name="patterned carpet"/>
-	<item id="26420" name="night sky carpet"/>
-	<item id="26421" name="night sky carpet"/>
-	<item id="27079" name="star carpet"/>
-	<item id="27087" name="star carpet"/>
-	<item fromid="27261" toid="27262" name="parrot"/>
-	<item fromid="27263" toid="27265" name="lit skull lamp"/>
-	<item id="27266" name="sand"/>
-	<item id="27268" name="shell"/>
-	<item fromid="26388" toid="26391" name="colourful bunting(flags)"/>
-	<item id="26392" name="colourful bunting(emblems blue)"/>
-	<item id="26394" name="colourful bunting(emblems blue)"/>
-	<item id="26396" name="emblem tibia( blue)"/>
-	<item id="26398" name="emblem tibia( blue)"/>
-	<item id="26400" name="emblem (pole tibia blue)"/>
-	<item id="26402" name="emblem (pole tibia blue)"/>
-	<item id="26393" name="colourful bunting(emblems red)"/>
-	<item id="26395" name="colourful bunting(emblems red)"/>
-	<item id="26397" name="emblem tibia( red)"/>
-	<item id="26399" name="emblem tibia( red)"/>
-	<item id="26401" name="emblem (pole tibia red)"/>
-	<item id="26403" name="emblem (pole tibia red)"/>
-	<item fromid="26404" toid="26411" name="market stand"/>
-	<item fromid="27271" toid="27288" name="market stand"/>
-	<item fromid="27289" toid="27298" name="cains anniversary"/>
-	<item id="27299" name="x (green)"/>
-	<item fromid="27300" toid="27301" name="x (red)"/>
-	<item id="27302" name="candied fruit"/>
-	<item id="27303" name="apples"/>
-	<item id="27304" name="bunting"/>
-	<item fromid="27305" toid="27308" name="caind fruit"/>
-	<item id="27309" name="paper streamers"/>
-	<item fromid="27311" toid="27316" name="linen red(nostalgia)"/>
-	<item id="27319" name="baking tray(nostalgia)"/>
-	<item id="27320" name="small fir tree(nostalgia)"/>
-	<item id="27321" name="guee-the-name shield(nostalgia)"/>
-	<item fromid="27322" toid="27323" name="blackboard(nostalgia)"/>
-	<item id="27324" name="blood herb(nostalgia)"/>
-	<item id="27325" name="box(nostalgia)"/>
-	<item id="27326" name="tree(nostalgia)"/>
-	<item id="27327" name="brass legs(nostalgia)"/>
-	<item id="27328" name="brass shield(nostalgia)"/>
-	<item fromid="27329" toid="27332" name="brick wall(nostalgia)"/>
-	<item fromid="27333" toid="27334" name="window(nostalgia)"/>
-	<item id="27335" name="bush(nostalgia)"/>
-	<item id="27336" name="bush(nostalgia)"/>
-	<item id="27337" name="cactus(nostalgia)"/>
-	<item fromid="27338" toid="27341" name="chair(nostalgia)"/>
-	<item id="27342" name="coat(nostalgia)"/>
-	<item id="27343" name="copper shield(nostalgia)"/>
-	<item id="27344" name="crown armor(nostalgia)"/>
-	<item id="27345" name="crown helmet(nostalgia)"/>
-	<item id="27346" name="crown legs(nostalgia)"/>
-	<item id="27347" name="crown shield(nostalgia)"/>
-	<item id="27348" name="dark helmet(nostalgia)"/>
-	<item id="27349" name="dark shield(nostalgia)"/>
-	<item fromid="27350" toid="27352" name="dead tree(nostalgia)"/>
-	<item id="27353" name="swamp(nostalgia)"/>
-	<item fromid="27354" toid="27357" name="doors(nostalgia)"/>
-	<item id="27358" name="dragon shield(nostalgia)"/>
-	<item id="27359" name="wooden floor(nostalgia)"/>
-	<item id="27360" name="tree(nostalgia)"/>
-	<item fromid="27361" toid="27390" name="earth(nostalgia)"/>
-	<item id="27391" name="dwarven shield(nostalgia)"/>
-	<item id="27392" name="eggs(nostalgia)"/>
-	<item fromid="27393" toid="27402" name="fence(nostalgia)"/>
-	<item id="27403" name="tree(nostalgia)"/>
-	<item fromid="27404" toid="27410" name="flat roof(nostalgia)"/>
-	<item fromid="27411" toid="27416" name="framework (nostalgia)"/>
-	<item id="27417" name="plant(nostalgia)"/>
-	<item fromid="27418" toid="27431" name="grass(nostalgia)"/>
-	<item fromid="27435" toid="27447" name="grave stone(nostalgia)"/>
-	<item fromid="27432" toid="27290" name="sand(nostalgia)"/>
-	<item id="27448" name="flower(nostalgia)"/>
-	<item id="27449" name="leather armor(nostalgia)"/>
-	<item id="27450" name="leather helmet(nostalgia)"/>
-	<item id="27451" name="leather legs(nostalgia)"/>
-	<item id="27452" name="chest board (nostalgia)"/>
-	<item id="27453" name="chest board (nostalgia)"/>
-	<item id="27454" name="pillar (nostalgia)"/>
-	<item id="27455" name="mastermind shield (nostalgia)"/>
-	<item id="27456" name="melon(nostalgia)"/>
-	<item id="27457" name="unknown(nostalgia)"/>
-	<item id="27458" name="stone(nostalgia)"/>
-	<item id="27459" name="noble armor(nostalgia)"/>
-	<item id="27460" name="tree(nostalgia)"/>
-	<item id="27461" name="ornamented shield(nostalgia)"/>
-	<item id="27462" name="pan(nostalgia)"/>
-	<item id="27463" name="paper(nostalgia)"/>
-	<item id="27464" name="tree(nostalgia)"/>
-	<item id="27465" name="tree(nostalgia)"/>
-	<item id="27466" name="flask of life fluid(nostalgia)"/>
-	<item id="27467" name="flask of beer(nostalgia)"/>
-	<item id="27468" name="flask of mana fluid(nostalgia)"/>
-	<item id="27469" name="unknown(nostalgia)"/>
-	<item fromid="27478" toid="27481" name="sacrificial stone(nostalgia)"/>
-	<item fromid="27482" toid="27494" name="gravel(nostalgia)"/>
-	<item fromid="27495" toid="27507" name="sand(nostalgia)"/>
-	<item id="27508" name="scale armor(nostalgia)"/>
-	<item fromid="27510" toid="27519" name="linen green(nostalgia)"/>
-	<item fromid="27520" toid="27535" name="linen blue(nostalgia)"/>
-	<item fromid="27536" toid="27551" name="linen red(nostalgia)"/>
-	<item fromid="27552" toid="27553" name="linen white flags(nostalgia)"/>
-	<item id="27554" name="water(nostalgia)"/>
-	<item id="27555" name="stick(nostalgia)"/>
-	<item id="27556" name="tree(nostalgia)"/>
-	<item id="27557" name="studded armor(nostalgia)"/>
-	<item fromid="27558" toid="27568" name="plants(nostalgia)"/>
-	<item fromid="27569" toid="27586" name="roofs (nostalgia)"/>
-	<item id="27587" name="tower shield(nostalgia)"/>
-	<item id="27588" name="plant(nostalgia)"/>
-	<item fromid="27591" toid="27592" name="water wheat(nostalgia)"/>
-	<item fromid="27593" toid="27596" name="millstone(nostalgia)"/>
-	<item id="27597" name="waterskin(nostalgia)"/>
-	<item id="27598" name="grass(nostalgia)"/>
-	<item id="27599" name="jungle grass(nostalgia)"/>
-	<item id="27600" name="wheat(nostalgia)"/>
-	<item id="27601" name="tree(nostalgia)"/>
-	<item fromid="27602" toid="27607" name="wooden railing(nostalgia)"/>
-	<item fromid="27608" toid="27643" name="mountain(nostalgia)"/>
-	<item id="27644" name="grass(nostalgia)"/>
-	<item id="27645" name="flower(nostalgia)"/>
-	<item id="27646" name="flower(nostalgia)"/>
-	<item id="27659" name="studded shield(nostalgia)"/>
-	<item id="27660" name="studded legs(nostalgia)"/>
-	<item id="27661" name="empty flask(nostalgia)"/>
-	<item fromid="27648" toid="27649" name="ancient inscription"/>
-	<item fromid="26428" toid="26443" name="flower petals"/>
-	<item fromid="27650" toid="27653" name="treasure chest"/>
-	<item id="27664" name="dragon chest"/>
-	<item id="27666" name="dragon chest"/>
-	<item fromid="27668" toid="27675" name="dragon chest"/>
-	<item fromid="27677" toid="27691" name="water monument"/>
+	<item id="26447" name="birthday cake" />
+	<item id="26448" name="ferumbras hat candy" />
+	<item fromid="27243" toid="27246" name="plate layered archway" />
+	<item fromid="27251" toid="27253" name="plate layered wall" />
+	<item fromid="27255" toid="27258" name="plate layered wall" />
+	<item id="27248" name="plate layered wall" />
+	<item id="27247" name="chocolatey dragon scale legs" />
+	<item id="27249" name="tatty dragon scale legs" />
+	<item id="27250" name="rusty winged helmet" />
+	<item id="27254" name="rusty bunny shoes" />
+	<item id="27259" name="sewing table" />
+	<item id="27647" name="sewing table" />
+	<item id="27260" name="old rag" />
+	<item id="26412" name="flowery carpet" />
+	<item id="26413" name="flowery carpet" />
+	<item id="26414" name="colourful carpet" />
+	<item id="26415" name="colourful carpet" />
+	<item id="26422" name="striped carpet" />
+	<item id="26423" name="striped carpet" />
+	<item id="27075" name="fur carpet" />
+	<item id="27083" name="fur carpet" />
+	<item id="26424" name="diamond carpet" />
+	<item id="26425" name="diamond carpet" />
+	<item id="26426" name="patterned carpet" />
+	<item id="26427" name="patterned carpet" />
+	<item id="26420" name="night sky carpet" />
+	<item id="26421" name="night sky carpet" />
+	<item id="27079" name="star carpet" />
+	<item id="27087" name="star carpet" />
+	<item fromid="27261" toid="27262" name="parrot" />
+	<item fromid="27263" toid="27265" name="lit skull lamp" />
+	<item id="27266" name="sand" />
+	<item id="27268" name="shell" />
+	<item fromid="26388" toid="26391" name="colourful bunting(flags)" />
+	<item id="26392" name="colourful bunting(emblems blue)" />
+	<item id="26394" name="colourful bunting(emblems blue)" />
+	<item id="26396" name="emblem tibia( blue)" />
+	<item id="26398" name="emblem tibia( blue)" />
+	<item id="26400" name="emblem (pole tibia blue)" />
+	<item id="26402" name="emblem (pole tibia blue)" />
+	<item id="26393" name="colourful bunting(emblems red)" />
+	<item id="26395" name="colourful bunting(emblems red)" />
+	<item id="26397" name="emblem tibia( red)" />
+	<item id="26399" name="emblem tibia( red)" />
+	<item id="26401" name="emblem (pole tibia red)" />
+	<item id="26403" name="emblem (pole tibia red)" />
+	<item fromid="26404" toid="26411" name="market stand" />
+	<item fromid="27271" toid="27288" name="market stand" />
+	<item fromid="27289" toid="27298" name="cains anniversary" />
+	<item id="27299" name="x (green)" />
+	<item fromid="27300" toid="27301" name="x (red)" />
+	<item id="27302" name="candied fruit" />
+	<item id="27303" name="apples" />
+	<item id="27304" name="bunting" />
+	<item fromid="27305" toid="27308" name="caind fruit" />
+	<item id="27309" name="paper streamers" />
+	<item fromid="27311" toid="27316" name="linen red(nostalgia)" />
+	<item id="27319" name="baking tray(nostalgia)" />
+	<item id="27320" name="small fir tree(nostalgia)" />
+	<item id="27321" name="guee-the-name shield(nostalgia)" />
+	<item fromid="27322" toid="27323" name="blackboard(nostalgia)" />
+	<item id="27324" name="blood herb(nostalgia)" />
+	<item id="27325" name="box(nostalgia)" />
+	<item id="27326" name="tree(nostalgia)" />
+	<item id="27327" name="brass legs(nostalgia)" />
+	<item id="27328" name="brass shield(nostalgia)" />
+	<item fromid="27329" toid="27332" name="brick wall(nostalgia)" />
+	<item fromid="27333" toid="27334" name="window(nostalgia)" />
+	<item id="27335" name="bush(nostalgia)" />
+	<item id="27336" name="bush(nostalgia)" />
+	<item id="27337" name="cactus(nostalgia)" />
+	<item fromid="27338" toid="27341" name="chair(nostalgia)" />
+	<item id="27342" name="coat(nostalgia)" />
+	<item id="27343" name="copper shield(nostalgia)" />
+	<item id="27344" name="crown armor(nostalgia)" />
+	<item id="27345" name="crown helmet(nostalgia)" />
+	<item id="27346" name="crown legs(nostalgia)" />
+	<item id="27347" name="crown shield(nostalgia)" />
+	<item id="27348" name="dark helmet(nostalgia)" />
+	<item id="27349" name="dark shield(nostalgia)" />
+	<item fromid="27350" toid="27352" name="dead tree(nostalgia)" />
+	<item id="27353" name="swamp(nostalgia)" />
+	<item fromid="27354" toid="27357" name="doors(nostalgia)" />
+	<item id="27358" name="dragon shield(nostalgia)" />
+	<item id="27359" name="wooden floor(nostalgia)" />
+	<item id="27360" name="tree(nostalgia)" />
+	<item fromid="27361" toid="27390" name="earth(nostalgia)" />
+	<item id="27391" name="dwarven shield(nostalgia)" />
+	<item id="27392" name="eggs(nostalgia)" />
+	<item fromid="27393" toid="27402" name="fence(nostalgia)" />
+	<item id="27403" name="tree(nostalgia)" />
+	<item fromid="27404" toid="27410" name="flat roof(nostalgia)" />
+	<item fromid="27411" toid="27416" name="framework (nostalgia)" />
+	<item id="27417" name="plant(nostalgia)" />
+	<item fromid="27418" toid="27431" name="grass(nostalgia)" />
+	<item fromid="27435" toid="27447" name="grave stone(nostalgia)" />
+	<item fromid="27432" toid="27290" name="sand(nostalgia)" />
+	<item id="27448" name="flower(nostalgia)" />
+	<item id="27449" name="leather armor(nostalgia)" />
+	<item id="27450" name="leather helmet(nostalgia)" />
+	<item id="27451" name="leather legs(nostalgia)" />
+	<item id="27452" name="chest board (nostalgia)" />
+	<item id="27453" name="chest board (nostalgia)" />
+	<item id="27454" name="pillar (nostalgia)" />
+	<item id="27455" name="mastermind shield (nostalgia)" />
+	<item id="27456" name="melon(nostalgia)" />
+	<item id="27457" name="unknown(nostalgia)" />
+	<item id="27458" name="stone(nostalgia)" />
+	<item id="27459" name="noble armor(nostalgia)" />
+	<item id="27460" name="tree(nostalgia)" />
+	<item id="27461" name="ornamented shield(nostalgia)" />
+	<item id="27462" name="pan(nostalgia)" />
+	<item id="27463" name="paper(nostalgia)" />
+	<item id="27464" name="tree(nostalgia)" />
+	<item id="27465" name="tree(nostalgia)" />
+	<item id="27466" name="flask of life fluid(nostalgia)" />
+	<item id="27467" name="flask of beer(nostalgia)" />
+	<item id="27468" name="flask of mana fluid(nostalgia)" />
+	<item id="27469" name="unknown(nostalgia)" />
+	<item fromid="27478" toid="27481" name="sacrificial stone(nostalgia)" />
+	<item fromid="27482" toid="27494" name="gravel(nostalgia)" />
+	<item fromid="27495" toid="27507" name="sand(nostalgia)" />
+	<item id="27508" name="scale armor(nostalgia)" />
+	<item fromid="27510" toid="27519" name="linen green(nostalgia)" />
+	<item fromid="27520" toid="27535" name="linen blue(nostalgia)" />
+	<item fromid="27536" toid="27551" name="linen red(nostalgia)" />
+	<item fromid="27552" toid="27553" name="linen white flags(nostalgia)" />
+	<item id="27554" name="water(nostalgia)" />
+	<item id="27555" name="stick(nostalgia)" />
+	<item id="27556" name="tree(nostalgia)" />
+	<item id="27557" name="studded armor(nostalgia)" />
+	<item fromid="27558" toid="27568" name="plants(nostalgia)" />
+	<item fromid="27569" toid="27586" name="roofs (nostalgia)" />
+	<item id="27587" name="tower shield(nostalgia)" />
+	<item id="27588" name="plant(nostalgia)" />
+	<item fromid="27591" toid="27592" name="water wheat(nostalgia)" />
+	<item fromid="27593" toid="27596" name="millstone(nostalgia)" />
+	<item id="27597" name="waterskin(nostalgia)" />
+	<item id="27598" name="grass(nostalgia)" />
+	<item id="27599" name="jungle grass(nostalgia)" />
+	<item id="27600" name="wheat(nostalgia)" />
+	<item id="27601" name="tree(nostalgia)" />
+	<item fromid="27602" toid="27607" name="wooden railing(nostalgia)" />
+	<item fromid="27608" toid="27643" name="mountain(nostalgia)" />
+	<item id="27644" name="grass(nostalgia)" />
+	<item id="27645" name="flower(nostalgia)" />
+	<item id="27646" name="flower(nostalgia)" />
+	<item id="27659" name="studded shield(nostalgia)" />
+	<item id="27660" name="studded legs(nostalgia)" />
+	<item id="27661" name="empty flask(nostalgia)" />
+	<item fromid="27648" toid="27649" name="ancient inscription" />
+	<item fromid="26428" toid="26443" name="flower petals" />
+	<item fromid="27650" toid="27653" name="treasure chest" />
+	<item id="27664" name="dragon chest" />
+	<item id="27666" name="dragon chest" />
+	<item fromid="27668" toid="27675" name="dragon chest" />
+	<item fromid="27677" toid="27691" name="water monument" />
 	<!--Mysterious_Ornate_Chest_Quest-->
-	<item fromid="27692" toid="27700" name="optical floor"/>
-	<item fromid="27702" toid="27712" name="Optic nerve"/>
-	<item fromid="27713" toid="27714" name="opticorder analyser"/>
+	<item fromid="27692" toid="27700" name="optical floor" />
+	<item fromid="27702" toid="27712" name="Optic nerve" />
+	<item fromid="27713" toid="27714" name="opticorder analyser" />
 	<!--fim-->
 	<item id="27164" article="a dead" name="Lloyd">
 		<attribute key="containerSize" value="15" />
@@ -36742,65 +36742,65 @@
 		<attribute key="duration" value="500" />
 		<attribute key="corpseType" value="blood" />
 	</item>
-	<item id="27718" name="lightsphere"/>
-	<item id="27719" name="lit lightsphere"/>
-	<item id="27720" name="maystic flame"/>
-	<item id="27721" name="large glowing emerald"/>
-	<item id="27722" name="large glowing ruby"/>
-	<item id="27723" name="large glowing blue"/>
-	<item id="27724" name="large glowing amethyst"/>
-	<item id="26449" name="dragon blood"/>
-	<item id="27726" name="dragon tongue"/>
-	<item id="26450" name="Scale of Gelidrazah"/>
-	<item id="26451" name="Tooth of Tazhadur"/>
-	<item id="26452" name="Horn of Kalyassa"/>
-	<item id="26453" name="Bones of Zorvorax"/>
-	<item fromid="27727" toid="27731" name="maps(11.2)"/>
-	<item id="26454" name="Bottle of Tibian Wine"/>
-	<item id="27732" name="Costume Bag (Retro)"/>
-	<item id="27733" name="Framed Birthday Card"/>
-	<item id="27734" name="Gilded Birthday Cup"/>
-	<item id="27735" name="unknown item"/><!--CHAO DE ALGUMA COISA-->
-	<item id="27737" name="part of a rune(one)"/>
-	<item id="27738" name="part of a rune(two)"/>
-	<item id="27739" name="part of a rune(three)"/>
-	<item id="27740" name="part of a rune(four)"/>
-	<item id="27741" name="part of a rune(five)"/>
-	<item id="27742" name="part of a rune(six)"/>
-	<item id="27743" name="astral shaper rune"/>
-	<item id="27744" name="tiger eye"/>
-	<item id="27745" name="prismatic quartz"/>
-	<item id="27746" name="unknown item"/><!--brilha brilha-->
-	<item id="27747" name="Imbuing Crystal"/>
-	<item id="27748" name="thorn seed"/>
-	<item id="26455" name="forbidden fruit"/>
-	<item id="27749" name="dragon crown"/>
-	<item id="27750" name="golden talon"/>
-	<item id="27751" name="ancient watch"/>
-	<item id="27752" name="frozen time"/>
-	<item id="27753" name="forbidden tome"/>
-	<item id="27754" name="key to knowledge"/>
-	<item id="27755" name="shadow mask"/>
-	<item id="27756" name="shadow paint"/>
-	<item id="27757" name="astral source"/>
-	<item id="27758" name="astral glyph"/>
-	<item id="27759" name="glowing carrot"/>
-	<item id="27760" name="coal eyes"/>
-	<item fromid="26458" toid="26459" name="holy portal"/>
-	<item fromid="26460" toid="26461" name="ice portal"/>
-	<item fromid="26462" toid="26463" name="death portal"/>
-	<item fromid="26464" toid="26465" name="energy portal"/>
-	<item fromid="26466" toid="26467" name="earth portal"/>
-	<item fromid="26468" toid="26469" name="fire portal"/>
-	<item fromid="26470" toid="26577" name="unknown item"/> <!--CONSTRUÇÃO NOVAS-->
-	<item id="27788" name="inert astral shaper rune"/>
-	<item fromid="27789" toid="27788" name="imbuing shrine"/>
-	<item id="26456" name="porcelain mask"/>
-	<item id="26457" name="colourful feathers"/>
-	<item fromid="27814" toid="27824" name="the time machine"/>
-	<item fromid="27825" toid="27828" name="abandoned imbuing shrine"/>
-	<item fromid="27844" toid="27845" name="imbuing shrine"/>
-	<item fromid="27847" toid="27848" name="gilded imbuing shrine"/>
+	<item id="27718" name="lightsphere" />
+	<item id="27719" name="lit lightsphere" />
+	<item id="27720" name="maystic flame" />
+	<item id="27721" name="large glowing emerald" />
+	<item id="27722" name="large glowing ruby" />
+	<item id="27723" name="large glowing blue" />
+	<item id="27724" name="large glowing amethyst" />
+	<item id="26449" name="dragon blood" />
+	<item id="27726" name="dragon tongue" />
+	<item id="26450" name="Scale of Gelidrazah" />
+	<item id="26451" name="Tooth of Tazhadur" />
+	<item id="26452" name="Horn of Kalyassa" />
+	<item id="26453" name="Bones of Zorvorax" />
+	<item fromid="27727" toid="27731" name="maps(11.2)" />
+	<item id="26454" name="Bottle of Tibian Wine" />
+	<item id="27732" name="Costume Bag (Retro)" />
+	<item id="27733" name="Framed Birthday Card" />
+	<item id="27734" name="Gilded Birthday Cup" />
+	<item id="27735" name="unknown item" /> <!--CHAO DE ALGUMA COISA-->
+	<item id="27737" name="part of a rune(one)" />
+	<item id="27738" name="part of a rune(two)" />
+	<item id="27739" name="part of a rune(three)" />
+	<item id="27740" name="part of a rune(four)" />
+	<item id="27741" name="part of a rune(five)" />
+	<item id="27742" name="part of a rune(six)" />
+	<item id="27743" name="astral shaper rune" />
+	<item id="27744" name="tiger eye" />
+	<item id="27745" name="prismatic quartz" />
+	<item id="27746" name="unknown item" /> <!--brilha brilha-->
+	<item id="27747" name="Imbuing Crystal" />
+	<item id="27748" name="thorn seed" />
+	<item id="26455" name="forbidden fruit" />
+	<item id="27749" name="dragon crown" />
+	<item id="27750" name="golden talon" />
+	<item id="27751" name="ancient watch" />
+	<item id="27752" name="frozen time" />
+	<item id="27753" name="forbidden tome" />
+	<item id="27754" name="key to knowledge" />
+	<item id="27755" name="shadow mask" />
+	<item id="27756" name="shadow paint" />
+	<item id="27757" name="astral source" />
+	<item id="27758" name="astral glyph" />
+	<item id="27759" name="glowing carrot" />
+	<item id="27760" name="coal eyes" />
+	<item fromid="26458" toid="26459" name="holy portal" />
+	<item fromid="26460" toid="26461" name="ice portal" />
+	<item fromid="26462" toid="26463" name="death portal" />
+	<item fromid="26464" toid="26465" name="energy portal" />
+	<item fromid="26466" toid="26467" name="earth portal" />
+	<item fromid="26468" toid="26469" name="fire portal" />
+	<item fromid="26470" toid="26577" name="unknown item" /> <!--CONSTRUÇÃO NOVAS-->
+	<item id="27788" name="inert astral shaper rune" />
+	<item fromid="27789" toid="27788" name="imbuing shrine" />
+	<item id="26456" name="porcelain mask" />
+	<item id="26457" name="colourful feathers" />
+	<item fromid="27814" toid="27824" name="the time machine" />
+	<item fromid="27825" toid="27828" name="abandoned imbuing shrine" />
+	<item fromid="27844" toid="27845" name="imbuing shrine" />
+	<item fromid="27847" toid="27848" name="gilded imbuing shrine" />
 	<item id="26384" article="a" name="dead piñata dragon">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="26385" />
@@ -36836,57 +36836,57 @@
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item fromid="27870" toid="27874" article="a" name="tapestry of honour"/>
+	<item fromid="27870" toid="27874" article="a" name="tapestry of honour" />
 	<!--Store-->
-	<item fromid="27875" toid="27877" article="a" name="vengothic lamp"/>
-	<item id="27898" article="a" name="vengothic lamp"/>
-	<item fromid="27878" toid="27880" article="a" name="chamaleon"/>
-	<item id="27881" article="a" name="blooming cactus"/>
-	<item id="27882" article="a" name="bitter-smack leaf"/>
-	<item id="27883" article="a" name="pink roses"/>
-	<item id="27884" article="a" name="red roses"/>
-	<item id="27885" article="a" name="yellow roses"/>
-	<item id="27886" article="a" name="vengothic chair" >
+	<item fromid="27875" toid="27877" article="a" name="vengothic lamp" />
+	<item id="27898" article="a" name="vengothic lamp" />
+	<item fromid="27878" toid="27880" article="a" name="chamaleon" />
+	<item id="27881" article="a" name="blooming cactus" />
+	<item id="27882" article="a" name="bitter-smack leaf" />
+	<item id="27883" article="a" name="pink roses" />
+	<item id="27884" article="a" name="red roses" />
+	<item id="27885" article="a" name="yellow roses" />
+	<item id="27886" article="a" name="vengothic chair">
 		<attribute key="rotateTo" value="27887" />
 	</item>
-	<item id="27887" article="a" name="vengothic chair" >
+	<item id="27887" article="a" name="vengothic chair">
 		<attribute key="rotateTo" value="27888" />
 	</item>
-	<item id="27888" article="a" name="vengothic chair" >
+	<item id="27888" article="a" name="vengothic chair">
 		<attribute key="rotateTo" value="27889" />
 	</item>
-	<item id="27889" article="a" name="vengothic chair" >
+	<item id="27889" article="a" name="vengothic chair">
 		<attribute key="rotateTo" value="27886" />
 	</item>
-	<item id="27890" article="a" name="vengothic table" >
+	<item id="27890" article="a" name="vengothic table">
 		<attribute key="rotateTo" value="27891" />
 	</item>
-	<item id="27891" article="a" name="vengothic table" >
+	<item id="27891" article="a" name="vengothic table">
 		<attribute key="rotateTo" value="27890" />
 	</item>
-	<item id="27892" article="a" name="vengothic cabinet" >
+	<item id="27892" article="a" name="vengothic cabinet">
 		<attribute key="rotateTo" value="27893" />
 	</item>
-	<item id="27893" article="a" name="vengothic cabinet" >
+	<item id="27893" article="a" name="vengothic cabinet">
 		<attribute key="rotateTo" value="27892" />
 	</item>
-	<item id="27894" article="a" name="vengothic chest" >
+	<item id="27894" article="a" name="vengothic chest">
 		<attribute key="rotateTo" value="27895" />
 	</item>
-	<item id="27895" article="a" name="vengothic chest" >
+	<item id="27895" article="a" name="vengothic chest">
 		<attribute key="rotateTo" value="27896" />
 	</item>
-	<item id="27896" article="a" name="vengothic chest" >
+	<item id="27896" article="a" name="vengothic chest">
 		<attribute key="rotateTo" value="27897" />
 	</item>
-	<item id="27897" article="a" name="vengothic chest" >
+	<item id="27897" article="a" name="vengothic chest">
 		<attribute key="rotateTo" value="27894" />
 	</item>
 	<!--fim-->
-	<item id="28025" article="a" name="heart of the mountain"/><!--quest?loot?-->
-	<item id="28026" article="a" name="blood of the mountain"/><!--quest?loot?-->
-	<item fromid="28297" toid="28299" article="a" name="loremaster doll"/>
-	<item id="28355" article="a" name="jarrododemonio"/>
+	<item id="28025" article="a" name="heart of the mountain" /> <!--quest?loot?-->
+	<item id="28026" article="a" name="blood of the mountain" /> <!--quest?loot?-->
+	<item fromid="28297" toid="28299" article="a" name="loremaster doll" />
+	<item id="28355" article="a" name="jarrododemonio" />
 	<item id="23798" article="a" name="simple bow" />
 	<item id="23799" article="a" name="simple arrow" />
 	<item id="23800" article="a" name="wooden shield" />
