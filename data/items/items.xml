@@ -36533,19 +36533,65 @@
 	<item fromid="26995" toid="27000" name="waterway" />
 	<item fromid="27001" toid="27012" name="moss" />
 	<item id="27013" name="waterway" />
-	<item fromid="27014" toid="27037" name="moss" />
-	<item fromid="27039" toid="27042" name="moss" />
-	<item fromid="26890" toid="26891" name="broken crystal plant" />
-	<item fromid="27044" toid="27045" name="symbol of fardos">
-		<attribute key="description" value="It represents Fardos the Creator, one of the Tibian gods." />
+	<item id="27036" article="a" name="bone toothpick">
+		<attribute key="weight" value="20" />
 	</item>
-	<item fromid="27046" toid="27047" name="unknown item" />
-	<item fromid="27048" toid="27049" name="unknown item" />
-	<item fromid="27050" toid="27051" name="sign of Uman and Zathroth">
-		<attribute key="description" value="It represents the unity of Uman the Wise and Zathroth the Destroyer, two of the Tibian gods." />
+	<item id="27037" article="a" name="beetle carapace">
+		<attribute key="weight" value="20" />
 	</item>
-	<item fromid="27052" toid="27053" name="symbol of Tibia">
-		<attribute key="description" value="It represents Tibia the Earth, one of the Tibian elemental gods." />
+	<item id="27038" article="a" name="bug meat">
+		<attribute key="weight" value="20" />
+	</item>	
+	<item id="27039" article="a" name="cave turnip">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27040" article="a" name="ancient belt buckle">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27041" article="a" name="cracked alabaster vase">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27042" article="a" name="rhino horn carving">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27043" article="a" name="tarnished rhino figurine">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27044" article="a" name="rhino hide">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27045" article="a" name="rhino horn">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27046" article="a" name="ancient coin">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27047" article="a" name="coral brooch">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27048" article="a" name="gemmed figurine">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27049" article="a" name="pillow backpack" >
+	<attribute key="weight" value="1800" />
+		<attribute key="containerSize" value="24" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="27050" article="a" name="orclops santa">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27051" article="a" name="birthday backpack" >
+	<attribute key="weight" value="1500" />
+	<attribute key="description" value="It was awarded during the festivities of Tibia's 20th anniversary." />
+		<attribute key="containerSize" value="20" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="27052" article="a" name="birthday cake">
+		<attribute key="weight" value="20" />
+	</item>
+	<item id="27053" article="a" name="ferumbras candy hat">
+		<attribute key="description" value="It is a sweet candy replica of the famous Ferumbras' hat." />
+		<attribute key="weight" value="20" />
 	</item>
 	<item fromid="27054" toid="27055" name="symbol of Sula">
 		<attribute key="description" value="Sula the Water, one of the Tibian elemental gods." />
@@ -36577,35 +36623,6 @@
 	</item>
 	<item fromid="26971" toid="26972" name="waterway"/>
 	<item fromid="27137" toid="27160" name="stone floor" />
-	<item id="27208" name="unknown item" />
-	<item id="27209" name="unknown item" />
-	<item id="27231" name="bone toothpick" />
-	<item id="27232" name="beetle carapace" />
-	<item id="27233" name="bug meat" />
-	<item id="27234" name="cave turnip" />
-	<item id="27235" name="ancient belt buckle" />
-	<item id="27236" name="cracked alabaster vase" />
-	<item id="27237" name="rhino horn carving" />
-	<item id="27238" name="tarnished rhino figurine" />
-	<item id="27239" name="rhino hide" />
-	<item id="27240" name="rhino horn" />
-	<item id="27241" name="ancient coin" />
-	<item id="27242" name="coral brooch" />
-	<item id="27243" name="gemmed figurine" />
-	<item id="26445" article="a" name="pillow backpack">
-		<attribute key="weight" value="1800" />
-		<attribute key="containerSize" value="18" />
-		<attribute key="slotType" value="backpack" />
-	</item>
-	<item id="26446" name="orclops santa" />
-	<item id="26383" article="a" name="Birthday Backpack">
-		<attribute key="weight" value="1500" />
-		<attribute key="description" value="It was awarded during the festivities of Tibia's 20th anniversary." />
-		<attribute key="containerSize" value="18" />
-		<attribute key="slotType" value="backpack" />
-	</item>
-	<item id="26447" name="birthday cake" />
-	<item id="26448" name="ferumbras hat candy" />
 	<item fromid="27243" toid="27246" name="plate layered archway" />
 	<item fromid="27251" toid="27253" name="plate layered wall" />
 	<item fromid="27255" toid="27258" name="plate layered wall" />
@@ -36785,14 +36802,11 @@
 	<item id="27721" name="large glowing emerald" />
 	<item id="27722" name="large glowing ruby" />
 	<item id="27723" name="large glowing blue" />
-	<item id="27724" name="large glowing amethyst" />
 	<item id="26449" name="dragon blood" />
-	<item id="27726" name="dragon tongue" />
 	<item id="26450" name="Scale of Gelidrazah" />
 	<item id="26451" name="Tooth of Tazhadur" />
 	<item id="26452" name="Horn of Kalyassa" />
 	<item id="26453" name="Bones of Zorvorax" />
-	<item fromid="27727" toid="27731" name="maps(11.2)" />
 	<item id="26454" name="Bottle of Tibian Wine" />
 	<item id="27732" name="Costume Bag (Retro)" />
 	<item id="27733" name="Framed Birthday Card" />
@@ -36873,6 +36887,57 @@
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
+	
+	<item id="27724" article="a" name="dead shaper">
+		<attribute key="weight" value="60000" />
+		<attribute key="containerSize" value="24" />
+		<attribute key="decayTo" value="27725" />
+		<attribute key="duration" value="600" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27725" article="a" name="dead shaper">
+		<attribute key="weight" value="60000" />
+		<attribute key="containerSize" value="24" />
+		<attribute key="decayTo" value="27726" />
+		<attribute key="duration" value="300" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27726" article="a" name="dead shaper">
+		<attribute key="weight" value="60000" />
+		<attribute key="containerSize" value="24" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="150" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	
+	<item id="27727" article="a" name="dead shaper matriarch">
+		<attribute key="weight" value="60000" />
+		<attribute key="containerSize" value="24" />
+		<attribute key="decayTo" value="27728" />
+		<attribute key="duration" value="600" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27728" article="a" name="dead shaper matriarch">
+		<attribute key="weight" value="60000" />
+		<attribute key="containerSize" value="24" />
+		<attribute key="decayTo" value="27729" />
+		<attribute key="duration" value="300" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="27729" article="a" name="dead shaper matriarch">
+		<attribute key="weight" value="60000" />
+		<attribute key="containerSize" value="24" />
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="150" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	
 	<item fromid="27870" toid="27874" article="a" name="tapestry of honour" />
 	<!--Store-->
 	<item fromid="27875" toid="27877" article="a" name="vengothic lamp" />
