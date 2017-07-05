@@ -147,8 +147,6 @@
 	<action itemid="13030" script="other/change_sex.lua"/>
     <action itemid="12544" script="other/stamina_refuel.lua"/>
 	<action itemid="11144" script="other/frag_remover.lua"/>    
-	<action itemid="24763" script="addons/modalMD1.lua"/> 
-	<action itemid="26194" script="addons/VibrantEgg.lua"/> 
 	
 	<action actionid="14247" script="quests/rahemos.lua" />
 	
@@ -307,6 +305,8 @@
 	<action itemid="22608" script="other/taming.lua" />
 	<action itemid="23810" script="other/taming.lua" />
 	<action itemid="23557" script="other/taming.lua" />
+	<action itemid="24763" script="addons/modalMD1.lua"/> 
+	<action itemid="26194" script="addons/VibrantEgg.lua"/> 
 
 	<!-- insectoid cell -->
 	<action actionid="61611" script="insectoid cell/insectoidcell.lua" /> 
