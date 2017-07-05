@@ -64,32 +64,38 @@
         <item id="5954" countmax="1" chance="100000"/><!-- demon horn -->
         <item id="6500" countmax="4" chance="812500"/><!-- demonic essence -->
         <item id="22397" countmax="2" chance="81250"/><!-- dream matter -->
-        <item id="22610" chance="3250" unique="1"/><!-- dream warden mask -->
+        <item id="22610" chance="2500" unique="1"/><!-- dream warden mask -->
         <item id="7632" countmax="1" chance="43750"/><!-- giant shimmering pearl -->
         <item id="7633" countmax="1" chance="43750"/><!-- giant shimmering pearl -->
         <item id="2148" countmax="100" chance="18750"/><!-- gold coin -->
-        <item id="9058" countmax="2" chance="18750"/><!-- gold ingot -->
-        <item id="3028" countmax="12" chance="18750"/><!-- small diamond -->
-        <item id="9057" countmax="16" chance="18750"/><!-- small topaz -->
-        <item id="3030" countmax="8" chance="18750"/><!-- small ruby -->
-        <item id="3029" countmax="12" chance="18750"/><!-- small saphire -->
-        <item id="3033" countmax="10" chance="18750"/><!-- small amethyst -->
-        <item id="813" chance="8750"/><!-- terra boots -->
-        <item id="3419" chance="14750"/><!-- crown shield -->
-        <item id="8063" chance="14750" /><!-- paladin armor -->
+        <item id="9971" countmax="2" chance="18750"/><!-- gold ingot -->
+        <item id="2145" countmax="12" chance="18750"/><!-- small diamond -->
+		<item id="2149" countmax="12" chance="18750"/><!-- small emerald -->
+        <item id="9970" countmax="16" chance="18750"/><!-- small topaz -->
+        <item id="2147" countmax="8" chance="18750"/><!-- small ruby -->
+        <item id="2146" countmax="12" chance="18750"/><!-- small saphire -->
+        <item id="2150" countmax="10" chance="18750"/><!-- small amethyst -->
+        <item id="7886" chance="8750"/><!-- terra boots -->
+        <item id="2519" chance="14750"/><!-- crown shield -->
+        <item id="8891" chance="14750" /><!-- paladin armor -->
+		<item id="2515" chance="14750" /><!-- guardian shield -->
+		<item id="8877" chance="3500"/><!-- lavos armor -->
         <item id="8051" chance="4500"/><!-- voltage armor -->
+		<item id="2498" chance="4500"/><!-- royal helmet -->
         <item id="7590" countmax="8" chance="6250"/><!-- great mana potion -->
         <item id="8472" countmax="8" chance="56250"/><!-- great spirit potion -->
         <item id="18421" countmax="3" chance="37500"/><!-- green crystal fragment -->
         <item id="18415" countmax="5" chance="18750"/><!-- green crystal shard -->
-        <item id="3041" chance="18750"/><!-- blue gem -->
-        <item id="3038" chance="18750"/><!-- green gem -->
+        <item id="2158" chance="18750"/><!-- blue gem -->
+        <item id="2155" chance="18750"/><!-- green gem -->
         <item id="2152" countmax="20" chance="93750"/><!-- platinum coin -->
         <item id="5741" chance="6250"/><!-- skull helmet -->
         <item id="2645" chance="6250"/><!-- steel boots -->
-        <item id="3366" chance="6250"/><!-- magic plate armor -->
-        <item id="3079" chance="6250"/><!-- boots of haste-->
-        <item id="3420" chance="6250"/><!-- demon shield-->
+        <item id="2472" chance="6250"/><!-- magic plate armor -->
+        <item id="2195" chance="6250"/><!-- boots of haste-->
+        <item id="2520" chance="6250"/><!-- demon shield-->	
+		<item id="2514" chance="950"/><!-- demon shield-->	
+		<item id="2514" chance="80"/><!-- earthborn titan armor-->	
         <item id="8473" countmax="8" chance="31250"/><!-- ultimate health potion -->
         <item id="22598" countmax="3" chance="81250"/><!-- unrealized dream -->
         <item id="18414" countmax="5" chance="18750"/><!-- violet crystal shard -->
