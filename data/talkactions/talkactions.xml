@@ -60,6 +60,10 @@
 		<talkaction words="!serverinfo" script="serverinfo.lua" />
 
 	<!-- War AntiEntrosa -->
-		<talkaction log="yes" words="!citywar;/citywar" event="script" value="citywar.lua"/>
+        <!-- War Area System -->
+	<talkaction words="/citywar" script="wardarashia.lua"/>
+	<talkaction words="/citywar" script="waredron.lua"/>
+	<talkaction words="/citywar" script="warlb.lua"/>
+	<talkaction words="/citywar" script="waryalahar.lua"/>
 		
 </talkactions>
