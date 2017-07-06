@@ -16,17 +16,11 @@
 
  	<movevent event="StepIn" actionid="25019" script="treinon.lua" /> 
  	<movevent event="StepOut" actionid="25019" script="treinon.lua" /> 
- 	<movevent event="StepIn" pos="32076;32252;6" script="rookhouse.lua" /> 
- 	<movevent event="StepIn" pos="32075;32252;6" script="rookhouse.lua" />  
- 	<movevent event="StepIn" pos="32074;32252;6" script="rookhouse.lua" /> 
- 	<movevent event="StepIn" pos="32073;32252;6" script="rookhouse.lua" />
   
-    <movevent event="StepIn" pos="32518;32465;7" script="tiledice1.lua" />
-    <movevent event="StepIn" pos="32526;32465;7" script="tiledice1.lua" />	 	
-	<movevent event="AddItem" pos="32516;32465;7" script="trash_prevent3.lua"/>
-	<movevent event="AddItem" pos="32524;32465;7" script="trash_prevent3.lua"/>	 
-    <movevent event="AddItem" pos="32524;32464;7" script="trash_prevent3.lua"/>	 
-	<movevent event="AddItem" pos="32516;32464;7" script="trash_prevent3.lua"/> 
+	<movevent event="AddItem" pos="32516;32465;7" script="trash_prevent.lua"/>
+	<movevent event="AddItem" pos="32524;32465;7" script="trash_prevent.lua"/>	 
+    <movevent event="AddItem" pos="32524;32464;7" script="trash_prevent.lua"/>	 
+	<movevent event="AddItem" pos="32516;32464;7" script="trash_prevent.lua"/> 
 
 	<movevent event="StepIn" actionid="25001" script="events/lmsjoin.lua"/>
     <movevent event="StepIn" actionid="25002" script="events/lmsleave.lua"/>
@@ -46,7 +40,6 @@
 	<movevent event="StepIn" fromaid="13429" toaid="13442" script="others/movimentos2.lua"/>
 	
 	<movevent event="StepIn" fromaid="13510" toaid="13529" script="others/movimento1094.lua"/>
-	<!--<movevent event="StepIn" actionid="13520" script="others/movimento1094kill.lua"/> -->
 	
 	
 	<!-- BOSS WARZONE -->

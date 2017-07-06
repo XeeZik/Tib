@@ -510,18 +510,14 @@ local function useStaminaPrey(player, name)
 	end
 end
 
--- exp card
-local BONUS_EXP_STORAGE = 61398
-local BONUS_EXP_MULT = 1.3
-
 local configexp =  {
 	["Monday"] = 1.0,
 	["Tuesday"] = 1.0,
 	["Wednesday"] = 1.0,
 	["Thursday"] = 1.0,
 	["Friday"] = 1.0,
-	["Saturday"] = 2.0,
-	["Sunday"] = 2.0
+	["Saturday"] = 1.0,
+	["Sunday"] = 1.0
 }
 
 function Player:onGainExperience(source, exp, rawExp)
@@ -566,11 +562,6 @@ function Player:onGainExperience(source, exp, rawExp)
 
 	-- Prey Stamina Modifier
 	useStaminaPrey(self, source:getName())
-
-	-- Exp Card
-	if self:getStorageValue(BONUS_EXP_STORAGE) - os.time() > 0 then
-		exp = exp * BONUS_EXP_MULT
-	end
 
 	return exp
 end
