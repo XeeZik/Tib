@@ -1,3 +1,5 @@
+dofile('data/talkactions/lib/instance.lua')
+dofile('data/talkactions/lib/war.lua')
 local logFormat = "[%s] %s %s"
 
 function logCommand(player, words, param)

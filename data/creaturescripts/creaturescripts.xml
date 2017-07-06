@@ -11,10 +11,8 @@
 	<event type="logout" name="BFLogout" script="events/battlefield.lua" />
 	<event type="preparedeath" name="CTFDeath" script="events/ctf.lua" />
 	<event type="healthchange" name="CTFHealthChange" script="events/ctf.lua" />
-	<event type="logout" name="CityWarLogout" script="events/citywar.lua" />
-    	<event type="preparedeath" name="CityWarDeath" script="events/citywar.lua" />
-    	<event type="textedit" name="CityWarInvite" script="events/citywar.lua" />
-    	<event type="preparedeath" name="ZumbiDeath" script="events/ZE_creaturescript.lua"/> 
+	<event type="PrepareDeath" name="citywar" event="script" value="events/citywar.lua"/>
+   	<event type="preparedeath" name="ZumbiDeath" script="events/ZE_creaturescript.lua"/> 
 	<!-- END Events -->
 
  	<event type="death" name="DeathCounter" script="kdcounter.lua" />

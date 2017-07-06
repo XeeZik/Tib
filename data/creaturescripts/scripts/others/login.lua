@@ -139,6 +139,17 @@ function onLogin(player)
 			player:setVocation(vocation:getDemotion())
 		end
 	]]
+	-- Citywar
+		if getPlayerWarType(cid) > 0 then
+		local town = getPlayerTown(cid)
+		local pos = getTownTemplePosition(town)		
+				
+		doTeleportThing(cid, pos)
+		setPlayerWarType(cid, 0)
+	end
+	
+	registerCreatureEvent(cid, "citywar")
+
 
 	-- OPEN CHANNERLS (ABRIR CHANNELS)
 	if table.contains({"Rookgaard", "Dawnport"}, player:getTown():getName())then
@@ -163,6 +174,7 @@ function onLogin(player)
 		stats.playerId = player:getId()
 	end
 
+	
 	-- fury gates
 	if Game.getStorageValue(GlobalStorage.FuryGates, (9710)) == 1 then -- for venore
 		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Fury Gate is on Venore Today.')

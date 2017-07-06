@@ -58,4 +58,8 @@
 		<talkaction words="!outfit" script="guild_outfit.lua"/> 
 		<talkaction words="!online" script="online.lua" />
 		<talkaction words="!serverinfo" script="serverinfo.lua" />
+
+	<!-- War AntiEntrosa -->
+		<talkaction log="yes" words="!citywar;/citywar" event="script" value="citywar.lua"/>
+		
 </talkactions>

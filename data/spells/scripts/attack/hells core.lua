@@ -12,5 +12,6 @@ end
 combat:setCallback(CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 function onCastSpell(creature, var)
+	if isSpellBlocked(cid, {2,3}) then return false end
 	return combat:execute(creature, var)
 end

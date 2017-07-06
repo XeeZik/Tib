@@ -22,16 +22,6 @@ function getMoneyCount(string)
 	return -1
 end
 
---function getBankMoney(cid, amount)
- --local player = Player(cid)
- --if player:getBankBalance() >= amount then
- -- player:setBankBalance(player:getBankBalance() - amount)
- -- player:sendTextMessage(MESSAGE_INFO_DESCR, "Paid " .. amount .. " gold from bank account. Your account balance is now " .. player:getBankBalance() .. " gold.")
- -- return true
--- end
- --return false
---end
-
 function getMoneyWeight(money)
 	local gold = money
 	local crystal = math.floor(gold / 10000)
@@ -88,4 +78,61 @@ function playerExists(name)
 		return true
 	end
 	return false
+end
+
+WAR_TYPE_STORAGE = 22222
+
+function isGuildLeader(cid)
+	return getPlayerGuildLevel(cid) == GUILDLEVEL_LEADER
+end
+
+function isInAnyArray(array, value)
+	if not type(array) == 'table' then
+		return false
+	end
+	for k, v in pairs(array) do
+		if type(v) == 'table' then
+			ret = isInAnyArray(v, value)
+			if ret ~= false then
+				return true, k
+			end
+		else
+			if v == value then
+				return true, k
+			end
+		end
+	end
+	return false
+end
+
+function setPlayerWarType(cid, value)
+	return doCreatureSetStorage(cid, WAR_TYPE_STORAGE, value)
+end
+
+function getPlayerWarType(cid)
+	return getCreatureStorage(cid, WAR_TYPE_STORAGE)
+end
+
+function isGuildAntiEntrosa(guildId)
+if not type(guildId) == 'number' then
+	return false
+end
+	for _, v in pairs(Wars) do
+		if type(v) == "table" then
+			if v:isGuildOnWar(guildId) then
+				return true
+			end
+		end
+	end
+	return false
+end
+
+function table.elements(tabela)
+local i = 0
+	for _,v in pairs(tabela) do
+		if v ~= nil then
+			i = i + 1
+		end
+	end
+	return i
 end
