@@ -19,6 +19,14 @@ local items = {
 		  item9 = {21400, 24682}, -- Phoenix Statue
 		  item10 = {21400, 18527}, -- Dragon Eye		  
 		  item11 = {21400, 18551} -- Noble Sword
+		  item12 = {21400, 26336} -- Medusa Skull
+		  item13 = {21400, 26337} -- Golden Newspaper 
+		  item14 = {21400, 26338} -- Bag of Oriental Spices 
+		  item15 = {21400, 26339} -- Imortus
+		  item16 = {21400, 26334} -- Tibiacity Encyclopedia 
+		  item17 = {21400, 26335} -- Doll of Durin The Almighty
+		  item18 = {21400, 26332} -- Hand Puppets 
+		  item19 = {21400, 26333} -- Music Box
 		 
 }
 local counts = {
@@ -32,6 +40,14 @@ local counts = {
 		  count9 = {20, 1}, -- count4 quantidade que será pedido e que será dado na segunda troca
 		  count10 = {20, 1}, -- count4 quantidade que será pedido e que será dado na segunda troca		  
 		  count11 = {20, 1} -- count4 quantidade que será pedido e que será dado na segunda troca
+		  count12 = {20, 1} -- count4 quantidade que será pedido e que será dado na segunda troca
+		  count13 = {20, 1} -- count4 quantidade que será pedido e que será dado na segunda troca
+		  count14 = {20, 1} -- count4 quantidade que será pedido e que será dado na segunda troca
+		  count15 = {20, 1} -- count4 quantidade que será pedido e que será dado na segunda troca
+		  count16 = {20, 1} -- count4 quantidade que será pedido e que será dado na segunda troca
+		  count17 = {20, 1} -- count4 quantidade que será pedido e que será dado na segunda troca
+		  count18 = {20, 1} -- count4 quantidade que será pedido e que será dado na segunda troca
+		  count19 = {20, 1} -- count4 quantidade que será pedido e que será dado na segunda troca
 		 
 }
  
