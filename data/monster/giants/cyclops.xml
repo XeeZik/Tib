@@ -49,5 +49,6 @@
 		<item id="7398" chance="80" /><!-- cyclops trophy -->
 		<item name="health potion" chance="210" />
 		<item name="cyclops toe" chance="4930" />
+		<item id="26642" chance="1000" />				<!-- heavy old tome -->
 	</loot>
 </monster>

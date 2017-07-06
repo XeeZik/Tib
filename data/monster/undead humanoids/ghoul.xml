@@ -53,5 +53,6 @@
 		<item id="12440" chance="960" />					<!-- pile of grave earth -->
 		<item id="2229" chance="300" />					<!-- skull -->
 		<item id="2168" chance="200" />					<!-- life ring -->
+		<item id="26642" chance="1000" />				<!-- heavy old tome -->
 	</loot>
 </monster>
