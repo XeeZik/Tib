@@ -8609,14 +8609,14 @@ int LuaScriptInterface::luaPlayerSetGroup(lua_State* L)
 int LuaScriptInterface::luaPlayerGetPreyStamina(lua_State* L)
 {
 	uint16_t column = getNumber<uint16_t>(L, 2);
+	if (column == 10) {
+		column = 2;
+	}
 	Player* player = getUserdata<Player>(L, 1);
 	if (player) {
 		lua_pushnumber(L, player->getPreyStamina(column));
 	} else {
 		lua_pushnil(L);
-	}
-	if (column == 10) {
-		column = 2;
 	}
 	return 1;
 }
@@ -8625,14 +8625,14 @@ int LuaScriptInterface::luaPlayerGetPreyType(lua_State* L)
 {
 	Player* player = getUserdata<Player>(L, 1);
 	uint16_t column = getNumber<uint16_t>(L, 2);
+	if (column == 10) {
+		column = 2;
+	}
 
 	if (player) {
 		lua_pushnumber(L, player->getPreyType(column));
 	} else {
 		lua_pushnil(L);
-	}
-	if (column == 10) {
-		column = 2;
 	}
 
 	return 1;
@@ -8642,16 +8642,16 @@ int LuaScriptInterface::luaPlayerGetPreyValue(lua_State* L)
 {
 	Player* player = getUserdata<Player>(L, 1);
 	uint16_t column = getNumber<uint16_t>(L, 2);
+if (column == 10) {
+	column = 2;
+}
 
-	if (player) {
+if (player) {
 		lua_pushnumber(L, player->getPreyValue(column));
-	} else {
-		lua_pushnil(L);
-	}
-	if (column == 10) {
-		column = 2;
-	}
-
+}
+else {
+	lua_pushnil(L);
+}
 	return 1;
 }
 
@@ -8659,39 +8659,42 @@ int LuaScriptInterface::luaPlayerGetPreyName(lua_State* L)
 {
 	Player* player = getUserdata<Player>(L, 1);
 	uint16_t column = getNumber<uint16_t>(L, 2);
+	if (column == 10) {
+		column = 2;
+	}
 
 	if (player) {
 		pushString(L, player->getPreyName(column));
 	} else {
 		lua_pushnil(L);
 	}
-	if (column == 10) {
-		column = 2;
-	}
-
 	return 1;
 }
 
 int LuaScriptInterface::luaPlayerSetPreyStamina(lua_State* L)
 {
 	uint16_t column = getNumber<uint16_t>(L, 2);
+	if (column == 10) {
+		column = 2;
+	}
 	uint16_t stamina = getNumber<uint16_t>(L, 3);
 	Player* player = getUserdata<Player>(L, 1);
+
 	if (player) {
 		player->preyStaminaMinutes[column] = std::min<uint16_t>(7200, stamina);
 	} else {
 		lua_pushnil(L);
 	}
-	if (column == 10) {
-		column = 2;
-	}
-
 	return 1;
 }
 
 int LuaScriptInterface::luaPlayerSetPreyType(lua_State* L)
 {
 	uint16_t column = getNumber<uint16_t>(L, 2);
+	if (column == 10) {
+		column = 2;
+	}
+
 	uint16_t type = getNumber<uint16_t>(L, 3);
 	Player* player = getUserdata<Player>(L, 1);
 	if (player) {
@@ -8699,10 +8702,6 @@ int LuaScriptInterface::luaPlayerSetPreyType(lua_State* L)
 	} else {
 		lua_pushnil(L);
 	}
-	if (column == 10) {
-		column = 2;
-	}
-
 	return 1;
 }
 
@@ -8710,14 +8709,15 @@ int LuaScriptInterface::luaPlayerSetPreyValue(lua_State* L)
 {
 	uint16_t value = getNumber<uint16_t>(L, 3);
 	uint16_t column = getNumber<uint16_t>(L, 2);
+	if (column == 10) {
+		column = 2;
+	}
+
 	Player* player = getUserdata<Player>(L, 1);
 	if (player) {
 		player->preyBonusValue[column] = value;
 	} else {
 		lua_pushnil(L);
-	}
-	if (column == 10) {
-		column = 2;
 	}
 
 	return 1;
@@ -8726,17 +8726,17 @@ int LuaScriptInterface::luaPlayerSetPreyValue(lua_State* L)
 int LuaScriptInterface::luaPlayerSetPreyName(lua_State* L)
 {
 	uint16_t column = getNumber<uint16_t>(L, 2);
+	if (column == 10) {
+		column = 2;
+	}
 	std::string name = getString(L, 3);
 	Player* player = getUserdata<Player>(L, 1);
+
 	if (player) {
 		player->preyBonusName[column] = name;
 	} else {
 		lua_pushnil(L);
 	}
-	if (column == 10) {
-		column = 2;
-	}
-
 	return 1;
 }
 
