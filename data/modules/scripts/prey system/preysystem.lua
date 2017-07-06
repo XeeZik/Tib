@@ -7,7 +7,7 @@ PreySystem = {
 local RerollStorages = {
 	[0] = 8420390,
 	[1] = 8420391,
-	[2] = 8420392
+	[10] = 8420392
 }
 
 local ServerPackets = {

@@ -7,6 +7,8 @@
 	
 	<!-- Imbuement Shrines -->
 	<action fromid="27716" toid="27717" script="other/imbuement.lua" />
+	<action fromid="27830" toid="27831" script="other/imbuement.lua" />
+	<action fromid="27838" toid="27839" script="other/imbuement.lua" />
 
 	<!--store-->
 	<action itemid="26347" script="other/fishtank.lua"/>

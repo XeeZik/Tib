@@ -36845,13 +36845,11 @@
 	<item fromid="26468" toid="26469" name="fire portal" />
 	<item fromid="26470" toid="26577" name="unknown item" /> <!--CONSTRUÇÃO NOVAS-->
 	<item id="27788" name="inert astral shaper rune" />
-	<item fromid="27789" toid="27788" name="imbuing shrine" />
 	<item id="26456" name="porcelain mask" />
 	<item id="26457" name="colourful feathers" />
 	<item fromid="27814" toid="27824" name="the time machine" />
 	<item fromid="27825" toid="27828" name="abandoned imbuing shrine" />
-	<item fromid="27844" toid="27845" name="imbuing shrine" />
-	<item fromid="27847" toid="27848" name="gilded imbuing shrine" />
+	<item fromid="27716" toid="27717" name="imbuing shrine" />
 	<item id="26384" article="a" name="dead piñata dragon">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="26385" />
@@ -36937,7 +36935,22 @@
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	
+	<item id="27830" article="an" name="imbuing shrine">
+		<attribute key="rotateTo" value="27831" />
+		<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item id="27831" article="an" name="imbuing shrine">
+		<attribute key="rotateTo" value="27830" />
+		<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item id="27838" article="a" name="gilded imbuing shrine">
+		<attribute key="rotateTo" value="27839" />
+		<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item id="27839" article="a" name="gilded imbuing shrine">
+		<attribute key="rotateTo" value="27838" />
+		<attribute key="wrapableTo" value="26054" />
+	</item>
 	<item fromid="27870" toid="27874" article="a" name="tapestry of honour" />
 	<!--Store-->
 	<item fromid="27875" toid="27877" article="a" name="vengothic lamp" />
