@@ -36227,122 +36227,277 @@
 	<!--storeitens 10.94-->
 	<item id="26059" article="a" name="magnificent chair">
 		<attribute key="rotateTo" value="26060" />
+		<attribute key="wrapableTo" value="26054" />
 	</item>
 	<item id="26060" article="a" name="magnificent chair">
 		<attribute key="rotateTo" value="26061" />
+		<attribute key="wrapableTo" value="26054" />
 	</item>
 	<item id="26061" article="a" name="magnificent chair">
 		<attribute key="rotateTo" value="26062" />
+		<attribute key="wrapableTo" value="26054" />
 	</item>
 	<item id="26062" article="a" name="magnificent chair">
 		<attribute key="rotateTo" value="26059" />
 		<attribute key="wrapableTo" value="26054" />
 	</item>
-	<item fromid="26073" toid="26074" article="a" name="magnificent table" />
-	<item fromid="26075" toid="26076" article="a" name="magnificent cabinet" />
-	<item fromid="26083" toid="26086" article="a" name="magnificent trunk" />
+	<item fromid="26073" toid="26074" article="a" name="magnificent table">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item fromid="26075" toid="26076" article="a" name="magnificent cabinet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
 
-	<item fromid="26063" toid="26066" article="a" name="ferocious chair" />
-	<item id="26067" article="a" name="ferocious table" />
-	<item id="26070" article="a" name="ferocious table" />
-	<item fromid="26079" toid="26082" article="a" name="ferocious trunk" />
-	<item fromid="26077" toid="26078" article="a" name="ferocious cabinet" />
-	<item fromid="26349" toid="26352" article="a" name="rustic chair" />
-	<item fromid="26354" toid="26355" article="a" name="rustic table" />
-	<item fromid="26356" toid="26357" article="a" name="rustic cabinet" />
-	<item id="26358" article="a" name="rustic trunk" />
-	<item fromid="26360" toid="26362" article="a" name="rustic trunk" />
-	<item fromid="26141" toid="26142" article="a" name="explosive barrel" />
-	<item id="26353" article="a" name="dog house" />
-	<item id="26359" article="a" name="dog house" />
-	<item fromid="26364" toid="26365" article="a" name="dog house" />
+	<item fromid="26083" toid="26086" article="a" name="magnificent trunk">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+
+	<item fromid="26063" toid="26066" article="a" name="ferocious chair">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26067" article="a" name="ferocious table">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26070" article="a" name="ferocious table">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26079" toid="26082" article="a" name="ferocious trunk">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26077" toid="26078" article="a" name="ferocious cabinet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26349" toid="26352" article="a" name="rustic chair">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26354" toid="26355" article="a" name="rustic table">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26356" toid="26357" article="a" name="rustic cabinet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26358" article="a" name="rustic trunk">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26360" toid="26362" article="a" name="rustic trunk">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26141" toid="26142" article="a" name="explosive barrel">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26353" article="a" name="dog house">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26359" article="a" name="dog house">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26364" toid="26365" article="a" name="dog house">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
 	<item id="26054" article="a" name="decoration kit">
 		<attribute key="wrapcontainer" value="1" />
 		<attribute key="description" value="You bought this item in the Store." />
 		<attribute key="description" value="This item cannot be traded." />
 	</item>
-	<item id="26087" article="a" name="yalaharian carpet" />
-	<item id="26088" article="a" name="white fur carpet" />
-	<item id="26089" article="a" name="bamboo mat" />
-	<item id="26363" article="a" name="crimson carpet" />
+	<item id="26087" article="a" name="yalaharian carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26088" article="a" name="white fur carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26089" article="a" name="bamboo mat">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26363" article="a" name="crimson carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
 	<!--Carpet-->
  	<item id="25392" article="an" name="Rift Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="26193" article="an" name="Void Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="26109" article="an" name="Yalahahari Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="26110" article="an" name="White fur Carpet">
-	<attribute key="type" value="carpet" />
- 	</item>
+	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="26111" article="an" name="Bamboo mat Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="26371" article="an" name="Crimson Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="26372" article="an" name="Azure Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="26373" article="an" name="Emerald Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="26374" article="an" name="Light Parquet Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="26375" article="an" name="Dark Parquet Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="26376" article="an" name="Mable Floor">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="27080" article="an" name="Flowery Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="27081" article="an" name="Colourful Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="27082" article="an" name="Striped Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="27083" article="an" name="Fur Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
 	<item id="27084" article="an" name="Diamond Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="27085" article="an" name="Patterned Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
  	<item id="27086" article="an" name="Night Sky Carpet">
- 	<attribute key="type" value="carpet" />
- 	</item>
- 	<item id="27087" article="an" name="Star Carpett">
- 	<attribute key="type" value="carpet" />
- 	</item>
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="27087" article="an" name="Star Carpett">
+ 	<attribute key="type" value="carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
 	<!--transform-->
-	<item id="26366" article="a" name="azure carpet" />
-	<item id="26367" article="a" name="emerald carpet" />
-	<item id="26368" article="a" name="light parquet" />
-	<item id="26369" article="a" name="dark parquet" />
-	<item id="26370" article="a" name="marble floor" />
-	<item fromid="26090" toid="26093" name="predador lamp" />
-	<item fromid="26094" toid="26097" name="protectress lamp" />
-	<item fromid="26098" toid="26099" article="a" name="baby dragon" />
-	<item fromid="26100" toid="26101" article="a" name="hamster wheel" />
-	<item fromid="26107" toid="26108" article="a" name="cat in a basket" />
-	<item id="26347" article="a" name="Fish Tank" />
-	<item id="26104" article="a" name="lord tapestry" />
-	<item id="26105" article="a" name="menancing tapestry" />
-	<item id="26106" article="a" name="all-seeing tapestry" />
-	<item id="26379" article="a" name="golden dragon tapestry" />
-	<item id="26380" article="a" name="sword tapestry" />
-	<item id="26381" article="a" name="brocade tapestry" />
+	<item id="26366" article="a" name="azure carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26367" article="a" name="emerald carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26368" article="a" name="light parquet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26369" article="a" name="dark parquet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26370" article="a" name="marble floor">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26090" toid="26093" name="predador lamp">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26094" toid="26097" name="protectress lamp">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26098" toid="26099" article="a" name="baby dragon">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26100" toid="26101" article="a" name="hamster wheel">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item fromid="26107" toid="26108" article="a" name="cat in a basket">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26347" article="a" name="Fish Tank">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26104" article="a" name="lord tapestry">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26105" article="a" name="menancing tapestry">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26106" article="a" name="all-seeing tapestry">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26379" article="a" name="golden dragon tapestry">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26380" article="a" name="sword tapestry">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
+	<item id="26381" article="a" name="brocade tapestry">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+
 	<item id="26378" article="a" name="gold converter">
 		<attribute key="weight" value="1800" />
+		<attribute key="wrapableTo" value="26054" />
 	</item>
 	<item id="26377" article="a" name="gold pouch">
 		<attribute key="weight" value="1800" />
@@ -36352,6 +36507,7 @@
 	<item fromid="26055" toid="26056" article="a" name="royal mailbox">
 		<attribute key="description" value="Royal Tibia Mail." />
 		<attribute key="type" value="mailbox" />
+	<attribute key="wrapableTo" value="26054" />
 	</item>
 	<item fromid="26057" toid="26058" article="a" name="ornate mailbox">
 		<attribute key="description" value="Royal Tibia Mail." />
