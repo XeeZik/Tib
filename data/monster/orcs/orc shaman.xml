@@ -57,5 +57,6 @@
 		<item id="11113" chance="2000" />				<!-- orc tooth -->
 		<item id="2188" chance="1000" />					<!-- wand of decay -->
 		<item id="1958" chance="490" />					<!-- book -->
+		<item id="26642" chance="1000" />				<!-- heavy old tome -->
 	</loot>
 </monster>

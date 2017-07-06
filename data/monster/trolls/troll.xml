@@ -48,5 +48,6 @@
 		<item name="leather boots" chance="10000" />
 		<item name="meat" chance="15000" />
 		<item name="bunch of troll hair" chance="1000" />
+		<item id="26642" chance="1000" />				<!-- heavy old tome -->
 	</loot>
 </monster>

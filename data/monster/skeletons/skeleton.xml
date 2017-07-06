@@ -43,5 +43,6 @@
 		<item name="viking helmet" chance="7520" />
 		<item name="brass shield" chance="2090" />
 		<item name="pelvis bone" chance="9940" />
+		<item id="26642" chance="1000" />				<!-- heavy old tome -->
 	</loot>
 </monster>
