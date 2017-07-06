@@ -36,11 +36,21 @@ end
 function Player:onLook(thing, position, distance)
 	local description = 'You see '
 
-	if thing:isItem() then
+if thing:isItem() then
 		if thing.actionid == 5640 then
 			description = description .. 'a honeyflower patch.'
 		elseif thing.actionid == 5641 then
 			description = description .. 'a banana palm.'
+		elseif thing.itemid >= 28553 and thing.itemid <= 28557 or thing.itemid >= 28563 and thing.itemid <= 28566 or thing.itemid >= 28573 and thing.itemid <= 28574 or thing.itemid >= 28577 and thing.itemid <= 28588 then
+			description = description .. thing:getDescription(distance)
+			local charges = thing.actionid - 1000
+			if charges >= 0 then
+			description = string.format('%s \nCharges left: %d', description, charges)
+			elseif thing.itemid <= 28574 then
+			description = string.format('%s That is brand-new\nCharges left: 1000', description, charges)
+			elseif thing.itemid >= 28577 then
+			description = string.format('%s That is brand-new\nCharges left: 250', description, charges)
+			end
 		else
 			description = description .. thing:getDescription(distance)
 		end

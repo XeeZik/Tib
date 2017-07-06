@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 
+	<!-- Casks and Kegs -->
+	<action fromid="7634" toid="7636" script="other/caskkegs.lua"/>
+
+	
+	<!-- Imbuement Shrines -->
 	<action fromid="27716" toid="27717" script="other/imbuement.lua" />
 
 	<!--store-->

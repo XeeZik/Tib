@@ -3,17 +3,19 @@ function onSay(player, words, param)
 		return true
 	end
 
-	
+	if player:getAccountType() < ACCOUNT_TYPE_GOD then
+		return false
+	end
 
 	local position = player:getPosition()
 	local isGhost = not player:isInGhostMode()
 
 	player:setGhostMode(isGhost)
 	if isGhost then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are now invisible.")
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "FICOU INVISIVEL.")
 		position:sendMagicEffect(CONST_ME_YALAHARIGHOST)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are visible again.")
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "TA APARECENDO DE NOVO.")
 		position.x = position.x + 1
 		position:sendMagicEffect(CONST_ME_SMOKE)
 	end
