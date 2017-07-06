@@ -906,9 +906,7 @@ void LuaScriptInterface::registerFunctions()
 	//getPlayerFlagValue(cid, flag)
 	lua_register(luaState, "getPlayerFlagValue", LuaScriptInterface::luaGetPlayerFlagValue);
 
-	
-	lua_register(m_luaState, "sendToTalkaction", LuaInterface::luaSendToTalkaction);
-	
+
 	//doPlayerAddItem(uid, itemid, <optional: default: 1> count/subtype)
 	//doPlayerAddItem(cid, itemid, <optional: default: 1> count, <optional: default: 1> canDropOnMap, <optional: default: 1>subtype)
 	//Returns uid of the created item
@@ -2893,25 +2891,6 @@ int LuaScriptInterface::luaGetPlayerFlagValue(lua_State* L)
 		reportErrorFunc(getErrorDesc(LUA_ERROR_PLAYER_NOT_FOUND));
 		pushBoolean(L, false);
 	}
-	return 1;
-}
-
-int LuaInterface::luaSendToTalkaction(lua_State* L)
-{
-	LuaInterface& interface = g_talkActions->getInterface();
-	if(interface.reserveEnv()){		
-		int32_t target = popNumber(L);
-		int32_t cid = popNumber(L);
-		
-		lua_State* state = interface.getState();
-		lua_getglobal(state, "War");
-		lua_getfield(state, -1, "morte");
-		lua_pushnumber(state, cid);
-		lua_pushnumber(state, target);
-
-		lua_call(state, 2, 0);		
-	}
-	
 	return 1;
 }
 
@@ -8629,8 +8608,6 @@ int LuaScriptInterface::luaPlayerSetGroup(lua_State* L)
 
 int LuaScriptInterface::luaPlayerGetPreyStamina(lua_State* L)
 {
-	if (column == 10)
-    column = 2;
 	uint16_t column = getNumber<uint16_t>(L, 2);
 	Player* player = getUserdata<Player>(L, 1);
 	if (player) {
@@ -8638,13 +8615,14 @@ int LuaScriptInterface::luaPlayerGetPreyStamina(lua_State* L)
 	} else {
 		lua_pushnil(L);
 	}
+	if (column == 10) {
+		column = 2;
+	}
 	return 1;
 }
 
 int LuaScriptInterface::luaPlayerGetPreyType(lua_State* L)
 {
-if (column == 10)
-    column = 2;
 	Player* player = getUserdata<Player>(L, 1);
 	uint16_t column = getNumber<uint16_t>(L, 2);
 
@@ -8653,14 +8631,15 @@ if (column == 10)
 	} else {
 		lua_pushnil(L);
 	}
+	if (column == 10) {
+		column = 2;
+	}
 
 	return 1;
 }
 
 int LuaScriptInterface::luaPlayerGetPreyValue(lua_State* L)
 {
-if (column == 10)
-    column = 2;
 	Player* player = getUserdata<Player>(L, 1);
 	uint16_t column = getNumber<uint16_t>(L, 2);
 
@@ -8669,14 +8648,15 @@ if (column == 10)
 	} else {
 		lua_pushnil(L);
 	}
+	if (column == 10) {
+		column = 2;
+	}
 
 	return 1;
 }
 
 int LuaScriptInterface::luaPlayerGetPreyName(lua_State* L)
 {
-if (column == 10)
-    column = 2;
 	Player* player = getUserdata<Player>(L, 1);
 	uint16_t column = getNumber<uint16_t>(L, 2);
 
@@ -8685,14 +8665,15 @@ if (column == 10)
 	} else {
 		lua_pushnil(L);
 	}
+	if (column == 10) {
+		column = 2;
+	}
 
 	return 1;
 }
 
 int LuaScriptInterface::luaPlayerSetPreyStamina(lua_State* L)
 {
-if (column == 10)
-    column = 2;
 	uint16_t column = getNumber<uint16_t>(L, 2);
 	uint16_t stamina = getNumber<uint16_t>(L, 3);
 	Player* player = getUserdata<Player>(L, 1);
@@ -8701,14 +8682,15 @@ if (column == 10)
 	} else {
 		lua_pushnil(L);
 	}
+	if (column == 10) {
+		column = 2;
+	}
 
 	return 1;
 }
 
 int LuaScriptInterface::luaPlayerSetPreyType(lua_State* L)
 {
-if (column == 10)
-    column = 2;
 	uint16_t column = getNumber<uint16_t>(L, 2);
 	uint16_t type = getNumber<uint16_t>(L, 3);
 	Player* player = getUserdata<Player>(L, 1);
@@ -8717,14 +8699,15 @@ if (column == 10)
 	} else {
 		lua_pushnil(L);
 	}
+	if (column == 10) {
+		column = 2;
+	}
 
 	return 1;
 }
 
 int LuaScriptInterface::luaPlayerSetPreyValue(lua_State* L)
 {
-if (column == 10)
-    column = 2;
 	uint16_t value = getNumber<uint16_t>(L, 3);
 	uint16_t column = getNumber<uint16_t>(L, 2);
 	Player* player = getUserdata<Player>(L, 1);
@@ -8733,14 +8716,15 @@ if (column == 10)
 	} else {
 		lua_pushnil(L);
 	}
+	if (column == 10) {
+		column = 2;
+	}
 
 	return 1;
 }
 
 int LuaScriptInterface::luaPlayerSetPreyName(lua_State* L)
 {
-if (column == 10)
-    column = 2;
 	uint16_t column = getNumber<uint16_t>(L, 2);
 	std::string name = getString(L, 3);
 	Player* player = getUserdata<Player>(L, 1);
@@ -8748,6 +8732,9 @@ if (column == 10)
 		player->preyBonusName[column] = name;
 	} else {
 		lua_pushnil(L);
+	}
+	if (column == 10) {
+		column = 2;
 	}
 
 	return 1;
