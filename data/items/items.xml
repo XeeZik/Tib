@@ -36659,8 +36659,8 @@
 	<item fromid="26748" toid="26779" name="stone floor(bege)" />
 	<item fromid="26800" toid="26831" name="stone floor(bege)" />
 	<item fromid="26832" toid="26835" name="monument wall" />
-	<item id="26836" name="old tome" />
-	<item id="26837" name="heavy old tome" />
+	<item id="26641" name="old tome" />
+	<item id="26642" name="heavy old tome" />
 	<item fromid="26838" toid="26839" name="monument broken pillar" />
 	<item fromid="26840" toid="26841" name="monument pillar" />
 	<item fromid="26842" toid="26843" name="monument column" />

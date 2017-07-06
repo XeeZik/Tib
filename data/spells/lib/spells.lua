@@ -347,10 +347,3 @@ function Player:addPartyCondition(combat, variant, condition, baseMana)
 	end
 	return true
 end
-
-function isSpellBlocked(cid, tipos)
-	if isInArray(tipos, getPlayerWarType(cid)) then
-		return true
-	end
-	return false
-end
