@@ -139,16 +139,6 @@ function onLogin(player)
 			player:setVocation(vocation:getDemotion())
 		end
 	]]
-	-- Citywar
-		if getPlayerWarType(cid) > 0 then
-		local town = getPlayerTown(cid)
-		local pos = getTownTemplePosition(town)		
-				
-		doTeleportThing(cid, pos)
-		setPlayerWarType(cid, 0)
-	end
-	
-	registerCreatureEvent(cid, "citywar")
 
 
 	-- OPEN CHANNERLS (ABRIR CHANNELS)
