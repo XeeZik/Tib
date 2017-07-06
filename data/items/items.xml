@@ -31512,11 +31512,11 @@
 		<!--<attribute key="skillSword" value="1" />
 		<attribute key="skillmanachance" value="30" />
 		<attribute key="skillmanaamount" value="9" />-->
-		<attribute key="transformEquipTo" value="25962" />
+		<attribute key="transformEquipTo" value="27760" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
-	<item id="25962" article="a" name="blade of carving (overcharged)">
+	<item id="27760" article="a" name="blade of carving (overcharged)">
 		<attribute key="weight" value="5000" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="51" />
@@ -37170,23 +37170,23 @@
 	<item id="23805" article="a" name="lightest stone shower rune" />
 
 <!--casks and kegs-->
-	<item id="28553" article="a" name="helth potion cask">
+	<item id="28553" article="a" name="health potion cask">
 	<attribute key="wrapableTo" value="26054" />
 	</item>
 
-	<item id="28554" article="a" name="great helth potion cask">
+	<item id="28554" article="a" name="great health potion cask">
 	<attribute key="wrapableTo" value="26054" />
 	</item>
 
-	<item id="28555" article="a" name="strong helth potion cask">
+	<item id="28555" article="a" name="strong health potion cask">
 	<attribute key="wrapableTo" value="26054" />
 	</item>
 
-	<item id="28556" article="a" name="ultimate helth potion cask">
+	<item id="28556" article="a" name="ultimate health potion cask">
 	<attribute key="wrapableTo" value="26054" />
 	</item>
 
-	<item id="28557" article="a" name="supreme helth potion cask">
+	<item id="28557" article="a" name="supreme health potion cask">
 	<attribute key="wrapableTo" value="26054" />
 	</item>
 
@@ -37219,23 +37219,23 @@
 	</item>
 
 	
-	<item id="28577" article="a" name="helth potion keg">
+	<item id="28577" article="a" name="health potion keg">
 	<attribute key="wrapableTo" value="26054" />
 	</item>
 
-	<item id="28578" article="a" name="great helth potion keg">
+	<item id="28578" article="a" name="great health potion keg">
 	<attribute key="wrapableTo" value="26054" />
 	</item>
 
-	<item id="28579" article="a" name="strong helth potion keg">
+	<item id="28579" article="a" name="strong health potion keg">
 	<attribute key="wrapableTo" value="26054" />
 	</item>
 
-	<item id="28580" article="a" name="ultimate helth potion keg">
+	<item id="28580" article="a" name="ultimate health potion keg">
 	<attribute key="wrapableTo" value="26054" />
 	</item>
 
-	<item id="28581" article="a" name="supreme helth potion keg">
+	<item id="28581" article="a" name="supreme health potion keg">
 	<attribute key="wrapableTo" value="26054" />
 	</item>
 

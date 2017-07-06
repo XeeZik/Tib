@@ -25,7 +25,7 @@ local weapon = {
                         heavilycharged     = {10,100},    
                         overcharged     = {15,70}}, 
 
-    ["blade"]         = {    carving         =     {normal = 25959, charged = 25960, heavilycharged = 25961, overcharged = 25962},     
+    ["blade"]         = {    carving         =     {normal = 25959, charged = 25960, heavilycharged = 25961, overcharged = 27760},     
                         mayhem             =     {normal = 25879, charged = 25889, heavilycharged = 25899, overcharged = 25909},     
                         remedy             =     {normal = 25919, charged = 25920, heavilycharged = 25921, overcharged = 25922},     
                         price             = 50,        

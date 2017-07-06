@@ -1541,8 +1541,8 @@
 		<vocation name="Elder Druid" showInDescription="0" />
 	</movevent>
 	<!-- 10.94 goldtokenitens -->
-	<movevent event="DeEquip" itemid="25962" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="25962" slot="hand" level="250" function="onEquipItem" >
+	<movevent event="DeEquip" itemid="27760" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="27760" slot="hand" level="250" function="onEquipItem" >
 	<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
