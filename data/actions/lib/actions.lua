@@ -300,10 +300,19 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 		--player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You picked a beautiful lion's mane flower.")
 		
 		-- FIZ ESSE LIXO AQUI
-		elseif targetId == 11227 then
-		target:remove()
-		toPosition:sendMagicEffect(CONST_ME_POFF)
-		player:addItem(2152, 10)
+		elseif target.itemid == 11227 then
+			target:remove(1)
+			toPosition:sendMagicEffect(CONST_ME_POFF)
+			local n = math.random(0,1000)
+			if n <= 7 then
+				player:addItem(2160, 1)
+			elseif n <= 50 then
+				player:addItem(2148, 1)
+			elseif n <= 500 then
+				player:addItem(2152, 1)
+			else 
+				player:addItem(2145, 1)
+			end
 	
 		elseif targetId == 7200 then
 		target:transform(7236)
