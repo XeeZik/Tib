@@ -906,7 +906,6 @@ void LuaScriptInterface::registerFunctions()
 	//getPlayerFlagValue(cid, flag)
 	lua_register(luaState, "getPlayerFlagValue", LuaScriptInterface::luaGetPlayerFlagValue);
 
-
 	//doPlayerAddItem(uid, itemid, <optional: default: 1> count/subtype)
 	//doPlayerAddItem(cid, itemid, <optional: default: 1> count, <optional: default: 1> canDropOnMap, <optional: default: 1>subtype)
 	//Returns uid of the created item
@@ -3383,7 +3382,6 @@ int LuaScriptInterface::luaIsMoveable(lua_State* L)
 	pushBoolean(L, thing && thing->isPushable());
 	return 1;
 }
-
 
 int LuaScriptInterface::luaDoAddContainerItem(lua_State* L)
 {
@@ -8612,6 +8610,7 @@ int LuaScriptInterface::luaPlayerGetPreyStamina(lua_State* L)
 	if (column == 10) {
 		column = 2;
 	}
+
 	Player* player = getUserdata<Player>(L, 1);
 	if (player) {
 		lua_pushnumber(L, player->getPreyStamina(column));
@@ -8642,16 +8641,16 @@ int LuaScriptInterface::luaPlayerGetPreyValue(lua_State* L)
 {
 	Player* player = getUserdata<Player>(L, 1);
 	uint16_t column = getNumber<uint16_t>(L, 2);
-if (column == 10) {
-	column = 2;
-}
+	if (column == 10) {
+		column = 2;
+	}
 
-if (player) {
+	if (player) {
 		lua_pushnumber(L, player->getPreyValue(column));
-}
-else {
-	lua_pushnil(L);
-}
+	} else {
+		lua_pushnil(L);
+	}
+
 	return 1;
 }
 
@@ -8668,6 +8667,7 @@ int LuaScriptInterface::luaPlayerGetPreyName(lua_State* L)
 	} else {
 		lua_pushnil(L);
 	}
+
 	return 1;
 }
 
@@ -8677,14 +8677,15 @@ int LuaScriptInterface::luaPlayerSetPreyStamina(lua_State* L)
 	if (column == 10) {
 		column = 2;
 	}
+
 	uint16_t stamina = getNumber<uint16_t>(L, 3);
 	Player* player = getUserdata<Player>(L, 1);
-
 	if (player) {
 		player->preyStaminaMinutes[column] = std::min<uint16_t>(7200, stamina);
 	} else {
 		lua_pushnil(L);
 	}
+
 	return 1;
 }
 
@@ -8702,6 +8703,7 @@ int LuaScriptInterface::luaPlayerSetPreyType(lua_State* L)
 	} else {
 		lua_pushnil(L);
 	}
+
 	return 1;
 }
 
@@ -8729,14 +8731,15 @@ int LuaScriptInterface::luaPlayerSetPreyName(lua_State* L)
 	if (column == 10) {
 		column = 2;
 	}
+
 	std::string name = getString(L, 3);
 	Player* player = getUserdata<Player>(L, 1);
-
 	if (player) {
 		player->preyBonusName[column] = name;
 	} else {
 		lua_pushnil(L);
 	}
+
 	return 1;
 }
 

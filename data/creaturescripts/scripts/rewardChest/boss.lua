@@ -1,3 +1,11 @@
+function onCreatureAppear(self, creature)
+	if self == creature then
+		if self:getType():isRewardBoss() then
+			self:setReward(true)
+		end
+	end
+end
+
 local function pushSeparated(buffer, sep, ...)
 	local argv = {...}
 	local argc = #argv
@@ -15,14 +23,15 @@ local function insertItems(buffer, info, parent, items)
 		if _ ~= 1 or parent > 100 then
 			table.insert(buffer, ",")
 		end
+
 		info.running = info.running + 1
-		table.insert(buffer, "(")        
+		table.insert(buffer, "(")
 		pushSeparated(buffer, ",", info.playerGuid, parent, info.running, item:getId(), item:getSubType(), db.escapeBlob(item:serializeAttributes()))
 		table.insert(buffer, ")")
 
 		if item:isContainer() then
 			local size = item:getSize()
-			if size > 0 then              
+			if size > 0 then
 				local subItems = {}
 				for i = 1, size do
 					table.insert(subItems, item:getItem(i - 1))
@@ -39,8 +48,8 @@ local function insertRewardItems(playerGuid, timestamp, itemList)
 	db.asyncStoreQuery('SELECT `pid`, `sid` FROM `player_rewards` WHERE player_id = ' .. playerGuid .. ' ORDER BY `sid` ASC;', 
 		function(query)
 			local lastReward = 0
-			local lastStoreId   
-			if(query) then             
+			local lastStoreId
+			if (query) then
 				repeat
 					local sid = result.getDataInt(query, 'sid')
 					local pid = result.getDataInt(query, 'pid')
@@ -119,7 +128,7 @@ function onDeath(creature, corpse, killer, mostDamageKiller, lastHitUnjustified,
 				damageOut = damageOut, 
 				damageIn = damageIn,
 				healing = healing,
-			})            
+			})
 		end
 
 		local participants = 0
@@ -184,13 +193,14 @@ function onThink(creature, interval)
 	for _, player in pairs(info) do
 		player.active = false
 	end
+
 	-- Set all players in boss' target list as active in the fight
 	local targets = creature:getTargetList()
 	for _, target in ipairs(targets) do
 		if target:isPlayer() then
 			local stats = getPlayerStats(bossId, target:getGuid(), true)
 			stats.playerId = target:getId() -- Update player id
-			stats.active = true            
+			stats.active = true
 		end
 	end
 end

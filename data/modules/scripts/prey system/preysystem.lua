@@ -404,7 +404,7 @@ function SelectPrey(player, PreyColumn, mType)
 	if (not newBonus) then
 		return sendError(player, "[ERROR] You can't select a prey with bonus active.")
 	end
-	
+
 	player:removePreyMonster(mType:getName())
 	player:setPreyStamina(PreyColumn, 7200)
 
@@ -430,7 +430,7 @@ function onRecvbyte(player, msg, byte)
 		if (column == 10) then
 			column = 2
 		end
-		
+
 		sendPreyData(player, column)
 	elseif (byte == ClientPackets.PreyAction) then
 		CheckPrey(player, msg)

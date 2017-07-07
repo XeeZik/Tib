@@ -946,7 +946,6 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance,
 					s << "magic level " << std::showpos << it.abilities->stats[STAT_MAGICPOINTS] << std::noshowpos;
 				}
 
-
 				int16_t show = it.abilities->absorbPercent[0];
 				if (show != 0) {
 					for (size_t i = 1; i < COMBAT_COUNT; ++i) {

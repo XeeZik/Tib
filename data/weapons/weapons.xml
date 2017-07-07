@@ -40,9 +40,6 @@
 	<wand id="18412" level="65" mana="17" min="70" max="100" type="ice"> <!-- Glacial Rod -->
 		<vocation name="Druid" />
 	</wand>
-	
-	
-	<!-- 10.94 WANDS RODS -->
 	<wand id="25995" level="100" mana="18" min="75" max="100" type="ice"> <!-- Rod of Carving -->
 		<vocation name="Druid" />
 	</wand>
@@ -55,7 +52,6 @@
 	<wand id="25998" level="250" mana="18" min="75" max="100" type="ice"> <!-- Rod of Carving (overcharged) -->
 		<vocation name="Druid" />
 	</wand>
-	
 	<wand id="25888" level="100" mana="18" min="75" max="100" type="ice"> <!-- Rod of Mayhem -->
 		<vocation name="Druid" />
 	</wand>
@@ -68,8 +64,6 @@
 	<wand id="25918" level="250" mana="18" min="75" max="100" type="ice"> <!-- Rod of Mayhem -->
 		<vocation name="Druid" />
 	</wand>
-
-	
 	<wand id="25955" level="100" mana="18" min="75" max="100" type="ice"> <!-- Rod of Remedy -->
 		<vocation name="Druid" />
 	</wand>
@@ -82,8 +76,6 @@
 	<wand id="25958" level="250" mana="18" min="75" max="100" type="ice"> <!-- Rod of Remedy -->
 		<vocation name="Druid" />
 	</wand>
-	
-
 	<wand id="25991" level="100" mana="18" min="75" max="100" type="energy"> <!-- Wand of Carving -->
 		<vocation name="Sorcerer" />
 	</wand>
@@ -96,7 +88,6 @@
 	<wand id="25994" level="250" mana="18" min="75" max="100" type="energy"> <!-- Wand of Carving -->
 		<vocation name="Sorcerer" />
 	</wand>
-	
 	<wand id="25887" level="100" mana="18" min="75" max="100" type="energy"> <!-- Wand of Mayhem -->
 		<vocation name="Sorcerer" />
 	</wand>
@@ -109,7 +100,6 @@
 	<wand id="25917" level="250" mana="18" min="75" max="100" type="energy"> <!-- Wand of Mayhem -->
 		<vocation name="Sorcerer" />
 	</wand>
-	
 	<wand id="25951" level="100" mana="18" min="75" max="100" type="energy"> <!-- Wand of Remedy -->
 		<vocation name="Sorcerer" />
 	</wand>
@@ -142,13 +132,10 @@
 	<wand id="2189" level="26" mana="8" min="42" max="48" type="energy"> <!-- Wand of Cosmic Energy -->
 		<vocation name="Sorcerer" />
 	</wand>
-	
 	<wand id="25421" level="65" mana="17" min="70" max="80" type="energy"> <!-- Wand of Cosmic Energy -->
 		<vocation name="Sorcerer" />
 		<vocation name="Druid" />
-		
 	</wand>
-	
 	<wand id="2187" level="33" mana="13" min="55" max="75" type="fire"> <!-- Wand of Inferno -->
 		<vocation name="Sorcerer" />
 	</wand>
@@ -173,8 +160,7 @@
 
 	<!-- Swords -->
 	<melee id="2396" action="removecharge" />
-	<melee id="2413" level="5" unproperly="1" />		
-	
+	<melee id="2413" level="5" unproperly="1" />
 	<melee id="7385" level="20" unproperly="1" />
 	<melee id="2377" level="20" unproperly="1">
 		<vocation name="Knight" />
@@ -205,7 +191,7 @@
 	</melee>
 	<melee id="2446" level="45" unproperly="1" />
 	<melee id="7402" level="45" unproperly="1" />
-		
+
 	<melee id="7383" level="50" unproperly="1" />
 	<melee id="7391" level="50" unproperly="1">
 		<vocation name="Knight" />
@@ -244,11 +230,11 @@
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
 	<melee id="2408" level="120" unproperly="1" />
-		<!--<vocation name="Knight" />
+	<!--<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>-->
 	<melee id="2390" level="140" unproperly="1" />
-		<!--<vocation name="Knight" />
+	<!--<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>-->
 	<melee id="11306" level="50" unproperly="1">
@@ -271,18 +257,14 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
-	<!-- START 10.94 -->
-	
-	
 	<melee id="25959" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</melee>	
+	</melee>
 	<melee id="25960" level="150" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</melee>	
+	</melee>
 	<melee id="25961" level="200" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -291,30 +273,22 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
-	
-	
 	<melee id="25879" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25889" level="150" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25899" level="200" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25909" level="250" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
-	
 	<melee id="25919" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -331,7 +305,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25963" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -348,7 +321,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25880" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -365,7 +337,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25923" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -382,7 +353,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25967" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -399,8 +369,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
-	
 	<melee id="25881" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -417,9 +385,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
-	
-	
 	<melee id="25927" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -436,8 +401,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
-	
 	<melee id="25971" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -454,8 +417,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
-	
 	<melee id="25882" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -472,7 +433,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25931" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -489,7 +449,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25979" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -522,7 +481,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25939" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -539,7 +497,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25975" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -556,7 +513,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25883" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -573,7 +529,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
 	<melee id="25935" level="100" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -590,8 +545,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	<!-- FIM 10.94 -->
-	
 	<melee id="22399" level="120" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -679,7 +632,7 @@
 	<melee id="2435" level="20" unproperly="1" />
 	<melee id="2425" level="20" unproperly="1" />
 	<melee id="2430" level="25" unproperly="1" />
-	<melee id="2387" level="25" unproperly="1"/>		
+	<melee id="2387" level="25" unproperly="1" />
 	<melee id="2381" level="25" unproperly="1" />
 	<melee id="2440" level="25" unproperly="1">
 		<vocation name="Knight" />
@@ -692,7 +645,6 @@
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
 	<melee id="2432" level="35" unproperly="1" />
-	<!-- INICIO ITEMS NOVOS VIKING -->
 	<melee id="25416" level="150" unproperly="1" />
 	<melee id="24828" level="25" unproperly="1" />
 	<melee id="25415" level="150" unproperly="1" />
@@ -700,9 +652,6 @@
 	<melee id="25420" level="100" unproperly="1" />
 	<melee id="25418" level="150" unproperly="1" />
 	<melee id="24827" level="50" unproperly="1" />
-	
-	<!-- FIM ITEMS NOVOS VIKING -->
-	
 	<melee id="7380" level="35" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -1084,10 +1033,6 @@
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</distance>
-	
-	<!-- 10.94 distance -->
-	
-	
 	<distance id="25983" level="100" unproperly="1"> <!-- Bow of Carving -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
@@ -1104,7 +1049,6 @@
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</distance>
-	
 	<distance id="25885" level="100" unproperly="1"> <!-- Bow of Carving -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
@@ -1121,7 +1065,6 @@
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</distance>
-	
 	<distance id="25943" level="100" unproperly="1"> <!-- Bow of Carving -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
@@ -1138,7 +1081,6 @@
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</distance>
-	
 	<distance id="25987" level="100" unproperly="1"> <!-- Bow of Carving -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
@@ -1155,8 +1097,6 @@
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</distance>
-	
-	
 	<distance id="25886" level="100" unproperly="1"> <!-- Crossbow of Mayhem -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
@@ -1173,8 +1113,6 @@
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</distance>
-	
-	
 	<distance id="25947" level="100" unproperly="1"> <!-- Crossbow of Mayhem -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
@@ -1191,69 +1129,54 @@
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</distance>
-	
-	
-	<!-- 10.94 no SITE -->	
 	<distance id="26268" level="200" unproperly="1"> <!-- Crossbow of Mayhem -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
-	</distance>	
+	</distance>
 	<distance id="26254" level="200" unproperly="1"> <!-- Crossbow of Mayhem -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
-	</distance>	
-	
-	
-	
+	</distance>
 	<distance id="26308" level="200" unproperly="1"> <!-- Bow of Carving -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
-	</distance>	
+	</distance>
 	<distance id="26288" level="200" unproperly="1"> <!-- Bow of Remedy -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
-	</distance>	
+	</distance>
 	<distance id="26311" level="200" unproperly="1"> <!-- Crossbow of Carving  -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
-	</distance>	
+	</distance>
 	<distance id="26292" level="200" unproperly="1"> <!-- Crossbow of Remedy -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
-	</distance>	
-	
-	
-	
+	</distance>
 	<wand id="26320" level="200" mana="18" min="75" max="100" type="energy"> <!-- Wand of Mayhem -->
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
-	</wand>	
+	</wand>
 	<wand id="26323" level="200" mana="18" min="75" max="100" type="ice"> <!-- Rod of Mayhem -->
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
-	</wand>	
-	
-	
+	</wand>
 	<wand id="26314" level="200" mana="18" min="75" max="100" type="energy"> <!-- Wand of Carving -->
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
-	</wand>	
+	</wand>
 	<wand id="26317" level="200" mana="18" min="75" max="100" type="ice"> <!-- Rod of Carving -->
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
-	</wand>	
-	
+	</wand>
 	<wand id="26297" level="200" mana="18" min="75" max="100" type="energy"> <!-- Wand of Remedy -->
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
-	</wand>	
+	</wand>
 	<wand id="26302" level="200" mana="18" min="75" max="100" type="ice"> <!-- Rod of Remedy -->
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
-	</wand>	
-	
-	
-	
+	</wand>
 	<melee id="26283" level="200" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -1278,9 +1201,6 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	
-	
-	
 	<melee id="26270" level="200" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
@@ -1304,35 +1224,31 @@
 	<melee id="26300" level="200" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</melee>	
+	</melee>
 	<melee id="26247" level="200" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</melee>	
+	</melee>
 	<melee id="26250" level="200" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</melee>	
+	</melee>
 	<melee id="26244" level="200" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</melee>	
+	</melee>
 	<melee id="26241" level="200" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</melee>	
+	</melee>
 	<melee id="26235" level="200" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
-	</melee>	
+	</melee>
 	<melee id="26238" level="200" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</melee>
-	<!-- 10.94 no SITE FIM -->
-	
-	 
-	<!-- 10.94 distance FIM -->
 	<distance id="22417" level="150" unproperly="1"> <!-- Umbral Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
@@ -1349,23 +1265,20 @@
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</distance>
-	
 	<distance id="25522" level="120" unproperly="1"> <!-- rift bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</distance>
-	
 	<distance id="25523" level="120" unproperly="1"> <!-- rift Crossbow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</distance>
-	
 	<distance id="22421" level="250" unproperly="1"> <!-- Umbral Master Crossbow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
 	</distance>
 
-	<!-- Ammunition --> <!-- PARA SER INFINITA, RETIRAR action="removecount" -->
+	<!-- Ammunition -->
 	<distance id="1294" breakchance="3" /> <!-- small stone -->
 	<distance id="2111" action="removecount" /> <!-- snowball -->
 	<distance id="2389" breakchance="3" /> <!-- spear -->
@@ -1375,27 +1288,27 @@
 	<distance id="2544" action="removecount" /> <!-- arrow -->
 	<distance id="2545" action="removecount" script="poison_arrow.lua" /> <!-- poison arrow -->
 	<distance id="2546" action="removecount" script="burst_arrow.lua" /> <!-- burst arrow -->
-	<distance id="2547" action="removecount" unproperly="1" level="55" />	<!-- Power Bolt -->
-	<distance id="3965" breakchance="6" unproperly="1" level="20" />	<!-- Hunting Spear -->
-	<distance id="6529" action="removecount" unproperly="1" level="110" />	<!-- Infernal Bolt -->
-	<distance id="7363" action="removecount" unproperly="1" level="30" />	<!-- Piercing Bolt -->
-	<distance id="7364" action="removecount" unproperly="1" level="20" />	<!-- Sniper Arrow -->
-	<distance id="7365" action="removecount" unproperly="1" level="40" />	<!-- Onyx Arrow -->
+	<distance id="2547" action="removecount" unproperly="1" level="55" /> <!-- Power Bolt -->
+	<distance id="3965" breakchance="6" unproperly="1" level="20" /> <!-- Hunting Spear -->
+	<distance id="6529" action="removecount" unproperly="1" level="110" /> <!-- Infernal Bolt -->
+	<distance id="7363" action="removecount" unproperly="1" level="30" /> <!-- Piercing Bolt -->
+	<distance id="7364" action="removecount" unproperly="1" level="20" /> <!-- Sniper Arrow -->
+	<distance id="7365" action="removecount" unproperly="1" level="40" /> <!-- Onyx Arrow -->
 	<distance id="7366" breakchance="9" script="viper_star.lua" />
-	<distance id="7367" breakchance="1" unproperly="1" level="42" />	<!-- Enchanted Spear -->
-	<distance id="7368" breakchance="33" unproperly="1" level="80" />	<!-- Assassin Star -->
-	<distance id="7378" breakchance="3" unproperly="1" level="25" />	<!-- Royal Spear -->
-	<distance id="7838" action="removecount" unproperly="1" level="20" />	<!-- Flash Arrow -->
-	<distance id="7839" action="removecount" unproperly="1" level="20" />	<!-- Shiver Arrow -->
-	<distance id="7840" action="removecount" unproperly="1" level="20" />	<!-- Flaming Arrow -->
-	<distance id="7850" action="removecount" unproperly="1" level="20" />	<!-- Earth Arrow -->
-	<distance id="15648" action="removecount" unproperly="1" level="30" />	<!-- Tarsal Arrow -->
-	<distance id="15649" action="removecount" unproperly="1" level="40" />	<!-- Vortex Bolt -->
-	<distance id="18303" action="removecount" />	<!-- crystal bolt -->
-	<distance id="18304" action="removecount" unproperly="1" level="90" />	<!-- Crystalline Arrow -->
-	<distance id="18435" action="removecount" unproperly="1" level="90" />	<!-- Prismatic Bolt -->
-	<distance id="18436" action="removecount" unproperly="1" level="70" />	<!-- Drill Bolt -->
-	<distance id="18437" action="removecount" unproperly="1" level="70" />	<!-- Envenomed Arrow -->
+	<distance id="7367" breakchance="1" unproperly="1" level="42" /> <!-- Enchanted Spear -->
+	<distance id="7368" breakchance="33" unproperly="1" level="80" /> <!-- Assassin Star -->
+	<distance id="7378" breakchance="3" unproperly="1" level="25" /> <!-- Royal Spear -->
+	<distance id="7838" action="removecount" unproperly="1" level="20" /> <!-- Flash Arrow -->
+	<distance id="7839" action="removecount" unproperly="1" level="20" /> <!-- Shiver Arrow -->
+	<distance id="7840" action="removecount" unproperly="1" level="20" /> <!-- Flaming Arrow -->
+	<distance id="7850" action="removecount" unproperly="1" level="20" /> <!-- Earth Arrow -->
+	<distance id="15648" action="removecount" unproperly="1" level="30" /> <!-- Tarsal Arrow -->
+	<distance id="15649" action="removecount" unproperly="1" level="40" /> <!-- Vortex Bolt -->
+	<distance id="18303" action="removecount" /> <!-- crystal bolt -->
+	<distance id="18304" action="removecount" unproperly="1" level="90" /> <!-- Crystalline Arrow -->
+	<distance id="18435" action="removecount" unproperly="1" level="90" /> <!-- Prismatic Bolt -->
+	<distance id="18436" action="removecount" unproperly="1" level="70" /> <!-- Drill Bolt -->
+	<distance id="18437" action="removecount" unproperly="1" level="70" /> <!-- Envenomed Arrow -->
 	<distance id="23529" breakchance="2" unproperly="1" level="60" /> <!-- Glooth Spear -->
 	<distance id="23839" action="removecount" unproperly="0" level="1" /> <!-- Simple Arrow -->
 </weapons>
