@@ -17499,7 +17499,7 @@
 	<item id="8843" article="an" name="onion">
 		<attribute key="weight" value="140" />
 	</item>
-	<item id="8844" article="a" name="jalapeño pepper">
+	<item id="8844" article="a" name="jalape?o pepper">
 		<attribute key="weight" value="30" />
 	</item>
 	<item id="8845" article="a" name="beetroot">
@@ -19482,7 +19482,7 @@
 		<attribute key="description" value="This one would be quite healthy if it wasn't for all the melted cheese on top." />
 		<attribute key="weight" value="1100" />
 	</item>
-	<item id="9998" article="a" name="filled jalapeño peppers">
+	<item id="9998" article="a" name="filled jalape?o peppers">
 		<attribute key="description" value="The creamy cheese makes a great combination with the spicy peppers." />
 		<attribute key="weight" value="650" />
 	</item>
@@ -36361,9 +36361,33 @@
 		<attribute key="type" value="carpet"/>
 		<attribute key="wrapableTo" value="26054" />
 	</item>
-	<item id="27087" article="an" name="Star Carpett">
+	<item id="27087" article="an" name="Star Carpet">
 		<attribute key="type" value="carpet"/>
 		<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item id="27073" article="a" name="Colourful Carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item id="27076" article="a" name="diamond carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item id="27075" article="a" name="fur carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item id="27078" article="a" name="night sky carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item id="27077" article="a" name="patterned carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item id="27072" article="a" name="flowery carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item id="27074" article="a" name="striped carpet">
+	<attribute key="wrapableTo" value="26054" />
+	</item>
+	<item id="27079" article="a" name="star carpet">
+	<attribute key="wrapableTo" value="26054" />
 	</item>
 	<item id="26366" article="a" name="azure carpet">
 		<attribute key="wrapableTo" value="26054" />
@@ -36710,14 +36734,6 @@
 	<item id="27259" name="sewing table" />
 	<item id="27647" name="sewing table" />
 	<item id="27260" name="old rag" />
-	<item id="27072" name="flowery carpet" />
-	<item id="27073" name="colourful carpet" />
-	<item id="27074" name="striped carpet" />
-	<item id="27075" name="fur carpet" />
-	<item id="27076" name="diamond carpet" />
-	<item id="27077" name="patterned carpet" />
-	<item id="27078" name="night sky carpet" />
-	<item id="27079" name="star carpet" />
 	<item fromid="27261" toid="27262" name="parrot" />
 	<item fromid="27263" toid="27265" name="lit skull lamp" />
 	<item id="27266" name="sand" />
@@ -36924,14 +36940,14 @@
 	<item fromid="27814" toid="27824" name="the time machine" />
 	<item fromid="27825" toid="27828" name="abandoned imbuing shrine" />
 	<item fromid="27716" toid="27717" name="imbuing shrine" />
-	<item id="26384" article="a" name="dead piñata dragon">
+	<item id="26384" article="a" name="dead pi?ata dragon">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="26385" />
 		<attribute key="duration" value="900" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item id="26385" article="a" name="dead piñata dragon">
+	<item id="26385" article="a" name="dead pi?ata dragon">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="300" />
