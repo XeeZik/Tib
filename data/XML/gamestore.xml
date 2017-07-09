@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gamestore>
-	<category name="Extra Services" description="Buy an Extra Service to change your character's name or sex." state="normal" icons="extraservice_icon_1.png|extraservice_icon_2.png">
-		<offer name="Character Name Change" type="namechange" price="250" icons="namechanger.png" />
-		<offer name="Character Sex Change" type="sexchange" price="250" icons="sexchange.png" />
-		<offer name="Character Promotion" type="promotion" price="50" icons="promotion.png" />
-		<offer name="The Spiritual Shielding" type="bless" blessnumber="1" price="30" icons="spiritualshielding.png"/>
-		<offer name="[PACK] The Embrace of Open Tibia + The Fire of the Suns" type="bless" price="55" state="sale" blessnumber="2|3" icons="embrace_and_suns.png"/>
-		<offer name="Teleport home" description="Go back to your home temple in an instant." price="20" state="new" type="teleport" icons="teleporttemple.png" />
-		<offer name="Teleport to x,y,z" description="Go to a specific location" price="100" type="teleport" x="500" y="1000" z="7" icons="teleportxyz.png" />
-	</category>
-	<category name="Mounts" description="Buy your character one or more of the fabolous mounts offered here." state="sale" icons="Category_Mounts.png">
+    <category name="Extra Services" description="Buy an Extra Service to change your character's name or sex." state="normal" icons="extraservice_icon_1.png|extraservice_icon_2.png">
+        <offer name="Character Name Change" type="namechange" price="250" icons="namechanger.png" />
+        <offer name="Character Sex Change" type="sexchange" price="250" icons="sexchange.png" />
+        <offer name="Character Promotion" type="promotion" price="50" icons="promotion.png" />
+        <offer name="The Spiritual Shielding" type="bless" blessnumber="1" price="30" icons="spiritualshielding.png"/>
+        <offer name="[PACK] The Embrace of Open Tibia + The Fire of the Suns" type="bless" price="55" state="sale" blessnumber="2|3" icons="embrace_and_suns.png"/>
+        <offer name="Teleport home" description="Go back to your home temple in an instant." price="20" state="new" type="teleport" icons="teleporttemple.png" />
+        <offer name="Teleport to x,y,z" description="Go to a specific location" price="100" type="teleport" x="500" y="1000" z="7" icons="teleportxyz.png" />
+
+
+		</category>
+    <category name="Mounts" description="Buy your character one or more of the fabolous mounts offered here." state="sale" icons="Category_Mounts.png">
 		<offer name="Widow Queen" type="mount" mountid="1" description="Buying this mount will help our server survive!" price="750" icons="o368.png" />
 		<offer name="Racing Bird" type="mount" mountid="2" description="Buying this mount will help our server survive!" price="750" icons="o369.png" />
 		<offer name="War Bear" type="mount" mountid="3" description="Buying this mount will help our server survive!" price="750" icons="o370.png" />
@@ -122,15 +124,19 @@
 		<offer name="Jungle Saurian" type="mount" mountid="110" description="Buying this mount will help our server survive!" price="750" icons="o629.png" />
 		<offer name="Ember Saurian" type="mount" mountid="111" description="Buying this mount will help our server survive!" price="750" icons="o629.png" />
 		<offer name="Lagoon Saurian" type="mount" mountid="112" description="Buying this mount will help our server survive!" price="750" icons="o629.png" />
-	</category>
-	<category name="Equipments" description="Buy your character one or more of the helpful items offered here." state="new" icons="convenience.png" >
-		<offer name="Spellbook of Vigilance" type="item" price="60" productid="18401" count="1"  icons="spellbook_vigilance.png" />
-	</category>
-	<category name="Runes" description="Buy magically filled runes to unleash their energy when in need of it." state="limitedtime" icons="runes.png">
-		<offer name="Chameleon Rune" description="Fool your friends with an item outfit!" price="10" type="stackableitem" productid="2291" count="100" icons="chameleon_rune.png" />
-	</category>
-	<category name="Outfits" description="Look cooler!" state="sale" icons="Category_Outfits.png">
-		<offer name="Arena Champion" description="" type="outfit" addon="3" malelooktype="884" femalelooktype="885" price="30" icons="f884.png" />
+		</category>
+    <category name="Equipments" description="Buy your character one or more of the helpful items offered here." state="new" icons="convenience.png" >
+        <offer name="Spellbook of Vigilance" type="item" price="60" productid="18401" count="1"  icons="spellbook_vigilance.png" />
+    </category>
+	<category name="House" description="" state="new" icons="house.png" >
+		<offer name="magnificent chair" type="item" productid="26059" price="60" count="1"  icons="spellbook_vigilance.png" />
+    </category>
+    <category name="Runes" description="Buy magically filled runes to unleash their energy when in need of it." state="limitedtime" icons="runes.png">
+        <offer name="Chameleon Rune" description="Fool your friends with an item outfit!" price="10" type="stackableitem" productid="2291" count="100" icons="chameleon_rune.png" />
+
+    </category>
+    <category name="Outfits" description="Look cooler!" state="sale" icons="Category_Outfits.png">
+        <offer name="Arena Champion" description="" type="outfit" addon="3" malelooktype="884" femalelooktype="885" price="30" icons="f884.png" />
 		<offer name="Sea Dog" description="" type="outfit" addon="3" malelooktype="750" femalelooktype="749" price="15" icons="f750.png" />
 		<offer name="Assassin" description="" type="outfit" addon="3" malelooktype="152" femalelooktype="156" price="20" state="new" icons="f152.png" />
 		<offer name="Conjurer" description="" type="outfit" addon="3" malelooktype="634" femalelooktype="635" price="40" icons="f634.png" />
@@ -190,8 +196,85 @@
 		<offer name="Hunter" description="" type="outfit" addon="3" malelooktype="129" femalelooktype="137" price="15" icons="f129.png" />
 		<offer name="Citizen" description="" type="outfit" addon="3" malelooktype="128" femalelooktype="136" price="15" icons="f128.png" />
 	</category>
-	<category name="Premium Time" description="Buy Premium Time today and get new spells, and access to premium areas!" icons="premiumtime.png" >
-		<offer name="30 days of Premium Time" description="get a month (30 days) of premium time." price="250" type="premiumtime" days="30" icons="premium30.png"/>
-		<offer name="90 days of Premium Time" description="90 days of premium time." price="400" state="sale" type="premiumtime" days="90" icons="premium90sale.png"/>
-	</category>
+    <category name="Premium Time" description="Buy Premium Time today and get new spells, and access to premium areas!" icons="premiumtime.png" >
+    	<offer name="30 days of Premium Time" description="get a month (30 days) of premium time." price="250" type="premiumtime" days="30" icons="premium30.png"/>
+    	<offer name="90 days of Premium Time" description="90 days of premium time." price="400" state="sale" type="premiumtime" days="90" icons="premium90sale.png"/>
+    </category>
+	<category name="Decorations" description="make your house look fabulous" icons="furniture_category.png" >
+ 		<offer name="Gilded Imbuing Shrine" description="Buy an incredible Gilded Imbuing Shrine to decorate your home." type="wrapitem" productid="27838" count="1" price="200" icons="o27838.png" />
+		<offer name="Imbuing Shrine" description="Buy an incredible Imbuing Shrine to decorate your home." type="wrapitem" productid="27830" count="1" price="150" icons="o27930.png" />
+		<offer name="Magnificent Cabinet" description="Buy an incredible Magnificent Cabinet to decorate your home." type="wrapitem" productid="26075" count="1" price="100" icons="o26075.png" />
+		<offer name="Magnificent chair" description="Buy an incredible Magnificent chair to decorate your home." type="wrapitem" productid="26059" count="1" price="60" icons="o26059.png" />
+		<offer name="Magnificent Trunk" description="Buy an incredible Magnificent Trunk to decorate your home." type="wrapitem" productid="26083" count="1" price="70" icons="o26083.png" />
+		<offer name="Magnificent Table" description="Buy an incredible Magnificent Table to decorate your home." type="wrapitem" productid="26073" count="1" price="60" icons="o26073.png" />
+		<offer name="Ferocious Cabinet" description="Buy an incredible Ferocious Cabinet to decorate your home." type="wrapitem" productid="26077" count="1" price="110" icons="o26077.png" />
+		<offer name="Ferocious Chair" description="Buy an incredible Ferocious Chair to decorate your home." type="wrapitem" productid="26063" count="1" price="50" icons="o26063.png" />
+		<offer name="Ferocious Trunk" description="Buy an incredible Ferocious Trunk to decorate your home." type="wrapitem" productid="26079" count="1" price="80" icons="o26079.png" />
+		<offer name="Ferocious Table" description="Buy an incredible Ferocious Table to decorate your home." type="wrapitem" productid="26067" count="1" price="50" icons="o26067.png" />
+		<offer name="Rustic Cabinet" description="Buy an incredible Rustic Cabinet to decorate your home." type="wrapitem" productid="26356" count="1" price="100" icons="o26356.png" />
+		<offer name="Rustic Chair" description="Buy an incredible Rustic Chair to decorate your home." type="wrapitem" productid="26349" count="1" price="50" icons="o26349.png" />
+		<offer name="Rustic Trunk" description="Buy an incredible Rustic Trunk to decorate your home." type="wrapitem" productid="26358" count="1" price="80" icons="o26358.png" />
+		<offer name="Rustic Table" description="Buy an incredible Rustic Table to decorate your home." type="wrapitem" productid="26354" count="1" price="50" icons="o26354.png" />
+		<offer name="vengothic cabinet" description="Buy an incredible Vengothic Cabinet to decorate your home." type="wrapitem" productid="27901" count="1" price="100" icons="o27901.png" />
+		<offer name="Vengothic Chair" description="Buy an incredible Vengothic Chair to decorate your home." type="wrapitem" productid="27895" count="1" price="50" icons="o27895.png" />
+		<offer name="Vengothic Chest" description="Buy an incredible Vengothic Chest to decorate your home." type="wrapitem" productid="27903" count="1" price="80" icons="o27903.png" />
+		<offer name="Vengothic Table" description="Buy an incredible Vengothic Table to decorate your home." type="wrapitem" productid="27899" count="1" price="50" icons="o27899.png" />
+		<offer name="Bitter-Smack Leaf" description="Buy an incredible Bitter-Smack Leaf to decorate your home." type="wrapitem" productid="27891" count="1" price="50" icons="o27891.png" />
+		<offer name="Blooming Cactus" description="Buy an incredible Blooming Cactus to decorate your home." type="wrapitem" productid="27890" count="1" price="50" icons="o27890.png" />
+		<offer name="Pink Roses" description="Buy an incredible Pink Roses to decorate your home." type="wrapitem" productid="27892" count="1" price="50" icons="o27892.png" />
+		<offer name="Red Roses" description="Buy an incredible Red Roses to decorate your home." type="wrapitem" productid="27893" count="1" price="50" icons="o27893.png" />
+		<offer name="Yellow Roses" description="Buy an incredible Yellow Roses to decorate your home." type="wrapitem" productid="27894" count="1" price="50" icons="o27894.png" />
+		<offer name="Yalaharian Carpet" description="Buy an incredible Yalaharian Carpet to decorate your home." type="wrapitem" productid="26087" count="1" price="35" icons="o26087.png" />
+		<offer name="5x Yalaharian Carpet" description="Buy an incredible Yalaharian Carpet to decorate your home." type="wrapitem" productid="26087" count="5" price="175" icons="o26087.png" />
+		<offer name="White Fur Carpet" description="Buy an incredible White Fur Carpet to decorate your home." type="wrapitem" productid="26088" count="1" price="30" icons="o26088.png" />
+		<offer name="5x White Fur Carpet" description="Buy an incredible White Fur Carpet to decorate your home." type="wrapitem" productid="26088" count="5" price="150" icons="o26088.png" />
+		<offer name="Bamboo Mat" description="Buy an incredible Bamboo Mat to decorate your home." type="wrapitem" productid="26089" count="1" price="25" icons="o26089.png" />
+		<offer name="5x Bamboo Mat" description="Buy an incredible Bamboo Mat to decorate your home." type="wrapitem" productid="26089" count="5" price="125" icons="o26089.png" />
+		<offer name="Crimson Carpet" description="Buy an incredible Crimson Carpet to decorate your home." type="wrapitem" productid="26363" count="1" price="35" icons="o26363.png" />
+		<offer name="5x Crimson Carpet" description="Buy an incredible Crimson Carpet to decorate your home." type="wrapitem" productid="26363" count="5" price="175" icons="o26363.png" />
+		<offer name="Azure Carpet" description="Buy an incredible Azure Carpet to decorate your home." type="wrapitem" productid="26366" count="1" price="35" icons="o26366.png" />
+		<offer name="5x Azure Carpet" description="Buy an incredible Azure Carpet to decorate your home." type="wrapitem" productid="26366" count="5" price="175" icons="o26366.png" />
+		<offer name="Emerald Carpet" description="Buy an incredible Emerald Carpet to decorate your home." type="wrapitem" productid="26367" count="1" price="30" icons="o26367.png" />
+		<offer name="5x Emerald Carpet" description="Buy an incredible Emerald Carpet to decorate your home." type="wrapitem" productid="26367" count="5" price="175" icons="o26367.png" />
+		<offer name="Light Parquet" description="Buy an incredible Light Parquet to decorate your home." type="wrapitem" productid="26368" count="1" price="30" icons="o26368.png" />
+		<offer name="5x Light Parquet" description="Buy an incredible Light Parquet to decorate your home." type="wrapitem" productid="26368" count="5" price="150" icons="o26368.png" />
+		<offer name="Dark Parquet" description="Buy an incredible Dark Parquet to decorate your home." type="wrapitem" productid="26369" count="1" price="30" icons="o26369.png" />
+		<offer name="5x Dark Parquet" description="Buy an incredible Dark Parquet to decorate your home." type="wrapitem" productid="26369" count="5" price="150" icons="o26369.png" />
+		<offer name="Flowery Carpet" description="Buy an incredible Flowery Carpet to decorate your home." type="wrapitem" productid="27072" count="1" price="35" icons="o27072.png" />
+		<offer name="5x Flowery Carpet" description="Buy an incredible Flowery Carpet to decorate your home." type="wrapitem" productid="27072" count="5" price="175" icons="o27072.png" />
+		<offer name="Colourful Carpet" description="Buy an incredible Colourful Carpet to decorate your home." type="wrapitem" productid="27081" count="1" price="35" icons="o27081.png" />
+		<offer name="5x Colourful Carpet" description="Buy an incredible 5x Colourful Carpet to decorate your home." type="wrapitem" productid="27081" count="5" price="175" icons="o27081.png" />
+		<offer name="Striped Carpet" description="Buy an incredible Striped Carpet to decorate your home." type="wrapitem" productid="27074" count="1" price="35" icons="o27074.png" />
+		<offer name="5x Striped Carpet" description="Buy an incredible Striped Carpet Carpet to decorate your home." type="wrapitem" productid="27074" count="5" price="175" icons="o27074.png" />
+		<offer name="Patterned Carpet" description="Buy an incredible Patterned Carpet to decorate your home." type="wrapitem" productid="27077" count="1" price="30" icons="o27077.png" />
+		<offer name="5x Patterned Carpet" description="Buy an incredible Patterned Carpet Carpet to decorate your home." type="wrapitem" productid="27077" count="5" price="150" icons="o27077.png" />
+		<offer name="Marble Floor" description="Buy an incredible Marble Floor to decorate your home." type="wrapitem" productid="26370" count="1" price="30" icons="o26370.png" />
+		<offer name="5x Marble Floor" description="Buy an incredible Marble Floor to decorate your home." type="wrapitem" productid="26370" count="5" price="150" icons="o26370.png" />
+		<offer name="Fish Tank" description="Buy an incredible Fish Tank to decorate your home." type="wrapitem" productid="26347" count="1" price="180" icons="o26347.png" />
+		<offer name="Dog House" description="Buy an incredible Dog House to decorate your home." type="wrapitem" productid="26353" count="1" price="150" icons="o26353.png" />
+		<offer name="Baby Dragon" description="Buy an incredible Baby Dragon to decorate your home." type="wrapitem" productid="26098" count="1" price="250" icons="o26098.png" />
+		<offer name="Cat in a Basket" description="Buy an incredible Cat in a Basket to decorate your home." type="wrapitem" productid="26107" count="1" price="150" icons="o26107.png" />
+		<offer name="Hamster in a Wheel" description="Buy an incredible Hamster in a Wheel to decorate your home." type="wrapitem" productid="26100" count="1" price="180" icons="o26100.png" />
+		<offer name="Parrot" description="Buy an incredible Parrot to decorate your home." type="wrapitem" productid="27088" count="1" price="180" icons="o27088.png" />
+		<offer name="Chamaleon" description="Buy an incredible Chamaleon to decorate your home." type="wrapitem" productid="27887" count="1" price="250" icons="o27887.png" />
+		<offer name="Protectress Lamp" description="Buy an incredible Protectress Lamp to decorate your home." type="wrapitem" productid="26094" count="1" price="90" icons="o26084.png" />
+		<offer name="Predator Lamp" description="Buy an incredible Predator Lamp to decorate your home." type="wrapitem" productid="26090" count="1" price="60" icons="o26090.png" />
+		<offer name="Skull Lamp" description="Buy an incredible Skull Lamp to decorate your home." type="wrapitem" productid="27090" count="1" price="90" icons="o27090.png" />
+		<offer name="Vengothic Lamp" description="Buy an incredible Vengothic Lamp to decorate your home." type="wrapitem" productid="27884" count="1" price="180" icons="o27884.png" />
+		<offer name="Ornate Mailbox" description="Buy an incredible Ornate Mailbox to decorate your home." type="wrapitem" productid="26057" count="1" price="200" icons="o26057.png" />
+		<offer name="Royal Mailbox" description="Buy an incredible Royal Mailbox to decorate your home." type="wrapitem" productid="26055" count="1" price="150" icons="o26055.png" />
+		<offer name="Lordly Tapestry" description="Buy an incredible Lordly Tapestry to decorate your home." type="wrapitem" productid="26104" count="1" price="50" icons="o26104.png" />
+		<offer name="5x Lordly Tapestry" description="Buy an incredible Lordly Tapestry to decorate your home." type="wrapitem" productid="26104" count="1" price="250" icons="o26104.png" />
+		<offer name="Menacing Tapestry" description="Buy an incredible Menacing Tapestry to decorate your home." type="wrapitem" productid="26105" count="1" price="70" icons="o26105.png" />
+		<offer name="5x Menacing Tapestry" description="Buy an incredible Menacing Tapestry to decorate your home." type="wrapitem" productid="26105" count="1" price="350" icons="o26105.png" />
+		<offer name="All-Seeing Tapestry" description="Buy an incredible All-Seeing Tapestry to decorate your home." type="wrapitem" productid="26106" count="1" price="60" icons="o26106.png" />
+		<offer name="5x All-Seeing Tapestry" description="Buy an incredible All-Seeing Tapestry to decorate your home." type="wrapitem" productid="26106" count="5" price="300" icons="o26106.png" />
+		<offer name="Golden Dragon Tapestry" description="Buy an incredible Golden Dragon Tapestry to decorate your home." type="wrapitem" productid="26379" count="1" price="70" icons="o26379.png" />
+		<offer name="5x Golden Dragon Tapestry" description="Buy an incredible Golden Dragon Tapestry to decorate your home." type="wrapitem" productid="26379" count="5" price="350" icons="o26379.png" />
+		<offer name="Sword Tapestry" description="Buy an incredible Sword Tapestry to decorate your home." type="wrapitem" productid="26380" count="1" price="60" icons="o26380.png" />
+		<offer name="5x Sword Tapestry" description="Buy an incredible Sword Tapestry to decorate your home." type="wrapitem" productid="26380" count="5" price="300" icons="o26380.png" />
+		<offer name="Brocade Tapestry" description="Buy an incredible Brocade Tapestry to decorate your home." type="wrapitem" productid="26381" count="1" price="50" icons="o26381.png" />
+		<offer name="5x Brocade Tapestry" description="Buy an incredible Brocade Tapestry to decorate your home." type="wrapitem" productid="26381" count="5" price="250" icons="o26381.png" />
+ 	</category>
 </gamestore>
+
