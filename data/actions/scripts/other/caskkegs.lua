@@ -3,10 +3,10 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local itemId = item:getId()
 	local charges = target:getCharges()
 	local house = player:getTile():getHouse()
-	
+	local pot = false
 	if house and house:canEditAccessList(SUBOWNER_LIST, player) and house:canEditAccessList(doorId, player) or targetId >= 28577 then 
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Sorry, You are out of your house.')
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Sorry, casks only can be useds inside house.')
 		return false
 	end
 
@@ -16,48 +16,50 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		return false
 	end
 --health potions casks
-		if targetId == 28553 or targetId == 28577 and itemId == 7636 then
-		item:transform(7618)
+		if itemId == 7636 and targetId == 28553 or targetId == 28577 then
+		pot = 7618
 		end
-		if targetId == 28554 or targetId == 28578 and itemId == 7634 then
-		item:transform(7588)
+		if itemId == 7634 and targetId == 28554 or targetId == 28578 then
+		pot = 7588
 		end
-		if targetId == 28555 or targetId == 28579 and itemId == 7635 then
-		item:transform(7591)
+		if itemId == 7635 and targetId == 28555 or targetId == 28579 then
+		pot = 7591
 		end
-		if targetId == 28556 or targetId == 28580 and itemId == 7635 then
-		item:transform(8473)
+		if itemId == 7635 and targetId == 28556 or targetId == 28580 then
+		pot = 8473
 		end
-		if targetId == 28557 or targetId == 28581 and itemId == 7635 then
-		item:transform(26031)
+		if itemId == 7635 and targetId == 28557 or targetId == 28581 then
+		pot = 26031
 		end
 --mana potions casks
-		if targetId == 28563 or targetId == 28582 and itemId == 7636 then
-		item:transform(7620)
+		if itemId == 7636 and targetId == 28563 or targetId == 28582 then
+		pot = 7620
 		end
-		if targetId == 28564 or targetId == 28583 and itemId == 7634 then
-		item:transform(7589)
+		if itemId == 7634 and targetId == 28564 or targetId == 28583 then
+		pot = 7589
 		end
-		if targetId == 28565 or targetId == 28584 and itemId == 7635 then
-		item:transform(7590)
+		if itemId == 7635 and targetId == 28565 or targetId == 28584 then
+		pot = 7590
 		end
-		if targetId == 28566 or targetId == 28585 and itemId == 7635 then
-		item:transform(26029)
+		if itemId == 7635 and targetId == 28566 or targetId == 28585 then
+		pot = 26029
 		end
 --spirit potions caks
-		if targetId == 28573 or targetId == 28587 and itemId == 7635 then
-		item:transform(8472)
+		if itemId == 7635 and targetId == 28573 or targetId == 28587 then
+		pot = 8472
 		end
-		if targetId == 28574 or targetId == 28588 and itemId == 7635 then
-		item:transform(26030)
+		if itemId == 7635 and targetId == 28574 or targetId == 28588 then
+		pot = 26030
 		end
-
+		if pot then
+		item:transform(pot)
 		charges = charges - item:getCount()
 		target:transform(targetId, charges)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format('Remaining %s charges.', charges))
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format('Remaining %s charges.', charges)) 
 		
 		if charges == 0 then
 		target:remove()
+		end
 		end
 	
 	return true
