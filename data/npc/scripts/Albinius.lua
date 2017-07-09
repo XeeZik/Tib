@@ -48,19 +48,6 @@ if msgcontains(msg, "tomes") then
 end
 
 
-	if msgcontains(msg, "temple") then
-		npcHandler:say(" The temple has been restored to its former glory, yet we strife to live and praise in the {Shaper} ways. Do you still need me to take some old {tomes} from you my child?", cid)
-		npcHandler.topic[cid] = 10
-	elseif msgcontains(msg, "yes") and npcHandler.topic[cid] == 10 then
-		if player:removeItem(26642,5) then
-			player:setStorageValue(50730, 1)
-			npcHandler:say("Thank you very much for your contributions, child. Your first step in the ways of the {Shapers} has been taken.", cid)
-		else
-			npcHandler:say("Oh, well I am sorry but without any {Shaper} wisdom to contribute to our community, there is not much you can do to help us. To support us, aquire some {tomes} the Shapers left behind.", cid)
-		end
-		npcHandler.topic[cid] = 0
-end
-			
 	local talkUser = NPCHANDLER_CONVBEHAVIOR == CONVERSATION_DEFAULT and 0 or cid
 		local player = Player(cid)
 
@@ -80,6 +67,15 @@ end
 							 player:setStorageValue(items.item2[2], counts.count1[2])
                     else
                               selfSay('You need '.. counts.count1[1] ..' '.. getItemName(items.item2[1]) ..'.', cid)
+                    end
+
+					elseif msgcontains(msg, 'temple') then
+		  if player:getStorageValue(cid, 50730) <= 0 then
+                              doPlayerRemoveItem(cid, 26642,5)
+                              selfSay('Excellente! Now you can use the imbuing shrines.', cid)
+							 player:setStorageValue(50730, 1)
+                    else
+                              selfSay('You need 5 '.. getItemName(26642) ..'.', cid)
                     end
 
 					elseif msgcontains(msg, 'earth portal') then
@@ -111,7 +107,6 @@ end
  				
 					
 end
-		  selfSay('You already have access to teleport.', cid)
           return TRUE
 end  
 
