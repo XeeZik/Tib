@@ -1,19 +1,12 @@
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 NpcSystem.parseParameters(npcHandler)
-
-function onCreatureAppear(cid)			npcHandler:onCreatureAppear(cid)			end
-function onCreatureDisappear(cid)		npcHandler:onCreatureDisappear(cid)			end
-function onCreatureSay(cid, type, msg)		npcHandler:onCreatureSay(cid, type, msg)		end
-function onThink()		npcHandler:onThink()		end
-
-local voices = {
-	{ text = 'Walk in the light of Shaper wisdom!'},
-	{ text = 'Welcome, my child.' },
-	{ text = 'Our ways are the ways of the Shapers.' }
-}
-
-npcHandler:addModule(VoiceModule:new(voices))
+local talkState = {}
+ 
+function onCreatureAppear(cid)    npcHandler:onCreatureAppear(cid)   end
+function onCreatureDisappear(cid)   npcHandler:onCreatureDisappear(cid)   end
+function onCreatureSay(cid, type, msg)   npcHandler:onCreatureSay(cid, type, msg)  end
+function onThink()     npcHandler:onThink()     end
 
 local items = {
           item1 = {12437, 50731}, -- item1 e storage dado
@@ -27,6 +20,16 @@ local items = {
 local counts = {
           count1 = {50, 1}		 
 }
+
+local voices = {
+	{ text = 'Walk in the light of Shaper wisdom!'},
+	{ text = 'Welcome, my child.' },
+	{ text = 'Our ways are the ways of the Shapers.' }
+}
+
+npcHandler:addModule(VoiceModule:new(voices))
+
+
 
 local function creatureSayCallback(cid, type, msg)
 	if not npcHandler:isFocused(cid) then
@@ -58,7 +61,8 @@ end
 			npcHandler:say("Oh, well I am sorry but without any {Shaper} wisdom to contribute to our community, there is not much you can do to help us. To support us, aquire some {tomes} the Shapers left behind.", cid)
 		end
 		npcHandler.topic[cid] = 0
-	   end
+end
+			
 
           if msgcontains(msg, 'death portal') then
 		  if player:getStorageValue(cid, items.item1[2]) <= 0 then 
@@ -78,27 +82,27 @@ end
                     else
                               selfSay('You need '.. counts.count1[1] ..' '.. getItemName(items.item2[1]) ..'.', cid)
                     end
-          elseif msgcontains(msg, 'earth portal') then
-		  if player:getStorageValue(cid, items.item3[2]) <= 0 then 
-                    if getPlayerItemCount(cid, items.item3[1]) >= counts.count1[1] then
+
+					elseif msgcontains(msg, 'earth portal') then
+		  if player:getStorageValue(cid, items.item3[2]) <= 0 and getPlayerItemCount(cid, items.item3[1]) >= counts.count1[1] then
                               doPlayerRemoveItem(cid, items.item3[1], counts.count1[1])
                               selfSay('Excellente! Now you can pass in the teleport.', cid)
 							 player:setStorageValue(items.item3[2], counts.count1[2])
                     else
-                              selfSay('You need '.. counts.count1[1] ..' '.. getItemName(items.item2[1]) ..'.', cid)
+                              selfSay('You need '.. counts.count1[1] ..' '.. getItemName(items.item3[1]) ..'.', cid)
                     end
-          elseif msgcontains(msg, 'holy portal') then
-		  if player:getStorageValue(cid, items.item4[2]) <= 0 then 
-                    if getPlayerItemCount(cid, items.item4[1]) >= counts.count1[1] then
+
+					elseif msgcontains(msg, 'ice portal') then
+		  if player:getStorageValue(cid, items.item4[2]) <= 0 and getPlayerItemCount(cid, items.item4[1]) >= counts.count1[1] then
                               doPlayerRemoveItem(cid, items.item4[1], counts.count1[1])
                               selfSay('Excellente! Now you can pass in the teleport.', cid)
 							 player:setStorageValue(items.item4[2], counts.count1[2])
                     else
                               selfSay('You need '.. counts.count1[1] ..' '.. getItemName(items.item4[1]) ..'.', cid)
                     end
-          elseif msgcontains(msg, 'energy portal') then
-		  if player:getStorageValue(cid, items.item5[2]) <= 0 then 
-                    if getPlayerItemCount(cid, items.item5[1]) >= counts.count1[1] then
+
+					elseif msgcontains(msg, 'holy portal') then
+		  if player:getStorageValue(cid, items.item5[2]) <= 0 and getPlayerItemCount(cid, items.item5[1]) >= counts.count1[1] then
                               doPlayerRemoveItem(cid, items.item5[1], counts.count1[1])
                               selfSay('Excellente! Now you can pass in the teleport.', cid)
 							 player:setStorageValue(items.item5[2], counts.count1[2])
@@ -107,17 +111,10 @@ end
                     end
  				
 					
-          end
+end
 		  selfSay('You already have access to teleport.', cid)
           return TRUE
-end	   
-	   
-
 end  
-end
-end
-end
-end
 
 
 keywordHandler:addKeyword({'job'}, StdModule.say, {npcHandler = npcHandler, text = "I find ways to unveil the secrets of the stars. Judging by this question, I doubt you follow my weekly publications concerning this research."})

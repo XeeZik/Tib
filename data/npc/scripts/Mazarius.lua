@@ -22,7 +22,7 @@ function creatureSayCallback(cid, type, msg)
                     return false
           end
           local talkUser = NPCHANDLER_CONVBEHAVIOR == CONVERSATION_DEFAULT and 0 or cid
-local player = Player(cid)
+			local player = Player(cid)
           if msgcontains(msg, 'demonic essence') or msgcontains(msg, 'short') then
 		  if player:getStorageValue(88419) <= 0 then 
                     if getPlayerItemCount(cid, items.item1[1]) >= counts.count1[1] then
