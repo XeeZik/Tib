@@ -1,8 +1,8 @@
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	if not player:hasMount(87) then
-		player:addMount(87)
+	if not player:hasMount(94) then
+		player:addMount(94)
 		item:remove(1)
-		player:say("You receive the permission to ride a rift runner.", TALKTYPE_MONSTER_SAY)
+		player:say("You receive the permission to ride a sparkion.", TALKTYPE_MONSTER_SAY)
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 	else
 		player:sendCancelMessage("You already have this mount.")
