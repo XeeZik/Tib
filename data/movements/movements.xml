@@ -32,8 +32,25 @@
 	<movevent event="StepIn" actionid="55024" script="quests/chayenne realm quest/enterRealm.lua" />
 	<movevent event="StepIn" fromaid="13400" toaid="13413" script="others/movimentos.lua" />
 	<movevent event="StepIn" fromaid="13415" toaid="13428" script="others/movimentos1.lua" />
-	<movevent event="StepIn" fromaid="13429" toaid="13442" script="others/movimentos2.lua" />
 	<movevent event="StepIn" fromaid="13510" toaid="13529" script="others/movimento1094.lua" />
+
+		<!-- Halls of Hope -->	
+	<movevent event="StepIn" actionid="13429" script="teleportpreto.lua"/>
+	<movevent event="StepIn" actionid="13431" script="teleportvioleta.lua"/>
+	<movevent event="StepIn" actionid="13433" script="teleportverde.lua"/>
+	<movevent event="StepIn" actionid="13435" script="teleportlaranja.lua"/>
+	<movevent event="StepIn" actionid="13437" script="teleportazul.lua"/>
+	<movevent event="StepIn" actionid="13439" script="teleportdourado.lua"/>
+	<movevent event="StepIn" actionid="13441" script="teleportcentral.lua"/>
+
+	
+	<movevent event="StepIn" actionid="13430" script="others/movimentos1.lua"/>
+	<movevent event="StepIn" actionid="13432" script="others/movimentos2.lua"/>
+	<movevent event="StepIn" actionid="13434" script="others/movimentos2.lua"/>
+	<movevent event="StepIn" actionid="13436" script="others/movimentos2.lua"/>
+	<movevent event="StepIn" actionid="13438" script="others/movimentos2.lua"/>
+	<movevent event="StepIn" actionid="13440" script="others/movimentos2.lua"/>
+	<movevent event="StepIn" actionid="13442" script="others/movimentos2.lua"/>
 
 	<!-- BOSS WARZONE -->
 	<movevent event="StepIn" fromaid="45700" toaid="45702" script="warzone157.lua" />
