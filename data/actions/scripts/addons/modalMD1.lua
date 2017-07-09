@@ -1,13 +1,12 @@
-function onUse(cid, item, fromPosition, itemEx, toPosition, isHotkey)
-local player = Player(cid)
-if not player:hasMount(87) then
-player:addMount(87)
-player:getPosition():sendMagicEffect(15)
-item:remove(1)
-doCreatureSay(cid, "You receive the permission to ride a rift runner.", TALKTYPE_ORANGE_1)
-else
-player:getPosition():sendMagicEffect(3)
-player:sendTextMessage(MESSAGE_INFO_DESCR, "You already have this mount.")
-end
-return true
+function onUse(player, item, fromPosition, target, toPosition, isHotkey)
+	if not player:hasMount(87) then
+		player:addMount(87)
+		item:remove(1)
+		player:say("You receive the permission to ride a rift runner.", TALKTYPE_MONSTER_SAY)
+		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
+	else
+		player:sendCancelMessage("You already have this mount.")
+		player:getPosition():sendMagicEffect(CONST_ME_POFF)
+	end
+	return true
 end
