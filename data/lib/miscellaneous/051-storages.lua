@@ -917,6 +917,18 @@ Storage = {
 	FountainOfLife = 50572,
 	KnightwatchTowerDoor = 9054,
 
+	-- Forgotten Knowledge Quest
+	
+	ImbuingShrine = 50730,
+	CircleoftheBlackSphinx = 50731,
+	BaneofTheCosmicForce = 50732,
+	TheDesecratedGlade = 50733,
+	TheUnwaryMage = 50734,
+	DragoninDistress = 50735,
+	TimeisaWindow = 50736,
+	LastPortal = 50737,
+	
+	
 	RookgaardHints = 50700,
 	RookgaardDestiny = 50701,
 

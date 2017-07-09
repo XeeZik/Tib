@@ -44,7 +44,7 @@
 	<movevent event="StepIn" actionid="13441" script="teleportcentral.lua"/>
 
 	
-	<movevent event="StepIn" actionid="13430" script="others/movimentos1.lua"/>
+	<movevent event="StepIn" actionid="13430" script="others/movimentos2.lua"/>
 	<movevent event="StepIn" actionid="13432" script="others/movimentos2.lua"/>
 	<movevent event="StepIn" actionid="13434" script="others/movimentos2.lua"/>
 	<movevent event="StepIn" actionid="13436" script="others/movimentos2.lua"/>
