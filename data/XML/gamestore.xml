@@ -130,7 +130,6 @@
 		<offer name="Chameleon Rune" description="Fool your friends with an item outfit!" price="10" type="stackableitem" productid="2291" count="100" icons="chameleon_rune.png" />
 	</category>
 	<category name="Outfits" description="Look cooler!" state="sale" icons="Category_Outfits.png">
-	
 		<offer name="Arena Champion" description="" type="outfit" addon="3" malelooktype="884" femalelooktype="885" price="30" icons="f884.png" />
 		<offer name="Sea Dog" description="" type="outfit" addon="3" malelooktype="750" femalelooktype="749" price="15" icons="f750.png" />
 		<offer name="Assassin" description="" type="outfit" addon="3" malelooktype="152" femalelooktype="156" price="20" state="new" icons="f152.png" />
