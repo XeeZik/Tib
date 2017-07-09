@@ -36,8 +36,6 @@ local function creatureSayCallback(cid, type, msg)
 		return false
 	end
 
-	local player = Player(cid)
-
        if msgcontains(msg, "shaper") then
 				npcHandler:say({
 				"The {Shapers} were an advanced civilisation, well versed in art, construction, language and exploration of our world in their time. ...",
@@ -63,19 +61,20 @@ end
 		npcHandler.topic[cid] = 0
 end
 			
+	local talkUser = NPCHANDLER_CONVBEHAVIOR == CONVERSATION_DEFAULT and 0 or cid
+		local player = Player(cid)
 
-          if msgcontains(msg, 'death portal') then
-		  if player:getStorageValue(cid, items.item1[2]) <= 0 then 
-                    if getPlayerItemCount(cid, items.item1[1]) >= counts.count1[1] then
+	    if msgcontains(msg, 'death portal') then
+		  if player:getStorageValue(cid, items.item1[2]) <= 0 and getPlayerItemCount(cid, items.item1[1]) >= counts.count1[1] then
                               doPlayerRemoveItem(cid, items.item1[1], counts.count1[1])
                               selfSay('Excellente! Now you can pass in the teleport.', cid)
 							 player:setStorageValue(items.item1[2], counts.count1[2])
                     else
                               selfSay('You need '.. counts.count1[1] ..' '.. getItemName(items.item1[1]) ..'.', cid)
                     end
-          elseif msgcontains(msg, 'ice portal') then
-		  if player:getStorageValue(cid, items.item2[2]) <= 0 then 
-                    if getPlayerItemCount(cid, items.item2[1]) >= counts.count1[1] then
+
+					elseif msgcontains(msg, 'energy portal') then
+		  if player:getStorageValue(cid, items.item2[2]) <= 0 and getPlayerItemCount(cid, items.item2[1]) >= counts.count1[1] then
                               doPlayerRemoveItem(cid, items.item2[1], counts.count1[1])
                               selfSay('Excellente! Now you can pass in the teleport.', cid)
 							 player:setStorageValue(items.item2[2], counts.count1[2])
