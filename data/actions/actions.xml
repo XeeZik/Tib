@@ -270,7 +270,7 @@
 	<action itemid="23810" script="other/taming.lua" />
 	<action itemid="23557" script="other/taming.lua" />
 	<action itemid="24763" script="addons/modalMD1.lua"/>
-	<action itemid="26194" script="addons/VibrantEgg.lua"/>
+	<action itemid="26194" script="addons/vibrantegg.lua"/>
 
 	<!-- insectoid cell -->
 	<action actionid="61611" script="insectoid cell/insectoidcell.lua" />
