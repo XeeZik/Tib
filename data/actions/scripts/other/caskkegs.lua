@@ -16,9 +16,8 @@ local targetIdList = {
  }
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	local house = player:getTile():getHouse()
-	local pot = false
 
+	local house = player:getTile():getHouse()
 	if house and house:canEditAccessList(SUBOWNER_LIST, player) and house:canEditAccessList(doorId, player) or targetId >= 28577 then 
 	else
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Sorry, casks only can be useds inside house.')
