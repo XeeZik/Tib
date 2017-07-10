@@ -1704,6 +1704,12 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
+	<!-- sword of carving (overcharged) -->
+	<movevent event="DeEquip" itemid="26270" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="26270" slot="hand" level="250" function="onEquipItem">
+		<vocation name="Knight" />
+		<vocation name="Elite Knight" showInDescription="0" />
+	</movevent>
 	<!-- slayer of carving -->
 	<movevent event="DeEquip" itemid="25963" slot="hand" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="25963" slot="hand" level="250" function="onEquipItem">
@@ -2492,8 +2498,8 @@
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
 	<!-- sword of carvin (overcharged) -->
-	<movevent event="DeEquip" itemid="26270" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="26270" slot="hand" level="200" function="onEquipItem">
+	<movevent event="DeEquip" itemid="27760" slot="hand" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="27760" slot="hand" level="200" function="onEquipItem">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
