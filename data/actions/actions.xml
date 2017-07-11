@@ -396,6 +396,9 @@
 	<action actionid="50254" script="vagao/vagao.lua" />
 	<action actionid="50248" script="vagao/vagao.lua" />
 
+	<!-- BK -->
+	<action actionid="50258" script="quests/bkquest.lua" />
+
 	<!-- Gravedigger -->
 	<action actionid="4630" script="quests/gravedigger/amforas.lua" />
 	<action actionid="4631" script="quests/gravedigger/brain.lua" />
