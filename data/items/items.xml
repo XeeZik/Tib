@@ -5876,6 +5876,14 @@
 		<attribute key="weight" value="800" />
 		<attribute key="description" value="It is of dark blue and turquoise colour and pulses steadily. It seems that something is moving inside." />
 	</item>
+	<item id="26340" article="a" name="crackling egg">
+		<attribute key="weight" value="800" />
+		<attribute key="description" value="It is of unnerving, greenish colour and pulses steadily. It seems that something is moving inside." />
+	</item>
+	<item id="26341" article="a" name="menacing egg">
+		<attribute key="weight" value="800" />
+		<attribute key="description" value="It is of foreboding, reddish colour and pulses steadily. You have the feeling that something dangerous is moving inside." />
+	</item>
 	<item id="26192" article="a" name="folded void carpet">
 		<attribute key="weight" value="1000" />
 		<attribute key="description" value="This carpet is extremely soft to the touch - and forever will be." />
