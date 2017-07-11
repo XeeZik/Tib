@@ -2,7 +2,7 @@
 local config = {
 	[0] = {
 		--club, coat
-		items = {{2398, 1}, {2651, 1}, {2643, 1}, {2530, 1}},
+		items = {},
 		--container rope, shovel, red apple
 		container = {{2120, 1}}
 	},	
@@ -46,7 +46,7 @@ function onLogin(player)
 		player:addItem(targetVocation.items[i][1], targetVocation.items[i][2])
 	end
 
-	local backpack = player:getVocation():getId() == 0 and player:addItem(1987) or player:addItem(1988)
+	local backpack = player:getVocation():getId() == 0 and player:addItem(1988) or player:addItem(1988)
 	if not backpack then
 		return true
 	end

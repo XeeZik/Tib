@@ -10,7 +10,18 @@ local config = {
 	towns = {
 		["venore"] = 1,
 		["thais"] = 2,
-		["carlin"] = 4
+		["kazordoon"] = 3,
+		["carlin"] = 4,
+		["ab dendriel"] = 5,
+		["abdendriel"] = 5,
+		["ab'dendriel"] = 5,
+		["liberty bay"] = 7,
+		["port hope"] = 8,
+		["ankrahmun"] = 9,
+		["darashia"] = 10,
+		["edron"] = 11,
+		["svargrond"] = 12,
+		["yalahar"] = 13
 	},
 
 	vocations = {
@@ -82,7 +93,7 @@ local function creatureSayCallback(cid, type, msg)
 	local player = Player(cid)
 	if npcHandler.topic[cid] == 0 then
 		if msgcontains(msg, "yes") then
-			npcHandler:say("IN WHICH TOWN DO YOU WANT TO LIVE: {CARLIN}, {THAIS}, OR {VENORE}?", cid)
+			npcHandler:say("IN WHICH TOWN DO YOU WANT TO LIVE: {CARLIN}, {THAIS}, {VENORE}, {KAZORDOON}, {AB'DENDRIEL}, {LIBERTY BAY}, {PORT HOPE}, {ANKRAHMUN}, {DARASHIA}, {EDRON}, {SVARGROND} OR {YALAHAR}?", cid)
 			npcHandler.topic[cid] = 1
 		end
 	elseif npcHandler.topic[cid] == 1 then
@@ -92,7 +103,7 @@ local function creatureSayCallback(cid, type, msg)
 			npcHandler:say("IN ".. string.upper(msg) .."! AND WHAT PROFESSION HAVE YOU CHOSEN: {KNIGHT}, {PALADIN}, {SORCERER}, OR {DRUID}?", cid)
 			npcHandler.topic[cid] = 2
 		else
-			npcHandler:say("IN WHICH TOWN DO YOU WANT TO LIVE: {CARLIN}, {THAIS}, OR {VENORE}?", cid)
+			npcHandler:say("IN WHICH TOWN DO YOU WANT TO LIVE: {CARLIN}, {THAIS}, {VENORE}, {KAZORDOON}, {AB'DENDRIEL}, {LIBERTY BAY}, {PORT HOPE}, {ANKRAHMUN}, {DARASHIA}, {EDRON}, {SVARGROND} OR {YALAHAR}?", cid)
 		end
 	elseif npcHandler.topic[cid] == 2 then
 		local vocationTable = config.vocations[msg:lower()]
