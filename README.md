@@ -2,13 +2,6 @@
 
 Servidor de Tibia mantido por Malucooo. O servidor usa como base Otxserver 3.9 e também TFS 1.3.
 
-# Doações
-
-Se você não sabe como nos ajudar... caso não vá lhe fazer falta e você acha que merecemos, Faça uma Doação!
-
-[Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=PKCURM6TXD772&lc=BR&item_name=OTXServer%)
-  ou  [Pagseguro](https://pag.ae/bbcmcwQ)
-
 # Downloads
 Executaveis compilados [AppVeyor builds for Windows](https://ci.appveyor.com/project/malucooo/otxserver-new)
 
