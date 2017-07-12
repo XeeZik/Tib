@@ -29,7 +29,7 @@ static constexpr auto STATUS_SERVER_DEVELOPERS = "Matt Gomez, Leandro Brewster, 
 static constexpr auto GIT_REPO = "https://github.com/mattyx14/otxserver/tree/otxserv3/";
 
 static constexpr auto CLIENT_VERSION_MIN = 1100;
-static constexpr auto CLIENT_VERSION_MAX = 1300;
+static constexpr auto CLIENT_VERSION_MAX = 1132;
 static constexpr auto CLIENT_VERSION_STR = "10.00 or 11.00";
 
 static constexpr auto AUTHENTICATOR_DIGITS = 6U;
