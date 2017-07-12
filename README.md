@@ -2,12 +2,11 @@
 
 Servidor de Tibia mantido por Malucooo. O servidor usa como base Otxserver 3.9 e também TFS 1.3.
 
+# Tutoriais
+Temos uma Wiki explicando como compilar o servidor [OTXServer Wiki] (https://github.com/malucooo/Otxserver-New/wiki)
+
 # Downloads
 Executaveis compilados [AppVeyor builds for Windows](https://ci.appveyor.com/project/malucooo/otxserver-new)
-
-Client 10.00 Compativel (http://www.mediafire.com/file/571cbbt9cy2y30t/tibia1000.rar)
-
-Client 11 Compativel (http://www.mediafire.com/file/x0q6exqko4y7gvn/Tibia_11.10.rar)
 
 Já funciona a última versão: [Znote AAC](https://github.com/Znote/ZnoteAAC).
 
