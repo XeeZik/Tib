@@ -80,9 +80,12 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 
 	player:addAchievementProgress('Potion Addict', 100000)
-
 	player:addCondition(exhaust)
 	doCreatureSayWithRadius(target, 'Aaaah...', TALKTYPE_MONSTER_SAY, 2, 2)
+	
+	if not configKeys.REMOVE_POTION_CHARGES then
+		return true
+	end
 
 	local topParent = item:getTopParent()
 	if topParent.isItem and (not topParent:isItem() or topParent.itemid ~= 460) then
@@ -98,4 +101,3 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	
 	return true
 end
-
