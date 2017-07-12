@@ -37,7 +37,7 @@ maxPacketsPerSecond = 25
 
 -- Version Manual
 clientVersionMin = 1100
-clientVersionMax = 1130
+clientVersionMax = 1132
 clientVersionStr = "Only clients with protocol 10.00 or 11.00 is allowed!"
 
 -- Depot Limit
