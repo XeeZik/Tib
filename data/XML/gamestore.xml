@@ -122,16 +122,16 @@
 		<offer name="Wild Growth Rune" description="" price="32" type="stackableitem" productid="2269" count="250" icons="2269.png" />
 	</category>
 	<category name="Blessings" description="" state="new" icons="Category_Blessings.png">
-		<offer name="The Spiritual Shielding" type="bless" blessnumber="1" price="30" icons="Product_Blessing_Shielding.png"/>
-		<offer name="The Embrace of World" type="bless" blessnumber="2" price="15" icons="Product_Blessing_Shielding.png"/>
-		<offer name="The Fire of the Suns" type="bless" blessnumber="3" price="15" icons="Product_Blessing_Shielding.png"/>
-		<offer name="The Spark of the Phoenix" type="bless" blessnumber="4" price="20" icons="Product_Blessing_Shielding.png"/>
-		<offer name="The Wisdom of Solitude" type="bless" blessnumber="5" price="15" icons="Product_Blessing_Shielding.png"/>	
+		<offer name="The Spiritual Shielding" type="bless" blessnumber="1" price="30" icons="Product_Blessing_Shielding.png" />
+		<offer name="The Embrace of World" type="bless" blessnumber="2" price="15" icons="Product_Blessing_Shielding.png" />
+		<offer name="The Fire of the Suns" type="bless" blessnumber="3" price="15" icons="Product_Blessing_Shielding.png" />
+		<offer name="The Spark of the Phoenix" type="bless" blessnumber="4" price="20" icons="Product_Blessing_Shielding.png" />
+		<offer name="The Wisdom of Solitude" type="bless" blessnumber="5" price="15" icons="Product_Blessing_Shielding.png" />
 	</category>
 	<category name="Utilitys" description="" state="new" icons="Category_.png">
 		<offer name="Gold Pounch" description="" price="900" type="item" productid="26377" count="1" icons="26377.png" />
 		<offer name="Gold Converter" description="" price="5" type="item" productid="26378" count="1" icons="26378.png" />
-		<offer name="Teleport home" description="Go back to your home temple in an instant." price="20" state="new" type="teleport" icons="Product_Transportation_TempleTeleport.png" />		
+		<offer name="Teleport home" description="Go back to your home temple in an instant." price="20" state="new" type="teleport" icons="Product_Transportation_TempleTeleport.png" />
 	</category>
 	<category name="Outfits" description="Look cooler!" state="new" icons="Category_Outfits.png">
 		<offer name="Full Trophy Hunter Outfits" description="" type="outfit" addon="3" malelooktype="957" femalelooktype="958" price="870" icons="f884.png" />
@@ -222,8 +222,8 @@
 		<offer name="Sea Dog Outfits Addon 1" description="" type="outfit" addon="1" malelooktype="750" femalelooktype="749" price="120" icons="f750.png" />
 		<offer name="Sea Dog Outfits Addon 1" description="" type="outfit" addon="2" malelooktype="750" femalelooktype="749" price="120" icons="f750.png" />
 	</category>
-	<category name="Decorations" description="make your house look fabulous" icons="Category_HouseEquipment.png" >
- 		<offer name="Gilded Imbuing Shrine" description="Buy an incredible Gilded Imbuing Shrine to decorate your home." type="wrapitem" productid="27838" count="1" price="200" icons="o27838.png" />
+	<category name="Decorations" description="make your house look fabulous" icons="Category_HouseEquipment.png">
+		<offer name="Gilded Imbuing Shrine" description="Buy an incredible Gilded Imbuing Shrine to decorate your home." type="wrapitem" productid="27838" count="1" price="200" icons="o27838.png" />
 		<offer name="Imbuing Shrine" description="Buy an incredible Imbuing Shrine to decorate your home." type="wrapitem" productid="27830" count="1" price="150" icons="o27930.png" />
 		<offer name="Magnificent Cabinet" description="Buy an incredible Magnificent Cabinet to decorate your home." type="wrapitem" productid="26075" count="1" price="100" icons="o26075.png" />
 		<offer name="Magnificent chair" description="Buy an incredible Magnificent chair to decorate your home." type="wrapitem" productid="26059" count="1" price="60" icons="o26059.png" />
@@ -297,11 +297,11 @@
 		<offer name="5x Sword Tapestry" description="Buy an incredible Sword Tapestry to decorate your home." type="wrapitem" productid="26380" count="5" price="300" icons="o26380.png" />
 		<offer name="Brocade Tapestry" description="Buy an incredible Brocade Tapestry to decorate your home." type="wrapitem" productid="26381" count="1" price="50" icons="o26381.png" />
 		<offer name="5x Brocade Tapestry" description="Buy an incredible Brocade Tapestry to decorate your home." type="wrapitem" productid="26381" count="5" price="250" icons="o26381.png" />
- 	</category>
-	<category name="Premium Time" description="Buy Premium Time today and get new spells, and access to premium areas!" icons="Category_PremiumTime.png" >
-		<offer name="30 days of Premium Time" description="get a month (30 days) of premium time." price="250" type="premiumtime" days="30" icons="Product_PremiumTime30.png"/>
-		<offer name="90 days of Premium Time" description="90 days of premium time." price="750" state="sale" type="premiumtime" days="90" icons="Product_PremiumTime90.png"/>
-		<offer name="180 days of Premium Time" description="180 days of premium time." price="1500" state="sale" type="premiumtime" days="180" icons="Product_PremiumTime180.png"/>
-		<offer name="360 days of Premium Time" description="360 days of premium time." price="3000" state="sale" type="premiumtime" days="360" icons="Product_PremiumTime360.png"/>
+	</category>
+	<category name="Premium Time" description="Buy Premium Time today and get new spells, and access to premium areas!" icons="Category_PremiumTime.png">
+		<offer name="30 days of Premium Time" description="get a month (30 days) of premium time." price="250" type="premiumtime" days="30" icons="Product_PremiumTime30.png" />
+		<offer name="90 days of Premium Time" description="90 days of premium time." price="750" state="sale" type="premiumtime" days="90" icons="Product_PremiumTime90.png" />
+		<offer name="180 days of Premium Time" description="180 days of premium time." price="1500" state="sale" type="premiumtime" days="180" icons="Product_PremiumTime180.png" />
+		<offer name="360 days of Premium Time" description="360 days of premium time." price="3000" state="sale" type="premiumtime" days="360" icons="Product_PremiumTime360.png" />
 	</category>
 </gamestore>
