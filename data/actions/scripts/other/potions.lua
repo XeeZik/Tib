@@ -83,7 +83,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	player:addCondition(exhaust)
 	doCreatureSayWithRadius(target, 'Aaaah...', TALKTYPE_MONSTER_SAY, 2, 2)
 	
-	if not configKeys.REMOVE_POTION_CHARGES then
+	if not configManager.getBoolean(configKeys.REMOVE_POTION_CHARGES) then
 		return true
 	end
 
