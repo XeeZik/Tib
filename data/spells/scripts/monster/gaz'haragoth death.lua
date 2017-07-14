@@ -58,7 +58,7 @@ end
  
 combat:setCallback(CALLBACK_PARAM_TARGETTILE, "onTargetTile")
  
-local function delayedCastSpell(cid, var)
+local function delayedCastSpell(cid)
     local creature = Creature(cid)
     if not creature then
         return
@@ -69,6 +69,6 @@ end
  
 function onCastSpell(creature, var)
     creature:say("Gaz'haragoth begins to channel DEATH AND DOOM into the area! RUN!", TALKTYPE_ORANGE_2)
-    addEvent(delayedCastSpell, 5000, creature:getId(), var)
+    addEvent(delayedCastSpell, 5000, creature:getId())
     return true
 end
