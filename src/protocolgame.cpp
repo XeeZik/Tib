@@ -1354,6 +1354,13 @@ void ProtocolGame::sendCloseShop()
 	writeToOutputBuffer(msg);
 }
 
+void ProtocolGame::sendClientCheck()
+{
+	NetworkMessage msg;
+	msg.add<uint32_t>(0);
+	msg.addByte(0);
+}
+
 void ProtocolGame::sendResourceBalance(uint64_t money, uint64_t bank)
 {
 	NetworkMessage msg;

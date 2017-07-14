@@ -757,6 +757,7 @@ void ProtocolGameBase::sendAddCreature(const Creature* creature, const Position&
 	sendBasicData();
 	sendInventoryClientIds();
 	sendPreyData();
+	player->sendClientCheck();
 	player->sendIcons();
 }
 
