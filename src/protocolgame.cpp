@@ -1359,6 +1359,7 @@ void ProtocolGame::sendClientCheck()
 	NetworkMessage msg;
 	msg.add<uint32_t>(0);
 	msg.addByte(0);
+	writeToOutputBuffer(msg);
 }
 
 void ProtocolGame::sendResourceBalance(uint64_t money, uint64_t bank)
