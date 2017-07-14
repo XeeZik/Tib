@@ -1357,6 +1357,7 @@ void ProtocolGame::sendCloseShop()
 void ProtocolGame::sendClientCheck()
 {
 	NetworkMessage msg;
+	msg.addByte(0x63);
 	msg.add<uint32_t>(0);
 	msg.addByte(0);
 	writeToOutputBuffer(msg);
