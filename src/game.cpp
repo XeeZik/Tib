@@ -2186,8 +2186,17 @@ void Game::playerMoveUpContainer(uint32_t playerId, uint8_t cid)
 		}
 	}
 
-	player->addContainer(cid, parentContainer);
-	player->sendContainer(cid, parentContainer, parentContainer->hasParent(), player->getContainerIndex(cid));
+	if (parentContainer->hasPagination()) {
+		uint16_t indexContainer = std::floor(parentContainer->getThingIndex(container) / parentContainer->capacity()) * parentContainer->capacity();
+		player->addContainer(cid, parentContainer);
+
+		player->setContainerIndex(cid, indexContainer);
+		player->sendContainer(cid, parentContainer, parentContainer->hasParent(), indexContainer);
+	}
+	else {
+		player->addContainer(cid, parentContainer);
+		player->sendContainer(cid, parentContainer, parentContainer->hasParent(), player->getContainerIndex(cid));
+	}
 }
 
 void Game::playerUpdateContainer(uint32_t playerId, uint8_t cid)
