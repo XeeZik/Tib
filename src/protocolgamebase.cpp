@@ -739,6 +739,7 @@ void ProtocolGameBase::sendAddCreature(const Creature* creature, const Position&
 	sendSkills();
 	sendBlessStatus();
 	sendPremiumTrigger();
+	sendStoreHighlight();
 
 	//gameworld light-settings
 	LightInfo lightInfo;
@@ -790,6 +791,17 @@ void ProtocolGameBase::sendStats()
 {
 	NetworkMessage msg;
 	AddPlayerStats(msg);
+	writeToOutputBuffer(msg);
+}
+
+void ProtocolGameBase::sendStoreHighlight()
+{
+	NetworkMessage msg;
+	bool haveSale = g_game.gameStore.haveCategoryByState(StoreState_t::SALE);
+	bool haveNewItem = g_game.gameStore.haveCategoryByState(StoreState_t::NEW);
+	msg.addByte(0x19);
+	msg.addByte((haveSale) ? 1 : 0);
+	msg.addByte((haveNewItem) ? 1 : 0);
 	writeToOutputBuffer(msg);
 }
 

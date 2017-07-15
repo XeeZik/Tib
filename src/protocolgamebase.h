@@ -78,6 +78,7 @@ class ProtocolGameBase : public Protocol {
 		void sendAddCreature(const Creature* creature, const Position& pos, int32_t stackpos, bool isLogin);
 		void sendMagicEffect(const Position& pos, uint8_t type);
 		void sendStats();
+		void sendStoreHighlight();
 		void sendBasicData();
 		void sendPendingStateEntered();
 		void sendEnterWorld();
