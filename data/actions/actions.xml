@@ -269,10 +269,10 @@
 	<action itemid="22608" script="other/taming.lua" />
 	<action itemid="23810" script="other/taming.lua" />
 	<action itemid="23557" script="other/taming.lua" />
-	<action itemid="24763" script="addons/modalMD1.lua"/>
-	<action itemid="26194" script="addons/vibrantegg.lua"/>
-	<action itemid="26340" script="addons/cracklingegg.lua"/>
-	<action itemid="26341" script="addons/menacingegg.lua"/>
+	<action itemid="24763" script="mounts/mounts.lua"/>
+	<action itemid="26194" script="mounts/mounts.lua"/>
+	<action itemid="26340" script="mounts/mounts.lua"/>
+	<action itemid="26341" script="mounts/mounts.lua"/>
 
 	<!-- insectoid cell -->
 	<action actionid="61611" script="insectoid cell/insectoidcell.lua" />
