@@ -259,7 +259,7 @@ void ProtocolGameBase::AddPlayerSkills(NetworkMessage& msg)
 void ProtocolGameBase::sendBlessStatus() {
 	NetworkMessage msg;
 	uint8_t blessCount = 0;
-	uint8_t maxBlessings = (player->operatingSystem == 5) ? 8 : 6;
+	uint8_t maxBlessings = (player->operatingSystem == CLIENTOS_NEW_WINDOWS) ? 8 : 6;
 	for (int i = 1; i <= maxBlessings; i++) {
 		if (player->hasBlessing(i)) {
 			blessCount++;
