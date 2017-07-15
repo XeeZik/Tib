@@ -1494,6 +1494,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `skull` tinyint(1) NOT NULL DEFAULT '0',
   `skulltime` int(11) NOT NULL DEFAULT '0',
   `lastlogout` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `blessings` tinyint(2) NOT NULL DEFAULT '0', -- this dropped with migration
   `blessings1` tinyint(4) NOT NULL DEFAULT '0',
   `blessings2` tinyint(4) NOT NULL DEFAULT '0',
   `blessings3` tinyint(4) NOT NULL DEFAULT '0',
