@@ -272,6 +272,20 @@ void ProtocolGameBase::sendBlessStatus() {
 	writeToOutputBuffer(msg);
 }
 
+void ProtocolGameBase::sendPremiumTrigger()
+{
+	if (!g_config.getBoolean(ConfigManager::FREE_PREMIUM)) {
+		NetworkMessage msg;
+		msg.addByte(0x9E);
+		msg.addByte(16);
+		for (uint16_t i = 0; i <= 15; i++) {
+			//PREMIUM_TRIGGER_TRAIN_OFFLINE = false, PREMIUM_TRIGGER_XP_BOOST = false, PREMIUM_TRIGGER_MARKET = false, PREMIUM_TRIGGER_VIP_LIST = false, PREMIUM_TRIGGER_DEPOT_SPACE = false, PREMIUM_TRIGGER_INVITE_PRIVCHAT = false
+			msg.addByte(0x01);
+		}
+		writeToOutputBuffer(msg);
+	}
+}
+
 // Send preyInfo
 void ProtocolGameBase::sendPreyData()
 {
@@ -724,6 +738,7 @@ void ProtocolGameBase::sendAddCreature(const Creature* creature, const Position&
 	sendStats();
 	sendSkills();
 	sendBlessStatus();
+	sendPremiumTrigger();
 
 	//gameworld light-settings
 	LightInfo lightInfo;
