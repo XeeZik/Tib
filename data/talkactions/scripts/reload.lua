@@ -26,6 +26,9 @@ local reloadTypes = {
 	["monster"] = { targetType = RELOAD_TYPE_MONSTERS, name = "monsters" },
 	["monsters"] = { targetType = RELOAD_TYPE_MONSTERS, name = "monsters" },
 
+	["modules"] = { targetType = RELOAD_TYPE_MODULES, name = "modules" },
+	["mod"] = { targetType = RELOAD_TYPE_MODULES, name = "modules" },
+
 	["mount"] = { targetType = RELOAD_TYPE_MOUNTS, name = "mounts" },
 	["mounts"] = { targetType = RELOAD_TYPE_MOUNTS, name = "mounts" },
 

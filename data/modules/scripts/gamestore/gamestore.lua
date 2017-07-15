@@ -575,7 +575,24 @@ GameStore.Categories = {
 			{name = "Brocade Tapestry", thingId = 26381, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 25, icons = {"Product_HouseEquipment_Tapestry_06.png"}, description = "Become rich!"},
 			}
 	},
-
+	{
+		name = "Blessings",
+		state = GameStore.States.STATE_NEW,
+		icons = {"Category_Blessings.png"},
+		offers = {
+			-- NameChange example
+			{name = "Twist of Fate", thingId = 1, type = GameStore.OfferTypes.OFFER_TYPE_BLESSINGS, price = 15, icons = {"Product_Wisdom.png"}},
+			{name = "The Wisdom of Solitude", thingId = 2, type = GameStore.OfferTypes.OFFER_TYPE_BLESSINGS, price = 15, icons = {"Product_Wisdom.png"}},
+			{name = "The Spark of the Phoenix", thingId = 3, type = GameStore.OfferTypes.OFFER_TYPE_BLESSINGS, price = 20, icons = {"Product_Wisdom.png"}},
+			{name = "The Fire of the Suns", thingId = 4, type = GameStore.OfferTypes.OFFER_TYPE_BLESSINGS, price = 15, icons = {"Product_Wisdom.png"}},
+			{name = "The Spiritual Shielding", thingId = 5, type = GameStore.OfferTypes.OFFER_TYPE_BLESSINGS, price = 15, icons = {"Product_Wisdom.png"}},
+			{name = "The Embrace of Tibia", thingId = 6, type = GameStore.OfferTypes.OFFER_TYPE_BLESSINGS, price = 15, icons = {"Product_Wisdom.png"}},
+			{name = "The Heart of the Mountain", thingId = 7, type = GameStore.OfferTypes.OFFER_TYPE_BLESSINGS, price = 15, icons = {"Product_Wisdom.png"}},
+			{name = "Blood of the Mountain", thingId = 8, type = GameStore.OfferTypes.OFFER_TYPE_BLESSINGS, price = 15, icons = {"Product_Wisdom.png"}},
+			-- Promotion example
+			--{name = "First Promotion", thingId = 1--[[ed/ms/rp/ek]], type = GameStore.OfferTypes.OFFER_TYPE_PROMOTION, price = 100, icons = {"Product_FirstPromotion.png"}}
+		}
+	},
 	{
 		name = "Extra Services",
 		state = GameStore.States.STATE_NONE,

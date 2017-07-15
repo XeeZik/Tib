@@ -128,6 +128,20 @@ CREATE TABLE IF NOT EXISTS `announcements` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `blessings_history`
+--
+
+CREATE TABLE `blessings_history` (
+  `id` int(11) NOT NULL,
+  `player_id` int(11) NOT NULL,
+  `blessing` tinyint(4) NOT NULL,
+  `loss` tinyint(1) NOT NULL,
+  `timestamp` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `global_storage`
 --
 
@@ -1480,7 +1494,14 @@ CREATE TABLE IF NOT EXISTS `players` (
   `skull` tinyint(1) NOT NULL DEFAULT '0',
   `skulltime` int(11) NOT NULL DEFAULT '0',
   `lastlogout` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `blessings` tinyint(2) NOT NULL DEFAULT '0',
+  `blessings1` tinyint(4) NOT NULL DEFAULT '0',
+  `blessings2` tinyint(4) NOT NULL DEFAULT '0',
+  `blessings3` tinyint(4) NOT NULL DEFAULT '0',
+  `blessings4` tinyint(4) NOT NULL DEFAULT '0',
+  `blessings5` tinyint(4) NOT NULL DEFAULT '0',
+  `blessings6` tinyint(4) NOT NULL DEFAULT '0',
+  `blessings7` tinyint(4) NOT NULL DEFAULT '0',
+  `blessings8` tinyint(4) NOT NULL DEFAULT '0',
   `onlinetime` int(11) NOT NULL DEFAULT '0',
   `deletion` bigint(15) NOT NULL DEFAULT '0',
   `balance` bigint(20) unsigned NOT NULL DEFAULT '0',
