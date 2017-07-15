@@ -2192,8 +2192,7 @@ void Game::playerMoveUpContainer(uint32_t playerId, uint8_t cid)
 
 		player->setContainerIndex(cid, indexContainer);
 		player->sendContainer(cid, parentContainer, parentContainer->hasParent(), indexContainer);
-	}
-	else {
+	} else {
 		player->addContainer(cid, parentContainer);
 		player->sendContainer(cid, parentContainer, parentContainer->hasParent(), player->getContainerIndex(cid));
 	}

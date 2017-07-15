@@ -137,12 +137,12 @@ class ConfigManager
 		bool getBoolean(boolean_config_t what) const;
 		float getFloat(floating_config_t what) const;
 
-		std::string const& setConfigFileLua(const std::string& what) { 
+		std::string const& setConfigFileLua(const std::string& what) {
 			configFileLua = { what };
-			return configFileLua; 
+			return configFileLua;
 		};
-		std::string const& getConfigFileLua() const { 
-			return configFileLua; 
+		std::string const& getConfigFileLua() const {
+			return configFileLua;
 		};
 
 	private:

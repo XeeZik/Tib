@@ -275,8 +275,7 @@ void ProtocolGameBase::sendBlessStatus() {
 		}
 
 		msg.add<uint16_t>(blessFlag-1);
-	}
-	else {
+	} else {
 		msg.add<uint16_t>(0x00);
 	}
 

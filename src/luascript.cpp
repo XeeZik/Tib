@@ -9604,15 +9604,13 @@ int LuaScriptInterface::luaPlayerGetBlessingCount(lua_State* L)
 	// player:getBlessingCount(index)
 	Player* player = getUserdata<Player>(L, 1);
 	uint8_t index = getNumber<uint8_t>(L, 2);
-	if (!index)
-	{
+	if (!index) {
 		index = 1;
 	}
 
 	if (player) {
 		lua_pushnumber(L, player->getBlessingCount(index));
-	}
-	else {
+	} else {
 		lua_pushnil(L);
 	}
 	return 1;

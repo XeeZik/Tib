@@ -124,7 +124,7 @@ void mainLoader(int argc, char* argv[], ServiceManager* services)
 	std::cout << "A server developed by " << STATUS_SERVER_DEVELOPERS << "." << std::endl;
 	std::cout << "Visit our forum for updates, support, and resources: " << GIT_REPO <<"." << std::endl;
 	std::cout << std::endl;
-	
+
 	// TODO: dirty for now; Use stdarg;
 	if (argc > 1) {
 		std::string param = { argv[1] };
