@@ -5828,7 +5828,7 @@ void Game::playerBuyStoreOffer(uint32_t playerId, uint32_t offerId, uint8_t prod
 		} else if(offer->type == BLESSING) {
 			BlessingOffer* blessingOffer = (BlessingOffer*) offer;
 
-			uint8_t blessingsToAdd=0;
+			uint8_t blessingsToAdd = 0;
 			for(uint8_t bless : blessingOffer->blessings) {
 				if(player->hasBlessing(bless)) {//player already has this bless
 					message << "Your character already has ";
@@ -5837,11 +5837,11 @@ void Game::playerBuyStoreOffer(uint32_t playerId, uint32_t offerId, uint8_t prod
 					player->sendStoreError(STORE_ERROR_PURCHASE, message.str());
 					return;
 				}
-				blessingsToAdd |= static_cast<uint8_t>(1) << bless;
+				blessingsToAdd = bless;
 			}
 
 			IOAccount::removeCoins(player->getAccount(), offer->price);
-			player->addBlessing(blessingsToAdd);
+			player->addBlessing(blessingsToAdd, 1);
 			IOAccount::registerTransaction(player->getAccount(), -1*offer->price, offer->name);
 			message<< "You've successfully bought the "<< offer->name << ".";
 			player->sendStorePurchaseSuccessful(message.str(), IOAccount::getCoinBalance(player->getAccount()));

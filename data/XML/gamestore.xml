@@ -122,11 +122,14 @@
 		<offer name="Wild Growth Rune" description="" price="32" type="stackableitem" productid="2269" count="250" icons="2269.png" />
 	</category>
 	<category name="Blessings" description="" state="new" icons="Category_Blessings.png">
-		<offer name="The Spiritual Shielding" type="bless" blessnumber="1" price="30" icons="Product_Blessing_Shielding.png" />
-		<offer name="The Embrace of World" type="bless" blessnumber="2" price="15" icons="Product_Blessing_Shielding.png" />
-		<offer name="The Fire of the Suns" type="bless" blessnumber="3" price="15" icons="Product_Blessing_Shielding.png" />
-		<offer name="The Spark of the Phoenix" type="bless" blessnumber="4" price="20" icons="Product_Blessing_Shielding.png" />
-		<offer name="The Wisdom of Solitude" type="bless" blessnumber="5" price="15" icons="Product_Blessing_Shielding.png" />
+		<offer name="Twist of Fate" type="bless" blessnumber="1" price="30" icons="Product_Blessing_Shielding.png" />
+		<offer name="The Spiritual Shielding" type="bless" blessnumber="5" price="30" icons="Product_Blessing_Shielding.png" />
+		<offer name="The Embrace of Tibia" type="bless" blessnumber="6" price="15" icons="Product_Blessing_Shielding.png" />
+		<offer name="Heart of the Mountain" type="bless" blessnumber="7" price="15" icons="Product_Blessing_Shielding.png" />
+		<offer name="Blood of the Mountain" type="bless" blessnumber="8" price="15" icons="Product_Blessing_Shielding.png" />
+		<offer name="The Fire of the Suns" type="bless" blessnumber="4" price="15" icons="Product_Blessing_Shielding.png" />
+		<offer name="The Spark of the Phoenix" type="bless" blessnumber="3" price="20" icons="Product_Blessing_Shielding.png" />
+		<offer name="The Wisdom of Solitude" type="bless" blessnumber="2" price="15" icons="Product_Blessing_Shielding.png" />
 	</category>
 	<category name="Utilitys" description="" state="new" icons="Category_.png">
 		<offer name="Gold Pounch" description="" price="900" type="item" productid="26377" count="1" icons="26377.png" />

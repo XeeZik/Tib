@@ -246,8 +246,8 @@ void ProtocolGameBase::AddPlayerSkills(NetworkMessage& msg)
 
 void ProtocolGameBase::sendBlessStatus() {
 	NetworkMessage msg;
-	int32_t blessCount = 0;
-	for (int i = 1; i <= 6; i++) {
+	uint8_t blessCount = 0;
+	for (int i = 0; i < 7; i++) {
 		if (player->hasBlessing(i)) {
 			blessCount++;
 		}
@@ -255,11 +255,18 @@ void ProtocolGameBase::sendBlessStatus() {
 
 	msg.addByte(0x9C);
 	if (blessCount >= 5) {
-		msg.add<uint16_t>(0x01);
+		uint8_t blessFlag = 0;
+		for (int i = 2; i < 256; i *= 2) {
+			blessFlag += i;
+		}
+
+		msg.add<uint16_t>(blessFlag-1);
 	}
 	else {
 		msg.add<uint16_t>(0x00);
 	}
+
+	msg.addByte((blessCount >= 5) ? 2 : 1); // 1 = Disabled | 2 = normal | 3 = green
 	writeToOutputBuffer(msg);
 }
 
@@ -758,6 +765,7 @@ void ProtocolGameBase::sendAddCreature(const Creature* creature, const Position&
 	sendInventoryClientIds();
 	sendPreyData();
 	player->sendClientCheck();
+	player->sendGameNews();
 	player->sendIcons();
 }
 
