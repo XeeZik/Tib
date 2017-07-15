@@ -2084,7 +2084,8 @@ void Player::death(Creature* lastHitCreature)
 				}
 			}
 		} else {
-			for (int i = 1; i <= 8; i++) {
+			uint8_t maxBlessing = (getProtocolVersion() >= 1130) ? 8 : 6;
+			for (int i = 1; i <= maxBlessing; i++) {
 				removeBlessing(i, 1);
 			}
 		}
@@ -4030,7 +4031,8 @@ bool Player::isPromoted() const
 double Player::getLostPercent() const
 {
 	int32_t blessingCount = 0;
-	for (int i = 1; i <= 8; i++) {
+	uint8_t maxBlessing = (getProtocolVersion() >= 1130) ? 8 : 6;
+	for (int i = 1; i <= maxBlessing; i++) {
 		if (hasBlessing(i)) {
 			blessingCount++;
 		}

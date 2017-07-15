@@ -247,7 +247,8 @@ void ProtocolGameBase::AddPlayerSkills(NetworkMessage& msg)
 void ProtocolGameBase::sendBlessStatus() {
 	NetworkMessage msg;
 	uint8_t blessCount = 0;
-	for (int i = 0; i < 7; i++) {
+	uint8_t maxBlessings = (version >= 1130) ? 8 : 6;
+	for (int i = 1; i <= maxBlessings; i++) {
 		if (player->hasBlessing(i)) {
 			blessCount++;
 		}
@@ -256,7 +257,8 @@ void ProtocolGameBase::sendBlessStatus() {
 	msg.addByte(0x9C);
 	if (blessCount >= 5) {
 		uint8_t blessFlag = 0;
-		for (int i = 2; i < 256; i *= 2) {
+		uint8_t maxFlag = (maxBlessings == 8) ? 256 : 64;
+		for (int i = 2; i < maxFlag; i *= 2) {
 			blessFlag += i;
 		}
 
