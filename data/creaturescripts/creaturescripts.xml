@@ -124,7 +124,6 @@
 	<event type="login" name="FirstItems" script="others/firstitems.lua" />
 	<event type="login" name="RegenerateStamina" script="others/regeneratestamina.lua" />
 	<event type="login" name="OfflineTraining" script="others/offlinetraining.lua" />
-	<event type="login" name="AddonsMounts" script="others/addons-montarias.lua"/>
 	<event type="logout" name="PlayerLogout" script="others/logout.lua" />
 
 	<event type="death" name="PlayerDeath" script="others/playerdeath.lua" />
