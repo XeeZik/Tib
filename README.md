@@ -11,7 +11,7 @@ Executaveis compilados [AppVeyor builds for Windows](https://ci.appveyor.com/pro
 # Login.php para client 11
 Já funciona a última versão: [Znote AAC](https://github.com/Znote/ZnoteAAC).
 
-Ou, se você estiver usando: [Gesior](http://www.mediafire.com/file/2jbauphk3eksm14/login.php)
+Ou, se você estiver usando: [Gesior](https://gist.github.com/jlcvp/2f1772cbbcdfc966ee982985326d964a)
 # Issues / Problemas
 Nós utilizamos o [Issue Tracker do Github](https://github.com/malucooo/Otxserver-new/issues).
 
