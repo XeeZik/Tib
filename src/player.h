@@ -336,9 +336,17 @@ class Player final : public Creature, public Cylinder
 		}
 
 		void addBlessing(uint8_t index, uint8_t count) {
+			if (blessings[index - 1] == 255) {
+				return;
+			}
+
 			blessings[index-1] += count;
 		}
 		void removeBlessing(uint8_t index, uint8_t count) {
+			if (blessings[index - 1] == 0) {
+				return;
+			}
+
 			blessings[index-1] -= count;
 		}
 		bool hasBlessing(uint8_t index) const {
