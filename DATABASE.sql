@@ -1552,7 +1552,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `prey_stamina_2` int(11) DEFAULT NULL,
   `prey_stamina_3` int(11) DEFAULT NULL,
   `prey_column` smallint(6) NOT NULL DEFAULT '1',
-  `bonus_reroll` int(11) DEFAULT NULL,
+  `bonus_reroll` int(11) NOT NULL DEFAULT '0',
   `xpboost_stamina` smallint(5) DEFAULT NULL,
   `xpboost_value` tinyint(4) DEFAULT NULL,
   `marriage_status` bigint(20) unsigned NOT NULL DEFAULT '0',
