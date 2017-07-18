@@ -69,6 +69,6 @@ end
  
 function onCastSpell(creature, var)
     creature:say("Gaz'haragoth begins to channel DEATH AND DOOM into the area! RUN!", TALKTYPE_ORANGE_2)
-    addEvent(delayedCastSpell, 5000, creature:getId())
+    addEvent(function() delayedCastSpell(creature:getId()) end, 5000)
     return true
 end
