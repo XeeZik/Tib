@@ -123,8 +123,10 @@ void Game::setGameState(GameState_t newState)
 			quests.loadFromXml();
 			mounts.loadFromXml();
 
-			gameStore.loadFromXml();
-			gameStore.startup();
+			if (!g_config.getBoolean(ConfigManager::STOREMODULES)) {
+				gameStore.loadFromXml();
+				gameStore.startup();
+			}
 
 			loadMotdNum();
 			loadPlayersRecord();
