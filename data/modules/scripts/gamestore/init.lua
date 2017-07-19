@@ -108,6 +108,10 @@ end
 
 function onRecvbyte(player, msg, byte)
 	if not configManager.getBoolean(STOREMODULES) then return true end
+	if player:getVocation():getId() == 0 and not GameStore.haveCategoryRook() then
+		return player:sendCancelMessage("Store don't have offers for rookgaard citizen.")
+	end
+
 	if byte == GameStore.RecivedPackets.C_StoreEvent then
 		-- Not Used!
 	elseif byte == GameStore.RecivedPackets.C_TransferCoins then
@@ -740,6 +744,16 @@ GameStore.getOfferById = function(id)
 		end
 	end
 	return nil
+end
+
+GameStore.haveCategoryRook = function()
+	for Cat_k, category in ipairs(GameStore.Categories) do
+		if category.offers and category.rookgaard then
+			return true
+		end
+	end
+
+	return false
 end
 
 GameStore.haveOfferRook = function(id)
