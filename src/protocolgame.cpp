@@ -583,9 +583,9 @@ void ProtocolGame::parsePacket(NetworkMessage& msg)
 		case 0xF7: parseMarketCancelOffer(msg); break;
 		case 0xF8: parseMarketAcceptOffer(msg); break;
 		case 0xF9: parseModalWindowAnswer(msg); break;
-		case 0xFA: parseStoreOpen(msg); break;
-		case 0xFB: parseStoreRequestOffers(msg); break;
-		case 0xFC: parseStoreBuyOffer(msg); break;
+		case 0xFA: if (!g_config.getBoolean(ConfigManager::STOREMODULES)) { parseStoreOpen(msg); } break;
+		case 0xFB: if (!g_config.getBoolean(ConfigManager::STOREMODULES)) { parseStoreRequestOffers(msg); } break;
+		case 0xFC: if (!g_config.getBoolean(ConfigManager::STOREMODULES)) { parseStoreBuyOffer(msg); } break;
 //		case 0xFD: parseStoreOpenTransactionHistory(msg); break;
 //		case 0xFE: parseStoreRequestTransactionHistory(msg); break;
 
