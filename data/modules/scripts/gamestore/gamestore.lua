@@ -10,6 +10,16 @@ GameStore.Categories = {
 			{name = "Jackalope", basePrice = 500, price = 375, state = GameStore.States.STATE_SALE, validUntil = 30, thingId = 103, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, icons = {"Product_PremiumTime30.png"}, description = "Here you can purchase the Mount  for your character. Riding on a mount is not only cool, but also gives your character a speed boost."},
 		}
 	},
+	{	name = "Premium Time",
+		state = GameStore.States.STATE_NEW,
+		rookgaard = false,
+		icons = {"New_Products.png"},
+		offers = {
+			{name = "30 Days", basePrice = 500, price = 375, state = GameStore.States.STATE_SALE, validUntil = 30, thingId = 30, type = GameStore.OfferTypes.OFFER_TYPE_PREMIUM, icons = {"Product_PremiumTime30.png"}, description = "Premium Account for 30 days."},
+			{name = "60 Days", basePrice = 1000, price = 500, state = GameStore.States.STATE_SALE, validUntil = 30, thingId = 60, type = GameStore.OfferTypes.OFFER_TYPE_PREMIUM, icons = {"Product_PremiumTime60.png"}, description = "Premium Account for 60 days."},
+			{name = "180 Days", basePrice = 1600, price = 800, state = GameStore.States.STATE_SALE, validUntil = 30, thingId = 180, type = GameStore.OfferTypes.OFFER_TYPE_PREMIUM, icons = {"Product_PremiumTime180.png"}, description = "Premium Account for 180 days."}
+		}
+	},
 	{
 		name = "New Products",
 		state = GameStore.States.STATE_NEW,

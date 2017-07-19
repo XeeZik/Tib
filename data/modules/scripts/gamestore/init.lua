@@ -22,7 +22,8 @@ GameStore.OfferTypes = {
 	OFFER_TYPE_PREYSLOT = 11,
 	OFFER_TYPE_PREYBONUS = 12,
 	OFFER_TYPE_TEMPLE = 13,
-	OFFER_TYPE_BLESSINGS = 14
+	OFFER_TYPE_BLESSINGS = 14,
+	OFFER_TYPE_PREMIUM = 15
 }
 
 GameStore.ClientOfferTypes = {
@@ -257,6 +258,8 @@ function parseBuyStoreOffer(playerId, msg)
 		-- If offer is Stackable.
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_BLESSINGS then
 			player:addBlessing(offer.thingId, 1)
+		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_PREMIUM then
+			player:addPremiumDays(offer.thingId)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_STACKABLE then
 			if player:getFreeCapacity() < ItemType(offer.thingId):getWeight(offer.count) then
 				return addPlayerEvent(sendStoreError, 250, playerId, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free capacity to hold this item.")
