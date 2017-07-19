@@ -15,7 +15,7 @@ function onRecvbyte(player, msg, byte)
 			player:sendCancelMessage("Only work with Flash Client & 11.0")
 			return false
 		end
-		
+
 		sendBlessingsDialog(player)
 	end
 end
@@ -66,6 +66,6 @@ function sendBlessingsDialog(player)
 		msg:addByte(0) -- Color message (1 - Red | 0 = White loss)
 		msg:addString("Que delicia de bless cara...") -- History message
 	end
-	
+
 	msg:sendToPlayer(player)
 end

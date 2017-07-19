@@ -3,7 +3,7 @@ function addPlayerEvent(callable, delay, playerId, ...)
 	if not player then
 		return false
 	end
-	
+
 	addEvent(function(callable, playerId, ...)
 		local player = Player(playerId)
 		if player then

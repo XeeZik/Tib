@@ -363,36 +363,36 @@ function Player:onMoveCreature(creature, fromPosition, toPosition)
 	return true
 end
 
---TEMPORARIAMENTE DESATIVADO
--- function Player:onReportRuleViolation(targetName, reportType, reportReason, comment, translation)
-	-- local name = self:getName()
-	-- local pendingReport = function () local f = io.open(string.format("data/reports/players/%s-%s-%d.txt", name, targetName, reportType), "r") ; if f then io.close(f) return true else return false end end
-	-- if pendingReport() then
-		-- self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your report is being processed.")
-		-- return
-	-- end
+-- Temporal disable
+--[[function Player:onReportRuleViolation(targetName, reportType, reportReason, comment, translation)
+	local name = self:getName()
+	local pendingReport = function () local f = io.open(string.format("data/reports/players/%s-%s-%d.txt", name, targetName, reportType), "r") ; if f then io.close(f) return true else return false end end
+	if pendingReport() then
+		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your report is being processed.")
+		return
+	end
 
-	-- local file = io.open(string.format("data/reports/players/%s-%s-%d.txt", name, targetName, reportType), "a")
-	-- if not file then
-		-- self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There was an error when processing your report, please contact a gamemaster.")
-		-- return
-	-- end
+	local file = io.open(string.format("data/reports/players/%s-%s-%d.txt", name, targetName, reportType), "a")
+	if not file then
+		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There was an error when processing your report, please contact a gamemaster.")
+		return
+	end
 
-	-- io.output(file)
-	-- io.write("------------------------------\n")
-	-- io.write("Complainter: " .. name .. "\n")
-	-- io.write("Reported: " .. targetName .. "\n")
-	-- io.write("Type: " .. reportType .. "\n")
-	-- io.write("Reason: " .. reportReason .. "\n")
-	-- io.write("Comment: " .. comment .. "\n")
-	-- if reportType ~= REPORT_TYPE_BOT then
-		-- io.write("Translation: " .. translation .. "\n")
-	-- end
-	-- io.write("------------------------------\n")
-	-- io.close(file)
-	-- self:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Thank you for reporting %s. Your report will be processed by %s team as soon as possible.", targetName, configManager.getString(configKeys.SERVER_NAME)))
-	-- return
--- end
+	io.output(file)
+	io.write("------------------------------\n")
+	io.write("Complainter: " .. name .. "\n")
+	io.write("Reported: " .. targetName .. "\n")
+	io.write("Type: " .. reportType .. "\n")
+	io.write("Reason: " .. reportReason .. "\n")
+	io.write("Comment: " .. comment .. "\n")
+	if reportType ~= REPORT_TYPE_BOT then
+		io.write("Translation: " .. translation .. "\n")
+	end
+	io.write("------------------------------\n")
+	io.close(file)
+	self:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Thank you for reporting %s. Your report will be processed by %s team as soon as possible.", targetName, configManager.getString(configKeys.SERVER_NAME)))
+	return
+end]]
 
 function Player:onReportBug(message, position, category)
 	local name = self:getName()

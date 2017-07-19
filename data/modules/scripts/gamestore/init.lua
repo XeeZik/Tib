@@ -68,6 +68,7 @@ GameStore.SendingPackets = {
 	S_OpenTransactionHistory = 0xFD, -- 253
 	S_CompletePurchase = 0xFE  -- 254
 }
+
 GameStore.RecivedPackets = {
 	C_StoreEvent = 0xE9, -- 233
 	C_TransferCoins = 0xEF, -- 239
@@ -81,6 +82,7 @@ GameStore.RecivedPackets = {
 GameStore.DefaultValues = {
 	DEFAULT_VALUE_ENTRIES_PER_PAGE	= 16
 }
+
 GameStore.DefaultDescriptions = {
 	OUTFIT = {"This outfit looks nice. Only high-class people are able to wear it!",
 		"An outfit that was created to suit you. We are sure you'll like it.",
@@ -211,13 +213,13 @@ function parseBuyStoreOffer(playerId, msg)
 	local offerId = msg:getU32()
 	local productType = msg:getByte()
 	local offer = GameStore.getOfferById(offerId)
-	
+
 	if (player:getVocation():getId() == 0) then
-		if (not GameStore.haveOfferRook(offerId)) then		
+		if (not GameStore.haveOfferRook(offerId)) then
 			return addPlayerEvent(sendStoreError, 350, playerId, GameStore.StoreErrors.STORE_ERROR_TRANSFER, "The offer is either fake or corrupt.")
 		end
 	end
-	
+
 	if offer then
 		-- If we don't add type, or offer type is fake
 		if not offer.type or offer.type == GameStore.OfferTypes.OFFER_TYPE_NONE then
@@ -268,7 +270,7 @@ function parseBuyStoreOffer(playerId, msg)
 			if player:getFreeCapacity() < ItemType(offer.thingId):getWeight(offer.count) then
 				return addPlayerEvent(sendStoreError, 250, playerId, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free capacity to hold this item.")
 			end
-			
+
 			local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
 			if inbox and inbox:getEmptySlots() > 0 then
 				if (offer.count > 100) then
@@ -345,7 +347,7 @@ function parseBuyStoreOffer(playerId, msg)
 				newName = newName:lower():gsub("(%l)(%w*)", function(a, b) return string.upper(a) .. b end)
 				db.query("UPDATE `players` SET `name` = " .. db.escapeString(newName) .. " WHERE `id` = " .. player:getGuid())
 				message =  "You have successfully changed you name, relogin!"
-				addEvent(function() 
+				addEvent(function()
 					local player = Player(playerId)
 					if not player then
 						return false
@@ -441,7 +443,6 @@ function openStore(playerId)
 	msg:addByte(0x00)
 
 	local GameStoreCategories, GameStoreCount = nil, 0
-
 	if (player:getVocation():getId() == 0) then
 		GameStoreCategories, GameStoreCount = getCategoriesRook()
 	else
@@ -539,8 +540,8 @@ function sendShowStoreOffers(playerId, category)
 				offer.type ~= GameStore.OfferTypes.OFFER_TYPE_EXPBOOST and 
 				offer.type ~= GameStore.OfferTypes.OFFER_TYPE_PREYSLOT and 
 				offer.type ~= GameStore.OfferTypes.OFFER_TYPE_PREYBONUS and
-				offer.type ~= GameStore.OfferTypes.OFFER_TYPE_TEMPLE and  
-				offer.type ~= GameStore.OfferTypes.OFFER_TYPE_SEXCHANGE and
+				offer.type ~= GameStore.OfferTypes.OFFER_TYPE_TEMPLE and 
+				offer.type ~= GameStore.OfferTypes.OFFER_TYPE_SEXCHANGE and 
 				not offer.thingId then
 				disabled = 1
 			end
@@ -940,7 +941,7 @@ GameStore.addPromotionToPlayer = function(playerId, promotion)
 	if not player then
 		return false
 	end
-	
+
 	local result = GameStore.canAddPromotionToPlayer(player, promotion, true)
 	if result.ability == false then return false end
 
