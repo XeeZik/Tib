@@ -13,7 +13,7 @@ Já funciona a última versão: [Znote AAC](https://github.com/Znote/ZnoteAAC).
 
 Ou, se você estiver usando: [Gesior](https://gist.github.com/jlcvp/2f1772cbbcdfc966ee982985326d964a)
 
-Video criando cliente com ip próprio (https://www.youtube.com/watch?v=AsZIpPytDb8).
+Video criando cliente com ip [Próprio](https://www.youtube.com/watch?v=AsZIpPytDb8)
 # Issues / Problemas
 Nós utilizamos o [Issue Tracker do Github](https://github.com/malucooo/Otxserver-new/issues).
 
