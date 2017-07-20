@@ -441,6 +441,44 @@ local soulCondition = Condition(CONDITION_SOUL, CONDITIONID_DEFAULT)
 soulCondition:setTicks(4 * 60 * 1000)
 soulCondition:setParameter(CONDITION_PARAM_SOULGAIN, 1)
 
+function useStaminaImbuing(playerId, itemuid)
+	local player = Player(playerId)
+	if not player then
+		return false
+	end
+
+	local item = Item(itemuid)
+	if not item then
+		return false
+	end
+
+    for i = 1, item:getType():getImbuingSlots() do
+        if (item:isActiveImbuement(i+3)) then
+            local staminaMinutes = item:getSpecialAttribute(i+3)/60
+            if (staminaMinutes > 0) then
+                local currentTime = os.time()
+                local timePassed = currentTime - item:getSpecialAttribute(i+6)
+                if timePassed > 0 then
+                    if timePassed > 60 then
+                        if staminaMinutes > 2 then
+                            staminaMinutes = staminaMinutes - 2
+                        else
+                            staminaMinutes = 0
+                        end
+
+                        item:setSpecialAttribute(i+6, currentTime + 120)
+                    else
+                        staminaMinutes = staminaMinutes - 1
+                        item:setSpecialAttribute(i+6, currentTime + 60)
+                    end
+                end
+
+                item:setSpecialAttribute(i+3, staminaMinutes*60)
+            end
+        end
+    end
+end
+
 local function useStamina(player)
 	local staminaMinutes = player:getStamina()
 	if staminaMinutes == 0 then
@@ -497,6 +535,94 @@ local function useStaminaPrey(player, name)
 			end
 		end
 	end
+end
+
+function Player:onUseWeapon(normalDamage, elementType, elementDamage)
+	local weapon = self:getSlotItem(CONST_SLOT_LEFT)
+	if not weapon or weapon:getType():getWeaponType() == WEAPON_SHIELD then
+		weapon = self:getSlotItem(CONST_SLOT_RIGHT)
+	end
+
+	-- Imbuement
+    if (weapon and weapon:getType():getImbuingSlots() > 0) then
+        for i = 1, weapon:getType():getImbuingSlots() do
+        	local slotEnchant = weapon:getSpecialAttribute(i)
+            if (slotEnchant) then
+                local percentDamage, enchantPercent = 0, weapon:getImbuementPercent(slotEnchant)
+                local typeEnchant = weapon:getImbuementType(i) or ""
+                if (typeEnchant ~= "") then
+                    useStaminaImbuing(self:getId(), weapon:getUniqueId())
+                end
+
+                if (typeEnchant ~= "hitpointsleech" and typeEnchant ~= "manapointsleech" and typeEnchant ~= "criticalhit") then
+                    percentDamage = normalDamage*(enchantPercent/100)
+                    normalDamage = normalDamage - percentDamage
+                    elementDamage = weapon:getType():getAttack()*(enchantPercent/100)
+                else
+                	if (typeEnchant == "hitpointsleech") then
+                		local healAmountHP = normalDamage*(enchantPercent/100)
+                		self:addHealth(healAmountHP)
+                	elseif (typeEnchant == "manapointsleech") then
+                		local healAmountMP = normalDamage*(enchantPercent/100)
+                		self:addMana(healAmountMP)
+                	end
+                end
+
+                if (typeEnchant == "firedamage") then
+                    elementType = COMBAT_FIREDAMAGE
+                elseif (typeEnchant == "earthdamage") then
+                    elementType = COMBAT_EARTHDAMAGE
+                elseif (typeEnchant == "icedamage") then
+                    elementType = COMBAT_ICEDAMAGE
+                elseif (typeEnchant == "energydamage") then
+                    elementType = COMBAT_ENERGYDAMAGE
+                elseif (typeEnchant == "deathdamage") then
+                    elementType = COMBAT_DEATHDAMAGE
+                end
+            end
+        end
+    end
+	return normalDamage, elementType, elementDamage
+end
+
+function Player:onCombatSpell(normalDamage, elementDamage, elementType)
+	local weapon = self:getSlotItem(CONST_SLOT_LEFT)
+	if not weapon or weapon:getType():getWeaponType() == WEAPON_SHIELD then
+		weapon = self:getSlotItem(CONST_SLOT_RIGHT)
+	end
+
+	-- Imbuement
+    if (weapon and weapon:getType():getImbuingSlots() > 0) then
+        for i = 1, weapon:getType():getImbuingSlots() do
+        	local slotEnchant = weapon:getSpecialAttribute(i)
+            if (slotEnchant) then
+                local percentDamage, enchantPercent = 0, weapon:getImbuementPercent(slotEnchant)
+                local typeEnchant = weapon:getImbuementType(i) or ""
+                if (typeEnchant ~= "") then
+                    useStaminaImbuing(self:getId(), weapon:getUniqueId())
+                end
+
+                if (typeEnchant ~= "hitpointsleech" and typeEnchant ~= "manapointsleech" and typeEnchant ~= "criticalhit") then
+                    percentDamage = normalDamage*(enchantPercent/100)
+                    normalDamage = normalDamage - percentDamage
+                    elementDamage = weapon:getType():getAttack()*(enchantPercent/100)
+                end
+
+                if (typeEnchant == "firedamage") then
+                    elementType = COMBAT_FIREDAMAGE
+                elseif (typeEnchant == "earthdamage") then
+                    elementType = COMBAT_EARTHDAMAGE
+                elseif (typeEnchant == "icedamage") then
+                    elementType = COMBAT_ICEDAMAGE
+                elseif (typeEnchant == "energydamage") then
+                    elementType = COMBAT_ENERGYDAMAGE
+                elseif (typeEnchant == "deathdamage") then
+                    elementType = COMBAT_DEATHDAMAGE
+                end
+            end
+        end
+    end
+	return normalDamage, elementType, elementDamage
 end
 
 local configexp =  {

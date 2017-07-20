@@ -52,6 +52,9 @@ void ProtocolGame::release()
 	//dispatcher thread
 	stopLiveCast();
 	if (player && player->client == shared_from_this()) {
+		if (player->getTile() && (player->getTile()->hasFlag(TILESTATE_PROTECTIONZONE) || !player->hasCondition(CONDITION_INFIGHT))) {
+			logout(true, true);
+		}
 		player->client.reset();
 		player->decrementReferenceCounter();
 		player = nullptr;
@@ -1534,6 +1537,48 @@ void ProtocolGame::sendMarketEnter(uint32_t depotId)
 		msg.add<uint16_t>(it->first);
 		msg.add<uint16_t>(std::min<uint32_t>(0xFFFF, it->second));
 	}
+
+	writeToOutputBuffer(msg);
+
+	updateCoinBalance();
+	sendResourceBalance(player->getMoney(), player->getBankBalance());
+}
+
+void ProtocolGame::updateCoinBalance() {
+	NetworkMessage msg;
+	msg.addByte(0xF2);
+	msg.addByte(0x00);
+
+	writeToOutputBuffer(msg);
+
+	g_dispatcher.addTask(
+		createTask(std::bind([](ProtocolGame_ptr client) {
+		client->sendCoinBalance();
+	}, getThis()))
+	);
+}
+
+void ProtocolGame::sendCoinBalance()
+{
+	Database& db = Database::getInstance();
+
+	std::ostringstream query;
+
+	query << "SELECT `coins` FROM `accounts` WHERE `id`=" + std::to_string(player->getAccount());
+	DBResult_ptr result = db.storeQuery(query.str());
+	if (!result) {
+		return;
+	}
+
+	NetworkMessage msg;
+	msg.addByte(0xF2);
+	msg.addByte(0x01);
+
+	msg.addByte(0xDF);
+	msg.addByte(0x01);
+
+	msg.add<uint32_t>(result->getNumber<uint32_t>("coins")); //total coins
+	msg.add<uint32_t>(result->getNumber<uint32_t>("coins")); //transferable coins
 
 	writeToOutputBuffer(msg);
 }

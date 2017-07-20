@@ -21093,7 +21093,7 @@
 		<attribute key="description" value="Use it in your house to construct a dragon statue." />
 		<attribute key="weight" value="6500" />
 	</item>
-	<item id="11134" article="a" name="Tome of Knowledge">
+	<item id="11134" article="a" name="tome of knowledge">
 		<attribute key="description" value="Bring this encrypted book to a sage in Farmine to gain wisdom or unlock more of Zao's culture." />
 		<attribute key="weight" value="1500" />
 	</item>

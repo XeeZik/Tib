@@ -1567,8 +1567,8 @@
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>
 	<!-- chopper of mayhem (heavily charged) -->
-	<movevent event="DeEquip" itemid="26243" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="26243" slot="hand" level="250" function="onEquipItem">
+	<movevent event="DeEquip" itemid="2393" slot="hand" function="onDeEquipItem" script="imbuement.lua" />
+	<movevent event="Equip" itemid="2393" slot="hand" level="55" function="onEquipItem" script="imbuement.lua">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
 	</movevent>

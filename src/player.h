@@ -350,10 +350,10 @@ class Player final : public Creature, public Cylinder
 			blessings[index-1] -= count;
 		}
 		bool hasBlessing(uint8_t index) const {
-			return blessings[index-1] != 0;
+			return blessings[index - 1] != 0;
 		}
 		uint8_t getBlessingCount(uint8_t index) const {
-			return blessings[index-1];
+			return blessings[index - 1];
 		}
 
 		bool isOffline() const {

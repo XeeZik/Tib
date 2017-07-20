@@ -55,7 +55,8 @@ GameStore.StoreErrors = {
 GameStore.ServiceTypes = {
 	SERVICE_STANDERD = 0,
 	SERVICE_OUTFITS = 3,
-	SERVICE_MOUNTS = 4
+	SERVICE_MOUNTS = 4,
+	SERVICE_BLESSINGS = 5
 }
 
 GameStore.SendingPackets = {
@@ -174,10 +175,14 @@ function parseOpenStore(playerId, msg)
 	local serviceType = msg:getByte()
 	local category = GameStore.Categories and GameStore.Categories[1] or nil
 
-	if serviceType == GameStore.ServiceTypes.SERVICE_OUTFITS then
-		category = GameStore.getCategoryByName("outfits")
-	elseif serviceType == GameStore.ServiceTypes.SERVICE_MOUNTS then
-		category = GameStore.getCategoryByName("mounts")
+	local servicesName = {
+		[GameStore.ServiceTypes.SERVICE_OUTFITS] = "outfits",
+		[GameStore.ServiceTypes.SERVICE_MOUNTS] = "mounts",
+		[GameStore.ServiceTypes.SERVICE_BLESSINGS] = "blessings"		
+	}
+
+	if servicesName[serviceType] then
+		category = GameStore.getCategoryByName(servicesName[serviceType])
 	end
 
 	if category then
