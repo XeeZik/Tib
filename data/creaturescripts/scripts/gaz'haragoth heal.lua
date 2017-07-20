@@ -1,9 +1,9 @@
 -- <event type="healthchange" name="HealGaz" script="heal_gaz.lua"/>
 
 local config = {
-	life_ative = 50000,
+	life_ative = 43750,
 	life_add = 300000,
-	seconds_ative = 5,
+	seconds_ative = 7,
 	gStorage = 90702,
 }
 
