@@ -9539,7 +9539,7 @@ int LuaScriptInterface::luaPlayerRemoveTibiaCoins(lua_State* L)
 int LuaScriptInterface::luaPlayerHasBlessing(lua_State* L)
 {
 	// player:hasBlessing(blessing)
-	uint8_t blessing = getNumber<uint8_t>(L, 2) - 1;
+	uint8_t blessing = getNumber<uint8_t>(L, 2);
 	Player* player = getUserdata<Player>(L, 1);
 	if (player) {
 		pushBoolean(L, player->hasBlessing(blessing));
@@ -9560,14 +9560,6 @@ int LuaScriptInterface::luaPlayerAddBlessing(lua_State* L)
 
 	uint8_t blessing = getNumber<uint8_t>(L, 2);
 	uint8_t count = getNumber<uint8_t>(L, 3);
-	if (!count) {
-		count = 1;
-	}
-
-	if (player->hasBlessing(blessing)) {
-		pushBoolean(L, false);
-		return 1;
-	}
 
 	player->addBlessing(blessing, count);
 	player->sendBlessStatus();
@@ -9586,9 +9578,6 @@ int LuaScriptInterface::luaPlayerRemoveBlessing(lua_State* L)
 
 	uint8_t blessing = getNumber<uint8_t>(L, 2);
 	uint8_t count = getNumber<uint8_t>(L, 3);
-	if (!count) {
-		count = 1;
-	}
 
 	if (!player->hasBlessing(blessing)) {
 		pushBoolean(L, false);
@@ -9605,7 +9594,7 @@ int LuaScriptInterface::luaPlayerGetBlessingCount(lua_State* L)
 	// player:getBlessingCount(index)
 	Player* player = getUserdata<Player>(L, 1);
 	uint8_t index = getNumber<uint8_t>(L, 2);
-	if (!index) {
+	if (index == 0) {
 		index = 1;
 	}
 
