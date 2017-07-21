@@ -1898,21 +1898,23 @@ CREATE TABLE IF NOT EXISTS `sellchar` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `server_config`
+-- Estrutura da tabela `server_config`
 --
 
-CREATE TABLE IF NOT EXISTS `server_config` (
+CREATE TABLE `server_config` (
   `config` varchar(50) NOT NULL,
   `value` varchar(256) NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `server_config`
+-- Extraindo dados da tabela `server_config`
 --
 
 INSERT INTO `server_config` (`config`, `value`) VALUES
-('motd_hash', 'e667ba697c4dfad02c52fa6d34a7a17a33c01f4f'),
-('motd_num', '1'),
+('db_version', '24'),
+('double', 'desactived'),
+('motd_hash', 'd40f8dcfa99c13f947571211f86d3e1edd1b329c'),
+('motd_num', '2'),
 ('players_record', '1');
 
 -- --------------------------------------------------------
