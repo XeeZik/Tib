@@ -1503,6 +1503,18 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(ITEM_WILDGROWTH_PERSISTENT)
 	registerEnum(ITEM_WILDGROWTH_SAFE)
 
+	registerEnum(ITEM_HEALTH_CASK_START)
+	registerEnum(ITEM_HEALTH_CASK_END)
+
+	registerEnum(ITEM_MANA_CASK_START)
+	registerEnum(ITEM_MANA_CASK_END)
+
+	registerEnum(ITEM_SPIRIT_CASK_START)
+	registerEnum(ITEM_SPIRIT_CASK_END)
+
+	registerEnum(ITEM_KEG_START)
+	registerEnum(ITEM_KEG_END)
+
 	registerEnum(PlayerFlag_CannotUseCombat)
 	registerEnum(PlayerFlag_CannotAttackPlayer)
 	registerEnum(PlayerFlag_CannotAttackMonster)
