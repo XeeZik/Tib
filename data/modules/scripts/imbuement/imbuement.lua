@@ -20,7 +20,6 @@ local Imbuements = {
         LevelsPercent = {10, 25, 50},
         Weapons = {"axe", "club", "sword"},
         Items = {{10553, 25}, {5920, 5}, {5954, 5}}
-        
     },
     {
         Name = "Venom",
@@ -438,7 +437,7 @@ function Player.applyImbuement(self, msg)
 	end
 
 	local applyChance = math.random(100)
-	if (ImbuingInfo[imbuingLevel].Percent < applyChance) then
+	if (ImbuingInfo[imbuingLevel].Percent < applyChance and useProtection == 0) then
 		sendImbuementError(self, "Item failed to apply imbuement.", ErrorMessages.MESSAGEDIALOG_IMBUEMENT_ROLL_FAILED)
 		return false
 	end
