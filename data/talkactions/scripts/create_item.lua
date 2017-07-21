@@ -9,6 +9,11 @@ function onSay(player, words, param)
 
 	local split = param:split(",")
 
+	if(not split or not split[1]) then
+		player:sendCancelMessage('Incorrect syntax use "/i itemName,quantity" OR "/i itemID,quantity".')
+		return false
+	end
+
 	local itemType = ItemType(split[1])
 	if itemType:getId() == 0 then
 		itemType = ItemType(tonumber(split[1]))
