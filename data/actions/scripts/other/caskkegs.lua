@@ -16,7 +16,7 @@ local targetIdList = {
  }
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-
+	if target:getId() >= 28533 and target:getId() <= 28588 then
 	local house = player:getTile():getHouse()
 	if house and house:canEditAccessList(SUBOWNER_LIST, player) and house:canEditAccessList(doorId, player) or target:getId() >= 28577 then 
 	elseif target:getId() >= 28533 and target:getId() < 28577 then
@@ -48,5 +48,6 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
  		end
 	end
 	return true
+end
 end
 
