@@ -1929,7 +1929,7 @@ CREATE TABLE IF NOT EXISTS `store_history` (
   `description` varchar(3500) NOT NULL,
   `coin_amount` int(12) NOT NULL,
   `time` bigint(20) unsigned NOT NULL,
-  `timestamp` int(11) NOT NULL,
+  `timestamp` int(11) NOT NULL DEFAULT 0,
   `id` int(11) NOT NULL,
   `coins` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

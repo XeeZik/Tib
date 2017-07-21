@@ -338,15 +338,22 @@ function parseBuyStoreOffer(playerId, msg)
 				return addPlayerEvent(sendStoreError, 250, playerId, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free slots in your store inbox.")
 			end
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_HOUSE then
+			local function isCaskItem(itemId)
+				return 	(itemId >= ITEM_HEALTH_CASK_START and itemId <= ITEM_HEALTH_CASK_END) or
+						(itemId >= ITEM_MANA_CASK_START and itemId <= ITEM_MANA_CASK_END) or
+						(itemId >= ITEM_SPIRIT_CASK_START and itemId <= ITEM_SPIRIT_CASK_END)
+			end
+
 			local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
 			if inbox and inbox:getEmptySlots() > 0 then
-				local decoKit = Item(inbox:addItem(26054, 1):getUniqueId())
+				local decoKit = inbox:addItem(26054, 1)
 				local function changeKit(kit)
 					local decoItemName = ItemType(offer.thingId):getName()
 					if kit then
 						kit:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "You bought this item in the Store.\nUnwrap it in your own house to create a <" ..decoItemName..">.")
 						kit:setActionId(offer.thingId)
-						if kit:isCaskItem() then
+
+						if isCaskItem(offer.thingId) then
 							kit:setAttribute(ITEM_ATTRIBUTE_DATE, offer.count)
  						end
 					end
@@ -1068,11 +1075,3 @@ function Player.toggleSex(self)
 	end
 	self:setOutfit(playerOutfit)
 end
-
-	function Item.isCaskItem(self)
-		local itemId = self:getId()
-		return 	(itemId >= ITEM_HEALTH_CASK_START and itemId <= ITEM_HEALTH_CASK_END) or
-				(itemId >= ITEM_MANA_CASK_START and itemId <= ITEM_MANA_CASK_END) or
-				(itemId >= ITEM_SPIRIT_CASK_START and itemId <= ITEM_SPIRIT_CASK_END)
-	end
-

@@ -519,9 +519,9 @@
 	<house name="Warriors Guildhall" houseid="1941" entryx="32348" entryy="32213" entryz="7" rent="14725" townid="2" size="256" />
 	<house name="Farm Lane, 1st floor (Shop)" houseid="1942" entryx="32382" entryy="32232" entryz="7" rent="945" townid="2" size="15" />
 	<house name="Farm Lane, Basement (Shop)" houseid="1943" entryx="32382" entryy="32231" entryz="8" rent="945" townid="2" size="15" />
-	<house name="Main Street 9, 1st floor (Shop)" houseid="1944" entryx="32377" entryy="32224" entryz="7" rent="1440" townid="2" size="25" />
-	<house name="Main Street 9a, 2nd floor (Shop)" houseid="1945" entryx="32377" entryy="32222" entryz="6" rent="765" townid="2" size="12" />
-	<house name="Main Street 9b, 2nd floor (Shop)" houseid="1946" entryx="32377" entryy="32224" entryz="6" rent="1260" townid="2" size="22" />
+	<house name="Main Street 9, 1st floor (Shop)" houseid="1944" entryx="32377" entryy="32224" entryz="7" rent="1440" townid="2" size="23" />
+	<house name="Main Street 9a, 2nd floor (Shop)" houseid="1945" entryx="32377" entryy="32222" entryz="6" rent="765" townid="2" size="10" />
+	<house name="Main Street 9b, 2nd floor (Shop)" houseid="1946" entryx="32377" entryy="32224" entryz="6" rent="1260" townid="2" size="20" />
 	<house name="Farm Lane, 2nd Floor (Shop)" houseid="1947" entryx="32382" entryy="32233" entryz="6" rent="945" townid="2" size="15" />
 	<house name="The City Wall 5a" houseid="1948" entryx="32416" entryy="32220" entryz="7" rent="585" townid="2" size="10" />
 	<house name="The City Wall 5c" houseid="1949" entryx="32416" entryy="32223" entryz="7" rent="585" townid="2" size="10" />
@@ -676,7 +676,7 @@
 	<house name="Fibula Village 2" houseid="2101" entryx="32184" entryy="32433" entryz="7" rent="845" townid="2" size="10" />
 	<house name="Fibula Village 3" houseid="2102" entryx="32196" entryy="32438" entryz="7" rent="3810" townid="2" size="46" />
 	<house name="Mercenary Tower" houseid="2103" entryx="32208" entryy="32437" entryz="7" rent="41955" townid="2" size="528" />
-	<house name="Guildhall of the Red Rose" houseid="2104" entryx="32180" entryy="32427" entryz="7" rent="27725" townid="2" size="342" />
+	<house name="Guildhall of the Red Rose" houseid="2104" entryx="32180" entryy="32427" entryz="7" rent="27725" townid="2" size="343" />
 	<house name="Fibula Village, Bar" houseid="2105" entryx="32151" entryy="32399" entryz="7" rent="5235" townid="2" size="60" />
 	<house name="Fibula Village, Villa" houseid="2106" entryx="32140" entryy="32374" entryz="7" rent="11490" townid="2" size="183" />
 	<house name="Fibula Clanhall" houseid="2107" entryx="32178" entryy="32373" entryz="7" rent="11430" townid="2" size="127" />
@@ -938,7 +938,7 @@
 	<house name="Cormaya 11" houseid="2370" entryx="33305" entryy="32005" entryz="7" rent="2035" townid="11" size="38" />
 	<house name="Demon Tower" houseid="2371" entryx="32601" entryy="32116" entryz="7" rent="3340" townid="2" size="50" />
 	<house name="Nautic Observer" houseid="2372" entryx="32483" entryy="31825" entryz="7" rent="6540" townid="4" size="144" />
-	<house name="Riverspring" houseid="2373" entryx="32761" entryy="32128" entryz="7" rent="19450" townid="3" size="257" />
+	<house name="Riverspring" houseid="2373" entryx="32761" entryy="32128" entryz="7" rent="19450" townid="3" size="277" />
 	<house name="House of Recreation" houseid="2374" entryx="32280" entryy="31823" entryz="7" rent="22540" townid="4" size="339" />
 	<house name="Valorous Venore" houseid="2375" entryx="32979" entryy="32096" entryz="6" rent="14435" townid="1" size="254" />
 	<house name="Ab'Dendriel Clanhall" houseid="2376" entryx="32714" entryy="31643" entryz="7" rent="14850" townid="5" size="262" />
