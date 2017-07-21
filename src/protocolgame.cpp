@@ -1547,7 +1547,8 @@ void ProtocolGame::sendMarketEnter(uint32_t depotId)
 	sendResourceBalance(player->getMoney(), player->getBankBalance());
 }
 
-void ProtocolGame::updateCoinBalance() {
+void ProtocolGame::updateCoinBalance()
+{
 	NetworkMessage msg;
 	msg.addByte(0xF2);
 	msg.addByte(0x00);

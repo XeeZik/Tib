@@ -27,7 +27,7 @@ local storage, duration = 1.4, 0.1
 	MESSAGE_NEEDMORESPACE = 14 -- When the player has some space to buy an item, but not enough space
 	MESSAGE_IDLETIMEOUT = 15 -- When the player has been idle for longer then idleTime allows.
 	MESSAGE_WALKAWAY = 16 -- When the player walks out of the talkRadius of the npc.
-	MESSAGE_DECLINE	 = 17 -- When the player says no to something.
+	MESSAGE_DECLINE = 17 -- When the player says no to something.
 	MESSAGE_SENDTRADE = 18 -- When the npc sends the trade window to the player
 	MESSAGE_NOSHOP = 19 -- When the npc's shop is requested but he doesn't have any
 	MESSAGE_ONCLOSESHOP = 20 -- When the player closes the npc's shop window
@@ -52,7 +52,7 @@ local storage, duration = 1.4, 0.1
 	CALLBACK_ONTRADEREQUEST = 20
 
 	-- Addidional module callback ids
-	CALLBACK_MODULE_INIT	 = 12
+	CALLBACK_MODULE_INIT = 12
 	CALLBACK_MODULE_RESET = 13
 
 	-- Constant strings defining the keywords to replace in the default messages.
@@ -478,13 +478,13 @@ local storage, duration = 1.4, 0.1
 		end
 
 		if (os.clock() - getPlayerStorageValue(cid, storage)) >= 0.1 then
-			setPlayerStorageValue(cid, storage, os.clock()) -- DELAY PRA COMPRAR 
-			local callback = self:getCallback(CALLBACK_ONBUY)
-			if callback == nil or callback(cid, itemid, subType, amount, ignoreCap, inBackpacks) then
-				if self:processModuleCallback(CALLBACK_ONBUY, cid, itemid, subType, amount, ignoreCap, inBackpacks) then
-					--
-				end
+		setPlayerStorageValue(cid, storage, os.clock()) -- DELAY PRA COMPRAR 
+		local callback = self:getCallback(CALLBACK_ONBUY)
+		if callback == nil or callback(cid, itemid, subType, amount, ignoreCap, inBackpacks) then
+			if self:processModuleCallback(CALLBACK_ONBUY, cid, itemid, subType, amount, ignoreCap, inBackpacks) then
+				--
 			end
+		end
 		else
 			return false
 		end

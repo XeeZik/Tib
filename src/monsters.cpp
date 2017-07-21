@@ -143,8 +143,7 @@ std::vector<Item*> MonsterType::createLootItem(const LootBlock& lootBlock, bool 
 		if (randvalue < lootBlock.chance) {
 			if (Item::items[lootBlock.id].stackable) {
 				itemCount = randvalue % lootBlock.countmax + 1;
-			}
-			else {
+			} else {
 				itemCount = 1;
 			}
 
