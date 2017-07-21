@@ -261,11 +261,14 @@ function parseBuyStoreOffer(playerId, msg)
 			else
 				return addPlayerEvent(sendStoreError, 250, playerId, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free slots in your store inbox.")
 			end
-		-- If offer is Stackable.
+
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_BLESSINGS then
 			player:addBlessing(offer.thingId, 1)
+
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_PREMIUM then
 			player:addPremiumDays(offer.thingId)
+
+		-- If offer is Stackable.
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_STACKABLE then
 			if player:getFreeCapacity() < ItemType(offer.thingId):getWeight(offer.count) then
 				return addPlayerEvent(sendStoreError, 250, playerId, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free capacity to hold this item.")
@@ -273,14 +276,52 @@ function parseBuyStoreOffer(playerId, msg)
 
 			local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
 			if inbox and inbox:getEmptySlots() > 0 then
-				if (offer.count > 100) then
+				local function isKegItem(itemId)
+					return itemId>=ITEM_KEG_START and itemId <= ITEM_KEG_END
+				end
+
+				if(isKegItem(offer.thingId)) then
+					if(offer.count > 500) then
+						local parcel = Item(inbox:addItem(2596, 1):getUniqueId())
+						local function changeParcel(parcel)
+							local packagename = ''.. offer.count..'x '.. offer.name ..' package.'
+							if parcel then
+								parcel:setAttribute(ITEM_ATTRIBUTE_NAME, packagename)
+								local pendingCount=  offer.count
+								while(pendingCount>0) do
+									local pack
+									if(pendingCount>500) then
+										pack = 500
+									else
+										pack = pendingCount
+									end
+									local kegItem = parcel:addItem(offer.thingId, 1)
+									kegItem:setAttribute(ITEM_ATTRIBUTE_CHARGES, pack)
+									pendingCount=pendingCount-pack
+								end
+							end
+						end
+						addEvent(function() changeParcel(parcel) end, 250)
+					else
+						local kegItem = inbox:addItem(offer.thingId,1)
+						kegItem:setAttribute(ITEM_ATTRIBUTE_CHARGES, pack)
+					end
+				elseif (offer.count > 100) then
 					local parcel = Item(inbox:addItem(2596, 1):getUniqueId())
 					local function changeParcel(parcel)
 						local packagename = ''.. offer.count..'x '.. offer.name ..' package.'
 						if parcel then
 							parcel:setAttribute(ITEM_ATTRIBUTE_NAME, packagename)
-							for e = 1,offer.count do
-								parcel:addItem(offer.thingId, 1)
+							local pendingCount=  offer.count
+							while(pendingCount>0) do
+								local pack
+								if(pendingCount>100) then
+									pack = 100
+								else
+									pack = pendingCount
+								end
+								parcel:addItem(offer.thingId, pack)
+								pendingCount=pendingCount-pack
 							end
 						end
 					end
@@ -297,8 +338,12 @@ function parseBuyStoreOffer(playerId, msg)
 				local decoKit = Item(inbox:addItem(26054, 1):getUniqueId())
 				local function changeKit(kit)
 					local decoItemName = ItemType(offer.thingId):getName()
-					if decoKit then
-						decoKit:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "You bought this item in the Store.\nUnwrap it in your own house to create a <" ..decoItemName..">.")
+					if kit then
+						kit:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "You bought this item in the Store.\nUnwrap it in your own house to create a <" ..decoItemName..">.")
+						kit:setActionId(offer.thingId)
+						if kit:isCaskItem() then
+							kit:setAttribute(ITEM_ATTRIBUTE_DATE, offer.count)
+ 						end
 					end
 				end
 				addEvent(function() changeKit(decoKit) end, 250)
@@ -1018,3 +1063,11 @@ function Player.toggleSex(self)
 	end
 	self:setOutfit(playerOutfit)
 end
+
+	function Item.isCaskItem(self)
+		local itemId = self:getId()
+		return 	(itemId >= ITEM_HEALTH_CASK_START and itemId <= ITEM_HEALTH_CASK_END) or
+				(itemId >= ITEM_MANA_CASK_START and itemId <= ITEM_MANA_CASK_END) or
+				(itemId >= ITEM_SPIRIT_CASK_START and itemId <= ITEM_SPIRIT_CASK_END)
+	end
+
