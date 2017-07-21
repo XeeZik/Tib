@@ -55,6 +55,7 @@ void ProtocolGame::release()
 		if (player->getTile() && (player->getTile()->hasFlag(TILESTATE_PROTECTIONZONE) || !player->hasCondition(CONDITION_INFIGHT))) {
 			logout(true, true);
 		}
+
 		player->client.reset();
 		player->decrementReferenceCounter();
 		player = nullptr;
@@ -492,7 +493,9 @@ void ProtocolGame::parsePacket(NetworkMessage& msg)
 			this_ptr->stopLiveCast();
 		}));
 		if (recvbyte == 0x0F) {
-			login(player->getName(), player->getAccount(), player->operatingSystem);
+			// we need to make the player pointer != null in this part, game.cpp release is the first step
+			// login(player->getName(), player->getAccount(), player->operatingSystem);
+			disconnect();
 			return;
 		}
 
