@@ -1574,6 +1574,9 @@
 	<!-- chopper of mayhem (heavily charged) -->
 	<movevent event="DeEquip" itemid="26243" slot="hand" function="onDeEquipItem" />
     <movevent event="Equip" itemid="26243" slot="hand" level="250" function="onEquipItem">
+        <vocation name="Knight" />
+        <vocation name="Elite Knight" showInDescription="0" />
+    </movevent>
 
 	<!-- club of mayhem -->
 	<movevent event="DeEquip" itemid="25883" slot="hand" function="onDeEquipItem" />
