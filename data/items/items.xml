@@ -37017,9 +37017,9 @@
 	<item id="27745" name="unknown item" />
 	<item fromid="27746" toid="27756" name="the time machine" />
 	<item fromid="27757" toid="27759" name="abandoned imbuing shrine" />
-	<item fromid="27761" toid="27785" name="dragon lair" /> <!-- CONSTRUÇÃO NOVAS-->
+	<item fromid="27761" toid="27785" name="dragon lair" /> <!-- CONSTRU??O NOVAS-->
 	<item fromid="27791" toid="27794" name="unknown item" />
-	<item fromid="27802" toid="27829" name="dragon lair" /> <!-- CONSTRUÇÃO NOVAS-->
+	<item fromid="27802" toid="27829" name="dragon lair" /> <!-- CONSTRU??O NOVAS-->
 	<item id="27830" article="an" name="imbuing shrine">
 		<attribute key="rotateTo" value="27831" />
 		<attribute key="wrapableTo" value="26054" />
@@ -37036,7 +37036,7 @@
 		<attribute key="rotateTo" value="27838" />
 		<attribute key="wrapableTo" value="26054" />
 	</item>
-	<item fromid="27832" toid="27836" name="dragon lair" /> <!-- CONSTRUÇÃO NOVAS-->
+	<item fromid="27832" toid="27836" name="dragon lair" /> <!-- CONSTRU??O NOVAS-->
 	<item id="27719" article="a" name="dead pinata dragon">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="27720" />
@@ -37298,31 +37298,31 @@
 	<item id="23803" article="a" name="lightest magic missile rune" />
 	<item id="23804" article="a" name="the chiller" />
 	<item id="23805" article="a" name="lightest stone shower rune" />
-	<item id="28553" article="a" name="helth potion cask">
+	<item id="28553" article="a" name="health potion cask">
 		<attribute key="wrapableTo" value="26054" />
 		<attribute key="charges" value="1000" />
 		<attribute key="description" value="This cask can be used to refill health potions." />
 		<attribute key="weight" value="200000" />
 	</item>
-	<item id="28554" article="a" name="strong helth potion cask">
+	<item id="28554" article="a" name="strong health potion cask">
 		<attribute key="wrapableTo" value="26054" />
 		<attribute key="charges" value="1000" />
 		<attribute key="description" value="This cask can be used to refill great health potions." />
 		<attribute key="weight" value="200000" />
 	</item>
-	<item id="28555" article="a" name="great helth potion cask">
+	<item id="28555" article="a" name="great health potion cask">
 		<attribute key="wrapableTo" value="26054" />
 		<attribute key="charges" value="1000" />
 		<attribute key="description" value="This cask can be used to refill strong health potions." />
 		<attribute key="weight" value="200000" />
 	</item>
-	<item id="28556" article="a" name="ultimate helth potion cask">
+	<item id="28556" article="a" name="ultimate health potion cask">
 		<attribute key="wrapableTo" value="26054" />
 		<attribute key="charges" value="1000" />
 		<attribute key="description" value="This cask can be used to refill ultimate health potions." />
 		<attribute key="weight" value="200000" />
 	</item>
-	<item id="28557" article="a" name="supreme helth potion cask">
+	<item id="28557" article="a" name="supreme health potion cask">
 		<attribute key="wrapableTo" value="26054" />
 		<attribute key="charges" value="1000" />
 		<attribute key="description" value="This cask can be used to refill supreme health potions." />
