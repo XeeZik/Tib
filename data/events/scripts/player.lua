@@ -58,7 +58,7 @@ function Player:onLook(thing, position, distance)
 				if (thing:getSpecialAttribute(i+3)) then
 					time = getTime(thing:getSpecialAttribute(i+3))
 				end
-				
+
 				if (specialAttr and specialAttr ~= 0) then
 					if (i ~= itemType:getImbuingSlots()) then
 						imbuingSlots = imbuingSlots.. "" ..specialAttr.." " ..time..", "
@@ -78,7 +78,6 @@ function Player:onLook(thing, position, distance)
 	else
 		description = description .. thing:getDescription(distance)
 	end
-
 
 	if self:getGroup():getAccess() then
 		if thing:isItem() then
@@ -231,7 +230,6 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 		end
 	end
 
-		
 	-- Store Inbox
 	local containerIdFrom = fromPosition.y - 64
 	local containerFrom = self:getContainerById(containerIdFrom)
@@ -453,31 +451,31 @@ function useStaminaImbuing(playerId, itemuid)
 		return false
 	end
 
-    for i = 1, item:getType():getImbuingSlots() do
-        if (item:isActiveImbuement(i+3)) then
-            local staminaMinutes = item:getSpecialAttribute(i+3)/60
-            if (staminaMinutes > 0) then
-                local currentTime = os.time()
-                local timePassed = currentTime - item:getSpecialAttribute(i+6)
-                if timePassed > 0 then
-                    if timePassed > 60 then
-                        if staminaMinutes > 2 then
-                            staminaMinutes = staminaMinutes - 2
-                        else
-                            staminaMinutes = 0
-                        end
+	for i = 1, item:getType():getImbuingSlots() do
+		if (item:isActiveImbuement(i+3)) then
+			local staminaMinutes = item:getSpecialAttribute(i+3)/60
+			if (staminaMinutes > 0) then
+				local currentTime = os.time()
+				local timePassed = currentTime - item:getSpecialAttribute(i+6)
+				if timePassed > 0 then
+					if timePassed > 60 then
+						if staminaMinutes > 2 then
+							staminaMinutes = staminaMinutes - 2
+						else
+							staminaMinutes = 0
+						end
 
-                        item:setSpecialAttribute(i+6, currentTime + 120)
-                    else
-                        staminaMinutes = staminaMinutes - 1
-                        item:setSpecialAttribute(i+6, currentTime + 60)
-                    end
-                end
+						item:setSpecialAttribute(i+6, currentTime + 120)
+					else
+						staminaMinutes = staminaMinutes - 1
+						item:setSpecialAttribute(i+6, currentTime + 60)
+					end
+				end
 
-                item:setSpecialAttribute(i+3, staminaMinutes*60)
-            end
-        end
-    end
+				item:setSpecialAttribute(i+3, staminaMinutes*60)
+			end
+		end
+	end
 end
 
 local function useStamina(player)
@@ -545,44 +543,44 @@ function Player:onUseWeapon(normalDamage, elementType, elementDamage)
 	end
 
 	-- Imbuement
-    if (weapon and weapon:getType():getImbuingSlots() > 0) then
-        for i = 1, weapon:getType():getImbuingSlots() do
-        	local slotEnchant = weapon:getSpecialAttribute(i)
-            if (slotEnchant) then
-                local percentDamage, enchantPercent = 0, weapon:getImbuementPercent(slotEnchant)
-                local typeEnchant = weapon:getImbuementType(i) or ""
-                if (typeEnchant ~= "") then
-                    useStaminaImbuing(self:getId(), weapon:getUniqueId())
-                end
+	if (weapon and weapon:getType():getImbuingSlots() > 0) then
+		for i = 1, weapon:getType():getImbuingSlots() do
+			local slotEnchant = weapon:getSpecialAttribute(i)
+			if (slotEnchant) then
+				local percentDamage, enchantPercent = 0, weapon:getImbuementPercent(slotEnchant)
+				local typeEnchant = weapon:getImbuementType(i) or ""
+				if (typeEnchant ~= "") then
+					useStaminaImbuing(self:getId(), weapon:getUniqueId())
+				end
 
-                if (typeEnchant ~= "hitpointsleech" and typeEnchant ~= "manapointsleech" and typeEnchant ~= "criticalhit") then
-                    percentDamage = normalDamage*(enchantPercent/100)
-                    normalDamage = normalDamage - percentDamage
-                    elementDamage = weapon:getType():getAttack()*(enchantPercent/100)
-                else
-                	if (typeEnchant == "hitpointsleech") then
-                		local healAmountHP = normalDamage*(enchantPercent/100)
-                		self:addHealth(healAmountHP)
-                	elseif (typeEnchant == "manapointsleech") then
-                		local healAmountMP = normalDamage*(enchantPercent/100)
-                		self:addMana(healAmountMP)
-                	end
-                end
+				if (typeEnchant ~= "hitpointsleech" and typeEnchant ~= "manapointsleech" and typeEnchant ~= "criticalhit") then
+					percentDamage = normalDamage*(enchantPercent/100)
+					normalDamage = normalDamage - percentDamage
+					elementDamage = weapon:getType():getAttack()*(enchantPercent/100)
+				else
+					if (typeEnchant == "hitpointsleech") then
+						local healAmountHP = normalDamage*(enchantPercent/100)
+						self:addHealth(healAmountHP)
+					elseif (typeEnchant == "manapointsleech") then
+						local healAmountMP = normalDamage*(enchantPercent/100)
+						self:addMana(healAmountMP)
+					end
+				end
 
-                if (typeEnchant == "firedamage") then
-                    elementType = COMBAT_FIREDAMAGE
-                elseif (typeEnchant == "earthdamage") then
-                    elementType = COMBAT_EARTHDAMAGE
-                elseif (typeEnchant == "icedamage") then
-                    elementType = COMBAT_ICEDAMAGE
-                elseif (typeEnchant == "energydamage") then
-                    elementType = COMBAT_ENERGYDAMAGE
-                elseif (typeEnchant == "deathdamage") then
-                    elementType = COMBAT_DEATHDAMAGE
-                end
-            end
-        end
-    end
+				if (typeEnchant == "firedamage") then
+					elementType = COMBAT_FIREDAMAGE
+				elseif (typeEnchant == "earthdamage") then
+					elementType = COMBAT_EARTHDAMAGE
+				elseif (typeEnchant == "icedamage") then
+					elementType = COMBAT_ICEDAMAGE
+				elseif (typeEnchant == "energydamage") then
+					elementType = COMBAT_ENERGYDAMAGE
+				elseif (typeEnchant == "deathdamage") then
+					elementType = COMBAT_DEATHDAMAGE
+				end
+			end
+		end
+	end
 	return normalDamage, elementType, elementDamage
 end
 
@@ -593,44 +591,44 @@ function Player:onCombatSpell(normalDamage, elementDamage, elementType)
 	end
 
 	-- Imbuement
-    if (weapon and weapon:getType():getImbuingSlots() > 0) then
-        for i = 1, weapon:getType():getImbuingSlots() do
-        	local slotEnchant = weapon:getSpecialAttribute(i)
-            if (slotEnchant) then
-                local percentDamage, enchantPercent = 0, weapon:getImbuementPercent(slotEnchant)
-                local typeEnchant = weapon:getImbuementType(i) or ""
-                if (typeEnchant ~= "") then
-                    useStaminaImbuing(self:getId(), weapon:getUniqueId())
-                end
+	if (weapon and weapon:getType():getImbuingSlots() > 0) then
+		for i = 1, weapon:getType():getImbuingSlots() do
+			local slotEnchant = weapon:getSpecialAttribute(i)
+			if (slotEnchant) then
+				local percentDamage, enchantPercent = 0, weapon:getImbuementPercent(slotEnchant)
+				local typeEnchant = weapon:getImbuementType(i) or ""
+				if (typeEnchant ~= "") then
+					useStaminaImbuing(self:getId(), weapon:getUniqueId())
+				end
 
-                if (typeEnchant ~= "hitpointsleech" and typeEnchant ~= "manapointsleech" and typeEnchant ~= "criticalhit") then
-                    percentDamage = normalDamage*(enchantPercent/100)
-                    normalDamage = normalDamage - percentDamage
-                    elementDamage = weapon:getType():getAttack()*(enchantPercent/100)
-                end
+				if (typeEnchant ~= "hitpointsleech" and typeEnchant ~= "manapointsleech" and typeEnchant ~= "criticalhit") then
+					percentDamage = normalDamage*(enchantPercent/100)
+					normalDamage = normalDamage - percentDamage
+					elementDamage = weapon:getType():getAttack()*(enchantPercent/100)
+				end
 
-                if (typeEnchant == "firedamage") then
-                    elementType = COMBAT_FIREDAMAGE
-                elseif (typeEnchant == "earthdamage") then
-                    elementType = COMBAT_EARTHDAMAGE
-                elseif (typeEnchant == "icedamage") then
-                    elementType = COMBAT_ICEDAMAGE
-                elseif (typeEnchant == "energydamage") then
-                    elementType = COMBAT_ENERGYDAMAGE
-                elseif (typeEnchant == "deathdamage") then
-                    elementType = COMBAT_DEATHDAMAGE
-                end
-            end
-        end
-    end
+				if (typeEnchant == "firedamage") then
+					elementType = COMBAT_FIREDAMAGE
+				elseif (typeEnchant == "earthdamage") then
+					elementType = COMBAT_EARTHDAMAGE
+				elseif (typeEnchant == "icedamage") then
+					elementType = COMBAT_ICEDAMAGE
+				elseif (typeEnchant == "energydamage") then
+					elementType = COMBAT_ENERGYDAMAGE
+				elseif (typeEnchant == "deathdamage") then
+					elementType = COMBAT_DEATHDAMAGE
+				end
+			end
+		end
+	end
 	return normalDamage, elementType, elementDamage
 end
 
 function Player:onGainExperience(source, exp, rawExp)
- 	if not source or source:isPlayer() then
- 		return exp
- 	end
-	
+	if not source or source:isPlayer() then
+		return exp
+	end
+
 	-- Soul regeneration
 	local vocation = self:getVocation()
 	if self:getSoul() < vocation:getMaxSoul() and exp >= self:getLevel() then
@@ -638,10 +636,8 @@ function Player:onGainExperience(source, exp, rawExp)
 		self:addCondition(soulCondition)
 	end
 
-
 	-- Apply experience stage multiplier
 	exp = exp * Game.getExperienceStage(self:getLevel())
-
 	for i = 1, 3 do
 		if (self:isActive(i-1)) then
 			local bonusInfo = self:getBonusInfo(i-1)
@@ -656,7 +652,7 @@ function Player:onGainExperience(source, exp, rawExp)
 		self:setStoreXpBoost(0) -- reset xp boost to 0
 	end
 
-	-- Mais compacto, depois da verificação de antes (reset) ele só da xp se tiver :v
+	-- More compact, after checking before (reset) it only of xp if you have: v
 	if (self:getStoreXpBoost() > 0) then
 		exp = exp + (exp * (self:getStoreXpBoost()/100)) -- Exp Boost
 	end
@@ -695,7 +691,7 @@ function Player:onGainExperience(source, exp, rawExp)
 
 	-- Exp Boost Modifier
 	useStaminaXp(self)
-	
+
 	-- Stamina modifier
 	if configManager.getBoolean(configKeys.STAMINA_SYSTEM) then
 		useStamina(self)
@@ -707,6 +703,7 @@ function Player:onGainExperience(source, exp, rawExp)
 			exp = exp * 0.5
 		end
 	end
+
 	return exp
 end
 

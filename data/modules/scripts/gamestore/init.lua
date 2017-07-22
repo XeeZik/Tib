@@ -178,7 +178,7 @@ function parseOpenStore(playerId, msg)
 	local servicesName = {
 		[GameStore.ServiceTypes.SERVICE_OUTFITS] = "outfits",
 		[GameStore.ServiceTypes.SERVICE_MOUNTS] = "mounts",
-		[GameStore.ServiceTypes.SERVICE_BLESSINGS] = "blessings"		
+		[GameStore.ServiceTypes.SERVICE_BLESSINGS] = "blessings"
 	}
 
 	if servicesName[serviceType] then
@@ -266,13 +266,10 @@ function parseBuyStoreOffer(playerId, msg)
 			else
 				return addPlayerEvent(sendStoreError, 250, playerId, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free slots in your store inbox.")
 			end
-
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_BLESSINGS then
 			player:addBlessing(offer.thingId, 1)
-
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_PREMIUM then
 			player:addPremiumDays(offer.thingId)
-
 		-- If offer is Stackable.
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_STACKABLE then
 			if player:getFreeCapacity() < ItemType(offer.thingId):getWeight(offer.count) then
@@ -339,9 +336,9 @@ function parseBuyStoreOffer(playerId, msg)
 			end
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_HOUSE then
 			local function isCaskItem(itemId)
-				return 	(itemId >= ITEM_HEALTH_CASK_START and itemId <= ITEM_HEALTH_CASK_END) or
-						(itemId >= ITEM_MANA_CASK_START and itemId <= ITEM_MANA_CASK_END) or
-						(itemId >= ITEM_SPIRIT_CASK_START and itemId <= ITEM_SPIRIT_CASK_END)
+				return (itemId >= ITEM_HEALTH_CASK_START and itemId <= ITEM_HEALTH_CASK_END) or 
+					(itemId >= ITEM_MANA_CASK_START and itemId <= ITEM_MANA_CASK_END) or 
+					(itemId >= ITEM_SPIRIT_CASK_START and itemId <= ITEM_SPIRIT_CASK_END)
 			end
 
 			local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)

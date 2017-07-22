@@ -11,230 +11,230 @@ ImbuingSystem = {
 }
 
 local Imbuements = {
-    {
-        Name = "Scorch",
-        Category = "Elemental Damage (Fire)",
-        Type = "firedamage",
-        Description = "Converts % of the physical damage to fire damage.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {10, 25, 50},
-        Weapons = {"axe", "club", "sword"},
-        Items = {{10553, 25}, {5920, 5}, {5954, 5}}
-    },
-    {
-        Name = "Venom",
-        Category = "Elemental Damage (Earth)",
-        Type = "earthdamage",
-        Description = "Converts % of the physical damage to earth damage.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {10, 25, 50},
-        Weapons = {"axe", "club", "sword"},
-        Items = {{10603, 25}, {10557, 5}, {23565, 5}}
-    },
-    {
-        Name = "Frost",
-        Category = "Elemental Damage (Ice)",
-        Type = "icedamage",
-        Description = "Converts % of the physical damage to ice damage.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {10, 25, 50},
-        Weapons = {"axe", "club", "sword"},
-        Items = {{10567, 25}, {10578, 20}, {24170, 1}}
-    },
-    {
-        Name = "Electrify",
-        Category = "Elemental Damage (Energy)",
-        Type = "energydamage",
-        Description = "Converts % of the physical damage to energy damage.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {10, 25, 50},
-        Weapons = {"axe", "club", "sword"},
-        Items = {{21310, 25}, {24631, 5}, {26164, 1}}
-    },
-    {
-        Name = "Reap",
-        Category = "Elemental Damage (Death)",
-        Type = "deathdamage",
-        Description = "Converts % of the physical damage to death damage.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {10, 25, 50},
-        Weapons = {"axe", "club", "sword"},
-        Items = {{12440, 25}, {10564, 20}, {11337, 5}}
-    },
-    {
-        Name = "Vampirism",
-        Category = "Life Leech",
-        Type = "hitpointsleech",
-        Description = "converts % of damage to HP with a chance of 100%.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {5, 10, 25},
-        Weapons = {"axe", "club", "sword", "wand", "rod", "bow", "armor"},
-        Items = {{10602, 25}, {10550, 15}, {10580, 5}}
-    },
-    {
-        Name = "Void",
-        Category = "Mana Leech",
-        Type = "manapointsleech",
-        Description = "converts % of damage to MP with a chance of 100%.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {3, 5, 8},
-        Weapons = {"axe", "club", "sword", "wand", "rod", "bow", "helmet"},
-        Items = {{12448, 25}, {22534, 25}, {25386, 5}}
-    },
-    {
-        Name = "Strike",
-        Category = "Critical Hit",
-        Type = "criticaldamage",
-        Description = "raises crit hit damage by % and crit hit chance by 10%.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {15, 25, 50},
-        Weapons = {"axe", "club", "sword", "bow"},
-        Items = {{12400, 20}, {11228, 25}, {25384, 5}}
-    },
-    {
-        Name = "Lich Shroud",
-        Category = "Death Damage",
-        Type = "absorbPercentDeath",
-        Description = "reduces death damage by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {3, 8, 15},
-        Weapons = {"armor", "shield"},
-        Items = {{12422, 25}, {24663, 20}, {10577, 5}}
-    },
-    {
-        Name = "Snake Skin",
-        Category = "Eart Damage",
-        Type = "absorbPercentEarth",
-        Description = "reduces earth damage by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {3, 8, 15},
-        Weapons = {"armor", "shield"},
-        Items = {{20103, 25}, {10611, 20}, {12658, 10}}
-    },
-    {
-        Name = "Hide Dragon",
-        Category = "Fire Damage",
-        Type = "absorbPercentFire",
-        Description = "reduces fire damage by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {3, 8, 15},
-        Weapons = {"armor", "shield"},
-        Items = {{5877, 25}, {18425, 10}, {12614, 5}}
-    },
-    {
-        Name = "Quara Scale",
-        Category = "Ice Damage",
-        Type = "absorbPercentIce",
-        Description = "reduces ice damage by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {3, 8, 15},
-        Weapons = {"armor", "shield"},
-        Items = {{11212, 25}, {11224, 15}, {15425, 10}}
-    },
-    {
-        Name = "Cloud Fabric",
-        Category = "Energy Damage",
-        Type = "absorbPercentEnergy",
-        Description = "reduces energy damage by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {3, 8, 15},
-        Weapons = {"armor", "shield"},
-        Items = {{10561, 25}, {15482, 15}, {10582, 10}}
-    },
-    {
-        Name = "Demon Presence",
-        Category = "Holy Damage",
-        Type = "absorbPercentHoly",
-        Description = "reduces holy damage by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {3, 8, 15},
-        Weapons = {"armor", "shield"},
-        Items = {{10556, 25}, {10555, 25}, {11221, 20}}
-    },
-    {
-        Name = "Swiftness",
-        Category = "Increase Speed",
-        Type = "speed",
-        Description = "raises walking speed by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {10, 15, 20},
-        Weapons = {"boots"},
-        Items = {{19738, 15}, {11219, 25}, {15484, 20}}
-    },
-    {
-        Name = "Chop",
-        Category = "Increase Axe Fighting",
-        Type = "skillAxe",
-        Description = "raises axe fighting skill by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {1, 2, 4},
-        Weapons = {"axe", "helmet"},
-        Items = {{11113, 20}, {12403, 25}, {23571, 20}}
-    },
-    {
-        Name = "Slash",
-        Category = "Increase Sword Fighting",
-        Type = "skillSword",
-        Description = "raises sword fighting skill by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {1, 2, 4},
-        Weapons = {"sword", "helmet"},
-        Items = {{10608, 25}, {23573, 25}, {10571, 5}}
-    },
-    {
-        Name = "Bash",
-        Category = "Increase Club Fighting",
-        Type = "skillClub",
-        Description = "raises club fighting skill by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {1, 2, 4},
-        Weapons = {"club", "helmet"},
-        Items = {{10574, 20}, {24845, 15}, {11322, 10}}
-    },
-    {
-        Name = "Precision",
-        Category = "Increase Distance Fighting",
-        Type = "skillDist",
-        Description = "raises distance fighting skill by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {1, 2, 4},
-        Weapons = {"bow", "helmet"},
-        Items = {{12420, 25}, {21311, 20}, {11215, 10}}
-    },
-    {
-        Name = "Blockade",
-        Category = "Increase Shielding",
-        Type = "skillShield",
-        Description = "raises shielding skill by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {1, 2, 4},
-        Weapons = {"shield", "helmet"},
-        Items = {{10558, 20}, {12659, 25}, {22533, 25}}
-    },
-    {
-        Name = "Epiphany",
-        Category = "Increase Magic Level",
-        Type = "magiclevelpoints",
-        Description = "raises magic level by %.",
-        Levels = {"Basic", "Intricate", "Powerful"},
-        LevelsPercent = {1, 2, 4},
-        Weapons = {"wand", "rod", "helmetmage"},
-        Items = {{10552, 25}, {12408, 15}, {11226, 15}}
-    }
+	{
+		Name = "Scorch",
+		Category = "Elemental Damage (Fire)",
+		Type = "firedamage",
+		Description = "Converts % of the physical damage to fire damage.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {10, 25, 50},
+		Weapons = {"axe", "club", "sword"},
+		Items = {{10553, 25}, {5920, 5}, {5954, 5}}
+	},
+	{
+		Name = "Venom",
+		Category = "Elemental Damage (Earth)",
+		Type = "earthdamage",
+		Description = "Converts % of the physical damage to earth damage.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {10, 25, 50},
+		Weapons = {"axe", "club", "sword"},
+		Items = {{10603, 25}, {10557, 5}, {23565, 5}}
+	},
+	{
+		Name = "Frost",
+		Category = "Elemental Damage (Ice)",
+		Type = "icedamage",
+		Description = "Converts % of the physical damage to ice damage.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {10, 25, 50},
+		Weapons = {"axe", "club", "sword"},
+		Items = {{10567, 25}, {10578, 20}, {24170, 1}}
+	},
+	{
+		Name = "Electrify",
+		Category = "Elemental Damage (Energy)",
+		Type = "energydamage",
+		Description = "Converts % of the physical damage to energy damage.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {10, 25, 50},
+		Weapons = {"axe", "club", "sword"},
+		Items = {{21310, 25}, {24631, 5}, {26164, 1}}
+	},
+	{
+		Name = "Reap",
+		Category = "Elemental Damage (Death)",
+		Type = "deathdamage",
+		Description = "Converts % of the physical damage to death damage.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {10, 25, 50},
+		Weapons = {"axe", "club", "sword"},
+		Items = {{12440, 25}, {10564, 20}, {11337, 5}}
+	},
+	{
+		Name = "Vampirism",
+		Category = "Life Leech",
+		Type = "hitpointsleech",
+		Description = "converts % of damage to HP with a chance of 100%.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {5, 10, 25},
+		Weapons = {"axe", "club", "sword", "wand", "rod", "bow", "armor"},
+		Items = {{10602, 25}, {10550, 15}, {10580, 5}}
+	},
+	{
+		Name = "Void",
+		Category = "Mana Leech",
+		Type = "manapointsleech",
+		Description = "converts % of damage to MP with a chance of 100%.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {3, 5, 8},
+		Weapons = {"axe", "club", "sword", "wand", "rod", "bow", "helmet"},
+		Items = {{12448, 25}, {22534, 25}, {25386, 5}}
+	},
+	{
+		Name = "Strike",
+		Category = "Critical Hit",
+		Type = "criticaldamage",
+		Description = "raises crit hit damage by % and crit hit chance by 10%.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {15, 25, 50},
+		Weapons = {"axe", "club", "sword", "bow"},
+		Items = {{12400, 20}, {11228, 25}, {25384, 5}}
+	},
+	{
+		Name = "Lich Shroud",
+		Category = "Death Damage",
+		Type = "absorbPercentDeath",
+		Description = "reduces death damage by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {3, 8, 15},
+		Weapons = {"armor", "shield"},
+		Items = {{12422, 25}, {24663, 20}, {10577, 5}}
+	},
+	{
+		Name = "Snake Skin",
+		Category = "Eart Damage",
+		Type = "absorbPercentEarth",
+		Description = "reduces earth damage by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {3, 8, 15},
+		Weapons = {"armor", "shield"},
+		Items = {{20103, 25}, {10611, 20}, {12658, 10}}
+	},
+	{
+		Name = "Hide Dragon",
+		Category = "Fire Damage",
+		Type = "absorbPercentFire",
+		Description = "reduces fire damage by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {3, 8, 15},
+		Weapons = {"armor", "shield"},
+		Items = {{5877, 25}, {18425, 10}, {12614, 5}}
+	},
+	{
+		Name = "Quara Scale",
+		Category = "Ice Damage",
+		Type = "absorbPercentIce",
+		Description = "reduces ice damage by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {3, 8, 15},
+		Weapons = {"armor", "shield"},
+		Items = {{11212, 25}, {11224, 15}, {15425, 10}}
+	},
+	{
+		Name = "Cloud Fabric",
+		Category = "Energy Damage",
+		Type = "absorbPercentEnergy",
+		Description = "reduces energy damage by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {3, 8, 15},
+		Weapons = {"armor", "shield"},
+		Items = {{10561, 25}, {15482, 15}, {10582, 10}}
+	},
+	{
+		Name = "Demon Presence",
+		Category = "Holy Damage",
+		Type = "absorbPercentHoly",
+		Description = "reduces holy damage by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {3, 8, 15},
+		Weapons = {"armor", "shield"},
+		Items = {{10556, 25}, {10555, 25}, {11221, 20}}
+	},
+	{
+		Name = "Swiftness",
+		Category = "Increase Speed",
+		Type = "speed",
+		Description = "raises walking speed by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {10, 15, 20},
+		Weapons = {"boots"},
+		Items = {{19738, 15}, {11219, 25}, {15484, 20}}
+	},
+	{
+		Name = "Chop",
+		Category = "Increase Axe Fighting",
+		Type = "skillAxe",
+		Description = "raises axe fighting skill by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {1, 2, 4},
+		Weapons = {"axe", "helmet"},
+		Items = {{11113, 20}, {12403, 25}, {23571, 20}}
+	},
+	{
+		Name = "Slash",
+		Category = "Increase Sword Fighting",
+		Type = "skillSword",
+		Description = "raises sword fighting skill by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {1, 2, 4},
+		Weapons = {"sword", "helmet"},
+		Items = {{10608, 25}, {23573, 25}, {10571, 5}}
+	},
+	{
+		Name = "Bash",
+		Category = "Increase Club Fighting",
+		Type = "skillClub",
+		Description = "raises club fighting skill by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {1, 2, 4},
+		Weapons = {"club", "helmet"},
+		Items = {{10574, 20}, {24845, 15}, {11322, 10}}
+	},
+	{
+		Name = "Precision",
+		Category = "Increase Distance Fighting",
+		Type = "skillDist",
+		Description = "raises distance fighting skill by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {1, 2, 4},
+		Weapons = {"bow", "helmet"},
+		Items = {{12420, 25}, {21311, 20}, {11215, 10}}
+	},
+	{
+		Name = "Blockade",
+		Category = "Increase Shielding",
+		Type = "skillShield",
+		Description = "raises shielding skill by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {1, 2, 4},
+		Weapons = {"shield", "helmet"},
+		Items = {{10558, 20}, {12659, 25}, {22533, 25}}
+	},
+	{
+		Name = "Epiphany",
+		Category = "Increase Magic Level",
+		Type = "magiclevelpoints",
+		Description = "raises magic level by %.",
+		Levels = {"Basic", "Intricate", "Powerful"},
+		LevelsPercent = {1, 2, 4},
+		Weapons = {"wand", "rod", "helmetmage"},
+		Items = {{10552, 25}, {12408, 15}, {11226, 15}}
+	}
 }
 
 local Weapons = {
-            ["armor"] = {21692, 2500, 2656, 2464, 2487, 2494, 15407, 2492, 2503, 12607, 2466, 23538, 10296, 2476, 3968, 2472, 7463, 8888, 23537, 2486, 15406, 8891, 18404, 10363},
-            ["shield"] = {2537, 2518, 15491, 2534, 2535, 2536, 2542, 2539, 2519, 2520, 25382, 25414, 15411, 2516, 2514, 2522, 2533, 2531, 21707, 10289, 6433, 6391, 7460, 2524, 15413, 21697, 3974, 12644, 10297, 10294, 2509, 10364, 15453, 25411, 2217, 8900, 8901},
-            ["boots"] = {9931, 3982, 15410, 2646, 24637, 5462, 18406, 2645, 25412, 21708},
-            ["helmet"] = {2499, 2139, 3972, 2491, 2497, 2493, 2502, 12645, 7458, 2471, 10298, 10299, 20132, 2662, 10291, 2498, 24848, 5741, 25410, 2475, 11302},
-            ["helmetmage"] = {10016, 2323, 12630, 11368, 8820, 10570, 9778},
-            ["bow"] = {7438, 15643, 21696, 10295, 18454, 25522, 8857, 8854, 8850, 8851, 8852, 8853, 2455, 8849, 16111, 21690},
-            ["wand"] = {8920, 8921, 8922, 2191},
-            ["rod"] = {8910, 8911, 24839},
-            ["axe"] = {2426, 2427, 2414, 2415, 2443, 11323, 7455, 2447, 7412, 8926, 7419, 7453, 2435, 3962, 15451, 7434, 7435, 6553, 15492, 7456, 8925, 18451, 2431, 8924},
-            ["club"] = {7424, 2452, 2444, 7426, 7414, 7452, 7429, 7421, 15414, 7410, 15647, 20093, 7430, 7431, 23543, 2453, 8929, 12648, 7423, 2436, 2424, 7451, 7437, 2421, 8928, 18452, 25418},
-            ["sword"] = {7407, 2393, 7382, 7403, 2413, 7405, 7391, 11309, 12613, 7417, 2376, 2400, 7404, 12649, 2438, 8930, 2451, 11395, 2407, 7416, 11307, 7418, 6528, 7408, 18465, 8931}
+	["armor"] = {21692, 2500, 2656, 2464, 2487, 2494, 15407, 2492, 2503, 12607, 2466, 23538, 10296, 2476, 3968, 2472, 7463, 8888, 23537, 2486, 15406, 8891, 18404, 10363},
+	["shield"] = {2537, 2518, 15491, 2534, 2535, 2536, 2542, 2539, 2519, 2520, 25382, 25414, 15411, 2516, 2514, 2522, 2533, 2531, 21707, 10289, 6433, 6391, 7460, 2524, 15413, 21697, 3974, 12644, 10297, 10294, 2509, 10364, 15453, 25411, 2217, 8900, 8901},
+	["boots"] = {9931, 3982, 15410, 2646, 24637, 5462, 18406, 2645, 25412, 21708},
+	["helmet"] = {2499, 2139, 3972, 2491, 2497, 2493, 2502, 12645, 7458, 2471, 10298, 10299, 20132, 2662, 10291, 2498, 24848, 5741, 25410, 2475, 11302},
+	["helmetmage"] = {10016, 2323, 12630, 11368, 8820, 10570, 9778},
+	["bow"] = {7438, 15643, 21696, 10295, 18454, 25522, 8857, 8854, 8850, 8851, 8852, 8853, 2455, 8849, 16111, 21690},
+	["wand"] = {8920, 8921, 8922, 2191},
+	["rod"] = {8910, 8911, 24839},
+	["axe"] = {2426, 2427, 2414, 2415, 2443, 11323, 7455, 2447, 7412, 8926, 7419, 7453, 2435, 3962, 15451, 7434, 7435, 6553, 15492, 7456, 8925, 18451, 2431, 8924},
+	["club"] = {7424, 2452, 2444, 7426, 7414, 7452, 7429, 7421, 15414, 7410, 15647, 20093, 7430, 7431, 23543, 2453, 8929, 12648, 7423, 2436, 2424, 7451, 7437, 2421, 8928, 18452, 25418},
+	["sword"] = {7407, 2393, 7382, 7403, 2413, 7405, 7391, 11309, 12613, 7417, 2376, 2400, 7404, 12649, 2438, 8930, 2451, 11395, 2407, 7416, 11307, 7418, 6528, 7408, 18465, 8931}
 }
 
 local ImbuingInfo = {
