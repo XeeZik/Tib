@@ -22,7 +22,7 @@ Versões 11.x: [Sources](https://github.com/macedot/tibia-11-ip-changer)
 
 [Compilado](http://www.mediafire.com/file/4v3mk3vqk8utuyz/Tibia_11_IP_Changer.zip)  
 
-# Sites Compativeis:
+# Sites Compativeis
 [Znote AAC Official](https://github.com/Znote/ZnoteAAC).
 
 [Gesior by Mudroock](https://github.com/mudroock/Gesior-AAC).
@@ -35,6 +35,9 @@ Versões 11.x: [Sources](https://github.com/macedot/tibia-11-ip-changer)
 Já funciona a última versão: [Znote AAC](https://github.com/Znote/ZnoteAAC).
 
 Ou, se você estiver usando: [Gesior](https://gist.github.com/jlcvp/2f1772cbbcdfc966ee982985326d964a)
+
+# Mapa Editor Compativel
+[Remeres Map Editor Official](https://github.com/hjnilsson/rme).
 
 # Issues / Problemas
 Nós utilizamos o [Issue Tracker do Github](https://github.com/malucooo/Otxserver-new/issues).
