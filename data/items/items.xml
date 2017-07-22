@@ -18226,9 +18226,9 @@
 		<attribute key="description" value="Your name is carved on this mighty sword." />
 		<attribute key="weight" value="1200" />
 	</item>
-	<item id="8981" article="a" name="Experience Card">
+	<item id="8981" article="a" name="golden newspaper">
 		<attribute key="weight" value="2400" />
-		<attribute key="description" value="Use it to add bonus 30% exp for 2 days to your character. For check is !exp." />
+		<attribute key="description" value="Tibia's most amazing news can be read in it. It was awarded for winning a TibiaNews contest." />
 	</item>
 	<item id="8982" article="a" name="norseman doll">
 		<attribute key="description" value="It is given to the winners of TibiaNordic competitions." />
@@ -18723,7 +18723,10 @@
 		<attribute key="duration" value="10" />
 		<attribute key="corpseType" value="blood" />
 	</item>
-	<item id="9661" article="a" name="crate" />
+	<item id="9661" article="a" name="crate">
+		<attribute key="weight" value="8000" />
+		<attribute key="containerSize" value="15" />
+	</item>
 	<item id="9662" article="a" name="ghost's tear">
 		<attribute key="weight" value="1000" />
 	</item>

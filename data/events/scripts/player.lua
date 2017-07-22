@@ -59,7 +59,7 @@ function Player:onLook(thing, position, distance)
 					time = getTime(thing:getSpecialAttribute(i+3))
 				end
 				
-				if (specialAttr) then
+				if (specialAttr and specialAttr ~= 0) then
 					if (i ~= itemType:getImbuingSlots()) then
 						imbuingSlots = imbuingSlots.. "" ..specialAttr.." " ..time..", "
 					else
@@ -67,9 +67,9 @@ function Player:onLook(thing, position, distance)
 					end
 				else
 					if (i ~= itemType:getImbuingSlots()) then
-						imbuingSlots = imbuingSlots.. "Empty Slot, "
+						imbuingSlots = imbuingSlots.. "Free Slot, "
 					else
-						imbuingSlots = imbuingSlots.. "Empty Slot)."
+						imbuingSlots = imbuingSlots.. "Free Slot)."
 					end
 				end
 			end
@@ -78,6 +78,7 @@ function Player:onLook(thing, position, distance)
 	else
 		description = description .. thing:getDescription(distance)
 	end
+
 
 	if self:getGroup():getAccess() then
 		if thing:isItem() then
@@ -625,23 +626,11 @@ function Player:onCombatSpell(normalDamage, elementDamage, elementType)
 	return normalDamage, elementType, elementDamage
 end
 
-local configexp =  {
-	["Monday"] = 1.0,
-	["Tuesday"] = 1.0,
-	["Wednesday"] = 1.0,
-	["Thursday"] = 1.0,
-	["Friday"] = 1.0,
-	["Saturday"] = 1.0,
-	["Sunday"] = 1.0
-}
-
 function Player:onGainExperience(source, exp, rawExp)
-	if not source or source:isPlayer() then
-		return exp
-	end
-
-	exp = exp * configexp[os.date("%A")]
-
+ 	if not source or source:isPlayer() then
+ 		return exp
+ 	end
+	
 	-- Soul regeneration
 	local vocation = self:getVocation()
 	if self:getSoul() < vocation:getMaxSoul() and exp >= self:getLevel() then
@@ -649,10 +638,10 @@ function Player:onGainExperience(source, exp, rawExp)
 		self:addCondition(soulCondition)
 	end
 
+
 	-- Apply experience stage multiplier
 	exp = exp * Game.getExperienceStage(self:getLevel())
 
-	-- Prey System -> BOOST_EXP
 	for i = 1, 3 do
 		if (self:isActive(i-1)) then
 			local bonusInfo = self:getBonusInfo(i-1)
@@ -663,6 +652,50 @@ function Player:onGainExperience(source, exp, rawExp)
 		end
 	end
 
+	if (self:getExpBoostStamina() <= 0 and self:getStoreXpBoost() > 0) then
+		self:setStoreXpBoost(0) -- reset xp boost to 0
+	end
+
+	-- Mais compacto, depois da verificação de antes (reset) ele só da xp se tiver :v
+	if (self:getStoreXpBoost() > 0) then
+		exp = exp + (exp * (self:getStoreXpBoost()/100)) -- Exp Boost
+	end
+
+	local party = self:getParty()
+	if (party) then
+		if (party:isSharedExperienceActive() and
+			party:isSharedExperienceEnabled()) then
+			local tableVocs = {}
+			local count = 0
+			local totalCount = 0
+			local leaderId = party:getLeader():getVocation():getId()
+			if (leaderId) then
+				tableVocs[leaderId] = 1
+				count = count + 1
+				totalCount = totalCount + 1
+			end
+			for i, v in pairs(party:getMembers()) do
+				local vocId = v:getVocation():getId()
+				if (tableVocs[vocId] == nil) then
+					tableVocs[vocId] = 1
+					count = count + 1
+				end
+				totalCount = totalCount + 1
+			end
+
+			if (totalCount <= 10 and
+				count >= 4) then
+				exp = exp * 2
+			end
+		end
+	end
+
+	-- Prey Stamina Modifier
+	useStaminaPrey(self, source:getName())
+
+	-- Exp Boost Modifier
+	useStaminaXp(self)
+	
 	-- Stamina modifier
 	if configManager.getBoolean(configKeys.STAMINA_SYSTEM) then
 		useStamina(self)
@@ -674,9 +707,6 @@ function Player:onGainExperience(source, exp, rawExp)
 			exp = exp * 0.5
 		end
 	end
-
-	-- Prey Stamina Modifier
-	useStaminaPrey(self, source:getName())
 	return exp
 end
 
