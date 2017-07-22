@@ -20,16 +20,19 @@ Versões 7.x - 10.x: [Compilado](https://static.otland.net/ipchanger.exe)
 
 Versões 11.x: [Sources](https://github.com/macedot/tibia-11-ip-changer)
 
-[Compilado](http://www.mediafire.com/file/4v3mk3vqk8utuyz/Tibia_11_IP_Changer.zip)  
+[Compilado](http://www.mediafire.com/file/4v3mk3vqk8utuyz/Tibia_11_IP_Changer.zip)
 
 # Sites Compativeis
 [Znote AAC Official](https://github.com/Znote/ZnoteAAC).
 
 [Gesior by Mudroock](https://github.com/mudroock/Gesior-AAC).
 
+[Gesior by Monteiro] (https://github.com/jlcvp/GesiorMonteiro).
+Fixed by Leonardo Pereira (jlcvp)
+
 [Gesior Official](https://github.com/gesior/Gesior2012/tree/TFS-1.0).
 
-[Myacc Official](https://github.com/slawkens/myaac).
+[MyAcc Official](https://github.com/slawkens/myaac).
 
 # Login.php para client 11
 Já funciona a última versão: [Znote AAC](https://github.com/Znote/ZnoteAAC).
