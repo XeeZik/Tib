@@ -27,7 +27,7 @@ Versões 11.x: [Sources](https://github.com/macedot/tibia-11-ip-changer)
 
 [Gesior by Mudroock](https://github.com/mudroock/Gesior-AAC).
 
-[Gesior by Monteiro] (https://github.com/jlcvp/GesiorMonteiro).
+[Gesior by Monteiro](https://github.com/jlcvp/GesiorMonteiro).
 Fixed by Leonardo Pereira (jlcvp)
 
 [Gesior Official](https://github.com/gesior/Gesior2012/tree/TFS-1.0).
