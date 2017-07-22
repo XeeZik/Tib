@@ -10,9 +10,17 @@ Video criando cliente com ip [Próprio](https://www.youtube.com/watch?v=AsZIpPyt
 # Downloads
 Executaveis compilados [AppVeyor builds for Windows](https://ci.appveyor.com/project/malucooo/otxserver-new)
 
+# Clients Compatíveis
+[Versão 10](https://secure.tibia.com/account/?subtopic=downloadclient&step=downloadoutdated)
+[Versão 11](https://secure.tibia.com/account/?subtopic=downloadclient)
+
+# IpChanger
+Versões 7.x - 10.x:[Compilado](https://static.otland.net/ipchanger.exe)
+Versões 11.x: [Sources](https://github.com/macedot/tibia-11-ip-changer)
+[Compilado](http://www.mediafire.com/file/4v3mk3vqk8utuyz/Tibia_11_IP_Changer.zip)  
+
 # Login.php para client 11
 Já funciona a última versão: [Znote AAC](https://github.com/Znote/ZnoteAAC).
-
 Ou, se você estiver usando: [Gesior](https://gist.github.com/jlcvp/2f1772cbbcdfc966ee982985326d964a)
 
 # Issues / Problemas
