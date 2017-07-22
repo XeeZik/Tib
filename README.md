@@ -16,7 +16,7 @@ Executaveis compilados [AppVeyor builds for Windows](https://ci.appveyor.com/pro
 [Versão 11](https://secure.tibia.com/account/?subtopic=downloadclient)
 
 # IpChanger
-Versões 7.x - 10.x:[Compilado](https://static.otland.net/ipchanger.exe)
+Versões 7.x - 10.x: [Compilado](https://static.otland.net/ipchanger.exe)
 
 Versões 11.x: [Sources](https://github.com/macedot/tibia-11-ip-changer)
 [Compilado](http://www.mediafire.com/file/4v3mk3vqk8utuyz/Tibia_11_IP_Changer.zip)  
