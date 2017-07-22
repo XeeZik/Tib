@@ -505,6 +505,34 @@ local function useStamina(player)
 	player:setStamina(staminaMinutes)
 end
 
+local function useStaminaXp(player)
+	local staminaMinutes = player:getExpBoostStamina()
+	if staminaMinutes == 0 then
+		return
+	end
+
+	local playerId = player:getId()
+	local currentTime = os.time()
+	local timePassed = currentTime - nextUseXpStamina[playerId]
+	if timePassed <= 0 then
+		return
+	end
+
+	if timePassed > 60 then
+		if staminaMinutes > 2 then
+			staminaMinutes = staminaMinutes - 2
+		else
+			staminaMinutes = 0
+		end
+		nextUseXpStamina[playerId] = currentTime + 120
+	else
+		staminaMinutes = staminaMinutes - 1
+		nextUseXpStamina[playerId] = currentTime + 60
+	end
+	player:setExpBoostStamina(staminaMinutes)
+end
+
+
 -- useStaminaPrey
 local function useStaminaPrey(player, name)
 	for i = 1, 3 do
