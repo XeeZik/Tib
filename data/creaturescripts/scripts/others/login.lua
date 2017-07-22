@@ -51,7 +51,7 @@ local events = {
 	'VibrantEgg',
 	'DeathCounter',
 	'KillCounter',
-	'bless1',
+	'FreeBlessLowLevel',
 	'Recompense',
 	'lowerRoshamuul'
 }
