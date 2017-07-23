@@ -81,6 +81,7 @@ local function changeVocation(player, fromVocation, toVocation)
             lookAddons = 0,
             lookTypeName = {Citizen}, -- {male, female}
             lookTypeEx = 128,
+			lookTypeFm = 136,
             lookHead = 0,
             lookMount = 0,
             lookLegs = 0,
@@ -92,6 +93,7 @@ local function changeVocation(player, fromVocation, toVocation)
             lookAddons = 0,
             lookTypeName = {Mage}, -- {male, female}
             lookTypeEx = 130,
+			lookTypeFm = 138,
             lookHead = 95,
             lookMount = 0,
             lookLegs = 112,
@@ -103,6 +105,7 @@ local function changeVocation(player, fromVocation, toVocation)
             lookAddons = 0,
             lookTypeName = {Mage}, -- {male, female}
             lookTypeEx = 130,
+			lookTypeFm = 138,
             lookHead = 95,
             lookMount = 0,
             lookLegs = 9,
@@ -114,6 +117,7 @@ local function changeVocation(player, fromVocation, toVocation)
             lookAddons = 0,
             lookTypeName = {Hunter}, -- {male, female}
             lookTypeEx = 129,
+			lookTypeFm = 137,
             lookHead = 95,
             lookMount = 0,
             lookLegs = 98,
@@ -125,6 +129,7 @@ local function changeVocation(player, fromVocation, toVocation)
             lookAddons = 0,
             lookTypeName = {Knight}, -- {male, female}
             lookTypeEx = 131,
+			lookTypeFm = 139,
             lookHead = 95,
             lookMount = 0,
             lookLegs = 94,
@@ -177,6 +182,7 @@ local function changeVocation(player, fromVocation, toVocation)
  
    local outfit = vocationsOutfits[toVocation]
     if toVocation ~= 0 then
+	if player:getSex() == PLAYERSEX_MALE then
 		player:setOutfit(
         {
             lookBody = outfit.lookBody,
@@ -189,6 +195,20 @@ local function changeVocation(player, fromVocation, toVocation)
             lookFeet = outfit.lookFeet,
         }
 		)
+		else
+		player:setOutfit(
+        {
+            lookBody = outfit.lookBody,
+            lookAddons = outfit.lookAddons,
+            lookTypeName = outfit.lookTypeName,
+            lookType = outfit.lookTypeFm,
+            lookHead = outfit.lookHead,
+            lookMount = outfit.lookMount,
+            lookLegs = outfit.lookLegs,
+            lookFeet = outfit.lookFeet,
+        }
+		)
+		end
 		end
 		player:setVocation(toVocation)
 		local position = player:getPosition()
