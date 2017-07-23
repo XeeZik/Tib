@@ -17,6 +17,7 @@ function onDeath(player, corpse, killer, mostDamageKiller, unjustified, mostDama
 	end
 	if player:getStorageValue(InsideTrial) > -1 then
 	player:setVocation(0)
+	player:setStorageValue(Insidetrial, -1)
 	end
 	local byPlayer = 0
 	local killerName
