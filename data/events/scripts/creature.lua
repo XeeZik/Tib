@@ -85,7 +85,7 @@ function Creature:onTargetCombat(target)
 		if self:getStorageValue(_Lib_Battle_Info1.TeamOne1.storage1) >= 1 and target:getStorageValue(_Lib_Battle_Info1.TeamOne1.storage1) >= 1 or self:getStorageValue(_Lib_Battle_Info1.TeamTwo1.storage1) >= 1 and target:getStorageValue(_Lib_Battle_Info1.TeamTwo1.storage1) >= 1 then
             return RETURNVALUE_YOUMAYNOTATTACKTHISPLAYER
         end
-		--party protection
+		--party protect
 		local party = self:getParty()
 		if party then
 			local targetParty = target:getParty()
