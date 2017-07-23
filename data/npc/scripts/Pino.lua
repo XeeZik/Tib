@@ -23,7 +23,7 @@ end
 
 addTravelKeyword('farmine', 'Farmine', 60, Position(32983, 31539, 1))
 addTravelKeyword('darashia', 'Darashia on Darama', 60, Position(33270, 32441, 6))
-addTravelKeyword('kazordoon', 'Kazordoon', 80, Position(33193, 31784, 3))
+addTravelKeyword('kazordoon', 'Kazordoon', 80, Position(32588, 31942, 0))
 addTravelKeyword('femor hills', 'the Femor Hills', 60, Position(32536, 31837, 4))
 addTravelKeyword('svargrond', 'Svargrond', 40, Position(32253, 31097, 4))
 addTravelKeyword('edron', 'Edron', 60, Position(33193, 31784, 3))

@@ -17,11 +17,11 @@ local function creatureSayCallback(cid, type, msg)
 		npcHandler.topic[cid] = 15
 	elseif(msgcontains(msg, "yes") and npcHandler.topic[cid] == 15) then
 		if player:getItemCount(5889) >= 1 and player:getItemCount(2425) >= 1 then
-			npcHandler:say("Here you have it.", cid)
-			player:removeItem(5889, 1)
-			player:removeItem(2425, 1)
-			player:addItem(5908, 1)
-			npcHandler.topic[cid] = 0
+			if player:removeItem(5889, 1) and player:removeItem(2425, 1) then
+				npcHandler:say("Here you have it.", cid)
+				player:addItem(5908, 1)
+				npcHandler.topic[cid] = 0
+			end
 		else
 			npcHandler:say("You dont have these items.", cid)
 			npcHandler.topic[cid] = 0
@@ -71,12 +71,12 @@ local function creatureSayCallback(cid, type, msg)
 			npcHandler.topic[cid] = 0
 		elseif(npcHandler.topic[cid] == 9) then
 			if player:getMoney() >= 250 and player:getItemCount(5880) >= 3 then
-				player:removeMoney(250)
-				player:removeItem(5880, 3)
-				npcHandler:say("Ah, that's how me like me customers. Ok, me do this... <pling pling> ... another fine swing of the hammer here and there... <ploing>... here you have it!", cid)
-				player:addItem(7385, 1)
-				player:setStorageValue(Storage.TravellingTrader.Mission05, 2)
-				npcHandler.topic[cid] = 0
+				if player:removeMoney(250) and player:removeItem(5880, 3) then
+					npcHandler:say("Ah, that's how me like me customers. Ok, me do this... <pling pling> ... another fine swing of the hammer here and there... <ploing>... here you have it!", cid)
+					player:addItem(7385, 1)
+					player:setStorageValue(Storage.TravellingTrader.Mission05, 2)
+					npcHandler.topic[cid] = 0
+				end
 			end
 		end
 	elseif(msgcontains(msg, "no")) then

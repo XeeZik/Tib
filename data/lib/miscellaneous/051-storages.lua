@@ -3,6 +3,25 @@
 -- Sort it in Values -
 
 Storage = {
+	VocationTrial = {
+		Insidetrial = 47,
+		limit30 = 10030,
+		limit31 = 10031,
+		limit32 = 10032,
+		limit33 = 10033,
+		limit34 = 10034,
+		limit35 = 10035,
+		limit36 = 10036,
+		limit37 = 10037,
+		limit38 = 10038,
+		limit39 = 10039,
+		limit40 = 10040,
+		limit41 = 10041,
+		limit42 = 10042,
+		limit43 = 10043,
+		limit44 = 10044,
+		limit45 = 10045
+		},
 	SweetyCyclops = {
 		AmuletTimer = 48,
 		AmuletStatus = 49

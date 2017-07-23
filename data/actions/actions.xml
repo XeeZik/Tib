@@ -115,11 +115,7 @@
 
 	<!-- Custom Actions -->
 	<action itemid="19192" script="other/skeleton.lua"/>
-	<action itemid="22642" script="other/frazzlemaw.lua" />
-	<action itemid="24321" script="other/maxxen.lua" />
-	<action itemid="22643" script="other/leafgolem.lua" />
 	<action itemid="22513" script="news/batebone.lua"/>
-	<action itemid="13030" script="other/change_sex.lua"/>
 	<action itemid="12544" script="other/stamina_refuel.lua"/>
 	<action itemid="11144" script="other/frag_remover.lua"/>
 	<action actionid="14247" script="quests/rahemos.lua" />

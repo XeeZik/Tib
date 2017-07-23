@@ -18,8 +18,9 @@ local function addBuyableKeyword(keywords, itemid, amount, price, text)
 	keyword:addChildKeyword({'mok'}, StdModule.say, {npcHandler = npcHandler, text = 'Maruk rambo zambo!', reset = true},
 		function(player) return player:getMoney() >= price end,
 		function(player)
-			player:removeMoney(price)
-			player:addItem(itemid, amount)
+			if player:removeMoney(price) then
+				player:addItem(itemid, amount)
+			end
 		end
 	)
 	keyword:addChildKeyword({'mok'}, StdModule.say, {npcHandler = npcHandler, text = 'Maruk nixda!', reset = true})
