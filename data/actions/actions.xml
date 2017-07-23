@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
+	<action itemid="16101" script="other/premiumscroll.lua" />
+	<action itemid="24774" script="other/premiumscroll.lua" />
 	<!-- Casks and Kegs -->
 	<action fromid="7634" toid="7636" script="other/caskkegs.lua"/>
 
