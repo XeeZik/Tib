@@ -9,7 +9,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have received " .. coins .. " tibia coins.")
 			item:remove(1)
 		elseif item:getId() == ITEM_TIBIA_COIN then
-			local coins = player:getItemCount(ITEM_TIBIA_COIN)
+			local coins = item:getCount()
 			player:addTibiaCoins(coins)
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have received " .. coins .. " tibia coins.")
 			item:remove(coins)
