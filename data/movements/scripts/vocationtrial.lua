@@ -228,10 +228,10 @@ function onStepIn(creature, item, position, fromPosition)
             getFirstItems(player)
 			changeVocation(player, fromVocation, toVocation)
 			player:getPosition():sendMagicEffect(CONST_ME_BLOCKHIT)
-			player:setStorageValue(Insidetrial, 1)
+			player:setStorageValue(47, 1)
 			else
 			changeVocation(player, fromVocation, 0)
-			player:setStorageValue(Insidetrial, -1)
+			player:setStorageValue(47, -1)
         end
 		
     end
