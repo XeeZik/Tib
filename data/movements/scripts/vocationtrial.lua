@@ -231,7 +231,7 @@ function onStepIn(creature, item, position, fromPosition)
 			player:setStorageValue(47, 1)
 			else
 			changeVocation(player, fromVocation, 0)
-			player:setStorageValue(47, -1)
+			player:setStorageValue(47, 0)
         end
 		
     end
