@@ -213,12 +213,11 @@ local function changeVocation(player, fromVocation, toVocation)
 		player:setVocation(toVocation)
 		--recalculate cap hp and mana
 		if toVocation == 0 then
-		updvoc = player:getVocation()
-		player:setMaxHealth(130 + (updvoc:getHealthGain() * player:getLevel()))
+		player:setMaxHealth(130 + (player:getVocation():getHealthGain() * player:getLevel()))
 		player:addHealth(player:getMaxHealth())
-		player:setMaxMana(0 + (updvoc:getManaGain() * player:getLevel()))
+		player:setMaxMana(0 + (player:getVocation():getManaGain() * player:getLevel()))
 		player:addMana(player:getMaxMana())
-		player:setCapacity(400 + (updvoc:getCapacityGain() * player:getLevel()))
+		player:setCapacity(40000 + (player:getVocation():getCapacityGain() * player:getLevel()))
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format('Congratulations! Now you are No Vocation.', player:getVocation():getName()))
 		else
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format('Congratulations! Now you are %s.', player:getVocation():getName()))
