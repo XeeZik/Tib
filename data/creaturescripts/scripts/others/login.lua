@@ -91,7 +91,7 @@ function onLogin(player)
 
 	-- Stamina
 	nextUseStaminaTime[playerId] = 1
- 
+
 	-- EXP Stamina
 	nextUseXpStamina[playerId] = 1
 
@@ -164,7 +164,6 @@ function onLogin(player)
 		stats.playerId = player:getId()
 	end
 
-	
 	-- fury gates
 	if Game.getStorageValue(GlobalStorage.FuryGates, (9710)) == 1 then -- for venore
 		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Fury Gate is on Venore Today.')
