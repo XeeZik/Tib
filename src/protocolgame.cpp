@@ -1341,7 +1341,10 @@ void ProtocolGame::sendIcons(uint16_t icons)
 {
 	NetworkMessage msg;
 	msg.addByte(0xA2);
-	msg.add<uint32_t>(icons);
+	if(version>=1040) //TODO: verify compatibility of the new icon range ( 16-31 )
+		msg.add<uint32_t>(icons);
+	else
+		msg.add<uint16_t>(icons);
 	writeToOutputBuffer(msg);
 }
 
