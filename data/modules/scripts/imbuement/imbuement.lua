@@ -2,7 +2,7 @@ ImbuingSystem = {
 	Developer = "Charles (Cjaker)",
 	Version = "1.0",
 	LastUpdate = "24/05/2017 - 03:50 (AM)",
-	FixedBy = "Leu (jlvc) and Clenir (Mikki)"
+	FixedBy = "Leu (jlvc) and Clenir (Mikii)"
 }
 
 --[[
@@ -415,8 +415,6 @@ function Player.applyImbuement(self, msg)
 	local slot, choiceId, useProtection = msg:getByte(), msg:getU32(), msg:getByte()
 	
 	local myImbuement, imbuingLevel = getImbuementByIndex(choiceId, item:getId())	
-	
-	print('slot= '.. slot .. ' choiceid=' .. choiceId .. ' useProt=' .. useProtection .. '\n')
 	
 	-- ################# PARTE ADICIONADA BY MIKII - CLENIR SANTOS ################# --
 	-- A FUNÇÃO ABAIXO ATÉ O FINAL DESTE COMENTÁRIO É RESPONSAVEL PELA REMOÇÃO DOS ITENS DOS PLAYERS E DINHEIRO DO BANCO --
