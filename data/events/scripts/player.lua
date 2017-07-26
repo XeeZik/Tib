@@ -581,61 +581,7 @@ function Player:onUseWeapon(normalDamage, elementType, elementDamage)
 					useStaminaImbuing(self:getId(), weapon:getUniqueId())
 				end
 
-				if (typeEnchant ~= "hitpointsleech" and typeEnchant ~= "manapointsleech" and typeEnchant ~= "criticalhit") then
-					percentDamage = normalDamage*(enchantPercent/100)
-					normalDamage = normalDamage - percentDamage
-					elementDamage = weapon:getType():getAttack()*(enchantPercent/100)
-				else
-					if (typeEnchant == "hitpointsleech") then
-						local healAmountHP = normalDamage*(enchantPercent/100)
-						self:addHealth(healAmountHP)
-					elseif (typeEnchant == "manapointsleech") then
-						local healAmountMP = normalDamage*(enchantPercent/100)
-						self:addMana(healAmountMP)
-					end
-				end
-
-				if (typeEnchant == "firedamage") then
-					elementType = COMBAT_FIREDAMAGE
-				elseif (typeEnchant == "earthdamage") then
-					elementType = COMBAT_EARTHDAMAGE
-				elseif (typeEnchant == "icedamage") then
-					elementType = COMBAT_ICEDAMAGE
-				elseif (typeEnchant == "energydamage") then
-					elementType = COMBAT_ENERGYDAMAGE
-				elseif (typeEnchant == "deathdamage") then
-					elementType = COMBAT_DEATHDAMAGE
-				end
-			end
-		end
-	end
-	return normalDamage, elementType, elementDamage
-end
-
-function Player:onCombatSpell(normalDamage, elementDamage, elementType)
-	local weapon = self:getSlotItem(CONST_SLOT_LEFT)
-	if not weapon or weapon:getType():getWeaponType() == WEAPON_SHIELD then
-		weapon = self:getSlotItem(CONST_SLOT_RIGHT)
-	end
-
-	-- Imbuement
-	if (weapon and weapon:getType():getImbuingSlots() > 0) then
-		for i = 1, weapon:getType():getImbuingSlots() do
-			local slotEnchant = weapon:getSpecialAttribute(i)
-			if (slotEnchant) then
-				local percentDamage, enchantPercent = 0, weapon:getImbuementPercent(slotEnchant)
-				local typeEnchant = weapon:getImbuementType(i) or ""
-				if (typeEnchant ~= "") then
-					useStaminaImbuing(self:getId(), weapon:getUniqueId())
-				end
-
-				if (typeEnchant ~= "hitpointsleech" and typeEnchant ~= "manapointsleech" and typeEnchant ~= "criticalhit") then
-					percentDamage = normalDamage*(enchantPercent/100)
-					normalDamage = normalDamage - percentDamage
-					elementDamage = weapon:getType():getAttack()*(enchantPercent/100)
-				end
-
-				if (typeEnchant == "firedamage") then
+			if (typeEnchant == "firedamage") then
 					elementType = COMBAT_FIREDAMAGE
 				elseif (typeEnchant == "earthdamage") then
 					elementType = COMBAT_EARTHDAMAGE
