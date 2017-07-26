@@ -61,7 +61,7 @@ function getWinnersBattle1(storage1)
 			c1 = c1 + 1 
 		end
 	end
-	str1 = str1 .. "" .. c1 .. " jogadores" .. (c1 > 1 and "s" or "") .. " do time " .. (Game.getStorageValue(_Lib_Battle_Info1.TeamOne1.storage1) == 0 and _Lib_Battle_Info1.TeamTwo1.name1 or _Lib_Battle_Info1.TeamOne1.name1) .. " ganharam o evento!"
+	str1 = str1 .. "" .. c1 .. " players" .. (c1 > 1 and "s" or "") .. " of team " .. (Game.getStorageValue(_Lib_Battle_Info1.TeamOne1.storage1) == 0 and _Lib_Battle_Info1.TeamTwo1.name1 or _Lib_Battle_Info1.TeamOne1.name1) .. " win the event!"
 	resetBattle1()
 	OpenWallBattle1()
 	return broadcastMessage(str1)
@@ -97,7 +97,7 @@ end
 
 function CheckEvent1(delay1)
 	if delay1 > 0 and Game.getStorageValue(_Lib_Battle_Info1.storage_count1) > 0 then
-		broadcastMessage("[BattleField] Faltam " .. Game.getStorageValue(_Lib_Battle_Info1.storage_count1) .. " jogadores para o evento comecar.")
+		broadcastMessage("[BattleField] Missing " .. Game.getStorageValue(_Lib_Battle_Info1.storage_count1) .. " players for the event to begin.")
 	elseif delay1 == 0 and Game.getStorageValue(_Lib_Battle_Info1.storage_count1) > 0 then
 		for _, cid in pairs(Game.getPlayers()) do
 			local player = Player(cid)
@@ -108,7 +108,7 @@ function CheckEvent1(delay1)
 				player:removeCondition(CONDITION_OUTFIT)
 			end
 		end
-		broadcastMessage("[BattleField] O evento nao foi iniciado por nao atingir o numero de jogadores.")
+		broadcastMessage("[BattleField] The event was not started because it did not reach the number of players.")
 		Game.setStorageValue(_Lib_Battle_Info1.storage_count1, 0)
 		resetBattle1()
 		removeBattleTp1()
