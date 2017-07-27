@@ -7,6 +7,9 @@ Temos uma Wiki explicando como compilar o servidor  [OTXServer Wiki](https://git
 
 Video criando cliente com ip [Próprio](https://www.youtube.com/watch?v=AsZIpPytDb8)
 
+Video COMPILANDO O [OTX](https://youtu.be/LPMrc08xlaw))
+
+
 # Downloads
 Executaveis compilados [AppVeyor builds for Windows](https://ci.appveyor.com/project/malucooo/otxserver-new)
 
