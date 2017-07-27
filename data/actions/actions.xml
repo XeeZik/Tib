@@ -12,7 +12,7 @@
 	<action fromid="27830" toid="27831" script="other/imbuement.lua" />
 	<action fromid="27838" toid="27839" script="other/imbuement.lua" />
 
-	<!--store-->
+	<!-- Store -->
 	<action itemid="26347" script="other/fishtank.lua"/>
 	<action fromid="26094" toid="26097" script="other/transform.lua"/>
 	<action fromid="26090" toid="26093" script="other/transform.lua"/>
@@ -20,8 +20,8 @@
 	<action fromid="26100" toid="26101" script="other/transform.lua"/>
 	<action fromid="26107" toid="26108" script="other/transform.lua"/>
 	<action fromid="26141" toid="26142" script="other/transform.lua"/>
-	<action fromid="26364" toid="26365" script="other/transform.lua"/><!--dog house-->
-	<action itemid="26353" script="other/transform.lua"/><!--dog house-->
+	<action fromid="26364" toid="26365" script="other/transform.lua"/><!-- dog house-->
+	<action itemid="26353" script="other/transform.lua"/><!-- dog house-->
 	<action fromid="27088" toid="27089" script="other/transform.lua"/>
 	<action fromid="27090" toid="27091" script="other/transform.lua"/>
 	<action fromid="25392" toid="25393" script="other/carpets.lua"/>
@@ -159,7 +159,7 @@
 	<action uniqueid="9525" script="news/bb_quest.lua"/> <!-- Zamulosh -->
 	<action uniqueid="9526" script="news/bb_quest.lua"/> <!-- Tarbaz -->
 	<action uniqueid="9527" script="news/bb_quest.lua"/> <!-- Shulgrax -->
-	<action uniqueid="9528" script="news/bb_quest.lua"/> <!-- 	The Shatterer -->
+	<action uniqueid="9528" script="news/bb_quest.lua"/> <!-- The Shatterer -->
 	<action uniqueid="9511" script="quests/oramond/darkTrail.lua"/>
 	<action itemid="23400" script="quests/oramond/gerador.lua"/>
 	<action itemid="23401" script="quests/oramond/gerador.lua"/>
@@ -336,7 +336,7 @@
 	<action uniqueid="3164" script="quests/children of the revolution/Mission3ZeeKillingFieldzzChest.lua" />
 	<action itemid="10760" 	script="quests/children of the revolution/Mission3ZeeKillingFieldzzPoisonWater.lua" />
 	<action itemid="11106" script="quests/children of the revolution/Mission4ZzeWayofZztonezzLevers.lua" />
-	<!--<action itemid="11106" 	script="quests/children of the revolution/Mission4ZzeWayofZztonezzGreaseOil.lua" />-->
+	<!-- <action itemid="11106" 	script="quests/children of the revolution/Mission4ZzeWayofZztonezzGreaseOil.lua" />-->
 	<action uniqueid="3170" script="quests/children of the revolution/ZalamonDoor.lua" />
 
 	<!-- Wrath of the Emperor -->
@@ -372,12 +372,12 @@
 	<action uniqueid="3401" script="quests/the outlaw camp/powerswitch.lua" />
 	<action uniqueid="3402" script="quests/the outlaw camp/powerburn.lua" />
 
-	<!--- The Ape City Quest -->
+	<!-- The Ape City Quest -->
 	<action actionid="12129" script="quests/theapecity/Mission9TheDeepestCatacombsLever.lua" />
 	<action uniqueid="12131" script="quests/theapecity/Mission9TheDeepestCatacombsLever.lua" />
 	<action itemid="4846" 	 script="quests/theapecity/Mission9TheDeepestCatacombsSnakedestroyer.lua" />
 
-	<!--- The Ancient Tombs Quest -->
+	<!-- The Ancient Tombs Quest -->
 	<action actionid="12107" script="quests/theancienttombs/OasisTombLeverDoor.lua" />
 	<action actionid="12105" script="quests/theancienttombs/AncientRuinsTombInstruments.lua" />
 	<action fromaid="50242" toaid="50244" script="quests/theancienttombs/activeTeleportSwitches.lua" />
@@ -385,18 +385,9 @@
 	<!-- VAGAO HOUSE -->
 	<action actionid="42150" script="vagao/vagao1.lua" />
 	<action actionid="50109" script="vagao/vagao.lua" />
-	<action actionid="50245" script="vagao/vagao.lua" />
-	<action actionid="50246" script="vagao/vagao.lua" />
-	<action actionid="50247" script="vagao/vagao.lua" />
-	<action actionid="50249" script="vagao/vagao.lua" />
-	<action actionid="50250" script="vagao/vagao.lua" />
-	<action actionid="50251" script="vagao/vagao.lua" />
-	<action actionid="50252" script="vagao/vagao.lua" />
-	<action actionid="50253" script="vagao/vagao.lua" />
-	<action actionid="50254" script="vagao/vagao.lua" />
-	<action actionid="50248" script="vagao/vagao.lua" />
+	<action fromaid="50245" toaid="50254" script="vagao/vagao.lua" />
 
-	<!-- BK -->
+	<!-- Black Knight -->
 	<action actionid="50258" script="quests/bkquest.lua" />
 
 	<!-- Gravedigger -->
@@ -465,7 +456,7 @@
 	<action uniqueid="3143" script="gnomebase/crystalWarzone1.lua"/>
 
 	<action fromuid="3124" touid="3127" script="quests/bigfoot burden/music.lua" />
-	<!--<action uniqueid="3143" script="quests/bigfoot burden/warzones.lua" />-->
+	<!-- <action uniqueid="3143" script="quests/bigfoot burden/warzones.lua" />-->
 	<action fromuid="3147" touid="3150" script="quests/bigfoot burden/rewards.lua" />
 	<action itemid="18213" script="quests/bigfoot burden/extractor.lua" />
 	<action itemid="18219" script="quests/bigfoot burden/crystal.lua" />
@@ -601,7 +592,7 @@
 	<action itemid="13601" script="quests/theirmaster/slimeGobbler.lua" />
 
 	<!-- Rottin Wood and the Married Men Quest -->
-	<!--<action itemid="13176" script="quests/rottin wood and the married men/capturedMerchant.lua" />-->
+	<!-- <action itemid="13176" script="quests/rottin wood and the married men/capturedMerchant.lua" />-->
 	<action itemid="13176" script="rottin wood quest/corpse.lua"/>
 
 	<action actionid="42501" script="rottin wood quest/broken wall.lua" />
@@ -640,7 +631,7 @@
 
 	<!-- Tools -->
 	<action itemid="13158" script="tools/present.lua" />
-	<!--<action itemid="2557" script="rottin wood quest/broken wall.lua"/>-->
+	<!-- <action itemid="2557" script="rottin wood quest/broken wall.lua"/>-->
 	<action itemid="13173" script="rottin wood quest/trap.lua"/>
 	<action itemid="8717" script="tools/lockPick.lua" />
 	<action itemid="8613" script="tools/bricklayerKit.lua" />

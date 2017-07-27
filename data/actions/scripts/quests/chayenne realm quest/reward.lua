@@ -10,8 +10,8 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 		doAddContainerItem(bp, 2114, 1)
 		doAddContainerItem(bp, 6570, 1)
 		setPlayerStorageValue(cid, 72648, 1)
-		doPlayerSendTextMessage(cid, 19, "You have found a beach backpack.")
+		doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You have found a beach backpack.")
 	else
-		doPlayerSendTextMessage(cid, 19, "You already got your reward.")
+		doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You already got your reward.")
 	end
 end

@@ -10,7 +10,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 	end
 
 	if getPlayerStorageValue(cid, config.exaust) >= os.time() then
-		return doPlayerSendTextMessage(cid, 19, "Jaul fights for his belongings and will not let you have them.")
+		return doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "Jaul fights for his belongings and will not let you have them.")
 	end
 
 		doPlayerAddItem(cid, 15621, 1) -- trophy of Jaul
@@ -24,12 +24,12 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 		doPlayerAddItem(cid, 15434, 1) -- jaul pearl
 		setPlayerStorageValue(cid, config.storage, 2)
 		setPlayerStorageValue(cid, config.exaust, os.time()+config.hours*3600)
-		return doPlayerSendTextMessage(cid,19,"You have found 1 trophy of jaul, 50 platinum coins, 1 warrior shield, 1 guardian axe and 1 jaul pearl.")
+		return doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,"You have found 1 trophy of jaul, 50 platinum coins, 1 warrior shield, 1 guardian axe and 1 jaul pearl.")
 
 		elseif randomitem == 2 then
 		doPlayerAddItem(cid, 15403, 1) -- necklace of the deep	
 		setPlayerStorageValue(cid, config.storage, 2)
 		setPlayerStorageValue(cid, config.exaust, os.time()+config.hours*3600)
-		return doPlayerSendTextMessage(cid,19,"You have found 1 trophy of jaul, 50 platinum coins, 1 warrior shield, 1 guardian axe and 1 necklace of the deep.")
+		return doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,"You have found 1 trophy of jaul, 50 platinum coins, 1 warrior shield, 1 guardian axe and 1 necklace of the deep.")
 	end
 end

@@ -6,11 +6,11 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 	}
 
 	if getPlayerStorageValue(cid, config.bstorage) < 1 then
-		return doPlayerSendTextMessage(cid, 19, "Gnomevil defends his belongings and will not let you open his chest.")
+		return doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "Gnomevil defends his belongings and will not let you open his chest.")
 	end
 
 	if getPlayerStorageValue(cid, config.storage) >= os.time() then
-		return doPlayerSendTextMessage(cid, 19, "Gnomevil defends his belongings and will not let you open his chest.")
+		return doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "Gnomevil defends his belongings and will not let you open his chest.")
 	end
 
 		doPlayerAddItem(cid, 18423, 2) -- 2 major crystalline tokens
@@ -19,5 +19,5 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 		doPlayerAddItem(cid, 18413, 10) -- 10 green crystal shards
 		setPlayerStorageValue(cid, config.storage, os.time()+config.hours*3600)
 		setPlayerStorageValue(cid, config.bstorage,-1)
-		return doPlayerSendTextMessage(cid,19,"You have found 2 major crystalline tokens, 1 prismatic necklace, 1 mucus plug and 10 blue crystal shards, wait "..config.hours.." hours to use this again.")
+		return doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,"You have found 2 major crystalline tokens, 1 prismatic necklace, 1 mucus plug and 10 blue crystal shards, wait "..config.hours.." hours to use this again.")
 end

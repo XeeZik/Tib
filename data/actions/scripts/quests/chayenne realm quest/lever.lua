@@ -7,10 +7,10 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 			setGlobalStorageValue(71543, os.time()+5*60)
 			addEvent(doCreateItem, 60*1000, 1498, {x = 33075, y = 32591, z = 3})
 		else
-			doPlayerSendTextMessage(cid, 19, "You do not have the Chayenne's magical key.")
+			doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You do not have the Chayenne's magical key.")
 			end
 		else
-			doPlayerSendTextMessage(cid, 19, "You need to wait few minutes to use again.")
+			doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You need to wait few minutes to use again.")
 		end
 	elseif item.itemid == 1946 then	
 		doTransformItem(getTileItemById({x = 33080, y = 32582, z = 3},1946).uid,1945)

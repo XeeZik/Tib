@@ -49,7 +49,7 @@ function onUse(cid, item, fromPosition, itemEx) -- {x = 33477, y = 32102, z = 9}
 	       end
 	  end
      end
-	else doPlayerSendTextMessage(cid,19,"There are players inside the room or is missing players here.") 
+	else doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "There are players inside the room or is missing players here.") 
 end
 
 end

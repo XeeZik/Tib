@@ -10,7 +10,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 	end
 
 	if getPlayerStorageValue(cid, config.exaust) >= os.time() then
-		return doPlayerSendTextMessage(cid, 19, "Obujos fights for his belongings and will not let you have them.")
+		return doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "Obujos fights for his belongings and will not let you have them.")
 	end
 
 		doPlayerAddItem(cid, 15619, 1) -- trophy of obujos
@@ -24,12 +24,12 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 		doPlayerAddItem(cid, 15436, 1) -- obujos shell
 		setPlayerStorageValue(cid, config.storage, 2)
 		setPlayerStorageValue(cid, config.exaust, os.time()+config.hours*3600)
-		return doPlayerSendTextMessage(cid,19,"You have found 1 trophy of obujos, 30 platinum coins, 1 deepling staff, 1 guardian axe and 1 obujos shell.")
+		return doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,"You have found 1 trophy of obujos, 30 platinum coins, 1 deepling staff, 1 guardian axe and 1 obujos shell.")
 
 		elseif randomitem == 2 then
 		doPlayerAddItem(cid, 7632, 1) -- giant shimmering pearl
 		setPlayerStorageValue(cid, config.storage, 2)
 		setPlayerStorageValue(cid, config.exaust, os.time()+config.hours*3600)
-		return doPlayerSendTextMessage(cid,19,"You have found 1 trophy of obujos, 30 platinum coins, 1 deepling staff, 1 guardian axe and 1 giant shimmering pearl.")
+		return doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,"You have found 1 trophy of obujos, 30 platinum coins, 1 deepling staff, 1 guardian axe and 1 giant shimmering pearl.")
 	end
 end

@@ -14,7 +14,7 @@ if (isInArray(SUGARCANE, itemEx.itemid)) then
 		doDecayItem(itemEx.uid)
 		return true
 else
-		doPlayerSendTextMessage(cid,21,"You can not cut this cane.")
+		doPlayerSendTextMessage(cid, MESSAGE_STATUS_SMALL, "You can not cut this cane.")
 end
 		return destroyItem(cid, itemEx, toPosition)
 end
