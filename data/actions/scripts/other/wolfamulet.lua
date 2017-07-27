@@ -1,7 +1,7 @@
 ---- string of mending id "22542"-----
 local ITEMS = {
     [24716] = { -----Broken Ring Id "13877" Ring of ending "22516"
-        {"enchanted werewolf amulet", 99.99} ----- 1.97 es la probabilidad de crear el item
+        {"enchanted werewolf amulet", 99.99} ----- Is the probability of creating the item
 	},
 	[24718] = { -----Broken Ring Id "13877" Ring of ending "22516"
         {"enchanted werewolf helmet", 99.99}

@@ -19,7 +19,7 @@ function onKill(cid, target)
     return true
 end
 
--- REMOVE O JOGADOR SE EXCEDER O TEMPO
+-- REMOVE THE PLAYER IF YOU EXCEED THE TIME
 function removePlayerTanjis()
 
 for x = room.fromx, room.tox do
@@ -40,7 +40,7 @@ end
 return TRUE
 end
 
--- VOLTA O STORAGE AO NORMAL
+-- TURN THE STORAGE TO NORMAL
 function storageTanjisDelay()
     setGlobalStorageValue(BOSS_GLOBAL_STORAGE + 1000, -1)
     doSetItemActionId(UID_TELEPORT, 8000)

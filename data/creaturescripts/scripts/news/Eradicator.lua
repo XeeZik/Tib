@@ -11,7 +11,7 @@ local criistal1zzz = getTileItemById(posdotpzzz, 1304)
 end
 
 function ReMoveStonezzz()
-    local cristalzzz = getTileItemById(posdotpzzz, 1304) -- Id do cristalzzz azul que some para dar lugar ao tp
+    local cristalzzz = getTileItemById(posdotpzzz, 1304) -- Id of the blue crystal that disappears to give place to tp
     if cristalzzz then
         doRemoveItem(cristalzzz.uid, 1)
     end

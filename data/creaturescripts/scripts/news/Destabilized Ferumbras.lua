@@ -11,7 +11,7 @@ function MoveStone8()
 end
 
 function RemoveStone8()
-    local cristal8 = getTileItemById(posdotp8, 1353) -- Id do cristal azul que some para dar lugar ao tp
+    local cristal8 = getTileItemById(posdotp8, 1353) -- Id of the blue crystal that disappears to give place to tp
     if cristal8 then
         doRemoveItem(cristal8.uid, 1)
     end

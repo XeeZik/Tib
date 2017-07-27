@@ -1,12 +1,12 @@
 local config = {
-    swampId = {20230, 18589, 18584, 18141}, -- ids dos tiles de swamp que pode ser usado a shovel
-    itemGain = {{itemId = 2818, quantGain = 1}, -- itemid que ganha, e quantidade maxima do msm.
+    swampId = {20230, 18589, 18584, 18141}, -- Swamp tiles ids that can be used to shovel
+    itemGain = {{itemId = 2818, quantGain = 1}, -- Itemid winning, and msm maximum amount.
                 {itemId = 2145, quantGain = 3},
                 {itemId = 20138, quantGain = 1}
                 }
 }
 
-local exhausth = 3600 --em quantos segundos podera usar denovo
+local exhausth = 3600 -- In how many seconds can you use it again
 
 
 

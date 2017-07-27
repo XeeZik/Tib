@@ -179,7 +179,7 @@ function onLogin(player)
 		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Fury Gate is on Kazordoon Today.')
 	end
 
-	player:sendTextMessage(messageType or MESSAGE_STATUS_CONSOLE_ORANGE, 'Bem vindo ao OTXServer Global!')
+	player:sendTextMessage(messageType or MESSAGE_STATUS_CONSOLE_ORANGE, 'Welcome to OTXServer Global!')
 	player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, '[BUGS?] http://www.github.com/malucooo/otxserver-new/issues')
 	player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, '[GUILD LEADER COMMAND] Will change all outfits from members !outfit.')
 

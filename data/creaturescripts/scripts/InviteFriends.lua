@@ -10,7 +10,7 @@ local FriendPoints, CheckPoints = getInvitePoints(player), player:getStorageValu
 for vod, ka in pairs(_invite_friends.rewards) do
 local str = ""
 if FriendPoints >= vod and CheckPoints < vod then
-str = str.."--> Invite Players System <--\n\nVocê acaba de receber algumas recompensas:\n\nItems: \n"..getItemsFromList(ka.items)..".\n\n"
+str = str.."--> Invite Players System <--\n\nYou have just received some rewards:\n\nItems: \n"..getItemsFromList(ka.items)..".\n\n"
 if ka.p_days > 0 then 
 player:addPremiumDays(ka.p_days) 
 str = str.."Premium Days:\n"..ka.p_days.." Premium Days." 
@@ -46,7 +46,7 @@ local townid = player:getTown():getId()
 local letter = player:getDepotChest(town_id, true):addItem(2598, 1, true, 1)
 letter:setAttribute(ITEM_ATTRIBUTE_WRITER, "[+] Invite Players System [+]")
 letter:setAttribute(ITEM_ATTRIBUTE_TEXT, str)
-player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE,"[Invite Players System] Você Recebeu algumas premiações por estar convidando jogadores para o servidor, Por favor conferir os itens no Depot.")
+player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "[Invite Players System] You have received some prizes for inviting players to the server, please check the items in the Depot.")
 end
 end 
 end
@@ -58,7 +58,7 @@ if hasInviteFriend(player) and player:getStorageValue(_invite_friends.storages[3
 local f_name, points = getNameFriend(player), _invite_friends.levels_win[newLevel]
 player:setStorageValue(_invite_friends.storages[3], newLevel)
 addInvitePoints(f_name, points)
-player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "[Invite Friends] você atingiu o level "..newLevel.." e o seu amigou "..f_name.." recebeu "..points.." Friend Points. Obrigado!")
+player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "[Invite Friends] You hit the level "..newLevel.." and your friend "..f_name.." received "..points.." Friend Points. Thank you!")
 end
 end
 return true

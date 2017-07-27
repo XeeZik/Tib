@@ -2,7 +2,7 @@
 local posdotp = {x= 33073, y=32300, z=9}
 local ITEMS = {
     [21385] = { -----Broken Ring Id "13877" Ring of ending "22516"
-        {"golem wrench", 10.10} ----- 1.97 es la probabilidad de crear el item
+        {"golem wrench", 10.10} ----- 1.97 Is the probability of creating the item
     }
 }
  
