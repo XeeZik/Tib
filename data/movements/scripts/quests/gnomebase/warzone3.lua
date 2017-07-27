@@ -36,7 +36,7 @@ function onStepIn(cid, item, position, topos, frompos)
     end
            
 if item.actionid == 5161 then
-	doPlayerSendTextMessage(cid, 19, "You have half an hour to heroically defeat Abyssador. Otherwise you'll be teleported out by the gnomish emergency device.")
+	doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You have half an hour to heroically defeat Abyssador. Otherwise you'll be teleported out by the gnomish emergency device.")
 	doTeleportThing(cid, {x=33082, y=31905, z=12})
 	deAbyssador()
 	deSummonAbyssador()

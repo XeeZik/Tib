@@ -29,7 +29,7 @@ function onStepIn(cid, item, position, topos, frompos)
            
 if item.actionid == 5159 then
 	doTeleportThing(cid, {x = 33105, y = 31955, z = 11})
-	doPlayerSendTextMessage(cid, 19, "You have half an hour to heroically defeat Gnomevil. Otherwise you'll be teleported out by the gnomish emergency device.")
+	doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You have half an hour to heroically defeat Gnomevil. Otherwise you'll be teleported out by the gnomish emergency device.")
 	deGnomevil()
 elseif item.actionid == 5160 then
         doTeleportThing(cid, kickposs)

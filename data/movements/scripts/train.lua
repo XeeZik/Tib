@@ -17,7 +17,7 @@ function onStepIn(creature, item, position, fromPosition)
 	end
 
 	check = addEvent(isTraining, config.time * 60 * 1000, player:getGuid())
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, '[Treiner]: Movimente-se a cada ' .. config.time .. ' minutos, caso contrario, voce sera teleportado ao templo.')
+	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, '[Treiner]: Move to each ' .. config.time .. ' minutes, otherwise, you will be teleported to the temple.')
 	return player:setStorageValue(config.str, 1)
 end
 

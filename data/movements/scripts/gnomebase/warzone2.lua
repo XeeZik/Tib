@@ -42,7 +42,7 @@ function onStepIn(cid, item, position, topos, frompos)
 if item.actionid == 5159 then
 if(getGlobalStorageValue(99159) < 1) then
 	doTeleportThing(cid, {x = 33105, y = 31955, z = 11})
-	doPlayerSendTextMessage(cid, 19, "You have half an hour to heroically defeat Gnomevil. Otherwise you'll be teleported out by the gnomish emergency device.")
+	doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You have half an hour to heroically defeat Gnomevil. Otherwise you'll be teleported out by the gnomish emergency device.")
 	deGnomevil()
 	deSummonGnomevil()
 	addEvent(setGlobalStorageValue, 2 * 60 * 1000, 99159, 1)
@@ -50,7 +50,7 @@ if(getGlobalStorageValue(99159) < 1) then
 elseif item.actionid == 5160 then
         doTeleportThing(cid, {x=33000, y=31899, z=9})
 		--else 
-		--doPlayerSendTextMessage(cid, 19, "The boss has already been killed today, the spawn takes place from 10 to 10 hours.")
+		--doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "The boss has already been killed today, the spawn takes place from 10 to 10 hours.")
 		--doTeleportThing(cid, kickposs1)
     end
 	

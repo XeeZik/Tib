@@ -28,7 +28,7 @@ function onStepIn(cid, item, position, topos, frompos)
     end
            
 if item.actionid == 5157 then
-	doPlayerSendTextMessage(cid, 19, "You have half an hour to heroically defeat Deathstrike. Otherwise you'll be teleported out by the gnomish emergency device.")
+	doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You have half an hour to heroically defeat Deathstrike. Otherwise you'll be teleported out by the gnomish emergency device.")
 	deDeathstrike()
 elseif item.actionid == 5158 then
 		doTeleportThing(cid, kickposs)
