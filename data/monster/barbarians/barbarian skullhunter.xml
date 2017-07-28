@@ -38,18 +38,18 @@
 		<voice sentence="Show that you are a worthy opponent." />
 	</voices>
 	<loot>
-		<item id="2148" countmax="30" chance="7500" /><!-- gold coin -->
-		<item id="2050" chance="6100" /><!-- torch -->
-		<item id="2460" chance="2000" /><!-- brass helmet -->
-		<item id="2403" chance="1550" /><!-- knife -->
-		<item id="2473" chance="790" /><!-- viking helmet -->
-		<item id="2483" chance="410" /><!-- scale armor -->
-		<item id="2229" chance="320" /><!-- skull -->
-		<item id="7449" chance="10" /><!-- crystal sword -->
-		<item id="7618" chance="90" /><!-- HP -->
-		<item id="5913" chance="50" /><!-- brown piece of cloth -->
-		<item id="2168" chance="30" /><!-- life ring -->
-		<item id="7462" chance="10" /><!-- ragnir helmet -->
-		<item id="7457" chance="10" /><!-- fur boots -->
+		<item id="2148" countmax="30" chance="7500" /> <!-- gold coin -->
+		<item id="2050" chance="6100" /> <!-- torch -->
+		<item id="2460" chance="2000" /> <!-- brass helmet -->
+		<item id="2403" chance="1550" /> <!-- knife -->
+		<item id="2473" chance="790" /> <!-- viking helmet -->
+		<item id="2483" chance="410" /> <!-- scale armor -->
+		<item id="2229" chance="320" /> <!-- skull -->
+		<item id="7449" chance="10" /> <!-- crystal sword -->
+		<item id="7618" chance="90" /> <!-- HP -->
+		<item id="5913" chance="50" /> <!-- brown piece of cloth -->
+		<item id="2168" chance="30" /> <!-- life ring -->
+		<item id="7462" chance="10" /> <!-- ragnir helmet -->
+		<item id="7457" chance="10" /> <!-- fur boots -->
 	</loot>
 </monster>

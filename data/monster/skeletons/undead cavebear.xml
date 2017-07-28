@@ -47,9 +47,9 @@
 		<voice sentence="Groooowl" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="84" chance="28000" />	<!-- gold coin -->
-		<item id="13302" chance="10000" />				<!-- maxilla -->
-		<item id="7618" chance="2700" />					<!-- health potion -->
-		<item id="13303" chance="1350" />				<!-- cavebear skull -->
+		<item id="2148" countmax="84" chance="28000" /> <!-- gold coin -->
+		<item id="13302" chance="10000" /> <!-- maxilla -->
+		<item id="7618" chance="2700" /> <!-- health potion -->
+		<item id="13303" chance="1350" /> <!-- cavebear skull -->
 	</loot>
 </monster>

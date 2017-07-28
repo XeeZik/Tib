@@ -18,7 +18,6 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="250" attack="180" />
-		
 	</attacks>
 	<defenses armor="10" defense="10" />
 	<elements>
@@ -31,5 +30,4 @@
 		<voice sentence="Togheter we are unstoppable!" />
 		<voice sentence="You will fall before our might!" />
 	</voices>
-	
 </monster>

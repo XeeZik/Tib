@@ -34,21 +34,21 @@
 		<voice sentence="Raar!!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="165" chance="50320" /><!-- gold coin -->
-		<item id="2152" countmax="2" chance="50320" /><!-- platinun coin -->
-		<item id="27042" chance="20320" /><!-- Rhino Horn Carving -->											  
-		<item id="27039" countmax="2" chance="18320" /><!-- Cave Turnips -->
-		<item id="2147" countmax="5" chance="4360" /><!-- small ruby -->
-		<item id="27041" chance="14000" /><!-- Cracked Alabaster Vase -->
-		<item id="27043" chance="20000" /><!-- Rhino Horn Carving -->
-		<item id="27046" chance="6000" /><!-- Ancient Coin -->
-		<item id="7589" chance="15000" /><!-- Strong Mana Potion -->										
-		<item id="2229" chance="25000" /><!-- Skull -->
-		<item id="9822" chance="4000" /><!-- Rusty Helmet Semi-Rare -->
-		<item id="2144" chance="2500" /><!-- Black Pearl -->
-		<item id="24840" chance="100" /><!-- Shamanic Talisman -->
-		<item id="2185" chance="2000" /><!-- Necrotic Rod -->
-		<item id="2197" chance="2000" /><!-- Stone Skin Amulet -->
-		<item id="8922" chance="500" /><!-- Wand of Voodoo -->
+		<item id="2148" countmax="165" chance="50320" /> <!-- gold coin -->
+		<item id="2152" countmax="2" chance="50320" /> <!-- platinun coin -->
+		<item id="27042" chance="20320" /> <!-- Rhino Horn Carving -->
+		<item id="27039" countmax="2" chance="18320" /> <!-- Cave Turnips -->
+		<item id="2147" countmax="5" chance="4360" /> <!-- small ruby -->
+		<item id="27041" chance="14000" /> <!-- Cracked Alabaster Vase -->
+		<item id="27043" chance="20000" /> <!-- Rhino Horn Carving -->
+		<item id="27046" chance="6000" /> <!-- Ancient Coin -->
+		<item id="7589" chance="15000" /> <!-- Strong Mana Potion -->
+		<item id="2229" chance="25000" /> <!-- Skull -->
+		<item id="9822" chance="4000" /> <!-- Rusty Helmet Semi-Rare -->
+		<item id="2144" chance="2500" /> <!-- Black Pearl -->
+		<item id="24840" chance="100" /> <!-- Shamanic Talisman -->
+		<item id="2185" chance="2000" /> <!-- Necrotic Rod -->
+		<item id="2197" chance="2000" /> <!-- Stone Skin Amulet -->
+		<item id="8922" chance="500" /> <!-- Wand of Voodoo -->
 	</loot>
 </monster>

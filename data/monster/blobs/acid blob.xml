@@ -40,6 +40,6 @@
 		<voice sentence="Kzzchhh!" />
 	</voices>
 	<loot>
-		<item id="9967" chance="18585" /><!-- glob of acid -->
+		<item id="9967" chance="18585" /> <!-- glob of acid -->
 	</loot>
 </monster>

@@ -59,12 +59,9 @@
 		<element earthPercent="-5" />
 		<element deathPercent="-5" />
 	</elements>
-	
 	<voices interval="2000" chance="7">
 		<voice sentence="Let's see if you can handle THIS!" />
 		<voice sentence="The world will bow before my brilliancy!" />
 		<voice sentence="You will perish!" />
-	
 	</voices>
-	
 </monster>

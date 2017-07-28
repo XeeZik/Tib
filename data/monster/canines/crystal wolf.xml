@@ -42,12 +42,12 @@
 		<voice sentence="Aaaauuuuuooooooo!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="52" chance="84000" /><!-- gold coin -->
-		<item id="2666" countmax="4" chance="50000" /><!-- meat -->
-		<item id="7839" countmax="10" chance="5700" /><!-- shiver arrow -->
-		<item id="8878" chance="1900" /><!-- crystalline armor -->
-		<item id="2183" chance="5700" /><!-- hailstorm rod -->
-		<item id="5897" chance="1900" /><!-- wolf paw -->
-		<item id="11227" chance="290" /><!-- shiny stone -->
+		<item id="2148" countmax="52" chance="84000" /> <!-- gold coin -->
+		<item id="2666" countmax="4" chance="50000" /> <!-- meat -->
+		<item id="7839" countmax="10" chance="5700" /> <!-- shiver arrow -->
+		<item id="8878" chance="1900" /> <!-- crystalline armor -->
+		<item id="2183" chance="5700" /> <!-- hailstorm rod -->
+		<item id="5897" chance="1900" /> <!-- wolf paw -->
+		<item id="11227" chance="290" /> <!-- shiny stone -->
 	</loot>
 </monster>

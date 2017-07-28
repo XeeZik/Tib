@@ -60,27 +60,27 @@
 		<voice sentence="From the earthy depths he comes and brings freedom!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="150" chance="100000" />	<!-- gold coin -->
-		<item id="2152" countmax="3" chance="40000" />		<!-- platinum coin -->
-		<item id="12429" chance="15900" />					<!-- purple robe -->
-		<item id="7589" countmax="3" chance="12200" />		<!-- strong mana potion -->
-		<item id="2182" chance="11900" />					<!-- snakebite rod -->
-		<item id="7425" chance="5000" />						<!-- taurus mace -->
-		<item id="2050" chance="5000" />						<!-- torch -->
-		<item id="5878" chance="4900" />						<!-- minotaur leather -->
-		<item id="12428" countmax="2" chance="3000" />		<!-- minotaur horn -->
-		<item id="2147" countmax="2" chance="2400" />		<!-- small ruby -->
-		<item id="2149" countmax="2" chance="2400" />		<!-- small emerald -->
-		<item id="2150" countmax="2" chance="2600" />		<!-- small amethyst -->
-		<item id="9970" countmax="2" chance="2460" />		<!-- small topaz -->
-		<item id="2146" countmax="2" chance="2380" />		<!-- small sapphire -->
-		<item id="2145" countmax="2" chance="2430" />		<!-- small diamond -->
-		<item id="5912" chance="1570" />						<!-- blue piece of cloth -->
-		<item id="8910" chance="1500" />						<!-- underworld rod -->
-		<item id="5911" chance="1450" />						<!-- red piece of cloth -->
-		<item id="5910" chance="1440" />						<!-- green piece of cloth -->
-		<item id="2154" chance="530" />						<!-- yellow gem -->
-		<item id="2156" chance="490" />						<!-- red gem -->
-		<item id="7401" chance="140" />						<!-- minotaur trophy -->
+		<item id="2148" countmax="150" chance="100000" /> <!-- gold coin -->
+		<item id="2152" countmax="3" chance="40000" /> <!-- platinum coin -->
+		<item id="12429" chance="15900" /> <!-- purple robe -->
+		<item id="7589" countmax="3" chance="12200" /> <!-- strong mana potion -->
+		<item id="2182" chance="11900" /> <!-- snakebite rod -->
+		<item id="7425" chance="5000" /> <!-- taurus mace -->
+		<item id="2050" chance="5000" /> <!-- torch -->
+		<item id="5878" chance="4900" /> <!-- minotaur leather -->
+		<item id="12428" countmax="2" chance="3000" /> <!-- minotaur horn -->
+		<item id="2147" countmax="2" chance="2400" /> <!-- small ruby -->
+		<item id="2149" countmax="2" chance="2400" /> <!-- small emerald -->
+		<item id="2150" countmax="2" chance="2600" /> <!-- small amethyst -->
+		<item id="9970" countmax="2" chance="2460" /> <!-- small topaz -->
+		<item id="2146" countmax="2" chance="2380" /> <!-- small sapphire -->
+		<item id="2145" countmax="2" chance="2430" /> <!-- small diamond -->
+		<item id="5912" chance="1570" /> <!-- blue piece of cloth -->
+		<item id="8910" chance="1500" /> <!-- underworld rod -->
+		<item id="5911" chance="1450" /> <!-- red piece of cloth -->
+		<item id="5910" chance="1440" /> <!-- green piece of cloth -->
+		<item id="2154" chance="530" /> <!-- yellow gem -->
+		<item id="2156" chance="490" /> <!-- red gem -->
+		<item id="7401" chance="140" /> <!-- minotaur trophy -->
 	</loot>
 </monster>

@@ -45,18 +45,18 @@
 		<voice sentence="Dust to dust." />
 	</voices>
 	<loot>
-		<item id="2148" countmax="45" chance="74000" /><!-- gold coin -->
-		<item id="2260" chance="34000" /><!-- blank rune -->
-		<item id="2787" countmax="2" chance="58000" /><!-- white mushroom -->
-		<item id="2673" chance="24300" /><!-- pear -->
-		<item id="2162" chance="13800" /><!-- magic lightwand -->
-		<item id="2175" chance="360" /><!-- Spellbook -->
-		<item id="2423" chance="1130" /><!-- Clerical Mace -->
-		<item id="2213" chance="510" /><!-- Dwarven ring -->
-		<item id="2146" chance="610" /><!-- Small sapphire -->
-		<item id="5880" chance="150" /><!-- Iron Ore -->
-		<item id="7886" chance="410" /><!-- Terra Boots -->
-		<item id="12419" chance="6800" /><!-- Geomancer's Staff -->
-		<item id="12414" chance="7900" /><!-- Geomancer's Robe -->
+		<item id="2148" countmax="45" chance="74000" /> <!-- gold coin -->
+		<item id="2260" chance="34000" /> <!-- blank rune -->
+		<item id="2787" countmax="2" chance="58000" /> <!-- white mushroom -->
+		<item id="2673" chance="24300" /> <!-- pear -->
+		<item id="2162" chance="13800" /> <!-- magic lightwand -->
+		<item id="2175" chance="360" /> <!-- Spellbook -->
+		<item id="2423" chance="1130" /> <!-- Clerical Mace -->
+		<item id="2213" chance="510" /> <!-- Dwarven ring -->
+		<item id="2146" chance="610" /> <!-- Small sapphire -->
+		<item id="5880" chance="150" /> <!-- Iron Ore -->
+		<item id="7886" chance="410" /> <!-- Terra Boots -->
+		<item id="12419" chance="6800" /> <!-- Geomancer's Staff -->
+		<item id="12414" chance="7900" /> <!-- Geomancer's Robe -->
 	</loot>
 </monster>

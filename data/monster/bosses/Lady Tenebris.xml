@@ -4,7 +4,6 @@
 	<look type="433" head="57" body="95" legs="38" feet="94" addons="2" corpse="6068" />
 	<targetchange interval="2000" chance="20" />
 	<flags>
-       
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
@@ -17,22 +16,16 @@
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
 	</flags>
-	
 	<attacks>
-		<attack name="melee" interval="200" chance="20" skill="153"  min="0" max="-1300"/>
-		<attack name="death" interval="200" chance="20" skill="153"  min="-600" max="-700"/>
+		<attack name="melee" interval="200" chance="20" skill="153" min="0" max="-1300" />
+		<attack name="death" interval="200" chance="20" skill="153" min="-600" max="-700" />
 		<attack name="death" interval="500" chance="10" length="8" spread="0" target="1" min="-1200" max="-1500">
-      			<attribute key="areaEffect" value="mortarea" />
-    		</attack>
-			<attack name="death" interval="500" chance="10" radius="8" min="-2000" max="-2500">
-      			<attribute key="areaEffect" value="mortarea" />
-    		</attack>
-			
-			
-	
-			
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="death" interval="500" chance="10" radius="8" min="-2000" max="-2500">
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
 	</attacks>
-	
 	<defenses armor="55" defense="65">
 		<defense name="healing" interval="3000" chance="35" min="600" max="2700">
 			<attribute key="areaEffect" value="blueshimmer" />
@@ -87,7 +80,7 @@
 		<item id="7899" chance="6000" /> <!-- Magma Coat -->
 		<item id="7632" chance="6000" /> <!-- Giant Shimmering Pearl -->
 		<item id="5954" chance="6000" /> <!-- Demon Horn -->
-		<item id="22608" chance="6000" unique="1"/> <!-- Nightmare Horn -->
+		<item id="22608" chance="6000" unique="1" /> <!-- Nightmare Horn -->
 		<item id="2195" chance="6000" /> <!-- Boots of Haste -->
 		<item id="2168" chance="6000" /> <!-- Life Ring -->
 		<item id="22614" chance="6000" /> <!-- Nightmare Beacon -->

@@ -15,16 +15,15 @@
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
 	</flags>
-	<script>
-   <event name="World Devourer"/>
-	</script>
+<script>
+<event name="World Devourer" />
+</script>
 	<attacks>
 		<attack name="melee" interval="2000" skill="250" attack="350" />
 		<attack name="manadrain" interval="1000" chance="7" range="7" min="-900" max="-1500">
 			<attribute key="shootEffect" value="energy" />
 			<attribute key="areaEffect" value="poff" />
 		</attack>
-		
 		<attack name="drunk" interval="2000" chance="20" target="0" radius="5" duration="9000">
 			<attribute key="areaEffect" value="smallclouds" />
 		</attack>
@@ -47,8 +46,8 @@
 		</attack>
 		<attack name="lifedrain" interval="2000" chance="10" length="8" spread="0" min="-750" max="-1200">
 			<attribute key="areaEffect" value="purpleenergy" />
-		</attack>		
-		<attack name="renegade knight" interval="2000" chance="30"/>		
+		</attack>
+		<attack name="renegade knight" interval="2000" chance="30" />
 		<attack name="choking fear drown" interval="2000" chance="20" />
 		<attack name="death" interval="2000" chance="20" radius="4" target="1" min="-450" max="-1400">
 			<attribute key="shootEffect" value="suddendeath" />
@@ -62,8 +61,7 @@
 		</attack>
 		<attack name="strength" interval="1000" chance="8" radius="5" target="0">
 			<attribute key="areaEffect" value="blackspark" />
-		</attack>		
-		
+		</attack>
 		<attack name="fire" interval="1000" chance="34" range="7" radius="7" target="1" min="-100" max="-700">
 			<attribute key="shootEffect" value="fire" />
 			<attribute key="areaEffect" value="firearea" />
@@ -73,7 +71,6 @@
 		</attack>
 	</attacks>
 	<defenses armor="160" defense="160">
-		
 		<defense name="healing" interval="6000" chance="25" min="2000" max="5000">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
@@ -86,7 +83,6 @@
 		<defense name="invisible" interval="1000" chance="17" duration="2000">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
-		
 	</defenses>
 	<immunities>
 		<immunity drown="1" />
@@ -101,5 +97,4 @@
 	<voices interval="2000" chance="7">
 		<voice sentence="I AM DEVOURER!" yell="1" />
 	</voices>
-	
 </monster>

@@ -63,25 +63,25 @@
 		<voice sentence="Come to me my children!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="137" chance="100000" />	<!-- gold coin -->
-		<item id="2152" chance="19720" />					<!-- platinum coin -->
-		<item id="2175" chance="10200" />					<!-- spellbook -->
-		<item id="7589" chance="7700" />						<!-- strong mana potion -->
-		<item id="2144" countmax="3" chance="5360" />		<!-- black pearl -->
-		<item id="2143" chance="4500" />						<!-- white pearl -->
-		<item id="2532" chance="2122" />						<!-- ancient shield -->
-		<item id="9970" countmax="3" chance="2530" />		<!-- small topaz -->
-		<item id="2149" countmax="3" chance="2030" />		<!-- small emerald -->
-		<item id="2214" chance="1640" />						<!-- ring of healing -->
-		<item id="2479" chance="710" />						<!-- strange helmet -->
-		<item id="2154" chance="780" />						<!-- yellow gem -->
-		<item id="2436" chance="320" />						<!-- skull staff -->
-		<item id="2171" chance="320" />						<!-- platinum amulet -->
-		<item id="2535" chance="230" />						<!-- castle shield -->
-		<item id="2178" chance="380" />						<!-- mind stone -->
-		<item id="7893" chance="150" />						<!-- lightning boots -->
-		<item id="2656" chance="180" />						<!-- blue robe -->
-		<item id="13291" chance="30" />						<!-- maximila maximus -->
-		<item id="2401" chance="20" />						<!-- staff -->
+		<item id="2148" countmax="137" chance="100000" /> <!-- gold coin -->
+		<item id="2152" chance="19720" /> <!-- platinum coin -->
+		<item id="2175" chance="10200" /> <!-- spellbook -->
+		<item id="7589" chance="7700" /> <!-- strong mana potion -->
+		<item id="2144" countmax="3" chance="5360" /> <!-- black pearl -->
+		<item id="2143" chance="4500" /> <!-- white pearl -->
+		<item id="2532" chance="2122" /> <!-- ancient shield -->
+		<item id="9970" countmax="3" chance="2530" /> <!-- small topaz -->
+		<item id="2149" countmax="3" chance="2030" /> <!-- small emerald -->
+		<item id="2214" chance="1640" /> <!-- ring of healing -->
+		<item id="2479" chance="710" /> <!-- strange helmet -->
+		<item id="2154" chance="780" /> <!-- yellow gem -->
+		<item id="2436" chance="320" /> <!-- skull staff -->
+		<item id="2171" chance="320" /> <!-- platinum amulet -->
+		<item id="2535" chance="230" /> <!-- castle shield -->
+		<item id="2178" chance="380" /> <!-- mind stone -->
+		<item id="7893" chance="150" /> <!-- lightning boots -->
+		<item id="2656" chance="180" /> <!-- blue robe -->
+		<item id="13291" chance="30" /> <!-- maximila maximus -->
+		<item id="2401" chance="20" /> <!-- staff -->
 	</loot>
 </monster>

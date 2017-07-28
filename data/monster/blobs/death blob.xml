@@ -43,6 +43,6 @@
 		<summon name="Death Blob" interval="2000" chance="10" />
 	</summons>
 	<loot>
-		<item id="9968" chance="18585" /><!-- glob of tar -->
+		<item id="9968" chance="18585" /> <!-- glob of tar -->
 	</loot>
 </monster>

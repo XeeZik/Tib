@@ -15,9 +15,9 @@
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
 	</flags>
-	<script>
-   <event name="Tarbaz"/>
-	</script>
+<script>
+<event name="Tarbaz" />
+</script>
 	<attacks>
 		<attack name="melee" interval="2000" skill="200" attack="290" />
 		<attack name="manadrain" interval="1000" chance="7" range="7" min="-200" max="-800">
@@ -34,8 +34,8 @@
 		</attack>
 		<attack name="lifedrain" interval="2000" chance="10" length="8" spread="0" min="-50" max="-200">
 			<attribute key="areaEffect" value="purpleenergy" />
-		</attack>		
-		<attack name="renegade knight" interval="2000" chance="30"/>		
+		</attack>
+		<attack name="renegade knight" interval="2000" chance="30" />
 		<attack name="choking fear drown" interval="2000" chance="20" />
 		<attack name="death" interval="2000" chance="20" radius="4" target="1" min="-450" max="-1400">
 			<attribute key="shootEffect" value="suddendeath" />
@@ -53,8 +53,6 @@
 		<attack name="strength" interval="1000" chance="8" radius="5" target="0">
 			<attribute key="areaEffect" value="blackspark" />
 		</attack>
-		
-		
 		<attack name="fire" interval="1000" chance="34" range="7" radius="7" target="1" min="-100" max="-700">
 			<attribute key="shootEffect" value="fire" />
 			<attribute key="areaEffect" value="firearea" />
@@ -64,60 +62,54 @@
 		</attack>
 	</attacks>
 	<defenses armor="160" defense="160">
-		
 		<defense name="healing" interval="4000" chance="15" min="2000" max="3000">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 		<defense name="speed" interval="1000" chance="8" speedchange="1901" duration="5000">
 			<attribute key="areaEffect" value="redshimmer" />
 		</defense>
-		
 		<defense name="invisible" interval="1000" chance="17" duration="2000">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
-		
 	</defenses>
 	<voices interval="2000" chance="7">
-		<voice sentence="You are a failure" />		
+		<voice sentence="You are a failure" />
 	</voices>
 	<immunities>
-	
 		<immunity paralyze="1" />
 		<immunity invisible="1" />
 	</immunities>
-	
-	<loot capacity="5000">
-	<item id="2148" countmax="100" chance="9000" /> <!-- gold coin -->
-	<item id="2148" countmax="100" chance="9000" /> <!-- gold coin -->	
-	<item id="2152" countmax="25" chance="9000" /> <!-- platinum coin -->	
-		<item id="25172" chance="80500" /> <!-- silver token -->		
-         <item id="2154" chance="2500" /> <!-- Yellow Gem -->
-         <item id="2153" chance="2500" /> <!-- Violet Gem -->
-         <item id="2156" chance="2500" /> <!-- Red Gem -->	
-        <item id="2155" chance="2500" /> <!-- Green Gem -->	
-        <item id="2158" chance="2500" /> <!-- Blue Gem -->		
-		<item id="25413" chance="100" /> <!-- Shroud of Despair -->		
-		<item id="25383" chance="200" /> <!-- Rift Lance-->		
-		<item id="25523" chance="200" /> <!-- Rift Crossbow-->			
-		<item id="8910" chance="500" /> <!-- Underworld Rod -->	
-		<item id="7897" chance="900" /> <!-- Glacier Robe -->	
-		<item id="7896" chance="900" /> <!-- Glacier Kilt -->			
-		<item id="7888" subtype="200" chance="4500" /> <!-- Glacier Amulet -->			
-		<item id="7632" chance="5500" /> <!-- Giant Shimmering Pearl -->			
-		<item id="6500" chance="10500" /> <!-- Demonic Essence -->			
-	    <item id="2438" chance="600" /> <!--  Epee -->		
-        <item id="2167" chance="6500" /> <!-- Energy Ring -->		
-		<item id="18414" countmax="3" chance="4500" /> <!-- Violet Crystal Shard -->	
+<loot capacity="5000">
+		<item id="2148" countmax="100" chance="9000" /> <!-- gold coin -->
+		<item id="2148" countmax="100" chance="9000" /> <!-- gold coin -->
+		<item id="2152" countmax="25" chance="9000" /> <!-- platinum coin -->
+		<item id="25172" chance="80500" /> <!-- silver token -->
+		<item id="2154" chance="2500" /> <!-- Yellow Gem -->
+		<item id="2153" chance="2500" /> <!-- Violet Gem -->
+		<item id="2156" chance="2500" /> <!-- Red Gem -->
+		<item id="2155" chance="2500" /> <!-- Green Gem -->
+		<item id="2158" chance="2500" /> <!-- Blue Gem -->
+		<item id="25413" chance="100" /> <!-- Shroud of Despair -->
+		<item id="25383" chance="200" /> <!-- Rift Lance-->
+		<item id="25523" chance="200" /> <!-- Rift Crossbow-->
+		<item id="8910" chance="500" /> <!-- Underworld Rod -->
+		<item id="7897" chance="900" /> <!-- Glacier Robe -->
+		<item id="7896" chance="900" /> <!-- Glacier Kilt -->
+		<item id="7888" subtype="200" chance="4500" /> <!-- Glacier Amulet -->
+		<item id="7632" chance="5500" /> <!-- Giant Shimmering Pearl -->
+		<item id="6500" chance="10500" /> <!-- Demonic Essence -->
+		<item id="2438" chance="600" /> <!-- Epee -->
+		<item id="2167" chance="6500" /> <!-- Energy Ring -->
+		<item id="18414" countmax="3" chance="4500" /> <!-- Violet Crystal Shard -->
 		<item id="8473" countmax="10" chance="3500" /> <!-- Ultimate Health Potion -->
 		<item id="9970" countmax="5" chance="9500" /> <!-- Small Topaz -->
 		<item id="2149" countmax="5" chance="900" /> <!-- Small Emerald -->
 		<item id="2145" countmax="5" chance="700" /> <!-- Small Diamond -->
-		<item id="2150" countmax="5" chance="500" /> <!-- Small Amethyst -->		
-		<item id="18415" countmax="3" chance="500" /> <!-- Green Crystal Shard -->		
+		<item id="2150" countmax="5" chance="500" /> <!-- Small Amethyst -->
+		<item id="18415" countmax="3" chance="500" /> <!-- Green Crystal Shard -->
 		<item id="8472" countmax="10" chance="4500" /> <!-- Great Spirit Potion -->
-		<item id="18413" countmax="3" chance="500" /> <!-- Blue Crystal Shard -->	
-		<item id="7590" countmax="10" chance="9500" /> <!-- Great Mana Potion -->	
-        <item id="6558" countmax="5" chance="4500" /> <!-- Concentrated Demonic Blood -->
-			 
+		<item id="18413" countmax="3" chance="500" /> <!-- Blue Crystal Shard -->
+		<item id="7590" countmax="10" chance="9500" /> <!-- Great Mana Potion -->
+		<item id="6558" countmax="5" chance="4500" /> <!-- Concentrated Demonic Blood -->
 	</loot>
 </monster>

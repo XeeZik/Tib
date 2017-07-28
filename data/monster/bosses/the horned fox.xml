@@ -48,18 +48,18 @@
 		<voice sentence="Help me, boys!" />
 	</voices>
 	<loot>
-		<item id="5804" chance="100000" />				<!-- nose ring -->
-		<item id="2148" countmax="99" chance="96000" />	<!-- gold coin -->
-		<item id="5878" chance="96000" />				<!-- minotaur leather -->
-		<item id="12428" countmax="2" chance="92590" />	<!-- minotaur horn -->
-		<item id="12438" chance="85000" />				<!-- piece of warrior armor -->
-		<item id="7363" countmax="14" chance="48000" />	<!-- piercing bolt -->
-		<item id="2465" chance="25000" />				<!-- brass armor -->
-		<item id="2666" countmax="2" chance="18000" />	<!-- meat -->
-		<item id="2513" chance="14000" />				<!-- battle shield -->
-		<item id="2502" chance="11000" />				<!-- dwarven helmet -->
-		<item id="2580" chance="7410" />					<!-- fishing rod -->
-		<item id="7588" chance="7410" />					<!-- strong health potion -->
-		<item id="2387" chance="3700" />					<!-- double axe -->
+		<item id="5804" chance="100000" /> <!-- nose ring -->
+		<item id="2148" countmax="99" chance="96000" /> <!-- gold coin -->
+		<item id="5878" chance="96000" /> <!-- minotaur leather -->
+		<item id="12428" countmax="2" chance="92590" /> <!-- minotaur horn -->
+		<item id="12438" chance="85000" /> <!-- piece of warrior armor -->
+		<item id="7363" countmax="14" chance="48000" /> <!-- piercing bolt -->
+		<item id="2465" chance="25000" /> <!-- brass armor -->
+		<item id="2666" countmax="2" chance="18000" /> <!-- meat -->
+		<item id="2513" chance="14000" /> <!-- battle shield -->
+		<item id="2502" chance="11000" /> <!-- dwarven helmet -->
+		<item id="2580" chance="7410" /> <!-- fishing rod -->
+		<item id="7588" chance="7410" /> <!-- strong health potion -->
+		<item id="2387" chance="3700" /> <!-- double axe -->
 	</loot>
 </monster>

@@ -31,7 +31,7 @@
 		<voice sentence="Yoooohhuuuuu!" />
 	</voices>
 	<loot>
-		<item id="2666" countmax="2" chance="30000" /><!-- meat -->
-		<item id="11212" chance="10000" /><!-- winter wolf fur -->
+		<item id="2666" countmax="2" chance="30000" /> <!-- meat -->
+		<item id="11212" chance="10000" /> <!-- winter wolf fur -->
 	</loot>
 </monster>

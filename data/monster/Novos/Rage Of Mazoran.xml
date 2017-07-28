@@ -39,5 +39,4 @@
 		<immunity paralyze="1" />
 		<immunity invisible="1" />
 	</immunities>
-	
 </monster>

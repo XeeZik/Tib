@@ -21,8 +21,7 @@
 		<attack name="manadrain" interval="2000" chance="10" range="7" min="0" max="-120" />
 	</attacks>
 	<defenses armor="1" defense="1">
-		<defense name="healing" interval="2000" chance="30" min="0" max="0"/>
-			
+		<defense name="healing" interval="2000" chance="30" min="0" max="0" />
 	</defenses>
 	<immunities>
 		<immunity physical="1" />

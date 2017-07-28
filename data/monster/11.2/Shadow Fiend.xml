@@ -17,7 +17,6 @@
 		<flag runonhealth="15" />
 	</flags>
 	<attacks>
-		
 	</attacks>
 	<defenses armor="10" defense="10" />
 	<elements>

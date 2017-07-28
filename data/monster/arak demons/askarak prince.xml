@@ -44,19 +44,19 @@
 		<voice sentence="DEATH TO THE SHABRUAK!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="95000" /><!-- gold coin -->
-		<item id="2148" countmax="86" chance="95000" /><!-- gold coin -->
-		<item id="2152" countmax="4" chance="33333" /><!-- platinum coin -->
-		<item id="7589" chance="15285" /><!-- strong mana potion -->
-		<item id="7588" chance="14885" /><!-- strong health potion -->
-		<item id="2149" countmax="5" chance="11500" /><!-- small emerald -->
-		<item id="2789" countmax="5" chance="6666" /><!-- brown mushroom -->
-		<item id="2165" chance="5345" /><!-- stealth ring -->
-		<item id="7440" chance="1315" /><!-- mastermind potion -->
-		<item id="8912" chance="1000" /><!-- springsprout rod -->
-		<item id="5904" chance="840" /><!-- magic sulphur -->
-		<item id="7884" chance="740" /><!-- terra mantle -->
-		<item id="13530" chance="500" /><!-- demonic finger -->
-		<item id="2393" chance="300" /><!-- giant sword -->
+		<item id="2148" countmax="100" chance="95000" /> <!-- gold coin -->
+		<item id="2148" countmax="86" chance="95000" /> <!-- gold coin -->
+		<item id="2152" countmax="4" chance="33333" /> <!-- platinum coin -->
+		<item id="7589" chance="15285" /> <!-- strong mana potion -->
+		<item id="7588" chance="14885" /> <!-- strong health potion -->
+		<item id="2149" countmax="5" chance="11500" /> <!-- small emerald -->
+		<item id="2789" countmax="5" chance="6666" /> <!-- brown mushroom -->
+		<item id="2165" chance="5345" /> <!-- stealth ring -->
+		<item id="7440" chance="1315" /> <!-- mastermind potion -->
+		<item id="8912" chance="1000" /> <!-- springsprout rod -->
+		<item id="5904" chance="840" /> <!-- magic sulphur -->
+		<item id="7884" chance="740" /> <!-- terra mantle -->
+		<item id="13530" chance="500" /> <!-- demonic finger -->
+		<item id="2393" chance="300" /> <!-- giant sword -->
 	</loot>
 </monster>

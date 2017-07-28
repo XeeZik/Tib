@@ -38,11 +38,11 @@
 		<voice sentence="*swwwwishhhh*" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="45" chance="97230" /><!-- gold coin -->
-		<item id="21427" chance="11990" /><!-- dowser -->
-		<item id="21428" chance="14930" /><!-- fir cone -->
-		<item id="2787" countmax="3" chance="5060" /><!-- white mushrooms -->
-		<item id="20104" chance="4800" /><!-- swampling club -->
-		<item id="2149" chance="1000" /><!-- small emerald -->
+		<item id="2148" countmax="45" chance="97230" /> <!-- gold coin -->
+		<item id="21427" chance="11990" /> <!-- dowser -->
+		<item id="21428" chance="14930" /> <!-- fir cone -->
+		<item id="2787" countmax="3" chance="5060" /> <!-- white mushrooms -->
+		<item id="20104" chance="4800" /> <!-- swampling club -->
+		<item id="2149" chance="1000" /> <!-- small emerald -->
 	</loot>
 </monster>

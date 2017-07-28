@@ -43,11 +43,11 @@
 		<summon name="Monk" interval="2000" chance="20" />
 	</summons>
 	<loot>
-		<item id="2120" countmax="3" chance="100000" />	<!-- rope -->
-		<item id="7386" chance="38000" />				<!-- mercenary sword -->
-		<item id="5913" chance="30000" />				<!-- brown piece of cloth -->
-		<item id="2148" countmax="39" chance="30000" />	<!-- gold coin -->
-		<item id="7458" chance="15000" />				<!-- fur cap -->
-		<item id="7290" chance="8000" />					<!-- shard -->
+		<item id="2120" countmax="3" chance="100000" /> <!-- rope -->
+		<item id="7386" chance="38000" /> <!-- mercenary sword -->
+		<item id="5913" chance="30000" /> <!-- brown piece of cloth -->
+		<item id="2148" countmax="39" chance="30000" /> <!-- gold coin -->
+		<item id="7458" chance="15000" /> <!-- fur cap -->
+		<item id="7290" chance="8000" /> <!-- shard -->
 	</loot>
 </monster>

@@ -4,7 +4,7 @@
 	<look type="591" head="0" body="94" legs="79" feet="79" corpse="22562" />
 	<targetchange interval="5000" chance="20" />
 	<flags>
-        <flag rewardboss="1" />
+		<flag rewardboss="1" />
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
@@ -17,9 +17,9 @@
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
 	</flags>
-	<script>
-	<event name="HealGaz" />
-	</script>
+<script>
+<event name="HealGaz" />
+</script>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-5000" />
 		<attack name="melee" interval="1800" chance="40" range="7" radius="5" target="0" min="0" max="-1000">
@@ -29,24 +29,24 @@
 			<attribute key="areaEffect" value="fire" />
 		</attack>
 		<attack name="fire" interval="2000" chance="14" length="8" spread="0" min="-1600" max="-3400">
-			<attribute key="areaEffect" value="firearea"/>
+			<attribute key="areaEffect" value="firearea" />
 		</attack>
 		<attack name="physical" interval="2500" chance="20" range="7" radius="5" target="0" min="-200" max="-480">
 			<attribute key="areaEffect" value="greenshimmer" />
 		</attack>
 		<attack name="death" interval="2000" chance="13" length="8" spread="3" min="-100" max="-1000">
-			<attribute key="areaEffect" value="poff"/>
+			<attribute key="areaEffect" value="poff" />
 		</attack>
 		<attack name="death" interval="2000" chance="19" range="7" target="1" radius="6" min="-100" max="-800">
-			<attribute key="shootEffect" value="suddendeath"/>
-			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="mortarea" />
 		</attack>
 		<attack name="death" interval="2000" chance="13" range="7" target="0" radius="8" min="-100" max="-800">
-			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="areaEffect" value="mortarea" />
 		</attack>
-		<attack name="gaz'haragoth iceball" interval="2000" chance="35" min="-1000" max="-1000"/>
-		<attack name="gaz'haragoth death" interval="4000" chance="6"/>
-        <attack name="gaz'haragoth paralyze" interval="2000" chance="12"/>
+		<attack name="gaz'haragoth iceball" interval="2000" chance="35" min="-1000" max="-1000" />
+		<attack name="gaz'haragoth death" interval="4000" chance="6" />
+		<attack name="gaz'haragoth paralyze" interval="2000" chance="12" />
 	</attacks>
 	<defenses armor="80" defense="100">
 		<defense name="healing" interval="3000" chance="35" min="2500" max="3500">
@@ -75,8 +75,8 @@
 	</summons>
 	<voices interval="5000" chance="30">
 		<voice sentence="Minions! Follow my call!" yell="1" />
-		<voice sentence="NO ONE WILL ESCAPE ME!" yell="1"/>
-		<voice sentence="I'LL KEEP THE ORDER UP!" yell="1"/>
+		<voice sentence="NO ONE WILL ESCAPE ME!" yell="1" />
+		<voice sentence="I'LL KEEP THE ORDER UP!" yell="1" />
 		<voice sentence="I've beaten tougher demons then you even know" yell="1" />
 		<voice sentence="You puny humans will be my snacks!" yell="1" />
 	</voices>
@@ -93,7 +93,7 @@
 		<item name="infernal bolt" chance="6000" />
 		<item name="assassin star" countmax="100" chance="10000" />
 		<item name="great mana potion" countmax="100" chance="10000" />
-		<item id="7632" chance="6000" /><!-- Giant Shimmering Pearl -->
+		<item id="7632" chance="6000" /> <!-- Giant Shimmering Pearl -->
 		<item name="magma coat" chance="6000" />
 		<item name="great spirit potion" countmax="100" chance="10000" />
 		<item name="ultimate health potion" countmax="100" chance="10000" />
@@ -141,6 +141,6 @@
 		<item name="psychedelic tapestry" chance="6000" />
 		<item name="demonic tapestry" chance="6000" />
 		<item name="eye pod" chance="6000" />
-		<item id="22614" chance="6000" /><!-- Nightmare Beacon -->
+		<item id="22614" chance="6000" /> <!-- Nightmare Beacon -->
 	</loot>
 </monster>

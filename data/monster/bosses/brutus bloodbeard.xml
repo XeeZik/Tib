@@ -35,12 +35,12 @@
 		<immunity invisible="1" />
 	</immunities>
 	<loot>
-		<item id="6099" chance="100000" />					<!-- brutus bloodbeard's hat -->
-		<item id="2148" countmax="200" chance="100000" />	<!-- gold coin -->
-		<item id="2229" countmax="2" chance="75000" />		<!-- skull -->
-		<item id="2379" chance="25000" />					<!-- dagger -->
-		<item id="2476" chance="25000" />					<!-- knight armor -->
-		<item id="2666" chance="25000" />					<!-- meat -->
-		<item id="2463" chance="25000" />					<!-- plate armor -->
+		<item id="6099" chance="100000" /> <!-- brutus bloodbeard's hat -->
+		<item id="2148" countmax="200" chance="100000" /> <!-- gold coin -->
+		<item id="2229" countmax="2" chance="75000" /> <!-- skull -->
+		<item id="2379" chance="25000" /> <!-- dagger -->
+		<item id="2476" chance="25000" /> <!-- knight armor -->
+		<item id="2666" chance="25000" /> <!-- meat -->
+		<item id="2463" chance="25000" /> <!-- plate armor -->
 	</loot>
 </monster>

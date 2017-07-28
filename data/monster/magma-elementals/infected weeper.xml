@@ -52,8 +52,8 @@
 		<summon name="Parasite" interval="2000" chance="10" />
 	</summons>
 	<loot>
-		<item id="2148" countmax="198" chance="100000" />	<!-- gold coin -->
-		<item id="2152" countmax="7" chance="100000" />		<!-- platinum coin -->
-		<item id="8748" chance="1450" />						<!-- coal -->
+		<item id="2148" countmax="198" chance="100000" /> <!-- gold coin -->
+		<item id="2152" countmax="7" chance="100000" /> <!-- platinum coin -->
+		<item id="8748" chance="1450" /> <!-- coal -->
 	</loot>
 </monster>

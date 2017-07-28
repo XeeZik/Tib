@@ -35,7 +35,6 @@
 		<immunity paralyze="1" />
 	</immunities>
 	<loot>
-		<item id="27585" countmax="1" chance="50320" /><!-- Lightsphere -->
-	
+		<item id="27585" countmax="1" chance="50320" /> <!-- Lightsphere -->
 	</loot>
 </monster>

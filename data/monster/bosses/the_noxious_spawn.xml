@@ -66,6 +66,6 @@
 		<item name="onyx arrow" chance="525" />
 		<item name="mercenary sword" chance="27750" />
 		<item name="noble axe" chance="37000" />
-		<item id="10309" chance="31500" /><!-- claw of the noxious spawn-->
+		<item id="10309" chance="31500" /> <!-- claw of the noxious spawn-->
 	</loot>
 </monster>

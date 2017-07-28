@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Corrupted Soul" nameDescription="a Corrupted Soul" race="blood" experience="1300" speed="150" manacost="290">
 	<health now="1100" max="1100" />
-	<look type="355"  />
+	<look type="355" />
 	<targetchange interval="5000" chance="0" />
 	<flags>
 		<flag summonable="0" />
@@ -18,7 +18,6 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="100" attack="40" />
-	
 	</attacks>
 	<defenses armor="10" defense="10" />
 	<elements>
@@ -27,6 +26,4 @@
 		<element earthPercent="-12" />
 		<element deathPercent="-10" />
 	</elements>
-
-
 </monster>

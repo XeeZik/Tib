@@ -46,16 +46,16 @@
 		<voice sentence="Your curiosity will be punished!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="40" chance="43380" />	<!-- gold coin -->
-		<item id="12448" chance="5910" />				<!-- rope belt -->
-		<item id="2661" chance="2900" />					<!-- scarf -->
-		<item id="10556" chance="1030" />				<!-- cultish robe -->
-		<item id="6087" chance="1000" />					<!-- music sheet 1st verse -->
-		<item id="1962" chance="710" />					<!-- orange book -->
-		<item id="5810" chance="530" />					<!-- pirate voodoo doll -->
-		<item id="2213" chance="560" />					<!-- dwarven ring -->
-		<item id="2190" chance="440" />					<!-- wand of vortex -->
-		<item id="2199" chance="390" />					<!-- garlic necklace -->
-		<item id="2145" chance="200" />					<!-- small diamond -->
+		<item id="2148" countmax="40" chance="43380" /> <!-- gold coin -->
+		<item id="12448" chance="5910" /> <!-- rope belt -->
+		<item id="2661" chance="2900" /> <!-- scarf -->
+		<item id="10556" chance="1030" /> <!-- cultish robe -->
+		<item id="6087" chance="1000" /> <!-- music sheet 1st verse -->
+		<item id="1962" chance="710" /> <!-- orange book -->
+		<item id="5810" chance="530" /> <!-- pirate voodoo doll -->
+		<item id="2213" chance="560" /> <!-- dwarven ring -->
+		<item id="2190" chance="440" /> <!-- wand of vortex -->
+		<item id="2199" chance="390" /> <!-- garlic necklace -->
+		<item id="2145" chance="200" /> <!-- small diamond -->
 	</loot>
 </monster>

@@ -67,32 +67,30 @@
 		<voice sentence="Chill out!." />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="94000" /><!-- gold coin -->
-		<item id="2148" countmax="100" chance="94000" /><!-- gold coin -->
-		<item id="2148" countmax="42" chance="94000" /><!-- gold coin -->
-		<item id="2672" countmax="5" chance="80370" /><!-- dragon ham -->
-		<item id="2796" chance="12000" /><!-- green mushroom -->
-		<item id="1976" chance="8900" /><!-- gemmed book -->
-		<item id="2146" chance="5100" /><!-- small sapphire -->
-		<item id="7441" chance="4000" /><!-- ice cube -->
-		<item id="2492" chance="110" /><!-- dragon scale mail -->
-		
-		<item id="2110" chance="11000" /><!-- doll -->
-		<item id="6569" chance="11000" /><!-- candy -->
-		<item id="6570" chance="11000" /><!-- surprise bag	blue	-->
-		<item id="6571" chance="11000" /><!-- surprise bag	red	-->
-		<item id="6394" chance="11000" /><!--  Cream Cake		-->
-		<item id="6574" chance="11000" /><!--  Bar of Chocolate		-->
-		<item id="27052" chance="11000" /><!--   Birthday Cake		-->
-		<item id="27058" chance="11000" /><!--   Chocolatey Dragon Scale Legs	-->
-		<item id="27604" chance="11000" /><!--    Bottle of Tibian Wine		-->
-		<item id="27605" chance="11000" /><!--    see Costume Bag (Retro)		-->
-		<item id="6576" chance="11000" /><!--    Fireworks Rocket-->
-		<item id="6280" chance="11000" /><!--     Party Cake-->
-		<item id="27051" chance="11" /><!--      Birthday Backpack-->
-		<item id="27053" chance="11" /><!--       Ferumbras' Candy Hat-->
-		<item id="5791" chance="110" /><!--        stuffed dragon.-->
-		<item id="7487" chance="110" /><!--        Toy Mouse.-->
-		
+		<item id="2148" countmax="100" chance="94000" /> <!-- gold coin -->
+		<item id="2148" countmax="100" chance="94000" /> <!-- gold coin -->
+		<item id="2148" countmax="42" chance="94000" /> <!-- gold coin -->
+		<item id="2672" countmax="5" chance="80370" /> <!-- dragon ham -->
+		<item id="2796" chance="12000" /> <!-- green mushroom -->
+		<item id="1976" chance="8900" /> <!-- gemmed book -->
+		<item id="2146" chance="5100" /> <!-- small sapphire -->
+		<item id="7441" chance="4000" /> <!-- ice cube -->
+		<item id="2492" chance="110" /> <!-- dragon scale mail -->
+		<item id="2110" chance="11000" /> <!-- doll -->
+		<item id="6569" chance="11000" /> <!-- candy -->
+		<item id="6570" chance="11000" /> <!-- surprise bagblue-->
+		<item id="6571" chance="11000" /> <!-- surprise bagred-->
+		<item id="6394" chance="11000" /> <!-- Cream Cake-->
+		<item id="6574" chance="11000" /> <!-- Bar of Chocolate-->
+		<item id="27052" chance="11000" /> <!--  Birthday Cake-->
+		<item id="27058" chance="11000" /> <!--  Chocolatey Dragon Scale Legs-->
+		<item id="27604" chance="11000" /> <!--  Bottle of Tibian Wine-->
+		<item id="27605" chance="11000" /> <!--  see Costume Bag (Retro)-->
+		<item id="6576" chance="11000" /> <!--  Fireworks Rocket-->
+		<item id="6280" chance="11000" /> <!-- Party Cake-->
+		<item id="27051" chance="11" /> <!-- Birthday Backpack-->
+		<item id="27053" chance="11" /> <!--  Ferumbras' Candy Hat-->
+		<item id="5791" chance="110" /> <!--  stuffed dragon.-->
+		<item id="7487" chance="110" /> <!--  Toy Mouse.-->
 	</loot>
 </monster>

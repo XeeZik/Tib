@@ -41,9 +41,9 @@
 		<immunity ice="1" />
 	</immunities>
 	<loot>
-		<item id="2148" countmax="80" chance="74000" /><!-- gold coin -->
-		<item id="2148" countmax="48" chance="74000" /><!-- gold coin -->
-		<item id="7838" countmax="3" chance="4550" /><!-- flash arrow -->
-		<item id="8303" chance="2863" /><!-- energy soil -->
+		<item id="2148" countmax="80" chance="74000" /> <!-- gold coin -->
+		<item id="2148" countmax="48" chance="74000" /> <!-- gold coin -->
+		<item id="7838" countmax="3" chance="4550" /> <!-- flash arrow -->
+		<item id="8303" chance="2863" /> <!-- energy soil -->
 	</loot>
 </monster>

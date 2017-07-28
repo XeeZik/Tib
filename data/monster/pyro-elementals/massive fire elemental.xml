@@ -9,7 +9,7 @@
 		<flag hostile="1" />
 		<flag illusionable="0" />
 		<flag convinceable="0" />
-				<flag isblockable="0" />
+		<flag isblockable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
 		<flag canpushcreatures="1" />
@@ -44,14 +44,14 @@
 		<immunity invisible="1" />
 	</immunities>
 	<loot>
-		<item id="2148" countmax="212" chance="99970" />	<!-- gold coin -->
-		<item id="2152" chance="14000" />				<!-- platinum coin -->
-		<item id="9809" chance="8000" />					<!-- rusty armor (semi-rare) -->
-		<item id="2147" countmax="2" chance="6100" />	<!-- small ruby -->
-		<item id="2187" chance="2300" />					<!-- wand of inferno -->
-		<item id="7890" chance="1300" />					<!-- magma amulet -->
-		<item id="7891" chance="560" />					<!-- magma boots -->
-		<item id="2392" chance="530" />					<!-- fire sword -->
-		<item id="7894" chance="210" />					<!-- magma legs -->
+		<item id="2148" countmax="212" chance="99970" /> <!-- gold coin -->
+		<item id="2152" chance="14000" /> <!-- platinum coin -->
+		<item id="9809" chance="8000" /> <!-- rusty armor (semi-rare) -->
+		<item id="2147" countmax="2" chance="6100" /> <!-- small ruby -->
+		<item id="2187" chance="2300" /> <!-- wand of inferno -->
+		<item id="7890" chance="1300" /> <!-- magma amulet -->
+		<item id="7891" chance="560" /> <!-- magma boots -->
+		<item id="2392" chance="530" /> <!-- fire sword -->
+		<item id="7894" chance="210" /> <!-- magma legs -->
 	</loot>
 </monster>

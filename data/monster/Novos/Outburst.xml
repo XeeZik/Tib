@@ -4,7 +4,7 @@
 	<look type="876" head="79" body="57" legs="94" feet="0" addons="3" corpse="26220" />
 	<targetchange interval="10000" chance="20" />
 	<flags>
-	    <flag summonable="0" />
+		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
 		<flag illusionable="0" />
@@ -16,7 +16,6 @@
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
 	</flags>
-	
 	<attacks>
 		<attack name="melee" interval="2000" min="-500" max="-1400" />
 		<attack name="manadrain" interval="2000" chance="10" range="7" min="-800" max="-1400" />
@@ -80,5 +79,4 @@
 	<voices interval="2000" chance="7">
 		<voice sentence="I OUTBURST!" yell="1" />
 	</voices>
-	
 </monster>

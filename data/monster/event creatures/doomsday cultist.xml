@@ -40,6 +40,6 @@
 		<voice sentence="An age of darkness is at hand!" />
 	</voices>
 	<loot>
-		<item id="10531" chance="1000" />	<!-- midnight shard -->
+		<item id="10531" chance="1000" /> <!-- midnight shard -->
 	</loot>
 </monster>

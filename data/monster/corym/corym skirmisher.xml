@@ -38,18 +38,18 @@
 		<voice sentence="&lt;sniff&gt;&lt;sniff&gt;&lt;sniff&gt;" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="45" chance="78000" /><!-- gold coin -->
-		<item id="2696" chance="19700" /><!-- cheese -->
-		<item id="20101" chance="12866" /><!-- rat cheese -->
-		<item id="20100" chance="14685" /><!-- soft cheese -->
-		<item id="20099" chance="8990" /><!-- earflap -->
-		<item id="20097" chance="8000" /><!-- cheese cutter -->
-		<item id="20089" chance="7692" /><!-- bola -->
-		<item id="20093" chance="1600" /><!-- life preserver -->
-		<item id="20092" chance="1400" /><!-- ratana -->
-		<item id="20098" chance="1000" /><!-- cheesy figurine -->
-		<item id="20090" chance="550" /><!-- spike shield -->
-		<item id="20126" chance="490" /><!-- leather harness -->
-		<item id="20105" chance="10" /><!-- rat god doll -->
+		<item id="2148" countmax="45" chance="78000" /> <!-- gold coin -->
+		<item id="2696" chance="19700" /> <!-- cheese -->
+		<item id="20101" chance="12866" /> <!-- rat cheese -->
+		<item id="20100" chance="14685" /> <!-- soft cheese -->
+		<item id="20099" chance="8990" /> <!-- earflap -->
+		<item id="20097" chance="8000" /> <!-- cheese cutter -->
+		<item id="20089" chance="7692" /> <!-- bola -->
+		<item id="20093" chance="1600" /> <!-- life preserver -->
+		<item id="20092" chance="1400" /> <!-- ratana -->
+		<item id="20098" chance="1000" /> <!-- cheesy figurine -->
+		<item id="20090" chance="550" /> <!-- spike shield -->
+		<item id="20126" chance="490" /> <!-- leather harness -->
+		<item id="20105" chance="10" /> <!-- rat god doll -->
 	</loot>
 </monster>

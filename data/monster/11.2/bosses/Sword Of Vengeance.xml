@@ -16,13 +16,9 @@
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
 	</flags>
-	
- 
 	<attacks>
-		<attack name="melee" interval="2000"  min="-350" max="-400"/>
-		
+		<attack name="melee" interval="2000" min="-350" max="-400" />
 	</attacks>
-
 	<immunities>
 		<immunity paralyze="1" />
 		<immunity drown="1" />

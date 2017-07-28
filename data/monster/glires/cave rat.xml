@@ -10,7 +10,7 @@
 		<flag illusionable="1" />
 		<flag convinceable="1" />
 		<flag pushable="1" />
-				<flag isblockable="0" />
+		<flag isblockable="0" />
 		<flag canpushitems="0" />
 		<flag canpushcreatures="0" />
 		<flag targetdistance="1" />
@@ -29,9 +29,9 @@
 		<voice sentence="Meep!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="2" chance="85000" /><!-- gold coin -->
-		<item id="3976" countmax="2" chance="9700" /><!-- worm -->
-		<item id="2696" chance="30000" /><!-- cheese -->
-		<item id="2687" chance="750" /><!-- cookie -->
+		<item id="2148" countmax="2" chance="85000" /> <!-- gold coin -->
+		<item id="3976" countmax="2" chance="9700" /> <!-- worm -->
+		<item id="2696" chance="30000" /> <!-- cheese -->
+		<item id="2687" chance="750" /> <!-- cookie -->
 	</loot>
 </monster>

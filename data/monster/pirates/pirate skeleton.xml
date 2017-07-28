@@ -10,7 +10,7 @@
 		<flag illusionable="1" />
 		<flag convinceable="0" />
 		<flag pushable="0" />
-				<flag isblockable="0" />
+		<flag isblockable="0" />
 		<flag canpushitems="1" />
 		<flag canpushcreatures="0" />
 		<flag staticattack="90" />
@@ -28,13 +28,13 @@
 		<immunity death="1" />
 	</immunities>
 	<loot>
-		<item id="2148" countmax="25" chance="48000" />	<!-- gold coin -->
-		<item id="2231" chance="5220" />					<!-- big bone -->
-		<item id="10559" chance="4500" />				<!-- spooky blue eye -->
-		<item id="2229" chance="4460" />					<!-- skull -->
-		<item id="2230" chance="4380" />					<!-- bone -->
-		<item id="2449" chance="1030" />					<!-- bone club -->
-		<item id="2406" chance="1030" />					<!-- short sword -->
-		<item id="2376" chance="580" />					<!-- sword -->
+		<item id="2148" countmax="25" chance="48000" /> <!-- gold coin -->
+		<item id="2231" chance="5220" /> <!-- big bone -->
+		<item id="10559" chance="4500" /> <!-- spooky blue eye -->
+		<item id="2229" chance="4460" /> <!-- skull -->
+		<item id="2230" chance="4380" /> <!-- bone -->
+		<item id="2449" chance="1030" /> <!-- bone club -->
+		<item id="2406" chance="1030" /> <!-- short sword -->
+		<item id="2376" chance="580" /> <!-- sword -->
 	</loot>
 </monster>

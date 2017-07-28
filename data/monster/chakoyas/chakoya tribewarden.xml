@@ -37,14 +37,14 @@
 		<voice sentence="Si ji jusipa!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="30" chance="79000" /><!-- gold coin -->
-		<item id="2667" chance="19400" /><!-- fish -->
-		<item id="2541" chance="1000" /><!-- bone shield -->
-		<item id="7381" chance="130" /><!-- mammoth whopper -->
-		<item id="7158" chance="50" /><!-- rainbow trout -->
-		<item id="7159" chance="100" /><!-- green perch -->
-		<item id="2669" chance="70" /><!-- northern pike -->
-		<item id="2406" chance="4780" /><!-- short sword -->
-		<item id="22727" chance="350" /><!-- fireprof -->
+		<item id="2148" countmax="30" chance="79000" /> <!-- gold coin -->
+		<item id="2667" chance="19400" /> <!-- fish -->
+		<item id="2541" chance="1000" /> <!-- bone shield -->
+		<item id="7381" chance="130" /> <!-- mammoth whopper -->
+		<item id="7158" chance="50" /> <!-- rainbow trout -->
+		<item id="7159" chance="100" /> <!-- green perch -->
+		<item id="2669" chance="70" /> <!-- northern pike -->
+		<item id="2406" chance="4780" /> <!-- short sword -->
+		<item id="22727" chance="350" /> <!-- fireprof -->
 	</loot>
 </monster>

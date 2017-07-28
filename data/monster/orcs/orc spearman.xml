@@ -33,14 +33,14 @@
 		<voice sentence="Ugaar!" />
 	</voices>
 	<loot>
-		<item id="2666" chance="30000" />				<!-- meat -->
-		<item id="2148" countmax="11" chance="25000" />	<!-- gold coin -->
-		<item id="2389" chance="18200" />				<!-- spear -->
-		<item id="2468" chance="10100" />				<!-- studded legs -->
-		<item id="2482" chance="9000" />					<!-- studded helmet -->
-		<item id="2420" chance="3000" />					<!-- machete -->
-		<item id="12435" chance="2100" />				<!-- orc leather -->
-		<item id="11113" chance="100" />					<!-- orc tooth -->
-		<item id="26642" chance="1000" />				<!-- heavy old tome -->
+		<item id="2666" chance="30000" /> <!-- meat -->
+		<item id="2148" countmax="11" chance="25000" /> <!-- gold coin -->
+		<item id="2389" chance="18200" /> <!-- spear -->
+		<item id="2468" chance="10100" /> <!-- studded legs -->
+		<item id="2482" chance="9000" /> <!-- studded helmet -->
+		<item id="2420" chance="3000" /> <!-- machete -->
+		<item id="12435" chance="2100" /> <!-- orc leather -->
+		<item id="11113" chance="100" /> <!-- orc tooth -->
+		<item id="26642" chance="1000" /> <!-- heavy old tome -->
 	</loot>
 </monster>

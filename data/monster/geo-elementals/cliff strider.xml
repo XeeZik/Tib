@@ -48,39 +48,39 @@
 		<voice sentence="Knorrrr" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="100000" /><!-- gold coin -->
-		<item id="2148" countmax="95" chance="100000" /><!-- gold coin -->
-		<item id="2152" countmax="10" chance="100000" /><!-- platinum coin -->
-		<item id="7590" countmax="4" chance="2950" /><!-- great mana potion -->
-		<item id="8473" countmax="2" chance="5260" /><!-- ultimate health potion -->
-		<item id="5944" chance="2080" /><!-- soul orb -->
-		<item id="18429" countmax="2" chance="3000" /><!-- vein of ore -->
-		<item id="18428" chance="3630" /><!-- cliff strider claw -->
-		<item id="18427" chance="3110" /><!-- pulverized ore -->
-		<item id="5880" chance="1490" /><!-- iron ore -->
-		<item id="11227" chance="1280" /><!-- shiny stone -->
-		<item id="18435" countmax="8" chance="9090" /><!-- prismatic bolt -->
-		<item id="2144" chance="2090" /><!-- black pearl -->
-		<item id="18418" countmax="2" chance="2970" /><!-- blue crystal splinter -->
-		<item id="2143" countmax="3" chance="2630" /><!-- white pearl -->
-		<item id="18419" chance="2070" /><!-- cyan crystal fragment -->
-		<item id="18413" chance="2520" /><!-- blue crystal shard -->
-		<item id="2156" chance="2110" /><!-- red gem -->
-		<item id="9942" chance="690" /><!-- crystal of balance -->
-		<item id="18390" chance="300" /><!-- wand of defiance -->
-		<item id="5904" chance="450" /><!-- magic sulphur -->
-		<item id="7437" chance="550" /><!-- sapphire hammer -->
-		<item id="18412" chance="240" /><!-- glacial rod -->
-		<item id="7452" chance="640" /><!-- spiked squelcher -->
-		<item id="18453" chance="230" /><!-- crystal crossbow -->
-		<item id="2393" chance="320" /><!-- giant sword -->
-		<item id="2497" chance="310" /><!-- crusader helmet -->
-		<item id="9980" chance="220" /><!-- crystal of power -->
-		<item id="18450" chance="220" /><!-- crystalline sword -->
-		<item id="2477" chance="230" /><!-- knight legs -->
-		<item id="2158" chance="230" /><!-- blue gem -->
-		<item id="2487" chance="210" /><!-- crown armor -->
-		<item id="2645" chance="100" /><!-- steel boots -->
-		<item id="2444" chance="70" /><!-- Hammer of Wrath -->
+		<item id="2148" countmax="100" chance="100000" /> <!-- gold coin -->
+		<item id="2148" countmax="95" chance="100000" /> <!-- gold coin -->
+		<item id="2152" countmax="10" chance="100000" /> <!-- platinum coin -->
+		<item id="7590" countmax="4" chance="2950" /> <!-- great mana potion -->
+		<item id="8473" countmax="2" chance="5260" /> <!-- ultimate health potion -->
+		<item id="5944" chance="2080" /> <!-- soul orb -->
+		<item id="18429" countmax="2" chance="3000" /> <!-- vein of ore -->
+		<item id="18428" chance="3630" /> <!-- cliff strider claw -->
+		<item id="18427" chance="3110" /> <!-- pulverized ore -->
+		<item id="5880" chance="1490" /> <!-- iron ore -->
+		<item id="11227" chance="1280" /> <!-- shiny stone -->
+		<item id="18435" countmax="8" chance="9090" /> <!-- prismatic bolt -->
+		<item id="2144" chance="2090" /> <!-- black pearl -->
+		<item id="18418" countmax="2" chance="2970" /> <!-- blue crystal splinter -->
+		<item id="2143" countmax="3" chance="2630" /> <!-- white pearl -->
+		<item id="18419" chance="2070" /> <!-- cyan crystal fragment -->
+		<item id="18413" chance="2520" /> <!-- blue crystal shard -->
+		<item id="2156" chance="2110" /> <!-- red gem -->
+		<item id="9942" chance="690" /> <!-- crystal of balance -->
+		<item id="18390" chance="300" /> <!-- wand of defiance -->
+		<item id="5904" chance="450" /> <!-- magic sulphur -->
+		<item id="7437" chance="550" /> <!-- sapphire hammer -->
+		<item id="18412" chance="240" /> <!-- glacial rod -->
+		<item id="7452" chance="640" /> <!-- spiked squelcher -->
+		<item id="18453" chance="230" /> <!-- crystal crossbow -->
+		<item id="2393" chance="320" /> <!-- giant sword -->
+		<item id="2497" chance="310" /> <!-- crusader helmet -->
+		<item id="9980" chance="220" /> <!-- crystal of power -->
+		<item id="18450" chance="220" /> <!-- crystalline sword -->
+		<item id="2477" chance="230" /> <!-- knight legs -->
+		<item id="2158" chance="230" /> <!-- blue gem -->
+		<item id="2487" chance="210" /> <!-- crown armor -->
+		<item id="2645" chance="100" /> <!-- steel boots -->
+		<item id="2444" chance="70" /> <!-- Hammer of Wrath -->
 	</loot>
 </monster>

@@ -55,7 +55,6 @@
 		<voice sentence="Slurp!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="25" chance="38000" /><!-- gold coin -->
-		
+		<item id="2148" countmax="25" chance="38000" /> <!-- gold coin -->
 	</loot>
 </monster>

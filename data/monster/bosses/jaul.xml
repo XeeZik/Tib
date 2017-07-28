@@ -4,7 +4,7 @@
 	<look type="444" corpse="15220" />
 	<targetchange interval="2000" chance="50" />
 	<flags>
-        <flag rewardboss="1" />
+		<flag rewardboss="1" />
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
@@ -15,7 +15,7 @@
 		<flag canpushcreatures="1" />
 		<flag targetdistance="0" />
 		<flag runonhealth="60" />
- 	</flags>
+	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="0" max="-2000" poison="870" />
 		<attack name="fire" interval="2200" chance="19" range="7" radius="7" target="1" min="0" max="-1000">
@@ -68,7 +68,7 @@
 		<item name="deepling axe" chance="25000" />
 		<item name="ornate chestplate" chance="25000" />
 		<item name="depth lorica" chance="20000" />
-		<item id="15408" chance="33333" /><!-- depth galea -->
+		<item id="15408" chance="33333" /> <!-- depth galea -->
 		<item name="depth calcei" chance="14285" />
 		<item name="ornate legs" chance="7142" />
 		<item name="ornate shield" chance="50000" />

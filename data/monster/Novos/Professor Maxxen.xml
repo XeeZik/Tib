@@ -54,7 +54,6 @@
 		</defense>
 	</defenses>
 	<immunities>
-		
 		<immunity invisible="1" />
 	</immunities>
 	<elements>
@@ -71,15 +70,12 @@
 		<voice sentence="Let's see if you can handle THIS!" />
 		<voice sentence="The world will bow before my brilliancy!" />
 		<voice sentence="You will perish!" />
-	
 	</voices>
 	<loot>
-			<item id="2148" countmax="199" chance="100000"/><!-- gold coin -->
-		<item id="2152" countmax="14" chance="37170"/><!-- platinum coin -->
-		<item id="23474" countmax="3" chance="23574"/><!-- glooth bag -->		
-	    <item id="9971" chance="23574"/><!-- Gold Ingot -->	
-	    <item id="9808" chance="23574"/><!-- Rusty Armor -->
-	
-		
+		<item id="2148" countmax="199" chance="100000" /> <!-- gold coin -->
+		<item id="2152" countmax="14" chance="37170" /> <!-- platinum coin -->
+		<item id="23474" countmax="3" chance="23574" /> <!-- glooth bag -->
+		<item id="9971" chance="23574" /> <!-- Gold Ingot -->
+		<item id="9808" chance="23574" /> <!-- Rusty Armor -->
 	</loot>
 </monster>

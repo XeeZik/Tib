@@ -4,7 +4,7 @@
 	<look type="876" head="85" body="114" legs="59" feet="0" addons="0" corpse="26220" />
 	<targetchange interval="10000" chance="20" />
 	<flags>
-	    <flag summonable="0" />
+		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
 		<flag illusionable="0" />
@@ -16,9 +16,9 @@
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
 	</flags>
-	<script>
-   <event name="The Rage"/>
-	</script>
+<script>
+<event name="The Rage" />
+</script>
 	<attacks>
 		<attack name="melee" interval="2000" min="-500" max="-2900" />
 		<attack name="manadrain" interval="2000" chance="10" range="7" min="-800" max="-2000" />
@@ -66,8 +66,8 @@
 		<element holyPercent="-1" />
 		<element earthPercent="-5" />
 	</elements>
-	<immunities>		
-		<immunity ice="1" />		
+	<immunities>
+		<immunity ice="1" />
 		<immunity paralyze="1" />
 		<immunity invisible="1" />
 	</immunities>
@@ -80,5 +80,4 @@
 		<voice sentence="COME AND GIVE ME SOME AMUSEMENT" />
 		<voice sentence="IS THAT THE BEST YOU HAVE TO OFFER, TIBIANS?" yell="1" />
 	</voices>
-	
 </monster>

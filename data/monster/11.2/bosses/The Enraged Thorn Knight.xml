@@ -36,47 +36,44 @@
 		<voice sentence="I will hurt you!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="165" chance="50320" /><!-- gold coin -->
-		<item id="2152" countmax="30" chance="50320" /><!-- platinun coin -->
-		<item id="5022" countmax="2" chance="50320" /><!-- Orichalcum Pearl -->
-		<item id="18413" countmax="5" chance="9660" /><!-- blue crystal shard -->
-		<item id="18414" countmax="5" chance="9660" /><!-- green crystal shard-->
-		<item id="18415" countmax="5" chance="9660" /><!-- violet crystal shard -->
-		
-		<item id="2149" countmax="5" chance="9660" /><!-- small emerald -->
-		<item id="2147" countmax="5" chance="7360" /><!-- small ruby -->
-		<item id="9970" countmax="5" chance="7350" /><!-- small topaz -->
-		<item id="2150" countmax="5" chance="7150" /><!-- small amethyst -->
-		<item id="5888" countmax="2" chance="5888" /><!--  Piece of Hell Steel -->
-		<item id="5999" countmax="2" chance="5909" /><!--  White Piece of Cloths -->
-		<item id="5887" countmax="2" chance="5909" /><!--  Piece of Royal Steel -->
-		<item id="7590" countmax="3" chance="22120" /><!-- great mana potion -->
-		<item id="8473" countmax="3" chance="19500" /><!-- ultimate health potion -->		
-		<item id="8472" countmax="3" chance="18250" /><!-- great spirit potion -->	
-		<item id="2158" chance="5000" /><!-- Blue Gem -->
-		<item id="2156" chance="2200" /><!-- red gem -->
-		<item id="2155" chance="5000" /><!-- Green Gem -->
-		<item id="2153" chance="5000" /><!-- violet Gem -->
-		<item id="2154" chance="5000" /><!-- yellow Gem -->
-		<item id="6500" chance="14460" /><!-- demonic essence -->
-		<item id="7439" chance="14460" /><!-- Berserk Potion -->
-		<item id="7443" chance="14460" /><!--Bullseye Potion -->
-		<item id="7632" chance="7000" /><!-- Giant Shimmering Pearl -->
-        <item id="2407" chance="20000" /><!-- Bright -->
-        <item id="7453" chance="100" /><!-- Executioner -->
-        <item id="27622" chance="1000" /><!-- Forbidden Fruit -->
-        <item id="5015" chance="1000" /><!-- Mandrake -->
-        <item id="2536" chance="1000" /><!-- Medusa Shield -->
-        <item id="10219" chance="1000" /><!-- Sacred Tree Amulet -->
-        <item id="5875" chance="1000" /><!-- Sniper Gloves -->
-        <item id="5884" chance="1000" /><!-- Spirit Container -->
-        <item id="8880" chance="1000" /><!-- Swamplair Armor -->
-        <item id="22537" chance="1000" /><!-- Trapped Bad Dream Monster -->
-        <item id="27621" chance="1000" /><!-- Thorn Seed  -->
-        <item id="27610" chance="1000" /><!-- Part of a Rune(one)-->
-		<item id="25377" chance="1970" /><!--     Gold Token -->
-		<item id="25172" chance="1970" /><!--     silver token -->
-		
-		
+		<item id="2148" countmax="165" chance="50320" /> <!-- gold coin -->
+		<item id="2152" countmax="30" chance="50320" /> <!-- platinun coin -->
+		<item id="5022" countmax="2" chance="50320" /> <!-- Orichalcum Pearl -->
+		<item id="18413" countmax="5" chance="9660" /> <!-- blue crystal shard -->
+		<item id="18414" countmax="5" chance="9660" /> <!-- green crystal shard-->
+		<item id="18415" countmax="5" chance="9660" /> <!-- violet crystal shard -->
+		<item id="2149" countmax="5" chance="9660" /> <!-- small emerald -->
+		<item id="2147" countmax="5" chance="7360" /> <!-- small ruby -->
+		<item id="9970" countmax="5" chance="7350" /> <!-- small topaz -->
+		<item id="2150" countmax="5" chance="7150" /> <!-- small amethyst -->
+		<item id="5888" countmax="2" chance="5888" /> <!-- Piece of Hell Steel -->
+		<item id="5999" countmax="2" chance="5909" /> <!-- White Piece of Cloths -->
+		<item id="5887" countmax="2" chance="5909" /> <!-- Piece of Royal Steel -->
+		<item id="7590" countmax="3" chance="22120" /> <!-- great mana potion -->
+		<item id="8473" countmax="3" chance="19500" /> <!-- ultimate health potion -->
+		<item id="8472" countmax="3" chance="18250" /> <!-- great spirit potion -->
+		<item id="2158" chance="5000" /> <!-- Blue Gem -->
+		<item id="2156" chance="2200" /> <!-- red gem -->
+		<item id="2155" chance="5000" /> <!-- Green Gem -->
+		<item id="2153" chance="5000" /> <!-- violet Gem -->
+		<item id="2154" chance="5000" /> <!-- yellow Gem -->
+		<item id="6500" chance="14460" /> <!-- demonic essence -->
+		<item id="7439" chance="14460" /> <!-- Berserk Potion -->
+		<item id="7443" chance="14460" /> <!--Bullseye Potion -->
+		<item id="7632" chance="7000" /> <!-- Giant Shimmering Pearl -->
+		<item id="2407" chance="20000" /> <!-- Bright -->
+		<item id="7453" chance="100" /> <!-- Executioner -->
+		<item id="27622" chance="1000" /> <!-- Forbidden Fruit -->
+		<item id="5015" chance="1000" /> <!-- Mandrake -->
+		<item id="2536" chance="1000" /> <!-- Medusa Shield -->
+		<item id="10219" chance="1000" /> <!-- Sacred Tree Amulet -->
+		<item id="5875" chance="1000" /> <!-- Sniper Gloves -->
+		<item id="5884" chance="1000" /> <!-- Spirit Container -->
+		<item id="8880" chance="1000" /> <!-- Swamplair Armor -->
+		<item id="22537" chance="1000" /> <!-- Trapped Bad Dream Monster -->
+		<item id="27621" chance="1000" /> <!-- Thorn Seed -->
+		<item id="27610" chance="1000" /> <!-- Part of a Rune(one)-->
+		<item id="25377" chance="1970" /> <!-- Gold Token -->
+		<item id="25172" chance="1970" /> <!-- silver token -->
 	</loot>
 </monster>

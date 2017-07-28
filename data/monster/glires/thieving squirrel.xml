@@ -24,7 +24,7 @@
 		<voice sentence="Chchch" />
 	</voices>
 	<loot>
-		<item id="11100" chance="100000" />	<!-- flask with beaver bait -->
-		<item id="7910" chance="980" />		<!-- peanut -->
+		<item id="11100" chance="100000" /> <!-- flask with beaver bait -->
+		<item id="7910" chance="980" /> <!-- peanut -->
 	</loot>
 </monster>

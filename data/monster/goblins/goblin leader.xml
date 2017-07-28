@@ -30,15 +30,15 @@
 		<voice sentence="Goblinkiller! Catch him !!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="10" chance="49000" /><!-- gold coin -->
-		<item id="2230" chance="11500" /><!-- bone -->
-		<item id="2461" chance="9770" /><!-- leather helmet -->
-		<item id="2467" chance="7500" /><!-- leather armor -->
-		<item id="2379" chance="17400" /><!-- dagger -->
-		<item id="2667" chance="13100" /><!-- fish -->
-		<item id="2235" chance="7000" /><!-- mouldy cheese -->
-		<item id="2559" chance="10800" /><!-- small axe -->
-		<item id="2406" chance="9900" /><!-- short sword -->
-		<item id="2449" chance="4800" /><!-- bone club -->
+		<item id="2148" countmax="10" chance="49000" /> <!-- gold coin -->
+		<item id="2230" chance="11500" /> <!-- bone -->
+		<item id="2461" chance="9770" /> <!-- leather helmet -->
+		<item id="2467" chance="7500" /> <!-- leather armor -->
+		<item id="2379" chance="17400" /> <!-- dagger -->
+		<item id="2667" chance="13100" /> <!-- fish -->
+		<item id="2235" chance="7000" /> <!-- mouldy cheese -->
+		<item id="2559" chance="10800" /> <!-- small axe -->
+		<item id="2406" chance="9900" /> <!-- short sword -->
+		<item id="2449" chance="4800" /> <!-- bone club -->
 	</loot>
 </monster>

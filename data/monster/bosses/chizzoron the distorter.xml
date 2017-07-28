@@ -4,7 +4,7 @@
 	<look type="340" corpse="11316" />
 	<targetchange interval="2000" chance="10" />
 	<flags>
-        <flag rewardboss="1" />
+		<flag rewardboss="1" />
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
@@ -17,7 +17,6 @@
 		<flag staticattack="90" />
 		<flag runonhealth="0" />
 	</flags>
-	
 	<attacks>
 		<attack name="melee" interval="2000" skill="60" attack="130" />
 		<attack name="poison" interval="2000" chance="20" range="7" radius="1" target="1" max="-430">
@@ -55,15 +54,15 @@
 		<voice sentence="You are not worzzy to touch zzizz zzacred ground!" />
 	</voices>
 	<loot>
-		<item id="9971" countmax="2" chance="71550" /><!-- gold ingot -->
-		<item id="2148" countmax="100" chance="69825" /><!-- gold coin -->
-		<item id="2148" countmax="10" chance="69825" /><!-- gold coin -->
-		<item id="2149" chance="5750" /><!-- small emerald -->
-		<item id="21400" countmax="2" chance="5750" /><!-- Silver Raid Token -->
-		<item id="5881" chance="100000" /><!-- lizard scale -->
-		<item id="2155" chance="16300" /><!-- green gem -->
-		<item id="2169" chance="11025" /><!-- time ring -->
-		<item id="7591" chance="5750" /><!-- great health potion -->
-		<item id="2492" chance="5750" /><!-- dragon scale mail -->
+		<item id="9971" countmax="2" chance="71550" /> <!-- gold ingot -->
+		<item id="2148" countmax="100" chance="69825" /> <!-- gold coin -->
+		<item id="2148" countmax="10" chance="69825" /> <!-- gold coin -->
+		<item id="2149" chance="5750" /> <!-- small emerald -->
+		<item id="21400" countmax="2" chance="5750" /> <!-- Silver Raid Token -->
+		<item id="5881" chance="100000" /> <!-- lizard scale -->
+		<item id="2155" chance="16300" /> <!-- green gem -->
+		<item id="2169" chance="11025" /> <!-- time ring -->
+		<item id="7591" chance="5750" /> <!-- great health potion -->
+		<item id="2492" chance="5750" /> <!-- dragon scale mail -->
 	</loot>
 </monster>

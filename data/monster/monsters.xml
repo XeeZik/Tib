@@ -1,153 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monsters>
+	<!-- NOVOS -->
+	<!-- NOVOS 11.2 bosses -->
+	<monster name="Lady Tenebris" file="11.2/bosses/Lady Tenebris.xml" />
+	<monster name="Lloyd" file="11.2/bosses/Lloyd.xml" />
+	<monster name="Melting Frozen Horror" file="11.2/bosses/Melting Frozen Horror.xml" />
+	<monster name="The Last Lore Keeper" file="11.2/bosses/The Last Lore Keeper.xml" />
+	<monster name="Sword Of Vengeance" file="11.2/bosses/Sword Of Vengeance.xml" />
+	<monster name="An Observer Eye" file="11.2/bosses/An Observer Eye.xml" />
+	<monster name="Dragonking Zyrtarch" file="11.2/bosses/Dragonking Zyrtarch.xml" />
+	<monster name="Soul of Dragonking Zyrtarch" file="11.2/bosses/Soul of Dragonking Zyrtarch.xml" />
+	<monster name="Mounted Thorn Knight" file="11.2/bosses/Mounted Thorn Knight.xml" />
+	<monster name="The Shielded Thorn Knight" file="11.2/bosses/The Shielded Thorn Knight.xml" />
+	<monster name="Thorn Steed" file="11.2/bosses/Thorn Steed.xml" />
+	<monster name="The Enraged Thorn Knight" file="11.2/bosses/The Enraged Thorn Knight.xml" />
+	<!-- NOVOS 11.2 -->
+	<monster name="A Shielded Astral Glyph" file="11.2/A Shielded Astral Glyph.xml" />
+	<monster name="Stone Rhino" file="11.2/Stone Rhino.xml" />
+	<monster name="An Observer Eye (Imune)" file="11.2/An Observer Eye (Imune).xml" />
+	<monster name="Angry Plant" file="11.2/Angry Plant.xml" />
+	<monster name="Animated Sword" file="11.2/Animated Sword.xml" />
+	<monster name="baby dragon" file="11.2/baby dragon.xml" />
+	<monster name="Bound Astral Power" file="11.2/Bound Astral Power.xml" />
+	<monster name="Broken Shaper" file="11.2/Broken Shaper.xml" />
+	<monster name="Cave Parrot" file="11.2/Cave Parrot.xml" />
+	<monster name="Corrupted Soul" file="11.2/Corrupted Soul.xml" />
+	<monster name="Cosmic Energy Prism A" file="11.2/Cosmic Energy Prism A.xml" />
+	<monster name="Cosmic Energy Prism B" file="11.2/Cosmic Energy Prism B.xml" />
+	<monster name="Cosmic Energy Prism C" file="11.2/Cosmic Energy Prism C.xml" />
+	<monster name="Cosmic Energy Prism D" file="11.2/Cosmic Energy Prism D.xml" />
+	<monster name="Diamond Servant Replica" file="11.2/Diamond Servant Replica.xml" />
+	<monster name="Dragon Essence" file="11.2/Dragon Essence.xml" />
+	<monster name="Dragon Warden" file="11.2/Dragon Warden.xml" />
+	<monster name="Orclops Doomhauler" file="11.2/Orclops Doomhauler.xml" />
+	<monster name="Orclops Ravager" file="11.2/Orclops Ravager.xml" />
+	<monster name="Twisted Shaper" file="11.2/Twisted Shaper.xml" />
+	<monster name="Shaper Matriarch" file="11.2/Shaper Matriarch.xml" />
 
+	<!-- ALTEREI -->
+	<monster name="Instable Breach Brood" file="Novos/Instable Breach BroodSummon.xml" />
+	<monster name="Instable Breach Brood" file="Novos/Instable Breach Brood.xml" />
+	<monster name="Breach Brood" file="Novos/Breach Brood.xml" />
+	<monster name="Instable Sparkion" file="Novos/Instable Sparkion.xml" />
+	<monster name="Dread Intruder" file="Novos/Dread Intruder.xml" />
+	<monster name="Dread IntruderSummon" file="Novos/Dread IntruderSummon.xml" />
+	<monster name="Reality Reaver" file="Novos/Reality Reaver.xml" />
+	<monster name="Spark of Destruction" file="Novos/Spark of Destruction.xml" />
+	<monster name="Charger" file="Novos/Charger.xml" />
+	<monster name="Sparkion" file="Novos/Sparkion.xml" />
+	<monster name="World Devourer" file="Novos/World Devourer.xml" />
+	<monster name="Eradicator" file="Novos/Eradicator.xml" />
+	<monster name="Eradicatorr" file="Novos/Eradicator1.xml" />
+	<monster name="Rupture" file="Novos/Rupture.xml" />
+	<monster name="The Rage" file="Novos/The Rage.xml" />
+	<monster name="The Hunger" file="Novos/The Hunger.xml" />
+	<monster name="Frenzy" file="Novos/Frenzy.xml" />
+	<monster name="Outburst" file="Novos/Outburst.xml" />
+	<monster name="Greed" file="Novos/Greed.xml" />
+	<monster name="Ogre Brute" file="Novos/Ogre Brute.xml" />
+	<monster name="Ogre Savage" file="Novos/Ogre Savage.xml" />
+	<monster name="Ogre Shaman" file="Novos/Ogre Shaman.xml" />
+	<monster name="Clomp" file="Novos/Clomp.xml" />
+	<monster name="Hellflayer" file="Novos/Hellflayer.xml" />
+	<monster name="Grimeleech" file="Novos/Grimeleech.xml" />
+	<monster name="Vexclaw" file="Novos/Vexclaw.xml" />
+	<monster name="Omnivora" file="Novos/Omnivora.xml" />
+	<monster name="Werebadger" file="Novos/Werebadger.xml" />
+	<monster name="Wereboar" file="Novos/Wereboar.xml" />
+	<monster name="Werebear" file="Novos/Werebear.xml" />
+	<monster name="Feroxa" file="Novos/Feroxa.xml" />
+	<monster name="Despair" file="Novos/Despair.xml" />
+	<monster name="Dawnfire Asura" file="Novos/Dawnfire Asura.xml" />
+	<monster name="Midnight Asura" file="Novos/Midnight Asura.xml" />
+	<monster name="Sacred Snake" file="Novos/Sacred Snake.xml" />
+	<monster name="Destabilized Ferumbras" file="Novos/Destabilized Ferumbras.xml" />
+	<monster name="Disgusting Ooze" file="Novos/Disgusting Ooze.xml" />
+	<monster name="Professor Maxxen" file="Novos/Professor Maxxen.xml" />
+	<monster name="Glooth Slasher" file="Novos/Glooth Slasher.xml" />
+	<monster name="Glooth Trasher" file="Novos/Glooth Trasher.xml" />
+	<monster name="Vicious Squire" file="Novos/Vicious Squire.xml" />
+	<monster name="Renegade Knight" file="Novos/Renegade Knight.xml" />
+	<monster name="Vile Grandmaster" file="Novos/Vile Grandmaster.xml" />
+	<monster name="Rage Of Mazoran" file="Novos/Rage Of Mazoran.xml" />
+	<monster name="Plagirath" file="Novos/Plagirath.xml" />
+	<monster name="Mazoran" file="Novos/Mazoran.xml" />
+	<monster name="Ragiaz" file="Novos/Ragiaz.xml" />
+	<monster name="Zamulosh" file="Novos/Zamulosh.xml" />
+	<monster name="Zamulosh Summom" file="Novos/ZamuloshSummom.xml" />
+	<monster name="Guilt" file="Novos/Guilt.xml" />
+	<monster name="Shulgrax" file="Novos/Shulgrax.xml" />
+	<monster name="Tarbaz" file="Novos/Tarbaz.xml" />
+	<monster name="Razzagorn" file="Novos/Razzagorn.xml" />
+	<monster name="The Shatterer" file="Novos/The Shatterer.xml" />
+	<monster name="Death Dragon" file="Novos/Death Dragon.xml" />
+	<monster name="Zumbi" file="Zumbi.xml" />
 
-       <!-- NOVOS -->
-	   
-	          <!-- NOVOS 11.2 bosses -->
-	   <monster name="Lady Tenebris" file="11.2/bosses/Lady Tenebris.xml" />
-	   <monster name="Lloyd" file="11.2/bosses/Lloyd.xml" />
-	   <monster name="Melting Frozen Horror" file="11.2/bosses/Melting Frozen Horror.xml" />
-	   <monster name="The Last Lore Keeper" file="11.2/bosses/The Last Lore Keeper.xml" />
-	   <monster name="Sword Of Vengeance" file="11.2/bosses/Sword Of Vengeance.xml" />
-	   <monster name="An Observer Eye" file="11.2/bosses/An Observer Eye.xml" />
-	   <monster name="Dragonking Zyrtarch" file="11.2/bosses/Dragonking Zyrtarch.xml" />
-	   <monster name="Soul of Dragonking Zyrtarch" file="11.2/bosses/Soul of Dragonking Zyrtarch.xml" />
-	   <monster name="Mounted Thorn Knight" file="11.2/bosses/Mounted Thorn Knight.xml" />
-	   <monster name="The Shielded Thorn Knight" file="11.2/bosses/The Shielded Thorn Knight.xml" />
-	   <monster name="Thorn Steed" file="11.2/bosses/Thorn Steed.xml" />
-	   <monster name="The Enraged Thorn Knight" file="11.2/bosses/The Enraged Thorn Knight.xml" />
-	   
-	     <!-- NOVOS 11.2 -->
-	   <monster name="A Shielded Astral Glyph" file="11.2/A Shielded Astral Glyph.xml" />
-	   <monster name="Stone Rhino" file="11.2/Stone Rhino.xml" />
-	   <monster name="An Observer Eye (Imune)" file="11.2/An Observer Eye (Imune).xml" />
-	   <monster name="Angry Plant" file="11.2/Angry Plant.xml" />
-	   <monster name="Animated Sword" file="11.2/Animated Sword.xml" />
-	   <monster name="baby dragon" file="11.2/baby dragon.xml" />
-	   <monster name="Bound Astral Power" file="11.2/Bound Astral Power.xml" />
-	   <monster name="Broken Shaper" file="11.2/Broken Shaper.xml" />
-	   <monster name="Cave Parrot" file="11.2/Cave Parrot.xml" />
-	   <monster name="Corrupted Soul" file="11.2/Corrupted Soul.xml" />
-	   <monster name="Cosmic Energy Prism A" file="11.2/Cosmic Energy Prism A.xml" />
-	   <monster name="Cosmic Energy Prism B" file="11.2/Cosmic Energy Prism B.xml" />
-	   <monster name="Cosmic Energy Prism C" file="11.2/Cosmic Energy Prism C.xml" />
-	   <monster name="Cosmic Energy Prism D" file="11.2/Cosmic Energy Prism D.xml" />
-	   <monster name="Diamond Servant Replica" file="11.2/Diamond Servant Replica.xml" />
-	   <monster name="Dragon Essence" file="11.2/Dragon Essence.xml" />
-	   <monster name="Dragon Warden" file="11.2/Dragon Warden.xml" />
-		<monster name="Orclops Doomhauler" file="11.2/Orclops Doomhauler.xml" />
-	   <monster name="Orclops Ravager" file="11.2/Orclops Ravager.xml" />
-	   <monster name="Twisted Shaper" file="11.2/Twisted Shaper.xml" />
-	   <monster name="Shaper Matriarch" file="11.2/Shaper Matriarch.xml" />  
+	<!-- DAWNPORT -->
+	<monster file="bosses/weakened shlorg.xml" name="Weakened Shlorg" />
+	<monster file="trolls/mountain troll.xml" name="Mountain Troll" />
+	<monster file="trolls/salamander trainer.xml" name="Salamander Trainer" />
+	<monster file="trolls/troll marauder.xml" name="Troll Marauder" />
+	<monster file="goblins/muglex clan assassin.xml" name="Muglex Clan Assassin" />
+	<monster file="goblins/muglex clan footman.xml" name="Muglex Clan Footman" />
+	<monster file="goblins/muglex clan scavenger.xml" name="Muglex Clan Scavenger" />
+	<monster file="salamanders/troll-trained salamander.xml" name="Troll-Trained Salamander" />
+	<monster file="skeletons/brittle skeleton.xml" name="Brittle Skeleton" />
+	<monster file="insects/dawnfly.xml" name="Dawnfly" />
+	<monster file="insects/spidris elitesumom.xml" name="Spidris Elite Sumom" />
+	<monster file="bio-elementals/woodling.xml" name="Woodling" />
+	<monster file="arachnids/dawn scorpion.xml" name="Dawn Scorpion" />
+	<monster file="orcs/scar tribe shaman.xml" name="Scar Tribe Shaman" />
+	<monster file="orcs/scar tribe warrior.xml" name="Scar Tribe Warrior" />
+	<monster file="dwarves/crazed dwarf.xml" name="Crazed Dwarf" />
+	<monster file="birds/meadow strider.xml" name="Meadow Strider" />
+	<monster file="demons/lesser fire devil.xml" name="Lesser Fire Devil" />
+	<monster file="giants/juvenile cyclops.xml" name="Juvenile Cyclops" />
 
-	   <!-- ALTEREI -->
-	   <monster name="Instable Breach Brood" file="Novos/Instable Breach BroodSummon.xml" />
-	   <monster name="Instable Breach Brood" file="Novos/Instable Breach Brood.xml" />
-	   <monster name="Breach Brood" file="Novos/Breach Brood.xml" />
-	   <monster name="Instable Sparkion" file="Novos/Instable Sparkion.xml" />
-	   <monster name="Dread Intruder" file="Novos/Dread Intruder.xml" />
-	   <monster name="Dread IntruderSummon" file="Novos/Dread IntruderSummon.xml" />	   
-	   <monster name="Reality Reaver" file="Novos/Reality Reaver.xml" />
-	   <monster name="Spark of Destruction" file="Novos/Spark of Destruction.xml" />
-	   <monster name="Charger" file="Novos/Charger.xml" />
-	   <monster name="Sparkion" file="Novos/Sparkion.xml" />
-	   <monster name="World Devourer" file="Novos/World Devourer.xml" />
-	   <monster name="Eradicator" file="Novos/Eradicator.xml" />
-	   <monster name="Eradicatorr" file="Novos/Eradicator1.xml" />
-	   <monster name="Rupture" file="Novos/Rupture.xml" />
-	   <monster name="The Rage" file="Novos/The Rage.xml" />
-	   <monster name="The Hunger" file="Novos/The Hunger.xml" />
-	   <monster name="Frenzy" file="Novos/Frenzy.xml" />
-	   <monster name="Outburst" file="Novos/Outburst.xml" />
-	   <monster name="Greed" file="Novos/Greed.xml" /> 
-	   
-	   
-	   
-	   <monster name="Ogre Brute" file="Novos/Ogre Brute.xml" />
-	   <monster name="Ogre Savage" file="Novos/Ogre Savage.xml" />
-	   <monster name="Ogre Shaman" file="Novos/Ogre Shaman.xml" />
-	   <monster name="Clomp" file="Novos/Clomp.xml" />
-	   <monster name="Hellflayer" file="Novos/Hellflayer.xml" />
-	   <monster name="Grimeleech" file="Novos/Grimeleech.xml" />
-	   <monster name="Vexclaw" file="Novos/Vexclaw.xml" />
-	   <monster name="Omnivora" file="Novos/Omnivora.xml" />
-	   <monster name="Werebadger" file="Novos/Werebadger.xml" />
-	   <monster name="Wereboar" file="Novos/Wereboar.xml" />
-	   <monster name="Werebear" file="Novos/Werebear.xml" />
-	   <monster name="Feroxa" file="Novos/Feroxa.xml" />
-	   <monster name="Despair" file="Novos/Despair.xml" />
-	   <monster name="Dawnfire Asura" file="Novos/Dawnfire Asura.xml" />
-	   <monster name="Midnight Asura" file="Novos/Midnight Asura.xml" />
-	   <monster name="Sacred Snake" file="Novos/Sacred Snake.xml" />
-	   <monster name="Destabilized Ferumbras" file="Novos/Destabilized Ferumbras.xml" />
-	   
-	    <monster name="Disgusting Ooze" file="Novos/Disgusting Ooze.xml" />
-	   
-	   <monster name="Professor Maxxen" file="Novos/Professor Maxxen.xml" />
-	   <monster name="Glooth Slasher" file="Novos/Glooth Slasher.xml" />
-	   <monster name="Glooth Trasher" file="Novos/Glooth Trasher.xml" />
-	   
-	   <monster name="Vicious Squire" file="Novos/Vicious Squire.xml" />
-	   <monster name="Renegade Knight" file="Novos/Renegade Knight.xml" />
-	   <monster name="Vile Grandmaster" file="Novos/Vile Grandmaster.xml" />
-	   
-	   <monster name="Rage Of Mazoran" file="Novos/Rage Of Mazoran.xml" />
-	   <monster name="Plagirath" file="Novos/Plagirath.xml" />
-	   <monster name="Mazoran" file="Novos/Mazoran.xml" />
-	   <monster name="Ragiaz" file="Novos/Ragiaz.xml" />
-	   <monster name="Zamulosh" file="Novos/Zamulosh.xml" />
-	    <monster name="Zamulosh Summom" file="Novos/ZamuloshSummom.xml" />
-	   <monster name="Guilt" file="Novos/Guilt.xml" />
-	   <monster name="Shulgrax" file="Novos/Shulgrax.xml" />
-	   <monster name="Tarbaz" file="Novos/Tarbaz.xml" />
-	   <monster name="Razzagorn" file="Novos/Razzagorn.xml" />
-	   <monster name="The Shatterer" file="Novos/The Shatterer.xml" />	   
-	   <monster name="Death Dragon" file="Novos/Death Dragon.xml" />	   
-	   
-		<monster name="Zumbi" file="Zumbi.xml"/>		
-		
-        <!-- DAWNPORT -->		
-		<monster file="bosses/weakened shlorg.xml" name="Weakened Shlorg"/>
-		<monster file="trolls/mountain troll.xml" name="Mountain Troll"/>
-		<monster file="trolls/salamander trainer.xml" name="Salamander Trainer"/>
-		<monster file="trolls/troll marauder.xml" name="Troll Marauder"/>		
-		<monster file="goblins/muglex clan assassin.xml" name="Muglex Clan Assassin"/>
-	    <monster file="goblins/muglex clan footman.xml" name="Muglex Clan Footman"/>
-	    <monster file="goblins/muglex clan scavenger.xml" name="Muglex Clan Scavenger"/>		
-		<monster file="salamanders/troll-trained salamander.xml" name="Troll-Trained Salamander"/>	    
-	    <monster file="skeletons/brittle skeleton.xml" name="Brittle Skeleton"/>
-		<monster file="insects/dawnfly.xml" name="Dawnfly"/>   
-        <monster file="insects/spidris elitesumom.xml" name="Spidris Elite Sumom"/> 		
-        <monster file="bio-elementals/woodling.xml" name="Woodling"/>
-		<monster file="arachnids/dawn scorpion.xml" name="Dawn Scorpion"/>
-		<monster file="orcs/scar tribe shaman.xml" name="Scar Tribe Shaman"/>
-	    <monster file="orcs/scar tribe warrior.xml" name="Scar Tribe Warrior"/>
-		<monster file="dwarves/crazed dwarf.xml" name="Crazed Dwarf"/>
-		<monster file="birds/meadow strider.xml" name="Meadow Strider"/>
-		<monster file="demons/lesser fire devil.xml" name="Lesser Fire Devil"/>
-		<monster file="giants/juvenile cyclops.xml" name="Juvenile Cyclops"/>		
+	<!-- ALTEREI ATÉ AQUI -->
+	<!-- VIKING MONSTER -->
+	<monster file="serpents/seacrest serpent.xml" name="Seacrest Serpent" />
+	<monster name="Omrafir" file="bosses/omrafir.xml" />
+	<monster name="The Mutated Pumpkin" file="bosses/the mutated pumpkin.xml" />
+	<monster name="The Voice of Ruin" file="bosses/The Voice of Ruin.xml" />
+	<monster name="Tyrn" file="bosses/tyrn.xml" />
+	<monster file="traps/canopic jar.xml" name="Canopic Jar" />
+	<monster name="Glooth Bandit" file="bosses/glooth bandit.xml" />
+	<monster name="Glooth Brigand" file="bosses/glooth brigand.xml" />
+	<monster name="Horadron" file="bosses/horadron.xml" />
+	<monster name="Prince Drazzak" file="bosses/prince drazzak.xml" />
+	<monster name="Mutated Visco" file="bosses/visco.xml" />
+	<monster name="White Pale" file="bosses/white pale.xml" />
+	<monster name="The Welter" file="bosses/the welter.xml" />
+	<monster name="Hirintror" file="bosses/hirintror.xml" />
+	<monster name="Dofus" file="bosses/dofus.xml" />
+	<monster name="Chayenne" file="bosses/chayenne.xml" />
 
-       <!-- ALTEREI ATÉ AQUI -->
-	   
-       <!-- VIKING MONSTER -->
-	   <monster file="serpents/seacrest serpent.xml" name="Seacrest Serpent"/>
-	   <monster name="Omrafir" file="bosses/omrafir.xml"/>
-	   <monster name="The Mutated Pumpkin" file="bosses/the mutated pumpkin.xml"/>
-	   <monster name="The Voice of Ruin" file="bosses/The Voice of Ruin.xml"/>
-	   	<monster name="Tyrn" file="bosses/tyrn.xml"/>
-	   <monster file="traps/canopic jar.xml" name="Canopic Jar"/>
-	   <monster name="Glooth Bandit" file="bosses/glooth bandit.xml" />
-       <monster name="Glooth Brigand" file="bosses/glooth brigand.xml" />
-	   <monster name="Horadron" file="bosses/horadron.xml" />
-	   <monster name="Prince Drazzak" file="bosses/prince drazzak.xml" />	   
-	   <monster name="Mutated Visco" file="bosses/visco.xml" />
-	   <monster name="White Pale" file="bosses/white pale.xml" />
-	   <monster name="The Welter" file="bosses/the welter.xml" />
-	   <monster name="Hirintror" file="bosses/hirintror.xml" />	   
-	   <monster name="Dofus" file="bosses/dofus.xml" />	   
-	   <monster name="Chayenne" file="bosses/chayenne.xml" />
-	   
 	<!-- Amazons -->
 	<monster name="Amazon" file="amazons/amazon.xml" />
 	<monster name="Valkyrie" file="amazons/valkyrie.xml" />
@@ -183,7 +170,8 @@
 	<monster name="Shaburak Demon" file="arak demons/shaburak demon.xml" />
 	<monster name="Shaburak Lord" file="arak demons/shaburak lord.xml" />
 	<monster name="Shaburak Prince" file="arak demons/shaburak prince.xml" />
-    <!-- ALTEREI ATÉ AQUI -->
+
+	<!-- ALTEREI ATÉ AQUI -->
 	<!-- Arena -->
 	<!-- Greenhorn -->
 	<monster name="Achad" file="arena/greenhorn/achad.xml" />
@@ -236,7 +224,8 @@
 	<monster name="Bear" file="bears/bear.xml" />
 	<monster name="Panda" file="bears/panda.xml" />
 	<monster name="Polar Bear" file="bears/polar bear.xml" />
-     <!-- ALTEREI ATÉ AQUI -->
+
+	<!-- ALTEREI ATÉ AQUI -->
 	<!-- Bio-Elementals -->
 	<monster name="Bane Bringer" file="bio-elementals/bane bringer.xml" />
 	<monster name="Blood Beast" file="bio-elementals/blood beast.xml" />
@@ -260,7 +249,8 @@
 	<monster name="Strange Slime" file="bio-elementals/strange slime.xml" />
 	<monster name="Swampling" file="bio-elementals/swampling.xml" />
 	<monster name="Wilting Leaf Golem" file="bio-elementals/wilting leaf golem.xml" />
-    <!-- ALTEREI ATÉ AQUI -->
+	<!-- ALTEREI ATÉ AQUI -->
+
 	<!-- Birds -->
 	<monster name="Berserker Chicken" file="birds/berserker chicken.xml" />
 	<monster name="Chicken" file="birds/chicken.xml" />
@@ -498,7 +488,8 @@
 
 	<!-- Customs -->
 	<monster name="Trailemaw" file="customs/trailemaw.xml" />
-    <monster name="Training Monk" file="customs/Training Monk.xml" />
+	<monster name="Training Monk" file="customs/Training Monk.xml" />
+
 	<!-- Deeplings -->
 	<monster name="Deepling Brawler" file="deeplings/deepling brawler.xml" />
 	<monster name="Deepling Elite" file="deeplings/deepling elite.xml" />
@@ -659,8 +650,8 @@
 	<monster name="Squirrel" file="glires/squirrel.xml" />
 	<monster name="Killer Rabbit" file="glires/killer rabbit.xml" />
 	<monster name="Thieving Squirrel" file="glires/thieving squirrel.xml" />
-	
-    <!-- EDITEI ATÉ AQUI -->
+
+	<!-- EDITEI ATÉ AQUI -->
 	<!-- Geo-Elementals -->
 	<monster name="Armadile" file="geo-elementals/armadile.xml" />
 	<monster name="Clay Guardian" file="geo-elementals/clay guardian.xml" />
@@ -824,7 +815,7 @@
 	<monster name="Tortoise" file="misc/misc reptiles/tortoise.xml" />
 
 	<!-- Mollusks -->
-	<monster file="mollusks/abyssal calamary.xml" name="Abyssal Calamary"/>
+	<monster file="mollusks/abyssal calamary.xml" name="Abyssal Calamary" />
 	<monster name="Calamary" file="mollusks/calamary.xml" />
 	<monster name="Slug" file="mollusks/slug.xml" />
 

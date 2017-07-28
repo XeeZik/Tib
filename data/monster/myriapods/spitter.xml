@@ -45,21 +45,21 @@
 		<voice sentence="Spotz!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="190" chance="100000" />	<!-- gold coin -->
-		<item id="2152" chance="75250" />					<!-- platinum coin -->
-		<item id="15481" chance="18000" />					<!-- spitter nose -->
-		<item id="15486" chance="15000" />					<!-- compound eye -->
-		<item id="2150" countmax="2" chance="8100" />		<!-- small amethyst -->
-		<item id="7590" chance="7800" />						<!-- great mana potion -->
-		<item id="2789" countmax="3" chance="7500" />		<!-- brown mushroom -->
-		<item id="7591" chance="5000" />						<!-- great health potion -->
-		<item id="2169" chance="2400" />						<!-- time ring -->
-		<item id="7449" chance="2000" />						<!-- crystal sword -->
-		<item id="7440" chance="300" />						<!-- mastermind potion -->
-		<item id="2171" chance="260" />						<!-- platinum amulet -->
-		<item id="15489" chance="230" />						<!-- calopteryx cape -->
-		<item id="2497" chance="220" />						<!-- crusader helmet -->
-		<item id="2155" chance="210" />						<!-- green gem -->
-		<item id="15490" chance="140" />						<!-- grasshopper legs -->
+		<item id="2148" countmax="190" chance="100000" /> <!-- gold coin -->
+		<item id="2152" chance="75250" /> <!-- platinum coin -->
+		<item id="15481" chance="18000" /> <!-- spitter nose -->
+		<item id="15486" chance="15000" /> <!-- compound eye -->
+		<item id="2150" countmax="2" chance="8100" /> <!-- small amethyst -->
+		<item id="7590" chance="7800" /> <!-- great mana potion -->
+		<item id="2789" countmax="3" chance="7500" /> <!-- brown mushroom -->
+		<item id="7591" chance="5000" /> <!-- great health potion -->
+		<item id="2169" chance="2400" /> <!-- time ring -->
+		<item id="7449" chance="2000" /> <!-- crystal sword -->
+		<item id="7440" chance="300" /> <!-- mastermind potion -->
+		<item id="2171" chance="260" /> <!-- platinum amulet -->
+		<item id="15489" chance="230" /> <!-- calopteryx cape -->
+		<item id="2497" chance="220" /> <!-- crusader helmet -->
+		<item id="2155" chance="210" /> <!-- green gem -->
+		<item id="15490" chance="140" /> <!-- grasshopper legs -->
 	</loot>
 </monster>

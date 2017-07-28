@@ -54,22 +54,22 @@
 		<voice sentence="Tcharrr!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="220" chance="100000" />	<!-- gold coin -->
-		<item id="2152" countmax="8" chance="100000" />		<!-- platinum coin -->
-		<item id="6558" chance="65250" />					<!-- concentrated demonic blood -->
-		<item id="2547" countmax="15" chance="50000" />		<!-- power bolt -->
-		<item id="6500" chance="19730" />					<!-- demonic essence -->
-		<item id="11233" chance="19110" />					<!-- unholy bone -->
-		<item id="7590" countmax="3" chance="15300" />		<!-- great mana potion -->
-		<item id="8473" chance="14310" />					<!-- ultimate health potion -->
-		<item id="2145" countmax="4" chance="11800" />		<!-- small diamond -->
-		<item id="7368" countmax="5" chance="9580" />		<!-- assassin star -->
-		<item id="5944" chance="9000" />						<!-- soul orb -->
-		<item id="5022" countmax="2" chance="6500" />		<!-- orichalcum pearl -->
-		<item id="7386" chance="1490" />						<!-- mercenary sword -->
-		<item id="6300" chance="490" />						<!-- death ring -->
-		<item id="5741" chance="410" />						<!-- skull helmet -->
-		<item id="5799" chance="120" />						<!-- golden figurine -->
-		<item id="7416" chance="40" />						<!-- bloody edge -->
+		<item id="2148" countmax="220" chance="100000" /> <!-- gold coin -->
+		<item id="2152" countmax="8" chance="100000" /> <!-- platinum coin -->
+		<item id="6558" chance="65250" /> <!-- concentrated demonic blood -->
+		<item id="2547" countmax="15" chance="50000" /> <!-- power bolt -->
+		<item id="6500" chance="19730" /> <!-- demonic essence -->
+		<item id="11233" chance="19110" /> <!-- unholy bone -->
+		<item id="7590" countmax="3" chance="15300" /> <!-- great mana potion -->
+		<item id="8473" chance="14310" /> <!-- ultimate health potion -->
+		<item id="2145" countmax="4" chance="11800" /> <!-- small diamond -->
+		<item id="7368" countmax="5" chance="9580" /> <!-- assassin star -->
+		<item id="5944" chance="9000" /> <!-- soul orb -->
+		<item id="5022" countmax="2" chance="6500" /> <!-- orichalcum pearl -->
+		<item id="7386" chance="1490" /> <!-- mercenary sword -->
+		<item id="6300" chance="490" /> <!-- death ring -->
+		<item id="5741" chance="410" /> <!-- skull helmet -->
+		<item id="5799" chance="120" /> <!-- golden figurine -->
+		<item id="7416" chance="40" /> <!-- bloody edge -->
 	</loot>
 </monster>

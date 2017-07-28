@@ -33,7 +33,7 @@
 			<attribute key="areaEffect" value="poff" />
 		</attack>
 		<attack name="soulfire" interval="2000" chance="10" />
-		<attack name="poisoncondition" interval="2000" chance="10" target="1" min="-280" max="-360" >
+		<attack name="poisoncondition" interval="2000" chance="10" target="1" min="-280" max="-360">
 			<attribute key="shootEffect" value="poison" />
 		</attack>
 	</attacks>
@@ -63,24 +63,24 @@
 		<voice sentence="Zzzzzooom!!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="41000" /><!-- gold coin -->
-		<item id="2148" countmax="100" chance="58000" /><!-- gold coin -->
-		<item id="2152" countmax="5" chance="25510" /><!-- platinum coin -->
-		<item id="2147" countmax="5" chance="6910" /><!-- small ruby -->
-		<item id="8871" chance="450" /><!-- focus cape -->
-		<item id="2666" chance="30400" /><!-- meat -->
-		<item id="13294" chance="60" /><!-- harness -->
-		<item id="11303" chance="480" /><!-- zaoan shoes -->
-		<item id="2187" chance="460" /><!-- wand of inferno -->
-		<item id="11314" chance="19790" /><!-- weaver's wandtip -->
-		<item id="7590" chance="4970" /><!-- great mana potion -->
-		<item id="2123" chance="370" /><!-- ring of the sky -->
-		<item id="13538" chance="180" /><!-- bamboo leaves -->
-		<item id="12410" chance="980" /><!-- luminous orb -->
-		<item id="11355" chance="620" /><!-- spellweaver's robe -->
-		<item id="11315" chance="10" /><!-- draken trophy -->
-		<item id="12614" chance="3930" /><!-- draken sulphur-->
-		<item id="11356" chance="270" /><!-- zaoan robe-->
-		<item id="2155" chance="370" /><!-- green gem -->
+		<item id="2148" countmax="100" chance="41000" /> <!-- gold coin -->
+		<item id="2148" countmax="100" chance="58000" /> <!-- gold coin -->
+		<item id="2152" countmax="5" chance="25510" /> <!-- platinum coin -->
+		<item id="2147" countmax="5" chance="6910" /> <!-- small ruby -->
+		<item id="8871" chance="450" /> <!-- focus cape -->
+		<item id="2666" chance="30400" /> <!-- meat -->
+		<item id="13294" chance="60" /> <!-- harness -->
+		<item id="11303" chance="480" /> <!-- zaoan shoes -->
+		<item id="2187" chance="460" /> <!-- wand of inferno -->
+		<item id="11314" chance="19790" /> <!-- weaver's wandtip -->
+		<item id="7590" chance="4970" /> <!-- great mana potion -->
+		<item id="2123" chance="370" /> <!-- ring of the sky -->
+		<item id="13538" chance="180" /> <!-- bamboo leaves -->
+		<item id="12410" chance="980" /> <!-- luminous orb -->
+		<item id="11355" chance="620" /> <!-- spellweaver's robe -->
+		<item id="11315" chance="10" /> <!-- draken trophy -->
+		<item id="12614" chance="3930" /> <!-- draken sulphur-->
+		<item id="11356" chance="270" /> <!-- zaoan robe-->
+		<item id="2155" chance="370" /> <!-- green gem -->
 	</loot>
 </monster>

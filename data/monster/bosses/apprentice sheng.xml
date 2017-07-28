@@ -49,12 +49,12 @@
 		<voice sentence="You already know too much." />
 	</voices>
 	<loot>
-		<item id="5878" chance="100000" />				<!-- minotaur leather -->
-		<item id="2162" chance="80000" />				<!-- magic lightwand -->
-		<item id="2148" countmax="10" chance="30000" />	<!-- gold coin -->
-		<item id="2050" countmax="2" chance="30000" />	<!-- torch -->
-		<item id="2649" chance="20000" />				<!-- leather legs -->
-		<item id="2403" chance="10000" />				<!-- knife -->
-		<item id="2461" chance="10000" />				<!-- leather helmet -->
+		<item id="5878" chance="100000" /> <!-- minotaur leather -->
+		<item id="2162" chance="80000" /> <!-- magic lightwand -->
+		<item id="2148" countmax="10" chance="30000" /> <!-- gold coin -->
+		<item id="2050" countmax="2" chance="30000" /> <!-- torch -->
+		<item id="2649" chance="20000" /> <!-- leather legs -->
+		<item id="2403" chance="10000" /> <!-- knife -->
+		<item id="2461" chance="10000" /> <!-- leather helmet -->
 	</loot>
 </monster>

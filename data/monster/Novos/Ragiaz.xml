@@ -15,9 +15,9 @@
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
 	</flags>
-	<script>
-   <event name="Ragiaz"/>
-	</script>
+<script>
+<event name="Ragiaz" />
+</script>
 	<attacks>
 		<attack name="melee" interval="2000" skill="200" attack="250" />
 		<attack name="manadrain" interval="1000" chance="7" range="7" min="-100" max="-500">
@@ -37,8 +37,8 @@
 		</attack>
 		<attack name="lifedrain" interval="2000" chance="10" length="8" spread="0" min="-50" max="-200">
 			<attribute key="areaEffect" value="purpleenergy" />
-		</attack>		
-		<attack name="renegade knight" interval="2000" chance="30"/>		
+		</attack>
+		<attack name="renegade knight" interval="2000" chance="30" />
 		<attack name="choking fear drown" interval="2000" chance="20" />
 		<attack name="death" interval="2000" chance="20" radius="4" target="1" min="-450" max="-1400">
 			<attribute key="shootEffect" value="suddendeath" />
@@ -53,8 +53,6 @@
 		<attack name="strength" interval="1000" chance="8" radius="5" target="0">
 			<attribute key="areaEffect" value="blackspark" />
 		</attack>
-		
-		
 		<attack name="fire" interval="1000" chance="34" range="7" radius="7" target="1" min="-100" max="-700">
 			<attribute key="shootEffect" value="fire" />
 			<attribute key="areaEffect" value="firearea" />
@@ -64,60 +62,52 @@
 		</attack>
 	</attacks>
 	<defenses armor="160" defense="160">
-		
 		<defense name="healing" interval="3000" chance="15" min="2000" max="6000">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 		<defense name="speed" interval="1000" chance="8" speedchange="1901" duration="5000">
 			<attribute key="areaEffect" value="redshimmer" />
 		</defense>
-		
 		<defense name="invisible" interval="1000" chance="17" duration="2000">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
-		
 	</defenses>
-	
-	<elements>		
+	<elements>
 		<element deathPercent="20" />
-		</elements>
-	
+	</elements>
 	<immunities>
-	
 		<immunity paralyze="1" />
 		<immunity invisible="1" />
 	</immunities>
-	
 	<voices interval="2000" chance="15">
 		<voice sentence="Ragiaz power revives his minion!" />
 	</voices>
-	<loot capacity="5000">
-	<item id="2148" countmax="100" chance="9000" /> <!-- gold coin -->
-	<item id="2148" countmax="100" chance="9000" /> <!-- gold coin -->	
-	<item id="2152" countmax="25" chance="9000" /> <!-- platinum coin -->	
-		<item id="25172" chance="80500" /> <!-- silver token -->		
-		<item id="25414" chance="400" /> <!-- Death Gaze -->	
-	    <item id="2436" chance="600" /> <!-- Skull Staff -->
-		<item id="25522" chance="300" /> <!-- Rift Bow -->		
-	    <item id="7426" chance="500" /> <!-- Amber Staff -->	
-		 <item id="2155" chance="1500" /> <!-- Green Gem -->
-		  <item id="2154" chance="1500" /> <!-- Yellow Gem -->
-		 <item id="2156" chance="8500" /> <!-- Red Gem -->
+<loot capacity="5000">
+		<item id="2148" countmax="100" chance="9000" /> <!-- gold coin -->
+		<item id="2148" countmax="100" chance="9000" /> <!-- gold coin -->
+		<item id="2152" countmax="25" chance="9000" /> <!-- platinum coin -->
+		<item id="25172" chance="80500" /> <!-- silver token -->
+		<item id="25414" chance="400" /> <!-- Death Gaze -->
+		<item id="2436" chance="600" /> <!-- Skull Staff -->
+		<item id="25522" chance="300" /> <!-- Rift Bow -->
+		<item id="7426" chance="500" /> <!-- Amber Staff -->
+		<item id="2155" chance="1500" /> <!-- Green Gem -->
+		<item id="2154" chance="1500" /> <!-- Yellow Gem -->
+		<item id="2156" chance="8500" /> <!-- Red Gem -->
 		<item id="2214" chance="8500" /> <!-- Ring of Healing -->
 		<item id="6500" chance="500" /> <!-- Demonic Essence -->
-	    <item id="7632" chance="9500" /> <!-- Giant Shimmering Pearl -->
+		<item id="7632" chance="9500" /> <!-- Giant Shimmering Pearl -->
 		<item id="2158" chance="8500" /> <!-- Blue Gem -->
 		<item id="8473" countmax="10" chance="8500" /> <!-- Ultimate Health Potion -->
 		<item id="9970" countmax="5" chance="4500" /> <!-- Small topaz -->
 		<item id="2150" countmax="5" chance="6500" /> <!-- Small Amethyst -->
 		<item id="2146" countmax="5" chance="9500" /> <!-- Small Sapphire -->
-		 <item id="18420" countmax="6" chance="2500" /> <!-- Red Crystal Fragment -->		
-	    <item id="18421" countmax="6" chance="1500" /> <!-- Green Crystal Fragment -->
+		<item id="18420" countmax="6" chance="2500" /> <!-- Red Crystal Fragment -->
+		<item id="18421" countmax="6" chance="1500" /> <!-- Green Crystal Fragment -->
 		<item id="7590" countmax="10" chance="4500" /> <!-- Great Mana Potion -->
 		<item id="8472" countmax="10" chance="4500" /> <!-- Great Spirit Potion -->
 		<item id="7591" countmax="10" chance="4500" /> <!-- Great Health Potion -->
-		<item id="18419" countmax="5" chance="3500" /> <!-- Cyan Crystal Fragment -->		
-		<item id="6558" countmax="5" chance="2500" /> <!-- Concentrated Demonic Blood -->   
-	   	
+		<item id="18419" countmax="5" chance="3500" /> <!-- Cyan Crystal Fragment -->
+		<item id="6558" countmax="5" chance="2500" /> <!-- Concentrated Demonic Blood -->
 	</loot>
 </monster>

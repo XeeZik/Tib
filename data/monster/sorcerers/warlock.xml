@@ -70,7 +70,7 @@
 		<item name="candlestick" chance="1500" />
 		<item name="piggy bank" chance="60" />
 		<item name="ring of the sky" chance="430" />
-		<item id="2124" chance="700" /><!-- crystal ring -->
+		<item id="2124" chance="700" /> <!-- crystal ring -->
 		<item name="small sapphire" chance="1190" />
 		<item name="gold coin" countmax="80" chance="29340" />
 		<item name="talon" chance="1150" />

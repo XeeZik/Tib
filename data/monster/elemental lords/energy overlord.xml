@@ -43,8 +43,8 @@
 		<immunity energy="1" />
 	</immunities>
 	<loot>
-		<item id="2148" countmax="64" chance="100000" /><!-- gold coin -->
-		<item id="8306" chance="100000" /><!-- pure energy -->
-		<item id="2152" countmax="2" chance="25000" /><!-- platinum coin -->
+		<item id="2148" countmax="64" chance="100000" /> <!-- gold coin -->
+		<item id="8306" chance="100000" /> <!-- pure energy -->
+		<item id="2152" countmax="2" chance="25000" /> <!-- platinum coin -->
 	</loot>
 </monster>

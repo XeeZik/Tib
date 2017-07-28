@@ -42,13 +42,13 @@
 		<voice sentence="Raar!!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="40" chance="87000" /><!-- gold coin -->
-		<item id="2792" chance="7992" /><!-- dark mushroom -->
-		<item id="11217" chance="4066" /><!-- carniphila seeds -->
-		<item id="2804" chance="1000" /><!-- shadow herb -->
-		<item id="2686" chance="1000" /><!-- corncob -->
-		<item id="7732" chance="500" /><!-- seeds -->
-		<item id="2802" countmax="2" chance="500" /><!-- sling herb -->
-		<item id="13298" chance="100" /><!-- carrot on a stick -->
+		<item id="2148" countmax="40" chance="87000" /> <!-- gold coin -->
+		<item id="2792" chance="7992" /> <!-- dark mushroom -->
+		<item id="11217" chance="4066" /> <!-- carniphila seeds -->
+		<item id="2804" chance="1000" /> <!-- shadow herb -->
+		<item id="2686" chance="1000" /> <!-- corncob -->
+		<item id="7732" chance="500" /> <!-- seeds -->
+		<item id="2802" countmax="2" chance="500" /> <!-- sling herb -->
+		<item id="13298" chance="100" /> <!-- carrot on a stick -->
 	</loot>
 </monster>

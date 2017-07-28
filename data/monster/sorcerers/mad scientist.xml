@@ -50,21 +50,21 @@
 	</immunities>
 	<voices interval="2000" chance="7">
 		<voice sentence="Die in the name of Science!" />
-		<voice sentence="You will regret interrupting my studies!" /> 
+		<voice sentence="You will regret interrupting my studies!" />
 		<voice sentence="Let me test this!" />
 		<voice sentence="I will study your corpse!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="115" chance="60000" />	<!-- gold coin -->
-		<item id="7618" chance="20000" />				<!-- health potion -->
-		<item id="7620" chance="19600" />				<!-- mana potion -->
-		<item id="2787" countmax="3" chance="8000" />	<!-- white mushroom -->
-		<item id="2308" chance="6100" />					<!-- powder herb -->
-		<item id="2177" chance="2000" />					<!-- life crystal -->
-		<item id="2162" chance="2000" />					<!-- magic lightwand -->
-		<item id="2687" countmax="5" chance="1200" />	<!-- cookie -->
-		<item id="7966" chance="820" />					<!-- cream cake -->
-		<item id="7762" chance="500" />					<!-- small enchanted amethyst -->
-		<item id="7440" chance="120" />					<!-- mastermind potion -->
+		<item id="2148" countmax="115" chance="60000" /> <!-- gold coin -->
+		<item id="7618" chance="20000" /> <!-- health potion -->
+		<item id="7620" chance="19600" /> <!-- mana potion -->
+		<item id="2787" countmax="3" chance="8000" /> <!-- white mushroom -->
+		<item id="2308" chance="6100" /> <!-- powder herb -->
+		<item id="2177" chance="2000" /> <!-- life crystal -->
+		<item id="2162" chance="2000" /> <!-- magic lightwand -->
+		<item id="2687" countmax="5" chance="1200" /> <!-- cookie -->
+		<item id="7966" chance="820" /> <!-- cream cake -->
+		<item id="7762" chance="500" /> <!-- small enchanted amethyst -->
+		<item id="7440" chance="120" /> <!-- mastermind potion -->
 	</loot>
 </monster>

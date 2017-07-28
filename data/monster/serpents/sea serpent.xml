@@ -8,7 +8,7 @@
 		<flag attackable="1" />
 		<flag hostile="1" />
 		<flag illusionable="0" />
-				<flag isblockable="0" />
+		<flag isblockable="0" />
 		<flag convinceable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
@@ -52,24 +52,24 @@
 		<element deathPercent="10" />
 	</elements>
 	<loot>
-		<item id="2148" countmax="236" chance="98000" />	<!-- gold coin -->
-		<item id="2672" countmax="2" chance="60000" />	<!-- dragon ham -->
-		<item id="2152" countmax="3" chance="25000" />	<!-- platinum coin -->
-		<item id="10583" chance="10200" />				<!-- sea serpent scale -->
-		<item id="2647" chance="7150" />					<!-- plate legs -->
-		<item id="2146" countmax="3" chance="5600" />	<!-- small saphire -->
-		<item id="7588" chance="5000" />					<!-- strong health potion -->
-		<item id="2409" chance="4200" />					<!-- serpent sword -->
-		<item id="7589" chance="3950" />					<!-- strong mana potion -->
-		<item id="8870" chance="2900" />					<!-- spirit cloak -->
-		<item id="2214" chance="1100" />					<!-- ring of healing -->
-		<item id="8911" chance="940" />					<!-- northwind rod -->
-		<item id="7590" chance="930" />					<!-- great mana potion -->
-		<item id="7888" chance="870" />					<!-- glacier amulet -->
-		<item id="7896" chance="440" />					<!-- glacier kilt -->
-		<item id="2165" chance="400" />					<!-- stealth ring -->
-		<item id="8871" chance="390" />					<!-- focus cape -->
-		<item id="10220" chance="110" />					<!-- leviathan's amulet -->
-		<item id="8878" chance="90" />					<!-- crystalline armor -->
+		<item id="2148" countmax="236" chance="98000" /> <!-- gold coin -->
+		<item id="2672" countmax="2" chance="60000" /> <!-- dragon ham -->
+		<item id="2152" countmax="3" chance="25000" /> <!-- platinum coin -->
+		<item id="10583" chance="10200" /> <!-- sea serpent scale -->
+		<item id="2647" chance="7150" /> <!-- plate legs -->
+		<item id="2146" countmax="3" chance="5600" /> <!-- small saphire -->
+		<item id="7588" chance="5000" /> <!-- strong health potion -->
+		<item id="2409" chance="4200" /> <!-- serpent sword -->
+		<item id="7589" chance="3950" /> <!-- strong mana potion -->
+		<item id="8870" chance="2900" /> <!-- spirit cloak -->
+		<item id="2214" chance="1100" /> <!-- ring of healing -->
+		<item id="8911" chance="940" /> <!-- northwind rod -->
+		<item id="7590" chance="930" /> <!-- great mana potion -->
+		<item id="7888" chance="870" /> <!-- glacier amulet -->
+		<item id="7896" chance="440" /> <!-- glacier kilt -->
+		<item id="2165" chance="400" /> <!-- stealth ring -->
+		<item id="8871" chance="390" /> <!-- focus cape -->
+		<item id="10220" chance="110" /> <!-- leviathan's amulet -->
+		<item id="8878" chance="90" /> <!-- crystalline armor -->
 	</loot>
 </monster>

@@ -23,12 +23,10 @@
 			<attribute key="shootEffect" value="energy" />
 			<attribute key="areaEffect" value="purpleenergy" />
 		</attack>
-		
 		<attack name="energy" interval="2000" chance="20" range="6" radius="4" target="1" min="-100" max="-190">
 			<attribute key="shootEffect" value="energy" />
 			<attribute key="areaEffect" value="purpleenergy" />
 		</attack>
-		
 		<attack name="energycondition" interval="1000" chance="15" radius="4" target="0">
 			<attribute key="areaEffect" value="yellowenergy" />
 		</attack>
@@ -49,5 +47,4 @@
 		<immunity fire="1" />
 		<immunity ice="1" />
 	</immunities>
-	
 </monster>

@@ -9,7 +9,7 @@
 		<flag hostile="1" />
 		<flag illusionable="1" />
 		<flag convinceable="1" />
-				<flag isblockable="0" />
+		<flag isblockable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
 		<flag canpushcreatures="0" />
@@ -42,17 +42,17 @@
 		<immunity invisible="1" />
 	</immunities>
 	<loot>
-		<item id="2148" countmax="30" chance="69600" />	<!-- gold coin -->
-		<item id="11208" chance="14870" />				<!-- rotten piece of cloth -->
-		<item id="3976" countmax="2" chance="9900" />	<!-- worm -->
-		<item id="12423" chance="5000" />				<!-- ghoul snack -->
-		<item id="2050" chance="4900" />					<!-- torch -->
-		<item id="2483" chance="1000" />					<!-- scale armor -->
-		<item id="5913" chance="1000" />					<!-- brown piece of cloth -->
-		<item id="2473" chance="1000" />					<!-- viking helmet -->
-		<item id="12440" chance="960" />					<!-- pile of grave earth -->
-		<item id="2229" chance="300" />					<!-- skull -->
-		<item id="2168" chance="200" />					<!-- life ring -->
-		<item id="26642" chance="1000" />				<!-- heavy old tome -->
+		<item id="2148" countmax="30" chance="69600" /> <!-- gold coin -->
+		<item id="11208" chance="14870" /> <!-- rotten piece of cloth -->
+		<item id="3976" countmax="2" chance="9900" /> <!-- worm -->
+		<item id="12423" chance="5000" /> <!-- ghoul snack -->
+		<item id="2050" chance="4900" /> <!-- torch -->
+		<item id="2483" chance="1000" /> <!-- scale armor -->
+		<item id="5913" chance="1000" /> <!-- brown piece of cloth -->
+		<item id="2473" chance="1000" /> <!-- viking helmet -->
+		<item id="12440" chance="960" /> <!-- pile of grave earth -->
+		<item id="2229" chance="300" /> <!-- skull -->
+		<item id="2168" chance="200" /> <!-- life ring -->
+		<item id="26642" chance="1000" /> <!-- heavy old tome -->
 	</loot>
 </monster>

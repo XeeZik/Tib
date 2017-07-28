@@ -53,17 +53,17 @@
 	</immunities>
 	<voices interval="2000" chance="15">
 		<voice sentence="Zzing!" />
-		<voice sentence="Frizzle!" />		
+		<voice sentence="Frizzle!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="50000" /><!-- gold coin -->
-		<item id="2152" countmax="2" chance="50000" /><!-- platinum coin -->
-		<item id="26160" chance="5000" /><!-- sparkion legs -->
-		<item id="26159" chance="3000" /><!-- sparkion tail -->
+		<item id="2148" countmax="100" chance="50000" /> <!-- gold coin -->
+		<item id="2152" countmax="2" chance="50000" /> <!-- platinum coin -->
+		<item id="26160" chance="5000" /> <!-- sparkion legs -->
+		<item id="26159" chance="3000" /> <!-- sparkion tail -->
 		<item id="7591" chance="3000" /> <!-- great health potion -->
 		<item id="8472" chance="3000" /> <!-- great spirit potion -->
-		<item id="26161" chance="2000" /><!-- sparkion stings -->
-		<item id="26191" chance="2000" /><!-- energy bar --> 
-		<item id="18419" chance="1500" /><!-- cyan crystal fragment -->
+		<item id="26161" chance="2000" /> <!-- sparkion stings -->
+		<item id="26191" chance="2000" /> <!-- energy bar -->
+		<item id="18419" chance="1500" /> <!-- cyan crystal fragment -->
 	</loot>
 </monster>
