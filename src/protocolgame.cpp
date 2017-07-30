@@ -1993,6 +1993,7 @@ void ProtocolGame::sendQuestLine(const Quest* quest)
 
 	for (const Mission& mission : quest->getMissions()) {
 		if (mission.isStarted(player)) {
+			msg.add<uint16_t>(quest->getID());
 			msg.addString(mission.getName(player));
 			msg.addString(mission.getDescription(player));
 		}
