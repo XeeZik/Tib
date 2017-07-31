@@ -28,7 +28,7 @@ function onTime(interval)
 	Game.broadcastMessage("Teleport for The BattleField Event was created in Event Room, you have 10 minutes for join if you want.")
 	local tp = Game.createItem(TELEPORT_ITEMID, 1, TELEPORT_POSITION)
 	if not tp then
-		error("Nao foi possivel criar o teleport na posicao especificada.")
+		error("Could not create a teleport in the specified position..")
 	end
 	tp:setActionId(TELEPORT_ACTIONID)
 	addEvent(warnEvent, 2 * 60 * 1000, 4)
