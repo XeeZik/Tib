@@ -7,7 +7,7 @@ function onThink(interval)
 			tp1:setActionId(45550)
 			CheckEvent1(_Lib_Battle_Info1.limit_Time1)
 			Game.setStorageValue(_Lib_Battle_Info1.storage_count1, tb1.players1)
-			broadcastMessage("[BattleField] Um teleport foi criado no Event Room [Templo de Thais], voces tem 10 minutos para entrar, apenas " .. tb1.players1 .. " jogadores poderao entrar, para serem divididos em " .. ((tb1.players1) / 2) .. " VS " .. ((tb1.players1) / 2) .. ".")
+			broadcastMessage("[BattleField] A teleport was created in the Event Room [Temple of Thais], You have 10 minutes to enter., Only " .. tb1.players1 .. " players can enter, to be divided into " .. ((tb1.players1) / 2) .. " VS " .. ((tb1.players1) / 2) .. ".")
 		end
 	end
 	return true
