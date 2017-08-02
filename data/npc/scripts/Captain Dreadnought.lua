@@ -118,14 +118,33 @@ local function creatureSayCallback(cid, type, msg)
 		if msgcontains(msg, "yes") then
 			npcHandler:say("SO BE IT!", cid)
 			if Vocation(vocation[cid]) ~= player:getVocation() then
+			player:setVocation(Vocation(vocation[cid]))
+			player:setMaxHealth(130 + (player:getVocation():getHealthGain() * player:getLevel()))
+			player:addHealth(player:getMaxHealth())
+			player:setMaxMana(0 + (player:getVocation():getManaGain() * player:getLevel()))
+			player:addMana(player:getMaxMana())
+			player:setCapacity(40000 + (player:getVocation():getCapacityGain() * player:getLevel()))
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have received a backpack with starting items for reaching the mainlands.")
+			local targetVocation = config.vocations[Vocation(vocation[cid]):getName():lower()]
+			for i = 1, #targetVocation[1] do
+				player:addItem(targetVocation[1][i][1], targetVocation[1][i][2])
+			end
+			local backpack = player:addItem(1988)
+			for i = 1, #targetVocation[2] do
+				backpack:addItem(targetVocation[2][i][1], targetVocation[2][i][2])
+			end
+			player:setTown(Town(town[cid]))
+			player:teleportTo(Town(town[cid]):getTemplePosition())
+			local resultId = db.storeQuery("SELECT `id` FROM `players` WHERE `name` = " .. db.escapeString(player:getName():lower()))
+			local accountId = result.getDataInt(resultId, "id")
+			player:remove()
+			db.query("UPDATE `players` SET `maglevel` = '0', `manaspent` = '0', `skill_fist` = '10', `skill_fist_tries` = '0', `skill_club` = '10', `skill_club_tries` = '0', `skill_sword` = '10', `skill_sword_tries` = '0', `skill_axe` = '10', `skill_axe_tries` = '0', `skill_dist` = '10', `skill_dist_tries` = '0', `skill_shielding` = '10', `skill_shielding_tries` = '0', `skill_fishing` = '10', `skill_fishing_tries` = '0' WHERE `players`.`id` = " .. accountId)
 			return
 			end
 			player:setVocation(Vocation(vocation[cid]))
 			player:setTown(Town(town[cid]))
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:teleportTo(Town(town[cid]):getTemplePosition())
-			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			
+			player:teleportTo(Town(town[cid]):getTemplePosition())			
 		else
 			npcHandler:say("THEN WHAT? {KNIGHT}, {PALADIN}, {SORCERER}, OR {DRUID}?", cid)
 			npcHandler.topic[cid] = 2
