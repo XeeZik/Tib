@@ -244,8 +244,8 @@ function onStepIn(creature, item, position, fromPosition)
         local fromVocation = player:getVocation():getId()
         if fromVocation ~= toVocation and (centerPosition:getDistance(fromPosition) < centerPosition:getDistance(position)) then
             getFirstItems(player)
-			changeVocation(player, fromVocation, toVocation)
 			player:getPosition():sendMagicEffect(CONST_ME_BLOCKHIT)
+			changeVocation(player, fromVocation, toVocation)
 		end
 		
     end
