@@ -32,10 +32,6 @@ end
 
 local function changeVocation(player, fromVocation, toVocation)
     local vocationsItems = {
-        -- rook
-        [0] = {
-            [CONST_SLOT_LEFT] = {2398, 1, true}, -- mace
-        },
 		-- sorcerer
         [1] = {
             [CONST_SLOT_LEFT] = {23719, 1, true}, -- the scorcher
@@ -75,19 +71,7 @@ local function changeVocation(player, fromVocation, toVocation)
     }
  
     local vocationsOutfits = {
-        -- rook
-        [0] = {
-            lookBody = 0,
-            lookAddons = 0,
-            lookTypeName = {Citizen}, -- {male, female}
-            lookTypeEx = 128,
-			lookTypeFm = 136,
-            lookHead = 0,
-            lookMount = 0,
-            lookLegs = 0,
-            lookFeet = 0
-        },
-		-- sorcerer
+       	-- sorcerer
         [1] = {
             lookBody = 109,
             lookAddons = 0,
@@ -137,8 +121,8 @@ local function changeVocation(player, fromVocation, toVocation)
         }
     }
  
-    for voc = 0, 4 do
-        for slot, info in pairs(vocationsItems[voc]) do
+    for toVocation = 1, 4 do
+        for slot, info in pairs(vocationsItems[toVocation]) do
             local itemCount = player:getItemCount(info[1])
             if itemCount > 0 and info[3] then
                 player:removeItem(info[1], itemCount)
