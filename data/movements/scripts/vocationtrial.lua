@@ -181,7 +181,7 @@ local function changeVocation(player, fromVocation, toVocation)
     end
  
    local outfit = vocationsOutfits[toVocation]
-    if toVocation ~= 0 then
+    if toVocation ~= 0 then	
 	if player:getSex() == PLAYERSEX_MALE then
 		player:setOutfit(
         {
@@ -210,23 +210,29 @@ local function changeVocation(player, fromVocation, toVocation)
 		)
 		end
 		end
+		
+		--
+		-- done
+		local position = player:getPosition()
+		position:getNextPosition(player:getDirection())
+		player:teleportTo(position)
 		player:setVocation(toVocation)
 		--recalculate cap hp and mana
-		if toVocation == 0 then
+		--
 		player:setMaxHealth(130 + (player:getVocation():getHealthGain() * player:getLevel()))
 		player:addHealth(player:getMaxHealth())
 		player:setMaxMana(0 + (player:getVocation():getManaGain() * player:getLevel()))
 		player:addMana(player:getMaxMana())
 		player:setCapacity(40000 + (player:getVocation():getCapacityGain() * player:getLevel()))
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format('Congratulations! Now you are No Vocation.', player:getVocation():getName()))
-		else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format('Congratulations! Now you are %s.', player:getVocation():getName()))
-		end
-		-- done
-		local position = player:getPosition()
-		position:getNextPosition(player:getDirection())
-		player:teleportTo(position)
 		
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format('Congratulations! Now you are %s.', player:getVocation():getName()))
+		
+		if fromVocation ~= 0 then
+		local resultId = db.storeQuery("SELECT `id` FROM `players` WHERE `name` = " .. db.escapeString(player:getName():lower()))
+		local accountId = result.getDataInt(resultId, "id")
+		player:remove()
+		db.query("UPDATE `players` SET `maglevel` = '0', `manaspent` = '0', `skill_fist` = '10', `skill_fist_tries` = '0', `skill_club` = '10', `skill_club_tries` = '0', `skill_sword` = '10', `skill_sword_tries` = '0', `skill_axe` = '10', `skill_axe_tries` = '0', `skill_dist` = '10', `skill_dist_tries` = '0', `skill_shielding` = '10', `skill_shielding_tries` = '0', `skill_fishing` = '10', `skill_fishing_tries` = '0' WHERE `players`.`id` = " .. accountId)
+		end
 end
 
 local centerPosition = Position(32065, 31891, 5)
@@ -241,10 +247,7 @@ function onStepIn(creature, item, position, fromPosition)
 			changeVocation(player, fromVocation, toVocation)
 			player:getPosition():sendMagicEffect(CONST_ME_BLOCKHIT)
 			player:setStorageValue(47, 1)
-			else
-			changeVocation(player, fromVocation, 0)
-			player:setStorageValue(47, 0)
-        end
+		end
 		
     end
     return true

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
+	<action fromaid="2003" toaid="2011" script="other/dawnportdoors.lua" />
 	<!-- World Coin's -->
 	<action itemid="16101" script="other/premiumscroll.lua" />
 	<action itemid="24774" script="other/premiumscroll.lua" />

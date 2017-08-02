@@ -117,20 +117,15 @@ local function creatureSayCallback(cid, type, msg)
 	elseif npcHandler.topic[cid] == 3 then
 		if msgcontains(msg, "yes") then
 			npcHandler:say("SO BE IT!", cid)
+			if Vocation(vocation[cid]) ~= player:getVocation() then
+			return
+			end
 			player:setVocation(Vocation(vocation[cid]))
 			player:setTown(Town(town[cid]))
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			player:teleportTo(Town(town[cid]):getTemplePosition())
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have received a backpack with starting items for reaching the mainlands.")
-			local targetVocation = config.vocations[Vocation(vocation[cid]):getName():lower()]
-			for i = 1, #targetVocation[1] do
-				player:addItem(targetVocation[1][i][1], targetVocation[1][i][2])
-			end
-			local backpack = player:addItem(1988)
-			for i = 1, #targetVocation[2] do
-				backpack:addItem(targetVocation[2][i][1], targetVocation[2][i][2])
-			end
+			
 		else
 			npcHandler:say("THEN WHAT? {KNIGHT}, {PALADIN}, {SORCERER}, OR {DRUID}?", cid)
 			npcHandler.topic[cid] = 2
