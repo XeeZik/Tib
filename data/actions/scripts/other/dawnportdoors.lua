@@ -44,7 +44,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local targetPosition = config[item.actionid]
 	local targetVocation = config[player:getVocation():getId()]
 	
-	if player:getLevel() >= 8 then
+	if player:getLevel() >= 8 and player:getVocation():getId() > 0 then
 	if item:getActionId() == 2011 and player:getStorageValue(47) ~= 1 then
 	player:setStorageValue(47, 1)
 	player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
