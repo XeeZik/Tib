@@ -9,6 +9,9 @@ Video criando cliente com ip [Próprio](https://www.youtube.com/watch?v=AsZIpPyt
 
 Video COMPILANDO O [OTX](https://youtu.be/LPMrc08xlaw))
 
+Turorial rapido, extraia essa pasta em HTDOCS(xampp), pronto vai estar sincronizado suas imagens com a store, claro se vocÊ usar local- host, se for ip também ira funcionar.
+[Imagens Store](http://adf.ly/1nh1RZ)
+
 
 # Downloads
 Executaveis compilados [AppVeyor builds for Windows](https://ci.appveyor.com/project/malucooo/otxserver-new)
