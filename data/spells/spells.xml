@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spells>
 	<!-- under construction -->
-	<instant group="support" spellid="42" name="Conjure Diamond Arrow" words="exevo gran con hur" lvl="150" mana="1000" soul="1" exhaustion="600000" groupcooldown="2000" aggressive="0" needlearn="1" script="support/diamond_arrow.lua">
-	</instant>
-	<instant group="support" spellid="42" name="Conjure Spectral Bolt" words="exevo gran con vis" lvl="150" mana="1000" soul="1" exhaustion="600000" groupcooldown="2000" aggressive="0" needlearn="1" script="support/spectral_bolt.lua">
-	</instant>
-	<instant group="support" spellid="42" name="Conjure Royal Star" words="exevo gran con grav" lvl="150" mana="1000" soul="1" exhaustion="600000" groupcooldown="2000" aggressive="0" needlearn="1" script="support/royal_star.lua">
-	</instant>
+		<conjure group="support" spellid="992" name="Conjure Diamond Arrow" words="exevo gran con hur" lvl="150" mana="1000" soul="0" prem="1" conjureId="29052" conjureCount="100" exhaustion="600000" groupcooldown="2000" needlearn="0" function="conjureItem"> 
+                <vocation name="Paladin"/> 
+                 <vocation name="Royal Paladin"/>
+       </conjure>
+				  <conjure group="support" spellid="993" name="Conjure Spectral Bolt" words="exevo gran con vis" lvl="150" mana="1000" soul="0" prem="1" conjureId="29053" conjureCount="100" exhaustion="600000" groupcooldown="2000" needlearn="0" function="conjureItem">
+                 <vocation name="Paladin"/>
+                <<vocation name="Royal Paladin"/>
+         </conjure>
+				 <conjure group="support" spellid="994" name="Conjure Royal Star" words="exevo gran con grav" lvl="150" mana="1000" soul="0" prem="1" conjureId="29054" conjureCount="30" exhaustion="600000" groupcooldown="2000" needlearn="0" function="conjureItem">
+                 <vocation name="Paladin"/>
+                 <vocation name="Royal Paladin"/>
+		 </conjure>
 <!-- end of under construction -->
 	<instant group="attack" spellid="62" name="Annihilation" words="exori gran ico" lvl="110" mana="300" prem="1" range="1" needtarget="1" blockwalls="1" needweapon="1" exhaustion="10000" groupcooldown="4000" needlearn="0" script="attack/annihilation.lua">
 		<vocation name="Knight" />

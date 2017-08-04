@@ -7,7 +7,7 @@
 		<attribute key="maxHitChance" value="100" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="shootType" value="redstar" />
-		<attribute key="range" value="5" />
+		<attribute key="range" value="4" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="3600" />
 		<attribute key="showduration" value="1" />
