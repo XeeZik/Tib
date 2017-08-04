@@ -97,7 +97,7 @@ emoteSpells = false
 classicEquipmentSlots = false
 allowWalkthrough = true
 coinPacketSize = 25
-coinImagesURL = "http://some.url/images/store/"
+coinImagesURL = "http://localhost/store/"
 classicAttackSpeed = false
 
 -- Rates
