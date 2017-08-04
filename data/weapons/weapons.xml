@@ -1311,4 +1311,7 @@
 	<distance id="18437" action="removecount" unproperly="1" level="70" /> <!-- Envenomed Arrow -->
 	<distance id="23529" breakchance="2" unproperly="1" level="60" /> <!-- Glooth Spear -->
 	<distance id="23839" action="removecount" unproperly="0" level="1" /> <!-- Simple Arrow -->
+	<distance id="29053" action="removecount" unproperly="1" level="150" /> <!-- Spectral Bolt -->
+	<distance id="29052" action="removecount" unproperly="1" level="150" /> <!-- Diamond arrow -->
+	<distance id="29054" breakchance="30" unproperly="1" level="150" /> <!-- Royal Star -->
 </weapons>
