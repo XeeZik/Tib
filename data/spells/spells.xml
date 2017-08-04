@@ -7,7 +7,7 @@
        </conjure>
 				  <conjure group="support" spellid="993" name="Conjure Spectral Bolt" words="exevo gran con vis" lvl="150" mana="1000" soul="0" prem="1" conjureId="29053" conjureCount="100" exhaustion="600000" groupcooldown="2000" needlearn="0" function="conjureItem">
                  <vocation name="Paladin"/>
-                <<vocation name="Royal Paladin"/>
+                <vocation name="Royal Paladin"/>
          </conjure>
 				 <conjure group="support" spellid="994" name="Conjure Royal Star" words="exevo gran con grav" lvl="150" mana="1000" soul="0" prem="1" conjureId="29054" conjureCount="30" exhaustion="600000" groupcooldown="2000" needlearn="0" function="conjureItem">
                  <vocation name="Paladin"/>
