@@ -5,6 +5,8 @@
 		<offer name="Character Sex Change" type="sexchange" price="250" icons="Product_CharacterSexChange.png" />
 		<offer name="Character Promotion" type="promotion" price="50" icons="Category_Boosts.png" />
 	</category>
+	
+	
 	<category name="Mounts" description="Buy your character one or more of the fabolous mounts offered here." state="sale" icons="Category_Mounts.png">
 		<offer name="Desert King" type="mount" mountid="41" description="Buying this mount will help our server survive!" price="450" icons="o572.png" />
 		<offer name="Jade Lion" type="mount" mountid="48" description="Buying this mount will help our server survive!" price="450" icons="o627.png" />
