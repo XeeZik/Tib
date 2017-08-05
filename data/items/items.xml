@@ -21,8 +21,8 @@
 		<attribute key="showduration" value="1" />
 		<attribute key="weaponType" value="ammunition" />
 		<attribute key="ammoType" value="bolt" />
-		<attribute key="shootType" value="prismaticbolt" />		
-		<attribute key="maxHitChance" value="100" />		
+		<attribute key="shootType" value="prismaticbolt" />
+		<attribute key="maxHitChance" value="100" />
 	</item>
 	<item id="29052" article="a" name="diamond arrow">
 		<attribute key="weight" value="80" />
@@ -33,8 +33,8 @@
 		<attribute key="showduration" value="1" />
 		<attribute key="weaponType" value="ammunition" />
 		<attribute key="ammoType" value="arrow" />
-		<attribute key="shootType" value="crystallinearrow" />	
-		<attribute key="maxHitChance" value="100" />		
+		<attribute key="shootType" value="crystallinearrow" />
+		<attribute key="maxHitChance" value="100" />
 	</item>
 	<!-- Imbuiment-->
 	<!-- Helmets-->

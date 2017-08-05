@@ -1314,6 +1314,4 @@
 	<distance id="29052" action="removecount" unproperly="1" level="150" script="diamond_arrow.lua" />	<!-- Diamond Arrow -->
 	<distance id="29053" action="removecount" unproperly="1" level="150" />	<!-- Spectral Bolt -->
 	<distance id="29054" breakchance="30" unproperly="1" level="150" />	<!-- Assassin Star -->
-	
-	
 </weapons>
