@@ -15,10 +15,7 @@ function onDeath(player, corpse, killer, mostDamageKiller, unjustified, mostDama
 	if not deathListEnabled then
 		return
 	end
-	if player:getStorageValue(47) == 1 then
-	player:setVocation(0)
-	player:setStorageValue(47, 0)
-	end
+	
 	local byPlayer = 0
 	local killerName
 	if killer ~= nil then
