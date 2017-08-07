@@ -154,6 +154,7 @@ class MoveEvent final : public Event
 		std::string vocationString;
 		uint32_t wieldInfo = 0;
 		VocEquipMap vocEquipMap;
+        bool cascadeEquipEvent = false; //(jlcvp): execute the EquipFunction then the Lua script function.
 };
 
 #endif

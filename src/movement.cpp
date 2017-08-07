@@ -518,6 +518,13 @@ bool MoveEvent::configureEvent(const pugi::xml_node& node)
 			vocationString += str;
 			vocationString.push_back('s');
 		}
+
+        //jlcvp - cascadeEquipCall? (used in imbuement, but maybe useful for other types of equips.
+        pugi::xml_attribute cascadeAttribute = node.attribute("cascade");
+        if (cascadeAttribute) {
+            cascadeEquipEvent = cascadeAttribute.as_bool();
+        }
+
 	}
 	return true;
 }
@@ -820,9 +827,13 @@ bool MoveEvent::executeStep(Creature* creature, Item* item, const Position& pos)
 uint32_t MoveEvent::fireEquip(Player* player, Item* item, slots_t slot, bool isCheck)
 {
 	if (scripted) {
-		return executeEquip(player, item, slot, isCheck);
+        if(cascadeEquipEvent){
+            return equipFunction(this, player, item, slot, isCheck) && executeEquip(player, item, slot, isCheck);
+        } else {
+            return executeEquip(player, item, slot, isCheck);
+        }
 	} else {
-		return equipFunction(this, player, item, slot, isCheck);
+        return equipFunction(this, player, item, slot, isCheck);
 	}
 }
 
